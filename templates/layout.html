@@ -1,0 +1,28 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>{% block title %}Welcome{% endblock %} — Spider Website</title>
+<body>
+  <header>
+    <h1>Spider Website</h1>
+    <nav>
+      <ul class="nav navbar-nav">
+        <li{% if this._path == '/' %} class="active"{% endif
+          %}><a href="{{ '/'|url }}">Welcome</a></li>
+        {% for href, title in [
+          ['/blog', 'Blog'],
+          ['/projects', 'Projects'],
+          ['/about', 'About']
+        ] %}
+          <li{% if this.is_child_of(href) %} class="active"{% endif
+            %}><a href="{{ href|url }}">{{ title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+  <div class="page">
+    {% block body %}{% endblock %}
+  </div>
+  <footer>
+    &copy; Copyright 2016 by The Spyder Development Team..
+  </footer>
+</body>
