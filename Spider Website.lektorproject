@@ -1,2 +1,5 @@
 [project]
 name = Spider Website
+
+[packages]
+lektor-webpack-support = 0.1
