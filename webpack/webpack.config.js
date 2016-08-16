@@ -28,7 +28,11 @@ module.exports = {
         loader: ExtractTextPlugin.extract(
           'style-loader', 'css-loader!postcss-loader') },
       { test: /\.(woff2?|ttf|eot|svg|png|jpe?g|gif)$/,
-        loader: 'file' }
+        loader: 'file' },
+      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: "url-loader?limit=10000&mimetype=application/font-woff" },
+      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: "file-loader" }
     ]
   },
   postcss: [
