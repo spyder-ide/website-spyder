@@ -1,0 +1,104 @@
+title: Spyder v2.1 is available
+---
+pub_date: 2011-11-04 04:10
+---
+tags: v2-1, release
+---
+category: Releases
+---
+author: Pierre Raybaut
+---
+summary: 
+---
+body:
+
+After a year of hard work on stability, performance and new features, Spyder v2.1 is now available for Windows XP/Vista/7, GNU/Linux and MacOS X.
+
+This release introduces major enhancements and new features:
+* Large performance and stability improvements
+* PySide support (PyQt is no longer exclusively required)
+* PyQt API v1 and v2 support
+* New profiler plugin (thanks to Santiago Jaramillo, a new contributor)
+* Experimental support for IPython v0.11+
+* And many [other changes](http://code.google.com/p/spyderlib/wiki/ChangeLog)
+
+We [the Spyder development team] are all very excited by this new release: Spyder is now becoming the [GUI-based] scientific development environment. Its future seems very promising. First there is the PySide support and the PyQt API v1/v2 support which were strategically essential (this will also help us supporting Python 3 in time). Second there is a cleaner and optimized code: this was critical for Spyder's behavior to be the closest possible to a standard Python interpreter. Third there is a very stable application: a lot of crashes and segmentation faults were fixed during the last year. Last, but not least, the future looks bright thanks to the new [project members](http://code.google.com/p/spyderlib/people/list): we are now 5 committers and 6 contributors.
+
+**Stand-alone executable on Windows platforms**
+
+Note that, on Windows platforms, Spyder is also available as a stand-alone executable (don't forget to disable UAC on Vista/7). This all-in-one portable version is still experimental (for example, it does not embed sphinx -- meaning no rich text mode for the object inspector) but it should provide a working version of Spyder for Windows platforms without having to install anything else (except Python 2.x itself, of course).
+
+**Help needed**
+
+More than ever, we welcome any contribution that helps making Spyder an efficient scientific development/computing environment. [Join us](http://code.google.com/p/spyderlib/wiki/NoteForContributors) to help creating your favourite environment!
+
+Comments
+========
+MySchizoBuddy
+November 4, 2011 at 4:59 AM
+do you have a precompiled binary for macs or macports is still the preferred way. mac ports will literally download and compile a gazillion packages for spyder.
+
+Reply
+
+konstantin
+November 9, 2011 at 2:34 PM
+Hello. I liked a lot spyder. Using a Stand-alone executable. Before it i had lot of trouble with installing, now all is ok. I have a question. Code completion not working when a typing a key-words ("print" for example) and i have to press Ctrl+Space to get a complition. Can it be fixed? (I want auto code-completion like in eclipse) Sry for bad english
+
+Reply
+
+PierreNovember 15, 2011 at 12:48 AM
+Please use the GoogleCode bug tracker to report bugs or ask for new features:
+http://code.google.com/p/spyderlib/issues/list
+
+This would be a new feature as automatic code completion for keywords is not implemented.
+
+Reply
+
+Elwood CookNovember 15, 2011 at 6:22 AM
+Beginner here. I'm thrilled with Spyder on windows - it's a kind of 'one window' development that I've been looking for to learn on (because its so easy to run code).
+
+Are there any plans to bring this to Mac? I have built using Mac Ports but it often hangs when I run code and seems to have lots of issues.
+
+-E
+
+Reply
+
+PierreNovember 26, 2011 at 7:36 AM
+Spyder is already available for Mac in MacPorts without having to build anything, I think. Please do not hesitate to ask for help here:
+http://groups.google.com/group/spyderlib
+or here:
+http://code.google.com/p/spyderlib/issues/list
+
+Reply
+
+Catawba SamDecember 3, 2011 at 1:37 AM
+Pierre,
+I want to thank you for the good work you have done with Spyder. 
+
+After watching your progress and testing the updates periodically, I have finally switched to Spyder (from PyScripter + some iPython) and been very pleased.
+
+Thanks again.
+
+Reply
+
+PierreDecember 4, 2011 at 6:17 AM
+Thanks for you for those kind words!
+
+Reply
+
+DashesyNovember 27, 2012 at 12:13 PM
+Thank you for the great job. I am trying to set up a full environment for our customers to use Python instead of MATLAB (I also want to add and setup Orange for them), and thanks to Spdyder the initial inertia is much lower, but only if I could have IPython on Spyder again that was great. 
+When do you think Spyder 2.2 (which I read works again with latest IPython 0.13) will be available for Windows? The option to select IPython as initial console is still greyed out (IPython 0.13.1 and Spyder 2.1.11).
+
+Reply
+
+DashesyNovember 27, 2012 at 1:46 PM
+I just realized I could pass --pylab from "External Modules" tab to IPython and now IPython 0.13.1 (the kernel version) seems to be working fine with Spyder 2.1.11
+Just wondering, is there any reason to keep the interpreter version when kernel version works just fine?
+
+Reply
+
+PierreMay 8, 2013 at 5:49 AM
+Spyder v2.2.0 is now available, enjoy!
+
+Reply
