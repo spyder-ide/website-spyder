@@ -22,7 +22,7 @@ contents:
     </div>
     <div class="medium-4 columns hide-for-small-only">
       <div class="button"><a href="downloads/"
-        ><i class="glyphicon glyphicon-download-alt"></i> Download</a></div>
+        ><i class="fa fa-download"></i> Download</a></div>
     </div>
   </div>
   <div class="secondary label install-now hide-for-small-only">
