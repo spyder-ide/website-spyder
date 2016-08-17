@@ -36,11 +36,8 @@
     {% block body %}{% endblock %}
   </div>
   <footer>
-
     <div class="row">
     <div class="small-12 medium-6 columns">
-
-
         <a href="https://github.com/spyder-ide/spyder/" title="Spyder on GitHub"><i class="fa fa-github"></i></a>
         <a href="https://github.com/spyder-ide/spyder/issues/" title="Report Issues for Spyder"><i class="fa fa-bug"></i></a>
         <a href="https://twitter.com/Spyder_IDE" title="Find Spyder on Twitter"><i class="fa fa-twitter"></i></a>
@@ -50,6 +47,13 @@
         &copy; Copyright 2016 by The Spyder Development Team..
       </div>
     </div>
+
+    <script>
+      ((window.gitter = {}).chat = {}).options = {
+        room: 'spyder-ide/public'
+      };
+    </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
     <script type=text/javascript src="{{ '/static/app.js'|asseturl }}" charset="utf-8"></script>
   </footer>
 </body>
