@@ -20,3 +20,41 @@ div.page-banner {
     margin-top: 0;
   }
 }
+
+div.spyder-intro {
+  position: relative;
+  height: 80%;
+  text-align: center;
+
+  img.logo {
+    max-width: 550px;
+    margin: 30px 0 50px -15px;
+
+    @media #{$small-only} {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  p {
+    text-align: left;
+    text-shadow: 0 0 50px #2D282A, 0 0 30px #2D282A, 0 0 2px #2D282A;
+    color: white;
+  }
+
+  a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  div.install-now {
+    background: rgba(40, 30, 30, 0.8);
+
+    pre {
+      margin: 0;
+      text-align: center;
+      overflow: visible;
+    }
+  }
+}

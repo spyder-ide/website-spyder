@@ -1,6 +1,31 @@
+_model: poster
+---
 title: Welcome to Spider Website!
 ---
 body:
 
-This is a basic demo website that shows how to use Lektor for a basic
-website with some pages and a blog.
+#### banner ####
+image: header.png
+----
+contents:
+
+<div class="spyder-intro">
+  <div class="row">
+    <div class="medium-8 columns">
+      <img src="logo.png" alt="Spyder" class="logo">
+        <p>
+          The Scientific PYthon Development EnviRonment
+        <p>
+        <p>
+          A powerful interactive development environment for the Python language with advanced editing, interactive testing, debugging and introspection features
+        </p>
+    </div>
+    <div class="medium-4 columns hide-for-small-only">
+      <div class="button"><a href="downloads/"
+        ><i class="glyphicon glyphicon-download-alt"></i> Download</a></div>
+    </div>
+  </div>
+  <div class="secondary label install-now hide-for-small-only">
+    <pre>pip install spyder</pre>
+  </div>
+</div>
