@@ -1,1 +1,22 @@
 @import 'foundation';
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$banner-bg: #3d3639;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+div.page-banner {
+  margin: 15px 0;
+  background-size: cover;
+  background-position: center center;
+  background-color: $banner-bg;
+  height: 500px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
