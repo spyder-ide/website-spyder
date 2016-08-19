@@ -14,15 +14,15 @@ horizontal/vertical splitting features, etc.
 
 Function/class/method browser:
 
-.. image:: images/editor1.png
+![editor1](editor1.png)
 
 Code analysis with ``pyflakes``:
 
-.. image:: images/editor2.png
+![editor2](editor2.png)
 
 Horizontal/vertical splitting feature:
 
-.. image:: images/editor3.png
+![editor3](editor3.png)
 
 How to define a code cell
 -------------------------

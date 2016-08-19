@@ -20,17 +20,17 @@ documentation requests in the combo box.
 
 Plain text mode:
 
-.. image:: images/help\_plain.png
+![help_plain](help_plain.png)
 
 Rich text mode:
 
-.. image:: images/help\_rich.png
+![help_rich](help_rich.png)
 
 Sometimes, when docstrings are not available or not sufficient to
 document the object, the documentation viewer can show the source code
 (if available, i.e. if the object is pure Python):
 
-.. image:: images/help\_source.png
+![help_source](help_source.png)
 
 Related plugins:
 

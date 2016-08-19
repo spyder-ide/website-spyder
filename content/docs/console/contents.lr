@@ -10,7 +10,7 @@ data, inside a command interpreter. All the commands entered in the
 console are executed in a separate process, thus allowing the user to
 interrupt any process at any time.
 
-.. image:: images/console.png
+![console](console.png)
 
 Many command windows may be created in the **Console**:
 

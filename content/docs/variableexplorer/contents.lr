@@ -10,23 +10,23 @@ all global object references) of the current console: it supports both
 the :doc:``console`` (Python interpreter running in a remote process)
 and the :doc:``internalconsole``.
 
-.. image:: images/variableexplorer1.png
+![variableexplorer1](variableexplorer1.png)
 
 The following screenshots show some interesting features such as editing
 lists, strings, dictionaries, NumPy arrays, or plotting/showing NumPy
 arrays data.
 
-.. image:: images/listeditor.png
+![listeditor](listeditor.png)
 
-.. image:: images/texteditor.png
+![texteditor](texteditor.png)
 
-.. image:: images/dicteditor.png
+![dicteditor](dicteditor.png)
 
-.. image:: images/arrayeditor.png
+![arrayeditor](arrayeditor.png)
 
-.. image:: images/variableexplorer-plot.png
+![variableexplorer-plot](variableexplorer-plot.png)
 
-.. image:: images/variableexplorer-imshow.png
+![variableexplorer-imshow](variableexplorer-imshow.png)
 
 The default variable explorer configuration allows to browse global
 variables without slowing the console even with very large NumPy arrays,
@@ -38,7 +38,7 @@ options on the screenshot at the top of this page).
 However, most of the time, choosing the opposite options won't have too
 much effect on console's performance:
 
-.. image:: images/variableexplorer2.png
+![variableexplorer2](variableexplorer2.png)
 
 Supported types
 ---------------
