@@ -20,5 +20,5 @@ a Windows explorer window (Windows only):
 
 Related plugins:
 
--  :doc:``console``
--  :doc:``editor``
+-  [console](/docs/console)
+-  [editor](/docs/editor)

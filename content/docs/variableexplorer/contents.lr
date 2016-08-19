@@ -7,8 +7,8 @@ Variable Explorer
 
 The variable explorer shows the ``globals()`` namespace contents (i.e.
 all global object references) of the current console: it supports both
-the :doc:``console`` (Python interpreter running in a remote process)
-and the :doc:``internalconsole``.
+the [console](/docs/console) (Python interpreter running in a remote process)
+and the [internalconsole](/docs/internalconsole).
 
 ![variableexplorer1](variableexplorer1.png)
 
@@ -60,5 +60,5 @@ currently supported are:
 
 Related plugins:
 
--  :doc:``console``
--  :doc:``internalconsole``
+-  [console](/docs/console)
+-  [internalconsole](/docs/internalconsole)

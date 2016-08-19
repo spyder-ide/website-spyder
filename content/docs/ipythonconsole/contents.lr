@@ -32,9 +32,9 @@ Spyder support the following features:
 -  Variable explorer with GUI-based editors for arrays, lists,
    dictionaries, strings, etc.
 -  Debugging with standard Python debugger (``pdb``): at each breakpoint
-   the corresponding script is opened in the :doc:``editor`` at the
+   the corresponding script is opened in the [editor](/docs/editor) at the
    breakpoint line number
--  User Module Deleter (see :doc:``console`` for more details)
+-  User Module Deleter (see [console](/docs/console) for more details)
 
 **IPython Consoles** attached to external kernels support a smaller
 feature set:
@@ -46,6 +46,6 @@ feature set:
 
 Related plugins:
 
--  :doc:``help``
--  :doc:``editor``
--  :doc:``explorer``
+-  [help](/docs/help)
+-  [editor](/docs/editor)
+-  [explorer](/docs/explorer)

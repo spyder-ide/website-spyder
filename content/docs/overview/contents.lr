@@ -29,7 +29,7 @@ Key features:
    etc.
 -  and a lot more...
 
--  :doc:``editor``:
+-  [editor](/docs/editor):
 
 -  syntax coloring (Python, C/C++, Fortran)
 -  *breakpoints* and *conditional breakpoints* (debugger: ``pdb``)
@@ -63,7 +63,7 @@ Key features:
 -  integrated *``pylint`` code analysis*
 -  direct link to ``winpdb`` external debugger
 
--  :doc:``console``:
+-  [console](/docs/console):
 
 -  *all consoles are executed in a separate process*
 -  *code completion*/calltips and automatic link to help (see below)
@@ -79,21 +79,21 @@ Key features:
       to compare variable contents
    -  data visualization
 
--  :doc:``historylog``
--  :doc:``help``:
+-  [historylog](/docs/historylog)
+-  [help](/docs/help):
 
 -  provide documentation or source code on any Python object (class,
    function, module, ...)
 -  documentation may be displayed as an html page thanks to the rich
    text mode (powered by ``sphinx``)
 
--  :doc:``onlinehelp``: automatically generated html documentation on
+-  [onlinehelp](/docs/onlinehelp): automatically generated html documentation on
    installed Python modules
--  :doc:``findinfiles``: find string occurrences in a directory, a
+-  [findinfiles](/docs/findinfiles): find string occurrences in a directory, a
    mercurial repository or directly in PYTHONPATH (support for regular
    expressions and included/excluded string lists)
--  :doc:``explorer``
--  :doc:``projectexplorer`` (support Pydev project import)
+-  [explorer](/docs/explorer)
+-  [projectexplorer](/docs/projectexplorer) (support Pydev project import)
 
 Spyder may also be used as a PyQt5 or PyQt4 extension library (module
 'spyderlib'). For example, the Python interactive shell widget used in

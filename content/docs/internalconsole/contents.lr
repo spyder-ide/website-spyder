@@ -17,7 +17,7 @@ in Spyder itself).
 The internal console support the following features:
 
 -  Code completion and calltips
--  User Module Deleter (as in :doc:``console``)
+-  User Module Deleter (as in [console](/docs/console))
 
 Special commands
 ----------------
