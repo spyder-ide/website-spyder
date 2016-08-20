@@ -3,4 +3,10 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
   {{ render_blog_post(this) }}
+    {% if this.allow_comments %}
+      <div class="comment-box">
+        <h2>Comments</h2>
+        {{ render_disqus_comments() }}
+      </div>
+    {% endif %}
 {% endblock %}
