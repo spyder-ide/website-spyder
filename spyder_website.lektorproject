@@ -3,3 +3,4 @@ name = Spider Website
 
 [packages]
 lektor-webpack-support = 0.1
+lektor-disqus-comments = 0.2
