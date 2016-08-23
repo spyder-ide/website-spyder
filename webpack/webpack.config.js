@@ -47,6 +47,10 @@ module.exports = {
     new ExtractTextPlugin('css/styles.css', {
       allChunks: true
     }),
+    new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery"
+    }),
     new webpack.optimize.UglifyJsPlugin()
   ]
 };
