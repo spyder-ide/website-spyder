@@ -5,3 +5,6 @@ name = Spider Website
 lektor-webpack-support = 0.1
 lektor-markdown-header-anchors = 0.1
 lektor-disqus-comments = 0.2
+
+[servers.production]
+target = ghpages+https://spyder-ide/spyder.github.io
