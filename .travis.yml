@@ -4,8 +4,15 @@ cache:
   directories:
     - $HOME/.cache/pip
     - $HOME/.cache/lektor/builds
-install: "pip install Lektor"
+install:
+  - "pip install -U pip"
+  - "pip install git+https://github.com/lektor/lektor#egg=Lektor"
 script: "lektor build"
 deploy:
   provider: script
   script: "lektor deploy production"
+
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/2d23c08216a7b3f1a005
