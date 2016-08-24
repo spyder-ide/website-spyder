@@ -1,0 +1,12 @@
+{% set carousel_id = 'carousel-slider' %}
+<div class="{{ carousel_id }}" role="listbox">
+    {% for slide in this.slides.blocks %}
+    <div class="slide">
+        <img src="{{ slide.image }}">
+        <div class="description">
+        {{ slide.description }}
+        </div>
+    </div>
+    {% endfor %}
+
+</div>

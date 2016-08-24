@@ -8,10 +8,12 @@ $slick-font-path: $slick-loader-path + 'fonts/';
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 $banner-bg: #3d3639;
+$background-color:lightgray;
 
 body {
   font: 100% $font-stack;
   color: $primary-color;
+  background-color:$background-color;
 }
 
 div.page-banner {
@@ -60,6 +62,24 @@ div.spyder-intro {
       margin: 0;
       text-align: center;
       overflow: visible;
+    }
+  }
+}
+
+div.carousel-slider{
+  width: 70%;
+  margin: 0 auto;
+  .slide{
+    position:relative;
+    .description{
+      bottom: 20px;
+      left: 40px;
+      right: 40px;
+      text-align: center;
+      background-color:$background-color;
+      opacity: 0.8;
+      position: absolute;
+      border-radius: 2px;
     }
   }
 }
