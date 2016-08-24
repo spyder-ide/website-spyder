@@ -5,8 +5,8 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
-    'app': './js/main.js',
-    'styles': './scss/main.scss'
+    'js/app': './js/main.js',
+    'css/styles': './scss/main.scss'
   },
   output: {
     path: path.dirname(__dirname) + '/assets/static',
@@ -27,12 +27,12 @@ module.exports = {
       { test: /\.css$/,
         loader: ExtractTextPlugin.extract(
           'style-loader', 'css-loader!postcss-loader') },
-      { test: /\.(woff2?|ttf|eot|svg|png|jpe?g|gif)$/,
-        loader: 'file' },
+      { test: /\.(png|jpe?g|gif)$/,
+        loader: 'file?name=images/[name].[ext]' },
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: "url-loader?limit=10000&mimetype=application/font-woff" },
+        loader: "url-loader?limit=10000&mimetype=application/font-woff&name=fonts/[name].[ext]" },
       { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: "file-loader" }
+        loader: "file-loader?name=fonts/[name].[ext]" }
     ]
   },
   postcss: [
@@ -44,8 +44,12 @@ module.exports = {
     includePaths: [path.resolve(__dirname, "node_modules")]
   },
   plugins: [
-    new ExtractTextPlugin('styles.css', {
+    new ExtractTextPlugin('css/styles.css', {
       allChunks: true
+    }),
+    new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery"
     }),
     new webpack.optimize.UglifyJsPlugin()
   ]
