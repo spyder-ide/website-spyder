@@ -10,6 +10,7 @@ module.exports = {
   },
   output: {
     path: path.dirname(__dirname) + '/assets/static',
+    publicPath: '/static',
     filename: '[name].js'
   },
   devtool: '#cheap-module-source-map',
@@ -28,11 +29,11 @@ module.exports = {
         loader: ExtractTextPlugin.extract(
           'style-loader', 'css-loader!postcss-loader') },
       { test: /\.(png|jpe?g|gif)$/,
-        loader: 'file?name=images/[name].[ext]' },
+        loader: 'file?name=/images/[name].[ext]' },
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: "url-loader?limit=10000&mimetype=application/font-woff&name=fonts/[name].[ext]" },
+        loader: "url-loader?limit=10000&mimetype=application/font-woff&name=/fonts/[name].[ext]" },
       { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: "file-loader?name=fonts/[name].[ext]" }
+        loader: "file-loader?name=/fonts/[name].[ext]" }
     ]
   },
   postcss: [
