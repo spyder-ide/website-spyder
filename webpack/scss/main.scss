@@ -1,5 +1,10 @@
 @import 'foundation';
 
+$slick-loader-path: '~slick-carousel/slick/';
+$slick-font-path: $slick-loader-path + 'fonts/';
+@import 'slick-carousel/slick/slick.scss';
+@import 'slick-carousel/slick/slick-theme.scss';
+
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 $banner-bg: #3d3639;
