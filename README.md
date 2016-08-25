@@ -1,7 +1,28 @@
 # Spyder Website
-This is the repository for the Spyder IDE website built with Lektor
+This is the repository for the Spyder IDE website at [spyder-ide.github.io](https://spyder-ide.github.io/)
 
-To run:
+## Getting Started
+
+### Install Lektor
+
+Running installation script:
+```
+$ curl -sf https://www.getlektor.com/install.sh | sh
+```
+
+Using conda (Recomended way):
+```
+$ conda install lektor -c conda-forge
+```
+
+Using pip:
+```
+$ pip install -U Lektor
+```
+
+### Run server and make changes
+
+To run local server:
 
 ```
 $ lektor server
