@@ -43,15 +43,56 @@
     {% block body %}{% endblock %}
   </div>
   <footer>
-    <div class="row">
-    <div class="small-12 medium-6 columns">
-        <a href="https://github.com/spyder-ide/spyder/" title="Spyder on GitHub"><i class="fa fa-github"></i></a>
-        <a href="https://github.com/spyder-ide/spyder/issues/" title="Report Issues for Spyder"><i class="fa fa-bug"></i></a>
-        <a href="https://twitter.com/Spyder_IDE" title="Find Spyder on Twitter"><i class="fa fa-twitter"></i></a>
-        <a href="https://gitter.im/spyder-ide/public" title="Chat on Gitter"><i class="fa fa-comment"></i></a>
+  {% set data_footer = bag('footer', this.alt) %}
+    <div id="footer-area">
+      <div class=row>
+        <div id="logo-footer" class="small-12 medium-4 columns">
+          <div>
+            <p>
+              <img src="{{ '/static/images/spyder.png' | url}}">
+              <span>Spider IDE</span>
+            </p>
+            <p>
+              The Spyder Development Team
+              <br>
+              <a href="mailto:info@spyder-ide.org ">info@spyder-ide.org </a>
+            </p>
+          </div>
+        </div>
+        <div class="small-12 medium-4 columns">
+          <h3>{{ data_footer.support }}</h3>
+          <ul>
+            <li><a href="#">{{ data_footer.download }}</a></li>
+            <li><a href="#">{{ data_footer.getting_started }}</a></li>
+            <li><a href="http://groups.google.com/group/spyderlib" target="_blank" rel="noopener">{{ data_footer.join_group }}</a></li>
+            <li><a href="http://stackoverflow.com/questions/tagged/spyder" target="_blank" rel="noopener">{{ data_footer.stack_overflow }}</a></li>
+          </ul>
+        </div>
+        <div class="small-12 medium-4 columns">
+          <h3>{{ data_footer.contribute }}</h3>
+          <ul>
+            <li><a href="#">{{ data_footer.donation }}</a></li>
+            <li><a href="https://github.com/spyder-ide/spyder/issues/new?title=Feature Request:" target="_blank" rel="noopener">{{ data_footer.new_features }}</a></li>
+            <li><a href="https://github.com/spyder-ide/spyder/issues/new" target="_blank" rel="noopener">{{ data_footer.report_bug }}</a></li>
+            <li><a href="https://github.com/spyder-ide/spyder/issues" target="_blank" rel="noopener">{{ data_footer.issues }}</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="small-12 medium-6 columns">
-        &copy; Copyright 2016 by The Spyder Development Team..
+    </div>
+
+    <div id="footer">
+      <div class=row>
+        <div class="small-12 medium-8 columns">
+          &copy; 2016 by <a href="https://github.com/orgs/spyder-ide/people" target="_blank" rel="noopener">The Spyder Development Team</a> &middot; Powered by <a href="https://www.getlektor.com/" target="_blank" rel="noopener">Lektor</a>
+        </div>
+        <div class="small-12 medium-4 columns">
+          <a href="https://github.com/spyder-ide/spyder/" title="{{ data_footer.github }}"><i class="fa fa-github fa-lg"></i></a>
+          <a href="https://github.com/spyder-ide/spyder/issues/" title="{{ data_footer.issues }}"><i class="fa fa-bug fa-lg"></i></a>
+          <a href="https://www.facebook.com/SpyderIDE/" title="{{ data_footer.facebook }}"><i class="fa fa-facebook fa-lg"></i></a>
+          <a href="https://twitter.com/Spyder_IDE" title="{{ data_footer.twitter }}"><i class="fa fa-twitter fa-lg"></i></a>
+          <a href="https://plus.google.com/u/0/communities/112932801653352854842" title="{{ data_footer.google_plus }}"><i class="fa fa-google-plus fa-lg"></i></a>
+          <a href="https://gitter.im/spyder-ide/public" title="{{ data_footer.gitter }}"><i class="fa fa-comment fa-lg"></i></a>
+        </div>
       </div>
     </div>
 

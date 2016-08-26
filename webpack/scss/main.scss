@@ -7,6 +7,7 @@ $slick-font-path: $slick-loader-path + 'fonts/';
 
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
+$spyder-white:#fdfdfd;
 $banner-bg: #3d3639;
 $background-color:lightgray;
 
@@ -100,4 +101,39 @@ li.menu-text, li.menu-text a{
 }
 #menu-logo{
   width:2.5em;
+}
+
+footer{
+  width: 100%;
+  a, li, p, h3, span, div{
+    color: $spyder-white;
+  }
+  a:hover, a:focus{
+    color: lightgray;
+  }
+  li{
+   list-style: none;
+ }
+}
+
+#logo-footer{
+  img{
+    width: 5em;
+  }
+  p {
+    display: block;
+  }
+}
+
+#footer-area{
+  padding: 1%;
+  background-color: #363839;
+}
+
+#footer{
+  background-color: #282A2B;
+  padding: 1%;
+  a i {
+    margin-right: 1%;
+  }
 }
