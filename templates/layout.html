@@ -9,28 +9,35 @@
       <div class="title-bar-title">Menu</div>
     </div>
 
-    <nav class="top-bar" id="main-menu">
-      <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text">Spyder Website</li>
-        </ul>
-      </div>
+    <div class="top-bar-container" data-sticky-container>
+      <nav class="top-bar" id="main-menu" data-sticky data-options="marginTop: 0;">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">
+              <a href="{{ '/'|url }}">
+                <img id="menu-logo" src="{{ 'static/images/spyder.png' | url}}">
+                Spyder IDE
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="top-bar-right">
-        <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
-          <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-          {% for href, title in [
-            ['/blog', 'Blog'],
-            ['/projects', 'Projects'],
-            ['/about', 'About']
-          ] %}
-            <li{% if this.is_child_of(href) %} class="active"{% endif
-              %}><a href="{{ href|url }}">{{ title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    </nav>
+        <div class="top-bar-right">
+          <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
+            {% set data_nav = bag('main-nav', this.alt) %}
+            {% for path, label in data_nav.iteritems() %}
+            <li
+              {% if (this.is_child_of(path) and path != '/') or this._path == path == '/'  %}
+                class="active"
+              {% endif%}
+              >
+              <a href="{{ path|url }}">{{ label }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <div>
     {% block body %}{% endblock %}
