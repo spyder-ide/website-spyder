@@ -1,0 +1,20 @@
+{
+    "en": {
+        "/": "Home",
+        "/docs": "Documentation",
+        "/blog": "Blog",
+        "/community": "Community"
+    },
+    "es": {
+        "/": "Inicio",
+        "/docs": "Documentación",
+        "/blog": "Blog",
+        "/community": "Comunidad"
+    },
+    "fr": {
+        "/": "Accueil",
+        "/docs": "Documentation",
+        "/blog": "Blog",
+        "/community": "Communauté"
+    }
+}
