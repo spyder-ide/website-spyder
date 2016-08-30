@@ -56,3 +56,11 @@ Webpack is used for built and generate static files (css, js, images, fonts), in
 - .scss files will be processed with Sass
 - .js files will be processed with Babel to convert ES6 into ES5
 - JS and CSS files will be minified
+
+### Lektor plugins
+
+The built also requieres several [Lektor Plugins](https://www.getlektor.com/docs/plugins/) (No extra configuración is needed, Lektor automatically installs them when building):
+
+- [webpack-support](https://github.com/lektor/lektor-webpack-support)
+- [markdown-header-anchors :ext](https://github.com/lektor/lektor-markdown-header-anchors)
+- [disqus-comments](https://github.com/lektor/lektor-disqus-comments)
