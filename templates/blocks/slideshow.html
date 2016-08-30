@@ -1,5 +1,4 @@
-{% set carousel_id = 'carousel-slider' %}
-<div class="{{ carousel_id }}" role="listbox">
+<div class="{{ this.class }}" role="listbox">
     {% for slide in this.slides.blocks %}
     <div class="slide">
         <img src="{{ slide.image }}">
@@ -8,5 +7,4 @@
         </div>
     </div>
     {% endfor %}
-
 </div>

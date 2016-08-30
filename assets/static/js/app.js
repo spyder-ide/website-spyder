@@ -1,4 +1,4 @@
-!function(e){function t(i){if(n[i])return n[i].exports;var o=n[i]={exports:{},id:i,loaded:!1};return e[i].call(o.exports,o,o.exports,t),o.loaded=!0,o.exports}var n={};return t.m=e,t.c=n,t.p="/static",t(0)}([function(e,t,n){(function(e){foundation=n(2),n(3),n(14),e(document).ready(function(e){e(".carousel-slider").slick({}),e(document).foundation()})}).call(t,n(1))},function(e,t,n){var i,o;/*!
+!function(e){function t(i){if(n[i])return n[i].exports;var o=n[i]={exports:{},id:i,loaded:!1};return e[i].call(o.exports,o,o.exports,t),o.loaded=!0,o.exports}var n={};return t.m=e,t.c=n,t.p="/static",t(0)}([function(e,t,n){(function(e){foundation=n(2),n(3),n(14),e(document).ready(function(e){e(".carousel-default").slick({}),e(".carousel-home").slick({autoplay:!0,autoplaySpeed:2e3}),e(document).foundation()})}).call(t,n(1))},function(e,t,n){var i,o;/*!
 	 * jQuery JavaScript Library v2.2.4
 	 * http://jquery.com/
 	 *
