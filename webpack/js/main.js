@@ -3,6 +3,11 @@ require("font-awesome-loader");
 require('slick-carousel')
 
 $(document).ready(function ($) {
-  $('.carousel-slider').slick({});
+  $('.carousel-default').slick({});
+  $('.carousel-home').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+});
+
   $(document).foundation();
 });

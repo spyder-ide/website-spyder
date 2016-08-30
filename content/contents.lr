@@ -4,46 +4,32 @@ title: Welcome to Spyder Website!
 ---
 body:
 
-#### banner ####
+#### home-banner ####
 image: header.png
 ----
-contents:
+title: The Scientific PYthon Development EnviRonment
+----
+content: A powerful interactive development environment for the Python language with advanced editing, interactive testing, debugging and introspection features
+----
+slideshow:
 
-<div class="spyder-intro">
-  <div class="row">
-    <div class="medium-8 columns">
-      <img src="logo.png" alt="Spyder" class="logo">
-        <p>
-          The Scientific PYthon Development EnviRonment
-        <p>
-        <p>
-          A powerful interactive development environment for the Python language with advanced editing, interactive testing, debugging and introspection features
-        </p>
-    </div>
-    <div class="medium-4 columns hide-for-small-only">
-      <div class="button"><a href="downloads/"
-        ><i class="fa fa-download"></i> Download</a></div>
-    </div>
-  </div>
-  <div class="secondary label install-now hide-for-small-only">
-    <pre>pip install spyder</pre>
-  </div>
-</div>
-
-#### slideshow ####
+##### slideshow #####
+class: carousel-home
+-----
 slides:
 
-##### slide #####
+###### slide ######
 description:
 
 **Work Cross Platform:**
 Spyder is avalaible for Windows, Mac and Linux
------
+------
 image: home-features-cross.svg
-##### slide #####
+
+###### slide ######
 description:
 
 **Choose your Style:**
 Spyder is fully customizable
------
+------
 image: home-features-style.svg
