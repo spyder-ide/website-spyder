@@ -59,7 +59,7 @@ Webpack is used for built and generate static files (css, js, images, fonts), in
 
 ### Lektor plugins
 
-The built also requieres several [Lektor Plugins](https://www.getlektor.com/docs/plugins/) (No extra configuración is needed, Lektor automatically installs them when building):
+The build also requires several [Lektor Plugins](https://www.getlektor.com/docs/plugins/) (No extra configuration is needed, Lektor automatically installs them when building):
 
 - [webpack-support](https://github.com/lektor/lektor-webpack-support)
 - [markdown-header-anchors :ext](https://github.com/lektor/lektor-markdown-header-anchors)
