@@ -25,7 +25,7 @@
         <div class="top-bar-right">
           <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
             {% set data_nav = bag('main-nav', this.alt) %}
-            {% for path, label in data_nav.iteritems() %}
+            {% for path, label in data_nav.items() %}
             <li
               {% if (this.is_child_of(path) and path != '/') or this._path == path == '/'  %}
                 class="active"
