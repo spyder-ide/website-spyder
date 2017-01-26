@@ -1,0 +1,53 @@
+{
+    "en": {
+        "support": "Support",
+        "download": "Download and install Spyder",
+        "getting_started": "Getting started with Spyder",
+        "join_group": "Join user discussion group",
+        "stack_overflow": "Ask a question in Stack Overflow",
+        "contribute": "Contribute",
+        "donation": "Make a donation",
+        "new_features": "Suggest new features",
+        "report_bug": "Submit a bug report",
+        "issues":"Check out issues on Github",
+        "github":"Spyder on GitHub",
+        "facebook":"Like Spyder on Facebook",
+        "twitter":"Follow Spyder on Twitter",
+        "google_plus":"Join Spyder Google+ Community",
+        "gitter": "Chat on Gitter"
+    },
+    "es": {
+        "support": "Soporte",
+        "download": "Descarga e instala Spyder",
+        "getting_started": "Comienza a usar Spyder",
+        "join_group": "Únete al grupo de Discusión",
+        "stack_overflow": "Pregunta en Stack Overflow",
+        "contribute": "Contribuir",
+        "donation": "Has una donación",
+        "new_features": "Sugiere nuevas características",
+        "report_bug": "Envía un informe de errores",
+        "issues":"Revisa los problemas en Github",
+        "github":"Spyder en GitHub",
+        "facebook":"Síguenos en Facebook",
+        "twitter":"Síguenos en Twitter",
+        "google_plus":"Únete a la comunidad de Spyder en Google+",
+        "gitter": "Escríbenos en el chat de Gitter"
+    },
+    "fr": {
+        "support": "Support",
+        "download": "Télécharge et installer Spyder",
+        "getting_started": "Commence à utiliser Spyder",
+        "join_group": "Joindre à la groupe de discussion",
+        "stack_overflow": "Demande une question sur Stack Overflow",
+        "contribute": "Contribuer",
+        "donation": "Faire un don",
+        "new_features": "Suggérer de nouvelles fonctionnalités",
+        "report_bug": "Rapporter un bug",
+        "issues":"Examiner des problèmes sur Github",
+        "github":"Spyder sur GitHub",
+        "facebook":"Suivez-nous sur Facebook",
+        "twitter":"Suivez-nous sur Twitter",
+        "google_plus":"Joindre a la communauté de Spyder sur Google+",
+        "gitter": "Écrivez-nous sur le chat de Gitter"
+    }
+}
