@@ -2,7 +2,7 @@ _model: poster
 ---
 title: Welcome to Spyder Website!
 ---
-body:
+header:
 
 #### home-banner ####
 image: header.png
@@ -32,4 +32,46 @@ description:
 **Choose your Style:**
 Spyder is fully customizable
 ------
+image: home-features-style.svg
+---
+features:
+
+#### feature ####
+title: Editor
+----
+description:
+
+Multi-language editor with syntax coloring, code analysis,code completion,
+calltips, go-to-definition, function/class browser, and horizontal/vertical
+splitting features.
+----
+image: home-features-style.svg
+
+#### feature ####
+title: IPython Console
+----
+description:
+
+Spyder’s IPython Console implements a full two-process IPython session where a
+lightweight front-end interface connects to a full IPython kernel on the backend.
+----
+image: home-features-style.svg
+
+#### feature ####
+title: Variable Explorer
+----
+description:
+
+Shows the namespace contents (i.e. all global object references) of the current
+console.
+----
+image: home-features-style.svg
+
+#### feature ####
+title: Projects
+----
+description:
+
+Spyder allows users to associate a given directory with a project.
+----
 image: home-features-style.svg

@@ -1,5 +1,57 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  {{ this.body }}
+  {{ this.header }}
+  <div id="information-section">
+    <h1>Spyder</h1>
+    <div class="row">
+      <div class="medium-6 columns">
+        Spyder is a Python development environment with a lot of features.
+
+        <p>A powerful interactive development environment for the Python language with advanced editing, interactive testing, debugging and introspection features</p>
+
+        <ul>
+          <li><a href="#">Atributte One</a></li>
+          <li><a href="#">Atributte Two</a></li>
+          <li><a href="#">Atributte Three</a></li>
+        </ul>
+      </div>
+      <div class="medium-6 columns">
+        <ul>
+          <a class="button primary" href="#">Download Spyder</a>
+          <p>The best IDE for scientific computing!!</p>
+          <li><a href="#">Item One</a></li>
+          <li><a href="#">Item Two</a></li>
+          <li><a href="#">Item Three</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="features-section">
+    <div class="row">
+    {% for feature in this.features.blocks %}
+      <div class="medium-3 columns">
+          <img src="{{ feature.image }}">
+          <h4>{{ feature.title }}</h4>
+          <div class="description">
+            {{ feature.description }}
+          </div>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+
+  <div id="donation-section">
+    <div class="row">
+      <div class="medium-6 columns">
+      <a class="button primary" href="#">Donate!!</a>
+      <h3>Support Spyder-IDE</h3>
+      </div>
+      <div class="medium-6 columns">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>
+      </div>
+    </div>
+  </div>
+
 {% endblock %}
