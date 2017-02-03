@@ -62,7 +62,7 @@ div.spyder-intro {
       padding: 2%;
     }
   }
-  @media #{$medium-up} {
+  @include breakpoint(medium) {
     font-size: 1.1em;
   }
 }

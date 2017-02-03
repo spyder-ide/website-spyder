@@ -1,4 +1,4 @@
-foundation = require('foundation-sites/dist/foundation.min.js');
+foundation = require('foundation-sites/dist/js/foundation.min.js');
 require("font-awesome-loader");
 require('slick-carousel')
 
