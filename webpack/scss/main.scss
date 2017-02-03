@@ -1,21 +1,28 @@
+// Spyder Theme colors
+$spyder-red: #450200;
+$spyder-gray: lightgray;
+$spyder-white: white;
+$banner-bg: #3d3639;
+
+// Foundation settings
+$foundation-palette: (
+  primary: $spyder-red,
+  secondary: $spyder-white,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+) !default;
+
+$body-font-family: Helvetica, sans-serif;
+$body-font-color: #333;
+$light-gray: #fff;
+
 @import 'foundation';
 
 $slick-loader-path: '~slick-carousel/slick/';
 $slick-font-path: $slick-loader-path + 'fonts/';
 @import 'slick-carousel/slick/slick.scss';
 @import 'slick-carousel/slick/slick-theme.scss';
-
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
-$spyder-white:#fdfdfd;
-$banner-bg: #3d3639;
-$background-color:lightgray;
-
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
-  background-color:$background-color;
-}
 
 div.page-banner {
   margin: 15px 0;
@@ -77,7 +84,7 @@ div.carousel-slider{
       left: 40px;
       right: 40px;
       text-align: center;
-      background-color:$background-color;
+      background-color:$spyder-gray;
       opacity: 0.8;
       position: absolute;
       border-radius: 2px;
@@ -109,7 +116,7 @@ footer{
     color: $spyder-white;
   }
   a:hover, a:focus{
-    color: lightgray;
+    color: $spyder-gray;
   }
   li{
    list-style: none;
