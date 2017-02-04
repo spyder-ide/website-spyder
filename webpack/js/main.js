@@ -6,6 +6,7 @@ $(document).ready(function ($) {
   $('.carousel-default').slick({});
   $('.carousel-home').slick({
     autoplay: true,
+    arrows: false,
     autoplaySpeed: 2000,
 });
 

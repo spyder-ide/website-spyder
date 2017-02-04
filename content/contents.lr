@@ -4,35 +4,26 @@ title: Welcome to Spyder Website!
 ---
 header:
 
-#### home-banner ####
-image: header.png
-----
-title: The Scientific PYthon Development EnviRonment
-----
-content: A powerful interactive development environment for the Python language with advanced editing, interactive testing, debugging and introspection features
-----
-slideshow:
-
-##### slideshow #####
+#### slideshow ####
 class: carousel-home
------
+----
 slides:
 
-###### slide ######
+##### slide #####
 description:
 
 **Work Cross Platform:**
 Spyder is avalaible for Windows, Mac and Linux
-------
-image: home-features-cross.svg
+-----
+image: banner.png
 
-###### slide ######
+##### slide #####
 description:
 
 **Choose your Style:**
 Spyder is fully customizable
-------
-image: home-features-style.svg
+-----
+image: banner.png
 ---
 features:
 
@@ -55,7 +46,7 @@ description:
 Spyder’s IPython Console implements a full two-process IPython session where a
 lightweight front-end interface connects to a full IPython kernel on the backend.
 ----
-image: home-features-style.svg
+image: home-features-cross.svg
 
 #### feature ####
 title: Variable Explorer
@@ -65,7 +56,7 @@ description:
 Shows the namespace contents (i.e. all global object references) of the current
 console.
 ----
-image: home-features-style.svg
+image: component.png
 
 #### feature ####
 title: Projects
@@ -74,4 +65,4 @@ description:
 
 Spyder allows users to associate a given directory with a project.
 ----
-image: home-features-style.svg
+image: component.png

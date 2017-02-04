@@ -93,9 +93,11 @@ div.carousel-slider{
 }
 
 div.carousel-home {
-  margin-top: 10%;
-  p{
-    text-align: center;
+  img {
+        width: 100%;
+  }
+  .slick-slide {
+      max-height: 400px;
   }
 }
 
