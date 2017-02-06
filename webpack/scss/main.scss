@@ -112,6 +112,29 @@ li.menu-text, li.menu-text a{
   width:2.5em;
 }
 
+#information-section {
+  padding:2%;
+  @include breakpoint(medium){
+    padding: 8% 12% 8% 12%;
+  }
+  text-align: center;
+  #information {
+    text-align:justify;
+  }
+  #download {
+    margin: 4% 0px;
+
+    #download-button {
+      border-radius: 10px;
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 1.2em;
+      font-style: italic;
+    }
+  }
+}
+
 footer{
   width: 100%;
   a, li, p, h3, span, div{
