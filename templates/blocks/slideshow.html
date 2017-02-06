@@ -2,9 +2,11 @@
     {% for slide in this.slides.blocks %}
     <div class="slide">
         <img src="{{ slide.image }}">
-        <div class="description">
-        {{ slide.description }}
-        </div>
+        {% if slide.description %}
+          <div class="description">
+          {{ slide.description }}
+          </div>
+        {% endif %}
     </div>
     {% endfor %}
 </div>

@@ -19,6 +19,7 @@ $light-gray: #fff;
 
 @import 'foundation';
 
+$slick-arrow-color: $spyder-red !default;
 $slick-loader-path: '~slick-carousel/slick/';
 $slick-font-path: $slick-loader-path + 'fonts/';
 @import 'slick-carousel/slick/slick.scss';
@@ -170,6 +171,20 @@ li.menu-text, li.menu-text a{
   }
   #download-text{
     margin: 30px 0px;
+  }
+}
+
+#users-section {
+  text-align:center;
+  padding:1%;
+  h2 {
+    margin-bottom:6%;
+  }
+  @include breakpoint(medium){
+    padding: 4% 12%;
+  }
+  slide{
+    margin:10%;
   }
 }
 
