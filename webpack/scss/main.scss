@@ -115,7 +115,7 @@ li.menu-text, li.menu-text a{
 #information-section {
   padding:2%;
   @include breakpoint(medium){
-    padding: 8% 12% 8% 12%;
+    padding: 4% 12%;
   }
   text-align: center;
   #information {
