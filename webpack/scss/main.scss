@@ -135,6 +135,16 @@ li.menu-text, li.menu-text a{
   }
 }
 
+#features-section {
+  text-align:center;
+  h2 {
+    margin-bottom:6%;
+  }
+  @include breakpoint(medium){
+    padding: 4%;
+  }
+}
+
 footer{
   width: 100%;
   a, li, p, h3, span, div{
