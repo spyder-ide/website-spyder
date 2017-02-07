@@ -21,6 +21,7 @@ $topbar-background: white;
 $topbar-input-width: 170px;
 $menu-item-color-active:red ;
 $menu-item-background-active: white;
+$tab-content-border: $spyder-red;
 
 @import 'foundation';
 
@@ -169,6 +170,25 @@ div.carousel-home {
   h2 {
     margin-bottom:6%;
   }
+  @include breakpoint(medium){
+    padding: 4%;
+  }
+}
+
+#title-download-section {
+  background-color: $spyder-red;
+  height: 3rem;
+  text-align: center;
+  h2 {
+    position: relative;
+    top: -1.5rem;
+    color: $spyder-white;
+    font-size: 4rem;
+  }
+}
+
+#download-section {
+  text-align: center;
   @include breakpoint(medium){
     padding: 4%;
   }
