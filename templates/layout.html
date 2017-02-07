@@ -13,10 +13,15 @@
       <nav class="top-bar" id="main-menu" data-sticky data-options="marginTop: 0;">
         <div class="top-bar-left">
           <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text">
+            <li id="menu-logo">
               <a href="{{ '/'|url }}">
-                <img id="menu-logo" src="{{ 'static/images/spyder.png' | url}}">
-                Spyder IDE
+                <img src="{{ 'static/images/spyder.png' | url}}">
+                <span  >
+                  <span id="logo-text"">Spyder IDE</span>
+                  <span id="logo-small-text" class="show-for-medium">
+                    The Scientific PYthon Development EnviRonment
+                  </span>
+                </span>
               </a>
             </li>
           </ul>
@@ -34,6 +39,9 @@
               <a href="{{ path|url }}">{{ label }}</a>
             </li>
             {% endfor %}
+            <li>
+            <a href="#"><i class="fa fa-search fa-lg"></i></li></a>
+            <li><input type="search" placeholder="Search"></li>
           </ul>
         </div>
       </nav>

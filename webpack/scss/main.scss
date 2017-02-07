@@ -1,6 +1,7 @@
 // Spyder Theme colors
 $spyder-red: #450200;
 $spyder-gray: lightgray;
+$spyder-dark-gray: #333;
 $spyder-white: white;
 $banner-bg: #3d3639;
 
@@ -14,8 +15,12 @@ $foundation-palette: (
 ) !default;
 
 $body-font-family: Helvetica, sans-serif;
-$body-font-color: #333;
-$light-gray: #fff;
+$body-font-color: $spyder-dark-gray;
+$topbar-padding: 1.2rem;
+$topbar-background: white;
+$topbar-input-width: 170px;
+$menu-item-color-active:red ;
+$menu-item-background-active: white;
 
 @import 'foundation';
 
@@ -104,13 +109,36 @@ div.carousel-home {
 
 #main-menu{
   width: 100%;
+  box-shadow: 0 2px $spyder-red;
 }
-li.menu-text, li.menu-text a{
-  padding-bottom: 0;
-  padding-top: 0;
+#menu-logo {
+  a {
+    padding-bottom: 0px;
+    padding-top: 0;
+  }
+  span {
+    display: inline-block;
+    color: $spyder-dark-gray;
+    span {
+      display: block;
+    }
+    #logo-text {
+      font-size:2em;
+      margin-bottom:0.2em;
+    }
+    #logo-small-text {
+      font-size:0.7em;
+    }
+  }
+  img {
+    width:3.7em;
+  }
 }
-#menu-logo{
-  width:2.5em;
+
+.top-bar-right {
+  input {
+    border-radius: 0.5rem;
+  }
 }
 
 #information-section {
