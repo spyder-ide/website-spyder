@@ -22,6 +22,8 @@ $topbar-input-width: 170px;
 $menu-item-color-active:red ;
 $menu-item-background-active: white;
 $tab-content-border: $spyder-red;
+$tab-content-background: rgba(255,255,255,0.5);
+$tab-background: rgba(255,255,255,0.5);
 
 @import 'foundation';
 
@@ -142,6 +144,14 @@ div.carousel-home {
   }
 }
 
+#first-body-part {
+  background-image: url('../img/body-background.png');
+  @include breakpoint(large){
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 #information-section {
   padding:2%;
   @include breakpoint(medium){
@@ -188,6 +198,9 @@ div.carousel-home {
 }
 
 #download-section {
+  background-image: url('../img/body-background2.png'), url('../img/body-background3.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
   text-align: center;
   @include breakpoint(medium){
     padding: 4%;
@@ -223,6 +236,11 @@ div.carousel-home {
 }
 
 #users-section {
+  background-image: url('../img/body-background.png'), ;
+  background-repeat: no-repeat;
+  @include breakpoint(large){
+    background-size: cover;
+  }
   text-align:center;
   padding:1%;
   h2 {
