@@ -108,6 +108,35 @@ div.carousel-home {
   .slick-slide {
       max-height: 400px;
   }
+  .slide{
+    position:relative;
+    .background-trapezoid {
+      position:absolute;
+      height: 0;
+      bottom: 0px;
+      right: 0px;
+
+      width: 50%;
+      border-bottom: 250px solid rgba(211, 211, 211, 0.5);
+      border-left: 150px solid transparent;
+      @include breakpoint(medium){
+        width: 35%;
+        border-bottom: 400px solid rgba(211, 211, 211, 0.5);
+        border-left: 250px solid transparent;
+      }
+    }
+    .description{
+      position:absolute;
+      width: 45%;
+      @include breakpoint(medium){
+        width: 30%;
+      }
+      right: 2rem;
+      text-align: right;
+      bottom:20px ;
+      color: $spyder-red;
+    }
+  }
 }
 
 #main-menu{
