@@ -1,21 +1,37 @@
+// Spyder Theme colors
+$spyder-red: #450200;
+$spyder-gray: lightgray;
+$spyder-dark-gray: #333;
+$spyder-white: white;
+$banner-bg: #3d3639;
+
+// Foundation settings
+$foundation-palette: (
+  primary: $spyder-red,
+  secondary: $spyder-white,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+) !default;
+
+$body-font-family: Helvetica, sans-serif;
+$body-font-color: $spyder-dark-gray;
+$topbar-padding: 1.2rem;
+$topbar-background: white;
+$topbar-input-width: 170px;
+$menu-item-color-active:red ;
+$menu-item-background-active: white;
+$tab-content-border: $spyder-red;
+$tab-content-background: rgba(255,255,255,0.5);
+$tab-background: rgba(255,255,255,0.5);
+
 @import 'foundation';
 
+$slick-arrow-color: $spyder-red !default;
 $slick-loader-path: '~slick-carousel/slick/';
 $slick-font-path: $slick-loader-path + 'fonts/';
 @import 'slick-carousel/slick/slick.scss';
 @import 'slick-carousel/slick/slick-theme.scss';
-
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
-$spyder-white:#fdfdfd;
-$banner-bg: #3d3639;
-$background-color:lightgray;
-
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
-  background-color:$background-color;
-}
 
 div.page-banner {
   margin: 15px 0;
@@ -62,7 +78,7 @@ div.spyder-intro {
       padding: 2%;
     }
   }
-  @media #{$medium-up} {
+  @include breakpoint(medium) {
     font-size: 1.1em;
   }
 }
@@ -77,7 +93,7 @@ div.carousel-slider{
       left: 40px;
       right: 40px;
       text-align: center;
-      background-color:$background-color;
+      background-color:$spyder-gray;
       opacity: 0.8;
       position: absolute;
       border-radius: 2px;
@@ -86,21 +102,185 @@ div.carousel-slider{
 }
 
 div.carousel-home {
-  margin-top: 10%;
-  p{
-    text-align: center;
+  img {
+        width: 100%;
+  }
+  .slick-slide {
+      max-height: 400px;
+  }
+  .slide{
+    position:relative;
+    .background-trapezoid {
+      position:absolute;
+      height: 0;
+      bottom: 0px;
+      right: 0px;
+
+      width: 50%;
+      border-bottom: 250px solid rgba(211, 211, 211, 0.5);
+      border-left: 150px solid transparent;
+      @include breakpoint(medium){
+        width: 35%;
+        border-bottom: 400px solid rgba(211, 211, 211, 0.5);
+        border-left: 250px solid transparent;
+      }
+    }
+    .description{
+      position:absolute;
+      width: 45%;
+      @include breakpoint(medium){
+        width: 30%;
+      }
+      right: 2rem;
+      text-align: right;
+      bottom:20px ;
+      color: $spyder-red;
+    }
   }
 }
 
 #main-menu{
   width: 100%;
+  box-shadow: 0 2px $spyder-red;
 }
-li.menu-text, li.menu-text a{
-  padding-bottom: 0;
-  padding-top: 0;
+#menu-logo {
+  a {
+    padding-bottom: 0px;
+    padding-top: 0;
+  }
+  span {
+    display: inline-block;
+    color: $spyder-dark-gray;
+    span {
+      display: block;
+    }
+    #logo-text {
+      font-size:2em;
+      margin-bottom:0.2em;
+    }
+    #logo-small-text {
+      font-size:0.7em;
+    }
+  }
+  img {
+    width:3.7em;
+  }
 }
-#menu-logo{
-  width:2.5em;
+
+.top-bar-right {
+  input {
+    border-radius: 0.5rem;
+  }
+}
+
+#first-body-part {
+  background-image: url('../img/body-background.png');
+  @include breakpoint(large){
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+#information-section {
+  padding:2%;
+  @include breakpoint(medium){
+    padding: 4% 12%;
+  }
+  text-align: center;
+  #information {
+    text-align:justify;
+  }
+  #download {
+    margin: 4% 0px;
+
+    #download-button {
+      border-radius: 10px;
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 1.2em;
+      font-style: italic;
+    }
+  }
+}
+
+#features-section {
+  text-align:center;
+  h2 {
+    margin-bottom:6%;
+  }
+  @include breakpoint(medium){
+    padding: 4%;
+  }
+}
+
+#title-download-section {
+  background-color: $spyder-red;
+  height: 3rem;
+  text-align: center;
+  h2 {
+    position: relative;
+    top: -1.5rem;
+    color: $spyder-white;
+    font-size: 4rem;
+  }
+}
+
+#download-section {
+  background-image: url('../img/body-background2.png'), url('../img/body-background3.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  text-align: center;
+  @include breakpoint(medium){
+    padding: 4%;
+  }
+}
+
+#donation-section {
+  background-color: $spyder-red;
+  background-image: url('../img/background_spyderweb.png');
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  @include breakpoint(medium){
+    background-position: 100%;
+  }
+  color: $spyder-white;
+  text-align:center;
+  padding:1%;
+  @include breakpoint(large){
+    padding: 1% 12%;
+  }
+  #donate-button {
+  }
+  #copy-download{
+    font-size:1.5em;
+  }
+  p {
+    font-style:italic;
+    font-size:1.2em;
+  }
+  #download-text{
+    margin: 30px 0px;
+  }
+}
+
+#users-section {
+  background-image: url('../img/body-background.png'), ;
+  background-repeat: no-repeat;
+  @include breakpoint(large){
+    background-size: cover;
+  }
+  text-align:center;
+  padding:1%;
+  h2 {
+    margin-bottom:6%;
+  }
+  @include breakpoint(medium){
+    padding: 4% 12%;
+  }
+  slide{
+    margin:10%;
+  }
 }
 
 footer{
@@ -109,7 +289,7 @@ footer{
     color: $spyder-white;
   }
   a:hover, a:focus{
-    color: lightgray;
+    color: $spyder-gray;
   }
   li{
    list-style: none;

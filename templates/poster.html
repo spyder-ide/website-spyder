@@ -1,5 +1,116 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  {{ this.body }}
+  {{ this.header }}
+<div id="first-body-part">
+  <div id="information-section">
+    <div class="row">
+      <div class="medium-6 columns" id="information">
+        Spyder is a Python development environment with a lot of features.
+
+        <p>A powerful interactive development environment for the Python language with advanced editing, interactive testing, debugging and introspection features</p>
+
+        <ul>
+          <li><a href="#">Atributte One</a></li>
+          <li><a href="#">Atributte Two</a></li>
+          <li><a href="#">Atributte Three</a></li>
+        </ul>
+      </div>
+      <div class="medium-6 columns" id="download">
+        <ul>
+          <a class="button primary" href="#" id="download-button">
+            <i class="fa fa-download fa-lg"></i>
+            Download Spyder
+          </a>
+          <p>The best IDE for scientific computing!!</p>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="features-section">
+    <h2>COMPONENTS</h2>
+    <div class="row">
+    {% for feature in this.features.blocks %}
+      <div class="medium-4 large-3 columns">
+          <img src="{{ feature.image }}">
+          <h4>{{ feature.title }}</h4>
+          <div class="description">
+            {{ feature.description }}
+          </div>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</div>
+
+  <div id="title-download-section">
+    <h2>Get started</h2>
+  </div>
+  <div id="download-section">
+    <div class="row">
+    <ul class="tabs" data-tabs id="example-tabs">
+      <li class="tabs-title is-active"><a href="#windows-tab" aria-selected="true">Windows</a></li>
+      <li class="tabs-title"><a href="#linux-tab">Linux</a></li>
+    </ul>
+
+    <div class="tabs-content" data-tabs-content="example-tabs">
+      <div class="tabs-panel is-active" id="windows-tab">
+        <div class=row>
+         <div class="medium-6 columns">
+           <h3>Spyder for windows</h3>
+           <p>Descripcion</p>
+           <ul>
+             <li>
+               Descarga
+             </li>
+             <li>
+               installa
+             </li>
+           </ul>
+          </div>
+          <div class="medium-6 columns">
+            <p>Requisitos</p>
+            <ul>
+             <li>
+               RAM
+             </li>
+             <li>
+               Procesador
+             </li>
+           </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tabs-panel" id="linux-tab">
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div id="donation-section">
+    <div class="row">
+      <div class="medium-6 columns">
+      <a href="#" id="donate-button">
+        <img alt="Support us!!" src="./static/images/donate.png">
+      </a>
+      <p id="copy-download">Believe in Spyder...Take an action!!</p>
+      </div>
+      <div class="medium-6 columns" id="download-text">
+        <p>
+          With your support we create a better world, we evolve and grow up with you.
+        </p>
+        <p>
+          Thanks!!!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="users-section">
+    <h2>OUR HAPPY CUSTOMERS</h2>
+    {{ this.users }}
+
+  </div>
+
 {% endblock %}
