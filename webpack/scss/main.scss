@@ -48,10 +48,15 @@ div.carousel-home {
       bottom: 0px;
       right: 0px;
 
-      width: 50%;
+      width: 70%;
       border-bottom: 250px solid rgba(211, 211, 211, 0.5);
       border-left: 150px solid transparent;
       @include breakpoint(medium){
+        width: 50%;
+        border-bottom: 400px solid rgba(211, 211, 211, 0.5);
+        border-left: 250px solid transparent;
+      }
+      @include breakpoint(large){
         width: 35%;
         border-bottom: 400px solid rgba(211, 211, 211, 0.5);
         border-left: 250px solid transparent;
@@ -59,14 +64,21 @@ div.carousel-home {
     }
     .description{
       position:absolute;
-      width: 45%;
-      @include breakpoint(medium){
-        width: 30%;
-      }
       right: 2rem;
       text-align: right;
       bottom:20px ;
       color: $spyder-red;
+
+
+      width: 45%;
+      @include breakpoint(medium){
+        width: 30%;
+        font-size: 1.4rem;
+      }@include breakpoint(large){
+        width: 25%;
+        font-size: 1.6rem;
+      }
+
     }
   }
 }
