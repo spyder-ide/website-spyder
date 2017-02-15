@@ -28,11 +28,13 @@ module.exports = {
       { test: /\.css$/,
         loader: ExtractTextPlugin.extract(
           'style-loader', 'css-loader!postcss-loader') },
-      { test: /\.(png|jpe?g|gif)$/,
+      { test: /\.(png|jpe?g|gif|svg)$/,
+        exclude: /node_modules.*\.svg$/,
         loader: 'file?name=/images/[name].[ext]' },
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: "url-loader?limit=10000&mimetype=application/font-woff&name=/fonts/[name].[ext]" },
       { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        exclude: /img/,
         loader: "file-loader?name=/fonts/[name].[ext]" }
     ]
   },

@@ -33,74 +33,6 @@ $slick-font-path: $slick-loader-path + 'fonts/';
 @import 'slick-carousel/slick/slick.scss';
 @import 'slick-carousel/slick/slick-theme.scss';
 
-div.page-banner {
-  margin: 15px 0;
-  background-size: cover;
-  background-position: center center;
-  background-color: $banner-bg;
-  height: 500px;
-
-  &:first-child {
-    margin-top: 0;
-  }
-}
-
-div.spyder-intro {
-  position: relative;
-  height: 80%;
-  text-align: center;
-
-  img.logo {
-    width: 100%;
-    max-width: 550px;
-    margin: 30px 0 50px -15px;
-  }
-
-  p {
-    text-align: left;
-    text-shadow: 0 0 50px #2D282A, 0 0 30px #2D282A, 0 0 2px #2D282A;
-    color: white;
-  }
-
-  a {
-    color: white;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-
-  div.install-now {
-    background: rgba(40, 30, 30, 0.8);
-
-    pre {
-      margin: 0;
-      text-align: center;
-      overflow: visible;
-      padding: 2%;
-    }
-  }
-  @include breakpoint(medium) {
-    font-size: 1.1em;
-  }
-}
-
-div.carousel-slider{
-  width: 70%;
-  margin: 0 auto;
-  .slide{
-    position:relative;
-    .description{
-      bottom: 20px;
-      left: 40px;
-      right: 40px;
-      text-align: center;
-      background-color:$spyder-gray;
-      opacity: 0.8;
-      position: absolute;
-      border-radius: 2px;
-    }
-  }
-}
-
 div.carousel-home {
   img {
         width: 100%;
@@ -116,10 +48,15 @@ div.carousel-home {
       bottom: 0px;
       right: 0px;
 
-      width: 50%;
+      width: 70%;
       border-bottom: 250px solid rgba(211, 211, 211, 0.5);
       border-left: 150px solid transparent;
       @include breakpoint(medium){
+        width: 50%;
+        border-bottom: 400px solid rgba(211, 211, 211, 0.5);
+        border-left: 250px solid transparent;
+      }
+      @include breakpoint(large){
         width: 35%;
         border-bottom: 400px solid rgba(211, 211, 211, 0.5);
         border-left: 250px solid transparent;
@@ -127,14 +64,21 @@ div.carousel-home {
     }
     .description{
       position:absolute;
-      width: 45%;
-      @include breakpoint(medium){
-        width: 30%;
-      }
       right: 2rem;
       text-align: right;
       bottom:20px ;
       color: $spyder-red;
+
+
+      width: 45%;
+      @include breakpoint(medium){
+        width: 30%;
+        font-size: 1.4rem;
+      }@include breakpoint(large){
+        width: 25%;
+        font-size: 1.6rem;
+      }
+
     }
   }
 }
@@ -174,7 +118,7 @@ div.carousel-home {
 }
 
 #first-body-part {
-  background-image: url('../img/body-background.png');
+  background-image: url('../img/body-bg.svg');
   @include breakpoint(large){
     background-repeat: no-repeat;
     background-size: cover;
@@ -188,7 +132,10 @@ div.carousel-home {
   }
   text-align: center;
   #information {
-    text-align:justify;
+    text-align: left;
+    @include breakpoint(medium){
+      text-align: justify;
+    }
   }
   #download {
     margin: 4% 0px;
@@ -216,18 +163,27 @@ div.carousel-home {
 
 #title-download-section {
   background-color: $spyder-red;
-  height: 3rem;
   text-align: center;
+
+  height: 2rem;
+  @include breakpoint(medium){
+    height: 3rem;
+  }
   h2 {
     position: relative;
-    top: -1.5rem;
     color: $spyder-white;
-    font-size: 4rem;
+
+    top: -1.2rem;
+    font-size: 2.7rem;
+    @include breakpoint(medium){
+      top: -1.5rem;
+      font-size: 4rem;
+    }
   }
 }
 
 #download-section {
-  background-image: url('../img/body-background2.png'), url('../img/body-background3.png');
+  background-image: url('../img/body-bg2.svg'), url('../img/body-bg3.svg');
   background-repeat: no-repeat, no-repeat;
   background-position: top left, bottom right;
   text-align: center;
@@ -238,7 +194,7 @@ div.carousel-home {
 
 #donation-section {
   background-color: $spyder-red;
-  background-image: url('../img/background_spyderweb.png');
+  background-image: url('../img/spyderweb-bg.svg');
   background-repeat: no-repeat;
   background-position: 100% 100%;
   @include breakpoint(medium){
@@ -252,20 +208,20 @@ div.carousel-home {
   }
   #donate-button {
   }
-  #copy-download{
+  #copy-donate{
     font-size:1.5em;
   }
   p {
     font-style:italic;
     font-size:1.2em;
   }
-  #download-text{
+  #donate-text{
     margin: 30px 0px;
   }
 }
 
 #users-section {
-  background-image: url('../img/body-background.png'), ;
+  background-image: url('../img/body-bg.svg'), ;
   background-repeat: no-repeat;
   @include breakpoint(large){
     background-size: cover;

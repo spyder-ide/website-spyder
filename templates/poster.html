@@ -6,8 +6,9 @@
   <div id="information-section">
     <div class="row">
       <div class="medium-6 columns" id="information">
-        Spyder is a Python development environment with a lot of features.
-
+        <p>
+          Spyder is a Python development environment with a lot of features.
+        </p>
         <p>A powerful interactive development environment for the Python language with advanced editing, interactive testing, debugging and introspection features</p>
 
         <ul>
@@ -92,11 +93,11 @@
     <div class="row">
       <div class="medium-6 columns">
       <a href="#" id="donate-button">
-        <img alt="Support us!!" src="./static/images/donate.png">
+        <img alt="Support us!!" src="./static/images/donate.svg">
       </a>
-      <p id="copy-download">Believe in Spyder...Take an action!!</p>
+      <p id="copy-donate">Believe in Spyder...Take an action!!</p>
       </div>
-      <div class="medium-6 columns" id="download-text">
+      <div class="medium-6 columns" id="donate-text">
         <p>
           With your support we create a better world, we evolve and grow up with you.
         </p>
@@ -109,8 +110,11 @@
 
   <div id="users-section">
     <h2>OUR HAPPY CUSTOMERS</h2>
-    {{ this.users }}
-
+    <div class="row">
+      <div class="small-11 medium-12 columns small-centered">
+      {{ this.users }}
+      </div>
+    </div>
   </div>
 
 {% endblock %}
