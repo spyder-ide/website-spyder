@@ -120,7 +120,10 @@ div.carousel-home {
   }
   text-align: center;
   #information {
-    text-align:justify;
+    text-align: left;
+    @include breakpoint(medium){
+      text-align: justify;
+    }
   }
   #download {
     margin: 4% 0px;
