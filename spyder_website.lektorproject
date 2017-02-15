@@ -1,5 +1,5 @@
 [project]
-name = Spider Website
+name = Spyder Website
 
 [packages]
 lektor-webpack-support = 0.3
