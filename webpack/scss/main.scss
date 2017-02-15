@@ -118,7 +118,7 @@ div.carousel-home {
 }
 
 #first-body-part {
-  background-image: url('../img/body-background.png');
+  background-image: url('../img/body-bg.svg');
   @include breakpoint(large){
     background-repeat: no-repeat;
     background-size: cover;
@@ -183,7 +183,7 @@ div.carousel-home {
 }
 
 #download-section {
-  background-image: url('../img/body-background2.png'), url('../img/body-background3.png');
+  background-image: url('../img/body-bg2.svg'), url('../img/body-bg3.svg');
   background-repeat: no-repeat, no-repeat;
   background-position: top left, bottom right;
   text-align: center;
@@ -194,7 +194,7 @@ div.carousel-home {
 
 #donation-section {
   background-color: $spyder-red;
-  background-image: url('../img/background_spyderweb.png');
+  background-image: url('../img/spyderweb-bg.svg');
   background-repeat: no-repeat;
   background-position: 100% 100%;
   @include breakpoint(medium){
@@ -221,7 +221,7 @@ div.carousel-home {
 }
 
 #users-section {
-  background-image: url('../img/body-background.png'), ;
+  background-image: url('../img/body-bg.svg'), ;
   background-repeat: no-repeat;
   @include breakpoint(large){
     background-size: cover;
