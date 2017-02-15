@@ -163,13 +163,22 @@ div.carousel-home {
 
 #title-download-section {
   background-color: $spyder-red;
-  height: 3rem;
   text-align: center;
+
+  height: 2rem;
+  @include breakpoint(medium){
+    height: 3rem;
+  }
   h2 {
     position: relative;
-    top: -1.5rem;
     color: $spyder-white;
-    font-size: 4rem;
+
+    top: -1.2rem;
+    font-size: 2.7rem;
+    @include breakpoint(medium){
+      top: -1.5rem;
+      font-size: 4rem;
+    }
   }
 }
 
@@ -199,14 +208,14 @@ div.carousel-home {
   }
   #donate-button {
   }
-  #copy-download{
+  #copy-donate{
     font-size:1.5em;
   }
   p {
     font-style:italic;
     font-size:1.2em;
   }
-  #download-text{
+  #donate-text{
     margin: 30px 0px;
   }
 }
