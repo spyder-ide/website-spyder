@@ -273,3 +273,51 @@ footer{
     margin-right: 1%;
   }
 }
+
+// Blog
+
+.blog-column {
+  padding: 0px;
+}
+
+.blog-banner {
+    background-color: $spyder-red;
+    height: 10rem;
+    text-align: right;
+    background-image: url('../img/spyderweb-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    .banner-text {
+      color: $spyder-dark-gray;
+      margin-right: 2rem;
+      span {
+        display: block;
+      }
+      color: $spyder-white;
+      .banner-big-text {
+        font-size: 5rem;
+      }
+      .banner-small-text {
+        font-size: 2rem;
+        margin-top: -2rem;
+        margin-right: 5rem;
+      }
+    }
+}
+
+.blog-body {
+  padding: .625rem;
+    @include breakpoint(medium){
+      padding: 2rem 4rem;
+    }
+}
+
+.sidebar-blog {
+  padding: 2rem;
+  h3 {
+    color: $spyder-red;
+  }
+  .colaborators {
+    margin-top: 20rem;
+  }
+}
