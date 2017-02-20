@@ -15,6 +15,10 @@
     {% endif %}
     on {{ post.pub_date }}
   </p>
-  {{ post.body }}
+  {% if from_index %}
+    {{ post.summary }}
+  {% else %}
+    {{ post.body }}
+  {% endif%}
   </div>
 {% endmacro %}
