@@ -1,24 +1,27 @@
 {% macro render_blog_post(post, from_index=false) %}
   <div class="blog-post">
   {% if from_index %}
-    <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
+    <h3><a href="{{ post|url }}">{{ post.title }}</a></h3>
+    <p>
+      {{ post.summary }}
+    </p>
+    <p class="meta-blog-index">
+      <span class="date">
+        Date: {{ post.pub_date.strftime('%d %B of %Y') }}
+      </span>
+      <span class="author">
+        Author: {{ post.author }}
+      </span>
+    </p>
   {% else %}
     <h2>{{ post.title }}</h2>
-  {% endif %}
-  <p class="meta">
-    written by
-    {% if post.twitter_handle %}
-      <a href="https://twitter.com/{{ post.twitter_handle
-        }}">{{ post.author or post.twitter_handle }}</a>
-    {% else %}
-      {{ post.author }}
-    {% endif %}
-    on {{ post.pub_date }}
-  </p>
-  {% if from_index %}
-    {{ post.summary }}
-  {% else %}
+    <p class="meta-blog-author">
+        Author: {{ post.author }}
+    </p>
     {{ post.body }}
-  {% endif%}
+    <p class="meta-blog-date">
+        Date: {{ post.pub_date.strftime('%d %B of %Y') }}
+    </p>
+  {% endif %}
   </div>
 {% endmacro %}
