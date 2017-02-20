@@ -321,3 +321,20 @@ footer{
     margin-top: 20rem;
   }
 }
+
+.blog-post {
+  h3, h2 {
+    text-align: center;
+  }
+  h3, h2, .meta-blog-author, .meta-blog-date, .meta-blog-index{
+    color: $spyder-red;
+  }
+  .meta-blog-date {
+    text-align: right;
+  }
+  .meta-blog-index {
+    .author {
+      float: right;
+    }
+  }
+}
