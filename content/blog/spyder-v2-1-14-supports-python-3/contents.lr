@@ -8,7 +8,7 @@ category: Spyder
 ---
 author: Pierre Raybaut
 ---
-summary: 
+summary: Spyder v2.1.14 is an experimental release of Spyder which I've been working on lately. Its purpose is to demonstrate the possibility for supporting both Python 2 and Python 3 with a single code base.
 ---
 body:
 

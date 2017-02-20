@@ -8,7 +8,7 @@ category: Spyder
 ---
 author: Pierre Raybaut
 ---
-summary: 
+summary: As one of my image processing software (mainly based on NumPy, SciPy, guidata and guiqwt) is being limited by the "2GB per application" memory limit due to the fact that I'm using a 32bit build of Python on Windows, I'm currently thinking of switching to Python 64bit. That's why I've been recently investigating the 64bit/Windows/Python ecosystem.
 ---
 body:
 
