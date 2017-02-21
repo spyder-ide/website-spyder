@@ -3,12 +3,14 @@
 {% block body %}
 <div class="row">
   <div class="medium-8 columns blog-column">
+    <a href="{{ '/blog' | url }}">
     <div class="blog-banner">
       <div class="banner-text">
         <span class="banner-big-text">Blog</span>
         <span class="banner-small-text">Spyder</span>
       </div>
     </div>
+    </a>
   <div class="blog-body">
     {% block blogbody %}
     {% endblock %}
