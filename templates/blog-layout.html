@@ -26,10 +26,12 @@
 
     <div class="colaborators">
       <h3>Colaborators</h3>
-        <div row small-up-3 medium-up-4>
-          <div class="column column-block"><a href="#"><img src="" alt="" /></a></div>
-          <div class="column column-block"><a href="#"><img src="" alt="" /></a></div>
-          <div class="column column-block"><a href="#"><img src="" alt="" /></a></div>
+        <div class="row small-up-2 medium-up-3">
+        {% for author in site.query('/authors') %}
+          <div class="column column-block">
+            <img class="author-img" src="{{ (author.path ~ '/' ~ author.image) | url}}" alt="{{ author.name }}" />
+          </div>
+        {% endfor %}
         </div>
     </div>
   </div>
