@@ -1,22 +1,37 @@
 {% macro render_blog_post(post, from_index=false) %}
+{% set author =  site.get('authors/' + post.author) %}
   <div class="blog-post">
   {% if from_index %}
-    <h3><a href="{{ post|url }}">{{ post.title }}</a></h3>
+    <div class="blog-index-header">
+    <div class="row">
+      <div class="column small-3">
+        <img class="author-img" src="{{ (author.path ~ '/' ~ author.image) | url }}" alt="{{ author.name }}" />
+      </div>
+      <div class="column small-9">
+        <h3><a href="{{ post|url }}">{{ post.title }}</a></h3>
+      </div>
+    </div>
+    </div>
     <p>
       {{ post.summary }}
     </p>
-    <p class="meta-blog-index">
-      <span class="date">
+    <div class="row meta-blog-index">
+      <div class="column medium-4 date">
         Date: {{ post.pub_date.strftime('%d %B of %Y') }}
-      </span>
-      <span class="author">
-        Author: {{ post.author }}
-      </span>
-    </p>
+      </div>
+      <div class="column medium-8 author">
+        Author: {{ author.name }}
+      </div>
+    </div>
   {% else %}
     <h2>{{ post.title }}</h2>
     <p class="meta-blog-author">
-        Author: {{ post.author }}
+      <span>
+        <img class="author-img" src="{{ (author.path ~ '/' ~ author.image) | url }}" alt="{{ author.name }}" />
+      </span>
+      <span>
+        Author: {{ author.name }}
+      </span>
     </p>
     {{ post.body }}
     <p class="meta-blog-date">

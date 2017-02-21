@@ -307,15 +307,17 @@ footer{
 
 .blog-body {
   padding: .625rem;
-    @include breakpoint(medium){
-      padding: 2rem 4rem;
-    }
+  border-right: 0.25rem solid $spyder-red;
+  @include breakpoint(medium){
+    padding: 2rem 4rem;
+  }
 }
 
 .sidebar-blog {
   padding: 2rem;
   h3 {
     color: $spyder-red;
+    text-align: center
   }
   .colaborators {
     margin-top: 20rem;
@@ -323,18 +325,40 @@ footer{
 }
 
 .blog-post {
+  margin-bottom: 2rem;
   h3, h2 {
     text-align: center;
-  }
-  h3, h2, .meta-blog-author, .meta-blog-date, .meta-blog-index{
     color: $spyder-red;
   }
-  .meta-blog-date {
-    text-align: right;
+}
+.author-img {
+  width: 5rem;
+  border-radius: 2.5rem;
+  border: 0.35rem solid;
+  padding: 0.23rem;
+}
+.meta-blog-author, .meta-blog-date, .meta-blog-index{
+  color: $spyder-red;
+  font-size: 0.9em;
+}
+
+// blog index
+.blog-index-header {
+  width: 90%;
+  margin: 0 auto 0.5rem auto;
+}
+.meta-blog-index {
+  .author {
+    text-align: center;
   }
-  .meta-blog-index {
-    .author {
-      float: right;
-    }
+}
+
+// blog post
+.meta-blog-date {
+  text-align: right;
+}
+.meta-blog-author {
+  img {
+   display: block;
   }
 }
