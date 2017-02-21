@@ -18,9 +18,9 @@
     <div class="blog-archive">
       <h3>Blog Archive</h3>
         <ul>
-          <li><a href="#">Blog One</a></li>
-          <li><a href="#">Blog Two</a></li>
-          <li><a href="#">Blog Three</a></li>
+          {% for blog in site.query('/blog').limit(7) %}
+          <li><a href="{{ blog.path }}">{{ blog.title }}</a></li>
+          {% endfor %}
         </ul>
     </div>
 
