@@ -362,3 +362,9 @@ footer{
    display: block;
   }
 }
+
+.blog-pagination{
+  .previous, .next {
+    text-align: center
+  }
+}
