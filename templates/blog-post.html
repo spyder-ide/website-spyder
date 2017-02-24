@@ -1,7 +1,7 @@
-{% extends "layout.html" %}
+{% extends "blog-layout.html" %}
 {% from "macros/blog.html" import render_blog_post %}
 {% block title %}{{ this.title }}{% endblock %}
-{% block body %}
+{% block blogbody %}
   {{ render_blog_post(this) }}
     {% if this.allow_comments %}
       <div class="comment-box">

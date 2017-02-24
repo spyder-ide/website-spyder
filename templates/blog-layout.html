@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<div class="row">
+  <div class="medium-8 columns blog-column">
+    <a href="{{ '/blog' | url }}">
+    <div class="blog-banner">
+      <div class="banner-text">
+        <span class="banner-big-text">Blog</span>
+        <span class="banner-small-text">Spyder</span>
+      </div>
+    </div>
+    </a>
+  <div class="blog-body">
+    {% block blogbody %}
+    {% endblock %}
+  </div>
+  </div>
+  <div class="medium-4 columns show-for-medium sidebar-blog" >
+    <div class="blog-archive">
+      <h3>Blog Archive</h3>
+        <ul>
+          {% for blog in site.query('/blog').limit(7) %}
+          <li><a href="{{ blog.path }}">{{ blog.title }}</a></li>
+          {% endfor %}
+        </ul>
+    </div>
+
+    <div class="colaborators">
+      <h3>Colaborators</h3>
+        <div class="row small-up-2 medium-up-3">
+        {% for author in site.query('/authors') %}
+          <div class="column column-block">
+            <img class="author-img" src="{{ (author.path ~ '/' ~ author.image) | url}}" alt="{{ author.name }}" />
+          </div>
+        {% endfor %}
+        </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
