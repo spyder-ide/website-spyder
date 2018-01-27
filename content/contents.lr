@@ -69,26 +69,4 @@ Spyder allows users to associate a given directory with a project.
 ----
 image: component.png
 ---
-users:
-#### slideshow ####
-class: carousel-users
-----
-slides:
-
-##### slide #####
-image: anaconda.png
-
-##### slide #####
-image: anaconda.png
-
-##### slide #####
-image: anaconda.png
-
-##### slide #####
-image: anaconda.png
-
-##### slide #####
-image: anaconda.png
-
-##### slide #####
-image: anaconda.png
+users: 
