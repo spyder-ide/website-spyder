@@ -16,8 +16,7 @@ description:
 
 Spyder is avalaible for Windows, Mac and Linux
 -----
-image: banner.png
-
+image: home-features-cross.svg
 ##### slide #####
 description:
 
@@ -39,7 +38,6 @@ calltips, go-to-definition, function/class browser, and horizontal/vertical
 splitting features.
 ----
 image: home-features-style.svg
-
 #### feature ####
 title: IPython Console
 ----
@@ -48,8 +46,7 @@ description:
 Spyder’s IPython Console implements a full two-process IPython session where a
 lightweight front-end interface connects to a full IPython kernel on the backend.
 ----
-image: home-features-cross.svg
-
+image: ipython.png
 #### feature ####
 title: Variable Explorer
 ----
@@ -58,37 +55,12 @@ description:
 Shows the namespace contents (i.e. all global object references) of the current
 console.
 ----
-image: component.png
-
+image: component_var.png
 #### feature ####
 title: Projects
 ----
-description:
-
-Spyder allows users to associate a given directory with a project.
+description: Spyder allows users to associate a given directory with a project.
 ----
-image: component.png
+image: component_project.png
 ---
-users:
-#### slideshow ####
-class: carousel-users
-----
-slides:
-
-##### slide #####
-image: anaconda.png
-
-##### slide #####
-image: anaconda.png
-
-##### slide #####
-image: anaconda.png
-
-##### slide #####
-image: anaconda.png
-
-##### slide #####
-image: anaconda.png
-
-##### slide #####
-image: anaconda.png
+users: 
