@@ -1,5 +1,6 @@
 [project]
 name = Spyder Website
+themes = hugo-icon
 
 [packages]
 lektor-webpack-support = 0.3
@@ -23,3 +24,31 @@ locale = es
 name = French
 url_prefix = /fr/
 locale = fr
+
+[theme_settings]
+  author = "Spyder Team"
+  description = "The Scientific PYthon Development EnviRonment"
+  content_lang = "en, es, fr"
+  hero_img = "../static/images/readme_banner.png"
+  hero_title = ""
+  hero_description = ""
+  nav_mission = "Our Mission"
+  nav_services = "Plugins"
+  nav_team = "The Team"
+  mission_enable = true
+  mission_images_enable = true
+  services_enable = true
+  service_video = false
+  service_video_url = "#"
+  services_vidlink = ""
+  services_title = "Our Plugins"
+  services_description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+  work_enable = true
+  team_enable = true
+  team_title = "Meet The Team"
+  team_description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+  footer_enable = true
+  footer_note = "<p><small>&copy; 2016 Free HTML5 Template. All Rights Reserved. <br> Designed by <a href='http://freehtml5.co/' target='_blank'>FreeHTML5.co</a> Demo Images: <a href='http://pexels.com/' target='_blank'>Pexels</a><br>Hugo port by <a href='https://github.com/SteveLane/' target='_blank'>SteveLane</a><br>Lektor port by <a href='https://github.com/dalthviz/' target='_blank'>Dalthviz</a></small></p>"
+  footer_github = "#"
+  footer_twitter = "#"
+  footer_facebook = "#"  

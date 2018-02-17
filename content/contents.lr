@@ -1,66 +1,25 @@
-_model: poster
+_model: single_layout
 ---
-title: Welcome to Spyder Website!
----
-header:
+mission:
 
-#### slideshow ####
-class: carousel-home
+#### mission ####
+image1: component_var.png
 ----
-slides:
+image2: component_project.png
+----
+image3: ipython.png
+----
+image4: home-features-cross.svg
+----
+items:
 
-##### slide #####
-description:
-
-**Work Cross Platform:**
-
-Spyder is avalaible for Windows, Mac and Linux
+##### m_item #####
+weight: 2
 -----
-image: home-features-cross.svg
-##### slide #####
-description:
-
-**Choose your Style:**
-
-Spyder is fully customizable
+name: Description
 -----
-image: banner.png
----
-features:
-
-#### feature ####
-title: Editor
-----
-description:
-
-Multi-language editor with syntax coloring, code analysis,code completion,
-calltips, go-to-definition, function/class browser, and horizontal/vertical
-splitting features.
-----
-image: home-features-style.svg
-#### feature ####
-title: IPython Console
-----
-description:
-
-Spyder’s IPython Console implements a full two-process IPython session where a
-lightweight front-end interface connects to a full IPython kernel on the backend.
-----
-image: ipython.png
-#### feature ####
-title: Variable Explorer
-----
-description:
-
-Shows the namespace contents (i.e. all global object references) of the current
-console.
-----
-image: component_var.png
-#### feature ####
-title: Projects
-----
-description: Spyder allows users to associate a given directory with a project.
-----
-image: component_project.png
----
-users: 
+title: Features
+-----
+subtitle: Sub
+-----
+description: Desc
