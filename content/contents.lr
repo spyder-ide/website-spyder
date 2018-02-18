@@ -14,12 +14,51 @@ image4: home-features-cross.svg
 items:
 
 ##### m_item #####
-weight: 2
+weight: 1
 -----
 name: Description
 -----
-title: Features
+title: Description
 -----
-subtitle: Sub
+subtitle: Spyder is a Python development environment with a lot of features.
 -----
-description: Desc
+description: A powerful interactive development environment for the Python language with advanced editing, interactive testing, debugging and introspection features
+##### m_item #####
+weight: 2
+-----
+name: Components
+-----
+title: Components
+-----
+subtitle: Basic Components
+-----
+description:
+
+* Editor
+* IPython Console
+* Varible Explorer
+* Projects
+* File Explorer
+* And more!
+##### m_item #####
+weight: 3
+-----
+name: Plugins
+-----
+title: Plugins
+-----
+subtitle: Third party plugins under development
+-----
+description:
+
+* [Spyder UnitTest](https://github.com/spyder-ide/spyder-unittest)
+* [Spyder Notebook](https://github.com/spyder-ide/spyder-notebook)
+* [Spyder Terminal](https://github.com/spyder-ide/spyder-terminal)
+* [Spyder Reports](https://github.com/spyder-ide/spyder-reports)
+* And more!
+---
+services: 
+---
+team: 
+---
+work: 
