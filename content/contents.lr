@@ -101,11 +101,43 @@ description: Spyder allows users to associate a given directory with a project.
 -----
 icon: component_project.png
 ---
-team: 
+team:
+
+#### team ####
+title: Our team
+----
+description: The people behind Spyder IDE development
+----
+members:
+
+##### member #####
+name: Daniel
+-----
+position: Core Developer
+-----
+description: Making the website
+-----
+image: anaconda.png
+-----
+facebook: 
+-----
+twitter: 
+-----
+dribble: 
+-----
+instagram: 
+-----
+github: https://github.com/dalthviz
+-----
+linkedin: 
 ---
 work:
 
 #### work ####
+title: Plugins
+----
+description: Third party plugins under development
+----
 works:
 
 ##### w_item #####
@@ -113,4 +145,4 @@ title: Spyder Notebook
 -----
 subtitle: Jupyter notebook integration with Spyder
 -----
-image: anaconda.png
+image: component_var.png

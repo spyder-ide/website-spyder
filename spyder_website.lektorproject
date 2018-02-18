@@ -46,4 +46,12 @@ locale = fr
   footer_github = "#"
   footer_twitter = "#"
   footer_facebook = "#"
+  extension_nav = true
+  ext_1_ref = "/doc"
+  ext_1_title = "Documentation"
+  ext_2_ref = "/blog"
+  ext_2_title = "Blog"
+  ext_3_ref = "/community"
+  ext_3_title = "Community"
+  
   gitter_room = "spyder-ide/public"
