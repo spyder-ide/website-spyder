@@ -103,4 +103,14 @@ icon: component_project.png
 ---
 team: 
 ---
-work: 
+work:
+
+#### work ####
+works:
+
+##### w_item #####
+title: Spyder Notebook
+-----
+subtitle: Jupyter notebook integration with Spyder
+-----
+image: anaconda.png
