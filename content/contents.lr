@@ -57,7 +57,49 @@ description:
 * [Spyder Reports](https://github.com/spyder-ide/spyder-reports)
 * And more!
 ---
-services: 
+services:
+
+#### services ####
+title: Components
+----
+description: Here you can see the main components of Spyder IDE
+----
+services:
+
+##### service #####
+title: Editor
+-----
+description:
+
+Multi-language editor with syntax coloring, code analysis,code completion,
+calltips, go-to-definition, function/class browser, and horizontal/vertical
+splitting features.
+-----
+icon: home-features-style.svg
+##### service #####
+title: IPython Console
+-----
+description:
+
+Spyder’s IPython Console implements a full two-process IPython session where a
+lightweight front-end interface connects to a full IPython kernel on the backend.
+-----
+icon: ipython.png
+##### service #####
+title: Variable Explorer
+-----
+description:
+
+Shows the namespace contents (i.e. all global object references) of the current
+console. Also you can interact with the variables, edit them and see this changes reflected in the actual variable!
+-----
+icon: component_var.png
+##### service #####
+title: Projects
+-----
+description: Spyder allows users to associate a given directory with a project.
+-----
+icon: component_project.png
 ---
 team: 
 ---
