@@ -38,7 +38,6 @@ locale = fr
   mission_enable = true
   mission_images_enable = true
   services_enable = true
-  service_video = true
   service_video_url = "https://www.youtube.com/watch?v=Hf07PmwQwPQ"
   work_enable = true
   team_enable = true
