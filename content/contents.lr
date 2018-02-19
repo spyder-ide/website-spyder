@@ -26,20 +26,13 @@ description: A powerful interactive development environment for the Python langu
 ##### m_item #####
 weight: 2
 -----
-name: Components
+name: Download
 -----
-title: Components
+title: Download
 -----
-subtitle: Basic Components
+subtitle: Download the source code of Spyder IDE
 -----
-description:
-
-* Editor
-* IPython Console
-* Varible Explorer
-* Projects
-* File Explorer
-* And more!
+description: [Download](https://github.com/spyder-ide/spyder)
 ##### m_item #####
 weight: 3
 -----
@@ -111,11 +104,71 @@ description: The people behind Spyder IDE development
 members:
 
 ##### member #####
-name: Daniel
+name: Carlos Córdoba
+-----
+position: Core Developer/Maintainer
+-----
+description: 
+-----
+image: carlos_cordoba.jpeg
+-----
+facebook: 
+-----
+twitter: 
+-----
+dribble: 
+-----
+instagram: 
+-----
+github: https://github.com/ccordoba12
+-----
+linkedin: 
+##### member #####
+name: Jitse Niesen
+-----
+position: Core developer
+-----
+description: 
+-----
+image: jitse_niesen.jpeg
+-----
+facebook: 
+-----
+twitter: 
+-----
+dribble: 
+-----
+instagram: 
+-----
+github: https://github.com/jitseniesen
+-----
+linkedin: 
+##### member #####
+name: Gonzalo Peña-Castellanos
 -----
 position: Core Developer
 -----
-description: Making the website
+description: 
+-----
+image: goanpeca.jpg
+-----
+facebook: 
+-----
+twitter: 
+-----
+dribble: 
+-----
+instagram: 
+-----
+github: https://github.com/goanpeca
+-----
+linkedin: 
+##### member #####
+name: Daniel Althviz
+-----
+position: Core Developer
+-----
+description: 
 -----
 image: dalthviz.jpg
 -----
@@ -128,6 +181,86 @@ dribble:
 instagram: 
 -----
 github: https://github.com/dalthviz
+-----
+linkedin: 
+##### member #####
+name: Edgar Andrés Margffoy
+-----
+position: Core Developer
+-----
+description: 
+-----
+image: andfoy.jpg
+-----
+facebook: 
+-----
+twitter: 
+-----
+dribble: 
+-----
+instagram: 
+-----
+github: https://github.com/andfoy
+-----
+linkedin: 
+##### member #####
+name: Rafael Laverde
+-----
+position: Core Developer
+-----
+description: 
+-----
+image: rlaverde.jpg
+-----
+facebook: 
+-----
+twitter: 
+-----
+dribble: 
+-----
+instagram: 
+-----
+github: https://github.com/rlaverde
+-----
+linkedin: 
+##### member #####
+name: Jean-Sébastien Gosselin
+-----
+position: Junior Developer
+-----
+description: 
+-----
+image: jnsebgosselin.jpg
+-----
+facebook: 
+-----
+twitter: 
+-----
+dribble: 
+-----
+instagram: 
+-----
+github: https://github.com/jnsebgosselin
+-----
+linkedin: 
+##### member #####
+name: Prikers
+-----
+position: Junior Developer
+-----
+description: 
+-----
+image: prikers.jpg
+-----
+facebook: 
+-----
+twitter: 
+-----
+dribble: 
+-----
+instagram: 
+-----
+github: https://github.com/Prikers
 -----
 linkedin: 
 ---
@@ -146,3 +279,27 @@ title: Spyder Notebook
 subtitle: Jupyter notebook integration with Spyder
 -----
 image: example.gif
+##### w_item #####
+title: Spyder Terminal
+-----
+subtitle:
+
+Run system terminals inside Spyder. Works on Linux, macOS and Windows. 
+-----
+image: example_terminal.gif
+##### w_item #####
+title: Spyder UnitTest
+-----
+subtitle:
+
+A plugin for Spyder to run tests and view the results 
+-----
+image: unittest_screenshot.png
+##### w_item #####
+title: Spyder Reports
+-----
+subtitle:
+
+Spyder plugin to render Markdown reports using Pweave as a backend 
+-----
+image: reports_screenshot.png

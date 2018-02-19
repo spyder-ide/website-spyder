@@ -46,12 +46,12 @@ locale = fr
   footer_github = "https://github.com/spyder-ide/spyder"
   footer_twitter = "https://twitter.com/spyder_ide"
   footer_facebook = "https://www.facebook.com/SpyderIDE/"
-  extension_nav = true
+  extension_nav = 
   ext_1_ref = "/docs"
   ext_1_title = "Documentation"
   ext_2_ref = "/blog"
   ext_2_title = "Blog"
   ext_3_ref = "/community"
   ext_3_title = "Community"
-  
+  opencollective = spyder
   gitter_room = "spyder-ide/public"
