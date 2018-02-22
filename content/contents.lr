@@ -39,7 +39,7 @@ subtitle: Download the source code of Spyder IDE
 description:
 
 
-<a href="https://github.com/spyder-ide/spyder" class="btn-danger btn-lg">Download <span class="glyphicon glyphicon-download"></span>
+<a href="https://github.com/spyder-ide/spyder/releases/" class="btn-danger btn-lg">Download <span class="glyphicon glyphicon-download"></span>
 </a>
 
 For a detailed guide to installing Spyder, please refer to our [installation instructions.](http://pythonhosted.org/spyder/installation.html)
