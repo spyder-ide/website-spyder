@@ -1,66 +1,243 @@
-_model: poster
+_model: single_layout
 ---
-title: Welcome to Spyder Website!
----
-header:
+mission:
 
-#### slideshow ####
-class: carousel-home
+#### mission ####
+image1: component_var.png
 ----
-slides:
+image2: component_project.png
+----
+image3: ipython.png
+----
+image4: home-features-cross.svg
+----
+items:
 
-##### slide #####
+##### m_item #####
+weight: 1
+-----
+name: Description
+-----
+title: Description
+-----
+subtitle: Spyder is a Python development environment with a lot of features.
+-----
 description:
 
-**Work Cross Platform:**
+Spyder is a Python development environment with many features for research, data analysis, and scientific package creation: **Editor**, **Interactive console**, **Documentation viewer**, **Variable explorer**, **Find in files**, **File explorer**, **History log**
 
-Spyder is avalaible for Windows, Mac and Linux
+Spyder may also be used as a PyQt5/PyQt4 extension library (module spyder). For example, the Python interactive shell widget used in Spyder may be embedded in your own PyQt5/PyQt4 application.
+##### m_item #####
+weight: 2
 -----
-image: home-features-cross.svg
-##### slide #####
+name: Download
+-----
+title: Download
+-----
+subtitle: Download the source code of Spyder IDE
+-----
 description:
 
-**Choose your Style:**
 
-Spyder is fully customizable
------
-image: banner.png
+<a href="https://github.com/spyder-ide/spyder/releases/" class="btn-danger btn-lg">Download <span class="glyphicon glyphicon-download"></span>
+</a>
+
+For a detailed guide to installing Spyder, please refer to our [installation instructions.](http://pythonhosted.org/spyder/installation.html)
+
+The easiest way to install Spyder on any of our supported platforms is to download it as part of the **Anaconda distribution**, and use the `conda` package and environment manager to keep it and your other packages installed and up to date.
+
+If in doubt, you should always install Spyder via this method to avoid unexpected issues we are unable to help you with; it generally has the least likelihood of potential pitfalls for non-experts, and we may be able to provide limited assistance if you do run into trouble.
 ---
-features:
+services:
 
-#### feature ####
+#### services ####
+title: Components
+----
+description: Here you can see the main components of Spyder IDE
+----
+services:
+
+##### service #####
 title: Editor
-----
+-----
 description:
 
 Multi-language editor with syntax coloring, code analysis,code completion,
 calltips, go-to-definition, function/class browser, and horizontal/vertical
 splitting features.
-----
-image: home-features-style.svg
-#### feature ####
+-----
+icon: home-features-style.svg
+##### service #####
 title: IPython Console
-----
+-----
 description:
 
 Spyder’s IPython Console implements a full two-process IPython session where a
 lightweight front-end interface connects to a full IPython kernel on the backend.
-----
-image: ipython.png
-#### feature ####
+-----
+icon: ipython.png
+##### service #####
 title: Variable Explorer
-----
+-----
 description:
 
 Shows the namespace contents (i.e. all global object references) of the current
-console.
-----
-image: component_var.png
-#### feature ####
+console. Also you can interact with the variables, edit them and see this changes reflected in the actual variable!
+-----
+icon: component_var.png
+##### service #####
 title: Projects
-----
+-----
 description: Spyder allows users to associate a given directory with a project.
-----
-image: component_project.png
+-----
+icon: component_project.png
 ---
-users: 
+team:
+
+#### team ####
+title: Our team
+----
+description: The people behind Spyder IDE development
+----
+members:
+
+##### member #####
+name: Carlos Córdoba
+-----
+position: Core Developer/Maintainer
+-----
+description: 
+-----
+image: carlos_cordoba.jpeg
+-----
+facebook: 
+-----
+twitter: 
+-----
+dribble: 
+-----
+instagram: 
+-----
+github: https://github.com/ccordoba12
+-----
+linkedin: 
+##### member #####
+name: Gonzalo Peña-Castellanos
+-----
+position: Core Developer
+-----
+description: 
+-----
+image: goanpeca.jpg
+-----
+facebook: 
+-----
+twitter: 
+-----
+dribble: 
+-----
+instagram: 
+-----
+github: https://github.com/goanpeca
+-----
+linkedin: 
+##### member #####
+name: Daniel Althviz
+-----
+position: Core Developer
+-----
+description: 
+-----
+image: dalthviz.jpg
+-----
+facebook: 
+-----
+twitter: 
+-----
+dribble: 
+-----
+instagram: 
+-----
+github: https://github.com/dalthviz
+-----
+linkedin: 
+##### member #####
+name: Edgar Andrés Margffoy
+-----
+position: Core Developer
+-----
+description: 
+-----
+image: andfoy.jpg
+-----
+facebook: 
+-----
+twitter: 
+-----
+dribble: 
+-----
+instagram: 
+-----
+github: https://github.com/andfoy
+-----
+linkedin: 
+##### member #####
+name: Rafael Laverde
+-----
+position: Core Developer
+-----
+description: 
+-----
+image: rlaverde.jpg
+-----
+facebook: 
+-----
+twitter: 
+-----
+dribble: 
+-----
+instagram: 
+-----
+github: https://github.com/rlaverde
+-----
+linkedin: 
+---
+work:
+
+#### work ####
+title: Plugins
+----
+description: Third party plugins under development
+----
+works:
+
+##### w_item #####
+title: Spyder Notebook
+-----
+subtitle: Jupyter notebook integration with Spyder
+-----
+image: example.gif
+##### w_item #####
+title: Spyder Terminal
+-----
+subtitle:
+
+Run system terminals inside Spyder. Works on Linux, macOS and Windows. 
+-----
+image: example_terminal.gif
+##### w_item #####
+title: Spyder UnitTest
+-----
+subtitle:
+
+A plugin for Spyder to run tests and view the results 
+-----
+image: unittest_screenshot.png
+##### w_item #####
+title: Spyder Reports
+-----
+subtitle:
+
+Spyder plugin to render Markdown reports using Pweave as a backend 
+-----
+image: reports_screenshot.png
