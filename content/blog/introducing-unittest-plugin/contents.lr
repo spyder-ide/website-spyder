@@ -1,0 +1,120 @@
+title: Introducing the unittest plugin
+---
+pub_date: 2018-02-23 00:00
+---
+tags: unittest
+---
+category: Spyder
+---
+author: jitseniesen
+---
+summary: The Spyder unittest plugin allows you to run tests within Spyder and view the results. This post introduces the unittest plugin by means of an example.
+---
+body:
+
+The [Spyder unittest plugin](https://github.com/spyder-ide/spyder-unittest) allows you to run tests within Spyder and view the results. This post introduces the unittest plugin (and testing in Python) by means of an example.
+
+There are various methods for writing tests in Python. I am writing from my preferences: I like to use the [py.test framework](https://pytest.org/) and to write the tests in a separate file from the code which is being tested. Other methods are also supported by the plugin, but they won't be mentioned in this post.
+
+
+### Installing the plugin
+
+If you use the Anaconda distribution (as we recommend), then you can install the Spyder unittest plugin with the command
+
+```
+conda install -c spyder-ide spyder-unittest
+```
+
+This will install the plugin and all its mandatory dependencies (including Spyder itself if necessary). The `-c` command option instructs `conda` to use a custom channel called `spyder-ide` which is run by the Spyder developers, because the plugin is not part of the default channel.
+
+Since we will be using the py.test testing framework, you also need to install py.test:
+
+```
+conda install py.test
+```
+
+This post is written using Python 3.6.4, Spyder 3.2.6, Spyder-unittest 0.3.0 and py.test 3.3.2.
+
+
+### Creating a project
+
+I will be using one file with the code to be tested and one file with the test code. Let us start by creating a project which will contain these files. In the `Projects` menu, click on `New Project ...`. Give the name of the project (in my example, `prime_example`). Under `Location`, select the directory under which you want to store the project. Click `Create`.
+
+!["Create new project" window](new-project.png)
+
+
+### Writing code to be tested
+
+Create a Python file `primes.py` with the following function, which checks whether a number is prime:
+
+```python
+def is_prime(number):
+    """Return True if `number` is prime."""
+    for element in range(2, number):
+        if number % element == 0:
+            return False
+    return True
+```
+
+This example is taken from the blog post [Improve Your Python: Understanding Unit Testing](https://jeffknupp.com/blog/2013/12/09/improve-your-python-understanding-unit-testing/) by Jeff Knupp.
+
+
+### Writing the tests
+
+To test our `is_prime` function, we will write two tests. First we check that 5 is considered a prime, and then that 4 is not considered a prime. These tests can be written as follows:
+
+```python
+from primes import is_prime
+
+def test_five_is_prime():
+    assert is_prime(5) == True
+    
+def test_four_is_not_prime():
+    assert is_prime(4) == False
+```
+
+We will put this code in a file `test_primes.py`. It is important that the name of the file containing the tests starts with the prefix `test_`, and that the function names with the tests also start with this prefix. This allows py.test to find the tests automatically.
+
+In Spyder, the project now looks as follows:
+
+![Spyder window with code](code.png)
+
+
+### Running the tests
+
+Now comes the part where we actually use the plugin. In the `Run` menu, select `Run unit tests`. If you do not have this menu item, then the plugin is not installed; refer to the installation instructions above.
+
+A window appears in which you configure the test run. Select `py.test` as test framework. The project directory is automatically selected as the directory from which to run tests. This is one of the advantages of using a project; another advantage is that Spyder will remember which testing framework to use for each project.
+
+!["Configure tests" window](test-config.png)
+
+Press the `OK` button to run the tests. The results will appear in a new window pane called "Unit testing":
+
+![Test results in Spyder windows](test-results.png)
+
+As you see, both tests are passed. This means that our function correctly identifies 5 to be a prime number and 4 to be not prime.
+
+
+### A failing test
+
+Unfortunately, our function `is_prime` has a bug. The number 1 is not considered a prime. However, if we add a test for this, then we find that `is_prime(1)` in fact returns `True`. Concretely, add the following code to `test_primes.py`:
+
+```python
+def test_one_is_not_prime():
+    assert is_prime(1) == False
+```
+
+Now, run the tests again by clicking on `Run unit tests` in the `Run` menu. Spyder remembers the configuration so you are not asked for it again. This time, the results are:
+
+![Test results in Spyder windows](test-results2.png)
+
+Our new test fails. The details clarify that `is_prime(1)` returns `True`, while the assert in the test function claims that it should return `False`.
+
+
+### Where to go from here
+
+This concludes the example. You should be able to use the plugin now. For example, try fixing the bug so that the number 1 is correctly identified as not a prime and run the tests again to check your bug fix.
+
+The plugin supports not only the `py.test` framework, but also `nose` and the `unittest` module which is a part of the standard Python library. You do not need to use projects if you don't want do.
+
+The plugin is still fairly new (as indicated by its version number). I look forward to your comments. Please send your ideas, bug reports and pull requests to the [spyder-unittest](https://github.com/spyder-ide/spyder-unittest) repo on Github.
