@@ -36,7 +36,7 @@ locale = fr
   nav_services = "Components"
   nav_team = "The Team"
   mission_enable = true
-  mission_images_enable = true
+  mission_images_enable = 
   services_enable = true
   service_video_url = "https://www.youtube.com/watch?v=Hf07PmwQwPQ"
   work_enable = true

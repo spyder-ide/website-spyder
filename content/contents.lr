@@ -217,6 +217,8 @@ title: Spyder Notebook
 subtitle: Jupyter notebook integration with Spyder
 -----
 image: example.gif
+-----
+url: https://github.com/spyder-ide/spyder-notebook
 ##### w_item #####
 title: Spyder Terminal
 -----
@@ -225,6 +227,8 @@ subtitle:
 Run system terminals inside Spyder. Works on Linux, macOS and Windows. 
 -----
 image: example_terminal.gif
+-----
+url: https://github.com/spyder-ide/spyder-terminal
 ##### w_item #####
 title: Spyder UnitTest
 -----
@@ -233,6 +237,8 @@ subtitle:
 A plugin for Spyder to run tests and view the results 
 -----
 image: unittest_screenshot.png
+-----
+url: https://github.com/spyder-ide/spyder-unittest
 ##### w_item #####
 title: Spyder Reports
 -----
@@ -241,3 +247,5 @@ subtitle:
 Spyder plugin to render Markdown reports using Pweave as a backend 
 -----
 image: reports_screenshot.png
+-----
+url: https://github.com/spyder-ide/spyder-reports
