@@ -12,7 +12,7 @@ summary: We introduce the Spyder unittest plugin, which can run tests and displa
 ---
 body:
 
-Automatic testing can increase the quality of your code. This is especially true with a dynamic language such as Python, where a typo may only be noticed when that particular code path is executed. The new [Spyder unittest plugin](https://github.com/spyder-ide/spyder-unittest) lets you run tests and view the results, all within the IDE. Here, I'll demonstrate what it can do by way of a real-world example.
+Automatic testing can increase the quality of your code. This is especially true of dynamic languages like Python, where a typo may only be noticed when that particular code path is executed. The new [Spyder unittest plugin](https://github.com/spyder-ide/spyder-unittest) lets you run tests and view the results, all within the IDE. Here, I'll demonstrate what it can do by way of a real-world example.
 
 There are numerous unit testing frameworks available for Python, of which the plugin supports some of the most important ones. However, I'm using my favorite here, [pytest](https://pytest.org/). I prefer to write the tests in a separate file from the code, so I'll do that here too.
 
