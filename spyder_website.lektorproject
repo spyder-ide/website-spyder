@@ -35,6 +35,7 @@ locale = fr
   nav_mission = "Overview"
   nav_services = "Components"
   nav_team = "The Team"
+  nav_work = "Plugins"
   mission_enable = true
   mission_images_enable = 
   services_enable = true
