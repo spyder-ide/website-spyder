@@ -14,7 +14,7 @@ body:
 
 Automatic testing can increase the quality of your code. This is especially true of dynamic languages like Python, where a typo may only be noticed when that particular code path is executed. The new [Spyder unittest plugin](https://github.com/spyder-ide/spyder-unittest) lets you run tests and view the results, all within the IDE. Here, I'll demonstrate what it can do by way of a real-world example.
 
-There are numerous unit testing frameworks available for Python, of which the plugin supports several of the most prominent. However, I'm using my favorite here, [pytest](https://pytest.org/). I prefer to write the tests in a separate file from the code, so that's what I'll do that here.
+There are numerous unit testing frameworks available for Python, of which the plugin supports several of the most prominent. However, I'm using my favorite here, [pytest](https://pytest.org/). I prefer to write the tests in a separate file from the code, so that's what I'll do here.
 
 
 ### Installing the plugin
@@ -82,7 +82,7 @@ In Spyder, the project now looks as follows:
 
 ### Running the tests
 
-Now comes the fun part where we actually get to use the plugin. In the `Run` menu, select `Run unit tests`. If you do not see this menu item, then the plugin is not installed; refer to the installation instructions above.
+Now comes the fun part, where we actually get to use the plugin. In the `Run` menu, select `Run unit tests`. If you do not see this menu item, then the plugin is not installed; refer to the installation instructions above.
 
 A window appears in which to configure the test run. One of the advantages of using a project is that it is automatically selected as the directory in which to find tests (another advantage is that Spyder will remember the testing configuration). So the only thing we need to do is select the test framework, which is `pytest`.
 
