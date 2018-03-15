@@ -5887,7 +5887,7 @@ screen and (min-width:40em) {
 .author-img {
     width: 5rem;
     border-radius: 2.5rem;
-    border: .35rem solid;
+    border: .35rem;
     padding: .23rem
 }
 
