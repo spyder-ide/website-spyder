@@ -2966,7 +2966,7 @@ screen and (min-width:64em) {
 }
 
 .menu {
-    margin: 0;
+    margin: 5px;
     list-style-type: none
 }
 
