@@ -5,27 +5,29 @@
   <link rel="icon" href="{{ '/static/images/favicon.png'| url }}" type="image/png" />
   <link rel="shortcut icon" href="./favicon.ico" />
     <!-- Animate.css -->
-  <link rel="stylesheet" href="/static/css/animate.css">
+  <link rel="stylesheet" href="{{ '/static/css/animate.css'|asseturl }}">
   <!-- Icomoon Icon Fonts-->
-  <link rel="stylesheet" href="/static/css/icomoon.css">
+  <link rel="stylesheet" href="{{ '/static/css/icomoon.css'|asseturl }}">
   <!-- Simple Line Icons -->
-  <link rel="stylesheet" href="/static/css/simple-line-icons.css">
+  <link rel="stylesheet" href="{{ '/static/css/simple-line-icons.css'|asseturl }}">
   <!-- Magnific Popup -->
-  <link rel="stylesheet" href="/static/css/magnific-popup.css">
-  <link rel="stylesheet" href="/static/css/style.css">
-  <link rel="stylesheet" href="{{ '/static/css/styles.css'|asseturl }}"> 
+  <link rel="stylesheet" href="{{ '/static/css/magnific-popup.css'|asseturl }}">
+  
+  <link rel="stylesheet" href="{{ '/static/css/bootstrap.css'|asseturl }}">
+  <link rel="stylesheet" href="{{ '/static/css/style.css'|asseturl }}">
+  <link rel="stylesheet" href="{{ '/static/css/styles.css'|asseturl }}">
+  
   
   <title>{% block title %}Welcome{% endblock %} — Spyder Website</title>
 </head>
 <body>
-  <header>
-    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle></button>
-      <div class="title-bar-title">Menu</div>
-    </div>
-
-    <div class="top-bar-container" data-sticky-container>
-      <nav class="top-bar" id="main-menu" data-sticky data-options="marginTop: 0;">
+  
+    <div class="fh5co-page">
+        <div id="fh5co-container">
+  <div class="js-sticky">
+    <div class="fh5co-main-nav navbar fixed-top">
+      <div class="container">
+      <div class="fh5co-menu-1">
         <div class="top-bar-left">
           <ul class="dropdown menu" data-dropdown-menu>
             <li id="menu-logo">
@@ -42,26 +44,18 @@
           </ul>
         </div>
 
-        <div class="top-bar-right">
-          <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
-            {% set data_nav = bag('main-nav', this.alt) %}
+          {% set data_nav = bag('main-nav', this.alt) %}
             {% for path, label in data_nav.items() %}
-            <li
-              {% if (this.is_child_of(path) and path != '/') or this._path == path == '/'  %}
-                class="active"
-              {% endif%}
-              >
-              <a href="{{ path|url }}">{{ label }}</a>
-            </li>
+              <a class="pull-right" href="{{ path|url }}" onclick="location.href='{{path|url}}';">{{ label }}</a>
             {% endfor %}
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <div>
-    {% block body %}{% endblock %}
+     
+		</div>
   </div>
+
+</div>
+
+</div>     
+    {% block body %}{% endblock %}
       <div id="fh5co-footer">
           <div class="container">
             {%if config.THEME_SETTINGS.opencollective %}
@@ -97,7 +91,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>        
+      </div>
+    </div>
     {% include "partials/js.html" %}
-    <script type=text/javascript src="{{ '/static/js/app.js'|asseturl }}" charset="utf-8"></script>
+    <script type="text/javascript" src="{{ '/static/js/app.js'|asseturl }}" charset="utf-8"></script>
 </body>

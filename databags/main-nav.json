@@ -1,20 +1,20 @@
 {
     "en": {
-        "/": "Home",
+        "/community": "Community",
         "/docs": "Documentation",
         "/blog": "Blog",
-        "/community": "Community"
+        "/": "Home"
     },
     "es": {
-        "/": "Inicio",
+        "/community": "Comunidad",
         "/docs": "Documentación",
         "/blog": "Blog",
-        "/community": "Comunidad"
+        "/": "Inicio"
     },
     "fr": {
-        "/": "Accueil",
+        "/community": "Communauté",
         "/docs": "Documentation",
         "/blog": "Blog",
-        "/community": "Communauté"
+        "/": "Accueil"
     }
 }

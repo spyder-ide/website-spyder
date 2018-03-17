@@ -1,8 +1,12 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  <div class="center">
+  <div id="fh5co-about" data-section="blog">
+      <div>
+          <div class="center">
     {% block blogbody %}
     {% endblock %}
+          </div>
+      </div>
   </div>
 {% endblock %}

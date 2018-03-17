@@ -261,10 +261,6 @@ body {
     margin: 0;
     padding: 0;
     background: #fefefe;
-    font-family: Helvetica, sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #333;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
@@ -1576,18 +1572,6 @@ small {
     color:#949494;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: inherit;
-    text-rendering: optimizeLegibility
-}
 
 h1 small,
 h2 small,
@@ -1599,50 +1583,6 @@ h6 small {
     color: #cacaca
 }
 
-h1 {
-    font-size: 1.5rem
-}
-
-h1,
-h2 {
-    line-height: 1.4;
-    margin-top: 0;
-    margin-bottom: .5rem
-}
-
-h2 {
-    font-size: 1.25rem
-}
-
-h3 {
-    font-size: 1.1875rem
-}
-
-h3,
-h4 {
-    line-height: 1.4;
-    margin-top: 0;
-    margin-bottom: .5rem
-}
-
-h4 {
-    font-size: 1.125rem
-}
-
-h5 {
-    font-size: 1.0625rem
-}
-
-h5,
-h6 {
-    line-height: 1.4;
-    margin-top: 0;
-    margin-bottom: .5rem
-}
-
-h6 {
-    font-size: 1rem
-}
 
 @media print,
 screen and (min-width:40em) {
@@ -1669,7 +1609,6 @@ screen and (min-width:40em) {
 a {
     line-height: inherit;
     color: #000000;
-    text-decoration: none;
     cursor: pointer
 }
 
