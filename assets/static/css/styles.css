@@ -5524,7 +5524,8 @@ screen and (min-width:64em) {
 
 #menu-logo span #logo-text {
     font-size: 2em;
-    margin-bottom: .2em
+    margin-bottom: .2em;
+    font-family: Candara;
 }
 
 #menu-logo span #logo-small-text {
