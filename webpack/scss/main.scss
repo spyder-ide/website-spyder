@@ -1,5 +1,5 @@
 // Spyder Theme colors
-$spyder-red: #450200;
+$spyder-red: #000000;
 $spyder-gray: lightgray;
 $spyder-dark-gray: #333;
 $spyder-white: white;
@@ -325,13 +325,17 @@ footer{
 
 .blog-post {
   margin-bottom: 2rem;
-  h3, h2 {
+  h3{ 
+    text-align: left;
+    color: $spyder-red;
+  }
+  h2 {
     text-align: center;
     color: $spyder-red;
   }
 }
 .author-img {
-  width: 5rem;
+  width: 3.5rem;
   border-radius: 2.5rem;
   border: 0.35rem solid;
   padding: 0.23rem;
@@ -344,7 +348,7 @@ footer{
 // blog index
 .blog-index-header {
   width: 90%;
-  margin: 0 auto 0.5rem auto;
+  margin: 0;
 }
 .meta-blog-index {
   .author {
