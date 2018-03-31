@@ -4,39 +4,42 @@
   {% if from_index %}
     <div class="blog-index-header">
     <div class="row">
-      <div class="column small-3">
+      <div class="column small-1">
         <img class="author-img" src="{{ (author.path ~ '/' ~ author.image) | url }}" alt="{{ author.name }}" />
       </div>
-      <div class="column small-9">
+        <div class="meta-blog-index">
+            <p>
+              {{ author.name }}<br>
+              <span class="small">
+            {{ post.pub_date.strftime('%d %B of %Y') }}</span>
+              </p>
+        </div>        
+    </div>
+      <div class="row">
         <h3><a href="{{ post|url }}">{{ post.title }}</a></h3>
       </div>
     </div>
-    </div>
     <p>
-      {{ post.summary }}
+      {{ post.summary }}      
     </p>
-    <div class="row meta-blog-index">
-      <div class="column medium-4 date">
-        Date: {{ post.pub_date.strftime('%d %B of %Y') }}
-      </div>
-      <div class="column medium-8 author">
-        Author: {{ author.name }}
-      </div>
-    </div>
+    <p class="pull-right">
+     <a href="{{ post|url }}">Read more...</a>
+    </p>
+  </br>
   {% else %}
-    <h2>{{ post.title }}</h2>
-    <p class="meta-blog-author">
-      <span>
+  <div class="row">
+    <div class="meta-blog-author column small-1">
         <img class="author-img" src="{{ (author.path ~ '/' ~ author.image) | url }}" alt="{{ author.name }}" />
-      </span>
-      <span>
-        Author: {{ author.name }}
-      </span>
-    </p>
+    </div>    
+    <div class="meta-blog-index">
+        <p>
+          {{ author.name }}<br>
+          <span class="small">{{ post.pub_date.strftime('%d %B of %Y') }}</span> 
+        </p>
+    </div>
+  </div>
+    <h3>{{ post.title }}</h3>
     {{ post.body }}
-    <p class="meta-blog-date">
-        Date: {{ post.pub_date.strftime('%d %B of %Y') }}
-    </p>
   {% endif %}
   </div>
 {% endmacro %}

@@ -4,118 +4,95 @@
   <meta name="viewport" content="width=device-width" />
   <link rel="icon" href="{{ '/static/images/favicon.png'| url }}" type="image/png" />
   <link rel="shortcut icon" href="./favicon.ico" />
+    <!-- Animate.css -->
+  <link rel="stylesheet" href="{{ '/static/css/animate.css'|asseturl }}">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="{{ '/static/css/icomoon.css'|asseturl }}">
+  <!-- Simple Line Icons -->
+  <link rel="stylesheet" href="{{ '/static/css/simple-line-icons.css'|asseturl }}">
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="{{ '/static/css/magnific-popup.css'|asseturl }}">
+  
+  <link rel="stylesheet" href="{{ '/static/css/bootstrap.css'|asseturl }}">
+  <link rel="stylesheet" href="{{ '/static/css/style.css'|asseturl }}">
   <link rel="stylesheet" href="{{ '/static/css/styles.css'|asseturl }}">
+  
+  
   <title>{% block title %}Welcome{% endblock %} — Spyder Website</title>
 </head>
 <body>
-  <header>
-    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle></button>
-      <div class="title-bar-title">Menu</div>
-    </div>
-
-    <div class="top-bar-container" data-sticky-container>
-      <nav class="top-bar" id="main-menu" data-sticky data-options="marginTop: 0;">
-        <div class="top-bar-left">
+  
+    <div class="fh5co-page">
+        <div id="fh5co-container">
+  <div class="js-sticky">
+    <div class="fh5co-main-nav navbar fixed-top">
+      <div class="container">
+      <div class="fh5co-menu-1">
+        <div class="pull-left">
           <ul class="dropdown menu" data-dropdown-menu>
             <li id="menu-logo">
-              <a href="{{ '/'|url }}">
+              <p></p>
+              <a href="{{ '/'|url }}" onclick="location.href='{{'/'|url}}';">
                 <img src="{{ '/static/images/spyder-logo.svg' | url}}">
-                <span  >
-                  <span id="logo-text">Spyder IDE</span>
-                  <span id="logo-small-text" class="show-for-medium">
-                    The Scientific PYthon Development EnviRonment
-                  </span>
+                <span>
+                  <span id="logo-text">Spyder {% block section %}{% endblock %}</span>                  
                 </span>
               </a>
+              <p></p>
             </li>
           </ul>
         </div>
 
-        <div class="top-bar-right">
-          <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
-            {% set data_nav = bag('main-nav', this.alt) %}
+          {% set data_nav = bag('main-nav', this.alt) %}
             {% for path, label in data_nav.items() %}
-            <li
-              {% if (this.is_child_of(path) and path != '/') or this._path == path == '/'  %}
-                class="active"
-              {% endif%}
-              >
-              <a href="{{ path|url }}">{{ label }}</a>
-            </li>
+              <a class="pull-right" href="{{ path|url }}" onclick="location.href='{{path|url}}';" data-nav-section="{{label}}">{{ label }}</a>
             {% endfor %}
-            <li>
-                <a href="#"><i class="fa fa-search fa-lg"></i></a>
-            </li>
-            <li><input type="search" placeholder="Search"></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <div>
-    {% block body %}{% endblock %}
+     
+		</div>
   </div>
-  <footer>
-  {% set data_footer = bag('footer', this.alt) %}
-    <div id="footer-area">
-      <div class=row>
-        <div id="logo-footer" class="small-12 medium-4 columns">
-          <div>
-            <p>
-              <img src="{{ '/static/images/spyder-logo.svg' | url}}">
-              <span>Spyder IDE</span>
-            </p>
-            <p>
-              The Spyder Development Team
-              <br>
-              <a href="mailto:info@spyder-ide.org ">info@spyder-ide.org </a>
-            </p>
+
+</div>
+
+</div>     
+    {% block body %}{% endblock %}
+      <div id="fh5co-footer">
+          <div class="container">
+            {%if config.THEME_SETTINGS.opencollective %}
+              <div class="row">
+                <a href="https://opencollective.com/{{config.THEME_SETTINGS.opencollective}}/donate" target="_blank">
+                  <img src="/static/images/collective.png" width=300 class="center" />
+                </a>
+              </div>
+              </br>
+            {% endif %}
+            <div class="row">
+              <div class="col-md-6">
+          {{ config.THEME_SETTINGS.footer_note | safe }}
+              </div>
+              <div class="col-md-6">
+          <ul class="fh5co-social">
+            {% if config.THEME_SETTINGS.footer_github %}
+            <li><a href="{{ config.THEME_SETTINGS.footer_github }}"><i class="icon-github"></i></a></li>
+            {% endif %}
+            {% if config.THEME_SETTINGS.footer_twitter %}
+            <li><a href="{{ config.THEME_SETTINGS.footer_twitter }}"><i class="icon-twitter"></i></a></li>
+            {% endif %}
+            {% if config.THEME_SETTINGS.footer_facebook %}
+            <li><a href="{{ config.THEME_SETTINGS.footer_facebook }}"><i class="icon-facebook"></i></a></li>
+            {% endif %}
+            {% if config.THEME_SETTINGS.footer_linkedin %}
+            <li><a href="{{ config.THEME_SETTINGS.footer_linkedin }}"><i class="icon-linkedin"></i></a></li>
+            {% endif %}
+            {% if config.THEME_SETTINGS.footer_instagram %}
+            <li><a href="{{ config.THEME_SETTINGS.footer_instagram }}"><i class="icon-instagram"></i></a></li>
+            {% endif %}
+          </ul>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="small-12 medium-4 columns">
-          <h3>{{ data_footer.support }}</h3>
-          <ul>
-            <li><a href="#">{{ data_footer.download }}</a></li>
-            <li><a href="#">{{ data_footer.getting_started }}</a></li>
-            <li><a href="http://groups.google.com/group/spyderlib" target="_blank" rel="noopener">{{ data_footer.join_group }}</a></li>
-            <li><a href="http://stackoverflow.com/questions/tagged/spyder" target="_blank" rel="noopener">{{ data_footer.stack_overflow }}</a></li>
-          </ul>
-        </div>
-        <div class="small-12 medium-4 columns">
-          <h3>{{ data_footer.contribute }}</h3>
-          <ul>
-            <li><a href="https://opencollective.com/spyder/">{{ data_footer.donation }}</a></li>
-            <li><a href="https://github.com/spyder-ide/spyder/issues/new?title=Feature Request:" target="_blank" rel="noopener">{{ data_footer.new_features }}</a></li>
-            <li><a href="https://github.com/spyder-ide/spyder/issues/new" target="_blank" rel="noopener">{{ data_footer.report_bug }}</a></li>
-            <li><a href="https://github.com/spyder-ide/spyder/issues" target="_blank" rel="noopener">{{ data_footer.issues }}</a></li>
-          </ul>
-        </div>
+        </div>        
       </div>
     </div>
-
-    <div id="footer">
-      <div class=row>
-        <div class="small-12 medium-8 columns">
-          &copy; 2016 by <a href="https://github.com/orgs/spyder-ide/people" target="_blank" rel="noopener">The Spyder Development Team</a> &middot; Powered by <a href="https://www.getlektor.com/" target="_blank" rel="noopener">Lektor</a>
-        </div>
-        <div class="small-12 medium-4 columns">
-          <a href="https://github.com/spyder-ide/spyder/" title="{{ data_footer.github }}"><i class="fa fa-github fa-lg"></i></a>
-          <a href="https://github.com/spyder-ide/spyder/issues/" title="{{ data_footer.issues }}"><i class="fa fa-bug fa-lg"></i></a>
-          <a href="https://www.facebook.com/SpyderIDE/" title="{{ data_footer.facebook }}"><i class="fa fa-facebook fa-lg"></i></a>
-          <a href="https://twitter.com/Spyder_IDE" title="{{ data_footer.twitter }}"><i class="fa fa-twitter fa-lg"></i></a>
-          <a href="https://plus.google.com/u/0/communities/112932801653352854842" title="{{ data_footer.google_plus }}"><i class="fa fa-google-plus fa-lg"></i></a>
-          <a href="https://gitter.im/spyder-ide/public" title="{{ data_footer.gitter }}"><i class="fa fa-comment fa-lg"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      ((window.gitter = {}).chat = {}).options = {
-        room: 'spyder-ide/public'
-      };
-    </script>
-    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+    {% include "partials/js.html" %}
     <script type=text/javascript src="{{ '/static/js/app.js'|asseturl }}" charset="utf-8"></script>
-  </footer>
 </body>
