@@ -216,7 +216,7 @@ title: Spyder Notebook
 -----
 subtitle: Jupyter notebook integration with Spyder
 -----
-image: example.gif
+image: example-notebook.png
 -----
 url: https://github.com/spyder-ide/spyder-notebook
 ##### w_item #####
@@ -226,7 +226,7 @@ subtitle:
 
 Run system terminals inside Spyder. Works on Linux, macOS and Windows. 
 -----
-image: example_terminal.gif
+image: example_terminal-34.png
 -----
 url: https://github.com/spyder-ide/spyder-terminal
 ##### w_item #####
