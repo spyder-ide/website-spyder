@@ -27,7 +27,7 @@ locale = fr
 
 [theme_settings]
   author = "Spyder Team"
-  description = "The Scientific PYthon Development EnviRonment"
+  description = "The Scientific Python Development Environment"
   other_css = "/static/css/styles.css"
   content_lang = "en, es, fr"
   hero_img = "../static/images/readme_banner.png"
