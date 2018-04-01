@@ -2,3 +2,16 @@ The Spyder Website Contributors are composed of:
 
 * Rafael Laverde <https://rlaverde.me> (Initial creator).
 * All other developers who have contributed to this repository.
+
+Additionally:
+* Site template originally designed by Free HTML5 Template
+  <https://freehtml5.co> with further modifications,
+* Ported to Hugo by Steve Lane <https://github.com/SteveLane/>,
+* And ported to Lektor by Daniel Althviz Moré <https://github.com/dalthviz/>.
+* jQuery and Sizzle CSS Selector Engine (SizzleJS) created by jQuery Foundation
+  and other contributors, <http://jquery.com/> and <http://sizzlejs.com/>.
+* Font Awesome symbols created by Dave Gandy <https://fontawesome.com/>.
+* Slick theme and icons by Ken Wheeler <http://kenwheeler.github.io>.
+* Normalize.css created by Nicolas Gallagher <https://github.com/necolas>
+  and Jonathan Neal <https://github.com/jonathantneal>;
+  Sass port normalize-scss by John Albin Wilkins <http://john.albin.net/>.
