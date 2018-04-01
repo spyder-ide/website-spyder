@@ -45,7 +45,7 @@ locale = fr
   work_enable = true
   team_enable = true
   footer_enable = true
-  footer_note = "<p><small>&copy; 2016 Free HTML5 Template. All Rights Reserved. <br> Designed by <a href='http://freehtml5.co/' target='_blank'>FreeHTML5.co</a> Demo Images: <a href='http://pexels.com/' target='_blank'>Pexels</a><br>Hugo port by <a href='https://github.com/SteveLane/' target='_blank'>SteveLane</a><br>Lektor port by <a href='https://github.com/dalthviz/' target='_blank'>Dalthviz</a></small></p>"
+  footer_note = "<p><small>Template &copy; 2016 Free HTML5 Template. Some rights reserved; licensed <a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC-BY 3.0</a>. <br> Designed by <a href='http://freehtml5.co/' target='_blank'>FreeHTML5.co</a> Demo Images: <a href='http://pexels.com/' target='_blank'>Pexels</a><br>Hugo port by <a href='https://github.com/SteveLane/' target='_blank'>SteveLane</a><br>Lektor port by <a href='https://github.com/dalthviz/' target='_blank'>Dalthviz</a></small></p>"
   footer_github = "https://github.com/spyder-ide/spyder"
   footer_twitter = "https://twitter.com/spyder_ide"
   footer_facebook = "https://www.facebook.com/SpyderIDE/"
