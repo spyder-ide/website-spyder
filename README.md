@@ -1,4 +1,7 @@
 # Spyder Website
+
+Copyright © 2016–2018 Spyder Website Contributors
+
 This is the repository for the Spyder IDE website at [spyder-ide.github.io](https://spyder-ide.github.io/)
 
 ## Getting Started
