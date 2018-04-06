@@ -44,9 +44,9 @@ main {
     display: block
 }
 
-pre {
-    font-family: monospace, monospace;
-    font-size: 1em
+p code {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
 }
 
 a {
@@ -75,7 +75,7 @@ code,
 kbd,
 samp {
     font-family: monospace, monospace;
-    font-size: 1em
+    font-size: 0.9em
 }
 
 dfn {
@@ -1536,6 +1536,12 @@ ul {
     padding: 0
 }
 
+pre {
+    font-family: Inconsolata;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
 p {
     margin-bottom: 1rem;
     font-size: inherit;
@@ -1702,14 +1708,12 @@ figure {
 
 code {
     padding: .125rem .3125rem .0625rem;
-    border: 1px solid #cacaca;
-    font-weight: 400
+    font-weight: 400;
 }
 
 code,
 kbd {
-    background-color: #e6e6e6;
-    font-family: Consolas, Liberation Mono, Courier, monospace;
+    font-family: Inconsolata;
     color: #0a0a0a
 }
 
@@ -5816,11 +5820,47 @@ screen and (min-width:40em) {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.blog-post h1, h2, h3 {
+.blog-post h1 {
     text-align: left;
     color: #000000;
     font-family: Lora;
+    margin-bottom: 25px;
+}
+.blog-post h2{
+    text-align: left;
+    color: #000000;
+    font-family: Lora;
+    margin-bottom: 15px;
+}
+
+.blog-post h3 {
+    text-align: left;
+    color: #000000;
+    font-family: Lora;
+    margin-bottom: 10px;
+}
+
+.blog-post .blog-index-header .row h1 {
+    text-align: left;
+    color: #000000;
+    font-family: Lora;
+    margin-bottom: 20px;
+}
+.blog-post .blog-index-header .row h2{
+    text-align: left;
+    color: #000000;
+    font-family: Lora;
+    margin-bottom: 15px;
+}
+
+.blog-post .blog-index-header .row h3 {
+    text-align: left;
+    color: #000000;
+    font-family: Lora;
+    margin-bottom: 10px;
 }
 
 .author-img {
