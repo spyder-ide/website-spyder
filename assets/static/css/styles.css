@@ -5820,20 +5820,26 @@ screen and (min-width:40em) {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.blog-post p img{
+    margin-top: 20px;
+}
+
 .blog-post h1 {
     text-align: left;
     color: #000000;
     font-family: Lora;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 .blog-post h2{
     text-align: left;
     color: #000000;
     font-family: Lora;
+    margin-top: 30px;
     margin-bottom: 15px;
+    font-size: 2.2em;
 }
 
 .blog-post h3 {
