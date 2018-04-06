@@ -12,7 +12,11 @@
   <link rel="stylesheet" href="{{ '/static/css/simple-line-icons.css'|asseturl }}">
   <!-- Magnific Popup -->
   <link rel="stylesheet" href="{{ '/static/css/magnific-popup.css'|asseturl }}">
-  
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
   <link rel="stylesheet" href="{{ '/static/css/bootstrap.css'|asseturl }}">
   <link rel="stylesheet" href="{{ '/static/css/style.css'|asseturl }}">
   <link rel="stylesheet" href="{{ '/static/css/styles.css'|asseturl }}">
@@ -32,7 +36,7 @@
           <ul class="dropdown menu" data-dropdown-menu>
             <li id="menu-logo">
               <p></p>
-              <a href="{{ '/'|url }}" onclick="location.href='{{'/'|url}}';">
+              <a href="{{ this.parent|url }}">
                 <img src="{{ '/static/images/spyder-logo.svg' | url}}">
                 <span>
                   <span id="logo-text">Spyder {% block section %}{% endblock %}</span>                  

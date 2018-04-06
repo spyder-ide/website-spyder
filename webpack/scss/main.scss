@@ -325,13 +325,30 @@ footer{
 
 .blog-post {
   margin-bottom: 2rem;
+  font-family: Raleway;
+  color: rgb(78, 78, 78);
+  h1{ 
+    text-align: left;
+    color: $spyder-red;
+    font-family: Lora;
+    margin-bottom: 25px;
+  }
+   h2{ 
+    text-align: left;
+    color: $spyder-red;
+    font-family: Lora;
+    margin-bottom: 15px;
+  }
   h3{ 
     text-align: left;
     color: $spyder-red;
+    font-family: Lora;
+    margin-bottom: 10px;
   }
-  h2 {
-    text-align: center;
-    color: $spyder-red;
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .author-img {
@@ -370,4 +387,33 @@ footer{
   .previous, .next {
     text-align: center
   }
+}
+
+pre {
+  font-family: Inconsolata;
+  font-size: 0.9em;
+}
+
+code {
+  padding: .125rem .3125rem .0625rem;
+  font-weight: 400;
+  font-family: Inconsolata;
+  font-size: 0.9em;
+}
+
+p{
+  code {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+}
+
+// menu
+
+.menu{
+  list-style-type: none
+
+}
+dl, ol, ul {
+  list-style-position: outside;
+  line-height: 1.6;
 }
