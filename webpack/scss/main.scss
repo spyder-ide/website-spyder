@@ -325,13 +325,17 @@ footer{
 
 .blog-post {
   margin-bottom: 2rem;
+  font-family: Raleway;
+  color: rgb(78, 78, 78);
   h3{ 
     text-align: left;
     color: $spyder-red;
+    font-family: Lora;
   }
   h2 {
     text-align: center;
     color: $spyder-red;
+    font-family: Lora;
   }
 }
 .author-img {

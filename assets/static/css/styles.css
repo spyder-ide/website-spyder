@@ -5809,16 +5809,20 @@ screen and (min-width:40em) {
 }
 
 .blog-post {
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
+    font-family: Raleway;
+    color: rgb(78, 78, 78);
 }
 
 .blog-post h2 {
     text-align: center;
-    color: #000000
+    color: #000000;
+    font-family: Lora;
 }
 .blog-post h3 {
     text-align: left;
-    color: #000000
+    color: #000000;
+    font-family: Lora;
 }
 
 .author-img {

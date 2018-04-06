@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block section %}| Blog{% endblock %}
+{% block url_section %}/blog{% endblock %}
 {% block body %}
   <div id="fh5co-about-white" data-section="Blog">
-      <div>
-          <div class="center" >
+
+          <div class="center">
     {% block blogbody %}
     {% endblock %}
           </div>
-      </div>
   </div>
 {% endblock %}
