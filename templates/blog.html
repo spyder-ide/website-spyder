@@ -1,7 +1,7 @@
 {% extends "blog-layout.html" %}
 {% from "macros/blog.html" import render_blog_post %}
 {% from "macros/pagination.html" import render_pagination %}
-{% block title %}{{ this.title }}{% endblock %}
+{% block title %}Spyder | Blog{% endblock %}
 {% block blogbody %}
   <br>
   {% for child in this.pagination.items %}

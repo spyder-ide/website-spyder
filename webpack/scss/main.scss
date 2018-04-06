@@ -327,15 +327,15 @@ footer{
   margin-bottom: 2rem;
   font-family: Raleway;
   color: rgb(78, 78, 78);
-  h3{ 
+  h1, h2, h3{ 
     text-align: left;
     color: $spyder-red;
     font-family: Lora;
   }
-  h2 {
-    text-align: center;
-    color: $spyder-red;
-    font-family: Lora;
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .author-img {
@@ -374,4 +374,15 @@ footer{
   .previous, .next {
     text-align: center
   }
+}
+
+// menu
+
+.menu{
+  list-style-type: none
+
+}
+dl, ol, ul {
+  list-style-position: outside;
+  line-height: 1.6;
 }
