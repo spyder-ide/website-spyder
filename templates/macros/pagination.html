@@ -7,7 +7,7 @@
       {% if pagination.has_prev %}
         <a href="{{ pagination.prev|url }}" class="button">{{ previous|safe }}</a>
       {% else %}
-        <span class="button disabled" aria-disabled><{{ previous|safe }}</span>
+        <span class="button disabled" aria-disabled>{{ previous|safe }}</span>
       {% endif %}
       </div>
     <div class="small-6 columns next">
