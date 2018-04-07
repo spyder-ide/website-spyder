@@ -1539,7 +1539,7 @@ ul {
 pre {
     font-family: Inconsolata;
     font-size: 0.9em;
-    margin-bottom: 15px;
+    margin-bottom: 22px;
 }
 
 p {
@@ -1714,7 +1714,7 @@ code {
 code,
 kbd {
     font-family: Inconsolata;
-    color: #0a0a0a
+    color: #333333
 }
 
 kbd {
@@ -5823,21 +5823,36 @@ screen and (min-width:40em) {
     margin-bottom: 20px;
 }
 
+.blog-post p {
+    margin-bottom: 1.4rem;
+    font-size: inherit;
+    line-height: 1.9;
+    text-rendering: optimizeLegibility
+}
+
 .blog-post p img{
     margin-top: 20px;
+}
+
+.blog-post a {
+    line-height: inherit;
+    color: #000000;
+    cursor: pointer
+    text-decoration: underline;
 }
 
 .blog-post h1 {
     text-align: left;
     color: #000000;
-    font-family: Lora;
-    margin-bottom: 30px;
+    font-family: Amiri;
+    margin-bottom: 25px;
 }
+
 .blog-post h2{
     text-align: left;
     color: #000000;
-    font-family: Lora;
-    margin-top: 30px;
+    font-family: Amiri;
+    margin-top: 40px;
     margin-bottom: 15px;
     font-size: 2.2em;
 }
@@ -5845,27 +5860,27 @@ screen and (min-width:40em) {
 .blog-post h3 {
     text-align: left;
     color: #000000;
-    font-family: Lora;
+    font-family: Amiri;
     margin-bottom: 10px;
 }
 
 .blog-post .blog-index-header .row h1 {
     text-align: left;
     color: #000000;
-    font-family: Lora;
+    font-family: Amiri;
     margin-bottom: 20px;
 }
 .blog-post .blog-index-header .row h2{
     text-align: left;
     color: #000000;
-    font-family: Lora;
+    font-family: Amiri;
     margin-bottom: 15px;
 }
 
 .blog-post .blog-index-header .row h3 {
     text-align: left;
     color: #000000;
-    font-family: Lora;
+    font-family: Amiri;
     margin-bottom: 10px;
 }
 
