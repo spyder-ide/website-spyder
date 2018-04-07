@@ -5841,6 +5841,12 @@ screen and (min-width:40em) {
     text-decoration: underline;
 }
 
+.blog-post h1 a,
+.blog-post h2 a,
+.blog-post h3 a {
+    text-decoration: none;
+}
+
 .blog-post h1 {
     text-align: left;
     color: #000000;
