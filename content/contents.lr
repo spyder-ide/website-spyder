@@ -1,73 +1,6 @@
 _model: single_layout
 ---
-mission:
-
-#### mission ####
-image1: component_var.png
-----
-image2: component_project.png
-----
-image3: ipython.png
-----
-image4: home-features-cross.svg
-----
-items:
-
-##### m_item #####
-weight: 1
------
-name: Description
------
-title: Description
------
-subtitle: 
------
-description:
-
-Spyder is a Python development environment with many features for research, data analysis, and scientific package creation: **Editor**, **Interactive console**, **Documentation viewer**, **Variable explorer**, **Find in files**, **File explorer**, **History log**
-
-Spyder may also be used as a PyQt5/PyQt4 extension library (module spyder). For example, the Python interactive shell widget used in Spyder may be embedded in your own PyQt5/PyQt4 application.
-----
-section: mission
-#### mission ####
-image1: 
-----
-image2: 
-----
-image3: 
-----
-image4: 
-----
-items:
-
-##### m_item #####
-weight: 1
------
-name: Download
------
-title: Download Spyder Source code and installation
------
-subtitle: 
------
-description:
-
-
-For a detailed guide to installing Spyder, please refer to our 
-[installation in structions.](http://pythonhosted.org/spyder/installation.html) 
-
-The easiest way to install Spyder on any of our supported platforms is to download it as part of the [**Anaconda distribution**](https://www.anaconda.com/download/), and use the `conda` package and environment manager to keep it and your other packages installed and up to date. 
-
-If in doubt, you should always install Spyder via this method to avoid unexpected issues we are unable to help you with; it generally has the least likelihood of potential pitfalls for non-experts, and we may be able to provide limited assistance if you do run into trouble.
-
-
-<a href="https://github.com/spyder-ide/spyder/releases/" class="btn-success btn-block text-center">
-Download Anaconda <span class="glyphicon glyphicon-download"></span> 
-</a>
-<a href="https://github.com/spyder-ide/spyder/releases/" class="btn-danger btn-block text-center">
-Download Source Code <span class="glyphicon glyphicon-download"></span> 
-</a>
-----
-section: download
+mission: 
 ---
 services:
 
@@ -270,3 +203,42 @@ Spyder plugin to render Markdown reports using Pweave as a backend
 image: reports_screenshot.png
 -----
 url: https://github.com/spyder-ide/spyder-reports
+---
+download:
+
+#### download ####
+title: Overview
+----
+description: Spyder Description
+----
+content:
+
+Spyder is a Python development environment with many features for research, data analysis, and scientific package creation: **Editor**, **Interactive console**, **Documentation viewer**, **Variable explorer**, **Find in files**, **File explorer**, **History log**
+
+Spyder may also be used as a PyQt5/PyQt4 extension library (module spyder). For example, the Python interactive shell widget used in Spyder may be embedded in your own PyQt5/PyQt4 application.
+----
+data_section: mission
+#### download ####
+title: Download
+----
+description: Download Spyder Source code and installation
+----
+content:
+
+
+For a detailed guide to installing Spyder, please refer to our 
+[installation instructions.](http://pythonhosted.org/spyder/installation.html) 
+
+The easiest way to install Spyder on any of our supported platforms is to download it as part of the [**Anaconda distribution**](https://www.anaconda.com/download/), and use the `conda` package and environment manager to keep it and your other packages installed and up to date. 
+
+If in doubt, you should always install Spyder via this method to avoid unexpected issues we are unable to help you with; it generally has the least likelihood of potential pitfalls for non-experts, and we may be able to provide limited assistance if you do run into trouble.
+
+
+<a href="https://www.anaconda.com/download/" class="btn-success btn-block text-center" target="_blank">
+Download Anaconda <span class="glyphicon glyphicon-download"></span> 
+</a>
+<a href="https://github.com/spyder-ide/spyder/releases/" class="btn-danger btn-block text-center" target="_blank">
+Download Source Code <span class="glyphicon glyphicon-download"></span> 
+</a>
+----
+data_section: download
