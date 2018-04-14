@@ -1,8 +1,18 @@
 # Spyder Website
 
-Copyright © 2016–2018 Spyder Website Contributors
+*Copyright © 2016–2018 Spyder Website Contributors*
 
-This is the repository for the Spyder IDE website at [spyder-ide.github.io](https://spyder-ide.github.io/)
+[![license](https://img.shields.io/pypi/l/spyder.svg)](./LICENSE)
+[![pypi version](https://img.shields.io/pypi/v/spyder.svg)](https://pypi.python.org/pypi/spyder)
+[![Join the chat at https://gitter.im/spyder-ide/public](https://badges.gitter.im/spyder-ide/spyder.svg)](https://gitter.im/spyder-ide/public)
+[![OpenCollective Backers](https://opencollective.com/spyder/backers/badge.svg?color=blue)](#backers)
+[![OpenCollective Sponsors](https://opencollective.com/spyder/sponsors/badge.svg?color=blue)](#sponsors)
+[![Travis status](https://travis-ci.org/spyder-ide/website-spyder.svg?branch=master)](https://travis-ci.org/spyder-ide/website-spyder)
+
+
+This is the repository for the Spyder IDE website at [spyder-ide.github.io](
+https://spyder-ide.github.io/).
+
 
 ## Getting Started
 
@@ -13,7 +23,7 @@ Running installation script:
 $ curl -sf https://www.getlektor.com/install.sh | sh
 ```
 
-Using conda (Recomended way):
+Using conda (Recommended way):
 ```
 $ conda install lektor -c conda-forge
 ```
@@ -62,8 +72,27 @@ Webpack is used for built and generate static files (css, js, images, fonts), in
 
 ### Lektor plugins
 
-The build also requires several [Lektor Plugins](https://www.getlektor.com/docs/plugins/) (No extra configuration is needed, Lektor automatically installs them when building):
+The build also requires several [Lektor Plugins](https://www.getlektor.com/docs/plugins/)
+(No extra configuration is needed; Lektor automatically installs them when building):
 
 - [webpack-support](https://github.com/lektor/lektor-webpack-support)
 - [markdown-header-anchors :ext](https://github.com/lektor/lektor-markdown-header-anchors)
 - [disqus-comments](https://github.com/lektor/lektor-disqus-comments)
+
+
+## More information
+
+[Download Spyder (with Anaconda)](https://www.anaconda.com/download/)
+
+[Main Github](https://github.com/spyder-ide/spyder)
+
+[Troubleshooting Guide and FAQ](
+https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ')
+
+[Development Wiki](https://github.com/spyder-ide/spyder/wiki/Dev:-Index)
+
+[Gitter Chatroom](https://gitter.im/spyder-ide/public)
+
+[Google Group](http://groups.google.com/group/spyderlib)
+
+[Support Spyder on OpenCollective](https://opencollective.com/spyder/)
