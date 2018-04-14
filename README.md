@@ -1,6 +1,8 @@
-# Spyder Website
+![Spyder Website — The Official Site of the Scientific Python Development Environment](
+./assets/static/images/spyder_readme_banner.png)
 
 *Copyright © 2016–2018 Spyder Website Contributors*
+
 
 [![license](https://img.shields.io/pypi/l/spyder.svg)](./LICENSE)
 [![pypi version](https://img.shields.io/pypi/v/spyder.svg)](https://pypi.python.org/pypi/spyder)
@@ -87,7 +89,7 @@ The build also requires several [Lektor Plugins](https://www.getlektor.com/docs/
 [Main Github](https://github.com/spyder-ide/spyder)
 
 [Troubleshooting Guide and FAQ](
-https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ')
+https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ)
 
 [Development Wiki](https://github.com/spyder-ide/spyder/wiki/Dev:-Index)
 
