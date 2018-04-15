@@ -209,7 +209,7 @@ download:
 #### download ####
 title: Overview
 ----
-description: Spyder Description
+description:
 ----
 content:
 
@@ -221,7 +221,7 @@ data_section: mission
 #### download ####
 title: Download
 ----
-description: Download Spyder Source code and installation
+description: How to get Spyder
 ----
 content:
 
