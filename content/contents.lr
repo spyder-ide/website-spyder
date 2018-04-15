@@ -20,7 +20,7 @@ Multi-language editor with syntax coloring, code analysis,code completion,
 calltips, go-to-definition, function/class browser, and horizontal/vertical
 splitting features.
 -----
-icon: home-features-cross.svg
+icon: home-features-style.svg
 ##### service #####
 title: IPython Console
 -----
@@ -209,7 +209,7 @@ overview:
 #### content ####
 title: Overview
 ----
-description: Spyder Description
+description: 
 ----
 content:
 
@@ -224,7 +224,7 @@ download:
 #### content ####
 title: Download
 ----
-description: Download Spyder Source code and installation
+description: How to get Spyder
 ----
 content:
 
@@ -240,6 +240,5 @@ If in doubt, you should always install Spyder via this method to avoid unexpecte
 <a href="https://www.anaconda.com/download/" class="btn-success btn-block text-center" target="_blank">
 Download Anaconda <span class="glyphicon glyphicon-download"></span> 
 </a>
-
 ----
 data_section: download
