@@ -317,7 +317,7 @@ button {
 }
 
 .row {
-    max-width: 75rem;
+    max-width: 100rem;
     margin-right: auto;
     margin-left: auto
 }
@@ -1608,7 +1608,6 @@ screen and (min-width:40em) {
 
 a {
     line-height: inherit;
-    color: #000000;
     cursor: pointer
 }
 
