@@ -14,11 +14,7 @@ services:
 ##### service #####
 title: Editor
 -----
-description:
-
-Multi-language editor with syntax coloring, code analysis,code completion,
-calltips, go-to-definition, function/class browser, and horizontal/vertical
-splitting features.
+description: Work efficiently in a multi-language editor with a function/class browser, code analysis tools, automatic code completion, horizontal/vertical splitting, and go-to-definition
 -----
 icon: editor.svg
 ##### service #####
