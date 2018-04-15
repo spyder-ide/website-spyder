@@ -204,12 +204,12 @@ image: reports_screenshot.png
 -----
 url: https://github.com/spyder-ide/spyder-reports
 ---
-download:
+overview:
 
-#### download ####
+#### content ####
 title: Overview
 ----
-description:
+description: 
 ----
 content:
 
@@ -218,7 +218,10 @@ Spyder is a Python development environment with many features for research, data
 Spyder may also be used as a PyQt5/PyQt4 extension library (module spyder). For example, the Python interactive shell widget used in Spyder may be embedded in your own PyQt5/PyQt4 application.
 ----
 data_section: mission
-#### download ####
+---
+download:
+
+#### content ####
 title: Download
 ----
 description: How to get Spyder
@@ -236,9 +239,6 @@ If in doubt, you should always install Spyder via this method to avoid unexpecte
 
 <a href="https://www.anaconda.com/download/" class="btn-success btn-block text-center" target="_blank">
 Download Anaconda <span class="glyphicon glyphicon-download"></span> 
-</a>
-<a href="https://github.com/spyder-ide/spyder/releases/" class="btn-danger btn-block text-center" target="_blank">
-Download Source Code <span class="glyphicon glyphicon-download"></span> 
 </a>
 ----
 data_section: download

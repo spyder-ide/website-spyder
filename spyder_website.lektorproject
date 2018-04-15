@@ -41,6 +41,7 @@ locale = fr
   spyder_nav_content = true
   mission_enable = true
   mission_images_enable = 
+  overview_enable = true
   download_enable = true
   services_enable = true
   service_video_url = "https://www.youtube.com/watch?v=Hf07PmwQwPQ"
