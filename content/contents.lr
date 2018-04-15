@@ -7,7 +7,7 @@ services:
 #### services ####
 title: Components
 ----
-description: Here you can see the main components of Spyder IDE
+description: These are the building blocks of Spyder
 ----
 services:
 
@@ -169,7 +169,7 @@ work:
 #### work ####
 title: Plugins
 ----
-description: Third party plugins under development
+description: Extend Spyder functionality with this awesome third-party plugins
 ----
 works:
 
