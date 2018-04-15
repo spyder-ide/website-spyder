@@ -20,7 +20,7 @@ Multi-language editor with syntax coloring, code analysis,code completion,
 calltips, go-to-definition, function/class browser, and horizontal/vertical
 splitting features.
 -----
-icon: home-features-style.svg
+icon: editor.svg
 ##### service #####
 title: IPython Console
 -----
@@ -29,22 +29,34 @@ description:
 Spyder’s IPython Console implements a full two-process IPython session where a
 lightweight front-end interface connects to a full IPython kernel on the backend.
 -----
-icon: ipython.png
+icon: console.svg
 ##### service #####
 title: Variable Explorer
 -----
 description:
 
-Shows the namespace contents (i.e. all global object references) of the current
+Shows the namespace contents of the current
 console. Also you can interact with the variables, edit them and see this changes reflected in the actual variable!
 -----
-icon: component_var.png
+icon: varExplorer.svg
 ##### service #####
-title: Projects
+title: Profiler
 -----
-description: Spyder allows users to associate a given directory with a project.
+description: Measure the performance of your code with the profiler
 -----
-icon: component_project.png
+icon: profiler.svg
+##### service #####
+title: Debugger
+-----
+description: Trace the execution of your code with the interactive debugger
+-----
+icon: debugger.svg
+##### service #####
+title: Help
+-----
+description: Get the documentation of the libraries you use with the help pane
+-----
+icon: help.svg
 ---
 team:
 
