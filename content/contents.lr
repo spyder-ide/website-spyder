@@ -7,14 +7,16 @@ services:
 #### services ####
 title: Components
 ----
-description: These are the building blocks of Spyder
+description: Core building blocks of a powerful IDE
 ----
 services:
 
 ##### service #####
 title: Editor
 -----
-description: Work efficiently in a multi-language editor with a function/class browser, code analysis tools, automatic code completion, horizontal/vertical splitting, and go-to-definition
+description:
+
+Work efficiently in a multi-language editor with a function/class browser, code analysis tools, automatic code completion, horizontal/vertical splitting, and go-to-definition.
 -----
 icon: editor.svg
 ##### service #####
@@ -22,8 +24,7 @@ title: IPython Console
 -----
 description:
 
-Spyder’s IPython Console implements a full two-process IPython session where a
-lightweight front-end interface connects to a full IPython kernel on the backend.
+Harness the power of as many IPython consoles as you like within the flexibility of a full GUI interface; run your code by line, cell, or file; and render plots right inline.
 -----
 icon: console.svg
 ##### service #####
@@ -31,26 +32,25 @@ title: Variable Explorer
 -----
 description:
 
-Shows the namespace contents of the current
-console. Also you can interact with the variables, edit them and see this changes reflected in the actual variable!
+Interact with and edit variables on the fly, plot a histogram or timeseries, edit a dateframe or Numpy array, dig into nested objects, sort a collection, and more!
 -----
 icon: varExplorer.svg
 ##### service #####
 title: Profiler
 -----
-description: Measure the performance of your code with the profiler
+description: Find and eliminate bottlenecks to unchain your code's performance.
 -----
 icon: profiler.svg
 ##### service #####
 title: Debugger
 -----
-description: Trace the execution of your code with the interactive debugger
+description: Trace each step of your code's execution interactively.
 -----
 icon: debugger.svg
 ##### service #####
 title: Help
 -----
-description: Get the documentation of the libraries you use with the help pane
+description: Instantly view any object's documentation, and render your own.
 -----
 icon: help.svg
 ---
@@ -169,14 +169,14 @@ work:
 #### work ####
 title: Plugins
 ----
-description: Extend Spyder functionality with this awesome third-party plugins
+description: Extend Spyder's functionality with these awesome third-party plugins!
 ----
 works:
 
 ##### w_item #####
 title: Spyder Notebook
 -----
-subtitle: Jupyter notebook integration with Spyder
+subtitle: Interact with and edit Jupyter notebooks inside Spyder
 -----
 image: example-notebook.png
 -----
@@ -186,7 +186,7 @@ title: Spyder Terminal
 -----
 subtitle:
 
-Run system terminals inside Spyder. Works on Linux, macOS and Windows. 
+Run full system shells inside Spyder <br> Works on Linux, macOS and Windows
 -----
 image: example_terminal-34.png
 -----
@@ -196,7 +196,7 @@ title: Spyder UnitTest
 -----
 subtitle:
 
-A plugin for Spyder to run tests and view the results 
+Run test suites within Spyder and view the results <br> Supports all three popular frameworks:<br> unittest, pytest and nose.
 -----
 image: unittest_screenshot.png
 -----
@@ -206,7 +206,7 @@ title: Spyder Reports
 -----
 subtitle:
 
-Spyder plugin to render Markdown reports using Pweave as a backend 
+Render beautiful data-driven documents with Spyder
 -----
 image: reports_screenshot.png
 -----
@@ -221,9 +221,9 @@ description:
 ----
 content:
 
-Spyder is a Python development environment with many features for research, data analysis, and scientific package creation: **Editor**, **Interactive console**, **Documentation viewer**, **Variable explorer**, **Find in files**, **File explorer**, **History log**
+Spyder, the Scientific Python Development Environment, is a powerful interactive IDE written in Python, for Python, and designed by and for scientists, engineers and data analysts. It offers a unique combination of the advanced editing, code analysis, built-in debugging, and detailed profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package.
 
-Spyder may also be used as a PyQt5/PyQt4 extension library (module spyder). For example, the Python interactive shell widget used in Spyder may be embedded in your own PyQt5/PyQt4 application.
+Beyond its many built-in features, its abilities can be extended even further via its plugin system and API. Furthermore, Spyder can also be used as a PyQt5 extension library, allowing developers to build upon its functionality and embed its components, such as the IPython interactive shell widget, into their own PyQt5 applications.
 ----
 data_section: mission
 ---
@@ -237,16 +237,13 @@ description: How to get Spyder
 content:
 
 
-For a detailed guide to installing Spyder, please refer to our 
-[installation instructions.](http://pythonhosted.org/spyder/installation.html) 
+The easy way to get up and running with Spyder on any of our supported platforms is to download it as part of the [**Anaconda distribution**](https://www.anaconda.com/download/), and use the `conda` package and environment manager to keep it and your other packages installed and up to date. We recommend the latest 64-bit Python 3 version, unless you have specific requirements that dictate otherwise.
 
-The easiest way to install Spyder on any of our supported platforms is to download it as part of the [**Anaconda distribution**](https://www.anaconda.com/download/), and use the `conda` package and environment manager to keep it and your other packages installed and up to date. 
-
-If in doubt, you should always install Spyder via this method to avoid unexpected issues we are unable to help you with; it generally has the least likelihood of potential pitfalls for non-experts, and we may be able to provide limited assistance if you do run into trouble.
+For more advanced users who want a detailed guide to many different methods of obtaining Spyder, please refer to our full [installation instructions](https://spyder-ide.github.io/spyder-docs/installation.html). However, these approaches are generally intended for experts, so we recommend sticking with Anaconda unless you know exactly what you are doing on your own.
 
 
 <a href="https://www.anaconda.com/download/" class="btn-success btn-block text-center" target="_blank">
-Download Anaconda <span class="glyphicon glyphicon-download"></span> 
+Download Spyder with Anaconda <span class="glyphicon glyphicon-download"></span>
 </a>
 ----
 data_section: download
