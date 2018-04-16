@@ -169,14 +169,14 @@ work:
 #### work ####
 title: Plugins
 ----
-description: Extend Spyder functionality with this awesome third-party plugins
+description: Extend Spyder's functionality with these awesome third-party plugins!
 ----
 works:
 
 ##### w_item #####
 title: Spyder Notebook
 -----
-subtitle: Jupyter notebook integration with Spyder
+subtitle: Interact with and edit Jupyter notebooks inside Spyder
 -----
 image: example-notebook.png
 -----
@@ -186,7 +186,7 @@ title: Spyder Terminal
 -----
 subtitle:
 
-Run system terminals inside Spyder. Works on Linux, macOS and Windows. 
+Run full system shells inside Spyder <br> Works on Linux, macOS and Windows
 -----
 image: example_terminal-34.png
 -----
@@ -196,7 +196,7 @@ title: Spyder UnitTest
 -----
 subtitle:
 
-A plugin for Spyder to run tests and view the results 
+Run test suites within Spyder and view the results <br> Supports all three popular frameworks— <br> unittest, pytest and nose.
 -----
 image: unittest_screenshot.png
 -----
@@ -206,7 +206,7 @@ title: Spyder Reports
 -----
 subtitle:
 
-Spyder plugin to render Markdown reports using Pweave as a backend 
+Render beautiful data-driven documents with Spyder
 -----
 image: reports_screenshot.png
 -----
