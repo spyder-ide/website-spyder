@@ -7,14 +7,16 @@ services:
 #### services ####
 title: Components
 ----
-description: These are the building blocks of Spyder
+description: Core building blocks of a powerful IDE
 ----
 services:
 
 ##### service #####
 title: Editor
 -----
-description: Work efficiently in a multi-language editor with a function/class browser, code analysis tools, automatic code completion, horizontal/vertical splitting, and go-to-definition
+description:
+
+Work efficiently in a multi-language editor with a function/class browser, code analysis tools, automatic code completion, horizontal/vertical splitting, and go-to-definition.
 -----
 icon: editor.svg
 ##### service #####
@@ -22,8 +24,7 @@ title: IPython Console
 -----
 description:
 
-Spyder’s IPython Console implements a full two-process IPython session where a
-lightweight front-end interface connects to a full IPython kernel on the backend.
+Harness the power of as many IPython consoles as you like within the flexibility of a full GUI interface; run your code by line, cell, or file; and render plots right inline.
 -----
 icon: console.svg
 ##### service #####
@@ -31,26 +32,25 @@ title: Variable Explorer
 -----
 description:
 
-Shows the namespace contents of the current
-console. Also you can interact with the variables, edit them and see this changes reflected in the actual variable!
+Interact with and edit variables on the fly—plot a histogram or timeseries, edit a dateframe, dig into nested objects, sort a collection, zoom and rotate a 3D figure, and more!
 -----
 icon: varExplorer.svg
 ##### service #####
 title: Profiler
 -----
-description: Measure the performance of your code with the profiler
+description: Find and eliminate bottlenecks to unchain your code's performance.
 -----
 icon: profiler.svg
 ##### service #####
 title: Debugger
 -----
-description: Trace the execution of your code with the interactive debugger
+description: Trace each step of your code's execution interactively.
 -----
 icon: debugger.svg
 ##### service #####
 title: Help
 -----
-description: Get the documentation of the libraries you use with the help pane
+description: Instantly view any object's documentation, and render your own.
 -----
 icon: help.svg
 ---
