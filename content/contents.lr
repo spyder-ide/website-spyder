@@ -221,9 +221,9 @@ description:
 ----
 content:
 
-Spyder is a Python development environment with many features for research, data analysis, and scientific package creation: **Editor**, **Interactive console**, **Documentation viewer**, **Variable explorer**, **Find in files**, **File explorer**, **History log**
+Spyder, the Scientific Python Development Environment, is a powerful interactive IDE written in Python, for Python, and designed by and for scientists, engineers and data analysts. It offers a unique combination of the advanced editing, code analysis, built-in debugging, and detailed profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package.
 
-Spyder may also be used as a PyQt5/PyQt4 extension library (module spyder). For example, the Python interactive shell widget used in Spyder may be embedded in your own PyQt5/PyQt4 application.
+Beyond its many built-in features, its abilities can be extended even further via its plugin system and API. Furthermore, Spyder can also be used as a PyQt5 extension library, allowing developers to build upon its functionality and embed its components, such as the IPython interactive shell widget, into their own PyQt5 applications.
 ----
 data_section: mission
 ---
