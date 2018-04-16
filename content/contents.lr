@@ -32,7 +32,7 @@ title: Variable Explorer
 -----
 description:
 
-Interact with and edit variables on the fly, plot a histogram or timeseries, edit a dateframe or Numpy array, dig into nested objects, sort a collection, and more!
+Interact with and modify variables on the fly: plot a histogram or timeseries, edit a dateframe or Numpy array, sort a collection, dig into nested objects, and more!
 -----
 icon: varExplorer.svg
 ##### service #####
@@ -50,7 +50,7 @@ icon: debugger.svg
 ##### service #####
 title: Help
 -----
-description: Instantly view any object's documentation, and render your own.
+description: Instantly view any object's docs, and render your own.
 -----
 icon: help.svg
 ---
@@ -176,7 +176,9 @@ works:
 ##### w_item #####
 title: Spyder Notebook
 -----
-subtitle: Interact with and edit Jupyter notebooks inside Spyder
+subtitle:
+
+Interact with and edit Jupyter notebooks inside Spyder
 -----
 image: example-notebook.png
 -----
@@ -186,7 +188,7 @@ title: Spyder Terminal
 -----
 subtitle:
 
-Run full system shells inside Spyder. Works on Linux, macOS and Windows
+Control full Bash and cmd shells from inside Spyder
 -----
 image: example_terminal-34.png
 -----
@@ -196,7 +198,7 @@ title: Spyder UnitTest
 -----
 subtitle:
 
-Run test suites within Spyder and view the results. Supports all three popular frameworks: unittest, pytest and nose.
+Run test suites within Spyder and view the results
 -----
 image: unittest_screenshot.png
 -----
@@ -221,9 +223,9 @@ description:
 ----
 content:
 
-Spyder is a powerful development environment written in Python, for Python, and designed by and for scientists, engineers and data analysts. It offers a unique combination of the advanced editing, code analysis, built-in debugging, and detailed profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package.
+Spyder is a powerful scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts. It offers a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package.
 
-Beyond its many built-in features, its abilities can be extended even further via its plugin system and API. Furthermore, Spyder can also be used as a PyQt5 extension library, allowing developers to build upon its functionality and embed its components, such as the IPython interactive shell widget, into their own PyQt5 applications.
+Beyond its many built-in features, its abilities can be extended even further via its plugin system and API. Furthermore, Spyder can also be used as a PyQt5 extension library, allowing developers to build upon its functionality and embed its components, such as the interactive console, in their own PyQt software.
 ----
 data_section: mission
 ---
