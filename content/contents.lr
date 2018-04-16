@@ -32,7 +32,7 @@ title: Variable Explorer
 -----
 description:
 
-Interact with and edit variables on the fly, plot a histogram or timeseries, edit a dateframe or Numpy arrays, dig into nested objects, sort a collection, and more!
+Interact with and edit variables on the fly, plot a histogram or timeseries, edit a dateframe or Numpy array, dig into nested objects, sort a collection, and more!
 -----
 icon: varExplorer.svg
 ##### service #####
