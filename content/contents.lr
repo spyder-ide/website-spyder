@@ -32,7 +32,7 @@ title: Variable Explorer
 -----
 description:
 
-Interact with and edit variables on the fly—plot a histogram or timeseries, edit a dateframe, dig into nested objects, sort a collection, zoom and rotate a 3D figure, and more!
+Interact with and edit variables on the fly, plot a histogram or timeseries, edit a dateframe or Numpy arrays, dig into nested objects, sort a collection, and more!
 -----
 icon: varExplorer.svg
 ##### service #####
@@ -196,7 +196,7 @@ title: Spyder UnitTest
 -----
 subtitle:
 
-Run test suites within Spyder and view the results <br> Supports all three popular frameworks— <br> unittest, pytest and nose.
+Run test suites within Spyder and view the results <br> Supports all three popular frameworks:<br> unittest, pytest and nose.
 -----
 image: unittest_screenshot.png
 -----
