@@ -186,7 +186,7 @@ title: Spyder Terminal
 -----
 subtitle:
 
-Run full system shells inside Spyder <br> Works on Linux, macOS and Windows
+Run full system shells inside Spyder. Works on Linux, macOS and Windows
 -----
 image: example_terminal-34.png
 -----
@@ -196,7 +196,7 @@ title: Spyder UnitTest
 -----
 subtitle:
 
-Run test suites within Spyder and view the results <br> Supports all three popular frameworks:<br> unittest, pytest and nose.
+Run test suites within Spyder and view the results. Supports all three popular frameworks: unittest, pytest and nose.
 -----
 image: unittest_screenshot.png
 -----
