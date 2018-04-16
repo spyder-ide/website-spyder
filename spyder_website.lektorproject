@@ -8,7 +8,8 @@ lektor-markdown-header-anchors = 0.1
 lektor-disqus-comments = 0.2
 
 [servers.production]
-target = ghpages+https://spyder-ide/spyder-ide.github.io
+name = Production
+target = ghpages+https://spyder-ide//website-production?cname=www.spyder-ide.org
 
 [alternatives.en]
 name = English
