@@ -241,8 +241,6 @@ content:
 
 The easy way to get up and running with Spyder on any of our supported platforms is to download it as part of the [**Anaconda distribution**](https://www.anaconda.com/download/), and use the `conda` package and environment manager to keep it and your other packages installed and up to date. We recommend the latest 64-bit Python 3 version, unless you have specific requirements that dictate otherwise.
 
-For more advanced users who want a detailed guide to many different methods of obtaining Spyder, please refer to our full [installation instructions](https://spyder-ide.github.io/spyder-docs/installation.html). However, these approaches are generally intended for experts, so we recommend sticking with Anaconda unless you know exactly what you are doing on your own.
-
 
 <a href="https://www.anaconda.com/download/" class="btn-success btn-block text-center" target="_blank">
 Download Spyder with Anaconda <span class="glyphicon glyphicon-download"></span>
