@@ -15,8 +15,8 @@
 [![PyPI status](https://img.shields.io/pypi/status/spyder.svg)](https://github.com/spyder-ide/spyder)
 
 
-This is the repository for the Spyder IDE website at [spyder-ide.github.io](
-https://spyder-ide.github.io/).
+This is the repository for the Spyder IDE website at [Spyder-IDE.org](
+https://www.spyder-ide.org/).
 
 
 ## Getting Started
@@ -55,7 +55,7 @@ $ lektor server -f webpack
 
 ## Deploy
 
-The master branch is automatically deployed to the github page [spyder-ide.github.io](https://spyder-ide.github.io/) using [Travis-CI](https://travis-ci.org)
+The master branch is automatically deployed to the Spyder website at [Spyder-IDE.org](https://www.spyder-ide.org/) using [Travis-CI](https://travis-ci.org)
 
 ## Technologies and Libraries used
 
@@ -87,9 +87,11 @@ The build also requires several [Lektor Plugins](https://www.getlektor.com/docs/
 
 ## More information
 
+[Main Website](https://www.spyder-ide.org/)
+
 [Download Spyder (with Anaconda)](https://www.anaconda.com/download/)
 
-[Main Github](https://github.com/spyder-ide/spyder)
+[Spyder Github](https://github.com/spyder-ide/spyder)
 
 [Troubleshooting Guide and FAQ](
 https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ)
