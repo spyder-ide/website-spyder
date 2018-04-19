@@ -10,7 +10,7 @@ install:
 script: "lektor build"
 deploy:
   provider: script
-  script: "lektor deploy production"
+  script: "lektor deploy develop"
 
 notifications:
   webhooks:
