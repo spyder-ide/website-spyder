@@ -53,9 +53,17 @@ and then run it like this:
 $ lektor server -f webpack
 ```
 
-## Deploy
+## Workflow
 
-The master branch is automatically deployed to the Spyder website at [Spyder-IDE.org](https://www.spyder-ide.org/) using [Travis-CI](https://travis-ci.org)
+There are 2 branches, develop and production.
+
+### Develop
+
+Default branch is develop and is deployed with gh-pages via Lektor to http://develop.spyder-ide.org
+
+### Production
+
+After test have been carried out by the QA Team, the changes from develop will be merged in production and deployed gh-pages via Lektor to https://www.spyder-ide.org
 
 ## Technologies and Libraries used
 
