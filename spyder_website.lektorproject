@@ -7,6 +7,10 @@ lektor-webpack-support = 0.3
 lektor-markdown-header-anchors = 0.1
 lektor-disqus-comments = 0.2
 
+[servers.develop]
+name = Develop
+target = ghpages+https://spyder-ide//website-develop?cname=develop.spyder-ide.org
+
 [servers.production]
 name = Production
 target = ghpages+https://spyder-ide//website-production?cname=www.spyder-ide.org
