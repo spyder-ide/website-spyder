@@ -1613,7 +1613,7 @@ a {
 
 a:focus,
 a:hover {
-    color: #3b0200
+    color: #ee1c24
 }
 
 a img {
@@ -5925,5 +5925,27 @@ screen and (min-width:40em) {
     text-align: center
 }
 
+.anaconda{
+    background-color: #ee1c24;
+    border: none;    
+    color: white;    
+    padding: 20px;    
+    text-align: center;    
+    text-decoration: none;    
+    display: inline-block;    
+    font-size: 20px;
+    cursor: pointer;    
+    border-radius: 40px;    
+    margin-left: 22%;    
+    margin-right: 22%;
+}
+.anaconda:focus,
+.anaconda:hover {
+    color: white;
+}
+
+.donate{
+    width:45%;
+}
 
 /*# sourceMappingURL=styles.css.map*/
