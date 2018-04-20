@@ -5938,6 +5938,10 @@ screen and (min-width:40em) {
     border-radius: 40px;    
     margin-left: 22%;    
     margin-right: 22%;
+    width: 55%;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .anaconda:focus,
 .anaconda:hover {
@@ -5945,7 +5949,7 @@ screen and (min-width:40em) {
 }
 
 .donate{
-    width:45%;
+    width:40%;
 }
 
 /*# sourceMappingURL=styles.css.map*/
