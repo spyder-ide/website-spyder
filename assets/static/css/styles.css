@@ -5938,6 +5938,8 @@ screen and (min-width:40em) {
     border-radius: 40px;    
     margin-left: 22%;    
     margin-right: 22%;
+    width: 55%;
+    font-weight: bold;
 }
 .anaconda:focus,
 .anaconda:hover {
