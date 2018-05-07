@@ -99,6 +99,8 @@ The build also requires several [Lektor Plugins](https://www.getlektor.com/docs/
 
 [Download Spyder (with Anaconda)](https://www.anaconda.com/download/)
 
+[Online Documentation](https://docs.spyder-ide.org/)
+
 [Spyder Github](https://github.com/spyder-ide/spyder)
 
 [Troubleshooting Guide and FAQ](
