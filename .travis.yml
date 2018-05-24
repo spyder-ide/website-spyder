@@ -1,9 +1,5 @@
 language: python
 python: 3.6
-cache:
-  directories:
-    - $HOME/.cache/pip
-    - $HOME/.cache/lektor/builds
 install:
   - "pip install -U pip"
   - "pip install 'Lektor>=3'"
