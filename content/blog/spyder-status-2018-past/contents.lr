@@ -36,7 +36,7 @@ Stay tuned; we're considering rolling out new donation tiers and rewards at some
 ## Development by the Numbers
 
 On the development side of the project, while our overall pace is somewhat lower than its peak under our Anaconda funding, we've been quite active fixing bugs and adding new features and enhancements over the past six months.
-By the numbers, since mid-November, we've pushed 1160 commits to ``master`` (Spyder 4), comprising over 36 500 lines added and over 16 000 removed or changed, and 900 commits to ``3.x`` (Spyder 3), with over 16,300 additions and nearly 10 000 deletions/changes.
+By the numbers, since mid-November, we've pushed 1160 commits to ``master`` (Spyder 4), comprising over 36 500 lines added and over 16 000 removed or changed, and 900 commits to ``3.x`` (Spyder 3), with over 16 300 additions and nearly 10 000 deletions/changes.
 Users have opened 1330 issues (bugs, feature requests and other problems), of which we've managed to resolve 1284, or nearly 97%.
 
 Further, 230 pull requests from almost two dozen unique contributors, some old, some new, have been submitted since that time—fixing bugs, adding new or enhanced functionality, or making other improvements—of which 210 have been merged to the main Spyder codebase.
@@ -48,23 +48,23 @@ That has coalesced into four separate official releases during that period, with
 
 All those numbers are nice, but what matters most are the tangible improvements that you all get to use every day in your favorite IDE.
 Over those same past six months, alongside hundreds of bugfixes and minor enhancements, we've made multiple significant improvements to the Spyder 3 Editor, IPython Console, Variable Explorer, and Find in Files tool, along with a number of others under the hood and to the application as a whole.
-Even better, the majority of these were suggested by you, our users, and a some of you even pitched in to help implement them.
+Even better, the majority of these were suggested by you, our users, and some of you even pitched in to help implement them.
 
-Especially since you'll probably be spending most of your time in it, we added a number of new commands and functionality to the **Editor**, each with corresponding customizable shortcuts for easier access, that will hopefully make your life easier.
+Especially since you'll probably be spending most of your time in it, we added a several new commands and functions to the **Editor** that will hopefully make your life easier, each with corresponding customizable shortcuts for easier access.
 You can now insert a new line below the current one regardless of the cursor's current position with ``Ctrl-Shift-Enter``, and you can now use ``Shift-Delete`` to cut selected text, and ``Shift-Insert`` to paste it.
 ``Ctrl-PageUp``, ``Ctrl-PageDown``, and ``Ctrl-Tab`` shortcuts are all now fully configurable.
 Finally, you can now easily ``Tab`` from the ``Find`` to the ``Replace`` box when open, and better yet your ``Find`` text is automatically copied to the ``Replace`` box to make modification easy.
 
 Second only to the Editor in terms of them most critical Spyder components, the **IPython Console** also got a lot of love in recent releases.
 We've made several improvements to significantly improve the startup time, and added an optional feature to show the elapsed time each kernel's been running.
-You can now remove all user-defined variables with a single click, avoiding the wait of a restart, and and changes in ``import`` ed modules now take effect instantly and automatically in the console, without even a re-``import`` needed.
-Serialization of objects from the Console to the Variable Explorer has been greatly improved thanks to using ``cloudpickle``, greatly improving the latter's capabilities (discussed below).
+You can now remove all user-defined variables with a GUI command, and changes in ``import`` ed modules now take effect instantly and automatically in the console, without even a re-``import`` needed.
+``Cloudpickle`` is now used to serialize objects from the Console to the Variable Explorer, greatly improving the latter's capabilities (as discussed below).
 Finally, Cython files are now automatically run in dedicated Cython consoles, and you can now use the edit magic command from the Console to open any file right inside Spyder's Editor.
 
 The **Variable Explorer**, which many of you cite as Spyder's "killer feature", has greatly improved as well.
 Most notably, thanks to the aforementioned ``cloudpickle`` change, you now have access to rich, deep exploration of nearly any object, builtin or custom, and can traverse, view, and when possible even edit complex hierarchies of nested types with ease.
 The Variable Explorer now fully supports ``Timedelta`` objects, both built-in and ``Pandas`` variants, allowing you to easily view and edit them just like ``datetime`` and ``Timestamp``.
-It also now displays all the date and time types in a pretty, human-readable format, as well as can display a much wider range of ``Numpy`` array types.
+It also now uses a "pretty", more human-readable format for dates, times, timedeltas and the like, and also now supports displaying a much wider range of ``Numpy`` array types.
 As a quality of life change, it has much better handling of immutable types, like ``tuples``, clearly showing they can't be edited upfront and avoiding bothersome errors when trying to do so.
 
 Rounding out the major changes, the **Find in Files** tool now allows you to remove items from the ``Search In`` list by hovering over them and pressing ``Delete``, and there's also a new option to clear all recent directories.
@@ -93,7 +93,7 @@ The team has made progress on a number of fronts outside core program developmen
 We've been joined by several new team members from around the world, who've each contributed new skillsets to the project.
 Further, we've created, developed and deployed a brand new, modern and responsive website and blog, to provide an accessible, central source for Spyder news and information for both newcomers and old hands alike, as you might have noticed :)
 
-Our new, comprehensive [Troubleshooting Guide and FAQ](https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ) will help users easily resolve common issues without having to wait for a response from use, and we've revised and improved our Github issue tracking workflow to do an even better job at quickly responding to users' needs.
+Our new, comprehensive [Troubleshooting Guide and FAQ](https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ) will help users easily resolve common issues without having to wait for a response from us, and we've revised and improved our Github issue tracking workflow to do an even better job at quickly responding to users' needs.
 On top of that, our Readme, contributing guide, install docs, and developer wiki have all been throughly overhauled to make them more up to date, informative and accessible.
 Finally, as of a few months back we've officially become a [NumFOCUS affiliated project](https://www.numfocus.org/sponsored-projects/affiliated-projects), integrating us more closely with the broader PyData community, as well as leading to some exciting news...but that'll have to wait for our next post!
 
