@@ -54,7 +54,10 @@ Additionally, it'll add new preferences options for console plotting and autocom
 We'll also be releasing the first public beta of Spyder 4 in the very near future, to allow users and developers to get their hands on the next generation of the IDE and start using and testing it as soon as possible.
 There are far too many significant new features to list here, and they are more than worthy of their own full-length post, as there are many substantial changes to the Editor, Console, Variable Explorer, File Explorer, Outline Explorer, API and more.
 
-Some of the major highlights in the Editor include code folding, indentation guides, multiple line length indicators, a current class/method/function panel (*a la* Visual Studio), many more shortcut commands, better comment/uncomment, and more.
+
+![Preview of the new Spyder 4 Editor, showing several of the mentioned features](spyder-4b1-preview-editor.png)
+
+Some of the major highlights in the Editor include code folding, indentation guides, multiple line length indicators, a live class/method/function panel (*a la* Visual Studio), many more shortcut commands, better comment/uncomment, and more.
 The IPython Console gains the ability to start specialized Pylab, SymPy, and Cython consoles, and the Variable Explorer gets MultiIndex support, now natively handles all Pandas indexers, and can display sets in a dedicated GUI editor.
 Meanwhile, the File Explorer now has multi-select functionality and can open any file with the user's OS-configured external default program, while the outline explorer can now group items by cell, and in multiple levels.
 Finally, Spyder 4 exposes a public API for external plugins, offers more language translations, features several global UI improvements and has numerous under the hood and refactoring changes, and countless other enhancements big and small.
@@ -68,8 +71,10 @@ We've been working on a major overhaul of our documentation, which will see its 
 Our [old docs](https://pythonhosted.org/spyder/) were hosted on PyPI/PythonHosted and, with the freezing of that service, couldn't be updated.
 Therefore, we've now moved to maintain them in a [new dedicated repo](https://github.com/spyder-ide/spyder-docs), build, deploy and host them ourselves with [Sphinx](http://www.sphinx-doc.org/en/master/), [doctr](https://drdoctr.github.io/doctr/) and [Github Pages](https://pages.github.com/) on a subdomain of our new site making them more convenient, responsive and accessible.
 
+![Preview of new Spyder documentation website, displaying a modern theme/layout and better screenshots](spyder-docs-preview.png)
+
 Furthermore, we've taken the opportunity to perform a comprehensive overhaul from top to bottom, dramatically improving their usefulness to users.
-We've greatly expanded many pages and sections and adding new ones, updated outdated references, performed an exhaustive copyedit over nearly every line of the text, developed and implemented a consistent style guide, transitioned to a modern theme with our own custom CSS extensions, added or replaced many dozens of high-resolution screenshots, modified the source code and infrastructure to be easier to develop, build and maintain, and much more.
+We've greatly expanded many pages and sections and adding new ones, updated outdated references, performed an exhaustive copyedit over nearly every line of the text, developed and implemented a consistent style guide, transitioned to a modern theme with our own custom CSS extensions, added or replaced many  dozens of high-resolution screenshots, modified the source code and infrastructure to be easier to develop, build and maintain, and much more.
 Even better, you can expect even more improvements in the coming months, as we further expand them toward the standard you'd expect for a feature-rich, multifaceted application like Spyder.
 If you find an issue with them, see a section that could use expansion or improvement or even just have general actionable feedback feel free to open an [issue](https://github.com/spyder-ide/spyder-docs/issues) or send us a [pull request](https://github.com/spyder-ide/spyder-docs/pulls) on our [new repo](https://github.com/spyder-ide/spyder-docs).
 We'll have more information about what's new and our future plans when we officially release them in about a week's time.
