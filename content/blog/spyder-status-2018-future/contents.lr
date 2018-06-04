@@ -1,0 +1,18 @@
+title: State of the Spyder, Part 3: Looking ahead
+---
+pub_date: 2018-06-05 00:00
+---
+tags: development, status-update, roadmap, Spyder4
+---
+category: Status
+---
+author: camgerlach
+---
+summary: In the final post in a three part series, we'll share our roadmap for Spyder 3 and 4 development going forward, and discuss our other future plans during and following the release cycle.
+---
+body:
+
+Following our review of the project's recent progress in [Part 1](https://www.spyder-ide.org/blog/spyder-status-2018-past/), and our major announcements about its current status in [Part 2](https://www.spyder-ide.org/blog/spyder-status-2018-present/), we can finally get to the moment I'm sure a lot of you are looking forward to the most—the Spyder 4 development roadmap and release schedule.
+Plus, we'll go over the development status and what to expect using each branch, a couple other longer-term projects concurrent with the Spyder 4 development cycle, and (most exciting of all), some (tentative) long-term plans beyond it. Strap in; let's get started.
+
+
