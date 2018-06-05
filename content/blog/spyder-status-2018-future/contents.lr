@@ -13,6 +13,89 @@ summary: In the final post in a three part series, we'll share our roadmap for S
 body:
 
 Following our review of the project's recent progress in [Part 1](https://www.spyder-ide.org/blog/spyder-status-2018-past/), and our major announcements about its current status in [Part 2](https://www.spyder-ide.org/blog/spyder-status-2018-present/), we can finally get to the moment I'm sure a lot of you are looking forward to the most—the Spyder 4 development roadmap and release schedule.
-Plus, we'll go over the development status and what to expect using each branch, a couple other longer-term projects concurrent with the Spyder 4 development cycle, and (most exciting of all), some (tentative) long-term plans beyond it. Strap in; let's get started.
+Plus, we'll go over the development status and what to expect using each branch, a couple other longer-term projects concurrent with the Spyder 4 development cycle, and (most exciting of all), some (tentative) long-term plans beyond it.
+Let's get started!
 
 
+## Duel of the Spyders
+
+Spyder 4, the next generation of the Scientific Python Development Environment, is currently under continued active development, and will increasingly become the primary focus of the development team for the rest of 2018.
+It'll offer numerous new features and more robust underpinnings, in area including code completion/introspection/analysis, Projects, debugging, the Variable Explorer, keyboard shortcuts, themes/UI, API, and more.
+Further, it'll open the door to a thriving first-, second- and third-party plugin ecosystem, making it easy to extend Spyder even further to fit your needs, and will feature much-improved and more comprehensive documentation to make it easier to learn, use, and pick up on new tricks and capabilities.
+
+The first public release, Spyder 4 Beta 1, will be out in the coming days, and three more rolling betas will follow throughout the year, each adding more new features as well as potential bug fixes and enhancements to the previous as determined by user and developer feedback.
+The first release candidate is scheduled for late December, and the final release of Spyder 4.0 is expected in the first quarter of 2019, with ``pip`` and ``conda`` builds following shortly after.
+Downstream distributions, like WinPython, Fink/MacPorts, and many Linux distributions would likely then follow, although these releases often lag well behind the official Spyder ones (and thus one of the reasons we generally recommend sticking with Anaconda where possible).
+Following the initial 4.0 release, active development on the Spyder 4 branch would continue, with a number of features and further enhancements already nominally pegged to the 4.1 milestone.
+
+Meanwhile, after Spyder 3.3 is released, also very soon, the Spyder 3 branch will go into long-term maintenance in order to concentrate our development resources on Spyder 4.
+However, it will still get fixes for critical or otherwise significant bugs, and a number of such changes are still pegged for Spyder 3.3.1.
+Spyder will be still fully supported throughout the remaining Spyder 4 development and release process, at least through the second official Anaconda release with Spyder 4 pre-installed.
+Spyder 3 will still be available through the normal channels after that time, but further bug-fixes are not expected and users will be encouraged to upgrade to Spyder 4.
+
+
+## Overview (Road-)Map
+
+Moving to the roadmap itself, we'll summarize the main features to expect in each Spyder release, their benefits, and the current target release dates for each beta.
+Check out out our [Roadmap page](https://github.com/spyder-ide/spyder/wiki/Roadmap) on the [Spyder development wiki](https://github.com/spyder-ide/spyder/wiki) for a more concise and continually updated version, and see the [Beta Changelog page](https://github.com/spyder-ide/spyder/wiki/Beta-version-changelog) for a preliminary but detailed listing of what is currently implemented for the next Spyder releases on each branch, currently Spyder 3.3 and **Spyder 4 Beta 1**.
+In brief, the latter contains all the features and enhancements added when Spyder development was funded by Anaconda, as well as several independent contributions since.
+These include numerous new Editor features, support for many new types in the Variable Explorer, new File Explorer, Outline Explorer and IPython Console functionality, and a new public API for external plugins, as well as many smaller and under the hood improvements.
+As it was covered in some detail in the [previous post in the series](https://www.spyder-ide.org/blog/spyder-status-2018-present/), and will be described in depth in the final changelog (which can be previewed on the Beta Changelog page) and in the post announcing its release, we won't further rehash that ground here.
+
+
+## Spyder 4 Beta 2: Completion architecture and debug kernel
+
+**Spyder 4 Beta 2**, planned for as soon as July 15, will feature one of the two beginning major improvements you've been asking for (much better and more reliable code completion), and lay the groundwork for the other (a new, much more powerful debugger).
+First, we will replace our current "in-house" completion and introspection infrastructure with an implementation of the Language Server Protocol, as used by other popular editors (e.g. VSCode and Atom).
+This will greatly improve the functionality, stability and maintainability of our autocompletion, linting, symbol search and go-to-definition capabilities, and fix many long standing issues that have been a problem for users.
+Furthermore, it will enable new function/class signature hints and mouse hovering features, and open the door to supporting many more programming languages in Spyder with minimal overhead.
+
+Improving Spyder’s debugging functionality and GUI integration has been the other most requested enhancement, and has been cited as the single biggest needed area for improvement.
+Therefore, we would implement a dedicated ``ipdb`` kernel for debugging, giving users total control of execution and allowing them to interact with variables, run arbitrary code and visualize data at every step.
+Further, part of this effort would modularize the other kernel-related code, currently part of the Spyder codebase, into a separate package to allow for easier additions, maintainability, and re-use in the future.
+
+
+## Spyder 4 Beta 3: Debug integration and better Projects
+
+That, in turn, would lay the groundwork for one of the marquee features of **Spyder 4 Beta 3**, due out September 1: the integration of the new kernel with Spyder itself.
+This would enable Spyder’s full suite of code completion and analysis features to be used while debugging, along with its history log, plotting, syntax highlighting, and run line/selection/cell/file options, none of which are currently possible.
+This would also add full GUI control over the new kernel, and include a new Debugger Panel UI to monitor program flow and set breakpoints.
+
+The other major improvement in Beta 3 would be to Projects. Spyder’s current Projects feature is mostly limited to session and working directory management.
+In response to user requests and to better integrate into a modern best-practice workflow centered on isolated, reproducible environments, Spyder would like to enable linking a Project to a specific venv or conda environment, and feature an integrated pip and conda package and environment manager GUI.
+Further, Spyder would offer a suite of templates for a variety of scientific and software projects (e.g. Python packages), and allow users to configure key settings and a main file/script to run per-Project.
+
+
+## Spyder 4 Beta 4: Sweating the smaller stuff
+
+Finally, **Spyder 4 Beta 4**, pegged for November 1, would include a number of functionality and quality of life improvements for users.
+A major overhaul of the keyboard shortcut editor will allow you to easily switch between built in or custom presets emulating other popular editors (Rstudio, MATLAB, Emacs, Sublime...), and make it easy to quickly transition from another IDE, or even another programming language, and easily share a common setup across multiple platforms.
+The new shortcut manager would also include a redesigned UI and new unbind, multi-shortcut and conflict resolution functionality, greatly improving user experience and productivity.
+
+Additional improvements to the Variable Explorer would allow for browsing arbitrary objects and arrays of such, along with a mechanism for users to easily add oft-requested custom types, making it an even more powerful tool.
+To improve the overall UI, it will include a new, fully-integrated dark theme for the entire application, to reduce eyestrain and make the interface more consistent and attractive, as well as a revamped icon theme based on the Breeze them for KDE and other visual revisions through consultation with a professional designer.
+**Spyder 4 release candidate 1** is scheduled for December 15, bringing additional bugfixes, polish and minor improvements on top of the above, and be ready for large-scale testing before a final release in early 2019.
+
+
+## Documentation Developments
+
+Aside from the core IDE improvements, we're also planning a major expansion of our documentation over that period, building on the core overhaul already nearly complete for initial public release soon, as discussed in [Part 2](https://www.spyder-ide.org/blog/spyder-status-2018-present/) of this series.
+We aim to greatly expand all of the sections to much more comprehensively cover the breadth and depth of Spyder's features, as well as update them for Spyder 4.
+Further, we'd add thunderer of modern, consistent screenshots, most already created, to help visually illustrate and explain the features discussed, as well as incorperate other improvements you all suggest.
+We should have a more detailed plan to discuss at some point in the future, after the number of major releases in the immediate future.
+
+
+## Looking Beyond
+
+Looking beyond just Spyder 4 and the next six months or so, there's even more to be excited about.
+The Spyder 4.1 release will contain even more new features, enhancements, and followup fixes.
+Even cooler, assuming sufficient funding and time is available, we'll look to reinvigorate our plugin ecosystem, updating and improving favorites like ``spyder-notebook`` (full Jupyter Notebook integration in Spyder), ``spyder-reports`` (interactive dynamically generated documents weaving markup and code), ``spyder-unittest`` (view and run test suites within Spyder), ``spyder-terminal`` (OS-independent system terminal integration), ``spyder-AutoPEP8``, ``spyder-vim`` and more, and perhaps even some new ones!
+
+We'll also work on further improving our outreach and collaboration, helping form a broader community around your favorite IDE so everybody benefits.
+Beyond that, the sky's the limit, and we're looking forward to continuing to incorporate your feedback into our future long-term plans, much like we did by making the new debugger and completion architecture, by far our two most requested improvements, the central focus of Spyder 4.0.
+So, keep the feedback, bug reports, requests and suggestions coming!
+And, if you want to help our development along, feel free to pitch in on our [Github repo](https://github.com/spyder-ide/spyder), or chip in on our [OpenCollective](https://opencollective.com/spyder).
+Your support so far has been instrumental in making all of this possible!
+
+In any case, that's the plan for now, and we'll keep you updated at least once per beta on how things are proceeding.
+Thanks for taking the time to check up on your favorite IDE, and happy Spydering!
