@@ -1,6 +1,6 @@
 title: State of the Spyder, Part 1: Looking back
 ---
-pub_date: 2018-05-25 00:00
+pub_date: 2018-05-06 00:00
 ---
 tags: development, status-update, milestone
 ---
@@ -28,7 +28,7 @@ To help make up for the loss of funding, we appealed to the community for suppor
 
 ![Spyder OpenCollective, showing many donations and backers](spyder_opencollective.png)
 
-To our unending gratitude, you responded! In the few months since then, on OpenCollective we've gone from zero to a budget of well over $4000 per year and rising at an increasing pace, thanks to the continuing contributions of over 75 individual and organizational backers.
+To our unending gratitude, you responded! In the few months since then, on OpenCollective we've gone from zero to a budget of well over $4500 per year and rising at an increasing pace, thanks to the continuing contributions of over 80 (and counting!) individual and institutional backers.
 We also had several new core team members and community contributors pitch in to help carry the load, and we've got some more great news in the very next post on the funding front.
 While we've got a ways to go to match the level of funding we've received under Anaconda, your support has helped make possible several of the new features we've planned for Spyder 4, and allow us to commit to releasing it much sooner than we would be able to otherwise.
 Your generous donations go directly toward funding the Spyder community's most-requested new and improved features for Spyder 4, so 'em coming!
@@ -37,15 +37,15 @@ Stay tuned; we're considering rolling out new donation tiers and rewards at some
 
 ## Development by the Numbers
 
-On the development side of the project, while our overall pace is somewhat lower than its peak under our Anaconda funding, we've been quite active fixing bugs and adding new features and enhancements over the past six months.
-By the numbers, since mid-November, we've pushed 1160 commits to ``master`` (Spyder 4), comprising over 36 500 lines added and over 16 000 removed or changed, and 900 commits to ``3.x`` (Spyder 3), with over 16 300 additions and nearly 10 000 deletions/changes.
-Users have opened 1330 issues (bugs, feature requests and other problems), of which we've managed to resolve 1284, or nearly 97%.
+On the development side of the project, while our overall pace is modestly lower than its peak under our Anaconda funding, we've been quite active fixing bugs and adding new features and enhancements over the past six months.
+By the numbers, since mid-November, we've pushed approximately 1200 commits to ``master`` (Spyder 4), comprising over 37 000 lines added and 16 000 removed, and 900 commits to ``3.x`` (Spyder 3), with over 16 500 additions and 10 000 deletions.
+Users have opened over 1375 issues (bugs, feature requests and other feedback), of which we've managed to resolve more than 1330, or nearly 97%.
 
 ![Github commit timeseries for Spyder, with high activity over the past few years](github_commit_history.png)
 
-Further, 230 pull requests from almost two dozen unique contributors, some old, some new, have been submitted since that time—fixing bugs, adding new or enhanced functionality, or making other improvements—of which 210 have been merged to the main Spyder codebase.
-Finally, other developers have been taking note, as we've recently blown past the 3000 stars milestone a few weeks ago (we're now at 3150), with nearly 700 separate forks to date.
-That has coalesced into four separate official releases during that period, with another only days away.
+Further, over 250 pull requests from almost two dozen unique contributors, some old, some new, have been submitted since that time—fixing bugs, adding new or enhanced functionality, or making other improvements—of which 226 have been merged to the main Spyder codebase.
+This work has coalesced into four separate official releases during that period, with another only days away.
+Finally, we've recently blown past the 3000 Github stars milestone a few weeks ago (we're now at nearly 3200), with almost 700 unique forks to date.
 
 
 ## Key Spyder Improvements
