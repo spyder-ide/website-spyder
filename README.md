@@ -14,6 +14,10 @@
 [![Join the chat at https://gitter.im/spyder-ide/public](https://badges.gitter.im/spyder-ide/spyder.svg)](https://gitter.im/spyder-ide/public)
 
 
+![Screenshot of the Spyder website homepage, showing a banner and screenshot](
+./assets/static/images/mainpage_screenshot.png)
+
+
 This is the repository for the Spyder IDE website at [Spyder-IDE.org](
 https://www.spyder-ide.org/).
 
