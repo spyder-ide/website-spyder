@@ -9,7 +9,7 @@
 [![pypi version](https://img.shields.io/pypi/v/spyder.svg)](https://pypi.org/project/spyder)
 [![conda version](https://img.shields.io/conda/vn/conda-forge/spyder.svg)](https://www.anaconda.com/download/)
 [![download count](https://img.shields.io/conda/dn/conda-forge/spyder.svg)](https://www.anaconda.com/download/)
-[![Travis status](https://travis-ci.org/spyder-ide/spyder.svg?branch=master)](https://travis-ci.org/spyder-ide/spyder-docs)
+[![Travis status](https://travis-ci.org/spyder-ide/website-spyder.svg?branch=develop)](https://travis-ci.org/spyder-ide/website-spyder)
 [![OpenCollective Backers](https://opencollective.com/spyder/backers/badge.svg?color=blue)](#backers)
 [![Join the chat at https://gitter.im/spyder-ide/public](https://badges.gitter.im/spyder-ide/spyder.svg)](https://gitter.im/spyder-ide/public)
 
@@ -111,7 +111,7 @@ https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ)
 
 [Gitter Chatroom](https://gitter.im/spyder-ide/public)
 
-[Google Group](http://groups.google.com/group/spyderlib)
+[Google Group](https://groups.google.com/group/spyderlib)
 
 [@Spyder_IDE on Twitter](https://twitter.com/spyder_ide)
 
