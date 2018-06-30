@@ -1,0 +1,5 @@
+# Treat Lektor .lr files as markdown for now, until lektor is added to linguist
+*.lr linguist-language=Markdown
+
+# Treat Lektorproject as .ini for now
+*.lektorproject linguist-language=INI
