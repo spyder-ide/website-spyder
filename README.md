@@ -5,14 +5,17 @@
 
 
 [![license](https://img.shields.io/pypi/l/spyder.svg)](./LICENSE)
-[![pypi version](https://img.shields.io/pypi/v/spyder.svg)](https://pypi.python.org/pypi/spyder)
+[![PyPI status](https://img.shields.io/pypi/status/spyder.svg)](https://github.com/spyder-ide/spyder)
+[![pypi version](https://img.shields.io/pypi/v/spyder.svg)](https://pypi.org/project/spyder)
 [![conda version](https://img.shields.io/conda/vn/conda-forge/spyder.svg)](https://www.anaconda.com/download/)
 [![download count](https://img.shields.io/conda/dn/conda-forge/spyder.svg)](https://www.anaconda.com/download/)
-[![Join the chat at https://gitter.im/spyder-ide/public](https://badges.gitter.im/spyder-ide/spyder.svg)](https://gitter.im/spyder-ide/public)
+[![Travis status](https://travis-ci.org/spyder-ide/website-spyder.svg?branch=develop)](https://travis-ci.org/spyder-ide/website-spyder)
 [![OpenCollective Backers](https://opencollective.com/spyder/backers/badge.svg?color=blue)](#backers)
-[![OpenCollective Sponsors](https://opencollective.com/spyder/sponsors/badge.svg?color=blue)](#sponsors)
-[![Travis status](https://travis-ci.org/spyder-ide/website-spyder.svg?branch=master)](https://travis-ci.org/spyder-ide/website-spyder)
-[![PyPI status](https://img.shields.io/pypi/status/spyder.svg)](https://github.com/spyder-ide/spyder)
+[![Join the chat at https://gitter.im/spyder-ide/public](https://badges.gitter.im/spyder-ide/spyder.svg)](https://gitter.im/spyder-ide/public)
+
+
+![Screenshot of the Spyder website homepage, showing a banner and screenshot](
+./assets/static/images/mainpage_screenshot.png)
 
 
 This is the repository for the Spyder IDE website at [Spyder-IDE.org](
@@ -108,7 +111,7 @@ https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ)
 
 [Gitter Chatroom](https://gitter.im/spyder-ide/public)
 
-[Google Group](http://groups.google.com/group/spyderlib)
+[Google Group](https://groups.google.com/group/spyderlib)
 
 [@Spyder_IDE on Twitter](https://twitter.com/spyder_ide)
 
