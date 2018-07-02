@@ -5952,4 +5952,24 @@ screen and (min-width:40em) {
     width:40%;
 }
 
+#fh5co-footer{
+    padding: 0.9em 0;
+    color: #949494;
+}
+
+#fh5co-footer .container .row .text-center{
+    margin-bottom: 0.7em;
+}
+
+#fh5co-footer .container .row .text-center p small{
+    font-size: 16px;
+    line-height: 2em;
+}
+
+
+#fh5co-footer .container .row .text-center p {
+    font-size: 12px;
+    line-height: 1.2em;
+}
+
 /*# sourceMappingURL=styles.css.map*/
