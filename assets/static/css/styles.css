@@ -1569,7 +1569,8 @@ strong {
 small {
     font-size: 80%;
     line-height: inherit;
-    color:#949494;
+    color:white;
+    font-weight: bold;
 }
 
 
@@ -5954,7 +5955,7 @@ screen and (min-width:40em) {
 
 #fh5co-footer{
     padding: 0.9em 0;
-    color: #949494;
+    color: white;
 }
 
 #fh5co-footer .container .row .text-center{
@@ -5968,7 +5969,7 @@ screen and (min-width:40em) {
 
 
 #fh5co-footer .container .row .text-center p {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.2em;
 }
 
