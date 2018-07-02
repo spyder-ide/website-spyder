@@ -1570,7 +1570,6 @@ small {
     font-size: 80%;
     line-height: inherit;
     color:white;
-    font-weight: bold;
 }
 
 
@@ -1621,7 +1620,12 @@ a img {
     border: 0
 }
 
-small a, li a {
+small a, small a:focus {
+    color:white;
+    font-weight:bold;
+}
+
+li a {
     color:#ee1c24;
 }
 
@@ -5953,7 +5957,7 @@ screen and (min-width:40em) {
     width:40%;
 }
 
-#fh5co-footer{
+#fh5co-footer {
     padding: 0.9em 0;
     color: white;
 }
@@ -5971,6 +5975,11 @@ screen and (min-width:40em) {
 #fh5co-footer .container .row .text-center p {
     font-size: 13px;
     line-height: 1.2em;
+}
+
+#fh5co-footer a, #fh5co-footer a:focus {
+    color: white;
+    font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map*/
