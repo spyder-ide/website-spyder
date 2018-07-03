@@ -5830,7 +5830,7 @@ screen and (min-width:40em) {
 .blog-post p {
     margin-bottom: 1.4rem;
     font-size: inherit;
-    line-height: 1.9;
+    line-height: 1.8;
     text-rendering: optimizeLegibility
 }
 
@@ -5856,6 +5856,7 @@ screen and (min-width:40em) {
     color: #000000;
     font-family: Amiri;
     margin-bottom: 25px;
+    font-size: 2.4em;
 }
 
 .blog-post h2{
@@ -5864,7 +5865,7 @@ screen and (min-width:40em) {
     font-family: Amiri;
     margin-top: 40px;
     margin-bottom: 15px;
-    font-size: 2.2em;
+    font-size: 1.8em;
 }
 
 .blog-post h3 {
@@ -5872,6 +5873,7 @@ screen and (min-width:40em) {
     color: #000000;
     font-family: Amiri;
     margin-bottom: 10px;
+    font-size: 1.5em;
 }
 
 .blog-post .blog-index-header .row h1 {
