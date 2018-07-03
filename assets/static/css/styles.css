@@ -5830,7 +5830,7 @@ screen and (min-width:40em) {
 .blog-post p {
     margin-bottom: 1.4rem;
     font-size: inherit;
-    line-height: 1.8;
+    line-height: 1.57;
     text-rendering: optimizeLegibility
 }
 
