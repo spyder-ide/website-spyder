@@ -5830,7 +5830,7 @@ screen and (min-width:40em) {
 .blog-post p {
     margin-bottom: 1.4rem;
     font-size: inherit;
-    line-height: 1.8;
+    line-height: 1.57;
     text-rendering: optimizeLegibility
 }
 
@@ -5840,9 +5840,10 @@ screen and (min-width:40em) {
 
 .blog-post a {
     line-height: inherit;
-    color: #000000;
+    color: #ee1c24;
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px dotted #ee1c24;
 }
 
 .blog-post h1 a,
