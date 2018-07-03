@@ -39,7 +39,7 @@
               <a href="{{ this.parent|url }}">
                 <img src="{{ '/static/images/spyder-logo.svg' | url}}">
                 <span>
-                  <span id="logo-text">Spyder {% block section %}{% endblock %}</span>                  
+                  <span id="logo-text"><big>S</big>pyder {% block section %}{% endblock %}</span>                  
                 </span>
               </a>
               <p></p>
@@ -49,7 +49,7 @@
 
           {% set data_nav = bag('main-nav', this.alt) %}
             {% for path, label in data_nav.items() %}
-              <a class="pull-right" href="{{ path|url }}" onclick="location.href='{{path|url}}';" data-nav-section="{{label}}">{{ label }}</a>
+              <a class="pull-right" href="{{ path }}" data-nav-section="{{label}}">{{ label }}</a>
             {% endfor %}
      
 		</div>
