@@ -7,7 +7,7 @@ cache:
 install:
   - "pip install -U pip"
   - "pip install 'Lektor>=3'"
-script: "lektor build"
+script: "lektor build --no-prune"
 
 deploy:
   - provider: script

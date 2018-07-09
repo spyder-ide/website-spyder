@@ -46,12 +46,11 @@
             </li>
           </ul>
         </div>
-
+          <a class="pull-right"  data-nav-section="RSS" href="{{ '/blog/feed.xml'|url }}">RSS</a>
           {% set data_nav = bag('main-nav', this.alt) %}
             {% for path, label in data_nav.items() %}
               <a class="pull-right" href="{{ path }}" data-nav-section="{{label}}">{{ label }}</a>
             {% endfor %}
-     
 		</div>
   </div>
 
