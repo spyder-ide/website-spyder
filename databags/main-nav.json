@@ -1,17 +1,14 @@
 {
     "en": {
         "https://docs.spyder-ide.org/": "Docs",
-        "/blog": "Blog",
         "/": "Home"
     },
     "es": {
         "https://docs.spyder-ide.org/": "Docs",
-        "/blog": "Blog",
         "/": "Inicio"
     },
     "fr": {
         "https://docs.spyder-ide.org/": "Docs",
-        "/blog": "Blog",
         "/": "Accueil"
     }
 }
