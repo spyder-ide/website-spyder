@@ -8,7 +8,7 @@ category: Status
 ---
 author: camgerlach
 ---
-summary: In the second of a three part series, we've got some exciting announcements to make about Spyder and its continued development, and we'll go over our current status and several releases, projects and events in the near-term pipeline.
+summary: In the second of a three part series, we've got some exciting announcements to make about Spyder and its continued development, and we'll review the project's current status and some major upcoming releases.
 ---
 body:
 
@@ -19,17 +19,17 @@ That's not all, though—Part 3 will look ahead toward Spyder 4 and beyond, unve
 ## Spyder Wins NumFOCUS Development Grant
 
 First up, we're thrilled to announce a major part of what's making that plan possible (along with your support, of course!).
-Spyder was just awarded a $3000 development grant from [NumFOCUS](https://www.numfocus.org/), an organization promoting better science through open code, to help with finishing Spyder 4!
+This May, Spyder was awarded a $3000 development grant from [NumFOCUS](https://www.numfocus.org/), an organization promoting better science through open code, to help with finishing Spyder 4!
 NumFOCUS is a nonprofit dedicated to supporting [key scientific computing projects](https://www.numfocus.org/sponsored-projects); [promoting sustainability](https://www.numfocus.org/programs/sustainability) in the open source ecosystem; educating scientists, engineers, developers and data analysts through their flagship [PyData](https://www.numfocus.org/programs/pydata) program; and enabling and inspiring the next generation through their [grants, scholarships](https://www.numfocus.org/programs/grants-sponsored-events) and [fellowships](https://www.numfocus.org/programs/john-hunter-technology-fellowship), [diversity and inclusion program](https://www.numfocus.org/programs/diversity-inclusion), and involvement in the [Google Summer of Code](https://www.numfocus.org/programs/google-summer-code).
 
-We applied for the funding back in March, along with many other scientific python projects, and were one of the fortunate projects selected after the review process.
-The award will run from now until mid-November, and will enable multiple betas with new features to be released throughout 2018, with the first feature-complete release candidate planned by the year's end (we'll have more detail on all that in Part 3).
+We applied for the funding back in March of this year, along with many other scientific python projects, and were one of the fortunate projects selected after the review process.
+The award will run from now through this November, and will enable multiple betas with new features to be released throughout 2018, with the first feature-complete release candidate planned by the year's end (we'll have more detail on all that in Part 3).
 Check out our bio and the other projects that were funded over on the [NumFOCUS announcement](https://www.numfocus.org/blog/numfocus-awards-development-grants-to-open-source-projects-spring-2018), and make sure to thank and support them if you get the chance.
 
 
 ## Quansight Hires Spyder Maintainer; Helps Fund Development
 
-Equally exciting, Spyder's maintainer, [Carlos Cordoba](https://github.com/ccordoba12), was just hired by [Quansight](https://www.quansight.com/), the brand-new company headed by scientific Python luminary [Travis Oliphant](https://twitter.com/teoliphant?lang=en)!
+Equally exciting, Spyder's maintainer, [Carlos Cordoba](https://github.com/ccordoba12), was recently hired by [Quansight](https://www.quansight.com/), the brand-new company headed by scientific Python luminary [Travis Oliphant](https://twitter.com/teoliphant?lang=en)!
 The father of much of the modern PyData ecosystem including NumPy, SciPy, and Numba, Travis has been instrumental in the dramatic growth of open-source data analysis with Python through founding or helping lead Enthought, Continuum/Anaconda, NumFOCUS, and more.
 Quansight, Travis' newest venture, focuses on scaling up the PyData ecosystem to solve even larger and more integrated problems, connecting companies with the open-source tools that can benefit their business, and helping build a more robust ecosystem for open-source scientific development.
 
