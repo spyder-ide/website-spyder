@@ -1,0 +1,17 @@
+title: Spyder 3.3.0 Released: Modular, portable consoles; new error reporting system, under the hood changes and more!
+pub_date: 2018-07-15 00:00
+---
+tags: Spyder3, minor-release
+---
+category: Releases
+---
+author: camgerlach
+---
+summary: We're excited to announce the release of Spyder 3.3.0, with several new features and enhancements, usability improvements, significant under the hood modifications and over 40 bug fixes. We'll go over the key changes and explain what they mean for you as a user, and go over a few other important notes about this release and what's coming next.
+---
+body:
+
+We're excited to release the next update in the stable Spyder 3 line, 3.3.0, which is now live on PyPI and ``conda``.
+
+In brief, it has some significant under the hood revisions, cleaning house of some old end of life dependencies and legacy support (Python 3.3 and PyQt4/<5.5), and it separates the IPython Console code into a new ``spyder-kernels`` package to make it easier for you to work with different Python environments and remote kernels, and easier for us to add exciting new features down the road.
+Additionally, it adds new preferences options for console plotting and autocompletion, improves the usability and performance of Variable Explorer editors, includes a new, fully automated error reporting feature to make submitting reports faster, easier and more helpful, and contains a number of other minor improvements and usability enhancements, along with over 40 bug fixes.
