@@ -47,6 +47,8 @@ Meanwhile, on the development side of things, we've just finished the rollout of
 In brief, it has some significant under the hood revisions, cleaning house of some old end of life dependencies and legacy support (Python 3.3 and PyQt4/<5.5), and separates the IPython Console kernel code into a new ``spyder-kernels`` package to make it easier for you to work with different Python environments and remote sessions, and easier for us to add exciting new features down the road.
 Additionally, it adds new preferences options for console plotting and autocompletion, improves the usability and performance of Variable Explorer object viewers, includes a new, fully automated error reporting feature to make submitting reports faster, easier and more helpful, and contains a number of other minor improvements and usability enhancements, along with numerous bug fixes.
 
+![A remote kernel running in a system console alongside Spyder's connect to kernel dialog](spyder-remote-kernel.png)
+
 
 ## Spyder 4 Public Beta 1 on Deck
 
