@@ -1,4 +1,5 @@
 title: Spyder 3.3.0 Released: Modular, portable consoles; streamlined error reporting system; new features and usability improvements and more!
+---
 pub_date: 2018-07-15 00:00
 ---
 tags: Spyder3, minor-release
@@ -26,14 +27,10 @@ The biggest single change with version 3.3.0 is a major overhaul of how IPython 
 More precisely, we've moved all the Console-related code from the Spyder core into a new modular package, ``spyder-kernels``, available on the same distribution channels as Spyder itself (and installed automatically when updating to 3.3.0).
 While the most dramatic differences are under the hood, there's plenty for everyone to like (and a few things to be aware of).
 
-For those of us (and those of you!) who help develop Spyder, this makes it easier for us to maintain and improve the code, and opens the door to one of the biggest changes coming in Spyder 4: a new, full-featured debugging kernel that many of you have been asking for.
-It will also make it much simpler to add support for other languages and consoles beyond the current IPython in the future.
-For others interested in creating similar Python packages, the change makes the code easier to understand and re-use it in your own projects.
-
 Most importantly, for our everyday users, this makes Spyder much more flexible and powerful when working with multiple Python environments.
 With the changes, Spyder need not be present in every environment you'd like to launch a kernel in; you can install the full IDE in whatever manner you prefer, and then set it to run code and consoles in any Anaconda environment, ``virtualenv``/``venv``, or even a totally separate Python installation, so long as it has ``spyder-kernels`` package available.
 Just set the path under ``Tools -> Preferences -> Python interpreter -> Use the following Python interpreter`` to the desired Python executable, and any new Console you open will start in the selected environment.
-Check out our [new wiki page on using environments with Spyder](https://github.com/spyder-ide/spyder/wiki/Working-with-packages-and-environments-in-Spyder),for more details and tips on the subject, and keep an eye out for the further improvements coming in Spyder 4, which greatly simplify the process and include full GUI-based project, package and environment management functionality built right in.
+Check out our [new wiki page on using environments with Spyder](https://github.com/spyder-ide/spyder/wiki/Working-with-packages-and-environments-in-Spyder), for more details and tips on the subject, and keep an eye out for the further improvements coming in Spyder 4, which greatly simplify the process and include full GUI-based project, package and environment management functionality built right in.
 
 Furthermore, ``spyder-kernels`` allows you to independently launch a console from anywhere (on your local computer, or a remote machine, server or even supercomputing cluster), connect to it with Spyder, and use it just like a "natively" started one.
 After installing ``spyder-kernels`` on the host environment for the console, you can start one with ``python -m spyder_kernels.console``, and then enter the kernel's 4-digit ID (and SSH connection details, if a remote machine) in the Spyder ``Connect to an existing kernel`` dialog under the IPython Console pane context- or "gear"-menu).
@@ -41,6 +38,10 @@ For more information on the process, see the [Connecting to a Console](https://d
 
 Best of all, no matter how or where a kernel is started, every console now supports the full suite of Spyder's features, including completion, the Variable Explorer, interactive Help and more, unlike before.
 You can even mix and match internal, external and remote kernels in different environments, all in the same Spyder session, by either changing the Python interpreter preferences setting between starting a console, or starting and connecting to multiple consoles externally—or both!
+For those of us (and those of you!) who help develop Spyder, the changes also make it easier to maintain and improve the code, and opens the door to one of the biggest features coming in Spyder 4: a new, full-featured debugging kernel that many of you have been asking for.
+It will also make it much simpler to add support for other languages and consoles beyond the current IPython in the future.
+Finally, for those of you interested in creating Python packages re-using some of Spyder's functionality, it makes the code easier to understand and re-use it in your own projects.
+
 The one key thing to remember: make sure you install the appropriate version of ``spyder-kernels`` for your version of Spyder, for most users that will be spyder-kernels 0.x (currently 0.2.4) to match Spyder 3 on our stable ``3.x`` branch, while if testing a Spyder 4 beta or Github clone of the ``master`` branch, you'll want the latest 1.x version of ``spyder-kernels`` (currently 1.0.1).
 To install the correct one, you can use the following ``conda`` command,
 
@@ -61,9 +62,9 @@ Further details specific to installing a development build can be found in our [
 ## New IPython Console completion and plotting features
 
 Spyder's IPython Consoles can now use an advanced ``jedi``-based completion engine that, similar to the Editor, analyzes your code without actually having to run it first.
-This allows for advanced completion functionality on object not yet assigned to a variable, similar to the existing "greedy" completion option, but without the need for dynamic evaluation.
+This allows for advanced completion functionality on objects not yet assigned to a variable, similar to the existing "greedy" completion option, but without the need for dynamic evaluation.
 It can be slow if working with very large Pandas ``DataFrames`` so it is disabled by default, but you can activate it under ``Tools -> Preferences -> IPython console -> Advanced Settings -> Jedi completion``.
-The descriptive text for the "greedy" completion option (also off by default) was also clarified, particularly to surface an IPython bug (not present in the ``jedi`` completer) with the feature and a consequent workaround.
+The descriptive text for the "greedy" completion option (also off by default) was also clarified, particularly to explain an IPython bug (not present in the ``jedi`` completer) with the feature and a consequent workaround.
 
 We've also added a new plotting setting, ``Use a tight layout for inline plots``, for the ``Inline`` Matplotlib graphics backend.
 This option, enabled by default, sets ``bbox_inches`` to ``"tight"`` in the internel ``matplotlib`` call, leading to much more compact and nicer-looking plot margins.
@@ -97,7 +98,7 @@ Alongside the aforementioned internal changes, we've also made a number of other
 In particular, we've officially dropped support for Python 3.3, PyQt4, and PyQt5 < 5.5, all versions which have been end-of-life for years, and (aside from PyQt4) have minimal or no remaining Spyder users.
 Furthermore, dropping ``PyQt4`` in particular allows us to avoid or resolve a number of unfixable bugs specific to that version that have been causing problems for users, and opens the door to easier development in the future.
 
-We've also cleaned out a number of other bits of now-uneeded code, and made a number of other smaller improvements to our code quality and style, unit tests, readmes and related materials and more.
+We've also cleaned out a number of other bits of now-unneeded code, and made a number of other smaller improvements to our code quality and style, unit tests, readmes and related materials and more.
 Finally, we moved our legacy documentation (and its many associated images) from the main Spyder codebase to [its own repo](https://github.com/spyder-ide/spyder-docs), executed a major overhaul to greatly modernize and expand the text, images, style, and presentation, and now deploy them onto [their own subdomain of our site](https://docs.spyder-ide.org/), all of which we will discuss in a separate post coming soon.
 
 
@@ -107,5 +108,5 @@ If you have any questions, problems or feedback, we'd love to hear from you (jus
 For general questions or install issues that aren't addressed by the above, our [Google Group](https://groups.google.com/group/spyderlib) and [Gitter live chat](https://gitter.im/spyder-ide/public) are a good place to ask, while [our Github](https://github.com/spyder-ide/spyder) is the place to report bugs, request features, or help develop Spyder itself (though make sure to search our [issues list](https://github.com/spyder-ide/spyder/issues?utf8=%E2%9C%93&q=is%3Aissue) to ensure it hasn't already been submitted).
 Finally, you can follow our [Facebook](https://www.facebook.com/SpyderIDE/) and [Twitter](https://twitter.com/spyder_ide) for the latest Spyder news, releases, previews and tips, and help support Spyder development on [OpenCollective](https://opencollective.com/spyder).
 
-There's plenty to look forward to in the coming days, with the official release of our all-new documentation, the implement release of Spyder 3.3.1 and Spyder 4 beta 1 in the next couple weeks, our official Spyder 4 feature roadmap, and more, so stay tuned!
+There's plenty to look forward to in the coming days, with the official release of our all-new documentation, the forthcoming release of Spyder 3.3.1 and Spyder 4 beta 1 in the next couple weeks, our official Spyder 4 feature roadmap, and more, so stay tuned!
 In the meantime, happy Spydering and enjoy the new 3.3.0!
