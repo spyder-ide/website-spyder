@@ -1,4 +1,4 @@
-title: Spyder 3.3.0 Released: Modular, portable consoles; streamlined error reporting system; new features and usability improvements and more!
+title: Spyder 3.3.1 Released: Modular, portable consoles; streamlined error reporting system; new features and usability improvements and more!
 ---
 pub_date: 2018-07-15 00:00
 ---
@@ -8,11 +8,11 @@ category: Releases
 ---
 author: camgerlach
 ---
-summary: We're excited to announce the release of Spyder 3.3.0, with several new features and enhancements, usability improvements, significant under the hood modifications and over 40 bug fixes. We'll go over the key changes and explain what they mean for you as a user, and discuss a few additional important notes about this release and what's coming next.
+summary: We're excited to announce the release of Spyder 3.3.1, with several new features and enhancements, usability improvements, significant under the hood modifications and over 40 bug fixes. We'll go over the key changes and explain what they mean for you as a user, and discuss a few additional important notes about this release and what's coming next.
 ---
 body:
 
-We're pleased to release the next update in the stable Spyder 3 line, 3.3.0, which is now live on PyPI and ``conda``.
+We're pleased to release the next update in the stable Spyder 3 line, 3.3.1, which is now live on PyPI and ``conda``.
 As always, you can update with ``conda update spyder`` in the Anaconda Prompt/Terminal/command line (on Windows/macOS/Linux, respectively) if on Anaconda (recommended), or ``pip update spyder`` otherwise.
 If you run into any trouble, please carefully read our [new installation documentation](https://docs.spyder-ide.org/installation.html) and consult our [Troubleshooting Guide](https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ), which contains straightforward solutions to the vast majority of install-related issues users have reported.
 
@@ -23,8 +23,8 @@ Finally, we'd like to briefly share a few final notes on this release and the la
 
 ## Modular, flexible Console architecture
 
-The biggest single change with version 3.3.0 is a major overhaul of how IPython Consoles are started and managed in Spyder.
-More precisely, we've moved all the kernel-related code from the Spyder core into a new modular package, ``spyder-kernels``, available on the same distribution channels as Spyder itself (and installed automatically when updating to 3.3.0).
+The biggest single change with version 3.3.1 is a major overhaul of how IPython Consoles are started and managed in Spyder.
+More precisely, we've moved all the kernel-related code from the Spyder core into a new modular package, ``spyder-kernels``, available on the same distribution channels as Spyder itself (and installed automatically when updating to 3.3.1).
 While the most dramatic differences are under the hood, there's plenty for everyone to like (and a few things to be aware of).
 
 Most importantly, for our everyday users, this makes Spyder much more flexible and powerful when working with multiple Python environments.
@@ -79,7 +79,7 @@ They now feature a ``Close`` button which exits the dialog without saving any ed
 
 ## Streamlined error reporting experience
 
-While we hope you never need to use it, Spyder 3.3.0 includes a brand-new error handling backend that can submit bug reports directly through the Github API.
+While we hope you never need to use it, Spyder 3.3.1 includes a brand-new error handling backend that can submit bug reports directly through the Github API.
 Based off [Colin Duquesnoy](https://github.com/ColinDuquesnoy)'s excellent [QCrash](https://github.com/ColinDuquesnoy/QCrash) framework, this is a major improvement in speed, functionality, reliability and user convenience over the old approach (essentially just opening a link in a web browser).
 Just as before, we won't send anything without your explicit consent, you need a Github account (or create one for free), and you can view and edit the report on Github at any time.
 You will need to enter your Github credentials the first time you submit a report.
@@ -104,5 +104,5 @@ If you have any questions, problems or feedback, we'd love to hear from you (jus
 For general questions or install issues that aren't addressed by the above, our [Google Group](https://groups.google.com/group/spyderlib) and [Gitter live chat](https://gitter.im/spyder-ide/public) are a good place to ask, while [our Github](https://github.com/spyder-ide/spyder) is the place to report bugs, request features, or help develop Spyder itself (though make sure to search our [issues list](https://github.com/spyder-ide/spyder/issues?utf8=%E2%9C%93&q=is%3Aissue) to ensure it hasn't already been submitted).
 Finally, you can follow our [Facebook](https://www.facebook.com/SpyderIDE/) and [Twitter](https://twitter.com/spyder_ide) for the latest Spyder news, releases, previews and tips, and help support Spyder development on [OpenCollective](https://opencollective.com/spyder).
 
-There's plenty to look forward to in the coming days, with the official release of our all-new documentation, the forthcoming release of Spyder 3.3.1 and Spyder 4 beta 1 in the next couple weeks, our official Spyder 4 feature roadmap, and more, so stay tuned!
-In the meantime, happy Spydering and enjoy the new 3.3.0!
+There's plenty to look forward to in the coming days, with the official release of our all-new documentation, the forthcoming release of Spyder 4 beta 1 in the next couple weeks, our official Spyder 4 feature roadmap, and more, so stay tuned!
+In the meantime, happy Spydering and enjoy the new 3.3.1!
