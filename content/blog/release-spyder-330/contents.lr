@@ -1,6 +1,6 @@
 title: Spyder 3.3.1 Released: Modular, portable consoles; streamlined error reporting system; new features and usability improvements and more!
 ---
-pub_date: 2018-07-15 00:00
+pub_date: 2018-07-23 00:00
 ---
 tags: Spyder3, minor-release
 ---
@@ -32,9 +32,13 @@ With the changes, Spyder itself does not need to be present in every environment
 Just set the path under ``Tools -> Preferences -> Python interpreter -> Use the following Python interpreter`` to the desired Python executable, and any new Console you open will start in the selected environment.
 Check out our [new wiki page on using environments with Spyder](https://github.com/spyder-ide/spyder/wiki/Working-with-packages-and-environments-in-Spyder), for more details and tips on the subject, and keep an eye out for the further improvements coming in Spyder 4, which will greatly simplify the process and include full GUI-based project, package and environment management functionality built right in.
 
+![Python interpreter pane of the Spyder preferences dialog, with the "Use the following Python interpreter" option highlighted](spyder-prefs-python.png)
+
 Furthermore, the new package allows you to independently launch a kernel from anywhere (on your local computer, or a remote machine, server or even supercomputing cluster), connect to it with Spyder, and use it just like a "natively" started one.
 After installing ``spyder-kernels`` on the host environment, you can start one with ``python -m spyder_kernels.console``, and then enter the kernel's 4-digit ID (and SSH connection details, if a remote machine) in the Spyder ``Connect to an existing kernel`` dialog under the IPython Console pane context- or "gear"-menu).
 For more information on the process, see the [Connecting to a Console](https://docs.spyder-ide.org/ipythonconsole.html#connecting-to-a-console) section in our new documentation.
+
+![A remote kernel running in a system console alongside Spyder's connect to kernel dialog](spyder-remote-kernel.png)
 
 Best of all, no matter how or where a kernel is started, every console now supports the full suite of Spyder's features, including completion, the Variable Explorer, interactive Help and more, unlike before.
 You can even mix and match internal, external and remote kernels in different environments, all in the same Spyder session, by either changing the Python interpreter preferences setting between starting a console, or starting and connecting to multiple consoles externally—or both!
@@ -59,14 +63,20 @@ Further details specific to installing a development build can be found in our [
 
 ## New IPython Console completion and plotting features
 
+![Advanced tab of the IPython console pane of Spyder's preferences, with the new Jedi completion section highlighted](jedi-greedy-completion-prefs.png)
+
 Spyder's IPython Consoles can now use an advanced ``jedi``-based completion engine that, similar to the Editor, analyzes your code without actually having to run it first.
 This allows for advanced completion functionality on objects not yet assigned to a variable, similar to the existing "greedy" completion option, but without the need for dynamic evaluation.
 It can be slow if working with very large Pandas ``DataFrames`` so it is disabled by default, but you can activate it under ``Tools -> Preferences -> IPython console -> Advanced Settings -> Jedi completion``.
 The descriptive text for the "greedy" completion option (also off by default) was also clarified, particularly to explain an IPython bug (not present in the ``jedi`` completer) with the feature and a consequent workaround.
 
+![Graphics tab of the IPython console pane of Spyder's preferences, with the new "Use a tight layout for inline plots" option highlighted](tight-layout-preferences.png)
+
 We've also added a new plotting setting, ``Use a tight layout for inline plots``, for the ``Inline`` Matplotlib graphics backend.
-The default behavior (as in previous Spyder versions) sets ``bbox_inches`` to ``"tight"`` in ``matplotlib`` calls when drawing to the inline backend.
+The default behavior (as in previous Spyder versions) sets ``bbox_inches`` to ``"tight"`` in Matplotlib calls when drawing to the inline backend.
 However, if you prefer your own ``bbox_inches`` argument be respected even when plots are rendered in the Console, you can now do so by unchecking this option under ``Tools -> Preferences -> IPython console -> Graphics -> Inline backend``.
+
+![Comparison of inline plots in Spyder's IPython Console with and without the "tight layout" option set](plot-comparison.png)
 
 
 ## Better Variable Explorer usability and performance
@@ -76,15 +86,22 @@ In particular, we've fixed several major memory leaks when saving edited objects
 We've also changed the names and functions of the ``Cancel`` and ``Ok`` buttons in Variable Explorer dialogs to be easier to understand and use.
 They now feature a ``Close`` button which exits the dialog without saving any edits to the object's contents, and a ``Save and Close`` button—automatically enabled once modifications are made—that commits the changes back to the kernel.
 
+![A Variable Explorer DataFrame editor dialog, showing the new "Close" and "Save and Close" buttons](variable-explorer-ux.png)
+
 
 ## Streamlined error reporting experience
 
 While we hope you never need to use it, Spyder 3.3.1 includes a brand-new error handling backend that can submit bug reports directly through the Github API.
 Based off [Colin Duquesnoy](https://github.com/ColinDuquesnoy)'s excellent [QCrash](https://github.com/ColinDuquesnoy/QCrash) framework, this is a major improvement in speed, functionality, reliability and user convenience over the old approach (essentially just opening a link in a web browser).
 Just as before, we won't send anything without your explicit consent, you need a Github account (or create one for free), and you can view and edit the report on Github at any time.
+
+![The new authentication dialogs for submitting a Github report, with a username/password and a token option](new-authent-dialog-both.png)
+
 You will need to enter your Github credentials the first time you submit a report.
 For this, you can [create an app token](https://github.com/settings/tokens/new?scopes=public_repo) which only grants the very limited permissions needed to create a public issue report, can be easily revoked and re-created, and works with two-factor authentication (which you should be using); however, if you have not yet enabled 2FA, it also offers the option to enter your Github username and password.
 Either way, Spyder can securely remember your login using the [``keyring``](https://github.com/jaraco/keyring) package, so you only have to do this once on any given machine (if you select the "remember" option).
+
+![The new error reporting interface, with a title field, more descriptive text, and a polished UI](new-error-dialog-full.png)
 
 The dialog itself has also been made more functional and user-friendly, designed to help encourage high-quality, useful reports, and with more accessible, descriptive text.
 The reports themselves also contain more useful data about the problem, and there is now a ``--safe-mode`` command-line option for Spyder to start in a clean, temporary config directly, so you can test to see if the problem reoccurs without the hassle of a ``spyder --reset``, and play around with other settings without impacting your main configuration. Finally, we've fixed over 40 bugs in this release and further improved our documentation and troubleshooting material, so hopefully you'll see this less often.
