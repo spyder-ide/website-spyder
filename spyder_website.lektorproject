@@ -1,11 +1,14 @@
 [project]
 name = Spyder Website
 themes = hugo-icon
+url_style = absolute
+url = https://www.spyder-ide.org
 
 [packages]
 lektor-webpack-support = 0.3
 lektor-markdown-header-anchors = 0.1
 lektor-disqus-comments = 0.2
+lektor-atom = 0.3
 
 [servers.develop]
 name = Develop

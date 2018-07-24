@@ -36,7 +36,7 @@
           <ul class="dropdown menu" data-dropdown-menu>
             <li id="menu-logo">
               <p></p>
-              <a href="{{ this.parent|url }}">
+              <a href="{{ '/blog'|url }}">
                 <img src="{{ '/static/images/spyder-logo.svg' | url}}">
                 <span>
                   <span id="logo-text"><big>S</big>pyder {% block section %}{% endblock %}</span>                  
@@ -46,12 +46,11 @@
             </li>
           </ul>
         </div>
-
+        <a style="font-size:11px;" data-nav-section="RSS" href="{{ '/blog/feed.xml'|url }}">RSS</a>
           {% set data_nav = bag('main-nav', this.alt) %}
             {% for path, label in data_nav.items() %}
               <a class="pull-right" href="{{ path }}" data-nav-section="{{label}}">{{ label }}</a>
             {% endfor %}
-     
 		</div>
   </div>
 
