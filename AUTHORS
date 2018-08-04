@@ -9,9 +9,9 @@ Additionally:
 * Ported to Hugo by Steve Lane <https://github.com/SteveLane/>,
 * And ported to Lektor by Daniel Althviz Moré <https://github.com/dalthviz/>.
 * jQuery and Sizzle CSS Selector Engine (SizzleJS) created by jQuery Foundation
-  and other contributors, <http://jquery.com/> and <http://sizzlejs.com/>.
+  and other contributors, <https://jquery.com/> and <https://sizzlejs.com/>.
 * Font Awesome symbols created by Dave Gandy <https://fontawesome.com/>.
-* Slick theme and icons by Ken Wheeler <http://kenwheeler.github.io>.
+* Slick theme and icons by Ken Wheeler <https://kenwheeler.github.io/>.
 * Normalize.css created by Nicolas Gallagher <https://github.com/necolas>
   and Jonathan Neal <https://github.com/jonathantneal>;
-  Sass port normalize-scss by John Albin Wilkins <http://john.albin.net/>.
+  Sass port normalize-scss by John Albin Wilkins <https://john.albin.net/>.

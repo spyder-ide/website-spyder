@@ -62,7 +62,7 @@ There are 2 branches, develop and production.
 
 ### Develop
 
-Default branch is develop and is deployed with gh-pages via Lektor to http://develop.spyder-ide.org
+Default branch is develop and is deployed with gh-pages via Lektor to https://develop.spyder-ide.org/
 
 ### Production
 
@@ -70,13 +70,13 @@ After test have been carried out by the QA Team, the changes from develop will b
 
 ## Technologies and Libraries used
 
-This website is built using [Lektor](http://getlektor.com/) an static web generator that could be customized using [Jinja2](http://jinja.pocoo.org/) templates.
+This website is built using [Lektor](https://www.getlektor.com/), a static web generator that could be customized using [Jinja2](http://jinja.pocoo.org/) templates.
 
 ### Frontend Libraries
 
-- [Foundation](http://foundation.zurb.com/)
+- [Foundation](https://foundation.zurb.com/)
 - [Slick Carousel](https://kenwheeler.github.io/slick/)
-- [Font Awesome](http://fontawesome.io/)
+- [Font Awesome](https://fontawesome.com/)
 
 ### Webpack
 

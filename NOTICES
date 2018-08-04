@@ -10,7 +10,7 @@ licensed under Creative Commons Attribution 3.0 Unported
 ------------------------------------------------------------------------------
 
 jQuery created by jQuery Foundation and other contributors
-<http://jquery.com/>
+<https://jquery.com/>
 Released under the terms of the MIT License, as follows:
 
 Copyright JS Foundation and other contributors, https://js.foundation/
@@ -42,7 +42,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
 ------------------------------------------------------------------------------
 
 Sizzle CSS Selector Engine (SizzleJS) created by jQuery Foundation
-and other contributors <http://sizzlejs.com/>
+and other contributors <https://sizzlejs.com/>
 Released under the terms of the MIT License, as follows:
 
 Copyright JS Foundation and other contributors, https://js.foundation/
@@ -81,7 +81,7 @@ Creative Commons Attribution 4.0 International license
 <https://creativecommons.org/licenses/by/4.0/>
 
 All web and desktop fonts licensed under the SIL Open Font License (OFL) 1.1.
-<http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL>
+<https://scripts.sil.org/OFL>
 
 -----------------------------------------------------------
 SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
@@ -174,7 +174,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 ------------------------------------------------------------------------------
 
 The Slick theme, icons and font created by Ken Wheeler
-<http://kenwheeler.github.io> and other contributors.
+<https://kenwheeler.github.io/> and other contributors.
 Released under the terms of the MIT license, as follows:
 
 The MIT License (MIT)
@@ -203,7 +203,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Normalize.css created by Nicolas Gallagher <https://github.com/necolas>
 and Jonathan Neal <https://github.com/jonathantneal>;
-Sass port normalize-scss by John Albin Wilkins <http://john.albin.net/>.
+Sass port normalize-scss by John Albin Wilkins <https://john.albin.net/>.
 Released under the terms of the MIT license, as follows:
 
 Copyright © Nicolas Gallagher and Jonathan Neal and John Albin Wilkins
