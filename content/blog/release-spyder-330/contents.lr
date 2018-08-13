@@ -24,7 +24,7 @@ Finally, we'd like to briefly share a few final notes on this release and the la
 ## Modular, flexible Console architecture
 
 The biggest single change with version 3.3.0/3.3.1 is a major overhaul of how IPython Consoles are started and managed in Spyder.
-More precisely, we've moved all the kernel-related code from the Spyder core into a new modular package, ``spyder-kernels``, available on the same distribution channels as Spyder itself (and installed automatically when updating to >=3.3.0).
+More precisely, we've moved all the kernel-related code from the Spyder core into a new modular package, ``spyder-kernels``, available on the [same](https://github.com/spyder-ide/spyder-kernels) [distribution](https://pypi.org/project/spyder-kernels/) [channels](https://anaconda.org/conda-forge/spyder-kernels) as Spyder itself (and installed automatically when updating to >=3.3.0).
 While the most dramatic differences are under the hood, there's plenty for everyone to like (and a few things to be aware of).
 
 Most importantly, for our everyday users, this makes Spyder much more flexible and powerful when working with multiple Python environments.
@@ -44,7 +44,7 @@ Best of all, no matter how or where a kernel is started, every console now suppo
 You can even mix and match internal, external and remote kernels in different environments, all in the same Spyder session, by either changing the Python interpreter preferences setting between starting a console, or starting and connecting to multiple consoles externally—or both!
 Finally, for those of us (and those of you!) who help develop Spyder, the changes also make it easier to maintain and improve the code, and opens the door to one of the biggest features coming in Spyder 4: a new, full-featured debugging kernel that many of you have been asking for.
 
-The one key thing to remember: make sure you install the appropriate version of ``spyder-kernels`` for your version of Spyder. For most users, that will be spyder-kernels 0.x (currently 0.2.6) to match Spyder 3 on our stable ``3.x`` branch; if testing a Spyder 4 beta or Github clone of the ``master`` branch, you'll want the latest 1.x version of ``spyder-kernels`` (currently 1.0.2).
+The one key thing to remember: make sure you install the appropriate version of ``spyder-kernels`` for your version of Spyder. For most users, that will be spyder-kernels 0.x (currently 0.2.6) to match Spyder 3 on our stable ``3.x`` branch; if testing a Spyder 4 beta or Github clone of the ``master`` branch, you'll want the latest 1.x version of ``spyder-kernels`` (currently 1.1.0).
 To install the correct build, you can use the following ``conda`` command,
 
 ```bash
