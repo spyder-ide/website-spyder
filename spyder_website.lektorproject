@@ -45,6 +45,7 @@ locale = fr
   mission_2_nav = "download"
   nav_services = "Components"
   nav_team = "The Team"
+  nav_sponsors = "Sponsors"
   nav_work = "Plugins"
   spyder_nav_content = true
   mission_enable = true
@@ -55,6 +56,7 @@ locale = fr
   service_video_url = "https://www.youtube.com/watch?v=Hf07PmwQwPQ"
   work_enable = true
   team_enable = 
+  sponsors_enable = true
   donate_enable = true
   donate_name = Donate
   donate_description = Help us to provide the best Scientific Python Development Environment!
