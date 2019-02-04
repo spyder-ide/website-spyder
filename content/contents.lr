@@ -249,3 +249,57 @@ Download Spyder with Anaconda
 </a>
 ----
 data_section: download
+---
+sponsors:
+
+#### sponsors ####
+title: Sponsors
+----
+description: Spyder is funded thanks to the generous support of
+----
+community_description: and the donations we have received from our users around the world through [Open Collective](https://opencollective.com/spyder/):
+----
+opencollective: spyder
+----
+sponsors:
+
+##### sponsor #####
+name: 
+-----
+description: 
+-----
+image: quansight.png
+-----
+facebook: 
+-----
+twitter: 
+-----
+dribble: 
+-----
+instagram: 
+-----
+github: 
+-----
+linkedin: 
+-----
+website: 
+##### sponsor #####
+name: 
+-----
+description: 
+-----
+image: numfocus_lrg.png
+-----
+facebook: 
+-----
+twitter: 
+-----
+dribble: 
+-----
+instagram: 
+-----
+github: 
+-----
+linkedin: 
+-----
+website: 
