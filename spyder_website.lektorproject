@@ -1,6 +1,6 @@
 [project]
 name = Spyder Website
-themes = hugo-icon
+themes = lektor-icon
 url_style = absolute
 url = https://www.spyder-ide.org
 

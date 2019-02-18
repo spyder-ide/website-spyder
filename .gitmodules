@@ -1,3 +1,4 @@
-[submodule "themes/hugo-icon"]
-	path = themes/hugo-icon
-	url = https://github.com/spyder-ide/hugo-icon.git
+[submodule "themes/lektor-icon"]
+	path = themes/lektor-icon
+    branch = legacy
+	url = https://github.com/spyder-ide/lektor-icon.git
