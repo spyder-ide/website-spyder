@@ -23,16 +23,6 @@ name = English
 primary = yes
 locale = en_US
 
-[alternatives.es]
-name = Spanish
-url_prefix = /es/
-locale = es
-
-[alternatives.fr]
-name = French
-url_prefix = /fr/
-locale = fr
-
 [theme_settings]
   author = "Spyder Team"
   description = "Spyder Website"

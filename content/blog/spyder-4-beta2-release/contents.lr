@@ -1,0 +1,170 @@
+title: Spyder 4.0 coming closer, beta2 is now available!
+---
+body:
+
+***This blogpost was originally published on the [Quansight Labs website](http://labs.quansight.org/)***
+
+It has been almost two months since I joined Quansight, last April, to start 
+working with [Spyder](https://github.com/spyder-ide/spyder/) maintenance and 
+development. So far, it has been a very exciting and rewarding journey under 
+the guidance of long time Spyder maintainer
+[Carlos Córdoba](https://github.com/ccordoba12).
+This is the first of a series of blog posts we will be writing to showcase 
+updates on the development of Spyder, new planned features and news on the 
+road to Spyder 4.0 and beyond.
+
+Before we describe the features that will be included in the release of Spyder
+4.0beta2, I would like to give a warm welcome to
+[Edgar Margffoy](https://github.com/andfoy),
+who recently joined Quansight, and will be working with the Spyder team to
+take its development even further. Edgar has been a core Spyder developer 
+for more than two years and we are very excited to have his (almost)
+full-time commitment to the project.
+
+# Spyder 4.0 beta2 release!
+
+Since August 2018, when the first Beta of the 4.x series was released, the
+Spyder development team has been working really hard on its next release,
+4.0 Beta2. The past couple of months we added the long awaited dark theme
+for the entire interface, we switched our entire code completion and linting
+architecture to the
+[Language Server Protocol](https://microsoft.github.io/language-server-protocol/)
+which opens the door to support many other
+programming languages, and we merged several other goodies!
+
+## Dark Theme
+
+This has been a
+[long awaited feature](https://github.com/spyder-ide/spyder/issues/2350)
+and will be the default theme for this new version. Users can still select the
+traditional OS specific theme by going to the **Appearance** section in our
+**Preferences** dialog.
+
+This enhancement was enabled by the work of
+[Colin Duquesnoy](https://github.com/ColinDuquesnoy) and
+[Daniel Pizzeta](https://github.com/DPizzeta)
+and their [QDarkStyle](https://github.com/ColinDuquesnoy/QDarkStyleSheet/)
+package. The Spyder team is now actively collaborating with Colin and Daniel
+to pursue the release of QDarkStyle 3.x, which will be using the
+[qtsass](https://github.com/spyder-ide/qtsass/)
+package to harness the power of SASS/SCSS and allow users to fully customize
+the theme dynamically.
+
+A picture is worth a thousand words, so without further ado, here it is:
+
+![Spyder Dark style](spyder-qdarkstyle.png)
+
+Pretty, right :-) ?
+
+## Language Server Protocol (LSP) implementation
+
+The LSP was created by Microsoft for Visual Studio Code to standardize the
+way in which development tools (i.e. editors and IDEs) communicate with
+servers that provide code completion, linting and related facilities for
+different programming languages. With this, as
+[they](https://microsoft.github.io/language-server-protocol/) describe it:
+
+>A single Language Server can be reused in multiple development
+tools, which in turn can support multiple languages with minimal effort.
+LSP is a win for both language providers and tooling vendors!
+
+Since our 4.0beta2 version, Spyder is now one of such development tools! We
+developed our own client to communicate with any server that implements the
+LSP v3.0 through a transport layer that uses ZeroMQ sockets. Code completion,
+signatures and docstring extraction were rewritten to take advantage of this
+architecture, and mouse hovers were added too (other LSP features, such as
+workspace functionality, will come in future betas).
+
+Our current support is geared towards Python, using the great
+[Python-Language-Server](https://github.com/palantir/python-language-server)
+package. This has allowed us to provide fine-grained configurability for
+[Pycodestyle](http://pycodestyle.pycqa.org/en/stable/) and
+[Pydocstyle](http://www.pydocstyle.org/en/stable/) options, and in future
+betas we’ll also add the ability to use and configure code formatters such
+as yapf and autopep8.
+
+![Code style preferences](spyder-code-prefs.png)
+<small>Code style preferences</small>
+
+![Docstring style preferences](spyder-doc-prefs.png)
+<small>Docstring style preferences</small>
+
+![Hover hint and calltips](spyder-hover-hint-calltip.png)
+<small>Hover hint and calltips</small>
+
+We offer support to configure LSP servers  for other programming languages
+as well. In the future we hope to include out-of-the-box support for
+programming languages in the scientific computing spectrum, such as
+Fortran, Julia and C/C++.
+
+![Other languages](spyder-preferences-lsp.png)
+
+## Plots pane
+
+Following the steps and inspiration of RStudio, another well known IDE in the
+Data Science space, Spyder now includes a Plots viewer pane. Since beta2 plots
+generated in every console will be displayed there, and the pane will be
+updated automatically to only show the plots of the current one. Besides,
+users will have the ability to browse the history of all plots generated in a
+session.
+
+![Other languages](spyder-plots.png)
+
+## And much more
+
+There are many more features that have been developed in the previous 10
+months! These include:
+
+1. **Autosave** files in the editor. With this Spyder will recover your
+unsaved files in case it crashes before you save them. 
+2. Dedicated **Sympy**, **Cython** and **Pylab** consoles. This will make it
+very simple to quickly explore and create code for these libraries.
+3. OS level **window pane undocking**. This will allow users to easily
+organize panes in different monitors.
+4. Support for **[multi-indexes](https://pandas.pydata.org/pandas-docs/stable/user_guide/advanced.html)**
+in our Dataframe viewer.
+
+We will describe all of these additional enhancements in greater detail in
+future blog posts.
+
+## How can you help?
+
+If you are a Spyder user and would like to help us test this beta release, you
+can do so by installing it with conda, from our beta releases channel:
+
+```bash
+$ conda update qt pyqt
+$ conda install spyder=4.0.0b2 --channel spyder-ide
+```
+
+This is a safe process because Spyder now uses a different configuration
+directory for its beta versions, so you can easily switch between our stable
+and beta releases without fearing of damage to your current installation.
+
+If you find any issues, you can report them on our
+[issues tracker](https://github.com/spyder-ide/spyder/issues).
+
+## Closing Remarks
+
+I would like to thank Quansight for the opportunity of working in open source
+development on an awesome product such as Spyder. I would also like to thank
+the users, [contributors](https://github.com/spyder-ide/spyder/graphs/contributors)
+and [core developers](https://github.com/orgs/spyder-ide/people) for helping
+make Spyder an awesome tool!
+
+---
+category: Releases
+---
+tags: Spyder4, beta
+---
+allow_comments: no
+---
+author: goanpeca
+---
+summary:
+
+ It has been almost two months since I joined Quansight, last April, to start  working with Spyder maintenance and  development. So far, it has been a very exciting and rewarding journey under  the guidance of long time Spyder maintainer [Carlos Córdoba](https://github.com/ccordoba12). This is the first of a series of blog posts we will be writing to showcase  updates on the development of Spyder, new planned features and news on the  road to Spyder 4.0 and beyond.
+---
+twitter_handle: goanpeca
+---
+pub_date: 2019-05-20 00:00
