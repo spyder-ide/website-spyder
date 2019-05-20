@@ -49,6 +49,10 @@ and is enabled by default in Spyder 4. You can still select the
 light theme under  ``Preferences > Appearance`` by either choosing a light-background
 syntax-highlighting scheme, or changing ``Interface theme`` to ``Light``.
 
+![Screenshot of the Spyder main window with default panes, with the dark theme applied across the entire interface](spyder-qdarkstyle.png)
+
+Pretty, right :-) ?
+
 This enhancement was made possible by the work of
 [Colin Duquesnoy](https://github.com/ColinDuquesnoy),
 [Daniel Pizzeta](https://github.com/DPizzeta)
@@ -59,11 +63,6 @@ to pursue the release of QDarkStyle 3.x, which will be using Spyder's
 package to harness the power of SASS/SCSS and allow users to fully customize
 the theme dynamically.
 
-A picture is worth a thousand words, so without further ado, here it is:
-
-![Screenshot of the Spyder main window with default panes, with the dark theme applied across the entire interface](spyder-qdarkstyle.png)
-
-Pretty, right :-) ?
 
 ## Language Server Protocol architecture
 
@@ -74,8 +73,8 @@ different programming languages. With LSP, as
 [they describe it](https://microsoft.github.io/language-server-protocol/):
 
 > A single Language Server can be reused in multiple development tools,
-which in turn can support multiple languages with minimal effort.
-LSP is a win for both language providers and tooling vendors!
+> which in turn can support multiple languages with minimal effort.
+> LSP is a win for both language providers and tooling vendors!
 
 As of Spyder 4 Beta 2, Spyder is now one of those tools!
 We developed our own client to communicate with any server that implements
@@ -83,6 +82,9 @@ LSP v3.0 through a transport layer that uses ZeroMQ sockets. Code completion,
 help generation, calltips, and real-time code/style analysis were rewritten to take advantage of this
 architecture, and hover hints and docstring style analysis were added.
 Further LSP features, such as workspace functionality and on the fly completion, will come in future betas.
+
+![Hover hint and calltips](spyder-hover-hint-calltip.png)
+Hover hint and calltips
 
 Our current support is geared towards Python, using the great
 [Python-Language-Server](https://github.com/palantir/python-language-server)
@@ -92,14 +94,8 @@ package. This has allowed us to provide fine-grained configurability for
 betas we’ll also add the ability to use and configure code formatters like
 YAPF and autopep8.
 
-![Code style preferences](spyder-code-prefs.png)
-<small>Code style preferences</small>
-
 ![Docstring style preferences](spyder-doc-prefs.png)
-<small>Docstring style preferences</small>
-
-![Hover hint and calltips](spyder-hover-hint-calltip.png)
-<small>Hover hint and calltips</small>
+Docstring style preferences
 
 We support configuring LSP servers for additional, non-Python programming languages.
 In the future, we hope to include out-of-the-box LSP integration for
@@ -129,7 +125,7 @@ unsaved files in case it crashes or something else goes wrong.
 * Dedicated **Sympy**, **Cython** and **Pylab** consoles, making it
 very simple to quickly explore and create code for these libraries.
 * OS level **window pane undocking**, allowing you to easily
-organize panes in different monitors.
+organize panes across different monitors.
 4. Support for **[multi-indexes](https://pandas.pydata.org/pandas-docs/stable/user_guide/advanced.html)**
 in our Dataframe viewer, making working with complex datasets much easier.
 
