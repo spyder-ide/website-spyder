@@ -107,11 +107,9 @@ including Fortran, Julia and C/C++.
 ## Plots pane
 
 Similar to [RStudio](https://www.rstudio.com/) and other data science IDEs,
-Spyder now includes a Plots pane, allowing you to browse all figures created during a session.
-generated in every console will be displayed there, and the pane will be
-updated automatically to only show the plots of the current one. Besides,
-users will have the ability to browse the history of all plots generated in a
-session.
+Spyder now includes a Plots pane, allowing you to browse all figures created during a
+session. Beyond just viewing plots, you can also zoom, save/export, copy and remove
+them.
 
 ![Spyder main window, showing a figure displayed in the plots pane](spyder-plots.png)
 
