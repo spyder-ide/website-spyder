@@ -1,5 +1,15 @@
 title: Spyder 4.0 takes a big step closer with the release of Beta 2!
 ---
+pub_date: 2019-05-20 00:00
+---
+tags: Spyder4, beta
+---
+category: Releases
+---
+author: goanpeca
+---
+summary: In the first of a new series of blog posts chronicling our final push toward the Spyder 4.0 release and the new features we've implemented along the way, we announce the release of the milestone Beta 2, which represents nearly a year of intense work on Spyder's completion/introspection/help/analysis architecture, dark theme, plot pane, autosave, and much more.
+---
 body:
 
 *This blogpost was originally published on the [Quansight Labs website](https://labs.quansight.org/)*
@@ -155,20 +165,3 @@ development on an awesome project like Spyder. I am also grateful to our
 users, [contributors](https://github.com/spyder-ide/spyder/graphs/contributors)
 and [core developers](https://github.com/orgs/spyder-ide/people) for helping
 making Spyder amazing!
-
----
-category: Releases
----
-tags: Spyder4, beta
----
-allow_comments: no
----
-author: goanpeca
----
-summary:
-
-In the first of a new series of blog posts chronicling our final push toward the Spyder 4.0 release and the new features we've implemented along the way, we announce the release of the milestone Beta 2, which represents nearly a year of intense work on Spyder's completion/introspection/help/analysis architecture, dark theme, plot pane, autosave, and much more.
----
-twitter_handle: goanpeca
----
-pub_date: 2019-05-20 00:00
