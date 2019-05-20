@@ -2,3 +2,6 @@ webpack/node_modules
 
 # Notepad++ files
 nppBackup/
+
+# OSX files
+.DS_Store
