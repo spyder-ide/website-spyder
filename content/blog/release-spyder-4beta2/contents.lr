@@ -8,7 +8,7 @@ category: Releases
 ---
 author: goanpeca
 ---
-summary: In the first of a new series of blog posts chronicling our final push toward the Spyder 4.0 release and the new features we've implemented along the way, we announce the release of the milestone Beta 2, which represents nearly a year of intense work on Spyder's completion/introspection/help/analysis architecture, dark theme, plot pane, autosave, and much more.
+summary: We're excited to announce the release of the milestone Beta 2, which represents nearly a year of intense work on Spyder's completion/introspection/help/analysis architecture, dark theme, plot pane, autosave, and much more. This is the first of a new series of blog posts chronicling our final push toward the Spyder 4.0 release, and the new features we've implemented along the way, 
 ---
 body:
 
@@ -84,7 +84,6 @@ architecture, and hover hints and docstring style analysis were added.
 Further LSP features, such as workspace functionality and on the fly completion, will come in future betas.
 
 ![Hover hint and calltips](spyder-hover-hint-calltip.png)
-Hover hint and calltips
 
 Our current support is geared towards Python, using the great
 [Python-Language-Server](https://github.com/palantir/python-language-server)
@@ -95,7 +94,6 @@ betas we’ll also add the ability to use and configure code formatters like
 YAPF and autopep8.
 
 ![Docstring style preferences](spyder-doc-prefs.png)
-Docstring style preferences
 
 We support configuring LSP servers for additional, non-Python programming languages.
 In the future, we hope to include out-of-the-box LSP integration for
@@ -124,7 +122,7 @@ unsaved files in case it crashes or something else goes wrong.
 very simple to quickly explore and create code for these libraries.
 * OS level **window pane undocking**, allowing you to easily
 organize panes across different monitors.
-4. Support for **[multi-indexes](https://pandas.pydata.org/pandas-docs/stable/user_guide/advanced.html)**
+* Support for **[multi-indexes](https://pandas.pydata.org/pandas-docs/stable/user_guide/advanced.html)**
 in our Dataframe viewer, making working with complex datasets much easier.
 
 We will describe all of these additional enhancements in greater detail in
