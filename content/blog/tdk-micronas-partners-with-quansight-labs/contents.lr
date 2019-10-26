@@ -75,7 +75,7 @@ This feature will:
 * Define and implement the minimal aspects that should be extensible by a
   Project Type
 
-### File Associations
+## File Associations
 
 Spyder currently supports opening files on the Project and File Explorer
 using the (default) Operating System defined applications. We will enhance
@@ -85,7 +85,7 @@ This will give users more power to select the tool or set of tools that they
 prefer to use for specific projects and tasks directly on the File and Project
 Explorer pane.
 
-### URL Awareness
+## URL Awareness
 
 Working with projects requires access to documentation, located within the
 computer as other files or links located over the internet. We will now
@@ -93,7 +93,7 @@ include integration for URI detection within the editor so users can
 <kbd>Ctrl+Click</kbd> on these items. This will work similarly as module
 inspection works, but generalized to external and internal links.
 
-### Git version control enhancements
+## Git version control enhancements
 
 The revision system of choice by our user base, including TDK, is Git.
 The purpose of this enhancement is to enable basic Git integration from
