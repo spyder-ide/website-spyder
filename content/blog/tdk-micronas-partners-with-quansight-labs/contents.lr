@@ -90,7 +90,7 @@ Explorer pane.
 Working with projects requires access to documentation, located within the
 computer as other files or links located over the internet. We will now
 include integration for URI detection within the editor so users can
-<kbd>Ctrl+Click</kbd> on these items. This will work similarly as module
+`Ctrl+Click` on these items. This will work similarly as module
 inspection works, but generalized to external and internal links.
 
 ## Git version control enhancements
