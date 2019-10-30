@@ -1,0 +1,94 @@
+title: Files Improvements Spyder4
+---
+author: juanis2112
+---
+body:
+
+<!--
+.. title: Files Improvements Spyder4
+.. slug: Files-Improvements-Spyder4
+.. date: 2019-06-02
+.. tags: Spyder, Labs
+.. category: 
+.. link: 
+.. author: Juanita Gomez
+.. description: 
+.. type: text
+-->
+
+
+For version 4 of Spyder several improvements have been made regarding file management and visualization. 
+
+## Simplified interface
+
+In order to simplify the file explorer interface, by default now the columns corresponding to size and kind are hidden. This feature can be activated or deactivated by either accessing the Pane Menu or by right clicking the header directly. In both, cases you can select which columns to display in the file explorer.
+
+![Pane Menu](pane-menu.png)
+
+![Header Menu](header-menu.png)
+
+## Custom File Associations
+
+First, we added the possibility to associate different external applications to open specific file extensions. By going to the “Files” option in the preferences window, it is possible to set the file associations by, selecting the File Types and the Associated applications that should be used to open this specific file extensions. 
+
+![File associations](file-associations.png)
+
+Once this configuration is set you can go to the files pane in spyder and whenever you open a file with the selected extension, it will open automatically with the selected associated application. Additionally, when you right click a file with one of this extensions, you will find an “open with” option that will show the application associated for this extension.
+
+![Open With](open-with.png)
+
+## Single click open on file explorer
+
+Another improvement made was the option to open files and directories with a single click which was not possible before because files and folders could only be opened by double clicking them. In order to enable this option, go to the files tab in the preferences window, check the box “Single click to open files” and apply the changes. With this set, now only a single click is needed to open a file externally or in spyder, from the files tab. 
+
+![Single click](single-click.png)
+
+Bear in mind that changing this configuration option will also affect the behaviour of the Project Explorer pane.
+
+## Open files externally
+
+Additionally, we added a context menu action called Open externally to open files with the Operating System default program associated with the file type. To use this action, go to the file you want to open in the files tab and right-click it to see the context menu. Then select “Open Externally” and the file will be opened outside spyder, with the default program associated with its file type, depending on the Operating System.
+
+![Open Externally](open-externally.png)
+
+Moreover, now it is possible to select several files to perform a specific action thanks to the multi-select functionality added. For this, press CTRL or SHIFT and Click on the files that are going to be selected without releasing the CTRL/SHIFT. It is also possible to select the files without doing it one by one, but selecting a file with the CTRL/SHIFT clicked and selecting a not contiguous file to this one which will select all the files between them.
+By doing this, it is possible to execute some of the actions available in the context menu for all the files selected including delete, rename, move, copy and open externally.
+
+
+![Select Files](select-files.png)
+
+## Files absolute and relative path handling
+
+Another functionality added was the ability to copy and paste files and their absolute or relative paths. To access these actions, go to the context menu by right-clicking a file in the files tab. 
+
+![Copy Path](copy-path.png)
+
+With this, a file can be copied from the files tab and pasted anywhere else directly from spyder. The “Copy Absolute Path” and “Copy Relative Path” actions, give us access to the files’ path, to be pasted as text. 
+
+This way, when pasting the absolute path of a file, we get the complete path of the file starting from the root.
+
+![Absolute Path](absolute-path.png)
+
+When using the option “Copy Relative Path”, we get the path of the file relative to the directory in which we are located.
+
+![Relative Path](relative-path.png)
+
+Finally, files are now displayed along with icons depending on their file type. There are different icons for each programming language file extension, including c, cpp, csharp, java, python, r, swift, for each different file type including jpg, mp3, m4a and other file extensions including txt and tex. This allows the users to visually identify what type of file they are seeing in the files pane, in order to select the correct associated applications to open these files.
+
+![File Extensions](file-extensions.png)
+
+---
+category: News
+---
+tags: milestone, team, status-update
+---
+pub_date: 2019-11-01 00:00
+---
+summary: For version 4 of Spyder several improvements have been made regarding file management and visualization. Some...
+---
+twitter_handle: juanitagomezr
+
+
+
+
+
