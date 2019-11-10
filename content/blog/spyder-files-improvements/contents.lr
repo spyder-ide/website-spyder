@@ -84,7 +84,7 @@ tags: milestone, team, status-update
 ---
 pub_date: 2019-11-01 00:00
 ---
-summary: For version 4 of Spyder several improvements have been made regarding file management and visualization. Some...
+summary: Spyder 4.0 is almost ready! It has been in the making for about three years, and it contains lots of interesting new features. In this post we will focus on the files plugin where several improvements have been made regarding file management and interface. Some of this include the simplification of the interface by hiding size and kind columns by default, the possibility to custom file associations and open files externally with specific programs associated from Spyder, the functions to copy the absolute and relative paths of the files from the editor and the incorporation of icons depending on the file type which are displayed along with the file's name.
 ---
 twitter_handle: juanitagomezr
 
