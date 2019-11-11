@@ -8,7 +8,7 @@ category: News
 ---
 author: andfoy
 ---
-summary: As part of our next release, we are proud to announce an additional completion client for Spyder, Kite. [Kite](https://kite.com/) is a novel completion client that uses Machine Learning techniques to find and predict the best autocompletion for a given text. Additionally, it collects improved documentation for compiled packages, e.g. Matplotlib, NumPy and SciPy, that cannot be obtained easily by using traditional code analysis packages such as Jedi.
+summary: As part of our next release, we are proud to announce an additional completion client for Spyder, Kite. Kite is a novel completion client that uses Machine Learning techniques to find and predict the best autocompletion for a given text. Additionally, it collects improved documentation for compiled packages, e.g. Matplotlib, NumPy and SciPy, that cannot be obtained easily by using traditional code analysis packages such as Jedi.
 ---
 body:
 
@@ -34,6 +34,6 @@ Our new Kite client will work alongside the new [Language Server Protocol](https
 
 Last but not least, as part of this novel client, we are introducing a new completion API that enables to write third-party completion clients for Spyder that require integration with the code editor and project manager. We offer calls to perform autocompletion, hover requests, signature hints, among others without any hassle. By leveraging this API, it should be possible to add completions and documentation suitable for domain-specific applications developed using Spyder.
 
-The function calls and constants of the new completion API will be added to the Spyder documentation and should be available in the next beta release of Spyder. Additionally, we will provide code snippets support for both LSP and Kite for the next release - please stay tuned!
+The function calls and constants of the new completion API will be added to the Spyder documentation and should be available in the next release of Spyder. Additionally, we will provide code snippets support for both LSP and Kite for the next release - please stay tuned!
 
 We, the Spyder development team, hope that these new improvements accelerate your productivity, and we invite you to beta-test them to improve them even more. As always, we are open to your questions, issue reports and contributions on all of our communication channels and our Github repository.
