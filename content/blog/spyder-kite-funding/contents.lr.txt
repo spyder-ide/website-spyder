@@ -5,8 +5,8 @@ author: andfoy
 body:
 
 <!--
-.. title: Spyder 4.0 beta4: Kite integration is here
-.. slug: spyder-40-beta4-kite-integration-is-here
+.. title: Spyder 4.0: Kite integration is here!
+.. slug: spyder-40-kite-integration-is-here
 .. date: 2019-08-16
 .. tags: Spyder, Labs
 .. category: 
@@ -16,13 +16,13 @@ body:
 .. type: text
 -->
 
-_[Kite](https://kite.com) is sponsoring the work discussed in this blog post, and in addition supports Spyder 4.0 development through a Quansight Labs [Community Work Order](http://labs.quansight.org/blog/2019/05/community-driven-opensource-funded-development/)._
+*This blogpost was originally published on the [Quansight Labs website](https://labs.quansight.org/blog/2019/08/spyder-40-beta4-kite-integration-is-here/)*.
+
+_Note_: [Kite](https://kite.com) is sponsoring the work discussed in this blog post, and in addition supports Spyder 4.0 development through a Quansight Labs [Community Work Order](http://labs.quansight.org/blog/2019/05/community-driven-opensource-funded-development/).
 
 As part of our next release, we are proud to announce an additional completion client for Spyder, Kite. [Kite](https://kite.com/) is a novel completion client that uses Machine Learning techniques to find and predict the best autocompletion for a given text. Additionally, it collects improved documentation for compiled packages, e.g. Matplotlib, NumPy and SciPy, that cannot be obtained easily by using traditional code analysis packages such as Jedi. Although Kite is not open source like Spyder, you can download it without charge at the [Kite website](https://kite.com).
 
 ![alt_text](spyder-kite-hover.png "image_tooltip")
-
-<!-- TEASER_END -->
 
 By incorporating Kite into Spyder, we will improve and provide the ultimate autocompletion and signature retrieval experience for most of the scientific Python stack and beyond. For instance, let’s take a look at the following PyTorch completion. While the Language Server Protocol server would not complete some of the functions, e.g. `torch.linspace`, Kite is able to return it successfully:
 
@@ -34,7 +34,7 @@ We are working in collaboration with the Kite team to improve our autocompletion
 
 To start using Kite, you just need to install the Kite client from their web page. They offer client packages for Windows, Linux and MacOS that are easy to install. Once Kite is installed on the system, Spyder is able to detect it and start the Kite client automatically.
 
-Our new Kite client will work alongside the new [Language Server Protocol](/blog/2019/05/spyder-4-beta2-release) and the usual fallback tokenizer for files that cannot be analyzed by either the LSP or Kite. Thus, Spyder will be able to provide an optimal autocompletion experience for Python and other languages. Besides that, it is possible to define the priority between different completion plugins to show a completion source result first over the other completion plugins.
+Our new Kite client will work alongside the new [Language Server Protocol](https://www.spyder-ide.org/blog/release-spyder-4beta2/) and the usual fallback tokenizer for files that cannot be analyzed by either the LSP or Kite. Thus, Spyder will be able to provide an optimal autocompletion experience for Python and other languages. Besides that, it is possible to define the priority between different completion plugins to show a completion source result first over the other completion plugins.
 
 Last but not least, as part of this novel client, we are introducing a new completion API that enables to write third-party completion clients for Spyder that require integration with the code editor and project manager. We offer calls to perform autocompletion, hover requests, signature hints, among others without any hassle. By leveraging this API, it should be possible to add completions and documentation suitable for domain-specific applications developed using Spyder.
 
@@ -49,6 +49,6 @@ tags: milestone, team, status-update
 ---
 pub_date: 2019-08-16 00:00
 ---
-summary: As part of our next release, we are proud to announce an additional completion client for Spyder, Kite. [Kite](https://kite.com/) is a novel completion client that uses Machine Learning techniques to find and predict the best autocompletion for a given text. Additionally, it collects improved documentation for compiled packages, i.e., Matplotlib, NumPy, SciPy that cannot be obtained easily by using traditional code analysis packages such as Jedi.
+summary: As part of our next release, we are proud to announce an additional completion client for Spyder, Kite. [Kite](https://kite.com/) is a novel completion client that uses Machine Learning techniques to find and predict the best autocompletion for a given text. Additionally, it collects improved documentation for compiled packages, e.g. Matplotlib, NumPy and SciPy, that cannot be obtained easily by using traditional code analysis packages such as Jedi.
 ---
 twitter_handle: andfoy4
