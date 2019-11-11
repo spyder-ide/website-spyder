@@ -1,20 +1,16 @@
-title: Spyder 4.0 beta4: Kite integration is here
+title: Spyder 4.0: Kite integration is here
+---
+pub_date: 2019-08-16 00:00
+---
+tags: milestone, team, status-update
+---
+category: News
 ---
 author: andfoy
 ---
+summary: As part of our next release, we are proud to announce an additional completion client for Spyder, Kite. [Kite](https://kite.com/) is a novel completion client that uses Machine Learning techniques to find and predict the best autocompletion for a given text. Additionally, it collects improved documentation for compiled packages, e.g. Matplotlib, NumPy and SciPy, that cannot be obtained easily by using traditional code analysis packages such as Jedi.
+---
 body:
-
-<!--
-.. title: Spyder 4.0: Kite integration is here!
-.. slug: spyder-40-kite-integration-is-here
-.. date: 2019-08-16
-.. tags: Spyder, Labs
-.. category: 
-.. link: 
-.. author: Edgar Margffoy-Tuay
-.. description: 
-.. type: text
--->
 
 *This blogpost was originally published on the [Quansight Labs website](https://labs.quansight.org/blog/2019/08/spyder-40-beta4-kite-integration-is-here/)*.
 
@@ -41,14 +37,3 @@ Last but not least, as part of this novel client, we are introducing a new compl
 The function calls and constants of the new completion API will be added to the Spyder documentation and should be available in the next beta release of Spyder. Additionally, we will provide code snippets support for both LSP and Kite for the next release - please stay tuned!
 
 We, the Spyder development team, hope that these new improvements accelerate your productivity, and we invite you to beta-test them to improve them even more. As always, we are open to your questions, issue reports and contributions on all of our communication channels and our Github repository.
-
----
-category: News
----
-tags: milestone, team, status-update
----
-pub_date: 2019-08-16 00:00
----
-summary: As part of our next release, we are proud to announce an additional completion client for Spyder, Kite. [Kite](https://kite.com/) is a novel completion client that uses Machine Learning techniques to find and predict the best autocompletion for a given text. Additionally, it collects improved documentation for compiled packages, e.g. Matplotlib, NumPy and SciPy, that cannot be obtained easily by using traditional code analysis packages such as Jedi.
----
-twitter_handle: andfoy4
