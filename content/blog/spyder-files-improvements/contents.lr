@@ -1,23 +1,20 @@
-title: File management improvements in Spyder4
+title: File management improvements in Spyder 4
 ---
 author: juanis2112
 ---
+category: News
+---
+tags: milestone, team, status-update
+---
+pub_date: 2019-11-12 00:00
+---
+summary: Version 4.0 of Spyder is almost ready! It has been in the making for well over three years, and it contains lots of interesting new features. We will focus on the Files pane in this post, where we've made several improvements to the interface and file management tools. Some of this include the simplification of the interface by hiding size and kind columns by default, the possibility to custom file associations and open files externally with specific programs associated from Spyder, the functions to copy the absolute and relative paths of the files from the editor and the incorporation of icons depending on the file type which are displayed along with the file's name.
+---
 body:
 
-<!--
-.. title: File management improvements in Spyder4
-.. slug: File management improvements in Spyder4
-.. date: 2019-11-19
-.. tags: Spyder, Labs
-.. category: 
-.. link: 
-.. author: Juanita Gomez
-.. description: 
-.. type: text
--->
+*This blogpost was originally published on the [Quansight Labs website](https://labs.quansight.org/blog/2019/11/File-management-improvements-in-Spyder4/)*.
 
-
-Version 4.0 of [Spyder](https://www.spyder-ide.org/)—a powerful Python IDE designed for scientists, engineers and data analysts—is almost ready! It has been in the making for well over two years, and it contains lots of interesting new features. We will focus on the Files pane in this post, where we've made several improvements to the interface and file management tools. 
+Version 4.0 of [Spyder](https://www.spyder-ide.org/) is almost ready! It has been in the making for well over two years, and it contains lots of interesting new features. We will focus on the Files pane in this post, where we've made several improvements to the interface and file management tools. 
 
 ## Simplified interface
 
@@ -82,19 +79,3 @@ Finally, files in the `Files` pane are now displayed with icons depending on the
 ![File Extensions](file-extensions.png)
 
 With these new features and UI options in Spyder's `Files` pane, we hope you will enjoy the improved file management experience coming in Spyder 4! We would like to thank Quansight, our donors, and most of all our dedicated users and contributors from around the world for making these features possible. The final version will be released very soon, but if you'd like to try it out now and share your feedback, follow the instructions on our [Github](https://github.com/spyder-ide/spyder/releases). Happy Spydering!
-
----
-category: News
----
-tags: milestone, team, status-update
----
-pub_date: 2019-11-19 00:00
----
-summary: Version 4.0 of [Spyder](https://www.spyder-ide.org/)—a powerful Python IDE designed for scientists, engineers and data analysts—is almost ready! It has been in the making for well over two years, and it contains lots of interesting new features. We will focus on the Files pane in this post, where we've made several improvements to the interface and file management tools. Some of this include the simplification of the interface by hiding size and kind columns by default, the possibility to custom file associations and open files externally with specific programs associated from Spyder, the functions to copy the absolute and relative paths of the files from the editor and the incorporation of icons depending on the file type which are displayed along with the file's name.
----
-twitter_handle: juanitagomezr
-
-
-
-
-
