@@ -56,6 +56,7 @@ locale = en_US
   footer_twitter = "https://twitter.com/spyder_ide"
   footer_facebook = "https://www.facebook.com/SpyderIDE/"
   footer_google = "https://groups.google.com/group/spyderlib"
+  footer_instagram = "https://instagram.com/spyderide"
   extension_nav = true
   ext_1_ref = "https://docs.spyder-ide.org/"
   ext_1_title = "Docs"
