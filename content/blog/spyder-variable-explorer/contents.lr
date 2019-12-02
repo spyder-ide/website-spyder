@@ -1,6 +1,6 @@
 title: Variable Explorer improvements in Spyder 4
 ---
-author: Dalthviz
+author: dalthviz
 ---
 category: News
 ---
@@ -8,7 +8,7 @@ tags: milestone, team, status-update
 ---
 pub_date: 2019-11-28 20:00
 ---
-summary: [Spyder](https://www.spyder-ide.org/) 4 will be released very soon with lots of interesting new features that you'll want to check out, reflecting years of effort by the team to improve the user experience. In this post, we will be talking about the improvements made to the Variable Explorer.
+summary: Spyder 4 will be released very soon with lots of interesting new features that you'll want to check out, reflecting years of effort by the team to improve the user experience. In this post, we will be talking about the improvements made to the Variable Explorer.
 ---
 body:
 
