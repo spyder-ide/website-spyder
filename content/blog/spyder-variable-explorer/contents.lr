@@ -9,20 +9,16 @@ tags: milestone, team, status-update
 pub_date: 2019-11-28 20:00
 ---
 summary: [Spyder](https://www.spyder-ide.org/) 4 will be released very soon with lots of interesting new features that you'll want to check out, reflecting years of effort by the team to improve the user experience. In this post, we will be talking about the improvements made to the Variable Explorer.
-
-These include the brand new Object Explorer for inspecting arbitrary Python variables, full support for MultiIndex dataframes with multiple dimensions, and the ability to filter and search for variables by name and type, and much more.
 ---
 body:
 
-*This blogpost was originally published on the [Quansight Labs website](https://labs.quansight.org/blog/2019/11/Variable-Explorer-improvements-in-Spyder4/)*.
+*This blogpost was originally published on the [Quansight Labs website](https://labs.quansight.org/blog/2019/11/variable-explorer-improvements-in-Spyder-4/)*.
 
 [Spyder](https://www.spyder-ide.org/) 4 will be released very soon with lots of interesting new features that you'll want to check out, reflecting years of effort by the team to improve the user experience. In this post, we will be talking about the improvements made to the Variable Explorer.
 
 These include the brand new Object Explorer for inspecting arbitrary Python variables, full support for MultiIndex dataframes with multiple dimensions, and the ability to filter and search for variables by name and type, and much more.
 
 It is important to mention that several of the above improvements were made possible through integrating the work of two other projects. Code from [gtabview](https://github.com/TabViewer/gtabview) was used to implement the multi-dimensional Pandas indexes, while [objbrowser](https://github.com/titusjan/objbrowser) was the foundation of the new Object Explorer.
-
-<!-- TEASER_END -->
 
 
 ## New viewer for arbitrary Python objects
@@ -85,4 +81,3 @@ In Spyder 3, the Variable Explorer could only show builtin Python sets as arbitr
 Finally, beyond the headline features, we've added numerous smaller improvements to make the Variable Explorer easier and more efficient to use. These include support for custom index names, better and more efficient automatic resizing of column widths, support for displaying Pandas Indices, tooltips for truncated column headers, and more.
 
 Spyder's Variable Explorer is what many of you consider to be one of its standout features, so we can't wait for you all to get your hands on the even better version in Spyder 4. Thanks again to Quansight, our generous community donors, and as always all of you! Spyder 4.0.0 final is planned to be released within approximately one more week, but if you'd like to test it out immediately, follow the instructions on our [GitHub](https://github.com/spyder-ide/spyder/releases) to install the pre-release version (which won't touch your existing Spyder install or settings). As always, happy Spydering!
-
