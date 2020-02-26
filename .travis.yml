@@ -6,7 +6,7 @@ cache:
     - $HOME/.cache/lektor/builds
 install:
   - "pip install -U pip"
-  - "pip install 'Lektor>=3'"
+  - "pip install -r requirements.txt"
 script: "lektor build --no-prune"
 
 deploy:
