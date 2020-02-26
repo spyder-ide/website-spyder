@@ -1,0 +1,2 @@
+Lektor>=3
+werkzeug<1.0
