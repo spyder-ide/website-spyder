@@ -6,7 +6,7 @@ category: News
 ---
 tags: milestone, team, status-update
 ---
-pub_date: 2020-02-23 20:00
+pub_date: 2020-04-22 17:00
 ---
 summary: The Spyder-Terminal project is revitalized! The new 0.3.0 version adds numerous features that improves the user experience, and enhances compatibility with the latest Spyder 4 release, in part thanks to the improvements made in the xterm.js project.
 ---
