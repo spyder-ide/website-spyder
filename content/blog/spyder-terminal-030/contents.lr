@@ -8,11 +8,13 @@ tags: milestone, team, status-update
 ---
 pub_date: 2020-04-22 17:00
 ---
-summary: The Spyder-Terminal project is revitalized! The new 0.3.0 version adds numerous features that improves the user experience, and enhances compatibility with the latest Spyder 4 release, in part thanks to the improvements made in the xterm.js project.
+summary: The Spyder-Terminal project is revitalized! The new 0.3.0 version adds numerous features that improve the user experience, and enhances compatibility with the latest Spyder 4 release, in part thanks to the improvements made in the xterm.js project.
 ---
 body:
 
 *This blogpost was originally published on the [Quansight Labs website](https://labs.quansight.org/blog/2020/02/creating-the-ultimate-terminal-experience-in-Spyder-4-with-Spyder-Terminal/)*.
+
+The [Spyder-Terminal](https://github.com/spyder-ide/spyder-terminal) project is revitalized! The new 0.3.0 version adds numerous features that improve the user experience, and enhances compatibility with the latest Spyder 4 release, in part thanks to the improvements made in the [xterm.js](https://github.com/xtermjs/xterm.js) project.
 
 ![Screenshot of the new spyder-terminal](terminal.png)
 
