@@ -1,15 +1,14 @@
 title: Thanking the people behind Spyder 4
 ---
-pub_date: 2020-06-12 00:00
+author: ccordoba12
 ---
 tags: Spyder4
 ---
 category: Releases
 ---
-author: ccordoba12
+pub_date: 2020-06-12 18:00
 ---
-summary: After more than three years in development and more than 5000 commits from 60 authors around the world, Spyder 4 finally saw the light on December 5, 2019!
-I decided to wait until now to write a blogpost about it because shortly after the initial release, we found several critical performance issues and some regressions with respect to Spyder 3, most of which are fixed now in version 4.1.3, released on May 8th 2020.
+summary: After more than three years in development and more than 5000 commits from 60 authors around the world, Spyder 4 finally saw the light on December 5, 2019! I decided to wait until now to write a blogpost about it because shortly after the initial release, we found several critical performance issues and some regressions with respect to Spyder 3, most of which are fixed now in version 4.1.3, released on May 8th 2020.
 ---
 body:
 
