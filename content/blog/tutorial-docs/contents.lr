@@ -26,7 +26,6 @@ The goal of the project was not only to [update the documentation](http://docs.s
 One of the main ideas for this project was to create a series of short video tutorials, explaining the basic functionality of Spyder and its most important panes, allowing users to learn how to use Spyder faster and easier.
  
 Carlos Cordoba, our lead maintainer, thought I was the perfect person for this project because of my “good communication and organization skills”, my “clear and fluent English” (his words) and my previous experience at video editing and recording, which I actually gained by recording singing videos during my “YouTuber” phase. 
-
  
 I’ve always been interested in education and worked as a tutor for several years learning different tools, gaining experience on how to teach and questioning the effectiveness of current educational methods. 
 This was the first reason why I got interested in this project. 
@@ -45,7 +44,6 @@ Each section builds on the one before in a way that they are clear enough so tha
 The [“First Steps with Spyder”](https://www.youtube.com/playlist?list=PLPonohdiDqg9epClEcXoAPUiK0pN5eRoc) section, live now on our YouTube channel, has three videos that provide a starting point for new users before they even open Spyder for the first time. 
 The [first tutorial](https://youtu.be/E2Dap5SfXkI) covers different ways of opening Spyder, the basics of using its interface and an introduction to its four main panes, along with a quick look at the others so that users can get familiar with how Spyder is organized. 
 
- 
 In the [second video](https://youtu.be/WV9bm4ey7Cg), users can learn the basics of using Spyder’s four main panes. 
 The goal is that after this video, users are able to open and edit a file in the Editor, run a script and find the output in Spyder’s IPython Console and execute basic Python commands. 
 They should be able to interact with the Variable Explorer to browse and edit the objects in the console, and use the Help pane to get documentation in two different ways.
@@ -53,13 +51,11 @@ They should be able to interact with the Variable Explorer to browse and edit th
 The [third video](https://youtu.be/-dARZBUDk_s) is meant to show users how to customize Spyder’s interface to start working with it in the way they feel more comfortable according to their preferences. 
 It teaches users how to change the font and the theme of Spyder and rearrange its panes to display only the ones that they want such that it is easier for them to work. 
 
- 
 After these three videos, I learned that one of the most important things for writing documentation, more than having a lot of experience with the software, is empathy. 
 Usually being a developer makes it hard to put yourself in the position of a user and understand exactly what a user needs. 
 Now, I realize that this is what actually makes me the “perfect person” for the project. 
 As a junior developer, without as much experience with Spyder, I was able to think more like new users and develop content in a way that they feel closer to us developers. 
 In the end, as Melissa said in her [blog post](https://labs.quansight.org/blog/2020/03/documentation-as-a-way-to-build-community/), I learned writing documentation is also a way of building community. 
-
 
 I hope these videos are really useful, and I look forward to continue finding ways of making the open source community better.
 
