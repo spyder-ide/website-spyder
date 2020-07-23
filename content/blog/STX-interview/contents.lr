@@ -57,7 +57,7 @@ The number is growing, since most people try Spyder out after their first contac
 
 I’ve found applications for Spyder in many different areas. 
 One time, I used it for a project that relied on machine learning algorithms to assess risk based on documents provided by a user. 
-Since Spyder aggregates out-of-the-box the most popular scientific Python packages, it was used during the whole development process, from data pre-processing and visualization to assessment of the final solution.
+Since Spyder aggregates out-of-the-box the most [popular scientific Python packages](https://www.stxnext.com/blog/most-popular-python-scientific-libraries/), it was used during the whole development process, from data pre-processing and visualization to assessment of the final solution.
 
 Another time, Spyder proved to be very helpful in a project involving the analysis of ancient religious texts. 
 The task was to create a script that would check file integrity and the correctness of the texts themselves. 
@@ -100,4 +100,3 @@ It is very important for us to provide a scientific tool that can make a positiv
 If you have your own stories about how Spyder is helping you with a cool programming project, conduct critical scientific research, or use data to improve your community, we'd love to feature it here! 
 Feel free to reach out to us on [Github](https://github.com/spyder-ide/spyder), [Gitter](https://gitter.im/spyder-ide/public), [Twitter](https://twitter.com/spyder_ide), [Facebook](https://www.facebook.com/SpyderIDE/) or our other platforms linked below if you're interested. 
 We're looking forward to hearing about what Spyder means to you! Happy Spydering!
-
