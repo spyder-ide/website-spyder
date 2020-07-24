@@ -29,7 +29,7 @@ But, wouldn't it be nice to have one extra tool that could combine all the requi
 In our opinion, Spyder is the go-to-solution that helps to speed up the data analysis processes. 
 For us, the biggest strength of this IDE is that it has all the benefits of Matlab/RStudio and makes them available to the Pythonista community. 
 It provides us with an easy-to-organize workspace that accommodates code, visualizations and shell in just one window. 
-The pane, called variable explorer, allows direct access to all data placed in the memory. 
+Besides, the pane called variable explorer allows direct access to all data placed in the memory. 
 
 Another cool feature is the tool’s integration with Jupyter notebooks.
 Just open and browse different notebooks without thinking about server-side and file paths. 
@@ -93,9 +93,10 @@ Possibly further integration with Git services would be a good idea.
 Personally, I like to use Git directly from the Spyder-terminal plugin together with the Gitk repository browser. 
 However, many users prefer to have some features like comparing file versions, conflict solving, and auto update changes to the repository built into the IDE.
 
+## Closing remarks
 
 We would like to thank Michael Wiśniewski, Milosz Galganek and all the STX Next team for sharing their experiences with Spyder. 
-It is very important for us to provide a scientific tool that can make a positive impact on the amazing work our users do, and Michael's testimony gives us great insight on how Spyder is making a difference in the real world and how to make it better for the future.
+It is very important for us to provide a scientific tool that can make a positive impact on the amazing work our users are doing, and Michael's testimony gives us great insight on how Spyder is making a difference in the real world and how to make it better for the future.
 
 If you have your own stories about how Spyder is helping you with a cool programming project, conduct critical scientific research, or use data to improve your community, we'd love to feature it here! 
 Feel free to reach out to us on [Github](https://github.com/spyder-ide/spyder), [Gitter](https://gitter.im/spyder-ide/public), [Twitter](https://twitter.com/spyder_ide), [Facebook](https://www.facebook.com/SpyderIDE/) or our other platforms linked below if you're interested. 
