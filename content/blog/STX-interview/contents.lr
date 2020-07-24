@@ -19,19 +19,19 @@ We are very glad to receive and share a STX Next testimonial about Spyder, along
 
 ![Company Picture](STXNEXT.png)
 
-## What STX Next says about Spyder
+## What Michael Wiśniewski says about Spyder
 
 In an era of a continuously growing demand for analysis of vast amounts of data, we are facing increasingly complex tasks to perform. 
 Sure, we are not alone—there are many great tools designed for scientists and data analysts. 
 We have NumPy, SciPy, Matplotlib, Pandas, and others. 
-But, wouldn't it be nice to have one extra tool that could combine all the required packages into one compact working environment? Asking this question is precisely how our journey with Spyder began.
+But, wouldn't it be nice to have one extra tool that could combine all the required packages into one compact working environment? Asking this question is precisely how my journey with Spyder began.
 
-In our opinion, Spyder is the go-to-solution that helps to speed up the data analysis processes. 
-For us, the biggest strength of this IDE is that it has all the benefits of Matlab/RStudio and makes them available to the Pythonista community. 
+In my opinion, Spyder is the go-to-solution that helps to speed up the data analysis processes. 
+For me, the biggest strength of this IDE is that it has all the benefits of Matlab/RStudio and makes them available to the Pythonista community. 
 It provides us with an easy-to-organize workspace that accommodates code, visualizations and shell in just one window. 
 Besides, the pane called variable explorer allows direct access to all data placed in the memory. 
 
-Another cool feature is the tool’s integration with Jupyter notebooks.
+Another cool feature is the tool’s integration with Jupyter notebooks. 
 Just open and browse different notebooks without thinking about server-side and file paths. 
 Want to run a single line of code or quickly check a chart update? IPython is on board and ready by default.
 
