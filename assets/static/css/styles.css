@@ -1613,7 +1613,7 @@ a {
 
 a:focus,
 a:hover {
-    color: #8c0000
+    color: #d50000
 }
 
 a img {
@@ -1626,7 +1626,7 @@ small a, small a:focus {
 }
 
 li a {
-    color:#8c0000;
+    color:#d50000;
 }
 
 small
@@ -5840,10 +5840,10 @@ screen and (min-width:40em) {
 
 .blog-post a {
     line-height: inherit;
-    color: #8c0000;
+    color: #d50000;
     cursor: pointer;
     text-decoration: none;
-    border-bottom: 1px dotted #8c0000;
+    border-bottom: 1px dotted #d50000;
 }
 
 .blog-post h1 a,
@@ -5936,7 +5936,7 @@ screen and (min-width:40em) {
 }
 
 .anaconda{
-    background-color: #8c0000;
+    background-color: #d50000;
     border: none;    
     color: white;    
     padding: 20px;    
