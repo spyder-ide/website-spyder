@@ -1,4 +1,4 @@
 [submodule "themes/lektor-icon"]
 	path = themes/lektor-icon
-    branch = legacy
+	branch = legacy
 	url = https://github.com/spyder-ide/lektor-icon.git
