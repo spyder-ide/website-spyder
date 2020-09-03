@@ -5,8 +5,6 @@ url_style = absolute
 url = https://www.spyder-ide.org
 
 [packages]
-lektor-webpack-support = 0.3
-lektor-markdown-header-anchors = 0.1
 lektor-disqus-comments = 0.2
 lektor-atom = 0.3
 
@@ -27,7 +25,7 @@ locale = en_US
   author = "Spyder Team"
   description = "Spyder Website"
   other_css = "/static/css/styles.css"
-  content_lang = "en, es, fr"
+  content_lang = "en"
   hero_img = "../static/images/spyder_website_banner.png"
   hero_title = ""
   hero_description = ""
@@ -63,7 +61,7 @@ locale = en_US
   ext_2_ref = "/blog"
   ext_2_title = "Blog"
   ext_3_ref = 
-  ext_3_title = "Community"
+  ext_3_title = 
   opencollective = spyder
   gitter_room = "spyder-ide/public"
   donate_nav = "Donate"

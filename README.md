@@ -49,12 +49,6 @@ To run local server:
 $ lektor server
 ```
 
-If you also want to update the webpack files, you need `npm` installed
-and then run it like this:
-
-```
-$ lektor server -f webpack
-```
 
 ## Workflow
 
@@ -72,27 +66,12 @@ After test have been carried out by the QA Team, the changes from develop will b
 
 This website is built using [Lektor](https://www.getlektor.com/), a static web generator that could be customized using [Jinja2](http://jinja.pocoo.org/) templates.
 
-### Frontend Libraries
-
-- [Foundation](https://foundation.zurb.com/)
-- [Slick Carousel](https://kenwheeler.github.io/slick/)
-- [Font Awesome](https://fontawesome.com/)
-
-### Webpack
-
-Webpack is used for built and generate static files (css, js, images, fonts), in the current configuration:
-
-- .scss files will be processed with Sass
-- .js files will be processed with Babel to convert ES6 into ES5
-- JS and CSS files will be minified
 
 ### Lektor plugins
 
 The build also requires several [Lektor Plugins](https://www.getlektor.com/docs/plugins/)
 (No extra configuration is needed; Lektor automatically installs them when building):
 
-- [webpack-support](https://github.com/lektor/lektor-webpack-support)
-- [markdown-header-anchors :ext](https://github.com/lektor/lektor-markdown-header-anchors)
 - [disqus-comments](https://github.com/lektor/lektor-disqus-comments)
 
 
