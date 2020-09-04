@@ -1,5 +1,4 @@
-![Spyder Website — The Official Site of the Scientific Python Development Environment](
-./assets/static/images/spyder_readme_banner.png)
+![Spyder Website — The Official Site of the Scientific Python Development Environment](./assets/static/images/spyder_readme_banner.png)
 
 *Copyright © 2016–2018 Spyder Website Contributors*
 
@@ -14,32 +13,36 @@
 [![Join the chat at https://gitter.im/spyder-ide/public](https://badges.gitter.im/spyder-ide/spyder.svg)](https://gitter.im/spyder-ide/public)
 
 
-![Screenshot of the Spyder website homepage, showing a banner and screenshot](
-./assets/static/images/mainpage_screenshot.png)
+![Screenshot of the Spyder website homepage, showing a banner and screenshot](./assets/static/images/mainpage_screenshot.png)
 
 
-This is the repository for the Spyder IDE website at [Spyder-IDE.org](
-https://www.spyder-ide.org/).
+This is the repository for the Spyder IDE website at [Spyder-IDE.org](https://www.spyder-ide.org/).
+
 
 
 ## Getting Started
 
+
 ### Install Lektor
 
 Running installation script:
+
 ```
 $ curl -sf https://www.getlektor.com/install.sh | sh
 ```
 
 Using conda (Recommended way):
+
 ```
 $ conda install lektor -c conda-forge
 ```
 
 Using pip:
+
 ```
 $ pip install -U Lektor
 ```
+
 
 ### Run server and make changes
 
@@ -50,17 +53,22 @@ $ lektor server
 ```
 
 
+
 ## Workflow
 
 There are 2 branches, develop and production.
+
 
 ### Develop
 
 Default branch is develop and is deployed with gh-pages via Lektor to https://develop.spyder-ide.org/
 
+
 ### Production
 
 After test have been carried out by the QA Team, the changes from develop will be merged in production and deployed gh-pages via Lektor to https://www.spyder-ide.org
+
+
 
 ## Technologies and Libraries used
 
@@ -69,10 +77,10 @@ This website is built using [Lektor](https://www.getlektor.com/), a static web g
 
 ### Lektor plugins
 
-The build also requires several [Lektor Plugins](https://www.getlektor.com/docs/plugins/)
-(No extra configuration is needed; Lektor automatically installs them when building):
+The build also requires several [Lektor Plugins](https://www.getlektor.com/docs/plugins/) (No extra configuration is needed; Lektor automatically installs them when building):
 
 - [disqus-comments](https://github.com/lektor/lektor-disqus-comments)
+
 
 
 ## More information

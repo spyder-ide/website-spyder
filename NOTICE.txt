@@ -2,9 +2,7 @@ Copyright/permission notices and disclaimers from icons, themes and scripts
 
 ==============================================================================
 
-Site template originally designed by Free HTML5 Template <https://freehtml5.co>
-licensed under Creative Commons Attribution 3.0 Unported
-<https://creativecommons.org/licenses/by/3.0/> with further modifications.
+Site template originally designed by Free HTML5 Template <https://freehtml5.co> licensed under Creative Commons Attribution 3.0 Unported <https://creativecommons.org/licenses/by/3.0/> with further modifications.
 
 
 ------------------------------------------------------------------------------
@@ -15,9 +13,8 @@ Released under the terms of the MIT License, as follows:
 
 Copyright JS Foundation and other contributors, https://js.foundation/
 
-This software consists of voluntary contributions made by many
-individuals. For exact contribution history, see the revision history
-available at https://github.com/jquery/jquery
+This software consists of voluntary contributions made by many individuals.
+For exact contribution history, see the revision history available at https://github.com/jquery/jquery
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

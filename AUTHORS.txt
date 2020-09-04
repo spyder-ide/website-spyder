@@ -4,9 +4,7 @@ The Spyder Website Contributors are composed of:
 * All other developers who have contributed to this repository.
 
 Additionally:
-* Site template originally designed by Free HTML5 Template
-  <https://freehtml5.co> with further modifications,
+* Site template originally designed by Free HTML5 Template <https://freehtml5.co> with further modifications,
 * Ported to Hugo by Steve Lane <https://github.com/SteveLane/>,
 * And ported to Lektor by Daniel Althviz Moré <https://github.com/dalthviz/>.
-* jQuery and Sizzle CSS Selector Engine (SizzleJS) created by jQuery Foundation
-  and other contributors, <https://jquery.com/> and <https://sizzlejs.com/>.
+* jQuery and Sizzle CSS Selector Engine (SizzleJS) created by jQuery Foundation and other contributors, <https://jquery.com/> and <https://sizzlejs.com/>.
