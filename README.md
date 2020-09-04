@@ -4,7 +4,7 @@
 *Copyright © 2016–2018 Spyder Website Contributors*
 
 
-[![license](https://img.shields.io/pypi/l/spyder.svg)](./LICENSE)
+[![license](https://img.shields.io/pypi/l/spyder.svg)](./LICENSE.txt)
 [![PyPI status](https://img.shields.io/pypi/status/spyder.svg)](https://github.com/spyder-ide/spyder)
 [![pypi version](https://img.shields.io/pypi/v/spyder.svg)](https://pypi.org/project/spyder)
 [![conda version](https://img.shields.io/conda/vn/conda-forge/spyder.svg)](https://www.anaconda.com/download/)
