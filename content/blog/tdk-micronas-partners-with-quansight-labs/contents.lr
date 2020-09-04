@@ -9,10 +9,10 @@ body:
 .. slug: tdk-partners-with-quansight-labs
 .. date: 2019-06-02
 .. tags: Spyder, Labs
-.. category: 
-.. link: 
+.. category:
+.. link:
 .. author: Gonzalo Peña-Castellanos
-.. description: 
+.. description:
 .. type: text
 -->
 
@@ -68,7 +68,7 @@ at the possibility of creating different types of projects. Currently Spyder
 provides an "empty project" project type.
 
 ![Project creation](spyder-project-creation.png)
- 
+
 This feature will:
 
 * Expand the (current) Project Explorer API to handle Project Types.
@@ -100,7 +100,7 @@ The purpose of this enhancement is to enable basic Git integration from
 within the File and Project Explorer and to extend the current plugin
 API so context menus can be customized with specific Git features and
 commands.
- 
+
 Initial work has already started to display Git relevant information
 on the status bar
 

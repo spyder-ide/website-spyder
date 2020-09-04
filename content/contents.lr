@@ -1,6 +1,6 @@
 _model: single_layout
 ---
-mission: 
+mission:
 ---
 services:
 
@@ -109,7 +109,7 @@ overview:
 #### content ####
 title: Overview
 ----
-description: 
+description:
 ----
 content:
 
@@ -152,42 +152,42 @@ opencollective: spyder
 sponsors:
 
 ##### sponsor #####
-name: 
+name:
 -----
-description: 
+description:
 -----
 image: quansight.png
 -----
-facebook: 
+facebook:
 -----
-twitter: 
+twitter:
 -----
-dribble: 
+dribble:
 -----
-instagram: 
+instagram:
 -----
-github: 
+github:
 -----
-linkedin: 
+linkedin:
 -----
-website: 
+website:
 ##### sponsor #####
-name: 
+name:
 -----
-description: 
+description:
 -----
 image: numfocus_lrg.png
 -----
-facebook: 
+facebook:
 -----
-twitter: 
+twitter:
 -----
-dribble: 
+dribble:
 -----
-instagram: 
+instagram:
 -----
-github: 
+github:
 -----
-linkedin: 
+linkedin:
 -----
-website: 
+website:
