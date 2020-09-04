@@ -9,7 +9,7 @@
     "font-awesome": "^4.6.3",
     "font-awesome-loader": "^1.0.0",
     "foundation-sites": "^6.3.0",
-    "node-sass": "^3.8.0",
+    "node-sass": "^4.14.1",
     "postcss-loader": "^0.10.0",
     "sass-loader": "^4.0.0",
     "script-loader": "^0.7.0",
