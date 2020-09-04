@@ -21,7 +21,7 @@ However, during all this time I’ve learned how documentation has a huge impact
 But, from the beginning, I asked myself “why am I the ‘right person’ for this?”
 
 Improving Spyder’s documentation started as part of a NumFOCUS Small Development Grant awarded at the end of last year.
-The goal of the project was not only to [update the documentation](http://docs.spyder-ide.org/develop/) for Spyder 4, but also to make it more user-friendly, so users can understand Spyder’s key concepts and get started with it more easily.
+The goal of the project was not only to [update the documentation](https://docs.spyder-ide.org/develop/) for Spyder 4, but also to make it more user-friendly, so users can understand Spyder’s key concepts and get started with it more easily.
 
 One of the main ideas for this project was to create a series of short video tutorials, explaining the basic functionality of Spyder and its most important panes, allowing users to learn how to use Spyder faster and easier.
 
