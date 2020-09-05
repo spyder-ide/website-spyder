@@ -1,18 +1,51 @@
-_model: single_layout
+_model: single-layout
 ---
 
 
-mission:
+show_home_nav: true
 ---
+hero_title:
+---
+hero_description:
+---
+hero_image: spyder_website_banner.png
+---
+hero_no_downscale: true
+---
+starting_block_bg: dark
+---
+main_content:
 
 
+#### content ####
+section_id: overview
+----
+title: Overview
+----
+description:
+----
+nav_label: Overview
+----
+content:
 
-services:
+Spyder is a powerful scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts.
+It features a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package.
+----
+
+
 
 #### services ####
+section_id: components
+----
 title: Components
 ----
 description: Core building blocks of a powerful IDE
+----
+nav_label: Components
+----
+video_url: https://www.youtube.com/watch?v=E2Dap5SfXkI
+----
+transparent_bg: true
 ----
 services:
 
@@ -75,20 +108,23 @@ description: Instantly view any object's docs, and render your own.
 icon: help.svg
 -----
 ----
----
 
 
 
-work:
-
-#### work ####
+#### gallery ####
+section_id: plugins
+----
 title: Plugins
 ----
 description: Extend Spyder's functionality with these awesome third-party plugins!
 ----
-works:
+nav_label: Plugins
+----
+show_titles: true
+----
+gallery_items:
 
-##### w_item #####
+##### gallery_item #####
 title: Spyder Notebook
 -----
 subtitle: Interact with and edit Jupyter notebooks inside Spyder
@@ -97,9 +133,11 @@ image: example-notebook.png
 -----
 url: https://github.com/spyder-ide/spyder-notebook
 -----
+direct_link: true
+-----
 
 
-##### w_item #####
+##### gallery_item #####
 title: Spyder Terminal
 -----
 subtitle: Control full Bash and cmd shells from inside Spyder
@@ -108,9 +146,11 @@ image: example_terminal-34.png
 -----
 url: https://github.com/spyder-ide/spyder-terminal
 -----
+direct_link: true
+-----
 
 
-##### w_item #####
+##### gallery_item #####
 title: Spyder UnitTest
 -----
 subtitle: Run test suites within Spyder and view the results
@@ -119,9 +159,11 @@ image: unittest_screenshot.png
 -----
 url: https://github.com/spyder-ide/spyder-unittest
 -----
+direct_link: true
+-----
 
 
-##### w_item #####
+##### gallery_item #####
 title: Spyder Reports
 -----
 subtitle: Render beautiful data-driven documents with Spyder
@@ -130,35 +172,30 @@ image: reports_screenshot.png
 -----
 url: https://github.com/spyder-ide/spyder-reports
 -----
+direct_link: true
+-----
 ----
----
 
 
-
-overview:
 
 #### content ####
-title: Overview
+section_id: download
 ----
-description:
-----
-content:
-
-Spyder is a powerful scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts.
-It features a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package.
-----
-data_section: mission
-----
----
-
-
-
-download:
-
-#### content ####
 title: Download
 ----
 description: How to get Spyder
+----
+nav_label: Download
+----
+button_type: text
+----
+button_content: Download Spyder with Anaconda
+----
+button_link: https://www.anaconda.com/download/
+----
+button_position: bottom
+----
+button_newtab: true
 ----
 content:
 
@@ -167,73 +204,86 @@ We recommend the latest 64-bit Python 3 version, unless you have specific requir
 
 For more advanced users who want a detailed guide to many different methods of obtaining Spyder, please refer to our full [installation instructions](https://docs.spyder-ide.org/installation.html).
 However, these approaches are generally intended for experienced users only, so we recommend sticking with Anaconda unless you know exactly what you are doing on your own.
-
-<a href="https://www.anaconda.com/download/" class="anaconda text-center" target="_blank">
-Download Spyder with Anaconda
-</a>
 ----
-data_section: download
+
+
+
+#### content ####
+section_id: donate
 ----
----
+title: Donate
+----
+description: Help us to provide the best Scientific Python Development Environment!
+----
+nav_label: Donate
+----
+button_type: image
+----
+button_content: collective.svg
+----
+button_link: https://opencollective.com/spyder/
+----
+button_newtab: true
+----
 
 
 
-sponsors:
-
-#### sponsors ####
+#### multisection ####
+section_id: sponsors
+----
 title: Sponsors
 ----
-description: Spyder is funded thanks to the generous support of
+description:
 ----
-community_description: and the donations we have received from our users around the world through [Open Collective](https://opencollective.com/spyder/):
+nav_label: Sponsors
 ----
-opencollective: spyder
-----
-sponsors:
+inner_content:
 
-##### sponsor #####
-name:
+##### services #####
+section_id: contributors
 -----
 description:
------
-image: quansight.png
------
-facebook:
------
-twitter:
------
-dribble:
------
-instagram:
------
-github:
------
-linkedin:
------
-website:
------
 
+Spyder is funded thanks to the generous support of
+-----
+link_whole_card: true
+-----
+transparent_bg: true
+-----
+services:
 
-##### sponsor #####
+###### service ######
 name:
+------
+description:
+------
+icon: quansight.png
+------
+
+###### service ######
+name:
+------
+description:
+------
+icon: numfocus_lrg.png
+------
+-----
+
+
+##### content #####
+section_id: opencollective-backers
 -----
 description:
+
+and the donations we have received from our users around the world through [Open Collective](https://opencollective.com/spyder/):
 -----
-image: numfocus_lrg.png
+button_type: image
 -----
-facebook:
+button_content: https://opencollective.com/spyder/sponsors.svg
 -----
-twitter:
+button_link: https://opencollective.com/spyder#support
 -----
-dribble:
------
-instagram:
------
-github:
------
-linkedin:
------
-website:
+button_position: bottom
 -----
 ----
 ---

@@ -1,1 +1,8 @@
 _model: blog
+---
+sort_key: 10
+---
+title:
+---
+allow_comments_default: true
+---
