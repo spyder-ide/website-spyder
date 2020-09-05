@@ -1,7 +1,12 @@
 _model: single_layout
 ---
+
+
 mission:
 ---
+
+
+
 services:
 
 #### services ####
@@ -19,6 +24,9 @@ description:
 Work efficiently in a multi-language editor with a function/class browser, code analysis tools, automatic code completion, horizontal/vertical splitting, and go-to-definition.
 -----
 icon: editor.svg
+-----
+
+
 ##### service #####
 title: IPython Console
 -----
@@ -27,6 +35,9 @@ description:
 Harness the power of as many IPython consoles as you like within the flexibility of a full GUI interface; run your code by line, cell, or file; and render plots right inline.
 -----
 icon: console.svg
+-----
+
+
 ##### service #####
 title: Variable Explorer
 -----
@@ -35,25 +46,39 @@ description:
 Interact with and modify variables on the fly: plot a histogram or timeseries, edit a dateframe or Numpy array, sort a collection, dig into nested objects, and more!
 -----
 icon: varExplorer.svg
+-----
+
+
 ##### service #####
 title: Plots
 -----
 description: View, copy and save figures and images created during your code execution.
 -----
 icon: plots.svg
+-----
+
+
 ##### service #####
 title: Debugger
 -----
 description: Trace each step of your code's execution interactively.
 -----
 icon: debugger.svg
+-----
+
+
 ##### service #####
 title: Help
 -----
 description: Instantly view any object's docs, and render your own.
 -----
 icon: help.svg
+-----
+----
 ---
+
+
+
 work:
 
 #### work ####
@@ -66,44 +91,50 @@ works:
 ##### w_item #####
 title: Spyder Notebook
 -----
-subtitle:
-
-Interact with and edit Jupyter notebooks inside Spyder
+subtitle: Interact with and edit Jupyter notebooks inside Spyder
 -----
 image: example-notebook.png
 -----
 url: https://github.com/spyder-ide/spyder-notebook
+-----
+
+
 ##### w_item #####
 title: Spyder Terminal
 -----
-subtitle:
-
-Control full Bash and cmd shells from inside Spyder
+subtitle: Control full Bash and cmd shells from inside Spyder
 -----
 image: example_terminal-34.png
 -----
 url: https://github.com/spyder-ide/spyder-terminal
+-----
+
+
 ##### w_item #####
 title: Spyder UnitTest
 -----
-subtitle:
-
-Run test suites within Spyder and view the results
+subtitle: Run test suites within Spyder and view the results
 -----
 image: unittest_screenshot.png
 -----
 url: https://github.com/spyder-ide/spyder-unittest
+-----
+
+
 ##### w_item #####
 title: Spyder Reports
 -----
-subtitle:
-
-Render beautiful data-driven documents with Spyder
+subtitle: Render beautiful data-driven documents with Spyder
 -----
 image: reports_screenshot.png
 -----
 url: https://github.com/spyder-ide/spyder-reports
+-----
+----
 ---
+
+
+
 overview:
 
 #### content ####
@@ -113,10 +144,15 @@ description:
 ----
 content:
 
-Spyder is a powerful scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts. It features a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package.
+Spyder is a powerful scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts.
+It features a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package.
 ----
 data_section: mission
+----
 ---
+
+
+
 download:
 
 #### content ####
@@ -126,18 +162,22 @@ description: How to get Spyder
 ----
 content:
 
+The easy way to get up and running with Spyder on any of our supported platforms is to download it as part of the [**Anaconda distribution**](https://www.anaconda.com/download/), and use the `conda` package and environment manager to keep it and your other packages installed and up to date.
+We recommend the latest 64-bit Python 3 version, unless you have specific requirements that dictate otherwise.
 
-The easy way to get up and running with Spyder on any of our supported platforms is to download it as part of the [**Anaconda distribution**](https://www.anaconda.com/download/), and use the `conda` package and environment manager to keep it and your other packages installed and up to date. We recommend the latest 64-bit Python 3 version, unless you have specific requirements that dictate otherwise.
-
-For more advanced users who want a detailed guide to many different methods of obtaining Spyder, please refer to our full [installation instructions](https://docs.spyder-ide.org/installation.html). However, these approaches are generally intended for experienced users only, so we recommend sticking with Anaconda unless you know exactly what you are doing on your own.
-
+For more advanced users who want a detailed guide to many different methods of obtaining Spyder, please refer to our full [installation instructions](https://docs.spyder-ide.org/installation.html).
+However, these approaches are generally intended for experienced users only, so we recommend sticking with Anaconda unless you know exactly what you are doing on your own.
 
 <a href="https://www.anaconda.com/download/" class="anaconda text-center" target="_blank">
 Download Spyder with Anaconda
 </a>
 ----
 data_section: download
+----
 ---
+
+
+
 sponsors:
 
 #### sponsors ####
@@ -171,6 +211,9 @@ github:
 linkedin:
 -----
 website:
+-----
+
+
 ##### sponsor #####
 name:
 -----
@@ -191,3 +234,6 @@ github:
 linkedin:
 -----
 website:
+-----
+----
+---
