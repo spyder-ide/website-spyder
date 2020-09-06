@@ -1,3 +1,80 @@
 @charset "UTF-8";
 
 /*** Spyder website custom stylesheet ***/
+
+/* Remove margin between cards when single-column */
+
+@media screen and (max-width: 768px) {
+  .col-md-4 .card-item {
+    margin: 0;
+  }
+}
+
+/* Adjust size and padding of component cards */
+
+#section-components {
+  padding-bottom: 2em;
+}
+
+#section-components .card-item {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+#section-components .icon .img-responsive {
+  width: 40%;
+}
+
+/* Make component card titles FG instead of accent color */
+
+.service h3 {
+  color: #333333;
+  color: var(--theme-fg-alt-color, #333333);
+}
+
+
+/*** Sponsors section ***/
+
+/* Center text in sponsors section */
+
+#section-sponsors p {
+  text-align: center;
+}
+
+/* Reduce vertical spacing in sponsors section */
+
+#section-sponsors .body-subsection {
+  padding: 0 0 1em 0;
+}
+
+#section-contributors .fh5co-heading,
+#section-contributors .fh5co-heading p {
+  margin-bottom: 0;
+}
+
+/* Increase size of graphics in sponsors section */
+
+@media screen and (max-width: 768px) {
+  #section-sponsors .col-md-4 {
+    width: auto;
+  }
+}
+
+#section-sponsors .card {
+  padding: 0;
+}
+
+#section-sponsors img.img-responsive {
+  margin-bottom: 0;
+  padding: 1em 2em 1em 2em;
+  width: 100%;
+  max-width: 480px;
+}
+
+#section-sponsors .image-button {
+  margin-top: 0;
+  margin-bottom: 0;
+  min-width: 50%
+}
