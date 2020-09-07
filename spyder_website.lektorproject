@@ -5,8 +5,8 @@ url_style = "absolute"
 url = "https://www.spyder-ide.org"
 
 [packages]
-lektor-disqus-comments = 0.2
-lektor-atom = 0.3
+lektor-disqus-comments = 0.4.1
+lektor-atom = 0.3.1
 
 [servers.develop]
 name = "Develop"
