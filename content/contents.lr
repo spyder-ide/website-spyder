@@ -20,16 +20,28 @@ main_content:
 #### content ####
 section_id: overview
 ----
+nav_label: Overview
+----
 title: Overview
 ----
 description:
 ----
-nav_label: Overview
+full_width: false
 ----
 content:
 
 Spyder is a powerful scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts.
 It features a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package.
+----
+button_type:
+----
+button_content:
+----
+button_link:
+----
+button_position:
+----
+button_newtab:
 ----
 
 
@@ -37,13 +49,15 @@ It features a unique combination of the advanced editing, analysis, debugging, a
 #### services ####
 section_id: components
 ----
+nav_label: Components
+----
 title: Components
 ----
 description: Core building blocks of a powerful IDE
 ----
-nav_label: Components
-----
 video_url: https://www.youtube.com/watch?v=E2Dap5SfXkI
+----
+link_whole_card: true
 ----
 transparent_bg: true
 ----
@@ -58,6 +72,8 @@ Work efficiently in a multi-language editor with a function/class browser, code 
 -----
 icon: editor.svg
 -----
+url:
+-----
 
 
 ##### service #####
@@ -68,6 +84,8 @@ description:
 Harness the power of as many IPython consoles as you like within the flexibility of a full GUI interface; run your code by line, cell, or file; and render plots right inline.
 -----
 icon: console.svg
+-----
+url:
 -----
 
 
@@ -80,6 +98,8 @@ Interact with and modify variables on the fly: plot a histogram or timeseries, e
 -----
 icon: varExplorer.svg
 -----
+url:
+-----
 
 
 ##### service #####
@@ -88,6 +108,8 @@ title: Plots
 description: View, copy and save figures and images created during your code execution.
 -----
 icon: plots.svg
+-----
+url:
 -----
 
 
@@ -98,6 +120,8 @@ description: Trace each step of your code's execution interactively.
 -----
 icon: debugger.svg
 -----
+url:
+-----
 
 
 ##### service #####
@@ -107,6 +131,8 @@ description: Instantly view any object's docs, and render your own.
 -----
 icon: help.svg
 -----
+url:
+-----
 ----
 
 
@@ -114,11 +140,11 @@ icon: help.svg
 #### gallery ####
 section_id: plugins
 ----
+nav_label: Plugins
+----
 title: Plugins
 ----
 description: Extend Spyder's functionality with these awesome third-party plugins!
-----
-nav_label: Plugins
 ----
 show_titles: true
 ----
@@ -181,11 +207,21 @@ direct_link: true
 #### content ####
 section_id: download
 ----
+nav_label: Download
+----
 title: Download
 ----
 description: How to get Spyder
 ----
-nav_label: Download
+full_wdith: false
+----
+content:
+
+The easy way to get up and running with Spyder on any of our supported platforms is to download it as part of the [**Anaconda distribution**](https://www.anaconda.com/download/), and use the `conda` package and environment manager to keep it and your other packages installed and up to date.
+We recommend the latest 64-bit Python 3 version, unless you have specific requirements that dictate otherwise.
+
+For more advanced users who want a detailed guide to many different methods of obtaining Spyder, please refer to our full [installation instructions](https://docs.spyder-ide.org/installation.html).
+However, these approaches are generally intended for experienced users only, so we recommend sticking with Anaconda unless you know exactly what you are doing on your own.
 ----
 button_type: text
 ----
@@ -197,31 +233,29 @@ button_position: bottom
 ----
 button_newtab: true
 ----
-content:
-
-The easy way to get up and running with Spyder on any of our supported platforms is to download it as part of the [**Anaconda distribution**](https://www.anaconda.com/download/), and use the `conda` package and environment manager to keep it and your other packages installed and up to date.
-We recommend the latest 64-bit Python 3 version, unless you have specific requirements that dictate otherwise.
-
-For more advanced users who want a detailed guide to many different methods of obtaining Spyder, please refer to our full [installation instructions](https://docs.spyder-ide.org/installation.html).
-However, these approaches are generally intended for experienced users only, so we recommend sticking with Anaconda unless you know exactly what you are doing on your own.
-----
 
 
 
 #### content ####
 section_id: donate
 ----
+nav_label: Donate
+----
 title: Donate
 ----
 description: Help us to provide the best Scientific Python Development Environment!
 ----
-nav_label: Donate
+full_width: false
+----
+content:
 ----
 button_type: image
 ----
 button_content: collective.svg
 ----
 button_link: https://opencollective.com/spyder/
+----
+button_position: bottom
 ----
 button_newtab: true
 ----
@@ -231,20 +265,24 @@ button_newtab: true
 #### multisection ####
 section_id: sponsors
 ----
+nav_label: Sponsors
+----
 title: Sponsors
 ----
 description:
-----
-nav_label: Sponsors
 ----
 inner_content:
 
 ##### services #####
 section_id: contributors
 -----
-description:
-
-Spyder is funded thanks to the generous support of
+nav_label:
+-----
+title:
+-----
+description: Spyder is funded thanks to the generous support of
+-----
+video_url:
 -----
 link_whole_card: true
 -----
@@ -259,6 +297,8 @@ description:
 ------
 icon: quansight.png
 ------
+url:
+------
 
 ###### service ######
 name:
@@ -267,13 +307,23 @@ description:
 ------
 icon: numfocus_lrg.png
 ------
+url:
+------
 -----
 
 
 ##### content #####
 section_id: opencollective-backers
 -----
+nav_label:
+-----
+title:
+-----
 description:
+-----
+full_width: false
+-----
+content:
 
 and the donations we have received from our users around the world through [Open Collective](https://opencollective.com/spyder/):
 -----
@@ -284,6 +334,8 @@ button_content: https://opencollective.com/spyder/sponsors.svg
 button_link: https://opencollective.com/spyder#support
 -----
 button_position: bottom
+-----
+button_newtab: true
 -----
 ----
 ---
