@@ -98,8 +98,7 @@ The build also requires several [Lektor plugins](https://www.getlektor.com/docs/
 
 [Spyder Github](https://github.com/spyder-ide/spyder)
 
-[Troubleshooting Guide and FAQ](
-https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ)
+[Troubleshooting Guide and FAQ](https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ)
 
 [Development Wiki](https://github.com/spyder-ide/spyder/wiki/Dev:-Index)
 

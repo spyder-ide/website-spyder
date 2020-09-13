@@ -1,6 +1,31 @@
 @charset "UTF-8";
 
-/*** Spyder website custom stylesheet ***/
+/*** General style modifications ***/
+
+/* Tweak display of logo text for small caps */
+
+#menu-logo .logo-text {
+    font-size: 2em;
+}
+
+#menu-logo .logo-text::first-letter {
+    font-size: 1.2em;
+}
+
+/* Reduce size of download button font */
+
+#section-download .text-button {
+  font-size: 1.15em;
+}
+
+/* Make footer the same color as the old Spyder site */
+
+#fh5co-footer {
+  background: #404040;
+}
+
+
+/*** Card layout and title adjustments ***/
 
 /* Remove margin between cards when single-column */
 
@@ -23,8 +48,16 @@
   padding-bottom: 0.5em;
 }
 
+/* Adjust component icons to be smaller at narrower widths */
+
 #section-components .icon .img-responsive {
   width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  #section-components .icon .img-responsive {
+    width: 30%;
+  }
 }
 
 /* Make component card titles FG instead of accent color */
@@ -56,9 +89,21 @@
 
 /* Increase size of graphics in sponsors section */
 
+@media screen and (max-width: 1200px) {
+  #section-sponsors .col-md-4 {
+    max-width: 320px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #section-sponsors .col-md-4 {
-    width: auto;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #section-sponsors .col-md-4 {
+    max-width: 320px;
   }
 }
 
@@ -68,9 +113,8 @@
 
 #section-sponsors img.img-responsive {
   margin-bottom: 0;
-  padding: 1em 2em 1em 2em;
+  padding: 1em 1em 1em 1em;
   width: 100%;
-  max-width: 480px;
 }
 
 #section-sponsors .image-button {
