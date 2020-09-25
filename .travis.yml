@@ -7,10 +7,12 @@ script: "ci/build.sh"
 
 deploy:
   - provider: script
+    skip_cleanup: true
     script: "lektor deploy develop --output-path website-spyder-build"
     on:
        branch: develop
   - provider: script
+    skip_cleanup: true
     script: "lektor deploy production --output-path website-spyder-build"
     on:
        branch: production
