@@ -1,21 +1,17 @@
 language: python
-python: 3.6
-cache:
-  directories:
-    - $HOME/.cache/pip
-    - $HOME/.cache/lektor/builds
-install:
-  - "pip install -U pip"
-  - "pip install -r requirements.txt"
-script: "lektor build --no-prune"
+python: 3.7
+
+install: "ci/install.sh"
+
+script: "ci/build.sh"
 
 deploy:
   - provider: script
-    script: "lektor deploy develop"
+    script: "lektor deploy develop --output-path website-spyder-build"
     on:
        branch: develop
   - provider: script
-    script: "lektor deploy production"
+    script: "lektor deploy production --output-path website-spyder-build"
     on:
        branch: production
 

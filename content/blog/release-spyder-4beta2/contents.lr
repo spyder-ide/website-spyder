@@ -8,25 +8,25 @@ category: Releases
 ---
 author: goanpeca
 ---
-summary: We're excited to announce the release of the milestone Beta 2, which represents nearly a year of intense work on Spyder's completion/introspection/help/analysis architecture, dark theme, plot pane, autosave, and much more. This is the first of a new series of blog posts chronicling our final push toward the Spyder 4.0 release, and the new features we've implemented along the way, 
+summary: We're excited to announce the release of the milestone Beta 2, which represents nearly a year of intense work on Spyder's completion/introspection/help/analysis architecture, dark theme, plot pane, autosave, and much more. This is the first of a new series of blog posts chronicling our final push toward the Spyder 4.0 release, and the new features we've implemented along the way,
 ---
 body:
 
 *This blogpost was originally published on the [Quansight Labs website](https://labs.quansight.org/)*
 
-It has been almost two months since I joined Quansight in April, to start 
-working on Spyder maintenance and 
-development. So far, it has been a very exciting and rewarding journey under 
+It has been almost two months since I joined Quansight in April, to start
+working on Spyder maintenance and
+development. So far, it has been a very exciting and rewarding journey under
 the guidance of long time Spyder maintainer
 [Carlos Córdoba](https://github.com/ccordoba12).
-This is the first of a series of blog posts we will be writing to showcase 
-updates on the development of Spyder, new planned features and news on the 
+This is the first of a series of blog posts we will be writing to showcase
+updates on the development of Spyder, new planned features and news on the
 road to Spyder 4.0 and beyond.
 
 First off, I would like to give a warm welcome to
 [Edgar Margffoy](https://github.com/andfoy),
 who recently joined Quansight and will be working with the Spyder team to
-take its development even further. Edgar has been a core Spyder developer 
+take its development even further. Edgar has been a core Spyder developer
 for more than two years now, and we are very excited to have his (almost)
 full-time commitment to the project.
 

@@ -14,7 +14,7 @@ body:
 
 *This blogpost was originally published on the [Quansight Labs website](https://labs.quansight.org/blog/2019/08/spyder-40-beta4-kite-integration-is-here/)*.
 
-_Note_: [Kite](https://kite.com) is sponsoring the work discussed in this blog post, and in addition supports Spyder 4.0 development through a Quansight Labs [Community Work Order](http://labs.quansight.org/blog/2019/05/community-driven-opensource-funded-development/).
+_Note_: [Kite](https://kite.com) is sponsoring the work discussed in this blog post, and in addition supports Spyder 4.0 development through a Quansight Labs [Community Work Order](https://labs.quansight.org/blog/2019/05/community-driven-opensource-funded-development/).
 
 As part of our next release, we are proud to announce an additional completion client for Spyder, Kite. [Kite](https://kite.com/) is a novel completion client that uses Machine Learning techniques to find and predict the best autocompletion for a given text. Additionally, it collects improved documentation for compiled packages, e.g. Matplotlib, NumPy and SciPy, that cannot be obtained easily by using traditional code analysis packages such as Jedi. Although Kite is not open source like Spyder, you can download it without charge at the [Kite website](https://kite.com).
 

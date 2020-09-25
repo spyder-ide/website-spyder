@@ -1,69 +1,55 @@
 [project]
-name = Spyder Website
-themes = lektor-icon
-url_style = absolute
-url = https://www.spyder-ide.org
+name = "Spyder IDE"
+themes = "lektor-icon"
+url_style = "absolute"
+url = "https://www.spyder-ide.org"
 
 [packages]
-lektor-webpack-support = 0.3
-lektor-markdown-header-anchors = 0.1
-lektor-disqus-comments = 0.2
-lektor-atom = 0.3
+lektor-disqus-comments = 0.4.1
+lektor-atom = 0.3.1
 
 [servers.develop]
-name = Develop
-target = ghpages+https://spyder-ide//website-develop?cname=develop.spyder-ide.org
+name = "Develop"
+target = "ghpages+https://spyder-ide//website-develop?cname=develop.spyder-ide.org"
 
 [servers.production]
-name = Production
-target = ghpages+https://spyder-ide//website-production?cname=www.spyder-ide.org
-
-[alternatives.en]
-name = English
-primary = yes
-locale = en_US
+name = "Production"
+target = "ghpages+https://spyder-ide//website-production?cname=www.spyder-ide.org"
 
 [theme_settings]
-  author = "Spyder Team"
-  description = "Spyder Website"
-  other_css = "/static/css/styles.css"
-  content_lang = "en, es, fr"
-  hero_img = "../static/images/spyder_website_banner.png"
-  hero_title = ""
-  hero_description = ""
-  nav_mission = "Overview"
-  mission_2_nav = "download"
-  nav_services = "Components"
-  nav_team = "The Team"
-  nav_sponsors = "Sponsors"
-  nav_work = "Plugins"
-  spyder_nav_content = true
-  mission_enable = true
-  mission_images_enable = 
-  overview_enable = true
-  download_enable = true
-  services_enable = true
-  service_video_url = "https://www.youtube.com/watch?v=E2Dap5SfXkI"
-  work_enable = true
-  team_enable = 
-  sponsors_enable = true
-  donate_enable = true
-  donate_name = Donate
-  donate_description = Help us to provide the best Scientific Python Development Environment!
-  footer_enable = true
-  footer_note = "<p>&copy; 2018 The Spyder Website Contributors <br> Icons by <a href="https://www.freepik.com/" target="_blank" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon">Flaticon.com</a> <span class="pipe-red">|</span> <a href="https://freehtml5.co/icon-free-website-template-using-bootstrap/" target="_blank">Template</a> designed by <a href='https://freehtml5.co/' target='_blank'>FreeHTML5.co</a> <br>Hugo port by <a href='https://github.com/SteveLane/' target='_blank'>SteveLane</a> <span class="pipe-red">|</span> Lektor port by <a href='https://github.com/dalthviz/' target='_blank'>Dalthviz</a></p>"
-  footer_github = "https://github.com/spyder-ide/spyder"
-  footer_twitter = "https://twitter.com/spyder_ide"
-  footer_facebook = "https://www.facebook.com/SpyderIDE/"
-  footer_google = "https://groups.google.com/group/spyderlib"
-  footer_instagram = "https://instagram.com/spyderide"
-  extension_nav = true
-  ext_1_ref = "https://docs.spyder-ide.org/"
-  ext_1_title = "Docs"
-  ext_2_ref = "/blog"
-  ext_2_title = "Blog"
-  ext_3_ref = 
-  ext_3_title = "Community"
-  opencollective = spyder
-  gitter_room = "spyder-ide/public"
-  donate_nav = "Donate"
+title = "Spyder IDE"
+content_lang = "en-US"
+author = "Spyder Team"
+copyright = "&copy; 2020 Spyder Website Contributors"
+description = "Website for Spyder, the Scientific Python Development Environment"
+keywords = "spyder, ide, scipy, pydata, science, data, analysis, anaconda"
+favicon_path = "/static/images/favicon.png"
+theme_fg_color = "#000000"
+theme_fg_alt_color = "#4e4e4e"
+theme_bg_color = "#ffffff"
+theme_bg_alt_color = "#e8ecf1"
+theme_bg_accent_color = "#f5f5f5"
+theme_accent_color = "#d50000"
+theme_accent_alt_color = "#8c0000"
+theme_pipe_color = "#ee1c24"
+custom_css = "/static/css/custom_styles.css"
+custom_js_main =
+custom_js_singlepage =
+custom_head_content =
+content_security_policy = false
+content_security_policy_frame_src =
+content_security_policy_script_src =
+content_security_policy_style_src =
+content_security_policy_connect_src =
+loader_enable = true
+nav_logo_path = "/static/images/spyder-logo.svg"
+nav_logo_text = "Spyder"
+nav_extralinks = "Docs: https://docs.spyder-ide.org/"
+footer_links = "Github: https://github.com/spyder-ide/spyder, Twitter: https://twitter.com/spyder_ide, Facebook: https://www.facebook.com/SpyderIDE/, Google Groups: https://groups.google.com/group/spyderlib, Instagram: https://instagram.com/spyderide"
+footer_license_name = "MIT and others"
+footer_license_link = "https://github.com/spyder-ide/website-spyder/blob/master/NOTICE.txt"
+footer_custom_line = "Feature icons by <a href='https://www.freepik.com/' target='_blank' rel='noopener noreferrer' title='Freepik'>Freepik</a> from <a href='https://www.flaticon.com/' target='_blank' rel='noopener noreferrer' title='Flaticon'>Flaticon.com</a>"
+footer_custom_info_databag =
+gitter_room = "spyder-ide/public"
+disqus_name = "spyder-ide"
+atom_enable = true

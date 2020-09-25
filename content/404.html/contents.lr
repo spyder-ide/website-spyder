@@ -1,0 +1,17 @@
+_model: 404
+---
+_discoverable: false
+---
+full_title: 404 — Page Not Found
+---
+short_title: 404
+---
+bg_image: camg-fog-vt-bg.jpg
+---
+bg_image_fadeout: 0.3
+---
+message:
+
+Oh no, the requested page was not found!
+You can look for it via the links on the above navbar.
+---

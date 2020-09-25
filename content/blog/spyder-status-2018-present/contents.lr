@@ -70,7 +70,7 @@ It's the future of Spyder, so if you'd like to get a taste of the cutting edge, 
 Aside from Spyder 3 and 4, we've got another big ticket item for you all in the next few days: our brand new docs!
 We've been working on a major overhaul of our documentation, which will saw its first official release with Spyder 3.3.0.
 Our [old docs](https://pythonhosted.org/spyder/) were hosted on PyPI/PythonHosted and, with the freezing of that service, couldn't be updated.
-Therefore, we've now moved to maintain them in a [new dedicated repo](https://github.com/spyder-ide/spyder-docs), build, deploy and host them ourselves with [Sphinx](http://www.sphinx-doc.org/en/master/), [doctr](https://drdoctr.github.io/doctr/) and [Github Pages](https://pages.github.com/) on a subdomain of our new site making them more convenient, responsive and accessible.
+Therefore, we've now moved to maintain them in a [new dedicated repo](https://github.com/spyder-ide/spyder-docs), build, deploy and host them ourselves with [Sphinx](https://www.sphinx-doc.org/en/master/), [doctr](https://drdoctr.github.io/doctr/) and [Github Pages](https://pages.github.com/) on a subdomain of our new site making them more convenient, responsive and accessible.
 
 ![Preview of new Spyder documentation website, displaying a modern theme/layout and better screenshots](spyder-docs-preview.png)
 

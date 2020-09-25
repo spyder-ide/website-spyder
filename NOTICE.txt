@@ -1,0 +1,71 @@
+Included software, images, fonts and icons
+##########################################
+
+
+General Information
+===================
+
+
+The Spyder website incorporates code and image assets from various external sources, each of which is covered by its own license and copyright notice.
+These files are listed here with their corresponding authors, permission notices, disclaimers, and copyright statements; these are also included in the files' directory and/or their headers, as appropriate.
+
+See the NOTICE.txt in themes/lektor-icon/NOTICE.txt or the Lektor-Icon repository for a full list of those in the theme.
+https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt
+
+Any file not listed here or there is covered by Spyder's MIT (Expat) license, described in the LICENSE.txt file in this repository and Spyder's __init__.py.
+
+Images, icons and font glyphs that include trademarked elements are used for informational purposes only, and do not necessarily constitute any endorsement, association or ownership by or of the marks or their respective owners.
+
+All trademarks are the property of their respective owners.
+
+Reference the Spyder NOTICE.txt for how to add items to this file.
+https://github.com/spyder-ide/spyder/blob/master/NOTICE.txt
+
+
+===============================================================================
+
+
+
+Icons
+=====
+
+
+Feature icons created by Freepik from www.Flaticon.com
+------------------------------------------------------
+
+
+Copyright (c) Freepik Company
+
+
+Author: Freepik Company | https://www.flaticon.com/authors/freepik
+Site: https://www.freepik.com/
+Source: https://www.flaticon.com/
+License: Custom Freepik/Flaticon Attribution License
+https://www.freepikcompany.com/legal
+
+Modifications made to each icon to change color.
+
+
+Icon made by Freepik from www.flaticon.com
+
+Feature icons used in Spyder's website under the terms of the Flaticon license.
+See https://www.freepikcompany.com/legal for the full text of the license.
+
+Icons are used in the Features section of the main page.
+
+The license summary can be viewed at:
+https://support.freepik.com/hc/en-us/articles/202567252-Is-Freepik-for-free-
+
+
+Files covered:
+
+content/console.svg
+content/debugger.svg
+content/editor.svg
+content/help.svg
+content/plots.svg
+content/projects.svg
+content/varExplorer.svg
+
+
+-------------------------------------------------------------------------------

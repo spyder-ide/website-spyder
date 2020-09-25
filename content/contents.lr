@@ -1,13 +1,65 @@
-_model: single_layout
+_model: single-layout
 ---
-mission: 
+
+
+show_home_nav: true
 ---
-services:
+hero_title:
+---
+hero_description:
+---
+hero_image: spyder_website_banner.png
+---
+hero_no_downscale: true
+---
+starting_block_bg: dark
+---
+main_content:
+
+
+#### content ####
+section_id: overview
+----
+nav_label: Overview
+----
+title: Overview
+----
+description:
+----
+full_width: false
+----
+content:
+
+Spyder is a powerful scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts.
+It features a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package.
+----
+button_type:
+----
+button_content:
+----
+button_link:
+----
+button_position:
+----
+button_newtab:
+----
+
+
 
 #### services ####
+section_id: components
+----
+nav_label: Components
+----
 title: Components
 ----
 description: Core building blocks of a powerful IDE
+----
+video_url: https://www.youtube.com/watch?v=E2Dap5SfXkI
+----
+link_whole_card: true
+----
+transparent_bg: true
 ----
 services:
 
@@ -19,6 +71,11 @@ description:
 Work efficiently in a multi-language editor with a function/class browser, code analysis tools, automatic code completion, horizontal/vertical splitting, and go-to-definition.
 -----
 icon: editor.svg
+-----
+url:
+-----
+
+
 ##### service #####
 title: IPython Console
 -----
@@ -27,6 +84,11 @@ description:
 Harness the power of as many IPython consoles as you like within the flexibility of a full GUI interface; run your code by line, cell, or file; and render plots right inline.
 -----
 icon: console.svg
+-----
+url:
+-----
+
+
 ##### service #####
 title: Variable Explorer
 -----
@@ -35,269 +97,245 @@ description:
 Interact with and modify variables on the fly: plot a histogram or timeseries, edit a dateframe or Numpy array, sort a collection, dig into nested objects, and more!
 -----
 icon: varExplorer.svg
+-----
+url:
+-----
+
+
 ##### service #####
 title: Plots
 -----
 description: View, copy and save figures and images created during your code execution.
 -----
 icon: plots.svg
+-----
+url:
+-----
+
+
 ##### service #####
 title: Debugger
 -----
 description: Trace each step of your code's execution interactively.
 -----
 icon: debugger.svg
+-----
+url:
+-----
+
+
 ##### service #####
 title: Help
 -----
 description: Instantly view any object's docs, and render your own.
 -----
 icon: help.svg
----
-team:
-
-#### team ####
-title: Our team
+-----
+url:
+-----
 ----
-description: The people behind Spyder IDE development
+
+
+
+#### gallery ####
+section_id: plugins
 ----
-members:
-
-##### member #####
-name: Carlos Córdoba
------
-position: Core Developer/Maintainer
------
-description: 
------
-image: carlos_cordoba.jpeg
------
-facebook: 
------
-twitter: 
------
-dribble: 
------
-instagram: 
------
-github: https://github.com/ccordoba12
------
-linkedin: 
-##### member #####
-name: Gonzalo Peña-Castellanos
------
-position: Core Developer
------
-description: 
------
-image: goanpeca.jpg
------
-facebook: 
------
-twitter: 
------
-dribble: 
------
-instagram: 
------
-github: https://github.com/goanpeca
------
-linkedin: 
-##### member #####
-name: Daniel Althviz
------
-position: Core Developer
------
-description: 
------
-image: dalthviz.jpg
------
-facebook: 
------
-twitter: 
------
-dribble: 
------
-instagram: 
------
-github: https://github.com/dalthviz
------
-linkedin: 
-##### member #####
-name: Edgar Andrés Margffoy
------
-position: Core Developer
------
-description: 
------
-image: andfoy.jpg
------
-facebook: 
------
-twitter: 
------
-dribble: 
------
-instagram: 
------
-github: https://github.com/andfoy
------
-linkedin: 
-##### member #####
-name: Rafael Laverde
------
-position: Core Developer
------
-description: 
------
-image: rlaverde.jpg
------
-facebook: 
------
-twitter: 
------
-dribble: 
------
-instagram: 
------
-github: https://github.com/rlaverde
------
-linkedin: 
----
-work:
-
-#### work ####
+nav_label: Plugins
+----
 title: Plugins
 ----
 description: Extend Spyder's functionality with these awesome third-party plugins!
 ----
-works:
+show_titles: true
+----
+gallery_items:
 
-##### w_item #####
+##### gallery_item #####
 title: Spyder Notebook
 -----
-subtitle:
-
-Interact with and edit Jupyter notebooks inside Spyder
+subtitle: Interact with and edit Jupyter notebooks inside Spyder
 -----
 image: example-notebook.png
 -----
 url: https://github.com/spyder-ide/spyder-notebook
-##### w_item #####
+-----
+direct_link: true
+-----
+
+
+##### gallery_item #####
 title: Spyder Terminal
 -----
-subtitle:
-
-Control full Bash and cmd shells from inside Spyder
+subtitle: Control full Bash and cmd shells from inside Spyder
 -----
 image: example_terminal-34.png
 -----
 url: https://github.com/spyder-ide/spyder-terminal
-##### w_item #####
+-----
+direct_link: true
+-----
+
+
+##### gallery_item #####
 title: Spyder UnitTest
 -----
-subtitle:
-
-Run test suites within Spyder and view the results
+subtitle: Run test suites within Spyder and view the results
 -----
 image: unittest_screenshot.png
 -----
 url: https://github.com/spyder-ide/spyder-unittest
-##### w_item #####
+-----
+direct_link: true
+-----
+
+
+##### gallery_item #####
 title: Spyder Reports
 -----
-subtitle:
-
-Render beautiful data-driven documents with Spyder
+subtitle: Render beautiful data-driven documents with Spyder
 -----
 image: reports_screenshot.png
 -----
 url: https://github.com/spyder-ide/spyder-reports
----
-overview:
+-----
+direct_link: true
+-----
+----
+
+
 
 #### content ####
-title: Overview
+section_id: download
 ----
-description: 
+nav_label: Download
 ----
-content:
-
-Spyder is a powerful scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts. It features a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package.
-----
-data_section: mission
----
-download:
-
-#### content ####
 title: Download
 ----
 description: How to get Spyder
 ----
+full_wdith: false
+----
 content:
 
+The easy way to get up and running with Spyder on any of our supported platforms is to download it as part of the [**Anaconda distribution**](https://www.anaconda.com/download/), and use the `conda` package and environment manager to keep it and your other packages installed and up to date.
+We recommend the latest 64-bit Python 3 version, unless you have specific requirements that dictate otherwise.
 
-The easy way to get up and running with Spyder on any of our supported platforms is to download it as part of the [**Anaconda distribution**](https://www.anaconda.com/download/), and use the `conda` package and environment manager to keep it and your other packages installed and up to date. We recommend the latest 64-bit Python 3 version, unless you have specific requirements that dictate otherwise.
-
-For more advanced users who want a detailed guide to many different methods of obtaining Spyder, please refer to our full [installation instructions](https://docs.spyder-ide.org/installation.html). However, these approaches are generally intended for experienced users only, so we recommend sticking with Anaconda unless you know exactly what you are doing on your own.
-
-
-<a href="https://www.anaconda.com/download/" class="anaconda text-center" target="_blank">
-Download Spyder with Anaconda
-</a>
+For more advanced users who want a detailed guide to many different methods of obtaining Spyder, please refer to our full [installation instructions](https://docs.spyder-ide.org/installation.html).
+However, these approaches are generally intended for experienced users only, so we recommend sticking with Anaconda unless you know exactly what you are doing on your own.
 ----
-data_section: download
----
-sponsors:
+button_type: text
+----
+button_content: Download Spyder with Anaconda
+----
+button_link: https://www.anaconda.com/download/
+----
+button_position: bottom
+----
+button_newtab: true
+----
 
-#### sponsors ####
+
+
+#### content ####
+section_id: donate
+----
+nav_label: Donate
+----
+title: Donate
+----
+description: Help us to provide the best Scientific Python Development Environment!
+----
+full_width: false
+----
+content:
+----
+button_type: image
+----
+button_content: collective.svg
+----
+button_link: https://opencollective.com/spyder/
+----
+button_position: bottom
+----
+button_newtab: true
+----
+
+
+
+#### multisection ####
+section_id: sponsors
+----
+nav_label: Sponsors
+----
 title: Sponsors
 ----
-description: Spyder is funded thanks to the generous support of
+description:
 ----
-community_description: and the donations we have received from our users around the world through [Open Collective](https://opencollective.com/spyder/):
-----
-opencollective: spyder
-----
-sponsors:
+inner_content:
 
-##### sponsor #####
-name: 
+##### services #####
+section_id: contributors
 -----
-description: 
+nav_label:
 -----
-image: quansight.png
+title:
 -----
-facebook: 
+description: Spyder is funded thanks to the generous support of
 -----
-twitter: 
+video_url:
 -----
-dribble: 
+link_whole_card: true
 -----
-instagram: 
+transparent_bg: true
 -----
-github: 
+services:
+
+###### service ######
+name:
+------
+description:
+------
+icon: quansight.png
+------
+url:
+------
+
+###### service ######
+name:
+------
+description:
+------
+icon: numfocus_lrg.png
+------
+url:
+------
 -----
-linkedin: 
+
+
+##### content #####
+section_id: opencollective-backers
 -----
-website: 
-##### sponsor #####
-name: 
+nav_label:
 -----
-description: 
+title:
 -----
-image: numfocus_lrg.png
+description:
 -----
-facebook: 
+full_width: false
 -----
-twitter: 
+content:
+
+and the donations we have received from our users around the world through [Open Collective](https://opencollective.com/spyder/):
 -----
-dribble: 
+button_type: image
 -----
-instagram: 
+button_content: https://opencollective.com/spyder/sponsors.svg
 -----
-github: 
+button_link: https://opencollective.com/spyder#support
 -----
-linkedin: 
+button_position: bottom
 -----
-website: 
+button_newtab: true
+-----
+----
+---

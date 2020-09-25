@@ -14,7 +14,7 @@ body:
 
 *This blogpost was originally published on the [Quansight Labs website](https://labs.quansight.org/blog/2019/11/File-management-improvements-in-Spyder4/)*.
 
-Version 4.0 of [Spyder](https://www.spyder-ide.org/) is almost ready! It has been in the making for well over two years, and it contains lots of interesting new features. We will focus on the Files pane in this post, where we've made several improvements to the interface and file management tools. 
+Version 4.0 of [Spyder](https://www.spyder-ide.org/) is almost ready! It has been in the making for well over two years, and it contains lots of interesting new features. We will focus on the Files pane in this post, where we've made several improvements to the interface and file management tools.
 
 ## Simplified interface
 
@@ -26,7 +26,7 @@ In order to simplify the Files pane's interface, the columns corresponding to si
 
 ## Custom file associations
 
-First, we added the ability to associate different external applications with specific file extensions they can open. Under the File associations tab of the Files preferences pane, you can add file types and set the external program used to open each of them by default. 
+First, we added the ability to associate different external applications with specific file extensions they can open. Under the File associations tab of the Files preferences pane, you can add file types and set the external program used to open each of them by default.
 
 ![File associations](file-associations.png)
 
