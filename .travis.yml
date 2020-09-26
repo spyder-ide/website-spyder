@@ -1,9 +1,17 @@
 language: python
 python: 3.7
 
-install: "ci/install.sh"
+cache:
+  directories:
+  - "$HOME/.cache/pre-commit"
 
-script: "ci/build.sh"
+install:
+  - "ci/install.sh"
+  - "pip3 install -U pre-commit"
+
+script:
+  - "pre-commit run --all-files"
+  - "ci/build.sh"
 
 deploy:
   - provider: script
