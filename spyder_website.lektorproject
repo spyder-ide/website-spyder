@@ -3,6 +3,7 @@ name = "Spyder IDE"
 themes = "lektor-icon"
 url_style = "absolute"
 url = "https://www.spyder-ide.org"
+included_assets = ".nojekyll"
 
 [packages]
 lektor-disqus-comments = 0.4.1

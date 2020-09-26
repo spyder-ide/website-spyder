@@ -8,16 +8,16 @@ script: "ci/build.sh"
 deploy:
   - provider: script
     skip_cleanup: true
-    script: "lektor deploy develop --output-path website-spyder-build"
+    script: "ci/deploy.sh develop"
     on:
        branch: develop
   - provider: script
     skip_cleanup: true
-    script: "lektor deploy production --output-path website-spyder-build"
+    script: "ci/deploy.sh production"
     on:
        branch: production
 
 notifications:
   webhooks:
     urls:
-      - https://webhooks.gitter.im/e/2d23c08216a7b3f1a005
+      - "https://webhooks.gitter.im/e/2d23c08216a7b3f1a005"
