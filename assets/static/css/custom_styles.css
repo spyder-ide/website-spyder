@@ -5,7 +5,7 @@
 /* Tweak display of logo text for small caps */
 
 #menu-logo .logo-text {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 #menu-logo .logo-text::first-letter {

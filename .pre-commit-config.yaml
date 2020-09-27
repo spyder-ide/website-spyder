@@ -24,6 +24,17 @@ repos:
     -   id: end-of-file-fixer
         exclude_types: [svg]
 
+-   repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.1.9
+    hooks:
+    -   id: remove-crlf
+        types: [text]
+        exclude_types: [svg]
+    -   id: remove-tabs
+        types: [text]
+        exclude_types: [svg]
+        args: ['--whitespaces-count', '2']  # defaults to: 4
+
 
 # Checkers
 
