@@ -52,6 +52,12 @@ repos:
         exclude: '\.gitattributes'
         args: [--enable-colors, --check-filenames, --check-hidden, --write-changes]
 
+-   repo: https://github.com/lovesegfault/beautysh
+    rev: '6.0.1'
+    hooks:
+    -   id: beautysh
+        name: Beautify shell scripts
+
 
 # Checkers
 
@@ -76,6 +82,14 @@ repos:
     rev: v1.6.0
     hooks:
     -   id: text-unicode-replacement-char
+
+-   repo: https://github.com/openstack/bashate
+    rev: '2.0.0'
+    hooks:
+    -   id: bashate
+        verbose: false
+        name: Lint shell scripts
+        args: [--max-line-length, '80']
 
 
 # Commit message
