@@ -38,6 +38,20 @@ repos:
         exclude_types: [svg]
         args: ['--whitespaces-count', '2']  # defaults to: 4
 
+-   repo: https://github.com/codespell-project/codespell
+    rev: 'v1.17.1'
+    hooks:
+    # Define separate hooks for checking and correcting spelling errors
+    # since codespell doesn't print verboase output when writing changes
+    -   id: codespell
+        name: Check spelling
+        exclude: '\.gitattributes'
+        args: [--enable-colors, --check-filenames, --check-hidden]
+    -   id: codespell
+        name: Fix spelling
+        exclude: '\.gitattributes'
+        args: [--enable-colors, --check-filenames, --check-hidden, --write-changes]
+
 
 # Checkers
 
