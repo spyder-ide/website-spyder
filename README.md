@@ -78,6 +78,7 @@ and install the hooks by running the following from the root of this repo:
 
 ```bash
 $ pre-commit install
+$ pre-commit install --hook-type commit-msg
 ```
 
 The hooks will be automatically run against any new/changed files every time you commit.

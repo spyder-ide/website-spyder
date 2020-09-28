@@ -6,6 +6,9 @@ minimum_pre_commit_version: '2.7.1'
 default_language_version:
     python: python3.7
 
+default_stages: [commit]
+
+
 repos:
 -   repo: meta
     hooks:
@@ -59,3 +62,11 @@ repos:
     rev: v1.6.0
     hooks:
     -   id: text-unicode-replacement-char
+
+
+# Commit message
+
+-   repo: https://github.com/jorisroovers/gitlint
+    rev: v0.13.1
+    hooks:
+    -   id: gitlint
