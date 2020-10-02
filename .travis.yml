@@ -3,29 +3,29 @@ python: 3.7
 
 cache:
   directories:
-  - "$HOME/.cache/pre-commit"
+  - '$HOME/.cache/pre-commit'
 
 install:
-  - "ci/install.sh"
-  - "pip3 install -U pre-commit"
+- ci/install.sh
+- pip3 install -U pre-commit
 
 script:
-  - "pre-commit run --all-files"
-  - "ci/build.sh"
+- pre-commit run --all-files
+- ci/build.sh
 
 deploy:
-  - provider: script
-    skip_cleanup: true
-    script: "ci/deploy.sh develop"
-    on:
-       branch: develop
-  - provider: script
-    skip_cleanup: true
-    script: "ci/deploy.sh production"
-    on:
-       branch: production
+- provider: script
+  skip_cleanup: true
+  script: ci/deploy.sh develop
+  on:  # yamllint disable-line rule:truthy
+    branch: develop
+- provider: script
+  skip_cleanup: true
+  script: ci/deploy.sh production
+  on:  # yamllint disable-line rule:truthy
+    branch: production
 
 notifications:
   webhooks:
     urls:
-      - "https://webhooks.gitter.im/e/2d23c08216a7b3f1a005"
+    - 'https://webhooks.gitter.im/e/2d23c08216a7b3f1a005'
