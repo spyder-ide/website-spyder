@@ -18,6 +18,7 @@ rules:
     indent-sequences: consistent
     check-multi-line-strings: true
   line-length: disable
+  new-lines: disable
   octal-values: enable
   quoted-strings:
     quote-type: single
