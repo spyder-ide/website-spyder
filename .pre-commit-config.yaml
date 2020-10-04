@@ -66,8 +66,8 @@ repos:
   rev: '2.0.0'
   hooks:
   - id: bashate
-    verbose: false
     name: Lint Bash scripts
+    verbose: false
     args: [--max-line-length, '80']
 
 # Pretty-format INI
@@ -75,17 +75,39 @@ repos:
   rev: v1.6.1
   hooks:
   - id: pretty-format-ini
-    name: Prettify INI
+    name: Format INI
     types: [text]
     files: '\.(ini|lektorproject|codespellrc)$'
     exclude: 'configs/disqus-comments\.ini'
     args: [--autofix]
 
-# Check JSON, TOML and XML
+# Check JSON
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v3.3.0
   hooks:
   - id: check-json
+
+# Add doctoc to Markdown
+- repo: https://github.com/thlorenz/doctoc
+  rev: v1.4.0
+  hooks:
+  - id: doctoc
+    name: Generate Markdown ToCs
+    files: '^(README\.md|CONTRIBUTING\.md|CHANGELOG\.md)$'
+    args: [--maxlevel, '3']
+
+# Lint Markdown
+- repo: https://github.com/igorshubovych/markdownlint-cli
+  rev: v0.24.0
+  hooks:
+  - id: markdownlint
+    name: Lint Markdown
+    args: [--fix]
+
+# Check TOML and XML
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v3.3.0
+  hooks:
   - id: check-toml
   - id: check-xml
 
@@ -94,7 +116,7 @@ repos:
   rev: v1.6.1
   hooks:
   - id: pretty-format-yaml
-    name: Prettify Yaml
+    name: Format Yaml
     args: [--autofix, --indent, '2', --preserve-quotes]
 
 # Check YAML

@@ -1,3 +1,5 @@
+# Spyder Website
+
 ![Spyder Website — The Official Site of the Scientific Python Development Environment](./assets/static/images/spyder_readme_banner.png)
 
 *Copyright © 2016-2020 Spyder Website Contributors and others (see [AUTHORS.txt](https://github.com/spyder-ide/website-spyder/blob/master/AUTHORS.txt))*
@@ -17,6 +19,27 @@
 This is the repository for the Spyder IDE website at [Spyder-IDE.org](https://www.spyder-ide.org/), built with the [Lektor](https://www.getlektor.com/) static CMS and our very own [Lektor-Icon](https://spyder-ide.github.io/lektor-icon/) theme.
 
 
+<!-- markdownlint-disable -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Getting started](#getting-started)
+  - [Clone the repo with submodules](#clone-the-repo-with-submodules)
+  - [Install Lektor](#install-lektor)
+  - [Run server and make changes](#run-server-and-make-changes)
+  - [Install and use the pre-commit hooks](#install-and-use-the-pre-commit-hooks)
+- [Workflow](#workflow)
+  - [Develop](#develop)
+  - [Production](#production)
+- [Technologies and libraries used](#technologies-and-libraries-used)
+  - [Lektor plugins](#lektor-plugins)
+- [More information](#more-information)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<!-- markdownlint-restore -->
+
+
 
 ## Getting started
 
@@ -24,7 +47,7 @@ This is the repository for the Spyder IDE website at [Spyder-IDE.org](https://ww
 ### Clone the repo with submodules
 
 ```bash
-$ git clone --recursive https://github.com/spyder-ide/website-spyder.git
+git clone --recursive https://github.com/spyder-ide/website-spyder.git
 ```
 
 
@@ -33,19 +56,19 @@ $ git clone --recursive https://github.com/spyder-ide/website-spyder.git
 Using conda (Recommended way):
 
 ```bash
-$ conda install lektor -c conda-forge
+conda install lektor -c conda-forge
 ```
 
 Using pip:
 
 ```bash
-$ pip install -U Lektor
+pip install -U Lektor
 ```
 
 With installation script:
 
 ```bash
-$ curl -sf https://www.getlektor.com/install.sh | sh
+curl -sf https://www.getlektor.com/install.sh | sh
 ```
 
 
@@ -55,7 +78,7 @@ $ curl -sf https://www.getlektor.com/install.sh | sh
 In the root of this repository, run a local server:
 
 ```bash
-$ lektor server
+lektor server
 ```
 
 
@@ -65,20 +88,20 @@ This repository uses [pre-commit](https://pre-commit.com/) to install, configure
 To obtain the pre-commit package, simply run the following with conda:
 
 ```bash
-$ conda install -c conda-forge pre-commit
+conda install -c conda-forge pre-commit
 ```
 
 or with pip:
 
 ```bash
-$ pip install -U pre-commit
+pip install -U pre-commit
 ```
 
 and install the hooks by running the following from the root of this repo:
 
 ```bash
-$ pre-commit install
-$ pre-commit install --hook-type commit-msg
+pre-commit install
+pre-commit install --hook-type commit-msg
 ```
 
 The hooks will be automatically run against any new/changed files every time you commit.
@@ -86,7 +109,7 @@ It may take a few minutes to install the needed packages the first time you comm
 To run the hooks manually on all the files in the repo, execute:
 
 ```bash
-$ pre-commit run --all-files
+pre-commit run --all-files
 ```
 
 
@@ -116,8 +139,8 @@ This website is built using [Lektor](https://www.getlektor.com/), a static web g
 
 The build also requires several [Lektor plugins](https://www.getlektor.com/docs/plugins/) (no extra configuration is needed; Lektor automatically installs them when building):
 
-- [disqus-comments](https://github.com/lektor/lektor-disqus-comments)
-- [atom](https://github.com/lektor/lektor-atom)
+* [disqus-comments](https://github.com/lektor/lektor-disqus-comments)
+* [atom](https://github.com/lektor/lektor-atom)
 
 
 
