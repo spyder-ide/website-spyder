@@ -1,7 +1,7 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 
-minimum_pre_commit_version: '2.7.1'
+minimum_pre_commit_version: '2.8.2'
 
 default_language_version:
   python: python3.7
@@ -17,15 +17,17 @@ repos:
 
 # General fixers
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.2.0
+  rev: v3.3.0
   hooks:
   - id: trailing-whitespace
     exclude_types: [svg]
   - id: mixed-line-ending
-    name: Fix mixed line endings
+    name: Normalize mixed line endings
     args: [--fix=lf]
   - id: end-of-file-fixer
     exclude_types: [svg]
+  - id: fix-byte-order-marker
+    name: Remove Unicode BOM
 
 # More general fixers
 - repo: https://github.com/Lucas-C/pre-commit-hooks
@@ -70,7 +72,7 @@ repos:
 
 # Pretty-format INI
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-  rev: v1.5.0
+  rev: v1.6.1
   hooks:
   - id: pretty-format-ini
     name: Prettify INI
@@ -81,7 +83,7 @@ repos:
 
 # Check JSON, TOML and XML
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.2.0
+  rev: v3.3.0
   hooks:
   - id: check-json
   - id: check-toml
@@ -89,7 +91,7 @@ repos:
 
 # Pretty-format YAML
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-  rev: v1.5.0
+  rev: v1.6.1
   hooks:
   - id: pretty-format-yaml
     name: Prettify Yaml
@@ -97,7 +99,7 @@ repos:
 
 # Check YAML
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.2.0
+  rev: v3.3.0
   hooks:
   - id: check-yaml
 
@@ -123,17 +125,16 @@ repos:
 # General checkers
 
 - repo: https://github.com/pre-commit/pygrep-hooks
-  rev: v1.6.0
+  rev: v1.7.0
   hooks:
   - id: text-unicode-replacement-char
     name: Check for Unicode replacement chars
 
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.2.0
+  rev: v3.3.0
   hooks:
   - id: check-added-large-files
     args: [--maxkb=1025]
-  - id: check-byte-order-marker
   - id: check-case-conflict
   - id: check-executables-have-shebangs
   - id: check-merge-conflict
@@ -147,7 +148,7 @@ repos:
 
 # Check that commit message follows basic rules
 - repo: https://github.com/jorisroovers/gitlint
-  rev: v0.13.1
+  rev: v0.14.0
   hooks:
   - id: gitlint
     name: Check commit message
