@@ -81,6 +81,15 @@ repos:
     exclude: 'configs/disqus-comments\.ini'
     args: [--autofix]
 
+# Lint Jinja
+- repo: https://github.com/thibaudcolas/curlylint
+  rev: v0.12.0
+  hooks:
+  - id: curlylint
+    name: Lint Jinja templates
+    types: [html]
+    files: 'templates/'
+
 # Check JSON
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v3.3.0
