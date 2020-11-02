@@ -40,8 +40,8 @@ ignore-stdin = true
 
 # This is an example of how to configure the "title-max-length" rule and
 # set the line-length it enforces to 80
-# [title-max-length]
-# line-length=50
+[title-max-length]
+line-length = 80
 
 # Conversely, you can also enforce minimal length of a title with the
 # "title-min-length" rule:
@@ -59,7 +59,7 @@ min-length = 20
 # commit-msg title must be matched to.
 # Note that the regex can contradict with other rules if not used correctly
 # (e.g. title-must-not-contain-word).
-regex = (?x)^((?!\w+(ed|ing|s)).+)  # Commit msg should be imperative tense
+regex = (?x)^((?!\w+(ed|ing|s)\b).*)  # Commit msg should be imperative
 
 # [body-max-line-length]
 # line-length=72
