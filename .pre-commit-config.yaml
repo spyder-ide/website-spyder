@@ -87,6 +87,12 @@ repos:
     - 'postcss'  # Manually required or a11y doesn't work properly
     args: [--fix, --color, --maxWarnings, '0', --report-needless-disables, --report-invalid-scope-disables, --report-descriptionless-disables]
 
+- repo: https://github.com/pre-commit/mirrors-csslint
+  rev: v1.0.5
+  hooks:
+  - id: csslint
+    name: Check CSS (CSSlint)
+
 # Pretty-format INI
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
   rev: v1.6.1
