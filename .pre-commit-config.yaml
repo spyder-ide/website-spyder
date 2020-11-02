@@ -70,6 +70,23 @@ repos:
     verbose: false
     args: [--max-line-length, '80']
 
+# Lint CSS
+- repo: https://github.com/awebdeveloper/pre-commit-stylelint
+  rev: '0.0.2'
+  hooks:
+  - id: stylelint
+    name: Lint and fix CSS (stylelint)
+    additional_dependencies:
+    - 'stylelint@13.7.2'
+    - 'stylelint-config-standard@20.0.0'
+    - 'stylelint-a11y@1.2.3'
+    - 'stylelint-csstree-validator@1.9.0'
+    - 'stylelint-declaration-block-no-ignored-properties@2.3.0'
+    - 'stylelint-no-unsupported-browser-features@4.1.4'
+    - 'stylelint-order@4.1.0'
+    - 'postcss'  # Manually required or a11y doesn't work properly
+    args: [--fix, --color, --maxWarnings, '0', --report-needless-disables, --report-invalid-scope-disables, --report-descriptionless-disables]
+
 # Pretty-format INI
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
   rev: v1.6.1
