@@ -104,6 +104,20 @@ repos:
     exclude: 'configs/disqus-comments\.ini'
     args: [--autofix]
 
+# Lint and fix JavaScript
+- repo: https://github.com/pre-commit/mirrors-eslint
+  rev: v7.12.1
+  hooks:
+  - id: eslint
+    name: Lint and fix JavaScript
+    args: [--fix, --max-warnings, '0', --color]
+    additional_dependencies:
+    - 'eslint@7.12.1'
+    - 'eslint-config-standard@16.0.1'
+    - 'eslint-plugin-import@2.22.1'
+    - 'eslint-plugin-node@11.1.0'
+    - 'eslint-plugin-promise@4.2.1'
+
 # Lint Jinja
 - repo: https://github.com/thibaudcolas/curlylint
   rev: v0.12.0
