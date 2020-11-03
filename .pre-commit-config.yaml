@@ -70,12 +70,13 @@ repos:
     verbose: false
     args: [--max-line-length, '80']
 
-# Lint CSS
+# Lint and fix CSS with stylelint
 - repo: https://github.com/awebdeveloper/pre-commit-stylelint
   rev: '0.0.2'
   hooks:
   - id: stylelint
     name: Lint and fix CSS (stylelint)
+    args: [--fix, --color, --maxWarnings, '0', --report-needless-disables, --report-invalid-scope-disables, --report-descriptionless-disables]
     additional_dependencies:
     - 'stylelint@13.7.2'
     - 'stylelint-config-standard@20.0.0'
@@ -85,8 +86,8 @@ repos:
     - 'stylelint-no-unsupported-browser-features@4.1.4'
     - 'stylelint-order@4.1.0'
     - 'postcss'  # Manually required or a11y doesn't work properly
-    args: [--fix, --color, --maxWarnings, '0', --report-needless-disables, --report-invalid-scope-disables, --report-descriptionless-disables]
 
+# Lint CSS with CSSlint
 - repo: https://github.com/pre-commit/mirrors-csslint
   rev: v1.0.5
   hooks:
@@ -100,8 +101,7 @@ repos:
   - id: pretty-format-ini
     name: Format INI
     types: [text]
-    files: '\.(ini|lektorproject|codespellrc)$'
-    exclude: 'configs/disqus-comments\.ini'
+    files: '(?<!configs\/disqus-comments)\.(ini|lektorproject|codespellrc)$'
     args: [--autofix]
 
 # Lint and fix JavaScript
@@ -148,6 +148,11 @@ repos:
   hooks:
   - id: markdownlint
     name: Lint Markdown
+    # Pinned to Node 14/npm 6 to work around symlink issue on Windows
+    # Otherwise pre-commit install-hooks needs to be run in an admin console
+    # Or with dev mode or symlinks enabled at the OS level
+    # https://github.com/pre-commit/pre-commit/issues/1681
+    language_version: '14.15.0'
     args: [--fix]
 
 # Check TOML and XML
