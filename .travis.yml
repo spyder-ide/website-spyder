@@ -7,7 +7,6 @@ cache:
 
 install:
 - ci/install.sh
-- pip3 install -U pre-commit
 
 script:
 - pre-commit run --all-files

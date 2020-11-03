@@ -26,9 +26,9 @@ This is the repository for the Spyder IDE website at [Spyder-IDE.org](https://ww
 
 - [Getting started](#getting-started)
   - [Clone the repo with submodules](#clone-the-repo-with-submodules)
-  - [Install Lektor](#install-lektor)
+  - [Install dependencies](#install-dependencies)
+  - [Set up Pre-Commit](#set-up-pre-commit)
   - [Run server and make changes](#run-server-and-make-changes)
-  - [Install and use the pre-commit hooks](#install-and-use-the-pre-commit-hooks)
 - [Workflow](#workflow)
   - [Develop](#develop)
   - [Production](#production)
@@ -51,53 +51,25 @@ git clone --recursive https://github.com/spyder-ide/website-spyder.git
 ```
 
 
-### Install Lektor
+### Install dependencies
 
-Using conda (Recommended way):
-
-```bash
-conda install lektor -c conda-forge
-```
-
-Using pip:
+You can install the required development and production dependencies with conda (recommended):
 
 ```bash
-pip install -U Lektor
-```
-
-With installation script:
-
-```bash
-curl -sf https://www.getlektor.com/install.sh | sh
-```
-
-
-
-### Run server and make changes
-
-In the root of this repository, run a local server:
-
-```bash
-lektor server
-```
-
-
-### Install and use the pre-commit hooks
-
-This repository uses [pre-commit](https://pre-commit.com/) to install, configure and update a suite of pre-commit hooks that check for common problems and issues and fix many of them automatically.
-To obtain the pre-commit package, simply run the following with conda:
-
-```bash
-conda install -c conda-forge pre-commit
+conda install -c conda-forge --file requirements.txt
 ```
 
 or with pip:
 
 ```bash
-pip install -U pre-commit
+pip install -r requirements.txt
 ```
 
-and install the hooks by running the following from the root of this repo:
+
+### Set up Pre-Commit
+
+This repository uses [pre-commit](https://pre-commit.com/) to install, configure and update a suite of pre-commit hooks that check for common problems and issues and fix many of them automatically.
+Pre-commit itself is installed with the above command, and the hooks can be installed by running the following from the root of this repo:
 
 ```bash
 pre-commit install
@@ -106,11 +78,25 @@ pre-commit install --hook-type commit-msg
 
 The hooks will be automatically run against any new/changed files every time you commit.
 It may take a few minutes to install the needed packages the first time you commit, but subsequent runs should only take a few seconds.
-To run the hooks manually on all the files in the repo, execute:
+If you made one or more commits before installing the hooks (not recommended), to run them manually on all the files in the repo, execute:
 
 ```bash
 pre-commit run --all-files
 ```
+
+**Note**: Most of the hooks fix the problems they detect automatically (the hook output will say ``files were modified by this hook``, but no errors/warnings will be listed), but they will still abort the commit so you can double-check everything first.
+Once you're satisfied, ``git add .`` again and re-commit.
+
+
+### Run server and make changes
+
+In the root of this repository, run a continuously updating local webserver:
+
+```bash
+lektor server
+```
+
+The resulting website can be viewed in your browser at ``http://localhost:5000``.
 
 
 
