@@ -4,7 +4,7 @@
 minimum_pre_commit_version: '2.8.2'
 
 default_language_version:
-  python: python3.7
+  python: python3
 
 default_stages: [commit]
 
@@ -67,6 +67,7 @@ repos:
   hooks:
   - id: bashate
     name: Lint Bash scripts
+    stages: [manual]
     verbose: false
     args: [--max-line-length, '80']
 
@@ -210,6 +211,7 @@ repos:
     args: [--maxkb=1025]
   - id: check-case-conflict
   - id: check-executables-have-shebangs
+    exclude: 'pre\-commit\-config\.yaml'
   - id: check-merge-conflict
   - id: check-symlinks
   - id: no-commit-to-branch

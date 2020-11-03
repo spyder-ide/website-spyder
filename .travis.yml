@@ -10,6 +10,7 @@ install:
 
 script:
 - pre-commit run --all-files
+- pre-commit run --all-files --hook-stage manual
 - ci/build.sh
 
 deploy:
