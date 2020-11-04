@@ -56,13 +56,13 @@ git clone --recursive https://github.com/spyder-ide/website-spyder.git
 You can install the required development and production dependencies with conda (recommended):
 
 ```bash
-conda install -c conda-forge --file requirements.txt
+conda install -c conda-forge --file requirements-dev.txt
 ```
 
 or with pip:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 ```
 
 
