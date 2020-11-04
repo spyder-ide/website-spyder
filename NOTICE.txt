@@ -7,7 +7,7 @@ General Information
 
 
 The Spyder website incorporates code and image assets from various external sources, each of which is covered by its own license and copyright notice.
-These files are listed here with their corresponding authors, permission notices, disclaimers, and copyright statements; these are also included in the files' directory and/or their headers, as appropriate.
+These files are listed here with their corresponding authors, permission notices, disclaimers, and copyright statements; these are also included in the file's directory and/or their headers, as appropriate.
 
 See the NOTICE.txt in themes/lektor-icon/NOTICE.txt or the Lektor-Icon repository for a full list of those in the theme.
 https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt

@@ -125,7 +125,7 @@ To make it easier for users to manage multiple environments, the selection UI un
 
 In the Console, mundane ``ipdb`` commands are automatically filtered from the history, and the Editor now supports syntax highlighting for the [new numeric literal syntax](https://www.python.org/dev/peps/pep-0515/) introduced in Python 3.6.
 Spyder's tutorial has been re-written for modern Spyder as well as to be clearer and more understandable, and overhauled for better and more consistent formatting and visuals with the rest of our documentation.
-Finally, our update checker now consults the Anaconda ``defaults`` channel rather than PyPI to determine if an update is available, so it doesn't bug the majority of our users on Anaconda until they can actually aquire the package.
+Finally, our update checker now consults the Anaconda ``defaults`` channel rather than PyPI to determine if an update is available, so it doesn't bug the majority of our users on Anaconda until they can actually acquire the package.
 
 
 ## What to know and what's next

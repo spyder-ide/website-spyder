@@ -1,23 +1,31 @@
 language: python
 python: 3.7
 
-install: "ci/install.sh"
+cache:
+  directories:
+  - '$HOME/.cache/pre-commit'
 
-script: "ci/build.sh"
+install:
+- ci/install.sh
+
+script:
+- pre-commit run --all-files
+- pre-commit run --all-files --hook-stage manual
+- ci/build.sh
 
 deploy:
-  - provider: script
-    skip_cleanup: true
-    script: "ci/deploy.sh develop"
-    on:
-       branch: develop
-  - provider: script
-    skip_cleanup: true
-    script: "ci/deploy.sh production"
-    on:
-       branch: production
+- provider: script
+  skip_cleanup: true
+  script: ci/deploy.sh develop
+  on:  # yamllint disable-line rule:truthy
+    branch: develop
+- provider: script
+  skip_cleanup: true
+  script: ci/deploy.sh production
+  on:  # yamllint disable-line rule:truthy
+    branch: production
 
 notifications:
   webhooks:
     urls:
-      - "https://webhooks.gitter.im/e/2d23c08216a7b3f1a005"
+    - 'https://webhooks.gitter.im/e/2d23c08216a7b3f1a005'

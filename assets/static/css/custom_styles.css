@@ -5,11 +5,11 @@
 /* Tweak display of logo text for small caps */
 
 #menu-logo .logo-text {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 #menu-logo .logo-text::first-letter {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 /* Reduce size of download button font */
@@ -30,6 +30,7 @@
 /* Remove margin between cards when single-column */
 
 @media screen and (max-width: 768px) {
+
   .col-md-4 .card-item {
     margin: 0;
   }
@@ -42,10 +43,10 @@
 }
 
 #section-components .card-item {
+  padding-bottom: 0.5em;
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-top: 1.5em;
-  padding-bottom: 0.5em;
 }
 
 /* Adjust component icons to be smaller at narrower widths */
@@ -55,6 +56,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   #section-components .icon .img-responsive {
     width: 30%;
   }
@@ -63,8 +65,8 @@
 /* Make component card titles FG instead of accent color */
 
 .service h3 {
-  color: #333333;
-  color: var(--theme-fg-alt-color, #333333);
+  color: #333;
+  color: var(--theme-fg-alt-color, #333);
 }
 
 
@@ -79,7 +81,7 @@
 /* Reduce vertical spacing in sponsors section */
 
 #section-sponsors .body-subsection {
-  padding: 0 0 1em 0;
+  padding: 0 0 1em;
 }
 
 #section-contributors .fh5co-heading,
@@ -90,18 +92,21 @@
 /* Increase size of graphics in sponsors section */
 
 @media screen and (max-width: 1200px) {
+
   #section-sponsors .col-md-4 {
     max-width: 320px;
   }
 }
 
 @media screen and (max-width: 768px) {
+
   #section-sponsors .col-md-4 {
     max-width: 400px;
   }
 }
 
 @media screen and (max-width: 480px) {
+
   #section-sponsors .col-md-4 {
     max-width: 320px;
   }
@@ -113,12 +118,12 @@
 
 #section-sponsors img.img-responsive {
   margin-bottom: 0;
-  padding: 1em 1em 1em 1em;
+  padding: 1em;
   width: 100%;
 }
 
 #section-sponsors .image-button {
-  margin-top: 0;
   margin-bottom: 0;
-  min-width: 50%
+  margin-top: 0;
+  min-width: 50%;
 }
