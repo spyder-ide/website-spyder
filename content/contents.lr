@@ -72,7 +72,7 @@ Work efficiently in a multi-language editor with a function/class browser, code 
 -----
 icon: editor.svg
 -----
-url:
+url: http://docs.spyder-ide.org/develop/current/editor.html
 -----
 
 
@@ -85,7 +85,7 @@ Harness the power of as many IPython consoles as you like within the flexibility
 -----
 icon: console.svg
 -----
-url:
+url: http://docs.spyder-ide.org/develop/current/ipythonconsole.html
 -----
 
 
@@ -98,7 +98,7 @@ Interact with and modify variables on the fly: plot a histogram or timeseries, e
 -----
 icon: varExplorer.svg
 -----
-url:
+url: http://docs.spyder-ide.org/develop/current/variableexplorer.html
 -----
 
 
@@ -109,7 +109,7 @@ description: View, copy and save figures and images created during your code exe
 -----
 icon: plots.svg
 -----
-url:
+url: http://docs.spyder-ide.org/develop/current/plots.html
 -----
 
 
@@ -120,7 +120,7 @@ description: Trace each step of your code's execution interactively.
 -----
 icon: debugger.svg
 -----
-url:
+url: http://docs.spyder-ide.org/develop/current/debugging.html
 -----
 
 
@@ -131,7 +131,7 @@ description: Instantly view any object's docs, and render your own.
 -----
 icon: help.svg
 -----
-url:
+url: http://docs.spyder-ide.org/develop/current/help.html
 -----
 ----
 
@@ -312,7 +312,7 @@ description:
 ------
 icon: quansight.png
 ------
-url:
+url: https://www.quansight.com/
 ------
 
 ###### service ######
@@ -322,7 +322,7 @@ description:
 ------
 icon: numfocus_lrg.png
 ------
-url:
+url: https://numfocus.org/
 ------
 -----
 
