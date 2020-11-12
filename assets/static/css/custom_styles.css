@@ -63,6 +63,14 @@
   color: var(--theme-fg-alt-color, #333);
 }
 
+/* Disable card background changing on hover */
+
+.card-item:hover,
+.card-item:focus {
+  background: #fff;
+  background: var(--theme-bg-color, #fff);
+}
+
 
 /*** Sponsors section ***/
 
