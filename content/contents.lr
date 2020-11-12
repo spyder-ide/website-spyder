@@ -30,7 +30,7 @@ full_width: false
 ----
 content:
 
-Spyder is a powerful scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts.
+Spyder is a free and open source scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts.
 It features a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a scientific package.
 ----
 button_type:
@@ -81,7 +81,7 @@ title: IPython Console
 -----
 description:
 
-Harness the power of as many IPython consoles as you like within the flexibility of a full GUI interface; run your code by line, cell, or file; and render plots right inline.
+Harness the power of as many IPython consoles as you like in one GUI. Run code by line, cell or file; or work interactively with debugging, plots and magic commands.
 -----
 icon: console.svg
 -----
@@ -105,7 +105,7 @@ url: http://docs.spyder-ide.org/develop/current/variableexplorer.html
 ##### service #####
 title: Plots
 -----
-description: View, copy and save figures and images created during your code execution.
+description: Browse, zoom, copy and save the figures and images you create.
 -----
 icon: plots.svg
 -----
@@ -144,7 +144,7 @@ nav_label: Plugins
 ----
 title: Plugins
 ----
-description: Extend Spyder's functionality with these awesome third-party plugins!
+description: Extend Spyder's functionality with these awesome plugins!
 ----
 show_titles: true
 ----
@@ -166,7 +166,7 @@ direct_link: true
 ##### gallery_item #####
 title: Spyder Terminal
 -----
-subtitle: Control full Bash and cmd shells from inside Spyder
+subtitle: Control full Bash and CMD shells from inside Spyder
 -----
 image: example_terminal-34.png
 -----
@@ -177,7 +177,7 @@ direct_link: true
 
 
 ##### gallery_item #####
-title: Spyder UnitTest
+title: Spyder Unittest
 -----
 subtitle: Run test suites within Spyder and view the results
 -----
@@ -258,7 +258,7 @@ nav_label: Donate
 ----
 title: Donate
 ----
-description: Help us to provide the best Scientific Python Development Environment!
+description: Help us make Spyder even better for everyone!
 ----
 full_width: false
 ----
