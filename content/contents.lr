@@ -280,7 +280,7 @@ button_newtab: true
 #### multisection ####
 section_id: sponsors
 ----
-nav_label: Sponsors
+nav_label:
 ----
 title: Sponsors
 ----
