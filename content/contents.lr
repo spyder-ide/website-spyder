@@ -204,7 +204,7 @@ direct_link: true
 
 
 
-#### content ####
+#### multisection ####
 section_id: download
 ----
 nav_label: Download
@@ -213,8 +213,17 @@ title: Download
 ----
 description: How to get Spyder
 ----
+inner_content:
+
+##### content #####
+section_id: download-main
+-----
+title:
+-----
+description:
+-----
 full_wdith: false
-----
+-----
 content:
 
 The easy way to get up and running with Spyder on any of our supported platforms is to download it as part of the [**Anaconda distribution**](https://www.anaconda.com/download/), and use the `conda` package and environment manager to keep it and your other packages installed and up to date.
@@ -222,16 +231,60 @@ We recommend the latest 64-bit Python 3 version, unless you have specific requir
 
 For more advanced users who want a detailed guide to many different methods of obtaining Spyder, please refer to our full [installation instructions](https://docs.spyder-ide.org/installation.html).
 However, these approaches are generally intended for experienced users only, so we recommend sticking with Anaconda unless you know exactly what you are doing on your own.
-----
+-----
+
+
+##### multisection #####
+section_id: download-buttons
+-----
+title:
+-----
+description:
+-----
+inner_content:
+
+###### content ######
+section_id: download-button-windows
+------
 button_type: text
-----
-button_content: Download Spyder with Anaconda
-----
-button_link: https://www.anaconda.com/download/
-----
+------
+button_content: Download for Windows
+------
+button_link: https://github.com/spyder-ide/spyder/releases/latest/download/Spyder_64bit_full.exe
+------
 button_position: bottom
-----
+------
 button_newtab: true
+------
+
+###### content ######
+section_id: download-button-mac
+------
+button_type: text
+------
+button_content: Download for macOS
+------
+button_link: https://github.com/spyder-ide/spyder/releases/latest/download/Spyder.dmg
+------
+button_position: bottom
+------
+button_newtab: true
+------
+
+###### content ######
+section_id: download-button-linux
+------
+button_type: text
+------
+button_content: Download for Linux
+------
+button_link: https://www.anaconda.com/download/
+------
+button_position: bottom
+------
+button_newtab: true
+------
+-----
 ----
 
 
