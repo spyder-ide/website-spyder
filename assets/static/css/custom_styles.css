@@ -138,7 +138,7 @@
 #section-download-buttons .content-button {
   margin-bottom: 0;
   margin-top: 0;
-  min-width: 360px;
+  min-width: 380px;
 }
 
 @media screen and (max-width: 480px) {
@@ -146,4 +146,14 @@
   #section-download-buttons .content-button {
     min-width: inherit;
   }
+}
+
+#section-download-buttons span.fab {
+  font-size: 1.6em;
+  padding-right: 0.5em;
+  vertical-align: sub;
+}
+
+#section-download-buttons span.fa-apple {
+  font-size: 1.8em;
 }

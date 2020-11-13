@@ -248,7 +248,7 @@ section_id: download-button-windows
 ------
 button_type: text
 ------
-button_content: Download for Windows
+button_content: <span class="fab fa-windows"></span>Download for Windows
 ------
 button_link: https://github.com/spyder-ide/spyder/releases/latest/download/Spyder_64bit_full.exe
 ------
@@ -262,7 +262,7 @@ section_id: download-button-mac
 ------
 button_type: text
 ------
-button_content: Download for macOS
+button_content: <span class="fab fa-apple"></span>Download for macOS
 ------
 button_link: https://github.com/spyder-ide/spyder/releases/latest/download/Spyder.dmg
 ------
@@ -276,7 +276,7 @@ section_id: download-button-linux
 ------
 button_type: text
 ------
-button_content: Download for Linux
+button_content: <span class="fab fa-linux"></span>Download for Linux
 ------
 button_link: https://www.anaconda.com/download/
 ------
