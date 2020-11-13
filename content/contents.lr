@@ -246,41 +246,13 @@ description:
 inner_content:
 
 ###### content ######
-section_id: download-button-windows
+section_id: download-button
 ------
 button_type: text
 ------
-button_content: <span class="fab fa-windows"></span>Download for Windows
+button_content: <span class="download-os-icon"></span><span class="download-text">Download Spyder</span>
 ------
-button_link: https://github.com/spyder-ide/spyder/releases/latest/download/Spyder_64bit_full.exe
-------
-button_position: bottom
-------
-button_newtab: true
-------
-
-###### content ######
-section_id: download-button-mac
-------
-button_type: text
-------
-button_content: <span class="fab fa-apple"></span>Download for macOS
-------
-button_link: https://github.com/spyder-ide/spyder/releases/latest/download/Spyder.dmg
-------
-button_position: bottom
-------
-button_newtab: true
-------
-
-###### content ######
-section_id: download-button-linux
-------
-button_type: text
-------
-button_content: <span class="fab fa-linux"></span>Download for Linux
-------
-button_link: https://www.anaconda.com/download/
+button_link: https://github.com/spyder-ide/spyder/releases/latest
 ------
 button_position: bottom
 ------

@@ -148,7 +148,8 @@
   }
 }
 
-#section-download-buttons span.fab {
+#section-download-buttons span.fab,
+#section-download-buttons span.fas {
   font-size: 1.6em;
   padding-right: 0.5em;
   vertical-align: sub;
