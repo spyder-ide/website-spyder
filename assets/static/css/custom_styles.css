@@ -18,12 +18,6 @@
   font-size: 1.15em;
 }
 
-/* Make footer the same color as the old Spyder site */
-
-#fh5co-footer {
-  background: #404040;
-}
-
 
 /*** Card layout and title adjustments ***/
 
@@ -67,6 +61,14 @@
 .service h3 {
   color: #333;
   color: var(--theme-fg-alt-color, #333);
+}
+
+/* Disable card background changing on hover */
+
+.card-item:hover,
+.card-item:focus {
+  background: #fff;
+  background: var(--theme-bg-color, #fff);
 }
 
 
