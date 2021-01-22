@@ -23,7 +23,6 @@ This is the repository for the Spyder IDE website at [Spyder-IDE.org](https://ww
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [Getting started](#getting-started)
   - [Clone the repo with submodules](#clone-the-repo-with-submodules)
   - [Install dependencies](#install-dependencies)

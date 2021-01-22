@@ -8,8 +8,8 @@
 # used in here for clarity.
 #
 [general]
-# Ignore certain rules, in this case a missing commit body
-ignore = body-min-length, body-is-missing
+# Ignore certain rules
+ignore = body-min-length, body-is-missing, title-must-not-contain-word
 
 # verbosity should be a value between 1 and 3, the commandline -v flags take precedence over this
 # verbosity = 2
@@ -54,12 +54,15 @@ min-length = 20
 # will not cause a violation, but "WIP: my title" will.
 # words=wip
 
-[title-match-regex]
+[title-match-regex:Imperative-Tense]
 # python like regex (https://docs.python.org/3/library/re.html) that the
 # commit-msg title must be matched to.
 # Note that the regex can contradict with other rules if not used correctly
 # (e.g. title-must-not-contain-word).
 regex = (?x)^((?!\w+(ed|ing|s)\b).*)  # Commit msg should be imperative
+
+[title-match-regex:First-Letter-Capitalized]
+regex = (?x)^((?=^[A-Z]).*)  # First letter of commit msg must be uppercase
 
 # [body-max-line-length]
 # line-length=72
