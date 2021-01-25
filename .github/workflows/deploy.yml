@@ -1,0 +1,37 @@
+# Build the project and deploy it to GitHub pages
+# Based on https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Deploy Site
+
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches:
+    - master
+
+jobs:
+  deploy:
+    name: Deploy Site
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+        persist-credentials: false    # For GH pages deployment
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: Setup and Install
+      uses: ./.github/actions/setup-and-install
+    - name: Build Site
+      uses: ./.github/actions/build-project
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@3.7.1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages    # The branch the action should deploy to
+        FOLDER: ./website-lektor-icon-build    # The folder the action should deploy
+        CLEAN: true    # Automatically remove deleted files from the deploy branch

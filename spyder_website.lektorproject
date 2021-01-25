@@ -9,6 +9,10 @@ included_assets = ".nojekyll"
 lektor-disqus-comments = 0.4.1
 lektor-atom = 0.3.1
 
+[servers.ghpages]
+name = "Github Pages"
+target = "ghpages+https://spyder-ide//website-spyder?cname=develop.spyder-ide.org"
+
 [servers.develop]
 name = "Develop"
 target = "ghpages+https://spyder-ide//website-develop?cname=develop.spyder-ide.org"

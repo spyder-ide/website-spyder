@@ -17,7 +17,7 @@ repos:
 
 # General fixers
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.3.0
+  rev: v3.4.0
   hooks:
   - id: trailing-whitespace
     exclude_types: [svg]
@@ -41,18 +41,17 @@ repos:
 
 # Check and fix spelling
 - repo: https://github.com/codespell-project/codespell
-  rev: v1.17.1
+  rev: v2.0.0
   hooks:
   # Define separate hooks for checking and correcting spelling errors
   # since codespell doesn't print verbose output when writing changes
   - id: codespell
     name: Check spelling
     exclude: '\.gitattributes'
-    args: [--enable-colors, --check-filenames, --check-hidden]
   - id: codespell
     name: Fix spelling
     exclude: '\.gitattributes'
-    args: [--enable-colors, --check-filenames, --check-hidden, --write-changes]
+    args: [--write-changes]
 
 # Prettify Bash scripts
 - repo: https://github.com/lovesegfault/beautysh
@@ -79,7 +78,7 @@ repos:
     name: Lint and fix CSS (stylelint)
     args: [--fix, --color, --maxWarnings, '0', --report-needless-disables, --report-invalid-scope-disables, --report-descriptionless-disables]
     additional_dependencies:
-    - 'stylelint@13.7.2'
+    - 'stylelint@13.8.0'
     - 'stylelint-config-standard@20.0.0'
     - 'stylelint-a11y@1.2.3'
     - 'stylelint-csstree-validator@1.9.0'
@@ -97,24 +96,24 @@ repos:
 
 # Pretty-format INI
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-  rev: v1.6.1
+  rev: v2.0.0
   hooks:
   - id: pretty-format-ini
     name: Format INI
     types: [text]
-    files: '(?<!configs\/disqus-comments)\.(ini|lektorproject|codespellrc)$'
+    files: '(?<!configs\/disqus-comments)\.(ini|lektorproject|codespellrc|gitlint)$'
     args: [--autofix]
 
 # Lint and fix JavaScript
 - repo: https://github.com/pre-commit/mirrors-eslint
-  rev: v7.12.1
+  rev: v7.18.0
   hooks:
   - id: eslint
     name: Lint and fix JavaScript
     args: [--fix, --max-warnings, '0', --color]
     additional_dependencies:
-    - 'eslint@7.12.1'
-    - 'eslint-config-standard@16.0.1'
+    - 'eslint@7.18.0'
+    - 'eslint-config-standard@16.0.2'
     - 'eslint-plugin-import@2.22.1'
     - 'eslint-plugin-node@11.1.0'
     - 'eslint-plugin-promise@4.2.1'
@@ -130,22 +129,21 @@ repos:
 
 # Check JSON
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.3.0
+  rev: v3.4.0
   hooks:
   - id: check-json
 
 # Add doctoc to Markdown
 - repo: https://github.com/thlorenz/doctoc
-  rev: v1.4.0
+  rev: v2.0.0
   hooks:
   - id: doctoc
     name: Generate Markdown ToCs
-    files: '^(README\.md|CONTRIBUTING\.md|CHANGELOG\.md)$'
-    args: [--maxlevel, '3']
+    args: [--maxlevel, '3', --update-only]
 
 # Lint Markdown
 - repo: https://github.com/igorshubovych/markdownlint-cli
-  rev: v0.24.0
+  rev: v0.26.0
   hooks:
   - id: markdownlint
     name: Lint Markdown
@@ -158,14 +156,14 @@ repos:
 
 # Check TOML and XML
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.3.0
+  rev: v3.4.0
   hooks:
   - id: check-toml
   - id: check-xml
 
 # Pretty-format YAML
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-  rev: v1.6.1
+  rev: v2.0.0
   hooks:
   - id: pretty-format-yaml
     name: Format Yaml
@@ -173,7 +171,7 @@ repos:
 
 # Check YAML
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.3.0
+  rev: v3.4.0
   hooks:
   - id: check-yaml
 
@@ -205,7 +203,7 @@ repos:
     name: Check for Unicode replacement chars
 
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.3.0
+  rev: v3.4.0
   hooks:
   - id: check-added-large-files
     args: [--maxkb=1025]
@@ -214,6 +212,7 @@ repos:
     exclude: 'pre\-commit\-config\.yaml'
   - id: check-merge-conflict
   - id: check-symlinks
+  - id: destroyed-symlinks
   - id: no-commit-to-branch
     name: Prevent commits to wrong branch
     args: [--branch, master, --branch, legacy, --pattern, 'v?\d{1,3}\.x']
@@ -223,16 +222,15 @@ repos:
 
 # Check that commit message follows basic rules
 - repo: https://github.com/jorisroovers/gitlint
-  rev: v0.14.0
+  rev: v0.15.0
   hooks:
   - id: gitlint
     name: Check commit message
 
 # Check commit message spelling
 - repo: https://github.com/codespell-project/codespell
-  rev: v1.17.1
+  rev: v2.0.0
   hooks:
   - id: codespell
     name: Check commit message spelling
     stages: [commit-msg]
-    args: [--enable-colors]
