@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+/*** General style modifications ***/
+
+/* Tweak display of logo text for small caps */
+
+#menu-logo .logo-text {
+  font-size: 2em;
+}
+
+#menu-logo .logo-text::first-letter {
+  font-size: 1.2em;
+}
+
+/* Reduce size of download button font */
+
+#section-download .text-button {
+  font-size: 1.15em;
+}
+
+
+/*** Card layout and title adjustments ***/
+
+/* Remove margin between cards when single-column */
+
+@media screen and (max-width: 768px) {
+
+  .col-md-4 .card-item {
+    margin: 0;
+  }
+}
+
+/* Adjust size and padding of component cards */
+
+#section-components {
+  padding-bottom: 2em;
+}
+
+#section-components .card-item {
+  padding-bottom: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 1.5em;
+}
+
+/* Adjust component icons to be smaller at narrower widths */
+
+#section-components .icon .img-responsive {
+  width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+
+  #section-components .icon .img-responsive {
+    width: 30%;
+  }
+}
+
+/* Make component card titles FG instead of accent color */
+
+.service h3 {
+  color: #333;
+  color: var(--theme-fg-alt-color, #333);
+}
+
+/* Disable card background changing on hover */
+
+.card-item:hover,
+.card-item:focus {
+  background: #fff;
+  background: var(--theme-bg-color, #fff);
+}
+
+
+/*** Sponsors section ***/
+
+/* Center text in sponsors section */
+
+#section-sponsors p {
+  text-align: center;
+}
+
+/* Reduce vertical spacing in sponsors section */
+
+#section-sponsors .body-subsection {
+  padding: 0 0 1em;
+}
+
+#section-contributors .fh5co-heading,
+#section-contributors .fh5co-heading p {
+  margin-bottom: 0;
+}
+
+/* Increase size of graphics in sponsors section */
+
+@media screen and (max-width: 1200px) {
+
+  #section-sponsors .col-md-4 {
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #section-sponsors .col-md-4 {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  #section-sponsors .col-md-4 {
+    max-width: 320px;
+  }
+}
+
+#section-sponsors .card {
+  padding: 0;
+}
+
+#section-sponsors img.img-responsive {
+  margin-bottom: 0;
+  padding: 1em;
+  width: 100%;
+}
+
+#section-sponsors .image-button {
+  margin-bottom: 0;
+  margin-top: 0;
+  min-width: 50%;
+}
+
+
+/*** Modify download section to allow for multiple buttons ***/
+
+#section-download-buttons {
+  padding-top: 0;
+}
+
+#section-download-buttons .content-button {
+  margin-bottom: 0;
+  margin-top: 0;
+  min-width: 380px;
+}
+
+@media screen and (max-width: 480px) {
+
+  #section-download-buttons .content-button {
+    min-width: inherit;
+  }
+}
+
+#section-download-buttons span.fab,
+#section-download-buttons span.fas {
+  font-size: 1.6em;
+  padding-right: 0.5em;
+  vertical-align: sub;
+}
+
+#section-download-buttons span.fa-apple {
+  font-size: 1.8em;
+}

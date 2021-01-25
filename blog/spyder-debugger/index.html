@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Access-Control-Allow-Origin" content="Origin">
+
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-XSS-Protection" content="1">
+  <meta name="referrer" content="never">  <!-- Fallback for IE/Edge/Safari -->
+  <meta name="referrer" content="no-referrer">  <!-- Fallback for Chrome lt 61 -->
+  <meta name="referrer" content="same-origin">
+
+  <!-- FREE HTML5 TEMPLATE  -->
+  <!-- DESIGNED & DEVELOPED by FREEHTML5.CO -->
+
+  <!-- Website:        https://freehtml5.co/ -->
+  <!-- Email:          info@freehtml5.co -->
+  <!-- Twitter:        https://twitter.com/fh5co -->
+  <!-- Facebook:       https://www.facebook.com/fh5co -->
+
+  <!-- HUGO TEMPLATE PORTED BY SteveLane -->
+  <!-- Website:        https://interadata.io/ -->
+
+  <!-- LEKTOR THEME PORTED BY Daniel Althviz -->
+  <!-- Website:        https://dalthviz.github.io/ -->
+
+  <!-- LEKTOR THEME MAINTAINED AND EXPANED BY Spyder Dev Team -->
+  <!-- Website:        https://github.com/spyder-ide/lektor-icon -->
+
+  <!-- Copyright (c) 2016- Lektor-Icon Contributors -->
+
+  <!-- Original standalone HTML5 theme distributed under the terms of the -->
+  <!-- Creative Commons Attribution 3.0 license -->
+  <!-- https://creativecommons.org/licenses/by/3.0/ -->
+
+  <!-- Additions, modifications and porting released under the terms of the -->
+  <!-- MIT (Expat) License: https://opensource.org/licenses/MIT -->
+  <!-- See the LICENSE.txt file for more details -->
+  <!-- https://github.com/spyder-ide/lektor-icon/blob/master/LICENSE.txt -->
+
+  <!-- For information on the included third-party assets, see NOTICE.txt -->
+  <!-- https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt -->
+
+  <title>Blog | New features in Spyder 4&#39;s new debugger! — Spyder IDE</title>
+  <meta name="author" content="Spyder Team"en-US>
+  <meta name="copyright" content="&amp;copy; 2020 Spyder Website Contributors"en-US>
+  <meta name="description" content="Website for Spyder, the Scientific Python Development Environment"en-US>
+  <meta name="keywords" content="spyder, ide, scipy, pydata, science, data, analysis, anaconda"en-US>
+  <meta name="theme-color" content="#d50000">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/static/images/favicon.png?h=bb776907" type="image/png">
+  <style>
+    :root {
+      --theme-fg-color: #000000;
+      --theme-fg-alt-color: #333333;
+      --theme-bg-color: #ffffff;
+      --theme-bg-alt-color: #e8ecf1;
+      --theme-bg-accent-color: #f5f5f5;
+      --theme-accent-color: #d50000;
+      --theme-accent-alt-color: #8c0000;
+      --theme-pipe-color: #ee1c24
+    }
+  </style>
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" type="text/css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/static/css/style.css?h=038b8d38" type="text/css">
+  <!-- User Custom CSS -->
+  <link rel="stylesheet" href="/static/css/custom_styles.css?h=d3a0c0f4" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
+</head>
+
+<body>
+<div class="fh5co-page">
+  <div id="fh5co-container">
+    <div class="js-sticky">
+      <div class="fh5co-main-nav navbar fixed-top">
+        <div class="container">
+          <div class="fh5co-menu-1">
+            <div class='pull-left'>
+              <ul class='dropdown menu' data-dropdown-menu>
+                <li id='menu-logo'>
+                  <p></p>
+                    <a href='/'>
+                    <img alt="Site Logo" src="/static/images/spyder_logo.png?h=5c3a431e">
+                  </a>
+                  <p></p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="main-nav-container">
+<a id="rss-nav-link" data-nav-section="RSS" href="/blog/feed.xml">RSS</a>
+              <div class="side-nav-container">
+                <a class="pull-right nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
+                <a class="pull-right nav-link-internal nav-link-active-section /blog/spyder-debugger sep /blog" href="/blog/">Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="blog-content-container" data-section="Blog">
+  <div id="blog-center" class="center">
+
+<div class="blog-post">
+  <div class="blog-header blog-post-header">
+    <div class="row">
+      <div class="column meta-blog-author">
+        <img alt="Quentin Peter photo" class="author-img" src="/authors/impact27/impact27.jpg">
+      </div>
+      <div class="meta-blog-index">
+        <p>
+          Quentin Peter<br>
+          <span class="small">2020-11-05</span>
+        </p>
+      </div>
+    </div>
+    <h1>New features in Spyder 4&#39;s new debugger!</h1>
+    <p><a href="https://ipython.org/">IPython</a> is a great improvement over the standard Python interpreter, bringing many enhancements such as autocompletion and "magic" commands.
+When debugging, however, many of these features become inaccessible.
+With Spyder, we aim to bring back these capabilities and more for a truly premium debugging experience!
+(And believe me, I use this debugger a lot, and not only because I write code that might contain bugs :p).</p>
+<p>In this post, I will describe the debugger improvements we've already made in Spyder 4, as well as those that are already implemented or under review for Spyder 4.2 and beyond.</p>
+<h2>Make the debugger more like IPython</h2>
+<p>IPython improves on the stock Python interpreter by adding syntax highlighting, completion, and history.
+We have done the same for the debugger!</p>
+<p><img src="/blog/spyder-debugger/debugger-ipdb.png" alt="Debugger ipdb"></p>
+<p>The output is prettier (and easier to read) than plain black text, as it was in Spyder 3!</p>
+<p>Code completion and history for the debugger use the same functionality as the IPython console, so you should not notice any difference in behaviour.
+Just press <code>Tab</code> to trigger autocomplete suggestions, and use the up and down arrows to recall previous commands.</p>
+<p><img src="/blog/spyder-debugger/debugger-autocomplete.png" alt="Debugger-autocomplete"></p>
+<p>This can result useful if you don't know every library's documentation by heart!</p>
+<p>Another improvement that we added is the ability to write multiline statements.</p>
+<p><img src="/blog/spyder-debugger/debugger-multiline.png" alt="Debugger-multiline"></p>
+<p>This is better than getting <code>SyntaxError: unexpected EOF while parsing</code>, as was the case in Spyder 3.</p>
+<p>Finally, IPython has a lot of nice <a href="https://ipython.readthedocs.io/en/stable/interactive/magics.html">magic functions</a> you can take advantage of.
+I personally often use <code>%matplotlib</code> to switch between the <code>qt5</code> and <code>inline</code> plotting backends, and <code>%timeit</code> to check how fast a given snippet of code is.
+Now, these can be used in the debugger as well!</p>
+<p><img src="/blog/spyder-debugger/debugger-timeit.png" alt="Debugger timeit"></p>
+<h2>Core improvements</h2>
+<p>When debugging code, a lot of time can be lost stepping through other Python packages.
+To avoid that, enable the new <code>Ignore Python libraries while debugging</code> option in Spyder's preferences under <code>IPython Console &gt; Debugger &gt; Debug</code>.
+This will skip all the built-in and third-party Python modules and help you focus on your own code.</p>
+<p><img src="/blog/spyder-debugger/debugger-preferences.png" alt="Debugger preferences"></p>
+<p>Another pain point for me is the mix of Pdb commands and Python statements when using the interactive prompt.
+While debugging a script with a variable named <code>step</code>, for example, typing <code>step</code> in the Pdb prompt will not display the value of <code>step</code>, but will instead step through the code.
+To avoid this, the Spyder 4.2 debugger will give precedence to Python expressions over Pdb commands; prefixing an expression with an exclamation mark will explicitly run it as a Pdb command.
+This matches how the IPython Console handles clashes between magic functions and Python expressions, and contrasts with the previous behavior, where Pdb commands took precedence.
+You can toggle this under <code>IPython Console &gt; Debugger &gt; Debug</code> in Spyder's preferences.</p>
+<p><img src="/blog/spyder-debugger/debugger-step.png" alt="Debugger"></p>
+<p>Here, you can see I can have a variable named <code>step</code>, and use it just as I would in the IPython console!</p>
+<p>While debugging, the context changes constantly, which can be annoying if you need to use a certain module in each frame.
+To address this, Spyder 4.2 will allow you to execute a snippet of code before any Pdb command.
+I personally use <code>import matplotlib.pyplot as plt</code> so I can use Matplotlib anywhere with no extra commands!
+You'll be able to set this up for yourself under <code>Preferences</code> &gt; <code>IPython Console</code> &gt; <code>Debugger</code> &gt; <code>Run code while debugging</code>.</p>
+<p><img src="/blog/spyder-debugger/debugger-modules.png" alt="Debugger modules"></p>
+<h2>Matplotlib support</h2>
+<p>Speaking of using Matplotlib, two improvements will make your plotting life much easier while in the debugger.
+First, if you use the <code>inline</code> backend, the <code>Process execute events while debugging</code> option in <code>Preferences &gt; IPython console &gt; Debugger</code> (on by defaults) enables plotting after each command.</p>
+<p><img src="/blog/spyder-debugger/debugger-plots.png" alt="Debugger plots"></p>
+<p>If you would rather use an interactive backend, Spyder 4.2 will allow you to do that too!
+The event loop will be running while waiting for a Pdb input, which will bring Matplotlib figures to life!</p>
+<p><img src="/blog/spyder-debugger/debugger-interactive-plots.png" alt="Debugger interactive plots"></p>
+<p>For example, interactive figures are great to zoom and pan.</p>
+<h2>Spyder Editor integration</h2>
+<p>By clicking next to the line number in the Editor, you can set a breakpoint to stop the debugger upon reaching that line.
+With a Shift-click, you can set a conditional breakpoint that will only pause execution if an expression you write evaluates to <code>True</code>.
+This is very useful if you are debugging a loop and want to go to a specific iteration, for example!
+While debugging, the Editor will show you the line on which execution is stopped.
+If you move around in the Editor, you can always go back to the current line by using the Pdb <code>(w)here</code> command.</p>
+<p><img src="/blog/spyder-debugger/editor-breakpoints.png" alt="Editor breakpoints"></p>
+<p>Here, you can see the Spyder debugger is stopped at the breakpoint on line 385, which is highlighted.
+The next line has a conditional breakpoint.</p>
+<h2>Other Spyder panes</h2>
+<p>Several other Spyder panes are useful while debugging.
+Breakpoints gives you a list of all the breakpoints you have set throughout your code.</p>
+<p><img src="/blog/spyder-debugger/debugger-breakpoint.png" alt="Debugger breakpoint"></p>
+<p>The Variable Explorer pane allows you to browse and modify the local namespace wherever the debugger is stopped.</p>
+<p><img src="/blog/spyder-debugger/variable-explorer.png" alt="Variable Explorer"></p>
+<h2>The future</h2>
+<p>I'm excited for the new Frames Explorer pane, which is currently almost ready for Spyder 5.
+Usually while debugging, it can be hard to tell from where the current function was invoked, and one must often step up a long chain of calls to figure it out.
+With the Frames Explorer, you have direct access to all the relevant call information, and you can jump around the stack easily!</p>
+<p><img src="/blog/spyder-debugger/frames-explorer.png" alt="Frames Explorer"></p>
+<p>I can see where the current function was called from!</p>
+<p>The next challenge I will be tackling is to enable the debugger to stop in threads.
+This is a bit difficult to implement because if two threads reach a breakpoint at the same time, only one of them can take control of the shell, leading to skipped breakpoints.
+This might be okay, but I'm still figuring that out.</p>
+<p>Try out the new improvements in the Spyder debugger and let us know if they make your debugging easier!</p>
+
+  </div>
+</div>
+<div class="comment-box">
+  <h2>Comments</h2>
+  
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function() { this.page.identifier = "/blog/spyder-debugger"; this.page.url = "https://www.spyder-ide.org/blog/spyder-debugger/"; };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//spyder-ide.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+    rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+
+</div>
+  </div>
+</div>
+
+    <div id="fh5co-footer">
+      <div class="container">
+        <div class="row footer-connect-line">
+          <div class="text-center">
+            <p>
+              Connect with us on:
+              <a href="https://github.com/spyder-ide/spyder"> Github </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://twitter.com/spyder_ide"> Twitter </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://www.facebook.com/SpyderIDE/"> Facebook </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://groups.google.com/group/spyderlib"> Google Groups </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://instagram.com/spyderide"> Instagram </a>
+            </p>
+          </div>
+        </div>
+        <div class="row footer-copyright">
+          <div class="text-center">
+            <p>
+              &copy; 2020 Spyder Website Contributors
+              <span class="pipe-colored"> | </span>
+              Licensed <a href="https://github.com/spyder-ide/website-spyder/blob/master/NOTICE.txt" target="_blank" rel="noopener noreferrer">MIT and others</a>
+              <br>
+              Feature icons by <a href='https://www.freepik.com/' target='_blank' rel='noopener noreferrer' title='Freepik'>Freepik</a> from <a href='https://www.flaticon.com/' target='_blank' rel='noopener noreferrer' title='Flaticon'>Flaticon.com</a><br>
+              <a href="https://freehtml5.co/icon-free-website-template-using-bootstrap/" target="_blank" rel="noopener noreferrer">Template</a> design by <a href="https://freehtml5.co/" target="_blank" rel="noopener noreferrer">FreeHTML5.co</a>&nbsp;(<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC&#8209;BY&nbsp;3.0</a>)
+              <br><a href="https://github.com/SteveLane/hugo-icon" target="_blank" rel="noopener noreferrer">Hugo port</a> by <a href="https://github.com/SteveLane/" target="_blank" rel="noopener noreferrer">SteveLane</a> <span class="pipe-colored">|</span> <a href="https://github.com/spyder-ide/lektor-icon" target="_blank" rel="noopener noreferrer">Lektor&nbsp;port</a>&nbsp;by&nbsp;<a href="https://github.com/dalthviz/" target="_blank" rel="noopener noreferrer">Dalthviz</a>
+              <br>Rewrite by <a href="http://gerlach.cam" target="_blank" rel="noopener noreferrer">C.A.M.&nbsp;Gerlach</a> <span class="pipe-colored">|</span> Maintained by <a href="https://www.spyder-ide.org/" target="_blank" rel="noopener noreferrer">Spyder&nbsp;IDE</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="application/javascript">
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'spyder-ide/public',
+  activationElement: '#open_chat',
+  };
+</script>
+<a href="https://gitter.im/spyder-ide/public" id="open_chat" class="gitter-open-chat-button">Open Chat</a>
+<script defer src="https://sidecar.gitter.im/dist/sidecar.v1.js" type="application/javascript" charset="UTF-8"></script>
+<!-- jQuery -->
+<script src="/static/js/jquery-3.5.1.min.js?h=c8e1c8b3" type="application/javascript" charset="UTF-8"></script>
+<!-- Waypoints -->
+<script src="/static/js/jquery.waypoints.min.js?h=a2b72d43" type="application/javascript" charset="UTF-8"></script>
+<!-- Main JS -->
+<script src="/static/js/main.js?h=b7b497b4" type="application/javascript" charset="UTF-8"></script>
+<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.js" type="application/javascript" charset="UTF-8"></script> -->
+</body>
+</html>

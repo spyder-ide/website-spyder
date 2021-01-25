@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Access-Control-Allow-Origin" content="Origin">
+
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-XSS-Protection" content="1">
+  <meta name="referrer" content="never">  <!-- Fallback for IE/Edge/Safari -->
+  <meta name="referrer" content="no-referrer">  <!-- Fallback for Chrome lt 61 -->
+  <meta name="referrer" content="same-origin">
+
+  <!-- FREE HTML5 TEMPLATE  -->
+  <!-- DESIGNED & DEVELOPED by FREEHTML5.CO -->
+
+  <!-- Website:        https://freehtml5.co/ -->
+  <!-- Email:          info@freehtml5.co -->
+  <!-- Twitter:        https://twitter.com/fh5co -->
+  <!-- Facebook:       https://www.facebook.com/fh5co -->
+
+  <!-- HUGO TEMPLATE PORTED BY SteveLane -->
+  <!-- Website:        https://interadata.io/ -->
+
+  <!-- LEKTOR THEME PORTED BY Daniel Althviz -->
+  <!-- Website:        https://dalthviz.github.io/ -->
+
+  <!-- LEKTOR THEME MAINTAINED AND EXPANED BY Spyder Dev Team -->
+  <!-- Website:        https://github.com/spyder-ide/lektor-icon -->
+
+  <!-- Copyright (c) 2016- Lektor-Icon Contributors -->
+
+  <!-- Original standalone HTML5 theme distributed under the terms of the -->
+  <!-- Creative Commons Attribution 3.0 license -->
+  <!-- https://creativecommons.org/licenses/by/3.0/ -->
+
+  <!-- Additions, modifications and porting released under the terms of the -->
+  <!-- MIT (Expat) License: https://opensource.org/licenses/MIT -->
+  <!-- See the LICENSE.txt file for more details -->
+  <!-- https://github.com/spyder-ide/lektor-icon/blob/master/LICENSE.txt -->
+
+  <!-- For information on the included third-party assets, see NOTICE.txt -->
+  <!-- https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt -->
+
+  <title>Blog | Variable Explorer improvements in Spyder 4 — Spyder IDE</title>
+  <meta name="author" content="Spyder Team"en-US>
+  <meta name="copyright" content="&amp;copy; 2020 Spyder Website Contributors"en-US>
+  <meta name="description" content="Website for Spyder, the Scientific Python Development Environment"en-US>
+  <meta name="keywords" content="spyder, ide, scipy, pydata, science, data, analysis, anaconda"en-US>
+  <meta name="theme-color" content="#d50000">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/static/images/favicon.png?h=bb776907" type="image/png">
+  <style>
+    :root {
+      --theme-fg-color: #000000;
+      --theme-fg-alt-color: #333333;
+      --theme-bg-color: #ffffff;
+      --theme-bg-alt-color: #e8ecf1;
+      --theme-bg-accent-color: #f5f5f5;
+      --theme-accent-color: #d50000;
+      --theme-accent-alt-color: #8c0000;
+      --theme-pipe-color: #ee1c24
+    }
+  </style>
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" type="text/css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/static/css/style.css?h=038b8d38" type="text/css">
+  <!-- User Custom CSS -->
+  <link rel="stylesheet" href="/static/css/custom_styles.css?h=d3a0c0f4" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
+</head>
+
+<body>
+<div class="fh5co-page">
+  <div id="fh5co-container">
+    <div class="js-sticky">
+      <div class="fh5co-main-nav navbar fixed-top">
+        <div class="container">
+          <div class="fh5co-menu-1">
+            <div class='pull-left'>
+              <ul class='dropdown menu' data-dropdown-menu>
+                <li id='menu-logo'>
+                  <p></p>
+                    <a href='/'>
+                    <img alt="Site Logo" src="/static/images/spyder_logo.png?h=5c3a431e">
+                  </a>
+                  <p></p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="main-nav-container">
+<a id="rss-nav-link" data-nav-section="RSS" href="/blog/feed.xml">RSS</a>
+              <div class="side-nav-container">
+                <a class="pull-right nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
+                <a class="pull-right nav-link-internal nav-link-active-section /blog/spyder-variable-explorer sep /blog" href="/blog/">Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="blog-content-container" data-section="Blog">
+  <div id="blog-center" class="center">
+
+<div class="blog-post">
+  <div class="blog-header blog-post-header">
+    <div class="row">
+      <div class="column meta-blog-author">
+        <img alt="Daniel Althviz photo" class="author-img" src="/authors/dalthviz/dalthviz.jpg">
+      </div>
+      <div class="meta-blog-index">
+        <p>
+          Daniel Althviz<br>
+          <span class="small">2019-11-28</span>
+        </p>
+      </div>
+    </div>
+    <h1>Variable Explorer improvements in Spyder 4</h1>
+    <p><em>This blogpost was originally published on the <a href="https://labs.quansight.org/blog/2019/11/variable-explorer-improvements-in-Spyder-4/">Quansight Labs website</a></em>.</p>
+<p><a href="https://www.spyder-ide.org/">Spyder</a> 4 will be released very soon with lots of interesting new features that you'll want to check out, reflecting years of effort by the team to improve the user experience. In this post, we will be talking about the improvements made to the Variable Explorer.</p>
+<p>These include the brand new Object Explorer for inspecting arbitrary Python variables, full support for MultiIndex dataframes with multiple dimensions, and the ability to filter and search for variables by name and type, and much more.</p>
+<p>It is important to mention that several of the above improvements were made possible through integrating the work of two other projects. Code from <a href="https://github.com/TabViewer/gtabview">gtabview</a> was used to implement the multi-dimensional Pandas indexes, while <a href="https://github.com/titusjan/objbrowser">objbrowser</a> was the foundation of the new Object Explorer.</p>
+<h2>New viewer for arbitrary Python objects</h2>
+<p>For Spyder 4 we added a long-requested feature: full support for inspecting any kind of Python object through the Variable Explorer. For many years, Spyder has been able to view and edit a small subset of Python variables: NumPy arrays, Pandas DataFrames and Series, and builtin collections (lists, dictionaries and tuples). Other objects were displayed as dictionaries of their attributes, inspecting any of which required showing a new table. This made it rather cumbersome to use this functionality, and was the reason arbitrary Python objects were hidden by default from the Variable Explorer view.</p>
+<p><img src="/blog/spyder-variable-explorer/python-viewer.png" alt="Python Viewer"></p>
+<p>For the forthcoming Spyder release, we've integrated the excellent <a href="https://github.com/titusjan/objbrowser">objbrowser</a> project by Pepijn Kenter (<a href="https://github.com/titusjan">@titusjan</a>), which provides a tree-like view of Python objects, to offer a much simpler and more user-friendly way to inspect them.</p>
+<p><img src="/blog/spyder-variable-explorer/python-viewer-metadata.png" alt="Python Viewer Metadata"></p>
+<p>As can be seen above, this viewer will also allow users to browse extra metadata about the inspected object, such as its documentation, source code and the file that holds it.
+It is very important to note that this work was accomplished thanks to the generosity of Pepijn, who kindly changed the license of <a href="https://github.com/titusjan/objbrowser">objbrowser</a> to allow us to integrate it with Spyder.
+To expose this new functionality, we decided to set the option to hide arbitrary Python objects in the Variable Explorer to disabled by default, and introduced a new one called <code>Exclude callables and modules</code>. With this enabled by default, Spyder will now display a much larger fraction of objects that can be inspected, while still excluding most "uninteresting" variables.</p>
+<p><img src="/blog/spyder-variable-explorer/exclude-callables-modules.png" alt="Exclude callables modules"></p>
+<p>Finally, we added a context-menu action to open any object using the new Object Explorer even if they already have a builtin viewer (DataFrames, arrays, etc), allowing for deeper inspection of the inner workings of these datatypes.</p>
+<p><img src="/blog/spyder-variable-explorer/view-object-explorer.png" alt="View object explorer"></p>
+<h2>Multi-index support in the dataframe viewer</h2>
+<p>One of the first features we added to the Variable Explorer in Spyder 4 was MultiIndex support in its DataFrame inspector, including for multi-level and multi-dimensional indices. Spyder 3 had basic support for such, but it was very rudimentary, making inspecting such DataFrames a less than user-friendly experience.</p>
+<p><img src="/blog/spyder-variable-explorer/multi-index-support.png" alt="Multi-index support"></p>
+<p>For Spyder 4, we took advantage of the work done by Scott Hansen (<a href="https://github.com/firecat53">@firecat53</a>) and Yuri D'Elia (<a href="https://github.com/wavexx">@wavexx</a>) in their <a href="https://github.com/TabViewer/gtabview">gtabview</a> project, particularly its improved management of column and table headings, which allows the new version of Spyder to display the index shown above in a much nicer way.</p>
+<p><img src="/blog/spyder-variable-explorer/table-headings.png" alt="Table headings"></p>
+<h2>Fuzzy filtering of variables</h2>
+<p>Spyder 4 also includes the ability to filter the variables shown down to only those of interest. This employs fuzzy matching between the text entered in the search field and the name and type of all available variables.
+To access this functionality, click the search icon in the Variable Explorer toolbar, or press <code>Ctrl+F</code> (<code>Cmd-F</code> on macOS) when the Variable Explorer has focus.</p>
+<p><img src="/blog/spyder-variable-explorer/filter-variables.png" alt="Filter variables"></p>
+<p>To remove the current filter, simply click the search icon again, or press <code>Esc</code> or <code>Ctrl+F</code> (<code>Cmd-F</code>) while the Variable Explorer is focused.</p>
+<h2>Refresh while code is running</h2>
+<p>We added back the ability to refresh the Variable Explorer while code is running in the console. This feature was dropped in Spyder 3.2, when we removed the old and unmaintained Python console. However, this functionality will return in Spyder 4, thanks to the fantastic work done by Quentin Peter (<a href="https://github.com/impact27">@impact27</a>) to completely re-architect the way Spyder talks to the Jupyter kernels that run the code in our IPython console, integrating support for <a href="https://jupyter-client.readthedocs.io/en/stable/messaging.html#custom-messages">Jupyter Comms</a>.</p>
+<p><img src="/blog/spyder-variable-explorer/refresh.png" alt="Refresh"></p>
+<p>To trigger a refresh, simply click the reload button on the Variable Explorer toolbar, or press the shortcut <code>Ctrl+R</code> (<code>Cmd-R</code>) when it has focus.</p>
+<h2>Full support for sets</h2>
+<p>In Spyder 3, the Variable Explorer could only show builtin Python sets as arbitrary objects, making it very difficult for users to browse and interact with them. In Spyder 4, you can now view sets just like lists, as well as perform various operations on them.</p>
+<p><img src="/blog/spyder-variable-explorer/set-support.png" alt="Screenshot of Spyder Variable Explorer UI, showing a Python set displayed in a native viewer"></p>
+<h2>UI enhancements and more</h2>
+<p>Finally, beyond the headline features, we've added numerous smaller improvements to make the Variable Explorer easier and more efficient to use. These include support for custom index names, better and more efficient automatic resizing of column widths, support for displaying Pandas Indices, tooltips for truncated column headers, and more.</p>
+<p>Spyder's Variable Explorer is what many of you consider to be one of its standout features, so we can't wait for you all to get your hands on the even better version in Spyder 4. Thanks again to Quansight, our generous community donors, and as always all of you! Spyder 4.0.0 final is planned to be released within approximately one more week, but if you'd like to test it out immediately, follow the instructions on our <a href="https://github.com/spyder-ide/spyder/releases">GitHub</a> to install the pre-release version (which won't touch your existing Spyder install or settings). As always, happy Spydering!</p>
+
+  </div>
+</div>
+<div class="comment-box">
+  <h2>Comments</h2>
+  
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function() { this.page.identifier = "/blog/spyder-variable-explorer"; this.page.url = "https://www.spyder-ide.org/blog/spyder-variable-explorer/"; };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//spyder-ide.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+    rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+
+</div>
+  </div>
+</div>
+
+    <div id="fh5co-footer">
+      <div class="container">
+        <div class="row footer-connect-line">
+          <div class="text-center">
+            <p>
+              Connect with us on:
+              <a href="https://github.com/spyder-ide/spyder"> Github </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://twitter.com/spyder_ide"> Twitter </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://www.facebook.com/SpyderIDE/"> Facebook </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://groups.google.com/group/spyderlib"> Google Groups </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://instagram.com/spyderide"> Instagram </a>
+            </p>
+          </div>
+        </div>
+        <div class="row footer-copyright">
+          <div class="text-center">
+            <p>
+              &copy; 2020 Spyder Website Contributors
+              <span class="pipe-colored"> | </span>
+              Licensed <a href="https://github.com/spyder-ide/website-spyder/blob/master/NOTICE.txt" target="_blank" rel="noopener noreferrer">MIT and others</a>
+              <br>
+              Feature icons by <a href='https://www.freepik.com/' target='_blank' rel='noopener noreferrer' title='Freepik'>Freepik</a> from <a href='https://www.flaticon.com/' target='_blank' rel='noopener noreferrer' title='Flaticon'>Flaticon.com</a><br>
+              <a href="https://freehtml5.co/icon-free-website-template-using-bootstrap/" target="_blank" rel="noopener noreferrer">Template</a> design by <a href="https://freehtml5.co/" target="_blank" rel="noopener noreferrer">FreeHTML5.co</a>&nbsp;(<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC&#8209;BY&nbsp;3.0</a>)
+              <br><a href="https://github.com/SteveLane/hugo-icon" target="_blank" rel="noopener noreferrer">Hugo port</a> by <a href="https://github.com/SteveLane/" target="_blank" rel="noopener noreferrer">SteveLane</a> <span class="pipe-colored">|</span> <a href="https://github.com/spyder-ide/lektor-icon" target="_blank" rel="noopener noreferrer">Lektor&nbsp;port</a>&nbsp;by&nbsp;<a href="https://github.com/dalthviz/" target="_blank" rel="noopener noreferrer">Dalthviz</a>
+              <br>Rewrite by <a href="http://gerlach.cam" target="_blank" rel="noopener noreferrer">C.A.M.&nbsp;Gerlach</a> <span class="pipe-colored">|</span> Maintained by <a href="https://www.spyder-ide.org/" target="_blank" rel="noopener noreferrer">Spyder&nbsp;IDE</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="application/javascript">
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'spyder-ide/public',
+  activationElement: '#open_chat',
+  };
+</script>
+<a href="https://gitter.im/spyder-ide/public" id="open_chat" class="gitter-open-chat-button">Open Chat</a>
+<script defer src="https://sidecar.gitter.im/dist/sidecar.v1.js" type="application/javascript" charset="UTF-8"></script>
+<!-- jQuery -->
+<script src="/static/js/jquery-3.5.1.min.js?h=c8e1c8b3" type="application/javascript" charset="UTF-8"></script>
+<!-- Waypoints -->
+<script src="/static/js/jquery.waypoints.min.js?h=a2b72d43" type="application/javascript" charset="UTF-8"></script>
+<!-- Main JS -->
+<script src="/static/js/main.js?h=b7b497b4" type="application/javascript" charset="UTF-8"></script>
+<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.js" type="application/javascript" charset="UTF-8"></script> -->
+</body>
+</html>

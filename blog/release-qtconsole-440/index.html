@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Access-Control-Allow-Origin" content="Origin">
+
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-XSS-Protection" content="1">
+  <meta name="referrer" content="never">  <!-- Fallback for IE/Edge/Safari -->
+  <meta name="referrer" content="no-referrer">  <!-- Fallback for Chrome lt 61 -->
+  <meta name="referrer" content="same-origin">
+
+  <!-- FREE HTML5 TEMPLATE  -->
+  <!-- DESIGNED & DEVELOPED by FREEHTML5.CO -->
+
+  <!-- Website:        https://freehtml5.co/ -->
+  <!-- Email:          info@freehtml5.co -->
+  <!-- Twitter:        https://twitter.com/fh5co -->
+  <!-- Facebook:       https://www.facebook.com/fh5co -->
+
+  <!-- HUGO TEMPLATE PORTED BY SteveLane -->
+  <!-- Website:        https://interadata.io/ -->
+
+  <!-- LEKTOR THEME PORTED BY Daniel Althviz -->
+  <!-- Website:        https://dalthviz.github.io/ -->
+
+  <!-- LEKTOR THEME MAINTAINED AND EXPANED BY Spyder Dev Team -->
+  <!-- Website:        https://github.com/spyder-ide/lektor-icon -->
+
+  <!-- Copyright (c) 2016- Lektor-Icon Contributors -->
+
+  <!-- Original standalone HTML5 theme distributed under the terms of the -->
+  <!-- Creative Commons Attribution 3.0 license -->
+  <!-- https://creativecommons.org/licenses/by/3.0/ -->
+
+  <!-- Additions, modifications and porting released under the terms of the -->
+  <!-- MIT (Expat) License: https://opensource.org/licenses/MIT -->
+  <!-- See the LICENSE.txt file for more details -->
+  <!-- https://github.com/spyder-ide/lektor-icon/blob/master/LICENSE.txt -->
+
+  <!-- For information on the included third-party assets, see NOTICE.txt -->
+  <!-- https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt -->
+
+  <title>Blog | QtConsole 4.4 Released! — Spyder IDE</title>
+  <meta name="author" content="Spyder Team"en-US>
+  <meta name="copyright" content="&amp;copy; 2020 Spyder Website Contributors"en-US>
+  <meta name="description" content="Website for Spyder, the Scientific Python Development Environment"en-US>
+  <meta name="keywords" content="spyder, ide, scipy, pydata, science, data, analysis, anaconda"en-US>
+  <meta name="theme-color" content="#d50000">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/static/images/favicon.png?h=bb776907" type="image/png">
+  <style>
+    :root {
+      --theme-fg-color: #000000;
+      --theme-fg-alt-color: #333333;
+      --theme-bg-color: #ffffff;
+      --theme-bg-alt-color: #e8ecf1;
+      --theme-bg-accent-color: #f5f5f5;
+      --theme-accent-color: #d50000;
+      --theme-accent-alt-color: #8c0000;
+      --theme-pipe-color: #ee1c24
+    }
+  </style>
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" type="text/css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/static/css/style.css?h=038b8d38" type="text/css">
+  <!-- User Custom CSS -->
+  <link rel="stylesheet" href="/static/css/custom_styles.css?h=d3a0c0f4" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
+</head>
+
+<body>
+<div class="fh5co-page">
+  <div id="fh5co-container">
+    <div class="js-sticky">
+      <div class="fh5co-main-nav navbar fixed-top">
+        <div class="container">
+          <div class="fh5co-menu-1">
+            <div class='pull-left'>
+              <ul class='dropdown menu' data-dropdown-menu>
+                <li id='menu-logo'>
+                  <p></p>
+                    <a href='/'>
+                    <img alt="Site Logo" src="/static/images/spyder_logo.png?h=5c3a431e">
+                  </a>
+                  <p></p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="main-nav-container">
+<a id="rss-nav-link" data-nav-section="RSS" href="/blog/feed.xml">RSS</a>
+              <div class="side-nav-container">
+                <a class="pull-right nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
+                <a class="pull-right nav-link-internal nav-link-active-section /blog/release-qtconsole-440 sep /blog" href="/blog/">Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="blog-content-container" data-section="Blog">
+  <div id="blog-center" class="center">
+
+<div class="blog-post">
+  <div class="blog-header blog-post-header">
+    <div class="row">
+      <div class="column meta-blog-author">
+        <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
+      </div>
+      <div class="meta-blog-index">
+        <p>
+          C.A.M. Gerlach<br>
+          <span class="small">2018-09-21</span>
+        </p>
+      </div>
+    </div>
+    <h1>QtConsole 4.4 Released!</h1>
+    <p>We're excited to announce a significant update to <a href="https://qtconsole.readthedocs.io/en/stable/">QtConsole</a>—the package that powers Spyder's <a href="https://docs.spyder-ide.org/ipythonconsole.html">IPython Console</a> interface—which the Spyder team maintains in collaboration with <a href="https://jupyter.org/">Project Jupyter</a>.
+Two of the biggest changes—user-selectable syntax highlighting themes, and enhanced external editor/IDE integration—are already built right into Spyder, so they'll likely be of more interest if you use QtConsole standalone or with another editor/IDE.
+However, most of the other changes should prove quite useful within Spyder as well, and many were in fact suggested and even implemented by users of our IDE.
+Particular highlights include a block indent/unindent feature, Select-All (<code>Ctrl-Shift-A</code>) being made cell-specific, <code>Ctrl-Backspace</code> and <code>Ctrl-Delete</code> behaving more intelligently across whitespace and line boundaries, <code>Ctrl-D</code> allowing you to easily exit <code>ipdb</code>, <code>input()</code> and the like, and numerous smaller enhancements and bug fixes.
+If you'd like to learn more about what's new, please check out <a href="https://blog.jupyter.org/jupyter-qtconsole-4-4-81f2eaad5706">our article</a> over on the <a href="https://blog.jupyter.org/">Jupyter blog</a>, where we go over the major changes in more detail, with plenty of screenshots and GIFs to illustrate each feature and how to use it.</p>
+<p><img src="/blog/release-qtconsole-440/qtconsole-syntax-highlighting.png" alt="Screenshot of the QtConsole main window, with a new syntax highlighting theme applied"></p>
+<p>To update to the newest version with your existing Spyder install, open an Anaconda Prompt (Windows), Terminal (macOS) or command line (Linux), activate the <code>conda</code> environment or <code>virtualenv</code>/<code>venv</code> of the Spyder install you are using, and run <code>conda update qtconsole</code> (or <code>pip install --upgrade qtconsole</code>, if not using Anaconda).
+If you'd like to try QtConsole out separate from Spyder or integrate it in with your own editor or IDE, it is also available as a standalone GUI by running <code>jupyter qtconsole</code> from the Python environment where it or Spyder is installed.</p>
+<p>If you have any questions, problems or feedback, we'd love to hear from you. Report issues, request features or participate in QtConsole's development at its <a href="https://github.com/jupyter/qtconsole">Github site</a>, and check out its <a href="https://qtconsole.readthedocs.io/en/stable/">documentation</a> for help using it.
+For the latest Spyder news, releases, previews and tips, you can follow our <a href="https://www.facebook.com/SpyderIDE/">Facebook</a> and <a href="https://twitter.com/spyder_ide">Twitter</a>, and help support the development on Spyder and its sister projects like QtConsole on <a href="https://opencollective.com/spyder">OpenCollective</a>.</p>
+<p>Our new documentation and Spyder 4 beta 1 have been fully live for some time now; given the dramatic scale of the changes in both, their respective blog posts are still in the works.
+We'll also have an upcoming article on our official Spyder 4 feature roadmap and more, and Spyder 3.3.2 is due out soon, so keep in right here for your Spyder fix!
+Until then, happy Spydering and enjoy QtConsole 4.4!</p>
+
+  </div>
+</div>
+<div class="comment-box">
+  <h2>Comments</h2>
+  
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function() { this.page.identifier = "/blog/release-qtconsole-440"; this.page.url = "https://www.spyder-ide.org/blog/release-qtconsole-440/"; };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//spyder-ide.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+    rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+
+</div>
+  </div>
+</div>
+
+    <div id="fh5co-footer">
+      <div class="container">
+        <div class="row footer-connect-line">
+          <div class="text-center">
+            <p>
+              Connect with us on:
+              <a href="https://github.com/spyder-ide/spyder"> Github </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://twitter.com/spyder_ide"> Twitter </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://www.facebook.com/SpyderIDE/"> Facebook </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://groups.google.com/group/spyderlib"> Google Groups </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://instagram.com/spyderide"> Instagram </a>
+            </p>
+          </div>
+        </div>
+        <div class="row footer-copyright">
+          <div class="text-center">
+            <p>
+              &copy; 2020 Spyder Website Contributors
+              <span class="pipe-colored"> | </span>
+              Licensed <a href="https://github.com/spyder-ide/website-spyder/blob/master/NOTICE.txt" target="_blank" rel="noopener noreferrer">MIT and others</a>
+              <br>
+              Feature icons by <a href='https://www.freepik.com/' target='_blank' rel='noopener noreferrer' title='Freepik'>Freepik</a> from <a href='https://www.flaticon.com/' target='_blank' rel='noopener noreferrer' title='Flaticon'>Flaticon.com</a><br>
+              <a href="https://freehtml5.co/icon-free-website-template-using-bootstrap/" target="_blank" rel="noopener noreferrer">Template</a> design by <a href="https://freehtml5.co/" target="_blank" rel="noopener noreferrer">FreeHTML5.co</a>&nbsp;(<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC&#8209;BY&nbsp;3.0</a>)
+              <br><a href="https://github.com/SteveLane/hugo-icon" target="_blank" rel="noopener noreferrer">Hugo port</a> by <a href="https://github.com/SteveLane/" target="_blank" rel="noopener noreferrer">SteveLane</a> <span class="pipe-colored">|</span> <a href="https://github.com/spyder-ide/lektor-icon" target="_blank" rel="noopener noreferrer">Lektor&nbsp;port</a>&nbsp;by&nbsp;<a href="https://github.com/dalthviz/" target="_blank" rel="noopener noreferrer">Dalthviz</a>
+              <br>Rewrite by <a href="http://gerlach.cam" target="_blank" rel="noopener noreferrer">C.A.M.&nbsp;Gerlach</a> <span class="pipe-colored">|</span> Maintained by <a href="https://www.spyder-ide.org/" target="_blank" rel="noopener noreferrer">Spyder&nbsp;IDE</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="application/javascript">
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'spyder-ide/public',
+  activationElement: '#open_chat',
+  };
+</script>
+<a href="https://gitter.im/spyder-ide/public" id="open_chat" class="gitter-open-chat-button">Open Chat</a>
+<script defer src="https://sidecar.gitter.im/dist/sidecar.v1.js" type="application/javascript" charset="UTF-8"></script>
+<!-- jQuery -->
+<script src="/static/js/jquery-3.5.1.min.js?h=c8e1c8b3" type="application/javascript" charset="UTF-8"></script>
+<!-- Waypoints -->
+<script src="/static/js/jquery.waypoints.min.js?h=a2b72d43" type="application/javascript" charset="UTF-8"></script>
+<!-- Main JS -->
+<script src="/static/js/main.js?h=b7b497b4" type="application/javascript" charset="UTF-8"></script>
+<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.js" type="application/javascript" charset="UTF-8"></script> -->
+</body>
+</html>

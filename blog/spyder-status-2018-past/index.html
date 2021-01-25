@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Access-Control-Allow-Origin" content="Origin">
+
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-XSS-Protection" content="1">
+  <meta name="referrer" content="never">  <!-- Fallback for IE/Edge/Safari -->
+  <meta name="referrer" content="no-referrer">  <!-- Fallback for Chrome lt 61 -->
+  <meta name="referrer" content="same-origin">
+
+  <!-- FREE HTML5 TEMPLATE  -->
+  <!-- DESIGNED & DEVELOPED by FREEHTML5.CO -->
+
+  <!-- Website:        https://freehtml5.co/ -->
+  <!-- Email:          info@freehtml5.co -->
+  <!-- Twitter:        https://twitter.com/fh5co -->
+  <!-- Facebook:       https://www.facebook.com/fh5co -->
+
+  <!-- HUGO TEMPLATE PORTED BY SteveLane -->
+  <!-- Website:        https://interadata.io/ -->
+
+  <!-- LEKTOR THEME PORTED BY Daniel Althviz -->
+  <!-- Website:        https://dalthviz.github.io/ -->
+
+  <!-- LEKTOR THEME MAINTAINED AND EXPANED BY Spyder Dev Team -->
+  <!-- Website:        https://github.com/spyder-ide/lektor-icon -->
+
+  <!-- Copyright (c) 2016- Lektor-Icon Contributors -->
+
+  <!-- Original standalone HTML5 theme distributed under the terms of the -->
+  <!-- Creative Commons Attribution 3.0 license -->
+  <!-- https://creativecommons.org/licenses/by/3.0/ -->
+
+  <!-- Additions, modifications and porting released under the terms of the -->
+  <!-- MIT (Expat) License: https://opensource.org/licenses/MIT -->
+  <!-- See the LICENSE.txt file for more details -->
+  <!-- https://github.com/spyder-ide/lektor-icon/blob/master/LICENSE.txt -->
+
+  <!-- For information on the included third-party assets, see NOTICE.txt -->
+  <!-- https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt -->
+
+  <title>Blog | State of the Spyder, Part 1: Looking back — Spyder IDE</title>
+  <meta name="author" content="Spyder Team"en-US>
+  <meta name="copyright" content="&amp;copy; 2020 Spyder Website Contributors"en-US>
+  <meta name="description" content="Website for Spyder, the Scientific Python Development Environment"en-US>
+  <meta name="keywords" content="spyder, ide, scipy, pydata, science, data, analysis, anaconda"en-US>
+  <meta name="theme-color" content="#d50000">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/static/images/favicon.png?h=bb776907" type="image/png">
+  <style>
+    :root {
+      --theme-fg-color: #000000;
+      --theme-fg-alt-color: #333333;
+      --theme-bg-color: #ffffff;
+      --theme-bg-alt-color: #e8ecf1;
+      --theme-bg-accent-color: #f5f5f5;
+      --theme-accent-color: #d50000;
+      --theme-accent-alt-color: #8c0000;
+      --theme-pipe-color: #ee1c24
+    }
+  </style>
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" type="text/css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/static/css/style.css?h=038b8d38" type="text/css">
+  <!-- User Custom CSS -->
+  <link rel="stylesheet" href="/static/css/custom_styles.css?h=d3a0c0f4" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
+</head>
+
+<body>
+<div class="fh5co-page">
+  <div id="fh5co-container">
+    <div class="js-sticky">
+      <div class="fh5co-main-nav navbar fixed-top">
+        <div class="container">
+          <div class="fh5co-menu-1">
+            <div class='pull-left'>
+              <ul class='dropdown menu' data-dropdown-menu>
+                <li id='menu-logo'>
+                  <p></p>
+                    <a href='/'>
+                    <img alt="Site Logo" src="/static/images/spyder_logo.png?h=5c3a431e">
+                  </a>
+                  <p></p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="main-nav-container">
+<a id="rss-nav-link" data-nav-section="RSS" href="/blog/feed.xml">RSS</a>
+              <div class="side-nav-container">
+                <a class="pull-right nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
+                <a class="pull-right nav-link-internal nav-link-active-section /blog/spyder-status-2018-past sep /blog" href="/blog/">Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="blog-content-container" data-section="Blog">
+  <div id="blog-center" class="center">
+
+<div class="blog-post">
+  <div class="blog-header blog-post-header">
+    <div class="row">
+      <div class="column meta-blog-author">
+        <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
+      </div>
+      <div class="meta-blog-index">
+        <p>
+          C.A.M. Gerlach<br>
+          <span class="small">2018-05-06</span>
+        </p>
+      </div>
+    </div>
+    <h1>State of the Spyder, Part 1: Looking back</h1>
+    <p>As we approach some major development milestones, now is as good a time as ever to share with you some perspective on where we've been, what's happening now, and where we're going in the world of Spyder.
+In this post, part one of a three part series, we'll take a look back over the past six months at some of the key events, accomplishments and challenges for Spyder and its community, and how that all leads up to where we are now.</p>
+<p>Stay tuned right here, since part two will share several exciting announcements that affect the project (in a good way, we promise!) and its immediate future.
+Even better, part three will formally announce the next Spyder 3 release and—what I'm sure you are all looking forward to—the plan for the first official Spyder 4 beta, plus our schedule and feature roadmap for Spyder 4 and beyond!</p>
+<h2>A Call Answered</h2>
+<p>Starting off, as we announced back in mid-November, our funding from Anaconda, Inc was discontinued, leaving Spyder without formal institutional financial support.
+As Spyder was, is and always will be a community-developed and supported IDE, this was far from a mortal blow to the project, but it did impact the pace and breadth of development.
+Developer effort previously spent on our Spyder plugins, like <a href="https://github.com/spyder-ide/spyder-notebook">spyder-notebook</a>, <a href="https://github.com/spyder-ide/spyder-reports">spyder-reports</a>, and <a href="https://github.com/spyder-ide/spyder-terminal">spyder-terminal</a>, among others, was refocused on the Spyder core, and the development and release of Spyder 4 was put mostly on hold.
+To help make up for the loss of funding, we appealed to the community for support, asking users who found Spyder valuable to back our project on <a href="https://opencollective.com/spyder">OpenCollective</a>, in order to accelerate development and fund more features for Spyder 4.</p>
+<p><img src="/blog/spyder-status-2018-past/spyder_opencollective.png" alt="Spyder OpenCollective, showing many donations and backers"></p>
+<p>To our unending gratitude, you responded! In the few months since then, we've gone from zero to a budget of well over $4500 per year and rising at an increasing pace, thanks to the continuing contributions of over 80 (and counting!) individual and institutional backers.
+We also had several new core team members and community contributors pitch in to help carry the load, and we've got some more great news in the very next post on the funding front.
+While we've got a ways to go to match the level of funding we've received under Anaconda, your support has helped make possible several of the new features we've planned for Spyder 4, and allow us to commit to releasing it much sooner than we would be able to otherwise.
+Your generous donations go directly toward funding the Spyder community's most-requested new and improved features for Spyder 4, so keep them coming!
+Stay tuned; we are considering rolling out new donation tiers and rewards at some point soon so you won't want to miss that.</p>
+<h2>Development by the Numbers</h2>
+<p>On the development side of the project, while our overall pace is modestly lower than its peak under our Anaconda funding, we've been quite active fixing bugs and adding new features and enhancements over the past six months.
+By the numbers, since mid-November, we've pushed approximately 1200 commits to <code>master</code> (Spyder 4), comprising over 37 000 lines added and 16 000 removed, and 900 commits to <code>3.x</code> (Spyder 3), with over 16 500 additions and 10 000 deletions.
+Users have opened over 1375 issues (bugs, feature requests and other feedback), of which we've managed to resolve more than 1330, or nearly 97%.</p>
+<p><img src="/blog/spyder-status-2018-past/github_commit_history.png" alt="Github commit timeseries for Spyder, with high activity over the past few years"></p>
+<p>Further, over 250 pull requests from almost two dozen unique contributors, some old, some new, have been submitted since that time—fixing bugs, adding new or enhanced functionality, or making other improvements—of which 226 have been merged to the main Spyder codebase.
+This work has coalesced into four separate official releases during that period, with another only days away.
+Finally, we've recently blown past the 3000 Github stars milestone a few weeks ago (we're now at more than 3200), with almost 700 unique forks to date.</p>
+<h2>Key Spyder Improvements</h2>
+<p>All those numbers are nice, but what matters most are the tangible improvements that you all get to use every day in your favorite IDE.
+Over those same past six months, alongside hundreds of bugfixes and minor enhancements, we've made multiple significant improvements to the Spyder 3 Editor, IPython Console, Variable Explorer, and Find in Files tool, along with a number of others under the hood and to the application as a whole.
+Even better, the majority of these were suggested by you, our users, and some of you even pitched in to help implement them.</p>
+<p>Especially since you will probably be spending most of your time in it, we added a several new commands and functions to the <strong>Editor</strong> that will hopefully make your life easier, each with corresponding customizable shortcuts for easier access.
+You can now insert a new line below the current one regardless of the cursor's current position with <code>Ctrl-Shift-Enter</code>, and you can now use <code>Shift-Delete</code> to cut selected text, and <code>Shift-Insert</code> to paste it.
+<code>Ctrl-PageUp</code>, <code>Ctrl-PageDown</code>, and <code>Ctrl-Tab</code> shortcuts are all now fully configurable.
+Finally, you can now easily <code>Tab</code> from the <code>Find</code> to the <code>Replace</code> box when open, and better yet your <code>Find</code> text is automatically copied to the <code>Replace</code> box to make modifications easier.</p>
+<p>Second only to the Editor in terms of them most critical Spyder components, the <strong>IPython Console</strong> also got a lot of love in recent releases.
+We've made several improvements to significantly improve the startup time, and added an optional feature to show the elapsed time each kernel has been running.
+You can now remove all user-defined variables with a GUI command, and changes in <code>import</code>ed modules now take effect instantly and automatically in the console, without even a re-<code>import</code> needed.
+<code>Cloudpickle</code> is now used to serialize objects from the Console to the Variable Explorer, greatly improving the latter's capabilities (as discussed below).
+Finally, Cython files are now automatically run in dedicated Cython consoles, and you can now use the edit magic command from the Console to open any file right inside Spyder's Editor.</p>
+<p><img src="/blog/spyder-status-2018-past/varexp_array_display.png" alt="Variable Explorer, with a variety of array types displayed"></p>
+<p>The <strong>Variable Explorer</strong>, which many of you cite as Spyder's "killer feature", has greatly improved as well.
+Most notably, thanks to the aforementioned <code>cloudpickle</code> change, you now have access to rich, deep exploration of nearly any object, builtin or custom, and can traverse, view, and when possible even edit complex hierarchies of nested types with ease.
+The Variable Explorer now fully supports <code>Timedelta</code> objects, both built-in and <code>Pandas</code> variants, allowing you to easily view and edit them just like <code>datetime</code> and <code>Timestamp</code>.
+It also now uses a "pretty", more human-readable format for dates, times, timedeltas and the like, and also now supports displaying a much wider range of <code>Numpy</code> array types.
+As a quality of life change, it has much better handling of immutable types, like <code>tuples</code>, clearly showing they can't be edited upfront and avoiding bothersome errors when trying to do so.</p>
+<p>Rounding out the major changes, the <strong>Find in Files</strong> tool now allows you to remove items from the <code>Search In</code> list by hovering over them and pressing <code>Delete</code>, and there's also a new option to clear all recent directories.
+Under the hood, we've made <code>PyQt5</code> a dependency for easier, one-command installation and added many more tests and better project infrastructure to help catch errors.
+To make things easier on you if something does go wrong, we've greatly improved the error reporting system, the UI/UX and the explanatory text to be more up to date, informative, and user friendly.</p>
+<p><img src="/blog/spyder-status-2018-past/error_report_dialog.png" alt="New Spyder error report dialog, with more helpful UI text"></p>
+<p>All of the mentioned additions are included in the latest released version of Spyder, 3.2.8, which you can update to with <code>conda update spyder</code> (if using Anaconda), with your package manager/distribution (if installed that way) or with <code>pip update spyder</code> (otherwise).
+Even more are already implemented for our next release, due out in a week's time, and we'll have a preview of what to expect right here on the blog even sooner.</p>
+<h2>Affiliated Project Progress</h2>
+<p>Outside the core Spyder IDE, while most plugins have been paused until the Spyder 4 release, work on other affiliated projects has continued. The new <a href="https://github.com/spyder-ide/spyder-unittest">spyder-unittest</a> plugin has seen particularly active development, and lead developer and Spyder team member <a href="http://www1.maths.leeds.ac.uk/~jitse/">Jitse Niesen</a> recently published a <a href="https://www.spyder-ide.org/blog/introducing-unittest-plugin/">tutorial on its use</a>.
+Since November, it has gotten improved <code>pytest</code> support with realtime test results and click-to-open, better UI/UX, a robust communications backend (ZeroMQ), and numerous bug fixes and minor improvements.
+<a href="https://github.com/spyder-ide/qtpy">QtPy</a>, another affiliated project which Spyder uses as its Qt GUI abstraction layer, has had three releases including one major, with new Qt classes, early support for <code>PySide2</code>, better performance, and a number of bugfixes.</p>
+<p><img src="/blog/spyder-status-2018-past/spyder_unittest.png" alt="Spyder-unittest dialog, displaying test results"></p>
+<p>Other projects under the Spyder umbrella are also making major progress. The <a href="https://github.com/spyder-ide/pywinpty">pywinpty</a> pseudo-terminal library has seen six official releases (three major), with a new rich high level interface to create and track processes, new process wrappers, Python 2.7 support, major performance, stability and security improvements, and many bug fixes.
+Most importantly, we are proud to report that since this January Jupyter Notebook (in 5.3.0) and JupyterLab have both adopted it to create and manage system terminals on Windows!
+The <a href="https://github.com/spyder-ide/qtsass">qtsass</a> SASS to Qt stylesheet compiler has a new maintainer, with development including new dev infrastructure, refactoring work, a PyPI release, and new features, with more on the way.
+Finally, our <a href="https://github.com/spyder-ide/loghub">loghub</a> automatic changelog generator has seen significant internal and external developer interest, as well as three releases, bug fixes, additional examples, and the ability to group issues and PRs together if desired.
+The common thread between all five of these projects has been a substantially increased development pace in recent weeks, so expect to see even more good news soon if that trend continues.</p>
+<h2>Beyond the Code</h2>
+<p>The team has made progress on a number of fronts outside core program development.
+We've been joined by several new team members from around the world, who have each contributed new skillsets to the project.
+Further, we've created, developed and deployed a brand new, modern and responsive website and blog, to provide an accessible, central source for Spyder news and information for both newcomers and old hands alike, as you might have noticed :)</p>
+<p>Our new, comprehensive <a href="https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ">Troubleshooting Guide and FAQ</a> will help users easily resolve common issues without having to wait for a response from us, and we've revised and improved our Github issue tracking workflow to do an even better job at quickly responding to users' needs.
+On top of that, our Readme, contributing guide, install docs, and developer wiki have all been thoroughly overhauled to make them more up to date, informative and accessible.
+Finally, we've deepened our relationship with <a href="https://www.numfocus.org/">NumFOCUS</a>, integrating us more closely with the broader PyData community, as well as leading to some exciting news...but that will have to wait for our next post!</p>
+<p>Until then, thanks for all you do for us and the community, and happy Spydering!</p>
+
+  </div>
+</div>
+<div class="comment-box">
+  <h2>Comments</h2>
+  
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function() { this.page.identifier = "/blog/spyder-status-2018-past"; this.page.url = "https://www.spyder-ide.org/blog/spyder-status-2018-past/"; };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//spyder-ide.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+    rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+
+</div>
+  </div>
+</div>
+
+    <div id="fh5co-footer">
+      <div class="container">
+        <div class="row footer-connect-line">
+          <div class="text-center">
+            <p>
+              Connect with us on:
+              <a href="https://github.com/spyder-ide/spyder"> Github </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://twitter.com/spyder_ide"> Twitter </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://www.facebook.com/SpyderIDE/"> Facebook </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://groups.google.com/group/spyderlib"> Google Groups </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://instagram.com/spyderide"> Instagram </a>
+            </p>
+          </div>
+        </div>
+        <div class="row footer-copyright">
+          <div class="text-center">
+            <p>
+              &copy; 2020 Spyder Website Contributors
+              <span class="pipe-colored"> | </span>
+              Licensed <a href="https://github.com/spyder-ide/website-spyder/blob/master/NOTICE.txt" target="_blank" rel="noopener noreferrer">MIT and others</a>
+              <br>
+              Feature icons by <a href='https://www.freepik.com/' target='_blank' rel='noopener noreferrer' title='Freepik'>Freepik</a> from <a href='https://www.flaticon.com/' target='_blank' rel='noopener noreferrer' title='Flaticon'>Flaticon.com</a><br>
+              <a href="https://freehtml5.co/icon-free-website-template-using-bootstrap/" target="_blank" rel="noopener noreferrer">Template</a> design by <a href="https://freehtml5.co/" target="_blank" rel="noopener noreferrer">FreeHTML5.co</a>&nbsp;(<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC&#8209;BY&nbsp;3.0</a>)
+              <br><a href="https://github.com/SteveLane/hugo-icon" target="_blank" rel="noopener noreferrer">Hugo port</a> by <a href="https://github.com/SteveLane/" target="_blank" rel="noopener noreferrer">SteveLane</a> <span class="pipe-colored">|</span> <a href="https://github.com/spyder-ide/lektor-icon" target="_blank" rel="noopener noreferrer">Lektor&nbsp;port</a>&nbsp;by&nbsp;<a href="https://github.com/dalthviz/" target="_blank" rel="noopener noreferrer">Dalthviz</a>
+              <br>Rewrite by <a href="http://gerlach.cam" target="_blank" rel="noopener noreferrer">C.A.M.&nbsp;Gerlach</a> <span class="pipe-colored">|</span> Maintained by <a href="https://www.spyder-ide.org/" target="_blank" rel="noopener noreferrer">Spyder&nbsp;IDE</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="application/javascript">
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'spyder-ide/public',
+  activationElement: '#open_chat',
+  };
+</script>
+<a href="https://gitter.im/spyder-ide/public" id="open_chat" class="gitter-open-chat-button">Open Chat</a>
+<script defer src="https://sidecar.gitter.im/dist/sidecar.v1.js" type="application/javascript" charset="UTF-8"></script>
+<!-- jQuery -->
+<script src="/static/js/jquery-3.5.1.min.js?h=c8e1c8b3" type="application/javascript" charset="UTF-8"></script>
+<!-- Waypoints -->
+<script src="/static/js/jquery.waypoints.min.js?h=a2b72d43" type="application/javascript" charset="UTF-8"></script>
+<!-- Main JS -->
+<script src="/static/js/main.js?h=b7b497b4" type="application/javascript" charset="UTF-8"></script>
+<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.js" type="application/javascript" charset="UTF-8"></script> -->
+</body>
+</html>

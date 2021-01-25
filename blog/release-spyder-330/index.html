@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Access-Control-Allow-Origin" content="Origin">
+
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-XSS-Protection" content="1">
+  <meta name="referrer" content="never">  <!-- Fallback for IE/Edge/Safari -->
+  <meta name="referrer" content="no-referrer">  <!-- Fallback for Chrome lt 61 -->
+  <meta name="referrer" content="same-origin">
+
+  <!-- FREE HTML5 TEMPLATE  -->
+  <!-- DESIGNED & DEVELOPED by FREEHTML5.CO -->
+
+  <!-- Website:        https://freehtml5.co/ -->
+  <!-- Email:          info@freehtml5.co -->
+  <!-- Twitter:        https://twitter.com/fh5co -->
+  <!-- Facebook:       https://www.facebook.com/fh5co -->
+
+  <!-- HUGO TEMPLATE PORTED BY SteveLane -->
+  <!-- Website:        https://interadata.io/ -->
+
+  <!-- LEKTOR THEME PORTED BY Daniel Althviz -->
+  <!-- Website:        https://dalthviz.github.io/ -->
+
+  <!-- LEKTOR THEME MAINTAINED AND EXPANED BY Spyder Dev Team -->
+  <!-- Website:        https://github.com/spyder-ide/lektor-icon -->
+
+  <!-- Copyright (c) 2016- Lektor-Icon Contributors -->
+
+  <!-- Original standalone HTML5 theme distributed under the terms of the -->
+  <!-- Creative Commons Attribution 3.0 license -->
+  <!-- https://creativecommons.org/licenses/by/3.0/ -->
+
+  <!-- Additions, modifications and porting released under the terms of the -->
+  <!-- MIT (Expat) License: https://opensource.org/licenses/MIT -->
+  <!-- See the LICENSE.txt file for more details -->
+  <!-- https://github.com/spyder-ide/lektor-icon/blob/master/LICENSE.txt -->
+
+  <!-- For information on the included third-party assets, see NOTICE.txt -->
+  <!-- https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt -->
+
+  <title>Blog | Spyder 3.3.0 and 3.3.1 released! — Spyder IDE</title>
+  <meta name="author" content="Spyder Team"en-US>
+  <meta name="copyright" content="&amp;copy; 2020 Spyder Website Contributors"en-US>
+  <meta name="description" content="Website for Spyder, the Scientific Python Development Environment"en-US>
+  <meta name="keywords" content="spyder, ide, scipy, pydata, science, data, analysis, anaconda"en-US>
+  <meta name="theme-color" content="#d50000">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/static/images/favicon.png?h=bb776907" type="image/png">
+  <style>
+    :root {
+      --theme-fg-color: #000000;
+      --theme-fg-alt-color: #333333;
+      --theme-bg-color: #ffffff;
+      --theme-bg-alt-color: #e8ecf1;
+      --theme-bg-accent-color: #f5f5f5;
+      --theme-accent-color: #d50000;
+      --theme-accent-alt-color: #8c0000;
+      --theme-pipe-color: #ee1c24
+    }
+  </style>
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" type="text/css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/static/css/style.css?h=038b8d38" type="text/css">
+  <!-- User Custom CSS -->
+  <link rel="stylesheet" href="/static/css/custom_styles.css?h=d3a0c0f4" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
+</head>
+
+<body>
+<div class="fh5co-page">
+  <div id="fh5co-container">
+    <div class="js-sticky">
+      <div class="fh5co-main-nav navbar fixed-top">
+        <div class="container">
+          <div class="fh5co-menu-1">
+            <div class='pull-left'>
+              <ul class='dropdown menu' data-dropdown-menu>
+                <li id='menu-logo'>
+                  <p></p>
+                    <a href='/'>
+                    <img alt="Site Logo" src="/static/images/spyder_logo.png?h=5c3a431e">
+                  </a>
+                  <p></p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="main-nav-container">
+<a id="rss-nav-link" data-nav-section="RSS" href="/blog/feed.xml">RSS</a>
+              <div class="side-nav-container">
+                <a class="pull-right nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
+                <a class="pull-right nav-link-internal nav-link-active-section /blog/release-spyder-330 sep /blog" href="/blog/">Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="blog-content-container" data-section="Blog">
+  <div id="blog-center" class="center">
+
+<div class="blog-post">
+  <div class="blog-header blog-post-header">
+    <div class="row">
+      <div class="column meta-blog-author">
+        <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
+      </div>
+      <div class="meta-blog-index">
+        <p>
+          C.A.M. Gerlach<br>
+          <span class="small">2018-08-14</span>
+        </p>
+      </div>
+    </div>
+    <h1>Spyder 3.3.0 and 3.3.1 released!</h1>
+    <p>We're pleased to release the next significant update in the stable Spyder 3 line, 3.3.0, along with its follow-on bugfix point release, 3.3.1, which is now live on PyPI and <code>conda</code>.
+As always, you can update with <code>conda update spyder</code> in the Anaconda Prompt/Terminal/command line (on Windows/macOS/Linux, respectively) if on Anaconda (recommended), or <code>pip update spyder</code> otherwise.
+If you run into any trouble, please carefully read our <a href="https://docs.spyder-ide.org/installation.html">new installation documentation</a> and consult our <a href="https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ">Troubleshooting Guide</a>, which contains straightforward solutions to the vast majority of install-related issues users have reported.</p>
+<p>As a new minor version (3.3), it makes several substantial changes to Spyder's underpinnings that deserve some explanation, particularly the newly modular and portable console system that's now separated into its own <code>spyder-kernels</code> package, opening up several new options for users running Spyder in different environments.
+There's also a brand-new error reporting process, new options in the IPython console, usability and performance improvements for the Variable Explorer, multiple new and changed dependency requirements and more, so there's plenty to go over.
+Finally, we'd like to briefly share a few final notes on this release and the latest on our plans going forward.</p>
+<h2>Modular, flexible Console architecture</h2>
+<p>The biggest single change with version 3.3.0/3.3.1 is a major overhaul of how IPython Consoles are started and managed in Spyder.
+More precisely, we've moved all the kernel-related code from the Spyder core into a new modular package, <code>spyder-kernels</code>, available on the <a href="https://github.com/spyder-ide/spyder-kernels">same</a> <a href="https://pypi.org/project/spyder-kernels/">distribution</a> <a href="https://anaconda.org/conda-forge/spyder-kernels">channels</a> as Spyder itself (and installed automatically when updating to &gt;=3.3.0).
+While the most dramatic differences are under the hood, there's plenty for everyone to like (and a few things to be aware of).</p>
+<p>Most importantly, for our everyday users, this makes Spyder much more flexible and powerful when working with multiple Python environments.
+With the changes, Spyder itself does not need to be present in every environment you'd like to launch a kernel in; you can install the full IDE in whatever manner you prefer, and then set it to run code and consoles in any Anaconda environment, <code>virtualenv</code>/<code>venv</code>, or even a totally separate Python installation, so long as it has <code>spyder-kernels</code> package available.
+Just set the path under <code>Tools -&gt; Preferences -&gt; Python interpreter -&gt; Use the following Python interpreter</code> to the desired Python executable, and any new Console you open will start in the selected environment.
+Check out our <a href="https://github.com/spyder-ide/spyder/wiki/Working-with-packages-and-environments-in-Spyder">new wiki page on using environments with Spyder</a>, for more details and tips on the subject, and keep an eye out for the further improvements coming in Spyder 4, which will greatly simplify the process and include full GUI-based project, package and environment management functionality built right in.</p>
+<p><img src="/blog/release-spyder-330/spyder-prefs-python.png" alt="Python interpreter pane of the Spyder preferences dialog, with the &#34;Use the following Python interpreter&#34; option highlighted"></p>
+<p>Furthermore, the new package allows you to independently launch a kernel from anywhere (on your local computer, or a remote machine, server or even supercomputing cluster), connect to it with Spyder, and use it just like a "natively" started one.
+After installing <code>spyder-kernels</code> on the host environment, you can start one with <code>python -m spyder_kernels.console</code>, and then enter the kernel's 4-digit ID (and SSH connection details, if a remote machine) in the Spyder <code>Connect to an existing kernel</code> dialog under the IPython Console pane context- or "gear"-menu).
+For more information on the process, see the <a href="https://docs.spyder-ide.org/ipythonconsole.html#connecting-to-a-console">Connecting to a Console</a> section in our new documentation.</p>
+<p><img src="/blog/release-spyder-330/spyder-remote-kernel.png" alt="A remote kernel running in a system console alongside Spyder&#39;s connect to kernel dialog"></p>
+<p>Best of all, no matter how or where a kernel is started, every console now supports the full suite of Spyder's features, including completion, the Variable Explorer, interactive Help and more, unlike before.
+You can even mix and match internal, external and remote kernels in different environments, all in the same Spyder session, by either changing the Python interpreter preferences setting between starting a console, or starting and connecting to multiple consoles externally—or both!
+Finally, for those of us (and those of you!) who help develop Spyder, the changes also make it easier to maintain and improve the code, and opens the door to one of the biggest features coming in Spyder 4: a new, full-featured debugging kernel that many of you have been asking for.</p>
+<p>The one key thing to remember: make sure you install the appropriate version of <code>spyder-kernels</code> for your version of Spyder. For most users, that will be spyder-kernels 0.x (currently 0.2.6) to match Spyder 3 on our stable <code>3.x</code> branch; if testing a Spyder 4 beta or Github clone of the <code>master</code> branch, you'll want the latest 1.x version of <code>spyder-kernels</code> (currently 1.1.0).
+To install the correct build, you can use the following <code>conda</code> command,</p>
+<pre><code class="lang-bash">conda install spyder-kernels=&lt;0 or 1&gt;.*
+</code></pre>
+<p>or with <code>pip</code>,</p>
+<pre><code class="lang-bash">pip install spyder-kernels==&lt;0 or 1&gt;.*
+</code></pre>
+<p>replacing <code>&lt;0 or 1&gt;</code> with the major version number (0 or 1) to match your Spyder version.
+Further details specific to installing a development build can be found in our <a href="https://github.com/spyder-ide/spyder/blob/master/CONTRIBUTING.md#using-the-correct-version-of-spyder-kernels">Contributing Guide</a> or our <a href="https://docs.spyder-ide.org/installation.html#installing-a-development-build">install documentation</a>.</p>
+<h2>New IPython Console completion and plotting features</h2>
+<p><img src="/blog/release-spyder-330/jedi-greedy-completion-prefs.png" alt="Advanced tab of the IPython console pane of Spyder&#39;s preferences, with the new Jedi completion section highlighted"></p>
+<p>Spyder's IPython Consoles can now use an advanced <code>jedi</code>-based completion engine that, similar to the Editor, analyzes your code without actually having to run it first.
+This allows for advanced completion functionality on objects not yet assigned to a variable, similar to the existing "greedy" completion option, but without the need for dynamic evaluation.
+It can be slow if working with very large Pandas <code>DataFrames</code> so it is disabled by default, but you can activate it under <code>Tools -&gt; Preferences -&gt; IPython console -&gt; Advanced Settings -&gt; Jedi completion</code>.
+The descriptive text for the "greedy" completion option (also off by default) was also clarified, particularly to explain an IPython bug (not present in the <code>jedi</code> completer) with the feature and a consequent workaround.</p>
+<p><img src="/blog/release-spyder-330/tight-layout-preferences.png" alt="Graphics tab of the IPython console pane of Spyder&#39;s preferences, with the new &#34;Use a tight layout for inline plots&#34; option highlighted"></p>
+<p>We've also added a new plotting setting, <code>Use a tight layout for inline plots</code>, for the <code>Inline</code> Matplotlib graphics backend.
+The default behavior (as in previous Spyder versions) sets <code>bbox_inches</code> to <code>"tight"</code> in Matplotlib calls when drawing to the inline backend.
+However, if you prefer your own <code>bbox_inches</code> argument be respected even when plots are rendered in the Console, you can now do so by unchecking this option under <code>Tools -&gt; Preferences -&gt; IPython console -&gt; Graphics -&gt; Inline backend</code>.</p>
+<p><img src="/blog/release-spyder-330/plot-comparison.png" alt="Comparison of inline plots in Spyder&#39;s IPython Console with and without the &#34;tight layout&#34; option set"></p>
+<h2>Better Variable Explorer usability and performance</h2>
+<p>We've made several changes and optimizations to greatly improve performance and efficiency in the Variable Explorer, to make it much faster and use less memory when opening and editing large objects.
+In particular, we've fixed several major memory leaks when saving edited objects and closing the Variable Explorer dialogs through better length validation and garbage collection, and now skip the whole saving process entirely if the object was not modified (or cannot be modified).
+We've also changed the names and functions of the <code>Cancel</code> and <code>Ok</code> buttons in Variable Explorer dialogs to be easier to understand and use.
+They now feature a <code>Close</code> button which exits the dialog without saving any edits to the object's contents, and a <code>Save and Close</code> button—automatically enabled once modifications are made—that commits the changes back to the kernel.</p>
+<p><img src="/blog/release-spyder-330/variable-explorer-ux.png" alt="A Variable Explorer DataFrame editor dialog, showing the new &#34;Close&#34; and &#34;Save and Close&#34; buttons"></p>
+<h2>Streamlined error reporting experience</h2>
+<p>While we hope you never need to use it, Spyder 3.3.0 includes a brand-new error handling backend that can submit bug reports directly through the Github API.
+Based off <a href="https://github.com/ColinDuquesnoy">Colin Duquesnoy</a>'s excellent <a href="https://github.com/ColinDuquesnoy/QCrash">QCrash</a> framework, this is a major improvement in speed, functionality, reliability and user convenience over the old approach (essentially just opening a link in a web browser).
+Just as before, we won't send anything without your explicit consent, you need a Github account (or create one for free), and you can view and edit the report on Github at any time.</p>
+<p><img src="/blog/release-spyder-330/new-authent-dialog-both.png" alt="The new authentication dialogs for submitting a Github report, with a username/password and a token option"></p>
+<p>You will need to enter your Github credentials the first time you submit a report.
+For this, you can <a href="https://github.com/settings/tokens/new?scopes=public_repo">create an app token</a> which only grants the very limited permissions needed to create a public issue report, can be easily revoked and re-created, and works with two-factor authentication (which you should be using); however, if you have not yet enabled 2FA, it also offers the option to enter your Github username and password.
+Either way, Spyder can securely remember your login using the <a href="https://github.com/jaraco/keyring"><code>keyring</code></a> package, so you only have to do this once on any given machine (if you select the "remember" option).</p>
+<p><img src="/blog/release-spyder-330/new-error-dialog-full.png" alt="The new error reporting interface, with a title field, more descriptive text, and a polished UI"></p>
+<p>The dialog itself has also been made more functional and user-friendly, designed to help encourage high-quality, useful reports, and with more accessible, descriptive text.
+The reports themselves also contain more useful data about the problem, and there is now a <code>--safe-mode</code> command-line option for Spyder to start in a clean, temporary config directly, so you can test to see if the problem reoccurs without the hassle of a <code>spyder --reset</code>, and play around with other settings without impacting your main configuration. Finally, we've fixed over 40 bugs in this release and further improved our documentation and troubleshooting material, so hopefully you'll see this less often.</p>
+<h2>Cleaner under the hood and more</h2>
+<p>Alongside the aforementioned internal changes, we've also made a number of other under-the-hood changes to clean out old cruft and improve maintainability, readability and performance of our codebase.
+In particular, we've officially dropped support for Python 3.3, PyQt4, and PyQt5 &lt; 5.5, all versions which have been end-of-life for years, and (aside from PyQt4) have minimal or no remaining Spyder users.
+Furthermore, dropping <code>PyQt4</code> in particular allows us to avoid or resolve a number of unfixable bugs specific to that version that have been causing problems for users, and opens the door to easier development in the future.
+Finally, we moved our legacy documentation (and its many associated images) from the main Spyder codebase to <a href="https://github.com/spyder-ide/spyder-docs">its own repo</a>, executed a major overhaul to greatly modernize and expand the text, images, style, and presentation, and now deploy them onto <a href="https://docs.spyder-ide.org/">their own subdomain of our site</a>, all of which we will discuss in a separate post coming soon.</p>
+<h2>Even more fixes and refinements with Spyder 3.3.1</h2>
+<p>As a quick follow-on to the 3.3.0 release, Spyder 3.3.1 fixed a handful of bugs and minor issues with the new functionality and cleaned up several other existing ones, as well made a number of lower-level maintenance and development-oriented changes—over two dozen in all.
+Furthermore, several user-visible enhancements made it into the release, primary aimed at improving usability.
+To make it easier for users to manage multiple environments, the selection UI under <code>Preferences &gt; Python interpreter &gt; Use the following Python interpreter</code> remembers the executables you've previously selected and allows quick switching between them.</p>
+<p><img src="/blog/release-spyder-330/interpreter-selection-ux.png" alt="Python interpreter pane of Spyder&#39;s preferences, showing the new environment selection UI"></p>
+<p>In the Console, mundane <code>ipdb</code> commands are automatically filtered from the history, and the Editor now supports syntax highlighting for the <a href="https://www.python.org/dev/peps/pep-0515/">new numeric literal syntax</a> introduced in Python 3.6.
+Spyder's tutorial has been re-written for modern Spyder as well as to be clearer and more understandable, and overhauled for better and more consistent formatting and visuals with the rest of our documentation.
+Finally, our update checker now consults the Anaconda <code>defaults</code> channel rather than PyPI to determine if an update is available, so it doesn't bug the majority of our users on Anaconda until they can actually acquire the package.</p>
+<h2>What to know and what's next</h2>
+<p>If you have any questions, problems or feedback, we'd love to hear from you (just make sure you read our <a href="https://docs.spyder-ide.org/">documentation</a>, <a href="https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ">Troubleshooting Guide</a> and the other previously-mentioned resources first)!
+For general questions or install issues that aren't addressed by the above, our <a href="https://groups.google.com/group/spyderlib">Google Group</a> and <a href="https://gitter.im/spyder-ide/public">Gitter live chat</a> are a good place to ask, while <a href="https://github.com/spyder-ide/spyder">our Github</a> is the place to report bugs, request features, or help develop Spyder itself (though make sure to search our <a href="https://github.com/spyder-ide/spyder/issues?utf8=%E2%9C%93&amp;q=is%3Aissue">issues list</a> to ensure it hasn't already been submitted).
+Finally, you can follow our <a href="https://www.facebook.com/SpyderIDE/">Facebook</a> and <a href="https://twitter.com/spyder_ide">Twitter</a> for the latest Spyder news, releases, previews and tips, and help support Spyder development on <a href="https://opencollective.com/spyder">OpenCollective</a>.</p>
+<p>There's plenty to look forward to in the coming days, with the official release of our all-new documentation (that's already live now), Spyder 4 beta 1 having just been released on PyPI, conda-forge and our own <code>spyder-ide</code> channel (with a blog post coming soon), an upcoming article on our official Spyder 4 feature roadmap and more, so stay tuned!
+In the meantime, happy Spydering and enjoy the new 3.3.1!</p>
+
+  </div>
+</div>
+<div class="comment-box">
+  <h2>Comments</h2>
+  
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function() { this.page.identifier = "/blog/release-spyder-330"; this.page.url = "https://www.spyder-ide.org/blog/release-spyder-330/"; };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//spyder-ide.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+    rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+
+</div>
+  </div>
+</div>
+
+    <div id="fh5co-footer">
+      <div class="container">
+        <div class="row footer-connect-line">
+          <div class="text-center">
+            <p>
+              Connect with us on:
+              <a href="https://github.com/spyder-ide/spyder"> Github </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://twitter.com/spyder_ide"> Twitter </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://www.facebook.com/SpyderIDE/"> Facebook </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://groups.google.com/group/spyderlib"> Google Groups </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://instagram.com/spyderide"> Instagram </a>
+            </p>
+          </div>
+        </div>
+        <div class="row footer-copyright">
+          <div class="text-center">
+            <p>
+              &copy; 2020 Spyder Website Contributors
+              <span class="pipe-colored"> | </span>
+              Licensed <a href="https://github.com/spyder-ide/website-spyder/blob/master/NOTICE.txt" target="_blank" rel="noopener noreferrer">MIT and others</a>
+              <br>
+              Feature icons by <a href='https://www.freepik.com/' target='_blank' rel='noopener noreferrer' title='Freepik'>Freepik</a> from <a href='https://www.flaticon.com/' target='_blank' rel='noopener noreferrer' title='Flaticon'>Flaticon.com</a><br>
+              <a href="https://freehtml5.co/icon-free-website-template-using-bootstrap/" target="_blank" rel="noopener noreferrer">Template</a> design by <a href="https://freehtml5.co/" target="_blank" rel="noopener noreferrer">FreeHTML5.co</a>&nbsp;(<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC&#8209;BY&nbsp;3.0</a>)
+              <br><a href="https://github.com/SteveLane/hugo-icon" target="_blank" rel="noopener noreferrer">Hugo port</a> by <a href="https://github.com/SteveLane/" target="_blank" rel="noopener noreferrer">SteveLane</a> <span class="pipe-colored">|</span> <a href="https://github.com/spyder-ide/lektor-icon" target="_blank" rel="noopener noreferrer">Lektor&nbsp;port</a>&nbsp;by&nbsp;<a href="https://github.com/dalthviz/" target="_blank" rel="noopener noreferrer">Dalthviz</a>
+              <br>Rewrite by <a href="http://gerlach.cam" target="_blank" rel="noopener noreferrer">C.A.M.&nbsp;Gerlach</a> <span class="pipe-colored">|</span> Maintained by <a href="https://www.spyder-ide.org/" target="_blank" rel="noopener noreferrer">Spyder&nbsp;IDE</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="application/javascript">
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'spyder-ide/public',
+  activationElement: '#open_chat',
+  };
+</script>
+<a href="https://gitter.im/spyder-ide/public" id="open_chat" class="gitter-open-chat-button">Open Chat</a>
+<script defer src="https://sidecar.gitter.im/dist/sidecar.v1.js" type="application/javascript" charset="UTF-8"></script>
+<!-- jQuery -->
+<script src="/static/js/jquery-3.5.1.min.js?h=c8e1c8b3" type="application/javascript" charset="UTF-8"></script>
+<!-- Waypoints -->
+<script src="/static/js/jquery.waypoints.min.js?h=a2b72d43" type="application/javascript" charset="UTF-8"></script>
+<!-- Main JS -->
+<script src="/static/js/main.js?h=b7b497b4" type="application/javascript" charset="UTF-8"></script>
+<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.js" type="application/javascript" charset="UTF-8"></script> -->
+</body>
+</html>
