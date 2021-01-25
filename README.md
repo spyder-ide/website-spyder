@@ -29,8 +29,6 @@ This is the repository for the Spyder IDE website at [Spyder-IDE.org](https://ww
   - [Set up Pre-Commit](#set-up-pre-commit)
   - [Run server and make changes](#run-server-and-make-changes)
 - [Workflow](#workflow)
-  - [Develop](#develop)
-  - [Production](#production)
 - [Technologies and libraries used](#technologies-and-libraries-used)
   - [Lektor plugins](#lektor-plugins)
 - [More information](#more-information)
@@ -101,17 +99,7 @@ The resulting website can be viewed in your browser at ``http://localhost:5000``
 
 ## Workflow
 
-There are 2 branches, develop and production.
-
-
-### Develop
-
-The default branch is ``develop``, which is deployed with Github Pages via Lektor to [Develop.Spyder-IDE.org](https://develop.spyder-ide.org/).
-
-
-### Production
-
-After confirming your changes look as expected, the changes from ``develop`` will be merged to ``production`` and deployed to Github Pages via Lektor to [www.Spyder-IDE.org](https://www.spyder-ide.org).
+The default branch is ``master``, which is continuously deployed with a Github Action to Github Pages at the domain [Spyder-IDE.org](https://spyder-ide.org/).
 
 
 
