@@ -72,7 +72,7 @@ Work efficiently in a multi-language editor with a function/class browser, code 
 -----
 icon: editor.svg
 -----
-url: http://docs.spyder-ide.org/develop/current/editor.html
+url: http://docs.spyder-ide.org/current/editor.html
 -----
 
 
@@ -85,7 +85,7 @@ Harness the power of as many IPython consoles as you like in one GUI. Run code b
 -----
 icon: console.svg
 -----
-url: http://docs.spyder-ide.org/develop/current/ipythonconsole.html
+url: http://docs.spyder-ide.org/current/ipythonconsole.html
 -----
 
 
@@ -98,7 +98,7 @@ Interact with and modify variables on the fly: plot a histogram or timeseries, e
 -----
 icon: varExplorer.svg
 -----
-url: http://docs.spyder-ide.org/develop/current/variableexplorer.html
+url: http://docs.spyder-ide.org/current/variableexplorer.html
 -----
 
 
@@ -109,7 +109,7 @@ description: Browse, zoom, copy and save the figures and images you create.
 -----
 icon: plots.svg
 -----
-url: http://docs.spyder-ide.org/develop/current/plots.html
+url: http://docs.spyder-ide.org/current/plots.html
 -----
 
 
@@ -120,7 +120,7 @@ description: Trace each step of your code's execution interactively.
 -----
 icon: debugger.svg
 -----
-url: http://docs.spyder-ide.org/develop/current/debugging.html
+url: http://docs.spyder-ide.org/current/debugging.html
 -----
 
 
@@ -131,7 +131,7 @@ description: Instantly view any object's docs, and render your own.
 -----
 icon: help.svg
 -----
-url: http://docs.spyder-ide.org/develop/current/help.html
+url: http://docs.spyder-ide.org/current/help.html
 -----
 ----
 
