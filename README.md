@@ -83,7 +83,7 @@ pre-commit run --all-files
 
 **Note**: Most of the hooks fix the problems they detect automatically (the hook output will say ``files were modified by this hook``, but no errors/warnings will be listed), but they will still abort the commit so you can double-check everything first.
 Once you're satisfied, ``git add .`` again and re-commit.
-
+Hello.
 
 ### Run server and make changes
 
