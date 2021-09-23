@@ -1,7 +1,3 @@
-# Set version file to ignore conflicts between branches when merging
-src/brokkr/_version.py merge=ours
-
-
 # Set the default behavior, in case people don't have core.autocrlf set.
 * text eol=lf
 
