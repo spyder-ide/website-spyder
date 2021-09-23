@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title type="text">Spyder Blog</title>
-  <id>urn:uuid:74f42ab7-15d9-3882-bf48-7b6af15a7a01</id>
-  <updated>2020-11-05T00:00:00Z</updated>
-  <link href="https://www.spyder-ide.org/blog/" />
-  <link href="https://www.spyder-ide.org/blog/feed.xml" rel="self" />
-  <author>
-    <name></name>
-  </author>
-  <generator uri="https://github.com/ajdavis/lektor-atom" version="0.3.1">Lektor Atom Plugin</generator>
-  <entry xml:base="https://www.spyder-ide.org/blog/spyder-debugger/">
-    <title type="text">New features in Spyder 4's new debugger!</title>
-    <id>urn:uuid:f5401e88-40f8-3e19-ba08-077387ae3103</id>
-    <updated>2020-11-05T00:00:00Z</updated>
-    <link href="https://www.spyder-ide.org/blog/spyder-debugger/" />
-    <author>
-      <name>impact27</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;a href=&quot;https://ipython.org/&quot;&gt;IPython&lt;/a&gt; is a great improvement over the standard Python interpreter, bringing many enhancements such as autocompletion and &quot;magic&quot; commands.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Spyder Blog</title><link href="https://www.spyder-ide.org/blog/" rel="alternate"></link><link href="https://www.spyder-ide.org/blog/feed.xml" rel="self"></link><id>urn:uuid:74f42ab7-15d9-3882-bf48-7b6af15a7a01</id><updated>2020-11-05T00:00:00Z</updated><author><name></name></author><subtitle></subtitle><entry><title>New features in Spyder 4's new debugger!</title><link href="https://www.spyder-ide.org/blog/spyder-debugger/" rel="alternate"></link><updated>2020-11-05T00:00:00Z</updated><author><name>impact27</name></author><id>urn:uuid:f5401e88-40f8-3e19-ba08-077387ae3103</id><content type="html">&lt;p&gt;&lt;a href="https://ipython.org/"&gt;IPython&lt;/a&gt; is a great improvement over the standard Python interpreter, bringing many enhancements such as autocompletion and "magic" commands.
 When debugging, however, many of these features become inaccessible.
 With Spyder, we aim to bring back these capabilities and more for a truly premium debugging experience!
 (And believe me, I use this debugger a lot, and not only because I write code that might contain bugs :p).&lt;/p&gt;
@@ -25,43 +7,43 @@ With Spyder, we aim to bring back these capabilities and more for a truly premiu
 &lt;h2&gt;Make the debugger more like IPython&lt;/h2&gt;
 &lt;p&gt;IPython improves on the stock Python interpreter by adding syntax highlighting, completion, and history.
 We have done the same for the debugger!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-debugger/debugger-ipdb.png&quot; alt=&quot;Debugger ipdb&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-debugger/debugger-ipdb.png" alt="Debugger ipdb"&gt;&lt;/p&gt;
 &lt;p&gt;The output is prettier (and easier to read) than plain black text, as it was in Spyder 3!&lt;/p&gt;
 &lt;p&gt;Code completion and history for the debugger use the same functionality as the IPython console, so you should not notice any difference in behaviour.
 Just press &lt;code&gt;Tab&lt;/code&gt; to trigger autocomplete suggestions, and use the up and down arrows to recall previous commands.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-debugger/debugger-autocomplete.png&quot; alt=&quot;Debugger-autocomplete&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-debugger/debugger-autocomplete.png" alt="Debugger-autocomplete"&gt;&lt;/p&gt;
 &lt;p&gt;This can result useful if you don't know every library's documentation by heart!&lt;/p&gt;
 &lt;p&gt;Another improvement that we added is the ability to write multiline statements.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-debugger/debugger-multiline.png&quot; alt=&quot;Debugger-multiline&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-debugger/debugger-multiline.png" alt="Debugger-multiline"&gt;&lt;/p&gt;
 &lt;p&gt;This is better than getting &lt;code&gt;SyntaxError: unexpected EOF while parsing&lt;/code&gt;, as was the case in Spyder 3.&lt;/p&gt;
-&lt;p&gt;Finally, IPython has a lot of nice &lt;a href=&quot;https://ipython.readthedocs.io/en/stable/interactive/magics.html&quot;&gt;magic functions&lt;/a&gt; you can take advantage of.
+&lt;p&gt;Finally, IPython has a lot of nice &lt;a href="https://ipython.readthedocs.io/en/stable/interactive/magics.html"&gt;magic functions&lt;/a&gt; you can take advantage of.
 I personally often use &lt;code&gt;%matplotlib&lt;/code&gt; to switch between the &lt;code&gt;qt5&lt;/code&gt; and &lt;code&gt;inline&lt;/code&gt; plotting backends, and &lt;code&gt;%timeit&lt;/code&gt; to check how fast a given snippet of code is.
 Now, these can be used in the debugger as well!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-debugger/debugger-timeit.png&quot; alt=&quot;Debugger timeit&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-debugger/debugger-timeit.png" alt="Debugger timeit"&gt;&lt;/p&gt;
 &lt;h2&gt;Core improvements&lt;/h2&gt;
 &lt;p&gt;When debugging code, a lot of time can be lost stepping through other Python packages.
 To avoid that, enable the new &lt;code&gt;Ignore Python libraries while debugging&lt;/code&gt; option in Spyder's preferences under &lt;code&gt;IPython Console &amp;gt; Debugger &amp;gt; Debug&lt;/code&gt;.
 This will skip all the built-in and third-party Python modules and help you focus on your own code.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-debugger/debugger-preferences.png&quot; alt=&quot;Debugger preferences&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-debugger/debugger-preferences.png" alt="Debugger preferences"&gt;&lt;/p&gt;
 &lt;p&gt;Another pain point for me is the mix of Pdb commands and Python statements when using the interactive prompt.
 While debugging a script with a variable named &lt;code&gt;step&lt;/code&gt;, for example, typing &lt;code&gt;step&lt;/code&gt; in the Pdb prompt will not display the value of &lt;code&gt;step&lt;/code&gt;, but will instead step through the code.
 To avoid this, the Spyder 4.2 debugger will give precedence to Python expressions over Pdb commands; prefixing an expression with an exclamation mark will explicitly run it as a Pdb command.
 This matches how the IPython Console handles clashes between magic functions and Python expressions, and contrasts with the previous behavior, where Pdb commands took precedence.
 You can toggle this under &lt;code&gt;IPython Console &amp;gt; Debugger &amp;gt; Debug&lt;/code&gt; in Spyder's preferences.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-debugger/debugger-step.png&quot; alt=&quot;Debugger&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-debugger/debugger-step.png" alt="Debugger"&gt;&lt;/p&gt;
 &lt;p&gt;Here, you can see I can have a variable named &lt;code&gt;step&lt;/code&gt;, and use it just as I would in the IPython console!&lt;/p&gt;
 &lt;p&gt;While debugging, the context changes constantly, which can be annoying if you need to use a certain module in each frame.
 To address this, Spyder 4.2 will allow you to execute a snippet of code before any Pdb command.
 I personally use &lt;code&gt;import matplotlib.pyplot as plt&lt;/code&gt; so I can use Matplotlib anywhere with no extra commands!
 You'll be able to set this up for yourself under &lt;code&gt;Preferences&lt;/code&gt; &amp;gt; &lt;code&gt;IPython Console&lt;/code&gt; &amp;gt; &lt;code&gt;Debugger&lt;/code&gt; &amp;gt; &lt;code&gt;Run code while debugging&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-debugger/debugger-modules.png&quot; alt=&quot;Debugger modules&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-debugger/debugger-modules.png" alt="Debugger modules"&gt;&lt;/p&gt;
 &lt;h2&gt;Matplotlib support&lt;/h2&gt;
 &lt;p&gt;Speaking of using Matplotlib, two improvements will make your plotting life much easier while in the debugger.
 First, if you use the &lt;code&gt;inline&lt;/code&gt; backend, the &lt;code&gt;Process execute events while debugging&lt;/code&gt; option in &lt;code&gt;Preferences &amp;gt; IPython console &amp;gt; Debugger&lt;/code&gt; (on by defaults) enables plotting after each command.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-debugger/debugger-plots.png&quot; alt=&quot;Debugger plots&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-debugger/debugger-plots.png" alt="Debugger plots"&gt;&lt;/p&gt;
 &lt;p&gt;If you would rather use an interactive backend, Spyder 4.2 will allow you to do that too!
 The event loop will be running while waiting for a Pdb input, which will bring Matplotlib figures to life!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-debugger/debugger-interactive-plots.png&quot; alt=&quot;Debugger interactive plots&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-debugger/debugger-interactive-plots.png" alt="Debugger interactive plots"&gt;&lt;/p&gt;
 &lt;p&gt;For example, interactive figures are great to zoom and pan.&lt;/p&gt;
 &lt;h2&gt;Spyder Editor integration&lt;/h2&gt;
 &lt;p&gt;By clicking next to the line number in the Editor, you can set a breakpoint to stop the debugger upon reaching that line.
@@ -69,39 +51,29 @@ With a Shift-click, you can set a conditional breakpoint that will only pause ex
 This is very useful if you are debugging a loop and want to go to a specific iteration, for example!
 While debugging, the Editor will show you the line on which execution is stopped.
 If you move around in the Editor, you can always go back to the current line by using the Pdb &lt;code&gt;(w)here&lt;/code&gt; command.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-debugger/editor-breakpoints.png&quot; alt=&quot;Editor breakpoints&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-debugger/editor-breakpoints.png" alt="Editor breakpoints"&gt;&lt;/p&gt;
 &lt;p&gt;Here, you can see the Spyder debugger is stopped at the breakpoint on line 385, which is highlighted.
 The next line has a conditional breakpoint.&lt;/p&gt;
 &lt;h2&gt;Other Spyder panes&lt;/h2&gt;
 &lt;p&gt;Several other Spyder panes are useful while debugging.
 Breakpoints gives you a list of all the breakpoints you have set throughout your code.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-debugger/debugger-breakpoint.png&quot; alt=&quot;Debugger breakpoint&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-debugger/debugger-breakpoint.png" alt="Debugger breakpoint"&gt;&lt;/p&gt;
 &lt;p&gt;The Variable Explorer pane allows you to browse and modify the local namespace wherever the debugger is stopped.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-debugger/variable-explorer.png&quot; alt=&quot;Variable Explorer&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-debugger/variable-explorer.png" alt="Variable Explorer"&gt;&lt;/p&gt;
 &lt;h2&gt;The future&lt;/h2&gt;
 &lt;p&gt;I'm excited for the new Frames Explorer pane, which is currently almost ready for Spyder 5.
 Usually while debugging, it can be hard to tell from where the current function was invoked, and one must often step up a long chain of calls to figure it out.
 With the Frames Explorer, you have direct access to all the relevant call information, and you can jump around the stack easily!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-debugger/frames-explorer.png&quot; alt=&quot;Frames Explorer&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-debugger/frames-explorer.png" alt="Frames Explorer"&gt;&lt;/p&gt;
 &lt;p&gt;I can see where the current function was called from!&lt;/p&gt;
 &lt;p&gt;The next challenge I will be tackling is to enable the debugger to stop in threads.
 This is a bit difficult to implement because if two threads reach a breakpoint at the same time, only one of them can take control of the shell, leading to skipped breakpoints.
 This might be okay, but I'm still figuring that out.&lt;/p&gt;
 &lt;p&gt;Try out the new improvements in the Spyder debugger and let us know if they make your debugging easier!&lt;/p&gt;
-</content>
-  </entry>
-  <entry xml:base="https://www.spyder-ide.org/blog/STX-interview/">
-    <title type="text">STX Next, Python development company, uses Spyder to improve their workflow</title>
-    <id>urn:uuid:84ec0ff4-3c38-378c-bbf1-61662bee345f</id>
-    <updated>2020-07-25T10:00:00Z</updated>
-    <link href="https://www.spyder-ide.org/blog/STX-interview/" />
-    <author>
-      <name>juanis2112</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;a href=&quot;https://www.stxnext.com&quot;&gt;STX Next&lt;/a&gt;, one of Europe's largest Python development companies, has shared with us how Spyder has been a powerful tool for them when performing data analysis.
+</content></entry><entry><title>STX Next, Python development company, uses Spyder to improve their workflow</title><link href="https://www.spyder-ide.org/blog/STX-interview/" rel="alternate"></link><updated>2020-07-25T10:00:00Z</updated><author><name>juanis2112</name></author><id>urn:uuid:84ec0ff4-3c38-378c-bbf1-61662bee345f</id><content type="html">&lt;p&gt;&lt;a href="https://www.stxnext.com"&gt;STX Next&lt;/a&gt;, one of Europe's largest Python development companies, has shared with us how Spyder has been a powerful tool for them when performing data analysis.
 It is a pleasure for us on the Spyder team to work every day to improve the workflow of developers, scientists, engineers and data analysts.
-We are very glad to receive and share a STX Next testimonial about Spyder, along with an interview with one of their developers, &lt;a href=&quot;https://github.com/Michael-Wisniewski&quot;&gt;Michael Wiśniewski&lt;/a&gt;, who has found Spyder very useful in his job.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/STX-interview/stxnext.jpg&quot; alt=&quot;Company Picture&quot;&gt;&lt;/p&gt;
+We are very glad to receive and share a STX Next testimonial about Spyder, along with an interview with one of their developers, &lt;a href="https://github.com/Michael-Wisniewski"&gt;Michael Wiśniewski&lt;/a&gt;, who has found Spyder very useful in his job.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/STX-interview/stxnext.jpg" alt="Company Picture"&gt;&lt;/p&gt;
 &lt;h2&gt;What Michael Wiśniewski says about Spyder&lt;/h2&gt;
 &lt;p&gt;In an era of a continuously growing demand for analysis of vast amounts of data, we are facing increasingly complex tasks to perform.
 Sure, we are not alone—there are many great tools designed for scientists and data analysts.
@@ -115,7 +87,7 @@ Besides, the pane called variable explorer allows direct access to all data plac
 Just open and browse different notebooks without thinking about server-side and file paths.
 Want to run a single line of code or quickly check a chart update? IPython is on board and ready by default.&lt;/p&gt;
 &lt;h2&gt;Michael Wiśniewski's interview&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;profile.png&quot; alt=&quot;Image alt text&quot; style=&quot;margin-top: 13px; width: 280px; margin-left: 0px; margin-right: 10px; float: left;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="profile.png" alt="Image alt text" style="margin-top: 13px; width: 280px; margin-left: 0px; margin-right: 10px; float: left;"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;I’m Michael Wiśniewski and I’ve been working at STX Next as a full-stack developer for over a year.
 During this time, I was involved in various projects from many different areas—from typical web applications where I used Python and JavaScript to implementing ML solutions for image recognition on the nVidia Jetson platform.
 After hours, my colleagues and I run a machine learning community of practice. Today, I’d like to share my thoughts on using Spyder.&lt;/em&gt;&lt;/p&gt;
@@ -128,7 +100,7 @@ The number is growing, since most people try Spyder out after their first contac
 &lt;h3&gt;&lt;em&gt;What kind of projects have you done using Spyder?&lt;/em&gt;&lt;/h3&gt;
 &lt;p&gt;I’ve found applications for Spyder in many different areas.
 One time, I used it for a project that relied on machine learning algorithms to assess risk based on documents provided by a user.
-Since Spyder aggregates out-of-the-box the most &lt;a href=&quot;https://www.stxnext.com/blog/most-popular-python-scientific-libraries/&quot;&gt;popular scientific Python packages&lt;/a&gt;, it was used during the whole development process, from data pre-processing and visualization to assessment of the final solution.&lt;/p&gt;
+Since Spyder aggregates out-of-the-box the most &lt;a href="https://www.stxnext.com/blog/most-popular-python-scientific-libraries/"&gt;popular scientific Python packages&lt;/a&gt;, it was used during the whole development process, from data pre-processing and visualization to assessment of the final solution.&lt;/p&gt;
 &lt;p&gt;Another time, Spyder proved to be very helpful in a project involving the analysis of ancient religious texts.
 The task was to create a script that would check file integrity and the correctness of the texts themselves.
 Because of the large size of the data sets, the script had to be efficient and able to handle a lot of edge cases.
@@ -155,26 +127,16 @@ However, many users prefer to have some features like comparing file versions, c
 &lt;p&gt;We would like to thank Michael Wiśniewski, Milosz Galganek and all the STX Next team for sharing their experiences with Spyder.
 It is very important for us to provide a scientific tool that can make a positive impact on the amazing work our users are doing, and Michael's testimony gives us great insight on how Spyder is making a difference in the real world and how to make it better for the future.&lt;/p&gt;
 &lt;p&gt;If you have your own stories about how Spyder is helping you with a cool programming project, conduct critical scientific research, or use data to improve your community, we'd love to feature it here!
-Feel free to reach out to us on &lt;a href=&quot;https://github.com/spyder-ide/spyder&quot;&gt;Github&lt;/a&gt;, &lt;a href=&quot;https://gitter.im/spyder-ide/public&quot;&gt;Gitter&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/spyder_ide&quot;&gt;Twitter&lt;/a&gt;, &lt;a href=&quot;https://www.facebook.com/SpyderIDE/&quot;&gt;Facebook&lt;/a&gt; or our other platforms linked below if you're interested.
+Feel free to reach out to us on &lt;a href="https://github.com/spyder-ide/spyder"&gt;Github&lt;/a&gt;, &lt;a href="https://gitter.im/spyder-ide/public"&gt;Gitter&lt;/a&gt;, &lt;a href="https://twitter.com/spyder_ide"&gt;Twitter&lt;/a&gt;, &lt;a href="https://www.facebook.com/SpyderIDE/"&gt;Facebook&lt;/a&gt; or our other platforms linked below if you're interested.
 We're looking forward to hearing about what Spyder means to you! Happy Spydering!&lt;/p&gt;
-</content>
-  </entry>
-  <entry xml:base="https://www.spyder-ide.org/blog/tutorial-docs/">
-    <title type="text">Writing docs is not just writing docs</title>
-    <id>urn:uuid:b856479c-408d-3346-a281-986a44791c5a</id>
-    <updated>2020-07-08T10:00:00Z</updated>
-    <link href="https://www.spyder-ide.org/blog/tutorial-docs/" />
-    <author>
-      <name>juanis2112</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;em&gt;This blogpost was originally published on the &lt;a href=&quot;https://labs.quansight.org/blog/2020/07/writing-docs-is-not-just-writing-docs/&quot;&gt;Quansight Labs website&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+</content></entry><entry><title>Writing docs is not just writing docs</title><link href="https://www.spyder-ide.org/blog/tutorial-docs/" rel="alternate"></link><updated>2020-07-08T10:00:00Z</updated><author><name>juanis2112</name></author><id>urn:uuid:b856479c-408d-3346-a281-986a44791c5a</id><content type="html">&lt;p&gt;&lt;em&gt;This blogpost was originally published on the &lt;a href="https://labs.quansight.org/blog/2020/07/writing-docs-is-not-just-writing-docs/"&gt;Quansight Labs website&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;I joined the Spyder team almost two years ago, and I never thought I was going to end up working on docs.
-Six months ago I started a project with &lt;a href=&quot;https://github.com/CAM-Gerlach&quot;&gt;CAM Gerlach&lt;/a&gt; and &lt;a href=&quot;https://github.com/ccordoba12&quot;&gt;Carlos Cordoba&lt;/a&gt; to improve Spyder’s documentation.
+Six months ago I started a project with &lt;a href="https://github.com/CAM-Gerlach"&gt;CAM Gerlach&lt;/a&gt; and &lt;a href="https://github.com/ccordoba12"&gt;Carlos Cordoba&lt;/a&gt; to improve Spyder’s documentation.
 At first, I didn’t actually understand how important docs are for software, especially for open source projects.
 However, during all this time I’ve learned how documentation has a huge impact on the open-source community and I’ve been thankful to have been able to do this.
 But, from the beginning, I asked myself “why am I the ‘right person’ for this?”&lt;/p&gt;
 &lt;p&gt;Improving Spyder’s documentation started as part of a NumFOCUS Small Development Grant awarded at the end of last year.
-The goal of the project was not only to &lt;a href=&quot;https://docs.spyder-ide.org/develop/&quot;&gt;update the documentation&lt;/a&gt; for Spyder 4, but also to make it more user-friendly, so users can understand Spyder’s key concepts and get started with it more easily.&lt;/p&gt;
+The goal of the project was not only to &lt;a href="https://docs.spyder-ide.org/develop/"&gt;update the documentation&lt;/a&gt; for Spyder 4, but also to make it more user-friendly, so users can understand Spyder’s key concepts and get started with it more easily.&lt;/p&gt;
 &lt;p&gt;One of the main ideas for this project was to create a series of short video tutorials, explaining the basic functionality of Spyder and its most important panes, allowing users to learn how to use Spyder faster and easier.&lt;/p&gt;
 &lt;p&gt;Carlos Cordoba, our lead maintainer, thought I was the perfect person for this project because of my “good communication and organization skills”, my “clear and fluent English” (his words) and my previous experience at video editing and recording, which I actually gained by recording singing videos during my “YouTuber” phase.&lt;/p&gt;
 &lt;p&gt;I’ve always been interested in education and worked as a tutor for several years learning different tools, gaining experience on how to teach and questioning the effectiveness of current educational methods.
@@ -188,211 +150,151 @@ However, if I’m a completely new user and I don’t even know how to open it, 
 &lt;p&gt;I planned these videos as a series of progressive steps that can get users from zero experience to actually working with Spyder.
 Hence, I divided the videos into three sections, “First Steps with Spyder”, “Working with Spyder”, and “Building Projects with Spyder”.
 Each section builds on the one before in a way that they are clear enough so that users can find their way through Spyder without knowing anything about it.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&quot;https://www.youtube.com/playlist?list=PLPonohdiDqg9epClEcXoAPUiK0pN5eRoc&quot;&gt;“First Steps with Spyder”&lt;/a&gt; section, live now on our YouTube channel, has three videos that provide a starting point for new users before they even open Spyder for the first time.
-The &lt;a href=&quot;https://youtu.be/E2Dap5SfXkI&quot;&gt;first tutorial&lt;/a&gt; covers different ways of opening Spyder, the basics of using its interface and an introduction to its four main panes, along with a quick look at the others so that users can get familiar with how Spyder is organized.&lt;/p&gt;
-&lt;p&gt;In the &lt;a href=&quot;https://youtu.be/WV9bm4ey7Cg&quot;&gt;second video&lt;/a&gt;, users can learn the basics of using Spyder’s four main panes.
+&lt;p&gt;The &lt;a href="https://www.youtube.com/playlist?list=PLPonohdiDqg9epClEcXoAPUiK0pN5eRoc"&gt;“First Steps with Spyder”&lt;/a&gt; section, live now on our YouTube channel, has three videos that provide a starting point for new users before they even open Spyder for the first time.
+The &lt;a href="https://youtu.be/E2Dap5SfXkI"&gt;first tutorial&lt;/a&gt; covers different ways of opening Spyder, the basics of using its interface and an introduction to its four main panes, along with a quick look at the others so that users can get familiar with how Spyder is organized.&lt;/p&gt;
+&lt;p&gt;In the &lt;a href="https://youtu.be/WV9bm4ey7Cg"&gt;second video&lt;/a&gt;, users can learn the basics of using Spyder’s four main panes.
 The goal is that after this video, users are able to open and edit a file in the Editor, run a script and find the output in Spyder’s IPython Console and execute basic Python commands.
 They should be able to interact with the Variable Explorer to browse and edit the objects in the console, and use the Help pane to get documentation in two different ways.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&quot;https://youtu.be/-dARZBUDk_s&quot;&gt;third video&lt;/a&gt; is meant to show users how to customize Spyder’s interface to start working with it in the way they feel more comfortable according to their preferences.
+&lt;p&gt;The &lt;a href="https://youtu.be/-dARZBUDk_s"&gt;third video&lt;/a&gt; is meant to show users how to customize Spyder’s interface to start working with it in the way they feel more comfortable according to their preferences.
 It teaches users how to change the font and the theme of Spyder and rearrange its panes to display only the ones that they want such that it is easier for them to work.&lt;/p&gt;
 &lt;p&gt;After these three videos, I learned that one of the most important things for writing documentation, more than having a lot of experience with the software, is empathy.
 Usually being a developer makes it hard to put yourself in the position of a user and understand exactly what a user needs.
 Now, I realize that this is what actually makes me the “perfect person” for the project.
 As a junior developer, without as much experience with Spyder, I was able to think more like new users and develop content in a way that they feel closer to us developers.
-In the end, as Melissa said in her &lt;a href=&quot;https://labs.quansight.org/blog/2020/03/documentation-as-a-way-to-build-community/&quot;&gt;blog post&lt;/a&gt;, I learned writing documentation is also a way of building community.&lt;/p&gt;
+In the end, as Melissa said in her &lt;a href="https://labs.quansight.org/blog/2020/03/documentation-as-a-way-to-build-community/"&gt;blog post&lt;/a&gt;, I learned writing documentation is also a way of building community.&lt;/p&gt;
 &lt;p&gt;I hope these videos are really useful, and I look forward to continue finding ways of making the open source community better.&lt;/p&gt;
 &lt;p&gt;Happy Spydering!&lt;/p&gt;
-</content>
-  </entry>
-  <entry xml:base="https://www.spyder-ide.org/blog/release-spyder-4/">
-    <title type="text">Thanking the people behind Spyder 4</title>
-    <id>urn:uuid:dbd086ca-5b3c-3a32-9f42-a8fbbe5f1199</id>
-    <updated>2020-06-12T18:00:00Z</updated>
-    <link href="https://www.spyder-ide.org/blog/release-spyder-4/" />
-    <author>
-      <name>ccordoba12</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;em&gt;This blogpost was originally published on the &lt;a href=&quot;https://labs.quansight.org/blog/2020/04/thanking-the-people-behind-spyder-4/&quot;&gt;Quansight Labs website&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+</content></entry><entry><title>Thanking the people behind Spyder 4</title><link href="https://www.spyder-ide.org/blog/release-spyder-4/" rel="alternate"></link><updated>2020-06-12T18:00:00Z</updated><author><name>ccordoba12</name></author><id>urn:uuid:dbd086ca-5b3c-3a32-9f42-a8fbbe5f1199</id><content type="html">&lt;p&gt;&lt;em&gt;This blogpost was originally published on the &lt;a href="https://labs.quansight.org/blog/2020/04/thanking-the-people-behind-spyder-4/"&gt;Quansight Labs website&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;After more than three years in development and more than 5000 commits from 60 authors around the world, Spyder 4 finally saw the light on December 5, 2019!
-I decided to wait until now to write a blogpost about it because shortly after the initial release, we found several critical performance issues and some regressions with respect to Spyder 3, most of which are fixed now in &lt;a href=&quot;https://github.com/spyder-ide/spyder/releases/tag/v4.1.3&quot;&gt;version 4.1.3&lt;/a&gt;, released on May 8th 2020.&lt;/p&gt;
+I decided to wait until now to write a blogpost about it because shortly after the initial release, we found several critical performance issues and some regressions with respect to Spyder 3, most of which are fixed now in &lt;a href="https://github.com/spyder-ide/spyder/releases/tag/v4.1.3"&gt;version 4.1.3&lt;/a&gt;, released on May 8th 2020.&lt;/p&gt;
 &lt;p&gt;This new release comes with a lengthy list of user-requested features aimed at providing an enhanced development experience at the level of top general-purpose editors and IDEs, while strengthening Spyder's specialized focus on scientific programming in Python.
-The interested reader can take a look at some of them in &lt;a href=&quot;https://www.spyder-ide.org/blog/spyder-variable-explorer/&quot;&gt;previous&lt;/a&gt; &lt;a href=&quot;https://www.spyder-ide.org/blog/spyder-files-improvements/&quot;&gt;blog&lt;/a&gt; &lt;a href=&quot;https://www.spyder-ide.org/blog/spyder-kite-funding/&quot;&gt;posts&lt;/a&gt;, and in detail in our &lt;a href=&quot;https://github.com/spyder-ide/spyder/blob/master/CHANGELOG.md#version-400-2019-12-06&quot;&gt;Changelog&lt;/a&gt;.
+The interested reader can take a look at some of them in &lt;a href="https://www.spyder-ide.org/blog/spyder-variable-explorer/"&gt;previous&lt;/a&gt; &lt;a href="https://www.spyder-ide.org/blog/spyder-files-improvements/"&gt;blog&lt;/a&gt; &lt;a href="https://www.spyder-ide.org/blog/spyder-kite-funding/"&gt;posts&lt;/a&gt;, and in detail in our &lt;a href="https://github.com/spyder-ide/spyder/blob/master/CHANGELOG.md#version-400-2019-12-06"&gt;Changelog&lt;/a&gt;.
 However, this post is not meant to describe those improvements, but to acknowledge all people that contributed to making Spyder 4 possible.&lt;/p&gt;
 &lt;p&gt;Spyder 4 is the first version developed with financial support from multiple companies and organizations, as well as donations by the international user community.
 However, as a project, we couldn't have been able to reach the level of maturity needed to receive and handle that support without the pivotal opportunities Travis Oliphant, former CEO of Anaconda and current leader of Quansight, gave me to work in Scientific Python.
 Thanks to him, I became part of Anaconda Inc. in 2015; I was able to hire a small small team to improve Spyder within Anaconda in late 2016; and I was hired by Quansight to work solely on Spyder in 2018.
-As with other projects in our ecosystem, such as &lt;a href=&quot;https://github.com/bokeh/bokeh&quot;&gt;Bokeh&lt;/a&gt;, &lt;a href=&quot;https://github.com/dask/dask&quot;&gt;Dask&lt;/a&gt; and &lt;a href=&quot;https://github.com/numba/numba&quot;&gt;Numba&lt;/a&gt;, Spyder benefited immensely from Travis' trust in the role these efforts and ours could play in the future.
+As with other projects in our ecosystem, such as &lt;a href="https://github.com/bokeh/bokeh"&gt;Bokeh&lt;/a&gt;, &lt;a href="https://github.com/dask/dask"&gt;Dask&lt;/a&gt; and &lt;a href="https://github.com/numba/numba"&gt;Numba&lt;/a&gt;, Spyder benefited immensely from Travis' trust in the role these efforts and ours could play in the future.
 He certainly believed in the vision their maintainers worked so hard to make a reality, even if their beginnings were humble and their chances of survival uncertain.
 Therefore, my first big acknowledgment is to Travis: thanks for giving us a chance!&lt;/p&gt;
 &lt;p&gt;I also want to thank our community for its continued support.
 As I've witnessed during my years as Spyder's lead developer, many newbies and veterans alike keep choosing Spyder as their primary tool for scientific programming in Python.
 It's really you, the members of this fantastic community, which keep Spyder relevant in a highly competitive field by using and contributing back to it.
-Furthermore, when the future looked grim, after my team and I were let go from Anaconda at the end of 2017 (not by Travis' decision), a lot of users came to our rescue by making donations through our &lt;a href=&quot;https://opencollective.com/spyder&quot;&gt;Open Collective page&lt;/a&gt;.
+Furthermore, when the future looked grim, after my team and I were let go from Anaconda at the end of 2017 (not by Travis' decision), a lot of users came to our rescue by making donations through our &lt;a href="https://opencollective.com/spyder"&gt;Open Collective page&lt;/a&gt;.
 That, and a NumFOCUS development grant we received the next year, filled us with confidence and allowed us to continue with Spyder's development in 2018, even after losing part of our team in the process.&lt;/p&gt;
 &lt;p&gt;Last year it was also a pleasant surprise to learn that several companies were interested in seeing Spyder prosper and thrive.
-Through Quansight Labs and its &lt;a href=&quot;https://labs.quansight.org/blog/2019/05/community-driven-opensource-funded-development/&quot;&gt;Community Work Order&lt;/a&gt; concept, we were able to sign contracts with two of them: &lt;a href=&quot;https://www.micronas.tdk.com/en&quot;&gt;TDK-Micronas&lt;/a&gt; and &lt;a href=&quot;https://kite.com/&quot;&gt;Kite&lt;/a&gt;.
+Through Quansight Labs and its &lt;a href="https://labs.quansight.org/blog/2019/05/community-driven-opensource-funded-development/"&gt;Community Work Order&lt;/a&gt; concept, we were able to sign contracts with two of them: &lt;a href="https://www.micronas.tdk.com/en"&gt;TDK-Micronas&lt;/a&gt; and &lt;a href="https://kite.com/"&gt;Kite&lt;/a&gt;.
 Their support was critical to finish Spyder 4 because it allowed me to hire most of my old Anaconda team back, plus two new additions, to work full-time on the project.
 Therefore, I can't thank them enough for showing up just at the right time!&lt;/p&gt;
-&lt;p&gt;And finally, even when I am often seen as the public face of Spyder, due to my presence in our &lt;a href=&quot;https://github.com/spyder-ide/spyder/issues&quot;&gt;issue tracker&lt;/a&gt; and &lt;a href=&quot;https://stackoverflow.com/users/438386/carlos-cordoba&quot;&gt;Stack Overflow&lt;/a&gt;, it's really the Spyder team that is in charge of implementing new features and fixing most bugs.
+&lt;p&gt;And finally, even when I am often seen as the public face of Spyder, due to my presence in our &lt;a href="https://github.com/spyder-ide/spyder/issues"&gt;issue tracker&lt;/a&gt; and &lt;a href="https://stackoverflow.com/users/438386/carlos-cordoba"&gt;Stack Overflow&lt;/a&gt;, it's really the Spyder team that is in charge of implementing new features and fixing most bugs.
 So my last round of acknowledgments goes to them.
 I was fortunate enough to convince some of the most talented Colombian software developers to work for the project, and to attract the interest of several other equally accomplished developers from around the world.
 All of them did a hell of a job in this release!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/jnsebgosselin&quot;&gt;Jean-Sébastien Gosselin&lt;/a&gt; contributed our new Plots pane in its entirety; &lt;a href=&quot;https://github.com/impact27&quot;&gt;Quentin Peter&lt;/a&gt; did a complete re-architecting of our IPython console, which enabled numerous improvements to our debugger; &lt;a href=&quot;https://github.com/jitseniesen&quot;&gt;Jitse Niesen&lt;/a&gt; added auto-saving functionality to our editor; &lt;a href=&quot;https://github.com/bcolsen&quot;&gt;Brian Olsen&lt;/a&gt; contributed the initial implementation of the &lt;code&gt;runcell&lt;/code&gt; command; and &lt;a href=&quot;https://github.com/CAM-Gerlach&quot;&gt;CAM Gerlach&lt;/a&gt; made significant improvements to our documentation.
-&lt;a href=&quot;https://github.com/goanpeca/&quot;&gt;Gonzalo Peña-Castellanos&lt;/a&gt; helped us to greatly improve the user experience of code completion and linting in the editor, implemented most of the enhancements to the Files pane, and refactored and improved our configuration system; &lt;a href=&quot;https://github.com/andfoy&quot;&gt;Edgar Margffoy&lt;/a&gt; single-handedly created a client to support the same &lt;a href=&quot;https://microsoft.github.io/language-server-protocol/&quot;&gt;protocol&lt;/a&gt; used by VSCode to provide completion and linting for lots of programming languages, added code snippet completions and vastly improved code folding in the editor; &lt;a href=&quot;https://github.com/dalthviz&quot;&gt;Daniel Althviz&lt;/a&gt; developed the necessary infrastructure to install and use Kite smoothly within Spyder, and added the new object viewer to the Variable Explorer.
-Finally, our junior developers, &lt;a href=&quot;https://github.com/steff456&quot;&gt;Stephannie Jimenez&lt;/a&gt; and &lt;a href=&quot;https://github.com/juanis2112&quot;&gt;Juanita Gomez&lt;/a&gt;, although still finding their way around our complex codebase, managed to make important contributions, such as improving the icons we use per file type in Files (Juanita), and allowing users to run code in an external system terminal on macOS (Stephannie).&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/jnsebgosselin"&gt;Jean-Sébastien Gosselin&lt;/a&gt; contributed our new Plots pane in its entirety; &lt;a href="https://github.com/impact27"&gt;Quentin Peter&lt;/a&gt; did a complete re-architecting of our IPython console, which enabled numerous improvements to our debugger; &lt;a href="https://github.com/jitseniesen"&gt;Jitse Niesen&lt;/a&gt; added auto-saving functionality to our editor; &lt;a href="https://github.com/bcolsen"&gt;Brian Olsen&lt;/a&gt; contributed the initial implementation of the &lt;code&gt;runcell&lt;/code&gt; command; and &lt;a href="https://github.com/CAM-Gerlach"&gt;CAM Gerlach&lt;/a&gt; made significant improvements to our documentation.
+&lt;a href="https://github.com/goanpeca/"&gt;Gonzalo Peña-Castellanos&lt;/a&gt; helped us to greatly improve the user experience of code completion and linting in the editor, implemented most of the enhancements to the Files pane, and refactored and improved our configuration system; &lt;a href="https://github.com/andfoy"&gt;Edgar Margffoy&lt;/a&gt; single-handedly created a client to support the same &lt;a href="https://microsoft.github.io/language-server-protocol/"&gt;protocol&lt;/a&gt; used by VSCode to provide completion and linting for lots of programming languages, added code snippet completions and vastly improved code folding in the editor; &lt;a href="https://github.com/dalthviz"&gt;Daniel Althviz&lt;/a&gt; developed the necessary infrastructure to install and use Kite smoothly within Spyder, and added the new object viewer to the Variable Explorer.
+Finally, our junior developers, &lt;a href="https://github.com/steff456"&gt;Stephannie Jimenez&lt;/a&gt; and &lt;a href="https://github.com/juanis2112"&gt;Juanita Gomez&lt;/a&gt;, although still finding their way around our complex codebase, managed to make important contributions, such as improving the icons we use per file type in Files (Juanita), and allowing users to run code in an external system terminal on macOS (Stephannie).&lt;/p&gt;
 &lt;p&gt;I hope you all enjoy the results of this massive effort!
 And happy Spydering!!!&lt;/p&gt;
-</content>
-  </entry>
-  <entry xml:base="https://www.spyder-ide.org/blog/spyder-terminal-030/">
-    <title type="text">Creating the ultimate terminal experience in Spyder 4 with Spyder-Terminal</title>
-    <id>urn:uuid:0f6333d5-c432-35ec-972d-11c88f5bed5c</id>
-    <updated>2020-04-22T17:00:00Z</updated>
-    <link href="https://www.spyder-ide.org/blog/spyder-terminal-030/" />
-    <author>
-      <name>steff456</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;em&gt;This blogpost was originally published on the &lt;a href=&quot;https://labs.quansight.org/blog/2020/02/creating-the-ultimate-terminal-experience-in-Spyder-4-with-Spyder-Terminal/&quot;&gt;Quansight Labs website&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&quot;https://github.com/spyder-ide/spyder-terminal&quot;&gt;Spyder-Terminal&lt;/a&gt; project is revitalized! The new 0.3.0 version adds numerous features that improve the user experience, and enhances compatibility with the latest Spyder 4 release, in part thanks to the improvements made in the &lt;a href=&quot;https://github.com/xtermjs/xterm.js&quot;&gt;xterm.js&lt;/a&gt; project.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-terminal-030/terminal.png&quot; alt=&quot;Screenshot of the new spyder-terminal&quot;&gt;&lt;/p&gt;
+</content></entry><entry><title>Creating the ultimate terminal experience in Spyder 4 with Spyder-Terminal</title><link href="https://www.spyder-ide.org/blog/spyder-terminal-030/" rel="alternate"></link><updated>2020-04-22T17:00:00Z</updated><author><name>steff456</name></author><id>urn:uuid:0f6333d5-c432-35ec-972d-11c88f5bed5c</id><content type="html">&lt;p&gt;&lt;em&gt;This blogpost was originally published on the &lt;a href="https://labs.quansight.org/blog/2020/02/creating-the-ultimate-terminal-experience-in-Spyder-4-with-Spyder-Terminal/"&gt;Quansight Labs website&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://github.com/spyder-ide/spyder-terminal"&gt;Spyder-Terminal&lt;/a&gt; project is revitalized! The new 0.3.0 version adds numerous features that improve the user experience, and enhances compatibility with the latest Spyder 4 release, in part thanks to the improvements made in the &lt;a href="https://github.com/xtermjs/xterm.js"&gt;xterm.js&lt;/a&gt; project.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-terminal-030/terminal.png" alt="Screenshot of the new spyder-terminal"&gt;&lt;/p&gt;
 &lt;h2&gt;Upgrade to ES6/JSX syntax&lt;/h2&gt;
 &lt;p&gt;First, we were able to update all the old JavaScript files to use ES6/JSX syntax and the tests for the client terminal. This change simplified the code base and maintenance and allows us to easily extend the project to new functionalities that the xterm.js API offers. In order to compile this code and run it inside Spyder, we migrated our deployment to Webpack.&lt;/p&gt;
 &lt;h2&gt;Multiple shells per operating system&lt;/h2&gt;
 &lt;p&gt;In the new release, you now have the ability to configure which shell to use in the terminal. On Linux and UNIX systems, &lt;code&gt;bash&lt;/code&gt;, &lt;code&gt;sh&lt;/code&gt;, &lt;code&gt;ksh&lt;/code&gt;, &lt;code&gt;zsh&lt;/code&gt;, &lt;code&gt;csh&lt;/code&gt;, &lt;code&gt;pwsh&lt;/code&gt;, &lt;code&gt;tcsh&lt;/code&gt;, &lt;code&gt;screen&lt;/code&gt;, &lt;code&gt;tmux&lt;/code&gt;, &lt;code&gt;dash&lt;/code&gt; and &lt;code&gt;rbash&lt;/code&gt; are supported, while &lt;code&gt;cmd&lt;/code&gt; and &lt;code&gt;powershell&lt;/code&gt; are the available options on Windows. To select your preferred command processor, simply choose it from the menu in the &lt;code&gt;Terminal&lt;/code&gt; pane of Spyder's preferences and restart the IDE.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-terminal-030/shells.png&quot; alt=&quot;UNIX shell options for starting the terminal&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-terminal-030/shells.png" alt="UNIX shell options for starting the terminal"&gt;&lt;/p&gt;
 &lt;p&gt;This is a great feature because it allows the user to determine their shell interpreter among the ones that are installed in their systems. In this way, Spyder-Terminal can be configured with any of the existing shells as long as it is available on their machine.&lt;/p&gt;
 &lt;h2&gt;Theme support and new UI options&lt;/h2&gt;
 &lt;p&gt;Another big change in the new version is built-in support for all Spyder's light and dark themes. When you change your Spyder theme or display options, the Terminal automatically adapt its UI, colors and fonts accordingly.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-terminal-030/terminal-colors.gif&quot; alt=&quot;Spyder-Terminal new themes&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-terminal-030/terminal-colors.gif" alt="Spyder-Terminal new themes"&gt;&lt;/p&gt;
 &lt;p&gt;Building on the look and feel of the plugin, we also added configurable options for the terminal sounds and the cursor style. In this way, you can choose whether the terminal uses a bell sound and can select from one of three cursors.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-terminal-030/cursor-style.png&quot; alt=&quot;Cursor options for Spyder-Terminal&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-terminal-030/cursor-style.png" alt="Cursor options for Spyder-Terminal"&gt;&lt;/p&gt;
 &lt;h2&gt;Shortcut configuration&lt;/h2&gt;
 &lt;p&gt;Lastly, the shortcuts on the terminal are configurable within the keyboard shortcuts in Spyder 4. The terminal's shortcuts for &lt;code&gt;Copy&lt;/code&gt;, &lt;code&gt;Paste&lt;/code&gt;, &lt;code&gt;Clean&lt;/code&gt; and &lt;code&gt;New terminal&lt;/code&gt; are now no longer hardcoded.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-terminal-030/shortcuts.png&quot; alt=&quot;Configurable shortcuts for the Terminal inside Spyder 4&quot;&gt;&lt;/p&gt;
-&lt;p&gt;We're excited for you to try out Spyder-Terminal 0.3.0 and experiment with the new features available; we'd like to thank &lt;a href=&quot;https://numfocus.org/&quot;&gt;NumFOCUS&lt;/a&gt; and Quansight for providing the funding and support that made all this work possible. Check back soon for more Spyder updates, and until then, happy coding!&lt;/p&gt;
-</content>
-  </entry>
-  <entry xml:base="https://www.spyder-ide.org/blog/spyder-variable-explorer/">
-    <title type="text">Variable Explorer improvements in Spyder 4</title>
-    <id>urn:uuid:42ae990a-9d31-3792-bd94-a27a0f7c21c7</id>
-    <updated>2019-11-28T20:00:00Z</updated>
-    <link href="https://www.spyder-ide.org/blog/spyder-variable-explorer/" />
-    <author>
-      <name>dalthviz</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;em&gt;This blogpost was originally published on the &lt;a href=&quot;https://labs.quansight.org/blog/2019/11/variable-explorer-improvements-in-Spyder-4/&quot;&gt;Quansight Labs website&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.spyder-ide.org/&quot;&gt;Spyder&lt;/a&gt; 4 will be released very soon with lots of interesting new features that you'll want to check out, reflecting years of effort by the team to improve the user experience. In this post, we will be talking about the improvements made to the Variable Explorer.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-terminal-030/shortcuts.png" alt="Configurable shortcuts for the Terminal inside Spyder 4"&gt;&lt;/p&gt;
+&lt;p&gt;We're excited for you to try out Spyder-Terminal 0.3.0 and experiment with the new features available; we'd like to thank &lt;a href="https://numfocus.org/"&gt;NumFOCUS&lt;/a&gt; and Quansight for providing the funding and support that made all this work possible. Check back soon for more Spyder updates, and until then, happy coding!&lt;/p&gt;
+</content></entry><entry><title>Variable Explorer improvements in Spyder 4</title><link href="https://www.spyder-ide.org/blog/spyder-variable-explorer/" rel="alternate"></link><updated>2019-11-28T20:00:00Z</updated><author><name>dalthviz</name></author><id>urn:uuid:42ae990a-9d31-3792-bd94-a27a0f7c21c7</id><content type="html">&lt;p&gt;&lt;em&gt;This blogpost was originally published on the &lt;a href="https://labs.quansight.org/blog/2019/11/variable-explorer-improvements-in-Spyder-4/"&gt;Quansight Labs website&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.spyder-ide.org/"&gt;Spyder&lt;/a&gt; 4 will be released very soon with lots of interesting new features that you'll want to check out, reflecting years of effort by the team to improve the user experience. In this post, we will be talking about the improvements made to the Variable Explorer.&lt;/p&gt;
 &lt;p&gt;These include the brand new Object Explorer for inspecting arbitrary Python variables, full support for MultiIndex dataframes with multiple dimensions, and the ability to filter and search for variables by name and type, and much more.&lt;/p&gt;
-&lt;p&gt;It is important to mention that several of the above improvements were made possible through integrating the work of two other projects. Code from &lt;a href=&quot;https://github.com/TabViewer/gtabview&quot;&gt;gtabview&lt;/a&gt; was used to implement the multi-dimensional Pandas indexes, while &lt;a href=&quot;https://github.com/titusjan/objbrowser&quot;&gt;objbrowser&lt;/a&gt; was the foundation of the new Object Explorer.&lt;/p&gt;
+&lt;p&gt;It is important to mention that several of the above improvements were made possible through integrating the work of two other projects. Code from &lt;a href="https://github.com/TabViewer/gtabview"&gt;gtabview&lt;/a&gt; was used to implement the multi-dimensional Pandas indexes, while &lt;a href="https://github.com/titusjan/objbrowser"&gt;objbrowser&lt;/a&gt; was the foundation of the new Object Explorer.&lt;/p&gt;
 &lt;h2&gt;New viewer for arbitrary Python objects&lt;/h2&gt;
 &lt;p&gt;For Spyder 4 we added a long-requested feature: full support for inspecting any kind of Python object through the Variable Explorer. For many years, Spyder has been able to view and edit a small subset of Python variables: NumPy arrays, Pandas DataFrames and Series, and builtin collections (lists, dictionaries and tuples). Other objects were displayed as dictionaries of their attributes, inspecting any of which required showing a new table. This made it rather cumbersome to use this functionality, and was the reason arbitrary Python objects were hidden by default from the Variable Explorer view.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-variable-explorer/python-viewer.png&quot; alt=&quot;Python Viewer&quot;&gt;&lt;/p&gt;
-&lt;p&gt;For the forthcoming Spyder release, we've integrated the excellent &lt;a href=&quot;https://github.com/titusjan/objbrowser&quot;&gt;objbrowser&lt;/a&gt; project by Pepijn Kenter (&lt;a href=&quot;https://github.com/titusjan&quot;&gt;@titusjan&lt;/a&gt;), which provides a tree-like view of Python objects, to offer a much simpler and more user-friendly way to inspect them.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-variable-explorer/python-viewer-metadata.png&quot; alt=&quot;Python Viewer Metadata&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-variable-explorer/python-viewer.png" alt="Python Viewer"&gt;&lt;/p&gt;
+&lt;p&gt;For the forthcoming Spyder release, we've integrated the excellent &lt;a href="https://github.com/titusjan/objbrowser"&gt;objbrowser&lt;/a&gt; project by Pepijn Kenter (&lt;a href="https://github.com/titusjan"&gt;@titusjan&lt;/a&gt;), which provides a tree-like view of Python objects, to offer a much simpler and more user-friendly way to inspect them.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-variable-explorer/python-viewer-metadata.png" alt="Python Viewer Metadata"&gt;&lt;/p&gt;
 &lt;p&gt;As can be seen above, this viewer will also allow users to browse extra metadata about the inspected object, such as its documentation, source code and the file that holds it.
-It is very important to note that this work was accomplished thanks to the generosity of Pepijn, who kindly changed the license of &lt;a href=&quot;https://github.com/titusjan/objbrowser&quot;&gt;objbrowser&lt;/a&gt; to allow us to integrate it with Spyder.
-To expose this new functionality, we decided to set the option to hide arbitrary Python objects in the Variable Explorer to disabled by default, and introduced a new one called &lt;code&gt;Exclude callables and modules&lt;/code&gt;. With this enabled by default, Spyder will now display a much larger fraction of objects that can be inspected, while still excluding most &quot;uninteresting&quot; variables.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-variable-explorer/exclude-callables-modules.png&quot; alt=&quot;Exclude callables modules&quot;&gt;&lt;/p&gt;
+It is very important to note that this work was accomplished thanks to the generosity of Pepijn, who kindly changed the license of &lt;a href="https://github.com/titusjan/objbrowser"&gt;objbrowser&lt;/a&gt; to allow us to integrate it with Spyder.
+To expose this new functionality, we decided to set the option to hide arbitrary Python objects in the Variable Explorer to disabled by default, and introduced a new one called &lt;code&gt;Exclude callables and modules&lt;/code&gt;. With this enabled by default, Spyder will now display a much larger fraction of objects that can be inspected, while still excluding most "uninteresting" variables.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-variable-explorer/exclude-callables-modules.png" alt="Exclude callables modules"&gt;&lt;/p&gt;
 &lt;p&gt;Finally, we added a context-menu action to open any object using the new Object Explorer even if they already have a builtin viewer (DataFrames, arrays, etc), allowing for deeper inspection of the inner workings of these datatypes.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-variable-explorer/view-object-explorer.png&quot; alt=&quot;View object explorer&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-variable-explorer/view-object-explorer.png" alt="View object explorer"&gt;&lt;/p&gt;
 &lt;h2&gt;Multi-index support in the dataframe viewer&lt;/h2&gt;
 &lt;p&gt;One of the first features we added to the Variable Explorer in Spyder 4 was MultiIndex support in its DataFrame inspector, including for multi-level and multi-dimensional indices. Spyder 3 had basic support for such, but it was very rudimentary, making inspecting such DataFrames a less than user-friendly experience.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-variable-explorer/multi-index-support.png&quot; alt=&quot;Multi-index support&quot;&gt;&lt;/p&gt;
-&lt;p&gt;For Spyder 4, we took advantage of the work done by Scott Hansen (&lt;a href=&quot;https://github.com/firecat53&quot;&gt;@firecat53&lt;/a&gt;) and Yuri D'Elia (&lt;a href=&quot;https://github.com/wavexx&quot;&gt;@wavexx&lt;/a&gt;) in their &lt;a href=&quot;https://github.com/TabViewer/gtabview&quot;&gt;gtabview&lt;/a&gt; project, particularly its improved management of column and table headings, which allows the new version of Spyder to display the index shown above in a much nicer way.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-variable-explorer/table-headings.png&quot; alt=&quot;Table headings&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-variable-explorer/multi-index-support.png" alt="Multi-index support"&gt;&lt;/p&gt;
+&lt;p&gt;For Spyder 4, we took advantage of the work done by Scott Hansen (&lt;a href="https://github.com/firecat53"&gt;@firecat53&lt;/a&gt;) and Yuri D'Elia (&lt;a href="https://github.com/wavexx"&gt;@wavexx&lt;/a&gt;) in their &lt;a href="https://github.com/TabViewer/gtabview"&gt;gtabview&lt;/a&gt; project, particularly its improved management of column and table headings, which allows the new version of Spyder to display the index shown above in a much nicer way.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-variable-explorer/table-headings.png" alt="Table headings"&gt;&lt;/p&gt;
 &lt;h2&gt;Fuzzy filtering of variables&lt;/h2&gt;
 &lt;p&gt;Spyder 4 also includes the ability to filter the variables shown down to only those of interest. This employs fuzzy matching between the text entered in the search field and the name and type of all available variables.
 To access this functionality, click the search icon in the Variable Explorer toolbar, or press &lt;code&gt;Ctrl+F&lt;/code&gt; (&lt;code&gt;Cmd-F&lt;/code&gt; on macOS) when the Variable Explorer has focus.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-variable-explorer/filter-variables.png&quot; alt=&quot;Filter variables&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-variable-explorer/filter-variables.png" alt="Filter variables"&gt;&lt;/p&gt;
 &lt;p&gt;To remove the current filter, simply click the search icon again, or press &lt;code&gt;Esc&lt;/code&gt; or &lt;code&gt;Ctrl+F&lt;/code&gt; (&lt;code&gt;Cmd-F&lt;/code&gt;) while the Variable Explorer is focused.&lt;/p&gt;
 &lt;h2&gt;Refresh while code is running&lt;/h2&gt;
-&lt;p&gt;We added back the ability to refresh the Variable Explorer while code is running in the console. This feature was dropped in Spyder 3.2, when we removed the old and unmaintained Python console. However, this functionality will return in Spyder 4, thanks to the fantastic work done by Quentin Peter (&lt;a href=&quot;https://github.com/impact27&quot;&gt;@impact27&lt;/a&gt;) to completely re-architect the way Spyder talks to the Jupyter kernels that run the code in our IPython console, integrating support for &lt;a href=&quot;https://jupyter-client.readthedocs.io/en/stable/messaging.html#custom-messages&quot;&gt;Jupyter Comms&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-variable-explorer/refresh.png&quot; alt=&quot;Refresh&quot;&gt;&lt;/p&gt;
+&lt;p&gt;We added back the ability to refresh the Variable Explorer while code is running in the console. This feature was dropped in Spyder 3.2, when we removed the old and unmaintained Python console. However, this functionality will return in Spyder 4, thanks to the fantastic work done by Quentin Peter (&lt;a href="https://github.com/impact27"&gt;@impact27&lt;/a&gt;) to completely re-architect the way Spyder talks to the Jupyter kernels that run the code in our IPython console, integrating support for &lt;a href="https://jupyter-client.readthedocs.io/en/stable/messaging.html#custom-messages"&gt;Jupyter Comms&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-variable-explorer/refresh.png" alt="Refresh"&gt;&lt;/p&gt;
 &lt;p&gt;To trigger a refresh, simply click the reload button on the Variable Explorer toolbar, or press the shortcut &lt;code&gt;Ctrl+R&lt;/code&gt; (&lt;code&gt;Cmd-R&lt;/code&gt;) when it has focus.&lt;/p&gt;
 &lt;h2&gt;Full support for sets&lt;/h2&gt;
 &lt;p&gt;In Spyder 3, the Variable Explorer could only show builtin Python sets as arbitrary objects, making it very difficult for users to browse and interact with them. In Spyder 4, you can now view sets just like lists, as well as perform various operations on them.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-variable-explorer/set-support.png&quot; alt=&quot;Screenshot of Spyder Variable Explorer UI, showing a Python set displayed in a native viewer&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-variable-explorer/set-support.png" alt="Screenshot of Spyder Variable Explorer UI, showing a Python set displayed in a native viewer"&gt;&lt;/p&gt;
 &lt;h2&gt;UI enhancements and more&lt;/h2&gt;
 &lt;p&gt;Finally, beyond the headline features, we've added numerous smaller improvements to make the Variable Explorer easier and more efficient to use. These include support for custom index names, better and more efficient automatic resizing of column widths, support for displaying Pandas Indices, tooltips for truncated column headers, and more.&lt;/p&gt;
-&lt;p&gt;Spyder's Variable Explorer is what many of you consider to be one of its standout features, so we can't wait for you all to get your hands on the even better version in Spyder 4. Thanks again to Quansight, our generous community donors, and as always all of you! Spyder 4.0.0 final is planned to be released within approximately one more week, but if you'd like to test it out immediately, follow the instructions on our &lt;a href=&quot;https://github.com/spyder-ide/spyder/releases&quot;&gt;GitHub&lt;/a&gt; to install the pre-release version (which won't touch your existing Spyder install or settings). As always, happy Spydering!&lt;/p&gt;
-</content>
-  </entry>
-  <entry xml:base="https://www.spyder-ide.org/blog/spyder-files-improvements/">
-    <title type="text">File management improvements in Spyder 4</title>
-    <id>urn:uuid:7b40d61b-a27a-3003-8a70-1806cea62e1b</id>
-    <updated>2019-11-12T00:00:00Z</updated>
-    <link href="https://www.spyder-ide.org/blog/spyder-files-improvements/" />
-    <author>
-      <name>juanis2112</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;em&gt;This blogpost was originally published on the &lt;a href=&quot;https://labs.quansight.org/blog/2019/11/File-management-improvements-in-Spyder4/&quot;&gt;Quansight Labs website&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Version 4.0 of &lt;a href=&quot;https://www.spyder-ide.org/&quot;&gt;Spyder&lt;/a&gt; is almost ready! It has been in the making for well over two years, and it contains lots of interesting new features. We will focus on the Files pane in this post, where we've made several improvements to the interface and file management tools.&lt;/p&gt;
+&lt;p&gt;Spyder's Variable Explorer is what many of you consider to be one of its standout features, so we can't wait for you all to get your hands on the even better version in Spyder 4. Thanks again to Quansight, our generous community donors, and as always all of you! Spyder 4.0.0 final is planned to be released within approximately one more week, but if you'd like to test it out immediately, follow the instructions on our &lt;a href="https://github.com/spyder-ide/spyder/releases"&gt;GitHub&lt;/a&gt; to install the pre-release version (which won't touch your existing Spyder install or settings). As always, happy Spydering!&lt;/p&gt;
+</content></entry><entry><title>File management improvements in Spyder 4</title><link href="https://www.spyder-ide.org/blog/spyder-files-improvements/" rel="alternate"></link><updated>2019-11-12T00:00:00Z</updated><author><name>juanis2112</name></author><id>urn:uuid:7b40d61b-a27a-3003-8a70-1806cea62e1b</id><content type="html">&lt;p&gt;&lt;em&gt;This blogpost was originally published on the &lt;a href="https://labs.quansight.org/blog/2019/11/File-management-improvements-in-Spyder4/"&gt;Quansight Labs website&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Version 4.0 of &lt;a href="https://www.spyder-ide.org/"&gt;Spyder&lt;/a&gt; is almost ready! It has been in the making for well over two years, and it contains lots of interesting new features. We will focus on the Files pane in this post, where we've made several improvements to the interface and file management tools.&lt;/p&gt;
 &lt;h2&gt;Simplified interface&lt;/h2&gt;
 &lt;p&gt;In order to simplify the Files pane's interface, the columns corresponding to size and kind are hidden by default. To change which columns are shown, use the top-right pane menu or right-click the header directly.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-files-improvements/pane-menu.png&quot; alt=&quot;Pane Menu&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-files-improvements/header-menu.png&quot; alt=&quot;Header Menu&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-files-improvements/pane-menu.png" alt="Pane Menu"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-files-improvements/header-menu.png" alt="Header Menu"&gt;&lt;/p&gt;
 &lt;h2&gt;Custom file associations&lt;/h2&gt;
 &lt;p&gt;First, we added the ability to associate different external applications with specific file extensions they can open. Under the File associations tab of the Files preferences pane, you can add file types and set the external program used to open each of them by default.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-files-improvements/file-associations.png&quot; alt=&quot;File associations&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-files-improvements/file-associations.png" alt="File associations"&gt;&lt;/p&gt;
 &lt;p&gt;Once you've set this up, files will automatically launch in the associated application when opened from the Files pane in Spyder. Additionally, when you right-click a file you will find an &lt;code&gt;Open with...&lt;/code&gt; option that will show the application associated with this extension.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-files-improvements/open-with.png&quot; alt=&quot;Open With&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-files-improvements/open-with.png" alt="Open With"&gt;&lt;/p&gt;
 &lt;h2&gt;Single click open option&lt;/h2&gt;
 &lt;p&gt;We've added a new option to open files and directories with a single-click instead of a double-click, to suit different user preferences. To enable this option, go to the General tab of the Files preferences pane and check the option &lt;code&gt;Single click to open files&lt;/code&gt;. With this setting, only a single click is needed to open a file in the Files pane either externally or in Spyder.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-files-improvements/single-click.png&quot; alt=&quot;Single click&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-files-improvements/single-click.png" alt="Single click"&gt;&lt;/p&gt;
 &lt;p&gt;Bear in mind that changing this configuration option will also affect the behaviour of the Project Explorer pane.&lt;/p&gt;
 &lt;h2&gt;Open files externally&lt;/h2&gt;
 &lt;p&gt;We added the option to open files with the operating system's default program for the file type to the Files pane's context menu. To use this feature, right-click any file in the Files pane and click &lt;code&gt;Open externally&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-files-improvements/open-externally.png&quot; alt=&quot;Open Externally&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-files-improvements/open-externally.png" alt="Open Externally"&gt;&lt;/p&gt;
 &lt;p&gt;Moreover, it is now possible to select more than one file on which to perform a context menu action, thanks to the Files pane's new multi-select functionality. For this, press &lt;code&gt;Ctrl&lt;/code&gt; (&lt;code&gt;Cmd&lt;/code&gt; on macOS) or &lt;code&gt;Shift&lt;/code&gt; while clicking on the files to select, just as you would in your operating system's file manager (Windows Explorer, macOS Finder, etc). As you'd expect, &lt;code&gt;Ctrl&lt;/code&gt; (&lt;code&gt;Cmd&lt;/code&gt;) selects individual files one by one, while &lt;code&gt;Shift&lt;/code&gt; selects all the files between the one you click and the one previously selected.
 Once you've selected multiple files, it is now possible to execute many of the actions available in the context menu on all the selected files, including delete, rename, move, copy and open externally.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-files-improvements/select-files.png&quot; alt=&quot;Select Files&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-files-improvements/select-files.png" alt="Select Files"&gt;&lt;/p&gt;
 &lt;h2&gt;Absolute and relative path handling&lt;/h2&gt;
 &lt;p&gt;Spyder 4 now allows you to easily copy the absolute or relative paths of one or more files in the &lt;code&gt;Files&lt;/code&gt; pane and pasting them as well-formatted text anywhere else in Spyder. Just right-clicking any file or files in the Files or Project panes and select the desired option.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-files-improvements/copy-path.png&quot; alt=&quot;Copy Path&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-files-improvements/copy-path.png" alt="Copy Path"&gt;&lt;/p&gt;
 &lt;p&gt;Beyond just copying a single path, when pasting more than one Spyder will intelligently format it into a comma-separated collection of quoted strings, one path per line, that can be pasted directly into a list with no additional formatting needed.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-files-improvements/multiple-paths.png&quot; alt=&quot;Multiple Paths&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-files-improvements/multiple-paths.png" alt="Multiple Paths"&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;Copy Absolute Path&lt;/code&gt; option gets us the complete path of each selected file, starting from the drive root.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-files-improvements/absolute-path.png&quot; alt=&quot;Absolute Path&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-files-improvements/absolute-path.png" alt="Absolute Path"&gt;&lt;/p&gt;
 &lt;p&gt;Alternatively, &lt;code&gt;Copy Relative Path&lt;/code&gt; gets us the path of the file relative to the current working (displayed in the top right of the Spyder window).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-files-improvements/relative-path.png&quot; alt=&quot;Relative Path&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-files-improvements/relative-path.png" alt="Relative Path"&gt;&lt;/p&gt;
 &lt;h2&gt;File type icons&lt;/h2&gt;
 &lt;p&gt;Finally, files in the &lt;code&gt;Files&lt;/code&gt; pane are now displayed with icons depending on their type. There are custom icons for the source files of a variety of common programming languages including C C++, C Sharp, Java, Python, R, and Swift; for media types like JPEG, MP3, and M4A; and for other common extensions such as &lt;code&gt;.txt&lt;/code&gt; and &lt;code&gt;.tex&lt;/code&gt;. This allows you to identify file types with just a glance and select the appropriate application accordingly.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-files-improvements/file-extensions.png&quot; alt=&quot;File Extensions&quot;&gt;&lt;/p&gt;
-&lt;p&gt;With these new features and UI options in Spyder's &lt;code&gt;Files&lt;/code&gt; pane, we hope you will enjoy the improved file management experience coming in Spyder 4! We would like to thank Quansight, our donors, and most of all our dedicated users and contributors from around the world for making these features possible. The final version will be released very soon, but if you'd like to try it out now and share your feedback, follow the instructions on our &lt;a href=&quot;https://github.com/spyder-ide/spyder/releases&quot;&gt;Github&lt;/a&gt;. Happy Spydering!&lt;/p&gt;
-</content>
-  </entry>
-  <entry xml:base="https://www.spyder-ide.org/blog/spyder-kite-funding/">
-    <title type="text">Spyder 4.0: Kite integration is here</title>
-    <id>urn:uuid:9a131e4b-a951-3c3d-adab-15b173a17080</id>
-    <updated>2019-08-16T00:00:00Z</updated>
-    <link href="https://www.spyder-ide.org/blog/spyder-kite-funding/" />
-    <author>
-      <name>andfoy</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;em&gt;This blogpost was originally published on the &lt;a href=&quot;https://labs.quansight.org/blog/2019/08/spyder-40-beta4-kite-integration-is-here/&quot;&gt;Quansight Labs website&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: &lt;a href=&quot;https://kite.com&quot;&gt;Kite&lt;/a&gt; is sponsoring the work discussed in this blog post, and in addition supports Spyder 4.0 development through a Quansight Labs &lt;a href=&quot;https://labs.quansight.org/blog/2019/05/community-driven-opensource-funded-development/&quot;&gt;Community Work Order&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;As part of our next release, we are proud to announce an additional completion client for Spyder, Kite. &lt;a href=&quot;https://kite.com/&quot;&gt;Kite&lt;/a&gt; is a novel completion client that uses Machine Learning techniques to find and predict the best autocompletion for a given text. Additionally, it collects improved documentation for compiled packages, e.g. Matplotlib, NumPy and SciPy, that cannot be obtained easily by using traditional code analysis packages such as Jedi. Although Kite is not open source like Spyder, you can download it without charge at the &lt;a href=&quot;https://kite.com&quot;&gt;Kite website&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-kite-funding/spyder-kite-hover.png&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-files-improvements/file-extensions.png" alt="File Extensions"&gt;&lt;/p&gt;
+&lt;p&gt;With these new features and UI options in Spyder's &lt;code&gt;Files&lt;/code&gt; pane, we hope you will enjoy the improved file management experience coming in Spyder 4! We would like to thank Quansight, our donors, and most of all our dedicated users and contributors from around the world for making these features possible. The final version will be released very soon, but if you'd like to try it out now and share your feedback, follow the instructions on our &lt;a href="https://github.com/spyder-ide/spyder/releases"&gt;Github&lt;/a&gt;. Happy Spydering!&lt;/p&gt;
+</content></entry><entry><title>Spyder 4.0: Kite integration is here</title><link href="https://www.spyder-ide.org/blog/spyder-kite-funding/" rel="alternate"></link><updated>2019-08-16T00:00:00Z</updated><author><name>andfoy</name></author><id>urn:uuid:9a131e4b-a951-3c3d-adab-15b173a17080</id><content type="html">&lt;p&gt;&lt;em&gt;This blogpost was originally published on the &lt;a href="https://labs.quansight.org/blog/2019/08/spyder-40-beta4-kite-integration-is-here/"&gt;Quansight Labs website&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: &lt;a href="https://kite.com"&gt;Kite&lt;/a&gt; is sponsoring the work discussed in this blog post, and in addition supports Spyder 4.0 development through a Quansight Labs &lt;a href="https://labs.quansight.org/blog/2019/05/community-driven-opensource-funded-development/"&gt;Community Work Order&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As part of our next release, we are proud to announce an additional completion client for Spyder, Kite. &lt;a href="https://kite.com/"&gt;Kite&lt;/a&gt; is a novel completion client that uses Machine Learning techniques to find and predict the best autocompletion for a given text. Additionally, it collects improved documentation for compiled packages, e.g. Matplotlib, NumPy and SciPy, that cannot be obtained easily by using traditional code analysis packages such as Jedi. Although Kite is not open source like Spyder, you can download it without charge at the &lt;a href="https://kite.com"&gt;Kite website&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-kite-funding/spyder-kite-hover.png" alt="alt_text" title="image_tooltip"&gt;&lt;/p&gt;
 &lt;p&gt;By incorporating Kite into Spyder, we will improve and provide the ultimate autocompletion and signature retrieval experience for most of the scientific Python stack and beyond. For instance, let’s take a look at the following PyTorch completion. While the Language Server Protocol server would not complete some of the functions, e.g. &lt;code&gt;torch.linspace&lt;/code&gt;, Kite is able to return it successfully:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-kite-funding/spyder-kite-completions.gif&quot; alt=&quot;alt_text&quot; title=&quot;image_tooltip&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-kite-funding/spyder-kite-completions.gif" alt="alt_text" title="image_tooltip"&gt;&lt;/p&gt;
 &lt;p&gt;Another benefit of using Kite is that of personalized completions, due to incremental ML analysis performed by the analysis engine, which keeps track of the keypresses and text writing style, alongside common usage patterns, this way users will get a personalized experience that improves over time.&lt;/p&gt;
 &lt;p&gt;We are working in collaboration with the Kite team to improve our autocompletion experience for the upcoming 4.0 release of Spyder. We plan to have all Kite features tested and ready to be used; that includes adding on-the-fly completions and code snippets for autocompletions.&lt;/p&gt;
 &lt;p&gt;To start using Kite, you just need to install the Kite client from their web page. They offer client packages for Windows, Linux and MacOS that are easy to install. Once Kite is installed on the system, Spyder is able to detect it and start the Kite client automatically.&lt;/p&gt;
-&lt;p&gt;Our new Kite client will work alongside the new &lt;a href=&quot;https://www.spyder-ide.org/blog/release-spyder-4beta2/&quot;&gt;Language Server Protocol&lt;/a&gt; and the usual fallback tokenizer for files that cannot be analyzed by either the LSP or Kite. Thus, Spyder will be able to provide an optimal autocompletion experience for Python and other languages. Besides that, it is possible to define the priority between different completion plugins to show a completion source result first over the other completion plugins.&lt;/p&gt;
+&lt;p&gt;Our new Kite client will work alongside the new &lt;a href="https://www.spyder-ide.org/blog/release-spyder-4beta2/"&gt;Language Server Protocol&lt;/a&gt; and the usual fallback tokenizer for files that cannot be analyzed by either the LSP or Kite. Thus, Spyder will be able to provide an optimal autocompletion experience for Python and other languages. Besides that, it is possible to define the priority between different completion plugins to show a completion source result first over the other completion plugins.&lt;/p&gt;
 &lt;p&gt;Last but not least, as part of this novel client, we are introducing a new completion API that enables to write third-party completion clients for Spyder that require integration with the code editor and project manager. We offer calls to perform autocompletion, hover requests, signature hints, among others without any hassle. By leveraging this API, it should be possible to add completions and documentation suitable for domain-specific applications developed using Spyder.&lt;/p&gt;
 &lt;p&gt;The function calls and constants of the new completion API will be added to the Spyder documentation and should be available in the next release of Spyder. Additionally, we will provide code snippets support for both LSP and Kite for the next release - please stay tuned!&lt;/p&gt;
 &lt;p&gt;We, the Spyder development team, hope that these new improvements accelerate your productivity, and we invite you to beta-test them to improve them even more. As always, we are open to your questions, issue reports and contributions on all of our communication channels and our Github repository.&lt;/p&gt;
-</content>
-  </entry>
-  <entry xml:base="https://www.spyder-ide.org/blog/tdk-micronas-partners-with-quansight-labs/">
-    <title type="text">TDK-Micronas partners with Quansight to sponsor Spyder</title>
-    <id>urn:uuid:ecf69a7d-9708-3035-b18f-460b45a46121</id>
-    <updated>2019-06-02T00:00:00Z</updated>
-    <link href="https://www.spyder-ide.org/blog/tdk-micronas-partners-with-quansight-labs/" />
-    <author>
-      <name>goanpeca</name>
-    </author>
-    <content type="html">&lt;!--
+</content></entry><entry><title>TDK-Micronas partners with Quansight to sponsor Spyder</title><link href="https://www.spyder-ide.org/blog/tdk-micronas-partners-with-quansight-labs/" rel="alternate"></link><updated>2019-06-02T00:00:00Z</updated><author><name>goanpeca</name></author><id>urn:uuid:ecf69a7d-9708-3035-b18f-460b45a46121</id><content type="html">&lt;!--
 .. title: TDK-Micronas partners with Quansight to sponsor Spyder
 .. slug: tdk-partners-with-quansight-labs
 .. date: 2019-06-02
@@ -404,7 +306,7 @@ Once you've selected multiple files, it is now possible to execute many of the a
 .. type: text
 --&gt;
 
-&lt;p&gt;&lt;em&gt;This blogpost was originally published on the &lt;a href=&quot;https://labs.quansight.org/&quot;&gt;Quansight Labs website&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This blogpost was originally published on the &lt;a href="https://labs.quansight.org/"&gt;Quansight Labs website&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;TDK-Micronas is sponsoring Spyder development efforts through Quansight Labs.
 This will enable the development of some features that have been requested by
 our users, as well as new features that will help TDK develop custom Spyder
@@ -413,7 +315,7 @@ development of their Application Specific Integrated Circuits (ASIC’s).&lt;/p&
 &lt;p&gt;At this point it may be useful to clarify the relationship the role of
 Quansight Labs in Spyder's development and the relationship with TDK. To quote
 Ralf Gommers (director of Quansight Labs):&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;&quot;We're an R&amp;amp;D lab for open source development of core technologies around data
+&lt;blockquote&gt;&lt;p&gt;"We're an R&amp;amp;D lab for open source development of core technologies around data
 science and scientific computing in Python. And focused on growing communities
 around those technologies. That's how I see it for Spyder as well: Quansight
 Labs enables developers to be employed to work on Spyder, and helps with
@@ -422,7 +324,7 @@ should be an enabler to let the Spyder project, its community and individual
 developers grow. And Labs provides mechanisms to attract and coordinate
 funding. Of course the project is still independent. If there are other
 funding sources, e.g. donations from individuals to Spyder via OpenCollective,
-all the better.&quot;&lt;/p&gt;
+all the better."&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;Multiple Projects aka Workspaces&lt;/h2&gt;
 &lt;p&gt;In its current state Spyder can only handle one active project at a time.
@@ -446,8 +348,8 @@ Projects usage is, and will remain, an optional feature.&lt;/p&gt;
 &lt;h2&gt;Project Types&lt;/h2&gt;
 &lt;p&gt;Since the revamp of Spyder Projects with the 3.x series, the new dialog hinted
 at the possibility of creating different types of projects. Currently Spyder
-provides an &quot;empty project&quot; project type.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/tdk-micronas-partners-with-quansight-labs/spyder-project-creation.png&quot; alt=&quot;Project creation&quot;&gt;&lt;/p&gt;
+provides an "empty project" project type.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/tdk-micronas-partners-with-quansight-labs/spyder-project-creation.png" alt="Project creation"&gt;&lt;/p&gt;
 &lt;p&gt;This feature will:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Expand the (current) Project Explorer API to handle Project Types.&lt;/li&gt;
@@ -476,7 +378,7 @@ API so context menus can be customized with specific Git features and
 commands.&lt;/p&gt;
 &lt;p&gt;Initial work has already started to display Git relevant information
 on the status bar&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/tdk-micronas-partners-with-quansight-labs/spyder-git-status.png&quot; alt=&quot;Status bar git&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/tdk-micronas-partners-with-quansight-labs/spyder-git-status.png" alt="Status bar git"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;Git status is now displayed in the status bar (on the left)&lt;/small&gt;&lt;/p&gt;
 &lt;h2&gt;Editor alternative views&lt;/h2&gt;
 &lt;p&gt;There are many circumstances where a user would like to edit a file that might
@@ -484,12 +386,12 @@ be rendered using a parsing tool into another type of view. One example of
 this is Markdown, the markup language in which this blog post is written and
 that can be rendered to HTML. At the moment the only way to achieve this within
 Spyder is via the use of a dedicated plugin that would create a new type of
-Pane. An example of such a plugin is &lt;a href=&quot;https://github.com/spyder-ide/spyder-reports&quot;&gt;spyder-reports&lt;/a&gt;
+Pane. An example of such a plugin is &lt;a href="https://github.com/spyder-ide/spyder-reports"&gt;spyder-reports&lt;/a&gt;
 (See image below and the Reports pane). The reason why plugins are developed
 this way is because the Editor Plugin on Spyder can only contain Code Editor
 widgets, which prevents us and other developers to use the Editor to hold
 these alternate views of a given file.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/tdk-micronas-partners-with-quansight-labs/spyder-reports.png&quot; alt=&quot;Spyder Reports&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/tdk-micronas-partners-with-quansight-labs/spyder-reports.png" alt="Spyder Reports"&gt;&lt;/p&gt;
 &lt;p&gt;The new alternative views feature will remove this limitation and enable the
 inclusion of generic widgets (views) of different types of files and provide
 an API for plugin extensions.&lt;/p&gt;
@@ -497,30 +399,20 @@ an API for plugin extensions.&lt;/p&gt;
 &lt;p&gt;I would like to thank TDK-Micronas and Quansight for the opportunity to
 work in open source development on an awesome product such as Spyder.&lt;/p&gt;
 &lt;p&gt;I would also like to thank the users,
-&lt;a href=&quot;https://github.com/spyder-ide/spyder/graphs/contributors&quot;&gt;contributors&lt;/a&gt;
-and &lt;a href=&quot;https://github.com/orgs/spyder-ide/people&quot;&gt;core developers&lt;/a&gt; for helping
+&lt;a href="https://github.com/spyder-ide/spyder/graphs/contributors"&gt;contributors&lt;/a&gt;
+and &lt;a href="https://github.com/orgs/spyder-ide/people"&gt;core developers&lt;/a&gt; for helping
 make Spyder an awesome tool!&lt;/p&gt;
-</content>
-  </entry>
-  <entry xml:base="https://www.spyder-ide.org/blog/release-spyder-4beta2/">
-    <title type="text">Spyder 4.0 takes a big step closer with the release of Beta 2!</title>
-    <id>urn:uuid:db8f6d34-353f-3d38-bf54-ee69b1a0ff24</id>
-    <updated>2019-05-20T00:00:00Z</updated>
-    <link href="https://www.spyder-ide.org/blog/release-spyder-4beta2/" />
-    <author>
-      <name>goanpeca</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;em&gt;This blogpost was originally published on the &lt;a href=&quot;https://labs.quansight.org/&quot;&gt;Quansight Labs website&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content></entry><entry><title>Spyder 4.0 takes a big step closer with the release of Beta 2!</title><link href="https://www.spyder-ide.org/blog/release-spyder-4beta2/" rel="alternate"></link><updated>2019-05-20T00:00:00Z</updated><author><name>goanpeca</name></author><id>urn:uuid:db8f6d34-353f-3d38-bf54-ee69b1a0ff24</id><content type="html">&lt;p&gt;&lt;em&gt;This blogpost was originally published on the &lt;a href="https://labs.quansight.org/"&gt;Quansight Labs website&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;It has been almost two months since I joined Quansight in April, to start
 working on Spyder maintenance and
 development. So far, it has been a very exciting and rewarding journey under
 the guidance of long time Spyder maintainer
-&lt;a href=&quot;https://github.com/ccordoba12&quot;&gt;Carlos Córdoba&lt;/a&gt;.
+&lt;a href="https://github.com/ccordoba12"&gt;Carlos Córdoba&lt;/a&gt;.
 This is the first of a series of blog posts we will be writing to showcase
 updates on the development of Spyder, new planned features and news on the
 road to Spyder 4.0 and beyond.&lt;/p&gt;
 &lt;p&gt;First off, I would like to give a warm welcome to
-&lt;a href=&quot;https://github.com/andfoy&quot;&gt;Edgar Margffoy&lt;/a&gt;,
+&lt;a href="https://github.com/andfoy"&gt;Edgar Margffoy&lt;/a&gt;,
 who recently joined Quansight and will be working with the Spyder team to
 take its development even further. Edgar has been a core Spyder developer
 for more than two years now, and we are very excited to have his (almost)
@@ -530,25 +422,25 @@ full-time commitment to the project.&lt;/p&gt;
 Spyder development team has been working hard on our next release.
 Over the past year, we've implemented the long awaited full-interface dark theme;
 overhauled our entire code completion and linting architecture to use the
-&lt;a href=&quot;https://microsoft.github.io/language-server-protocol/&quot;&gt;Language Server Protocol&lt;/a&gt;,
+&lt;a href="https://microsoft.github.io/language-server-protocol/"&gt;Language Server Protocol&lt;/a&gt;,
 opening the door to supporting many other languages in the future;
 added a new Plots pane to view and manage the figures generated by your code;
 and numerous other feature enhancements, bug fixes and internal improvements.&lt;/p&gt;
 &lt;h2&gt;Dark theme&lt;/h2&gt;
 &lt;p&gt;A full-interface dark theme has been a
-&lt;a href=&quot;https://github.com/spyder-ide/spyder/issues/2350&quot;&gt;long awaited feature&lt;/a&gt;,
+&lt;a href="https://github.com/spyder-ide/spyder/issues/2350"&gt;long awaited feature&lt;/a&gt;,
 and is enabled by default in Spyder 4. You can still select the
 light theme under  &lt;code&gt;Preferences &amp;gt; Appearance&lt;/code&gt; by either choosing a light-background
 syntax-highlighting scheme, or changing &lt;code&gt;Interface theme&lt;/code&gt; to &lt;code&gt;Light&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/release-spyder-4beta2/spyder-qdarkstyle.png&quot; alt=&quot;Screenshot of the Spyder main window with default panes, with the dark theme applied across the entire interface&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/release-spyder-4beta2/spyder-qdarkstyle.png" alt="Screenshot of the Spyder main window with default panes, with the dark theme applied across the entire interface"&gt;&lt;/p&gt;
 &lt;p&gt;Pretty, right :-) ?&lt;/p&gt;
 &lt;p&gt;This enhancement was made possible by the work of
-&lt;a href=&quot;https://github.com/ColinDuquesnoy&quot;&gt;Colin Duquesnoy&lt;/a&gt;,
-&lt;a href=&quot;https://github.com/DPizzeta&quot;&gt;Daniel Pizzeta&lt;/a&gt;
-and their &lt;a href=&quot;https://github.com/ColinDuquesnoy/QDarkStyleSheet/&quot;&gt;QDarkStyle&lt;/a&gt;
+&lt;a href="https://github.com/ColinDuquesnoy"&gt;Colin Duquesnoy&lt;/a&gt;,
+&lt;a href="https://github.com/DPizzeta"&gt;Daniel Pizzeta&lt;/a&gt;
+and their &lt;a href="https://github.com/ColinDuquesnoy/QDarkStyleSheet/"&gt;QDarkStyle&lt;/a&gt;
 package. The Spyder team is now actively collaborating with Colin and Daniel
 to pursue the release of QDarkStyle 3.x, which will be using Spyder's
-&lt;a href=&quot;https://github.com/spyder-ide/qtsass/&quot;&gt;QtSASS&lt;/a&gt;
+&lt;a href="https://github.com/spyder-ide/qtsass/"&gt;QtSASS&lt;/a&gt;
 package to harness the power of SASS/SCSS and allow users to fully customize
 the theme dynamically.&lt;/p&gt;
 &lt;h2&gt;Language Server Protocol architecture&lt;/h2&gt;
@@ -556,7 +448,7 @@ the theme dynamically.&lt;/p&gt;
 development tools (e.g. editors and IDEs) communicate with
 servers that provide code completion, linting and related facilities for
 different programming languages. With LSP, as
-&lt;a href=&quot;https://microsoft.github.io/language-server-protocol/&quot;&gt;they describe it&lt;/a&gt;:&lt;/p&gt;
+&lt;a href="https://microsoft.github.io/language-server-protocol/"&gt;they describe it&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;&lt;p&gt;A single Language Server can be reused in multiple development tools,
 which in turn can support multiple languages with minimal effort.
 LSP is a win for both language providers and tooling vendors!&lt;/p&gt;
@@ -567,26 +459,26 @@ LSP v3.0 through a transport layer that uses ZeroMQ sockets. Code completion,
 help generation, calltips, and real-time code/style analysis were rewritten to take advantage of this
 architecture, and hover hints and docstring style analysis were added.
 Further LSP features, such as workspace functionality and on the fly completion, will come in future betas.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/release-spyder-4beta2/spyder-hover-hint-calltip.png&quot; alt=&quot;Hover hint and calltips&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/release-spyder-4beta2/spyder-hover-hint-calltip.png" alt="Hover hint and calltips"&gt;&lt;/p&gt;
 &lt;p&gt;Our current support is geared towards Python, using the great
-&lt;a href=&quot;https://github.com/palantir/python-language-server&quot;&gt;Python-Language-Server&lt;/a&gt;
+&lt;a href="https://github.com/palantir/python-language-server"&gt;Python-Language-Server&lt;/a&gt;
 package. This has allowed us to provide fine-grained configurability for
-&lt;a href=&quot;http://pycodestyle.pycqa.org/en/stable/&quot;&gt;Pycodestyle&lt;/a&gt; and
-&lt;a href=&quot;http://www.pydocstyle.org/en/stable/&quot;&gt;Pydocstyle&lt;/a&gt; options, and in future
+&lt;a href="http://pycodestyle.pycqa.org/en/stable/"&gt;Pycodestyle&lt;/a&gt; and
+&lt;a href="http://www.pydocstyle.org/en/stable/"&gt;Pydocstyle&lt;/a&gt; options, and in future
 betas we’ll also add the ability to use and configure code formatters like
 YAPF and autopep8.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/release-spyder-4beta2/spyder-doc-prefs.png&quot; alt=&quot;Docstring style preferences&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/release-spyder-4beta2/spyder-doc-prefs.png" alt="Docstring style preferences"&gt;&lt;/p&gt;
 &lt;p&gt;We support configuring LSP servers for additional, non-Python programming languages.
 In the future, we hope to include out-of-the-box LSP integration for
 some of the most popular languages in the scientific computing space,
 including Fortran, Julia and C/C++.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/release-spyder-4beta2/spyder-preferences-lsp.png&quot; alt=&quot;Spyder Completion and Linting preferences pane, showing example PyLS servers configured for Go and Julia&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/release-spyder-4beta2/spyder-preferences-lsp.png" alt="Spyder Completion and Linting preferences pane, showing example PyLS servers configured for Go and Julia"&gt;&lt;/p&gt;
 &lt;h2&gt;Plots pane&lt;/h2&gt;
-&lt;p&gt;Similar to &lt;a href=&quot;https://www.rstudio.com/&quot;&gt;RStudio&lt;/a&gt; and other data science IDEs,
+&lt;p&gt;Similar to &lt;a href="https://www.rstudio.com/"&gt;RStudio&lt;/a&gt; and other data science IDEs,
 Spyder now includes a Plots pane, allowing you to browse all figures created during a
 session. Beyond just viewing plots, you can also zoom, save/export, copy and remove
 them.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/release-spyder-4beta2/spyder-plots.png&quot; alt=&quot;Spyder main window, showing a figure displayed in the plots pane&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/release-spyder-4beta2/spyder-plots.png" alt="Spyder main window, showing a figure displayed in the plots pane"&gt;&lt;/p&gt;
 &lt;h2&gt;But wait, there's more!&lt;/h2&gt;
 &lt;p&gt;There are numerous additional features we've added in the previous 10
 months! These include:&lt;/p&gt;
@@ -597,7 +489,7 @@ unsaved files in case it crashes or something else goes wrong.&lt;/li&gt;
 very simple to quickly explore and create code for these libraries.&lt;/li&gt;
 &lt;li&gt;OS level &lt;strong&gt;window pane undocking&lt;/strong&gt;, allowing you to easily
 organize panes across different monitors.&lt;/li&gt;
-&lt;li&gt;Support for &lt;strong&gt;&lt;a href=&quot;https://pandas.pydata.org/pandas-docs/stable/user_guide/advanced.html&quot;&gt;multi-indexes&lt;/a&gt;&lt;/strong&gt;
+&lt;li&gt;Support for &lt;strong&gt;&lt;a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/advanced.html"&gt;multi-indexes&lt;/a&gt;&lt;/strong&gt;
 in our Dataframe viewer, making working with complex datasets much easier.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We will describe all of these additional enhancements in greater detail in
@@ -608,7 +500,7 @@ you can! You can install it with &lt;code&gt;conda&lt;/code&gt; (if using Anacon
 or with &lt;code&gt;pip&lt;/code&gt;; we suggest doing so in a new Conda env or &lt;code&gt;virtualenv&lt;/code&gt;/&lt;code&gt;venv&lt;/code&gt;
 so you can easily switch between your existing Spyder install and the Spyder 4 beta.
 For example, to do so with &lt;code&gt;conda&lt;/code&gt;, enter the following at the Terminal/Anaconda prompt:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;$ conda create --channel spyder-ide --name spyder-beta spyder=4.0.0b2
+&lt;pre&gt;&lt;code class="lang-bash"&gt;$ conda create --channel spyder-ide --name spyder-beta spyder=4.0.0b2
 $ conda activate spyder-beta
 $ spyder
 &lt;/code&gt;&lt;/pre&gt;
@@ -616,167 +508,127 @@ $ spyder
 directory for its development versions, so you can easily switch between our stable
 and beta releases without worrying about one affecting the other.&lt;/p&gt;
 &lt;p&gt;If you find any bugs, you can report them on our
-&lt;a href=&quot;https://github.com/spyder-ide/spyder/issues&quot;&gt;issue tracker&lt;/a&gt;;
+&lt;a href="https://github.com/spyder-ide/spyder/issues"&gt;issue tracker&lt;/a&gt;;
 make sure to search for your error message or behavior before making a new one.&lt;/p&gt;
 &lt;h2&gt;Closing remarks&lt;/h2&gt;
 &lt;p&gt;I would like to thank Quansight for the opportunity of working in open source
 development on an awesome project like Spyder. I am also grateful to our
-users, &lt;a href=&quot;https://github.com/spyder-ide/spyder/graphs/contributors&quot;&gt;contributors&lt;/a&gt;
-and &lt;a href=&quot;https://github.com/orgs/spyder-ide/people&quot;&gt;core developers&lt;/a&gt; for helping
+users, &lt;a href="https://github.com/spyder-ide/spyder/graphs/contributors"&gt;contributors&lt;/a&gt;
+and &lt;a href="https://github.com/orgs/spyder-ide/people"&gt;core developers&lt;/a&gt; for helping
 making Spyder amazing!&lt;/p&gt;
-</content>
-  </entry>
-  <entry xml:base="https://www.spyder-ide.org/blog/release-qtconsole-440/">
-    <title type="text">QtConsole 4.4 Released!</title>
-    <id>urn:uuid:7a22e56f-40ef-3971-bf48-37ee51113c9a</id>
-    <updated>2018-09-21T00:00:00Z</updated>
-    <link href="https://www.spyder-ide.org/blog/release-qtconsole-440/" />
-    <author>
-      <name>camgerlach</name>
-    </author>
-    <content type="html">&lt;p&gt;We're excited to announce a significant update to &lt;a href=&quot;https://qtconsole.readthedocs.io/en/stable/&quot;&gt;QtConsole&lt;/a&gt;—the package that powers Spyder's &lt;a href=&quot;https://docs.spyder-ide.org/ipythonconsole.html&quot;&gt;IPython Console&lt;/a&gt; interface—which the Spyder team maintains in collaboration with &lt;a href=&quot;https://jupyter.org/&quot;&gt;Project Jupyter&lt;/a&gt;.
+</content></entry><entry><title>QtConsole 4.4 Released!</title><link href="https://www.spyder-ide.org/blog/release-qtconsole-440/" rel="alternate"></link><updated>2018-09-21T00:00:00Z</updated><author><name>camgerlach</name></author><id>urn:uuid:7a22e56f-40ef-3971-bf48-37ee51113c9a</id><content type="html">&lt;p&gt;We're excited to announce a significant update to &lt;a href="https://qtconsole.readthedocs.io/en/stable/"&gt;QtConsole&lt;/a&gt;—the package that powers Spyder's &lt;a href="https://docs.spyder-ide.org/ipythonconsole.html"&gt;IPython Console&lt;/a&gt; interface—which the Spyder team maintains in collaboration with &lt;a href="https://jupyter.org/"&gt;Project Jupyter&lt;/a&gt;.
 Two of the biggest changes—user-selectable syntax highlighting themes, and enhanced external editor/IDE integration—are already built right into Spyder, so they'll likely be of more interest if you use QtConsole standalone or with another editor/IDE.
 However, most of the other changes should prove quite useful within Spyder as well, and many were in fact suggested and even implemented by users of our IDE.
 Particular highlights include a block indent/unindent feature, Select-All (&lt;code&gt;Ctrl-Shift-A&lt;/code&gt;) being made cell-specific, &lt;code&gt;Ctrl-Backspace&lt;/code&gt; and &lt;code&gt;Ctrl-Delete&lt;/code&gt; behaving more intelligently across whitespace and line boundaries, &lt;code&gt;Ctrl-D&lt;/code&gt; allowing you to easily exit &lt;code&gt;ipdb&lt;/code&gt;, &lt;code&gt;input()&lt;/code&gt; and the like, and numerous smaller enhancements and bug fixes.
-If you'd like to learn more about what's new, please check out &lt;a href=&quot;https://blog.jupyter.org/jupyter-qtconsole-4-4-81f2eaad5706&quot;&gt;our article&lt;/a&gt; over on the &lt;a href=&quot;https://blog.jupyter.org/&quot;&gt;Jupyter blog&lt;/a&gt;, where we go over the major changes in more detail, with plenty of screenshots and GIFs to illustrate each feature and how to use it.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/release-qtconsole-440/qtconsole-syntax-highlighting.png&quot; alt=&quot;Screenshot of the QtConsole main window, with a new syntax highlighting theme applied&quot;&gt;&lt;/p&gt;
+If you'd like to learn more about what's new, please check out &lt;a href="https://blog.jupyter.org/jupyter-qtconsole-4-4-81f2eaad5706"&gt;our article&lt;/a&gt; over on the &lt;a href="https://blog.jupyter.org/"&gt;Jupyter blog&lt;/a&gt;, where we go over the major changes in more detail, with plenty of screenshots and GIFs to illustrate each feature and how to use it.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/release-qtconsole-440/qtconsole-syntax-highlighting.png" alt="Screenshot of the QtConsole main window, with a new syntax highlighting theme applied"&gt;&lt;/p&gt;
 &lt;p&gt;To update to the newest version with your existing Spyder install, open an Anaconda Prompt (Windows), Terminal (macOS) or command line (Linux), activate the &lt;code&gt;conda&lt;/code&gt; environment or &lt;code&gt;virtualenv&lt;/code&gt;/&lt;code&gt;venv&lt;/code&gt; of the Spyder install you are using, and run &lt;code&gt;conda update qtconsole&lt;/code&gt; (or &lt;code&gt;pip install --upgrade qtconsole&lt;/code&gt;, if not using Anaconda).
 If you'd like to try QtConsole out separate from Spyder or integrate it in with your own editor or IDE, it is also available as a standalone GUI by running &lt;code&gt;jupyter qtconsole&lt;/code&gt; from the Python environment where it or Spyder is installed.&lt;/p&gt;
-&lt;p&gt;If you have any questions, problems or feedback, we'd love to hear from you. Report issues, request features or participate in QtConsole's development at its &lt;a href=&quot;https://github.com/jupyter/qtconsole&quot;&gt;Github site&lt;/a&gt;, and check out its &lt;a href=&quot;https://qtconsole.readthedocs.io/en/stable/&quot;&gt;documentation&lt;/a&gt; for help using it.
-For the latest Spyder news, releases, previews and tips, you can follow our &lt;a href=&quot;https://www.facebook.com/SpyderIDE/&quot;&gt;Facebook&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/spyder_ide&quot;&gt;Twitter&lt;/a&gt;, and help support the development on Spyder and its sister projects like QtConsole on &lt;a href=&quot;https://opencollective.com/spyder&quot;&gt;OpenCollective&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you have any questions, problems or feedback, we'd love to hear from you. Report issues, request features or participate in QtConsole's development at its &lt;a href="https://github.com/jupyter/qtconsole"&gt;Github site&lt;/a&gt;, and check out its &lt;a href="https://qtconsole.readthedocs.io/en/stable/"&gt;documentation&lt;/a&gt; for help using it.
+For the latest Spyder news, releases, previews and tips, you can follow our &lt;a href="https://www.facebook.com/SpyderIDE/"&gt;Facebook&lt;/a&gt; and &lt;a href="https://twitter.com/spyder_ide"&gt;Twitter&lt;/a&gt;, and help support the development on Spyder and its sister projects like QtConsole on &lt;a href="https://opencollective.com/spyder"&gt;OpenCollective&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Our new documentation and Spyder 4 beta 1 have been fully live for some time now; given the dramatic scale of the changes in both, their respective blog posts are still in the works.
 We'll also have an upcoming article on our official Spyder 4 feature roadmap and more, and Spyder 3.3.2 is due out soon, so keep in right here for your Spyder fix!
 Until then, happy Spydering and enjoy QtConsole 4.4!&lt;/p&gt;
-</content>
-  </entry>
-  <entry xml:base="https://www.spyder-ide.org/blog/release-spyder-330/">
-    <title type="text">Spyder 3.3.0 and 3.3.1 released!</title>
-    <id>urn:uuid:4e44dcc6-843e-36fc-b2a8-09196a9ceb1c</id>
-    <updated>2018-08-14T00:00:00Z</updated>
-    <link href="https://www.spyder-ide.org/blog/release-spyder-330/" />
-    <author>
-      <name>camgerlach</name>
-    </author>
-    <content type="html">&lt;p&gt;We're pleased to release the next significant update in the stable Spyder 3 line, 3.3.0, along with its follow-on bugfix point release, 3.3.1, which is now live on PyPI and &lt;code&gt;conda&lt;/code&gt;.
+</content></entry><entry><title>Spyder 3.3.0 and 3.3.1 released!</title><link href="https://www.spyder-ide.org/blog/release-spyder-330/" rel="alternate"></link><updated>2018-08-14T00:00:00Z</updated><author><name>camgerlach</name></author><id>urn:uuid:4e44dcc6-843e-36fc-b2a8-09196a9ceb1c</id><content type="html">&lt;p&gt;We're pleased to release the next significant update in the stable Spyder 3 line, 3.3.0, along with its follow-on bugfix point release, 3.3.1, which is now live on PyPI and &lt;code&gt;conda&lt;/code&gt;.
 As always, you can update with &lt;code&gt;conda update spyder&lt;/code&gt; in the Anaconda Prompt/Terminal/command line (on Windows/macOS/Linux, respectively) if on Anaconda (recommended), or &lt;code&gt;pip update spyder&lt;/code&gt; otherwise.
-If you run into any trouble, please carefully read our &lt;a href=&quot;https://docs.spyder-ide.org/installation.html&quot;&gt;new installation documentation&lt;/a&gt; and consult our &lt;a href=&quot;https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ&quot;&gt;Troubleshooting Guide&lt;/a&gt;, which contains straightforward solutions to the vast majority of install-related issues users have reported.&lt;/p&gt;
+If you run into any trouble, please carefully read our &lt;a href="https://docs.spyder-ide.org/installation.html"&gt;new installation documentation&lt;/a&gt; and consult our &lt;a href="https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ"&gt;Troubleshooting Guide&lt;/a&gt;, which contains straightforward solutions to the vast majority of install-related issues users have reported.&lt;/p&gt;
 &lt;p&gt;As a new minor version (3.3), it makes several substantial changes to Spyder's underpinnings that deserve some explanation, particularly the newly modular and portable console system that's now separated into its own &lt;code&gt;spyder-kernels&lt;/code&gt; package, opening up several new options for users running Spyder in different environments.
 There's also a brand-new error reporting process, new options in the IPython console, usability and performance improvements for the Variable Explorer, multiple new and changed dependency requirements and more, so there's plenty to go over.
 Finally, we'd like to briefly share a few final notes on this release and the latest on our plans going forward.&lt;/p&gt;
 &lt;h2&gt;Modular, flexible Console architecture&lt;/h2&gt;
 &lt;p&gt;The biggest single change with version 3.3.0/3.3.1 is a major overhaul of how IPython Consoles are started and managed in Spyder.
-More precisely, we've moved all the kernel-related code from the Spyder core into a new modular package, &lt;code&gt;spyder-kernels&lt;/code&gt;, available on the &lt;a href=&quot;https://github.com/spyder-ide/spyder-kernels&quot;&gt;same&lt;/a&gt; &lt;a href=&quot;https://pypi.org/project/spyder-kernels/&quot;&gt;distribution&lt;/a&gt; &lt;a href=&quot;https://anaconda.org/conda-forge/spyder-kernels&quot;&gt;channels&lt;/a&gt; as Spyder itself (and installed automatically when updating to &amp;gt;=3.3.0).
+More precisely, we've moved all the kernel-related code from the Spyder core into a new modular package, &lt;code&gt;spyder-kernels&lt;/code&gt;, available on the &lt;a href="https://github.com/spyder-ide/spyder-kernels"&gt;same&lt;/a&gt; &lt;a href="https://pypi.org/project/spyder-kernels/"&gt;distribution&lt;/a&gt; &lt;a href="https://anaconda.org/conda-forge/spyder-kernels"&gt;channels&lt;/a&gt; as Spyder itself (and installed automatically when updating to &amp;gt;=3.3.0).
 While the most dramatic differences are under the hood, there's plenty for everyone to like (and a few things to be aware of).&lt;/p&gt;
 &lt;p&gt;Most importantly, for our everyday users, this makes Spyder much more flexible and powerful when working with multiple Python environments.
 With the changes, Spyder itself does not need to be present in every environment you'd like to launch a kernel in; you can install the full IDE in whatever manner you prefer, and then set it to run code and consoles in any Anaconda environment, &lt;code&gt;virtualenv&lt;/code&gt;/&lt;code&gt;venv&lt;/code&gt;, or even a totally separate Python installation, so long as it has &lt;code&gt;spyder-kernels&lt;/code&gt; package available.
 Just set the path under &lt;code&gt;Tools -&amp;gt; Preferences -&amp;gt; Python interpreter -&amp;gt; Use the following Python interpreter&lt;/code&gt; to the desired Python executable, and any new Console you open will start in the selected environment.
-Check out our &lt;a href=&quot;https://github.com/spyder-ide/spyder/wiki/Working-with-packages-and-environments-in-Spyder&quot;&gt;new wiki page on using environments with Spyder&lt;/a&gt;, for more details and tips on the subject, and keep an eye out for the further improvements coming in Spyder 4, which will greatly simplify the process and include full GUI-based project, package and environment management functionality built right in.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/release-spyder-330/spyder-prefs-python.png&quot; alt=&quot;Python interpreter pane of the Spyder preferences dialog, with the &amp;#34;Use the following Python interpreter&amp;#34; option highlighted&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Furthermore, the new package allows you to independently launch a kernel from anywhere (on your local computer, or a remote machine, server or even supercomputing cluster), connect to it with Spyder, and use it just like a &quot;natively&quot; started one.
-After installing &lt;code&gt;spyder-kernels&lt;/code&gt; on the host environment, you can start one with &lt;code&gt;python -m spyder_kernels.console&lt;/code&gt;, and then enter the kernel's 4-digit ID (and SSH connection details, if a remote machine) in the Spyder &lt;code&gt;Connect to an existing kernel&lt;/code&gt; dialog under the IPython Console pane context- or &quot;gear&quot;-menu).
-For more information on the process, see the &lt;a href=&quot;https://docs.spyder-ide.org/ipythonconsole.html#connecting-to-a-console&quot;&gt;Connecting to a Console&lt;/a&gt; section in our new documentation.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/release-spyder-330/spyder-remote-kernel.png&quot; alt=&quot;A remote kernel running in a system console alongside Spyder&amp;#39;s connect to kernel dialog&quot;&gt;&lt;/p&gt;
+Check out our &lt;a href="https://github.com/spyder-ide/spyder/wiki/Working-with-packages-and-environments-in-Spyder"&gt;new wiki page on using environments with Spyder&lt;/a&gt;, for more details and tips on the subject, and keep an eye out for the further improvements coming in Spyder 4, which will greatly simplify the process and include full GUI-based project, package and environment management functionality built right in.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/release-spyder-330/spyder-prefs-python.png" alt="Python interpreter pane of the Spyder preferences dialog, with the &amp;#34;Use the following Python interpreter&amp;#34; option highlighted"&gt;&lt;/p&gt;
+&lt;p&gt;Furthermore, the new package allows you to independently launch a kernel from anywhere (on your local computer, or a remote machine, server or even supercomputing cluster), connect to it with Spyder, and use it just like a "natively" started one.
+After installing &lt;code&gt;spyder-kernels&lt;/code&gt; on the host environment, you can start one with &lt;code&gt;python -m spyder_kernels.console&lt;/code&gt;, and then enter the kernel's 4-digit ID (and SSH connection details, if a remote machine) in the Spyder &lt;code&gt;Connect to an existing kernel&lt;/code&gt; dialog under the IPython Console pane context- or "gear"-menu).
+For more information on the process, see the &lt;a href="https://docs.spyder-ide.org/ipythonconsole.html#connecting-to-a-console"&gt;Connecting to a Console&lt;/a&gt; section in our new documentation.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/release-spyder-330/spyder-remote-kernel.png" alt="A remote kernel running in a system console alongside Spyder&amp;#39;s connect to kernel dialog"&gt;&lt;/p&gt;
 &lt;p&gt;Best of all, no matter how or where a kernel is started, every console now supports the full suite of Spyder's features, including completion, the Variable Explorer, interactive Help and more, unlike before.
 You can even mix and match internal, external and remote kernels in different environments, all in the same Spyder session, by either changing the Python interpreter preferences setting between starting a console, or starting and connecting to multiple consoles externally—or both!
 Finally, for those of us (and those of you!) who help develop Spyder, the changes also make it easier to maintain and improve the code, and opens the door to one of the biggest features coming in Spyder 4: a new, full-featured debugging kernel that many of you have been asking for.&lt;/p&gt;
 &lt;p&gt;The one key thing to remember: make sure you install the appropriate version of &lt;code&gt;spyder-kernels&lt;/code&gt; for your version of Spyder. For most users, that will be spyder-kernels 0.x (currently 0.2.6) to match Spyder 3 on our stable &lt;code&gt;3.x&lt;/code&gt; branch; if testing a Spyder 4 beta or Github clone of the &lt;code&gt;master&lt;/code&gt; branch, you'll want the latest 1.x version of &lt;code&gt;spyder-kernels&lt;/code&gt; (currently 1.1.0).
 To install the correct build, you can use the following &lt;code&gt;conda&lt;/code&gt; command,&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;conda install spyder-kernels=&amp;lt;0 or 1&amp;gt;.*
+&lt;pre&gt;&lt;code class="lang-bash"&gt;conda install spyder-kernels=&amp;lt;0 or 1&amp;gt;.*
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;or with &lt;code&gt;pip&lt;/code&gt;,&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;pip install spyder-kernels==&amp;lt;0 or 1&amp;gt;.*
+&lt;pre&gt;&lt;code class="lang-bash"&gt;pip install spyder-kernels==&amp;lt;0 or 1&amp;gt;.*
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;replacing &lt;code&gt;&amp;lt;0 or 1&amp;gt;&lt;/code&gt; with the major version number (0 or 1) to match your Spyder version.
-Further details specific to installing a development build can be found in our &lt;a href=&quot;https://github.com/spyder-ide/spyder/blob/master/CONTRIBUTING.md#using-the-correct-version-of-spyder-kernels&quot;&gt;Contributing Guide&lt;/a&gt; or our &lt;a href=&quot;https://docs.spyder-ide.org/installation.html#installing-a-development-build&quot;&gt;install documentation&lt;/a&gt;.&lt;/p&gt;
+Further details specific to installing a development build can be found in our &lt;a href="https://github.com/spyder-ide/spyder/blob/master/CONTRIBUTING.md#using-the-correct-version-of-spyder-kernels"&gt;Contributing Guide&lt;/a&gt; or our &lt;a href="https://docs.spyder-ide.org/installation.html#installing-a-development-build"&gt;install documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;New IPython Console completion and plotting features&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/release-spyder-330/jedi-greedy-completion-prefs.png&quot; alt=&quot;Advanced tab of the IPython console pane of Spyder&amp;#39;s preferences, with the new Jedi completion section highlighted&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/release-spyder-330/jedi-greedy-completion-prefs.png" alt="Advanced tab of the IPython console pane of Spyder&amp;#39;s preferences, with the new Jedi completion section highlighted"&gt;&lt;/p&gt;
 &lt;p&gt;Spyder's IPython Consoles can now use an advanced &lt;code&gt;jedi&lt;/code&gt;-based completion engine that, similar to the Editor, analyzes your code without actually having to run it first.
-This allows for advanced completion functionality on objects not yet assigned to a variable, similar to the existing &quot;greedy&quot; completion option, but without the need for dynamic evaluation.
+This allows for advanced completion functionality on objects not yet assigned to a variable, similar to the existing "greedy" completion option, but without the need for dynamic evaluation.
 It can be slow if working with very large Pandas &lt;code&gt;DataFrames&lt;/code&gt; so it is disabled by default, but you can activate it under &lt;code&gt;Tools -&amp;gt; Preferences -&amp;gt; IPython console -&amp;gt; Advanced Settings -&amp;gt; Jedi completion&lt;/code&gt;.
-The descriptive text for the &quot;greedy&quot; completion option (also off by default) was also clarified, particularly to explain an IPython bug (not present in the &lt;code&gt;jedi&lt;/code&gt; completer) with the feature and a consequent workaround.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/release-spyder-330/tight-layout-preferences.png&quot; alt=&quot;Graphics tab of the IPython console pane of Spyder&amp;#39;s preferences, with the new &amp;#34;Use a tight layout for inline plots&amp;#34; option highlighted&quot;&gt;&lt;/p&gt;
+The descriptive text for the "greedy" completion option (also off by default) was also clarified, particularly to explain an IPython bug (not present in the &lt;code&gt;jedi&lt;/code&gt; completer) with the feature and a consequent workaround.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/release-spyder-330/tight-layout-preferences.png" alt="Graphics tab of the IPython console pane of Spyder&amp;#39;s preferences, with the new &amp;#34;Use a tight layout for inline plots&amp;#34; option highlighted"&gt;&lt;/p&gt;
 &lt;p&gt;We've also added a new plotting setting, &lt;code&gt;Use a tight layout for inline plots&lt;/code&gt;, for the &lt;code&gt;Inline&lt;/code&gt; Matplotlib graphics backend.
-The default behavior (as in previous Spyder versions) sets &lt;code&gt;bbox_inches&lt;/code&gt; to &lt;code&gt;&quot;tight&quot;&lt;/code&gt; in Matplotlib calls when drawing to the inline backend.
+The default behavior (as in previous Spyder versions) sets &lt;code&gt;bbox_inches&lt;/code&gt; to &lt;code&gt;"tight"&lt;/code&gt; in Matplotlib calls when drawing to the inline backend.
 However, if you prefer your own &lt;code&gt;bbox_inches&lt;/code&gt; argument be respected even when plots are rendered in the Console, you can now do so by unchecking this option under &lt;code&gt;Tools -&amp;gt; Preferences -&amp;gt; IPython console -&amp;gt; Graphics -&amp;gt; Inline backend&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/release-spyder-330/plot-comparison.png&quot; alt=&quot;Comparison of inline plots in Spyder&amp;#39;s IPython Console with and without the &amp;#34;tight layout&amp;#34; option set&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/release-spyder-330/plot-comparison.png" alt="Comparison of inline plots in Spyder&amp;#39;s IPython Console with and without the &amp;#34;tight layout&amp;#34; option set"&gt;&lt;/p&gt;
 &lt;h2&gt;Better Variable Explorer usability and performance&lt;/h2&gt;
 &lt;p&gt;We've made several changes and optimizations to greatly improve performance and efficiency in the Variable Explorer, to make it much faster and use less memory when opening and editing large objects.
 In particular, we've fixed several major memory leaks when saving edited objects and closing the Variable Explorer dialogs through better length validation and garbage collection, and now skip the whole saving process entirely if the object was not modified (or cannot be modified).
 We've also changed the names and functions of the &lt;code&gt;Cancel&lt;/code&gt; and &lt;code&gt;Ok&lt;/code&gt; buttons in Variable Explorer dialogs to be easier to understand and use.
 They now feature a &lt;code&gt;Close&lt;/code&gt; button which exits the dialog without saving any edits to the object's contents, and a &lt;code&gt;Save and Close&lt;/code&gt; button—automatically enabled once modifications are made—that commits the changes back to the kernel.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/release-spyder-330/variable-explorer-ux.png&quot; alt=&quot;A Variable Explorer DataFrame editor dialog, showing the new &amp;#34;Close&amp;#34; and &amp;#34;Save and Close&amp;#34; buttons&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/release-spyder-330/variable-explorer-ux.png" alt="A Variable Explorer DataFrame editor dialog, showing the new &amp;#34;Close&amp;#34; and &amp;#34;Save and Close&amp;#34; buttons"&gt;&lt;/p&gt;
 &lt;h2&gt;Streamlined error reporting experience&lt;/h2&gt;
 &lt;p&gt;While we hope you never need to use it, Spyder 3.3.0 includes a brand-new error handling backend that can submit bug reports directly through the Github API.
-Based off &lt;a href=&quot;https://github.com/ColinDuquesnoy&quot;&gt;Colin Duquesnoy&lt;/a&gt;'s excellent &lt;a href=&quot;https://github.com/ColinDuquesnoy/QCrash&quot;&gt;QCrash&lt;/a&gt; framework, this is a major improvement in speed, functionality, reliability and user convenience over the old approach (essentially just opening a link in a web browser).
+Based off &lt;a href="https://github.com/ColinDuquesnoy"&gt;Colin Duquesnoy&lt;/a&gt;'s excellent &lt;a href="https://github.com/ColinDuquesnoy/QCrash"&gt;QCrash&lt;/a&gt; framework, this is a major improvement in speed, functionality, reliability and user convenience over the old approach (essentially just opening a link in a web browser).
 Just as before, we won't send anything without your explicit consent, you need a Github account (or create one for free), and you can view and edit the report on Github at any time.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/release-spyder-330/new-authent-dialog-both.png&quot; alt=&quot;The new authentication dialogs for submitting a Github report, with a username/password and a token option&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/release-spyder-330/new-authent-dialog-both.png" alt="The new authentication dialogs for submitting a Github report, with a username/password and a token option"&gt;&lt;/p&gt;
 &lt;p&gt;You will need to enter your Github credentials the first time you submit a report.
-For this, you can &lt;a href=&quot;https://github.com/settings/tokens/new?scopes=public_repo&quot;&gt;create an app token&lt;/a&gt; which only grants the very limited permissions needed to create a public issue report, can be easily revoked and re-created, and works with two-factor authentication (which you should be using); however, if you have not yet enabled 2FA, it also offers the option to enter your Github username and password.
-Either way, Spyder can securely remember your login using the &lt;a href=&quot;https://github.com/jaraco/keyring&quot;&gt;&lt;code&gt;keyring&lt;/code&gt;&lt;/a&gt; package, so you only have to do this once on any given machine (if you select the &quot;remember&quot; option).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/release-spyder-330/new-error-dialog-full.png&quot; alt=&quot;The new error reporting interface, with a title field, more descriptive text, and a polished UI&quot;&gt;&lt;/p&gt;
+For this, you can &lt;a href="https://github.com/settings/tokens/new?scopes=public_repo"&gt;create an app token&lt;/a&gt; which only grants the very limited permissions needed to create a public issue report, can be easily revoked and re-created, and works with two-factor authentication (which you should be using); however, if you have not yet enabled 2FA, it also offers the option to enter your Github username and password.
+Either way, Spyder can securely remember your login using the &lt;a href="https://github.com/jaraco/keyring"&gt;&lt;code&gt;keyring&lt;/code&gt;&lt;/a&gt; package, so you only have to do this once on any given machine (if you select the "remember" option).&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/release-spyder-330/new-error-dialog-full.png" alt="The new error reporting interface, with a title field, more descriptive text, and a polished UI"&gt;&lt;/p&gt;
 &lt;p&gt;The dialog itself has also been made more functional and user-friendly, designed to help encourage high-quality, useful reports, and with more accessible, descriptive text.
 The reports themselves also contain more useful data about the problem, and there is now a &lt;code&gt;--safe-mode&lt;/code&gt; command-line option for Spyder to start in a clean, temporary config directly, so you can test to see if the problem reoccurs without the hassle of a &lt;code&gt;spyder --reset&lt;/code&gt;, and play around with other settings without impacting your main configuration. Finally, we've fixed over 40 bugs in this release and further improved our documentation and troubleshooting material, so hopefully you'll see this less often.&lt;/p&gt;
 &lt;h2&gt;Cleaner under the hood and more&lt;/h2&gt;
 &lt;p&gt;Alongside the aforementioned internal changes, we've also made a number of other under-the-hood changes to clean out old cruft and improve maintainability, readability and performance of our codebase.
 In particular, we've officially dropped support for Python 3.3, PyQt4, and PyQt5 &amp;lt; 5.5, all versions which have been end-of-life for years, and (aside from PyQt4) have minimal or no remaining Spyder users.
 Furthermore, dropping &lt;code&gt;PyQt4&lt;/code&gt; in particular allows us to avoid or resolve a number of unfixable bugs specific to that version that have been causing problems for users, and opens the door to easier development in the future.
-Finally, we moved our legacy documentation (and its many associated images) from the main Spyder codebase to &lt;a href=&quot;https://github.com/spyder-ide/spyder-docs&quot;&gt;its own repo&lt;/a&gt;, executed a major overhaul to greatly modernize and expand the text, images, style, and presentation, and now deploy them onto &lt;a href=&quot;https://docs.spyder-ide.org/&quot;&gt;their own subdomain of our site&lt;/a&gt;, all of which we will discuss in a separate post coming soon.&lt;/p&gt;
+Finally, we moved our legacy documentation (and its many associated images) from the main Spyder codebase to &lt;a href="https://github.com/spyder-ide/spyder-docs"&gt;its own repo&lt;/a&gt;, executed a major overhaul to greatly modernize and expand the text, images, style, and presentation, and now deploy them onto &lt;a href="https://docs.spyder-ide.org/"&gt;their own subdomain of our site&lt;/a&gt;, all of which we will discuss in a separate post coming soon.&lt;/p&gt;
 &lt;h2&gt;Even more fixes and refinements with Spyder 3.3.1&lt;/h2&gt;
 &lt;p&gt;As a quick follow-on to the 3.3.0 release, Spyder 3.3.1 fixed a handful of bugs and minor issues with the new functionality and cleaned up several other existing ones, as well made a number of lower-level maintenance and development-oriented changes—over two dozen in all.
 Furthermore, several user-visible enhancements made it into the release, primary aimed at improving usability.
 To make it easier for users to manage multiple environments, the selection UI under &lt;code&gt;Preferences &amp;gt; Python interpreter &amp;gt; Use the following Python interpreter&lt;/code&gt; remembers the executables you've previously selected and allows quick switching between them.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/release-spyder-330/interpreter-selection-ux.png&quot; alt=&quot;Python interpreter pane of Spyder&amp;#39;s preferences, showing the new environment selection UI&quot;&gt;&lt;/p&gt;
-&lt;p&gt;In the Console, mundane &lt;code&gt;ipdb&lt;/code&gt; commands are automatically filtered from the history, and the Editor now supports syntax highlighting for the &lt;a href=&quot;https://www.python.org/dev/peps/pep-0515/&quot;&gt;new numeric literal syntax&lt;/a&gt; introduced in Python 3.6.
+&lt;p&gt;&lt;img src="/blog/release-spyder-330/interpreter-selection-ux.png" alt="Python interpreter pane of Spyder&amp;#39;s preferences, showing the new environment selection UI"&gt;&lt;/p&gt;
+&lt;p&gt;In the Console, mundane &lt;code&gt;ipdb&lt;/code&gt; commands are automatically filtered from the history, and the Editor now supports syntax highlighting for the &lt;a href="https://www.python.org/dev/peps/pep-0515/"&gt;new numeric literal syntax&lt;/a&gt; introduced in Python 3.6.
 Spyder's tutorial has been re-written for modern Spyder as well as to be clearer and more understandable, and overhauled for better and more consistent formatting and visuals with the rest of our documentation.
 Finally, our update checker now consults the Anaconda &lt;code&gt;defaults&lt;/code&gt; channel rather than PyPI to determine if an update is available, so it doesn't bug the majority of our users on Anaconda until they can actually acquire the package.&lt;/p&gt;
 &lt;h2&gt;What to know and what's next&lt;/h2&gt;
-&lt;p&gt;If you have any questions, problems or feedback, we'd love to hear from you (just make sure you read our &lt;a href=&quot;https://docs.spyder-ide.org/&quot;&gt;documentation&lt;/a&gt;, &lt;a href=&quot;https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ&quot;&gt;Troubleshooting Guide&lt;/a&gt; and the other previously-mentioned resources first)!
-For general questions or install issues that aren't addressed by the above, our &lt;a href=&quot;https://groups.google.com/group/spyderlib&quot;&gt;Google Group&lt;/a&gt; and &lt;a href=&quot;https://gitter.im/spyder-ide/public&quot;&gt;Gitter live chat&lt;/a&gt; are a good place to ask, while &lt;a href=&quot;https://github.com/spyder-ide/spyder&quot;&gt;our Github&lt;/a&gt; is the place to report bugs, request features, or help develop Spyder itself (though make sure to search our &lt;a href=&quot;https://github.com/spyder-ide/spyder/issues?utf8=%E2%9C%93&amp;amp;q=is%3Aissue&quot;&gt;issues list&lt;/a&gt; to ensure it hasn't already been submitted).
-Finally, you can follow our &lt;a href=&quot;https://www.facebook.com/SpyderIDE/&quot;&gt;Facebook&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/spyder_ide&quot;&gt;Twitter&lt;/a&gt; for the latest Spyder news, releases, previews and tips, and help support Spyder development on &lt;a href=&quot;https://opencollective.com/spyder&quot;&gt;OpenCollective&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you have any questions, problems or feedback, we'd love to hear from you (just make sure you read our &lt;a href="https://docs.spyder-ide.org/"&gt;documentation&lt;/a&gt;, &lt;a href="https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ"&gt;Troubleshooting Guide&lt;/a&gt; and the other previously-mentioned resources first)!
+For general questions or install issues that aren't addressed by the above, our &lt;a href="https://groups.google.com/group/spyderlib"&gt;Google Group&lt;/a&gt; and &lt;a href="https://gitter.im/spyder-ide/public"&gt;Gitter live chat&lt;/a&gt; are a good place to ask, while &lt;a href="https://github.com/spyder-ide/spyder"&gt;our Github&lt;/a&gt; is the place to report bugs, request features, or help develop Spyder itself (though make sure to search our &lt;a href="https://github.com/spyder-ide/spyder/issues?utf8=%E2%9C%93&amp;amp;q=is%3Aissue"&gt;issues list&lt;/a&gt; to ensure it hasn't already been submitted).
+Finally, you can follow our &lt;a href="https://www.facebook.com/SpyderIDE/"&gt;Facebook&lt;/a&gt; and &lt;a href="https://twitter.com/spyder_ide"&gt;Twitter&lt;/a&gt; for the latest Spyder news, releases, previews and tips, and help support Spyder development on &lt;a href="https://opencollective.com/spyder"&gt;OpenCollective&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;There's plenty to look forward to in the coming days, with the official release of our all-new documentation (that's already live now), Spyder 4 beta 1 having just been released on PyPI, conda-forge and our own &lt;code&gt;spyder-ide&lt;/code&gt; channel (with a blog post coming soon), an upcoming article on our official Spyder 4 feature roadmap and more, so stay tuned!
 In the meantime, happy Spydering and enjoy the new 3.3.1!&lt;/p&gt;
-</content>
-  </entry>
-  <entry xml:base="https://www.spyder-ide.org/blog/webcast-quansight-ep1/">
-    <title type="text">Spyder featured on Episode 1 of Open Source Directions web show</title>
-    <id>urn:uuid:e4d4bc71-445e-3313-bd5e-87ebf4bc4712</id>
-    <updated>2018-08-13T00:00:00Z</updated>
-    <link href="https://www.spyder-ide.org/blog/webcast-quansight-ep1/" />
-    <author>
-      <name>camgerlach</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;a href=&quot;https://www.quansight.com/&quot;&gt;Quansight&lt;/a&gt;, the company recently founded by NumPy, SciPy and Anaconda creator Travis Oliphant to help connect companies with open source communities built around data science and machine learning, just released Episode 1 of its live webcast series, and it was all about Spyder!
-Spyder maintainer &lt;a href=&quot;https://github.com/ccordoba12&quot;&gt;Carlos Córdoba&lt;/a&gt;, recently hired by Quansight and funded part-time to work on Spyder development &lt;a href=&quot;https://www.spyder-ide.org/blog/spyder-status-2018-present/&quot;&gt;as we announced a few weeks ago&lt;/a&gt;, was the featured guest on the show.&lt;/p&gt;
-&lt;p&gt;Carlos first shared his perspective on some of the key moments in Spyder's nearly 10-year development history, from its original creation by Pierre Raybaut and Carlos' initial involvement in the project to its &lt;a href=&quot;https://www.spyder-ide.org/blog/spyder-status-2018-past/&quot;&gt;more recent challenges and successes&lt;/a&gt;.
+</content></entry><entry><title>Spyder featured on Episode 1 of Open Source Directions web show</title><link href="https://www.spyder-ide.org/blog/webcast-quansight-ep1/" rel="alternate"></link><updated>2018-08-13T00:00:00Z</updated><author><name>camgerlach</name></author><id>urn:uuid:e4d4bc71-445e-3313-bd5e-87ebf4bc4712</id><content type="html">&lt;p&gt;&lt;a href="https://www.quansight.com/"&gt;Quansight&lt;/a&gt;, the company recently founded by NumPy, SciPy and Anaconda creator Travis Oliphant to help connect companies with open source communities built around data science and machine learning, just released Episode 1 of its live webcast series, and it was all about Spyder!
+Spyder maintainer &lt;a href="https://github.com/ccordoba12"&gt;Carlos Córdoba&lt;/a&gt;, recently hired by Quansight and funded part-time to work on Spyder development &lt;a href="https://www.spyder-ide.org/blog/spyder-status-2018-present/"&gt;as we announced a few weeks ago&lt;/a&gt;, was the featured guest on the show.&lt;/p&gt;
+&lt;p&gt;Carlos first shared his perspective on some of the key moments in Spyder's nearly 10-year development history, from its original creation by Pierre Raybaut and Carlos' initial involvement in the project to its &lt;a href="https://www.spyder-ide.org/blog/spyder-status-2018-past/"&gt;more recent challenges and successes&lt;/a&gt;.
 He also demonstrated basic usage of Spyder, as well as some of its standout features, in a live on-screen demo.
 Carlos then went on to outline the current roadmap for Spyder 4 in the near future, and explained some of the key new features planned for it.
 Finally, he took the time to answer a variety of Spyder-related questions asked live by viewers, ranging from specific current and planned Spyder features to suggestions on keeping a good work-life balance.
 While technical difficulties (since identified and resolved) interrupted some of his commentary, particularly in the roadmap section, a full account of the latter will be published here shortly.&lt;/p&gt;
-&lt;p&gt;If you missed the webcast, Quansight recorded it and uploaded it to their &lt;a href=&quot;https://www.youtube.com/channel/UChdlbCpQ_Wep04V9o0sGLWQ&quot;&gt;new Youtube channel&lt;/a&gt;, so you can watch it on-demand right here if you're curious about any of the above.
+&lt;p&gt;If you missed the webcast, Quansight recorded it and uploaded it to their &lt;a href="https://www.youtube.com/channel/UChdlbCpQ_Wep04V9o0sGLWQ"&gt;new Youtube channel&lt;/a&gt;, so you can watch it on-demand right here if you're curious about any of the above.
 Give it a like if you enjoy it to show Quansight some love for helping support Spyder's further development!&lt;/p&gt;
-&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube-nocookie.com/embed/vtLdH4VbACA&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;We'll have a new post on the release of Spyder 3.3.1 (and 3.3.0) in a few days time, plus articles on our new docs, Spyder 4 beta 1, and our full roadmap all in the next week or so; there's plenty going on that you won't want to miss.
+&lt;iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/vtLdH4VbACA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;We'll have a new post on the release of Spyder 3.3.1 (and 3.3.0) in a few days time, plus articles on our new docs, Spyder 4 beta 1, and our full roadmap all in the next week or so; there's plenty going on that you won't want to miss.
 Keep it right here to catch all that—and in the meantime, happy Spydering!&lt;/p&gt;
-</content>
-  </entry>
-  <entry xml:base="https://www.spyder-ide.org/blog/spyder-status-2018-present/">
-    <title type="text">State of the Spyder, Part 2: Looking up</title>
-    <id>urn:uuid:482d9abb-e4f7-3142-9ca5-985f635f6f95</id>
-    <updated>2018-07-23T00:00:00Z</updated>
-    <link href="https://www.spyder-ide.org/blog/spyder-status-2018-present/" />
-    <author>
-      <name>camgerlach</name>
-    </author>
-    <content type="html">&lt;p&gt;After sharing some major milestones, development progress, and other tidbits from the past six months in &lt;a href=&quot;https://www.spyder-ide.org/blog/spyder-status-2018-past/&quot;&gt;Part 1&lt;/a&gt; of this series (check that one out first if you haven't already), we now have some amazing news to share with you all here in Part 2, along with other status updates.
+</content></entry><entry><title>State of the Spyder, Part 2: Looking up</title><link href="https://www.spyder-ide.org/blog/spyder-status-2018-present/" rel="alternate"></link><updated>2018-07-23T00:00:00Z</updated><author><name>camgerlach</name></author><id>urn:uuid:482d9abb-e4f7-3142-9ca5-985f635f6f95</id><content type="html">&lt;p&gt;After sharing some major milestones, development progress, and other tidbits from the past six months in &lt;a href="https://www.spyder-ide.org/blog/spyder-status-2018-past/"&gt;Part 1&lt;/a&gt; of this series (check that one out first if you haven't already), we now have some amazing news to share with you all here in Part 2, along with other status updates.
 That's not all, though—Part 3 will look ahead toward Spyder 4 and beyond, unveiling and explaining our full roadmap and going over the future possibilities even further afield.&lt;/p&gt;
 &lt;h2&gt;Spyder Wins NumFOCUS Development Grant&lt;/h2&gt;
 &lt;p&gt;First up, we're thrilled to announce a major part of what's making that plan possible (along with your support, of course!).
-This May, Spyder was awarded a $3000 development grant from &lt;a href=&quot;https://www.numfocus.org/&quot;&gt;NumFOCUS&lt;/a&gt;, an organization promoting better science through open code, to help with finishing Spyder 4!
-NumFOCUS is a nonprofit dedicated to supporting &lt;a href=&quot;https://www.numfocus.org/sponsored-projects&quot;&gt;key scientific computing projects&lt;/a&gt;; &lt;a href=&quot;https://www.numfocus.org/programs/sustainability&quot;&gt;promoting sustainability&lt;/a&gt; in the open source ecosystem; educating the next generation of scientists, engineers, developers and data analysts through their flagship &lt;a href=&quot;https://www.numfocus.org/programs/pydata&quot;&gt;PyData&lt;/a&gt; program; and enabling and inspiring the next generation through their &lt;a href=&quot;https://www.numfocus.org/programs/grants-sponsored-events&quot;&gt;grants, scholarships&lt;/a&gt; and &lt;a href=&quot;https://www.numfocus.org/programs/john-hunter-technology-fellowship&quot;&gt;fellowships&lt;/a&gt;, &lt;a href=&quot;https://www.numfocus.org/programs/diversity-inclusion&quot;&gt;diversity and inclusion program&lt;/a&gt;, and involvement in the &lt;a href=&quot;https://www.numfocus.org/programs/google-summer-code&quot;&gt;Google Summer of Code&lt;/a&gt;.&lt;/p&gt;
+This May, Spyder was awarded a $3000 development grant from &lt;a href="https://www.numfocus.org/"&gt;NumFOCUS&lt;/a&gt;, an organization promoting better science through open code, to help with finishing Spyder 4!
+NumFOCUS is a nonprofit dedicated to supporting &lt;a href="https://www.numfocus.org/sponsored-projects"&gt;key scientific computing projects&lt;/a&gt;; &lt;a href="https://www.numfocus.org/programs/sustainability"&gt;promoting sustainability&lt;/a&gt; in the open source ecosystem; educating the next generation of scientists, engineers, developers and data analysts through their flagship &lt;a href="https://www.numfocus.org/programs/pydata"&gt;PyData&lt;/a&gt; program; and enabling and inspiring the next generation through their &lt;a href="https://www.numfocus.org/programs/grants-sponsored-events"&gt;grants, scholarships&lt;/a&gt; and &lt;a href="https://www.numfocus.org/programs/john-hunter-technology-fellowship"&gt;fellowships&lt;/a&gt;, &lt;a href="https://www.numfocus.org/programs/diversity-inclusion"&gt;diversity and inclusion program&lt;/a&gt;, and involvement in the &lt;a href="https://www.numfocus.org/programs/google-summer-code"&gt;Google Summer of Code&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We applied for the funding back in March of this year, along with many other scientific Python projects, and were one of the fortunate projects selected after the review process.
 The award runs from May through this November, and will enable multiple betas with new features to be released throughout 2018, with the first feature-complete release candidate of Spyder 4 planned by the year's end (we'll have more detail on all that in Part 3).
-Check out our bio and the other projects that were funded over on the &lt;a href=&quot;https://www.numfocus.org/blog/numfocus-awards-development-grants-to-open-source-projects-spring-2018&quot;&gt;NumFOCUS announcement&lt;/a&gt;, and make sure to thank and support them if you get the chance.&lt;/p&gt;
+Check out our bio and the other projects that were funded over on the &lt;a href="https://www.numfocus.org/blog/numfocus-awards-development-grants-to-open-source-projects-spring-2018"&gt;NumFOCUS announcement&lt;/a&gt;, and make sure to thank and support them if you get the chance.&lt;/p&gt;
 &lt;h2&gt;Quansight Hires Spyder Maintainer; Helps Fund Development&lt;/h2&gt;
-&lt;p&gt;Equally exciting, Spyder's maintainer, &lt;a href=&quot;https://github.com/ccordoba12&quot;&gt;Carlos Cordoba&lt;/a&gt;, was recently hired by &lt;a href=&quot;https://www.quansight.com/&quot;&gt;Quansight&lt;/a&gt;, the brand-new company headed by scientific Python luminary &lt;a href=&quot;https://twitter.com/teoliphant?lang=en&quot;&gt;Travis Oliphant&lt;/a&gt;!
+&lt;p&gt;Equally exciting, Spyder's maintainer, &lt;a href="https://github.com/ccordoba12"&gt;Carlos Cordoba&lt;/a&gt;, was recently hired by &lt;a href="https://www.quansight.com/"&gt;Quansight&lt;/a&gt;, the brand-new company headed by scientific Python luminary &lt;a href="https://twitter.com/teoliphant?lang=en"&gt;Travis Oliphant&lt;/a&gt;!
 The father of much of the modern PyData ecosystem including NumPy, SciPy and Numba, Travis has been instrumental in the dramatic growth of open-source data analysis with Python through founding or helping lead Enthought, Continuum/Anaconda, NumFOCUS, and more.
 Quansight, Travis' newest venture, focuses on scaling up the PyData ecosystem to solve even larger and more integrated problems, connecting companies with the open-source tools that can benefit their business, and helping build a more robust ecosystem for open-source scientific development.&lt;/p&gt;
 &lt;p&gt;As part of that mission, Carlos was hired through at least the end of 2018 to help make several open-source projects more sustainable in the long run, and I'm sure you all will be happy to hear that one of them will be our very own Spyder!
@@ -788,11 +640,11 @@ Stay tuned to hear more about those in the coming months.&lt;/p&gt;
 &lt;p&gt;Meanwhile, on the development side of things, we've just finished the rollout of the next update in the stable Spyder 3 line, 3.3.0, and will have a full post shortly going over the changes and enhancements in detail.
 In brief, it has some significant under the hood revisions, cleaning house of some old end of life dependencies and legacy support (Python 3.3 and PyQt4/&amp;lt;5.5), and separates the IPython Console kernel code into a new &lt;code&gt;spyder-kernels&lt;/code&gt; package to make it easier for you to work with different Python environments and remote sessions, and easier for us to add exciting new features down the road.
 Additionally, it adds new preferences options for console plotting and autocompletion, improves the usability and performance of Variable Explorer object viewers, includes a new, fully automated error reporting feature to make submitting reports faster, easier and more helpful, and contains a number of other minor improvements and usability enhancements, along with numerous bug fixes.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-status-2018-present/spyder-remote-kernel.png&quot; alt=&quot;A remote kernel running in a system console alongside Spyder&amp;#39;s connect to kernel dialog&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-status-2018-present/spyder-remote-kernel.png" alt="A remote kernel running in a system console alongside Spyder&amp;#39;s connect to kernel dialog"&gt;&lt;/p&gt;
 &lt;h2&gt;Spyder 4 Public Beta 1 on Deck&lt;/h2&gt;
 &lt;p&gt;We'll also be releasing the first public beta of Spyder 4 in the very near future, to allow users and developers to get their hands on the next generation of the IDE and start using and testing it as soon as possible.
 There are far too many significant new features to list here, and they are more than worthy of their own full-length post, as there are many substantial changes to the Editor, Console, Variable Explorer, File Explorer, Outline Explorer, API and more.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-status-2018-present/spyder-4b1-preview-editor.png&quot; alt=&quot;Preview of the new Spyder 4 Editor, showing several of the mentioned features&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-status-2018-present/spyder-4b1-preview-editor.png" alt="Preview of the new Spyder 4 Editor, showing several of the mentioned features"&gt;&lt;/p&gt;
 &lt;p&gt;Some of the major highlights in the Editor include code folding, indentation guides, multiple line length indicators, a live class/method/function panel (&lt;em&gt;a la&lt;/em&gt; Visual Studio), many more shortcut commands, better comment/uncomment, and more.
 The IPython Console gains the ability to start specialized Pylab, SymPy, and Cython consoles, and the Variable Explorer gets MultiIndex support, now natively handles all Pandas indexers, and can display sets in a dedicated GUI editor.
 Meanwhile, the File Explorer now has multi-select functionality and can open any file with the user's OS-configured external default program, while the outline explorer can now group items by cell, and in multiple levels.
@@ -801,41 +653,31 @@ It's the future of Spyder, so if you'd like to get a taste of the cutting edge, 
 &lt;h2&gt;Spyder Documentation, Reborn&lt;/h2&gt;
 &lt;p&gt;Aside from Spyder 3 and 4, we've got another big ticket item for you all in the next few days: our brand new docs!
 We've been working on a major overhaul of our documentation, which will saw its first official release with Spyder 3.3.0.
-Our &lt;a href=&quot;https://pythonhosted.org/spyder/&quot;&gt;old docs&lt;/a&gt; were hosted on PyPI/PythonHosted and, with the freezing of that service, couldn't be updated.
-Therefore, we've now moved to maintain them in a &lt;a href=&quot;https://github.com/spyder-ide/spyder-docs&quot;&gt;new dedicated repo&lt;/a&gt;, build, deploy and host them ourselves with &lt;a href=&quot;https://www.sphinx-doc.org/en/master/&quot;&gt;Sphinx&lt;/a&gt;, &lt;a href=&quot;https://drdoctr.github.io/doctr/&quot;&gt;doctr&lt;/a&gt; and &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt; on a subdomain of our new site making them more convenient, responsive and accessible.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-status-2018-present/spyder-docs-preview.png&quot; alt=&quot;Preview of new Spyder documentation website, displaying a modern theme/layout and better screenshots&quot;&gt;&lt;/p&gt;
+Our &lt;a href="https://pythonhosted.org/spyder/"&gt;old docs&lt;/a&gt; were hosted on PyPI/PythonHosted and, with the freezing of that service, couldn't be updated.
+Therefore, we've now moved to maintain them in a &lt;a href="https://github.com/spyder-ide/spyder-docs"&gt;new dedicated repo&lt;/a&gt;, build, deploy and host them ourselves with &lt;a href="https://www.sphinx-doc.org/en/master/"&gt;Sphinx&lt;/a&gt;, &lt;a href="https://drdoctr.github.io/doctr/"&gt;doctr&lt;/a&gt; and &lt;a href="https://pages.github.com/"&gt;Github Pages&lt;/a&gt; on a subdomain of our new site making them more convenient, responsive and accessible.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-status-2018-present/spyder-docs-preview.png" alt="Preview of new Spyder documentation website, displaying a modern theme/layout and better screenshots"&gt;&lt;/p&gt;
 &lt;p&gt;Furthermore, we've taken the opportunity to perform a comprehensive overhaul from top to bottom, dramatically improving their usefulness to users.
 We've greatly expanded many pages and sections and adding new ones, updated outdated references, performed an exhaustive copyedit over nearly every line of the text, developed and implemented a consistent style guide, transitioned to a modern theme with our own custom CSS extensions, added or replaced many  dozens of high-resolution screenshots, modified the source code and infrastructure to be easier to develop, build and maintain, and much more.
 Even better, you can expect even more improvements in the coming months, as we further expand them toward the standard you'd expect for a feature-rich, multifaceted application like Spyder.
-If you find an issue with them, see a section that could use expansion or improvement or even just have general actionable feedback feel free to open an &lt;a href=&quot;https://github.com/spyder-ide/spyder-docs/issues&quot;&gt;issue&lt;/a&gt; or send us a &lt;a href=&quot;https://github.com/spyder-ide/spyder-docs/pulls&quot;&gt;pull request&lt;/a&gt; on our &lt;a href=&quot;https://github.com/spyder-ide/spyder-docs&quot;&gt;new repo&lt;/a&gt;.
+If you find an issue with them, see a section that could use expansion or improvement or even just have general actionable feedback feel free to open an &lt;a href="https://github.com/spyder-ide/spyder-docs/issues"&gt;issue&lt;/a&gt; or send us a &lt;a href="https://github.com/spyder-ide/spyder-docs/pulls"&gt;pull request&lt;/a&gt; on our &lt;a href="https://github.com/spyder-ide/spyder-docs"&gt;new repo&lt;/a&gt;.
 We'll have more information about what's new and our future plans when we officially release them shortly.&lt;/p&gt;
 &lt;h2&gt;More News and Notes&lt;/h2&gt;
 &lt;p&gt;Finally, we want to make sure you all can stay better informed of Spyder-related happenings going forward, as well as get the chance to interact directly with the Spyder team.&lt;/p&gt;
-&lt;p&gt;We're planning on much more frequent announcements, status reports, news, and tutorials right here on our blog, as well as more timely updates on our social media, including our &lt;a href=&quot;https://www.facebook.com/SpyderIDE/notifications/&quot;&gt;Facebook page&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/Spyder_IDE&quot;&gt;Twitter account&lt;/a&gt;.
+&lt;p&gt;We're planning on much more frequent announcements, status reports, news, and tutorials right here on our blog, as well as more timely updates on our social media, including our &lt;a href="https://www.facebook.com/SpyderIDE/notifications/"&gt;Facebook page&lt;/a&gt; and &lt;a href="https://twitter.com/Spyder_IDE"&gt;Twitter account&lt;/a&gt;.
 Make sure to subscribe/follow if you'd like to stay up to date or want to get in touch; we only post important happenings, so we won't inundate your feeds with trivialities.
-You can also reach us on our &lt;a href=&quot;https://groups.google.com/forum/#!forum/spyderlib&quot;&gt;Google Groups discussion board&lt;/a&gt;, our &lt;a href=&quot;https://gitter.im/spyder-ide/public&quot;&gt;Gitter live chat&lt;/a&gt;, or post a comment right here below this post.&lt;/p&gt;
+You can also reach us on our &lt;a href="https://groups.google.com/forum/#!forum/spyderlib"&gt;Google Groups discussion board&lt;/a&gt;, our &lt;a href="https://gitter.im/spyder-ide/public"&gt;Gitter live chat&lt;/a&gt;, or post a comment right here below this post.&lt;/p&gt;
 &lt;p&gt;Thanks again for all you do to make Spyder possible, and keep a look out for the next post in this series on the future of Spyder, along with our three major releases (3.3.0, 4.0b1, and the new docs) over the next few weeks.
 Happy Spydering!&lt;/p&gt;
-</content>
-  </entry>
-  <entry xml:base="https://www.spyder-ide.org/blog/spyder-status-2018-past/">
-    <title type="text">State of the Spyder, Part 1: Looking back</title>
-    <id>urn:uuid:5fb15b38-f48d-3ec8-8af8-e10a192c25df</id>
-    <updated>2018-05-06T00:00:00Z</updated>
-    <link href="https://www.spyder-ide.org/blog/spyder-status-2018-past/" />
-    <author>
-      <name>camgerlach</name>
-    </author>
-    <content type="html">&lt;p&gt;As we approach some major development milestones, now is as good a time as ever to share with you some perspective on where we've been, what's happening now, and where we're going in the world of Spyder.
+</content></entry><entry><title>State of the Spyder, Part 1: Looking back</title><link href="https://www.spyder-ide.org/blog/spyder-status-2018-past/" rel="alternate"></link><updated>2018-05-06T00:00:00Z</updated><author><name>camgerlach</name></author><id>urn:uuid:5fb15b38-f48d-3ec8-8af8-e10a192c25df</id><content type="html">&lt;p&gt;As we approach some major development milestones, now is as good a time as ever to share with you some perspective on where we've been, what's happening now, and where we're going in the world of Spyder.
 In this post, part one of a three part series, we'll take a look back over the past six months at some of the key events, accomplishments and challenges for Spyder and its community, and how that all leads up to where we are now.&lt;/p&gt;
 &lt;p&gt;Stay tuned right here, since part two will share several exciting announcements that affect the project (in a good way, we promise!) and its immediate future.
 Even better, part three will formally announce the next Spyder 3 release and—what I'm sure you are all looking forward to—the plan for the first official Spyder 4 beta, plus our schedule and feature roadmap for Spyder 4 and beyond!&lt;/p&gt;
 &lt;h2&gt;A Call Answered&lt;/h2&gt;
 &lt;p&gt;Starting off, as we announced back in mid-November, our funding from Anaconda, Inc was discontinued, leaving Spyder without formal institutional financial support.
 As Spyder was, is and always will be a community-developed and supported IDE, this was far from a mortal blow to the project, but it did impact the pace and breadth of development.
-Developer effort previously spent on our Spyder plugins, like &lt;a href=&quot;https://github.com/spyder-ide/spyder-notebook&quot;&gt;spyder-notebook&lt;/a&gt;, &lt;a href=&quot;https://github.com/spyder-ide/spyder-reports&quot;&gt;spyder-reports&lt;/a&gt;, and &lt;a href=&quot;https://github.com/spyder-ide/spyder-terminal&quot;&gt;spyder-terminal&lt;/a&gt;, among others, was refocused on the Spyder core, and the development and release of Spyder 4 was put mostly on hold.
-To help make up for the loss of funding, we appealed to the community for support, asking users who found Spyder valuable to back our project on &lt;a href=&quot;https://opencollective.com/spyder&quot;&gt;OpenCollective&lt;/a&gt;, in order to accelerate development and fund more features for Spyder 4.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-status-2018-past/spyder_opencollective.png&quot; alt=&quot;Spyder OpenCollective, showing many donations and backers&quot;&gt;&lt;/p&gt;
+Developer effort previously spent on our Spyder plugins, like &lt;a href="https://github.com/spyder-ide/spyder-notebook"&gt;spyder-notebook&lt;/a&gt;, &lt;a href="https://github.com/spyder-ide/spyder-reports"&gt;spyder-reports&lt;/a&gt;, and &lt;a href="https://github.com/spyder-ide/spyder-terminal"&gt;spyder-terminal&lt;/a&gt;, among others, was refocused on the Spyder core, and the development and release of Spyder 4 was put mostly on hold.
+To help make up for the loss of funding, we appealed to the community for support, asking users who found Spyder valuable to back our project on &lt;a href="https://opencollective.com/spyder"&gt;OpenCollective&lt;/a&gt;, in order to accelerate development and fund more features for Spyder 4.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-status-2018-past/spyder_opencollective.png" alt="Spyder OpenCollective, showing many donations and backers"&gt;&lt;/p&gt;
 &lt;p&gt;To our unending gratitude, you responded! In the few months since then, we've gone from zero to a budget of well over $4500 per year and rising at an increasing pace, thanks to the continuing contributions of over 80 (and counting!) individual and institutional backers.
 We also had several new core team members and community contributors pitch in to help carry the load, and we've got some more great news in the very next post on the funding front.
 While we've got a ways to go to match the level of funding we've received under Anaconda, your support has helped make possible several of the new features we've planned for Spyder 4, and allow us to commit to releasing it much sooner than we would be able to otherwise.
@@ -845,7 +687,7 @@ Stay tuned; we are considering rolling out new donation tiers and rewards at som
 &lt;p&gt;On the development side of the project, while our overall pace is modestly lower than its peak under our Anaconda funding, we've been quite active fixing bugs and adding new features and enhancements over the past six months.
 By the numbers, since mid-November, we've pushed approximately 1200 commits to &lt;code&gt;master&lt;/code&gt; (Spyder 4), comprising over 37 000 lines added and 16 000 removed, and 900 commits to &lt;code&gt;3.x&lt;/code&gt; (Spyder 3), with over 16 500 additions and 10 000 deletions.
 Users have opened over 1375 issues (bugs, feature requests and other feedback), of which we've managed to resolve more than 1330, or nearly 97%.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-status-2018-past/github_commit_history.png&quot; alt=&quot;Github commit timeseries for Spyder, with high activity over the past few years&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-status-2018-past/github_commit_history.png" alt="Github commit timeseries for Spyder, with high activity over the past few years"&gt;&lt;/p&gt;
 &lt;p&gt;Further, over 250 pull requests from almost two dozen unique contributors, some old, some new, have been submitted since that time—fixing bugs, adding new or enhanced functionality, or making other improvements—of which 226 have been merged to the main Spyder codebase.
 This work has coalesced into four separate official releases during that period, with another only days away.
 Finally, we've recently blown past the 3000 Github stars milestone a few weeks ago (we're now at more than 3200), with almost 700 unique forks to date.&lt;/p&gt;
@@ -862,73 +704,63 @@ We've made several improvements to significantly improve the startup time, and a
 You can now remove all user-defined variables with a GUI command, and changes in &lt;code&gt;import&lt;/code&gt;ed modules now take effect instantly and automatically in the console, without even a re-&lt;code&gt;import&lt;/code&gt; needed.
 &lt;code&gt;Cloudpickle&lt;/code&gt; is now used to serialize objects from the Console to the Variable Explorer, greatly improving the latter's capabilities (as discussed below).
 Finally, Cython files are now automatically run in dedicated Cython consoles, and you can now use the edit magic command from the Console to open any file right inside Spyder's Editor.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-status-2018-past/varexp_array_display.png&quot; alt=&quot;Variable Explorer, with a variety of array types displayed&quot;&gt;&lt;/p&gt;
-&lt;p&gt;The &lt;strong&gt;Variable Explorer&lt;/strong&gt;, which many of you cite as Spyder's &quot;killer feature&quot;, has greatly improved as well.
+&lt;p&gt;&lt;img src="/blog/spyder-status-2018-past/varexp_array_display.png" alt="Variable Explorer, with a variety of array types displayed"&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Variable Explorer&lt;/strong&gt;, which many of you cite as Spyder's "killer feature", has greatly improved as well.
 Most notably, thanks to the aforementioned &lt;code&gt;cloudpickle&lt;/code&gt; change, you now have access to rich, deep exploration of nearly any object, builtin or custom, and can traverse, view, and when possible even edit complex hierarchies of nested types with ease.
 The Variable Explorer now fully supports &lt;code&gt;Timedelta&lt;/code&gt; objects, both built-in and &lt;code&gt;Pandas&lt;/code&gt; variants, allowing you to easily view and edit them just like &lt;code&gt;datetime&lt;/code&gt; and &lt;code&gt;Timestamp&lt;/code&gt;.
-It also now uses a &quot;pretty&quot;, more human-readable format for dates, times, timedeltas and the like, and also now supports displaying a much wider range of &lt;code&gt;Numpy&lt;/code&gt; array types.
+It also now uses a "pretty", more human-readable format for dates, times, timedeltas and the like, and also now supports displaying a much wider range of &lt;code&gt;Numpy&lt;/code&gt; array types.
 As a quality of life change, it has much better handling of immutable types, like &lt;code&gt;tuples&lt;/code&gt;, clearly showing they can't be edited upfront and avoiding bothersome errors when trying to do so.&lt;/p&gt;
 &lt;p&gt;Rounding out the major changes, the &lt;strong&gt;Find in Files&lt;/strong&gt; tool now allows you to remove items from the &lt;code&gt;Search In&lt;/code&gt; list by hovering over them and pressing &lt;code&gt;Delete&lt;/code&gt;, and there's also a new option to clear all recent directories.
 Under the hood, we've made &lt;code&gt;PyQt5&lt;/code&gt; a dependency for easier, one-command installation and added many more tests and better project infrastructure to help catch errors.
 To make things easier on you if something does go wrong, we've greatly improved the error reporting system, the UI/UX and the explanatory text to be more up to date, informative, and user friendly.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-status-2018-past/error_report_dialog.png&quot; alt=&quot;New Spyder error report dialog, with more helpful UI text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-status-2018-past/error_report_dialog.png" alt="New Spyder error report dialog, with more helpful UI text"&gt;&lt;/p&gt;
 &lt;p&gt;All of the mentioned additions are included in the latest released version of Spyder, 3.2.8, which you can update to with &lt;code&gt;conda update spyder&lt;/code&gt; (if using Anaconda), with your package manager/distribution (if installed that way) or with &lt;code&gt;pip update spyder&lt;/code&gt; (otherwise).
 Even more are already implemented for our next release, due out in a week's time, and we'll have a preview of what to expect right here on the blog even sooner.&lt;/p&gt;
 &lt;h2&gt;Affiliated Project Progress&lt;/h2&gt;
-&lt;p&gt;Outside the core Spyder IDE, while most plugins have been paused until the Spyder 4 release, work on other affiliated projects has continued. The new &lt;a href=&quot;https://github.com/spyder-ide/spyder-unittest&quot;&gt;spyder-unittest&lt;/a&gt; plugin has seen particularly active development, and lead developer and Spyder team member &lt;a href=&quot;http://www1.maths.leeds.ac.uk/~jitse/&quot;&gt;Jitse Niesen&lt;/a&gt; recently published a &lt;a href=&quot;https://www.spyder-ide.org/blog/introducing-unittest-plugin/&quot;&gt;tutorial on its use&lt;/a&gt;.
+&lt;p&gt;Outside the core Spyder IDE, while most plugins have been paused until the Spyder 4 release, work on other affiliated projects has continued. The new &lt;a href="https://github.com/spyder-ide/spyder-unittest"&gt;spyder-unittest&lt;/a&gt; plugin has seen particularly active development, and lead developer and Spyder team member &lt;a href="http://www1.maths.leeds.ac.uk/~jitse/"&gt;Jitse Niesen&lt;/a&gt; recently published a &lt;a href="https://www.spyder-ide.org/blog/introducing-unittest-plugin/"&gt;tutorial on its use&lt;/a&gt;.
 Since November, it has gotten improved &lt;code&gt;pytest&lt;/code&gt; support with realtime test results and click-to-open, better UI/UX, a robust communications backend (ZeroMQ), and numerous bug fixes and minor improvements.
-&lt;a href=&quot;https://github.com/spyder-ide/qtpy&quot;&gt;QtPy&lt;/a&gt;, another affiliated project which Spyder uses as its Qt GUI abstraction layer, has had three releases including one major, with new Qt classes, early support for &lt;code&gt;PySide2&lt;/code&gt;, better performance, and a number of bugfixes.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/spyder-status-2018-past/spyder_unittest.png&quot; alt=&quot;Spyder-unittest dialog, displaying test results&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Other projects under the Spyder umbrella are also making major progress. The &lt;a href=&quot;https://github.com/spyder-ide/pywinpty&quot;&gt;pywinpty&lt;/a&gt; pseudo-terminal library has seen six official releases (three major), with a new rich high level interface to create and track processes, new process wrappers, Python 2.7 support, major performance, stability and security improvements, and many bug fixes.
+&lt;a href="https://github.com/spyder-ide/qtpy"&gt;QtPy&lt;/a&gt;, another affiliated project which Spyder uses as its Qt GUI abstraction layer, has had three releases including one major, with new Qt classes, early support for &lt;code&gt;PySide2&lt;/code&gt;, better performance, and a number of bugfixes.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/spyder-status-2018-past/spyder_unittest.png" alt="Spyder-unittest dialog, displaying test results"&gt;&lt;/p&gt;
+&lt;p&gt;Other projects under the Spyder umbrella are also making major progress. The &lt;a href="https://github.com/spyder-ide/pywinpty"&gt;pywinpty&lt;/a&gt; pseudo-terminal library has seen six official releases (three major), with a new rich high level interface to create and track processes, new process wrappers, Python 2.7 support, major performance, stability and security improvements, and many bug fixes.
 Most importantly, we are proud to report that since this January Jupyter Notebook (in 5.3.0) and JupyterLab have both adopted it to create and manage system terminals on Windows!
-The &lt;a href=&quot;https://github.com/spyder-ide/qtsass&quot;&gt;qtsass&lt;/a&gt; SASS to Qt stylesheet compiler has a new maintainer, with development including new dev infrastructure, refactoring work, a PyPI release, and new features, with more on the way.
-Finally, our &lt;a href=&quot;https://github.com/spyder-ide/loghub&quot;&gt;loghub&lt;/a&gt; automatic changelog generator has seen significant internal and external developer interest, as well as three releases, bug fixes, additional examples, and the ability to group issues and PRs together if desired.
+The &lt;a href="https://github.com/spyder-ide/qtsass"&gt;qtsass&lt;/a&gt; SASS to Qt stylesheet compiler has a new maintainer, with development including new dev infrastructure, refactoring work, a PyPI release, and new features, with more on the way.
+Finally, our &lt;a href="https://github.com/spyder-ide/loghub"&gt;loghub&lt;/a&gt; automatic changelog generator has seen significant internal and external developer interest, as well as three releases, bug fixes, additional examples, and the ability to group issues and PRs together if desired.
 The common thread between all five of these projects has been a substantially increased development pace in recent weeks, so expect to see even more good news soon if that trend continues.&lt;/p&gt;
 &lt;h2&gt;Beyond the Code&lt;/h2&gt;
 &lt;p&gt;The team has made progress on a number of fronts outside core program development.
 We've been joined by several new team members from around the world, who have each contributed new skillsets to the project.
 Further, we've created, developed and deployed a brand new, modern and responsive website and blog, to provide an accessible, central source for Spyder news and information for both newcomers and old hands alike, as you might have noticed :)&lt;/p&gt;
-&lt;p&gt;Our new, comprehensive &lt;a href=&quot;https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ&quot;&gt;Troubleshooting Guide and FAQ&lt;/a&gt; will help users easily resolve common issues without having to wait for a response from us, and we've revised and improved our Github issue tracking workflow to do an even better job at quickly responding to users' needs.
+&lt;p&gt;Our new, comprehensive &lt;a href="https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ"&gt;Troubleshooting Guide and FAQ&lt;/a&gt; will help users easily resolve common issues without having to wait for a response from us, and we've revised and improved our Github issue tracking workflow to do an even better job at quickly responding to users' needs.
 On top of that, our Readme, contributing guide, install docs, and developer wiki have all been thoroughly overhauled to make them more up to date, informative and accessible.
-Finally, we've deepened our relationship with &lt;a href=&quot;https://www.numfocus.org/&quot;&gt;NumFOCUS&lt;/a&gt;, integrating us more closely with the broader PyData community, as well as leading to some exciting news...but that will have to wait for our next post!&lt;/p&gt;
+Finally, we've deepened our relationship with &lt;a href="https://www.numfocus.org/"&gt;NumFOCUS&lt;/a&gt;, integrating us more closely with the broader PyData community, as well as leading to some exciting news...but that will have to wait for our next post!&lt;/p&gt;
 &lt;p&gt;Until then, thanks for all you do for us and the community, and happy Spydering!&lt;/p&gt;
-</content>
-  </entry>
-  <entry xml:base="https://www.spyder-ide.org/blog/introducing-unittest-plugin/">
-    <title type="text">Introducing the unittest plugin</title>
-    <id>urn:uuid:fcd07650-0205-3c25-a050-c46a327d5407</id>
-    <updated>2018-02-23T00:00:00Z</updated>
-    <link href="https://www.spyder-ide.org/blog/introducing-unittest-plugin/" />
-    <author>
-      <name>jitseniesen</name>
-    </author>
-    <content type="html">&lt;p&gt;Automatic testing can increase the quality of your code. This is especially true of dynamic languages like Python, where a typo may only be noticed when that particular code path is executed. The new &lt;a href=&quot;https://github.com/spyder-ide/spyder-unittest&quot;&gt;Spyder unittest plugin&lt;/a&gt; lets you run tests and view the results, all within the IDE. Here, I'll demonstrate what it can do by way of a real-world example.&lt;/p&gt;
-&lt;p&gt;There are numerous unit testing frameworks available for Python, of which the plugin supports several of the most prominent. However, I'm using my favorite here, &lt;a href=&quot;https://pytest.org/&quot;&gt;pytest&lt;/a&gt;. I prefer to write the tests in a separate file from the code, so that's what I'll do here.&lt;/p&gt;
+</content></entry><entry><title>Introducing the unittest plugin</title><link href="https://www.spyder-ide.org/blog/introducing-unittest-plugin/" rel="alternate"></link><updated>2018-02-23T00:00:00Z</updated><author><name>jitseniesen</name></author><id>urn:uuid:fcd07650-0205-3c25-a050-c46a327d5407</id><content type="html">&lt;p&gt;Automatic testing can increase the quality of your code. This is especially true of dynamic languages like Python, where a typo may only be noticed when that particular code path is executed. The new &lt;a href="https://github.com/spyder-ide/spyder-unittest"&gt;Spyder unittest plugin&lt;/a&gt; lets you run tests and view the results, all within the IDE. Here, I'll demonstrate what it can do by way of a real-world example.&lt;/p&gt;
+&lt;p&gt;There are numerous unit testing frameworks available for Python, of which the plugin supports several of the most prominent. However, I'm using my favorite here, &lt;a href="https://pytest.org/"&gt;pytest&lt;/a&gt;. I prefer to write the tests in a separate file from the code, so that's what I'll do here.&lt;/p&gt;
 &lt;h2&gt;Installing the plugin&lt;/h2&gt;
 &lt;p&gt;If you use the Anaconda distribution (as we recommend), then you can install the Spyder unittest plugin with the command&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;conda install -c spyder-ide spyder-unittest
+&lt;pre&gt;&lt;code class="lang-bash"&gt;conda install -c spyder-ide spyder-unittest
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This will also grab all its mandatory dependencies (including Spyder itself if necessary). The &lt;code&gt;-c&lt;/code&gt; option instructs &lt;code&gt;conda&lt;/code&gt; to use the custom channel &lt;code&gt;spyder-ide&lt;/code&gt; run by the Spyder developers, since the plugin isn't part of the default channel.&lt;/p&gt;
 &lt;p&gt;Since we will be using the &lt;code&gt;pytest&lt;/code&gt; framework, you also need to install it:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;conda install pytest
+&lt;pre&gt;&lt;code class="lang-bash"&gt;conda install pytest
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;We'll be running Python 3.6.4, Spyder 3.2.6, &lt;code&gt;spyder-unittest&lt;/code&gt; 0.3.0 and &lt;code&gt;pytest&lt;/code&gt; 3.3.2 for this example.&lt;/p&gt;
 &lt;h2&gt;Creating a project&lt;/h2&gt;
 &lt;p&gt;I'll be using separate files for the tests and the code to be tested, so let's start by creating a project which will contain these files. In the &lt;code&gt;Projects&lt;/code&gt; menu, click on &lt;code&gt;New Project ...&lt;/code&gt;. Enter a name for the project (in my example, &lt;code&gt;prime_example&lt;/code&gt;), and under &lt;code&gt;Location&lt;/code&gt;, select the directory in which to store it. Click &lt;code&gt;Create&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/introducing-unittest-plugin/new-project.png&quot; alt=&quot;&amp;#34;Create new project&amp;#34; window&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/introducing-unittest-plugin/new-project.png" alt="&amp;#34;Create new project&amp;#34; window"&gt;&lt;/p&gt;
 &lt;h2&gt;Writing code to be tested&lt;/h2&gt;
 &lt;p&gt;Create a Python file &lt;code&gt;primes.py&lt;/code&gt; with the following function, which checks whether a number is prime:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-python&quot;&gt;def is_prime(number):
+&lt;pre&gt;&lt;code class="lang-python"&gt;def is_prime(number):
     &amp;quot;&amp;quot;&amp;quot;Return True if `number` is prime.&amp;quot;&amp;quot;&amp;quot;
     for element in range(2, number):
         if number % element == 0:
             return False
     return True
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This example is taken from the blog post &lt;a href=&quot;https://jeffknupp.com/blog/2013/12/09/improve-your-python-understanding-unit-testing/&quot;&gt;Improve Your Python: Understanding Unit Testing&lt;/a&gt; by Jeff Knupp.&lt;/p&gt;
+&lt;p&gt;This example is taken from the blog post &lt;a href="https://jeffknupp.com/blog/2013/12/09/improve-your-python-understanding-unit-testing/"&gt;Improve Your Python: Understanding Unit Testing&lt;/a&gt; by Jeff Knupp.&lt;/p&gt;
 &lt;h2&gt;Writing the tests&lt;/h2&gt;
 &lt;p&gt;To test our &lt;code&gt;is_prime&lt;/code&gt; function, we will write two tests: one to check that &lt;code&gt;5&lt;/code&gt; is considered a prime, and one to ensure &lt;code&gt;4&lt;/code&gt; is not. They can be implemented as follows:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-python&quot;&gt;from primes import is_prime
+&lt;pre&gt;&lt;code class="lang-python"&gt;from primes import is_prime
 
 def test_five_is_prime():
     assert is_prime(5) == True
@@ -938,26 +770,24 @@ def test_four_is_not_prime():
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;One of the cool things about &lt;code&gt;pytest&lt;/code&gt; is that it can find the tests automatically, so you don't need to mark them in any way. By default &lt;code&gt;pytest&lt;/code&gt; uses a naming convention: all functions starting with &lt;code&gt;test_&lt;/code&gt; in files starting with &lt;code&gt;test_&lt;/code&gt; are considered test functions. We'll save the code in the file &lt;code&gt;test_primes.py&lt;/code&gt; which follows this naming convention.&lt;/p&gt;
 &lt;p&gt;In Spyder, the project now looks as follows:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/introducing-unittest-plugin/code.png&quot; alt=&quot;Spyder window with code&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/introducing-unittest-plugin/code.png" alt="Spyder window with code"&gt;&lt;/p&gt;
 &lt;h2&gt;Running the tests&lt;/h2&gt;
 &lt;p&gt;Now comes the fun part, where we actually get to use the plugin. In the &lt;code&gt;Run&lt;/code&gt; menu, select &lt;code&gt;Run unit tests&lt;/code&gt;. If you do not see this menu item, then the plugin is not installed; refer to the installation instructions above.&lt;/p&gt;
 &lt;p&gt;A window appears in which to configure the test run. One of the advantages of using a project is that it is automatically selected as the directory in which to find tests (another advantage is that Spyder will remember the testing configuration). So the only thing we need to do is select the test framework, which is &lt;code&gt;pytest&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/introducing-unittest-plugin/test-config.png&quot; alt=&quot;&amp;#34;Configure tests&amp;#34; window&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Press the &lt;code&gt;OK&lt;/code&gt; button to run the tests, and lo and behold, the results appear in a new pane called &quot;Unit testing&quot;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/introducing-unittest-plugin/test-results.png&quot; alt=&quot;Test results in Spyder windows&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/introducing-unittest-plugin/test-config.png" alt="&amp;#34;Configure tests&amp;#34; window"&gt;&lt;/p&gt;
+&lt;p&gt;Press the &lt;code&gt;OK&lt;/code&gt; button to run the tests, and lo and behold, the results appear in a new pane called "Unit testing":&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/introducing-unittest-plugin/test-results.png" alt="Test results in Spyder windows"&gt;&lt;/p&gt;
 &lt;p&gt;As you can see, both tests pass. This means that our function correctly identifies &lt;code&gt;5&lt;/code&gt; as prime and &lt;code&gt;4&lt;/code&gt; as not prime.&lt;/p&gt;
 &lt;h2&gt;A failing test&lt;/h2&gt;
 &lt;p&gt;Unfortunately, our function &lt;code&gt;is_prime&lt;/code&gt; has a bug. The number &lt;code&gt;1&lt;/code&gt; is not considered a prime, but &lt;code&gt;is_prime(1)&lt;/code&gt; in fact returns &lt;code&gt;True&lt;/code&gt;. Therefore, to test for this, we add the following code to &lt;code&gt;test_primes.py&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-python&quot;&gt;def test_one_is_not_prime():
+&lt;pre&gt;&lt;code class="lang-python"&gt;def test_one_is_not_prime():
     assert is_prime(1) == False
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Now, run the tests again by clicking on &lt;code&gt;Run unit tests&lt;/code&gt; in the &lt;code&gt;Run&lt;/code&gt; menu. Spyder remembers the configuration so you are not asked for it again. This time, the results are:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/introducing-unittest-plugin/test-results2.png&quot; alt=&quot;Test results in Spyder windows&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/introducing-unittest-plugin/test-results2.png" alt="Test results in Spyder windows"&gt;&lt;/p&gt;
 &lt;p&gt;Our new test fails. The details clarify that &lt;code&gt;is_prime(1)&lt;/code&gt; returns &lt;code&gt;True&lt;/code&gt;, while the assert in the test function claims that it should return &lt;code&gt;False&lt;/code&gt;.&lt;/p&gt;
 &lt;h2&gt;Where to go from here&lt;/h2&gt;
 &lt;p&gt;With this demonstration under your belt, you should be able to write tests for your code and run them with the plugin. For example, try fixing the bug so that &lt;code&gt;1&lt;/code&gt; is correctly identified as non-prime, and run the tests again to check verify it.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Spyder-unittest&lt;/code&gt; supports not only the &lt;code&gt;pytest&lt;/code&gt; framework, but also the &lt;code&gt;nose&lt;/code&gt; framework and the &lt;code&gt;unittest&lt;/code&gt; module in the Python standard library. It is still fairly new (as its version number suggests), so I look forward to your comments. Please send your ideas, bug reports and pull requests to the &lt;a href=&quot;https://github.com/spyder-ide/spyder-unittest&quot;&gt;spyder-unittest&lt;/a&gt; repo on Github.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Spyder-unittest&lt;/code&gt; supports not only the &lt;code&gt;pytest&lt;/code&gt; framework, but also the &lt;code&gt;nose&lt;/code&gt; framework and the &lt;code&gt;unittest&lt;/code&gt; module in the Python standard library. It is still fairly new (as its version number suggests), so I look forward to your comments. Please send your ideas, bug reports and pull requests to the &lt;a href="https://github.com/spyder-ide/spyder-unittest"&gt;spyder-unittest&lt;/a&gt; repo on Github.&lt;/p&gt;
 &lt;p&gt;Happy Spydering with automatic tests!&lt;/p&gt;
-</content>
-  </entry>
-</feed>
+</content></entry></feed>
