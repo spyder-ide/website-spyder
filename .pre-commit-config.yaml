@@ -17,7 +17,7 @@ repos:
 
 # General fixers
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.4.0
+  rev: v4.0.1
   hooks:
   - id: trailing-whitespace
     exclude_types: [svg]
@@ -31,7 +31,7 @@ repos:
 
 # More general fixers
 - repo: https://github.com/Lucas-C/pre-commit-hooks
-  rev: v1.1.9
+  rev: v1.1.10
   hooks:
   - id: remove-tabs
     name: Replace tabs with spaces
@@ -41,7 +41,7 @@ repos:
 
 # Check and fix spelling
 - repo: https://github.com/codespell-project/codespell
-  rev: v2.0.0
+  rev: v2.1.0
   hooks:
   # Define separate hooks for checking and correcting spelling errors
   # since codespell doesn't print verbose output when writing changes
@@ -53,23 +53,6 @@ repos:
     exclude: '\.gitattributes'
     args: [--write-changes]
 
-# Prettify Bash scripts
-- repo: https://github.com/lovesegfault/beautysh
-  rev: '6.0.1'
-  hooks:
-  - id: beautysh
-    name: Beautify Bash scripts
-
-# Lint Bash scripts
-- repo: https://github.com/openstack/bashate
-  rev: '2.0.0'
-  hooks:
-  - id: bashate
-    name: Lint Bash scripts
-    stages: [manual]
-    verbose: false
-    args: [--max-line-length, '80']
-
 # Lint and fix CSS with stylelint
 - repo: https://github.com/awebdeveloper/pre-commit-stylelint
   rev: '0.0.2'
@@ -78,12 +61,12 @@ repos:
     name: Lint and fix CSS (stylelint)
     args: [--fix, --color, --maxWarnings, '0', --report-needless-disables, --report-invalid-scope-disables, --report-descriptionless-disables]
     additional_dependencies:
-    - 'stylelint@13.8.0'
-    - 'stylelint-config-standard@20.0.0'
+    - 'stylelint@13.13.1'
+    - 'stylelint-config-standard@22.0.0'
     - 'stylelint-a11y@1.2.3'
     - 'stylelint-csstree-validator@1.9.0'
-    - 'stylelint-declaration-block-no-ignored-properties@2.3.0'
-    - 'stylelint-no-unsupported-browser-features@4.1.4'
+    - 'stylelint-declaration-block-no-ignored-properties@2.4.0'
+    - 'stylelint-no-unsupported-browser-features@5.0.1'
     - 'stylelint-order@4.1.0'
     - 'postcss'  # Manually required or a11y doesn't work properly
 
@@ -96,31 +79,31 @@ repos:
 
 # Pretty-format INI
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-  rev: v2.0.0
+  rev: v2.1.0
   hooks:
   - id: pretty-format-ini
     name: Format INI
-    types: [text]
-    files: '(?<!configs\/disqus-comments)\.(ini|lektorproject|codespellrc|gitlint)$'
+    types: [ini]
+    exclude: 'configs/disqus-comments\.ini'
     args: [--autofix]
 
 # Lint and fix JavaScript
 - repo: https://github.com/pre-commit/mirrors-eslint
-  rev: v7.18.0
+  rev: v7.32.0
   hooks:
   - id: eslint
     name: Lint and fix JavaScript
     args: [--fix, --max-warnings, '0', --color]
     additional_dependencies:
-    - 'eslint@7.18.0'
-    - 'eslint-config-standard@16.0.2'
-    - 'eslint-plugin-import@2.22.1'
+    - 'eslint@7.32.0'
+    - 'eslint-config-standard@16.0.3'
+    - 'eslint-plugin-import@2.24.1'
     - 'eslint-plugin-node@11.1.0'
-    - 'eslint-plugin-promise@4.2.1'
+    - 'eslint-plugin-promise@4.3.1'
 
 # Lint Jinja
 - repo: https://github.com/thibaudcolas/curlylint
-  rev: v0.12.0
+  rev: v0.13.0
   hooks:
   - id: curlylint
     name: Lint Jinja templates
@@ -129,13 +112,13 @@ repos:
 
 # Check JSON
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.4.0
+  rev: v4.0.1
   hooks:
   - id: check-json
 
 # Add doctoc to Markdown
 - repo: https://github.com/thlorenz/doctoc
-  rev: v2.0.0
+  rev: v2.0.1
   hooks:
   - id: doctoc
     name: Generate Markdown ToCs
@@ -143,27 +126,30 @@ repos:
 
 # Lint Markdown
 - repo: https://github.com/igorshubovych/markdownlint-cli
-  rev: v0.26.0
+  rev: v0.28.1
   hooks:
   - id: markdownlint
     name: Lint Markdown
-    # Pinned to Node 14/npm 6 to work around symlink issue on Windows
-    # Otherwise pre-commit install-hooks needs to be run in an admin console
-    # Or with dev mode or symlinks enabled at the OS level
-    # https://github.com/pre-commit/pre-commit/issues/1681
-    language_version: '14.15.0'
     args: [--fix]
+
+# Check Python dependencies
+- repo: https://github.com/Lucas-C/pre-commit-hooks-safety
+  rev: v1.2.2
+  hooks:
+  - id: python-safety-dependencies-check
+    name: Run Safety check on dependencies
+    files: 'requirements-prod.txt'
 
 # Check TOML and XML
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.4.0
+  rev: v4.0.1
   hooks:
   - id: check-toml
   - id: check-xml
 
 # Pretty-format YAML
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-  rev: v2.0.0
+  rev: v2.1.0
   hooks:
   - id: pretty-format-yaml
     name: Format Yaml
@@ -171,13 +157,13 @@ repos:
 
 # Check YAML
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.4.0
+  rev: v4.0.1
   hooks:
   - id: check-yaml
 
 # Lint YAML
 - repo: https://github.com/adrienverge/yamllint.git
-  rev: v1.25.0
+  rev: v1.26.3
   hooks:
   - id: yamllint
     name: Lint Yaml
@@ -186,7 +172,7 @@ repos:
 
 # Replace CRLF with LF post-prettify
 - repo: https://github.com/Lucas-C/pre-commit-hooks
-  rev: v1.1.9
+  rev: v1.1.10
   hooks:
   - id: remove-crlf
     name: Replace CRLFs with LF
@@ -197,13 +183,13 @@ repos:
 # General checkers
 
 - repo: https://github.com/pre-commit/pygrep-hooks
-  rev: v1.7.0
+  rev: v1.9.0
   hooks:
   - id: text-unicode-replacement-char
     name: Check for Unicode replacement chars
 
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.4.0
+  rev: v4.0.1
   hooks:
   - id: check-added-large-files
     args: [--maxkb=1025]
@@ -211,25 +197,25 @@ repos:
   - id: check-executables-have-shebangs
     exclude: 'pre\-commit\-config\.yaml'
   - id: check-merge-conflict
-  - id: check-symlinks
-  - id: destroyed-symlinks
+  - id: check-shebang-scripts-are-executable
+    exclude: 'pre\-commit\-config\.yaml'
   - id: no-commit-to-branch
     name: Prevent commits to wrong branch
-    args: [--branch, master, --branch, legacy, --pattern, 'v?\d{1,3}\.x']
+    args: [--branch, master, --branch, main, --pattern, 'v?\d{1,3}\.x']
 
 
 # Commit message hooks #
 
 # Check that commit message follows basic rules
 - repo: https://github.com/jorisroovers/gitlint
-  rev: v0.15.0
+  rev: v0.15.1
   hooks:
   - id: gitlint
     name: Check commit message
 
 # Check commit message spelling
 - repo: https://github.com/codespell-project/codespell
-  rev: v2.0.0
+  rev: v2.1.0
   hooks:
   - id: codespell
     name: Check commit message spelling
