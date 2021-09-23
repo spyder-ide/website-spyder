@@ -1,8 +1,0 @@
-name: 'Build Site'
-description: 'Build the site with Lektor'
-runs:
-  using: 'composite'
-  steps:
-  - name: Build with Lektor
-    shell: bash
-    run: ./ci/build.sh

@@ -1,4 +1,4 @@
 #!/bin/bash -ex
 
-pip3 install -U pip
-pip3 install -r ci/requirements-ci.txt
+python3 -m pip install --upgrade pip setuptools wheel
+python3 -m pip install --upgrade -r requirements-prod.txt
