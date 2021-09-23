@@ -1,0 +1,32 @@
+# Build the project and test that it works correctly
+# Based on https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Test
+
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches: ['staging*']
+  pull_request:
+    branches: [master, main, '*.*', 'staging*']
+
+jobs:
+  deploy:
+    name: Build Site
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout website repository
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      shell: bash
+      run: ./ci/install.sh
+    - name: Build with Lektor
+      shell: bash
+      run: ./ci/build.sh

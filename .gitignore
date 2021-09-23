@@ -7,7 +7,6 @@
 *.kate-swp
 *.bak
 *.tmp
-*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -19,6 +18,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+bin/
 build/
 develop-eggs/
 dist/

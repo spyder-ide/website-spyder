@@ -2,32 +2,38 @@
 
 ![Spyder Website — The Official Site of the Scientific Python Development Environment](./assets/static/images/spyder_readme_banner.png)
 
-*Copyright © 2016-2020 Spyder Website Contributors and others (see [AUTHORS.txt](https://github.com/spyder-ide/website-spyder/blob/master/AUTHORS.txt))*
+*Copyright © 2016-2021 Spyder Website Contributors and others (see [AUTHORS.txt](https://github.com/spyder-ide/website-spyder/blob/master/AUTHORS.txt))*
 
 
-[![license](https://img.shields.io/pypi/l/spyder.svg)](./LICENSE.txt)
-[![Travis status](https://travis-ci.org/spyder-ide/website-spyder.svg?branch=develop)](https://travis-ci.org/spyder-ide/website-spyder)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/12791f68-4cbb-4236-b918-24da97168631/deploy-status)](https://app.netlify.com/sites/spyder-website-preview/deploys)
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+<!-- Project status -->
+[![License](https://img.shields.io/github/license/spyder-ide/website-spyder?label=License)](https://github.com/spyder-ide/website-spyder/blob/master/LICENSE.txt)
+[![Framework](https://img.shields.io/badge/Framework-Lektor-purple.svg)](https://www.getlektor.com/)
+[![Theme](https://img.shields.io/badge/Theme-Lektor--Icon-red.svg)](https://spyder-ide.github.io/lektor-icon/)
 [![OpenCollective Backers](https://opencollective.com/spyder/backers/badge.svg?color=blue)](#backers)
-[![Join the chat at https://gitter.im/spyder-ide/public](https://badges.gitter.im/spyder-ide/spyder.svg)](https://gitter.im/spyder-ide/public)
+[![Gitter chat](https://badges.gitter.im/spyder-ide/spyder.svg)](https://gitter.im/spyder-ide/public)
+
+
+<!-- Build and deploy status -->
+[![Deploy status](https://github.com/spyder-ide/website-spyder/actions/workflows/deploy.yaml/badge.svg?branch=master)](https://github.com/spyder-ide/website-spyder/actions/workflows/deploy.yaml)
+[![Test status](https://github.com/spyder-ide/website-spyder/actions/workflows/test.yaml/badge.svg)](https://github.com/spyder-ide/website-spyder/actions/workflows/test.yaml)
+[![Lint status](https://github.com/spyder-ide/website-spyder/actions/workflows/lint.yaml/badge.svg?branch=master)](https://github.com/spyder-ide/website-spyder/actions/workflows/lint.yaml)
+[![Pre-Commit](https://img.shields.io/badge/Linting-Pre--Commit-brightgreen?logo=pre-commit&logoColor=white)](https://pre-commit.com/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/12791f68-4cbb-4236-b918-24da97168631/deploy-status)](https://app.netlify.com/sites/spyder-website-preview/deploys)
 
 
 ![Screenshot of the Spyder website homepage, showing a banner and screenshot](./assets/static/images/mainpage_screenshot.png)
 
 
-This is the repository for the Spyder IDE website at [Spyder-IDE.org](https://www.spyder-ide.org/), built with the [Lektor](https://www.getlektor.com/) static CMS and our very own [Lektor-Icon](https://spyder-ide.github.io/lektor-icon/) theme.
+This is the repository for the Spyder IDE website at [Spyder-IDE.org](https://www.spyder-ide.org/)
+It is built using [Lektor](https://www.getlektor.com/), deployed via [GitHub Actions](https://github.com/features/actions) and served by [GitHub Pages](https://pages.github.com/), hosted on a custom domain.
+The frontend is our very own [Lektor-Icon theme](https://spyder-ide.github.io/lektor-icon/), whose [documentation](https://github.com/spyder-ide/lektor-icon) should be consulted for details on what the various options do.
 
 
 <!-- markdownlint-disable -->
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Getting started](#getting-started)
-  - [Clone the repo with submodules](#clone-the-repo-with-submodules)
-  - [Install dependencies](#install-dependencies)
-  - [Set up Pre-Commit](#set-up-pre-commit)
-  - [Run server and make changes](#run-server-and-make-changes)
+- [Contributing to the website](#contributing-to-the-website)
 - [Workflow](#workflow)
 - [Technologies and libraries used](#technologies-and-libraries-used)
   - [Lektor plugins](#lektor-plugins)
@@ -38,62 +44,11 @@ This is the repository for the Spyder IDE website at [Spyder-IDE.org](https://ww
 
 
 
-## Getting started
+## Contributing to the website
 
-
-### Clone the repo with submodules
-
-```bash
-git clone --recursive https://github.com/spyder-ide/website-spyder.git
-```
-
-
-### Install dependencies
-
-You can install the required development and production dependencies with conda (recommended):
-
-```bash
-conda install -c conda-forge --file requirements-dev.txt
-```
-
-or with pip:
-
-```bash
-pip install -r requirements-dev.txt
-```
-
-
-### Set up Pre-Commit
-
-This repository uses [pre-commit](https://pre-commit.com/) to install, configure and update a suite of pre-commit hooks that check for common problems and issues and fix many of them automatically.
-Pre-commit itself is installed with the above command, and the hooks can be installed by running the following from the root of this repo:
-
-```bash
-pre-commit install
-pre-commit install --hook-type commit-msg
-```
-
-The hooks will be automatically run against any new/changed files every time you commit.
-It may take a few minutes to install the needed packages the first time you commit, but subsequent runs should only take a few seconds.
-If you made one or more commits before installing the hooks (not recommended), to run them manually on all the files in the repo, execute:
-
-```bash
-pre-commit run --all-files
-```
-
-**Note**: Most of the hooks fix the problems they detect automatically (the hook output will say ``files were modified by this hook``, but no errors/warnings will be listed), but they will still abort the commit so you can double-check everything first.
-Once you're satisfied, ``git add .`` again and re-commit.
-
-
-### Run server and make changes
-
-In the root of this repository, run a continuously updating local webserver:
-
-```bash
-lektor server
-```
-
-The resulting website can be viewed in your browser at ``http://localhost:5000``.
+Content contributions and bug fixes/improvements are welcome!
+For information on how to contribute to the site, including reporting issues, setting up a development environment and patching code, see the [Contributing Guide](https://github.com/spyder-ide/website-spyder/blob/master/CONTRIBUTING.md).
+Thanks!
 
 
 
@@ -112,8 +67,8 @@ This website is built using [Lektor](https://www.getlektor.com/), a static web g
 
 The build also requires several [Lektor plugins](https://www.getlektor.com/docs/plugins/) (no extra configuration is needed; Lektor automatically installs them when building):
 
-* [disqus-comments](https://github.com/lektor/lektor-disqus-comments)
 * [atom](https://github.com/lektor/lektor-atom)
+* [disqus-comments](https://github.com/lektor/lektor-disqus-comments)
 
 
 
