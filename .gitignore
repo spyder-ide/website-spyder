@@ -1,12 +1,19 @@
 # Standard gitignore list
 
+# Archive files
 *.gz
 *.zip
 *.tar
 *.xz
-*.kate-swp
+
+# Temporary / backup files
 *.bak
 *.tmp
+*.temp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -79,6 +86,7 @@ instance/
 .scrapy
 
 # Sphinx documentation
+doc/_build/
 docs/_build/
 
 # PyBuilder
@@ -113,12 +121,14 @@ celerybeat-schedule
 env/
 venv/
 ENV/
+VENV/
 env.bak/
 venv.bak/
 
 # Spyder project settings
 .spyderproject
 .spyproject
+spyder_crash.log
 
 # Rope project settings
 .ropeproject
@@ -137,5 +147,17 @@ dmypy.json
 # Pylint
 .pylint.d/
 
-# OS-specific files
-.DS_Store
+# gedit files
+*~
+
+# Notepad++ files
+nppBackup/
+
+# git .orig files
+*.orig
+
+# IDEA project settings
+.idea/
+
+# VSCode files
+.vscode/
