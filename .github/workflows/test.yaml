@@ -1,13 +1,16 @@
 # Build the project and test that it works correctly
-# Based on https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
-
 name: Test
 
 on:  # yamllint disable-line rule:truthy
   push:
-    branches: ['staging*']
+    branches:
+    - 'staging*'
   pull_request:
-    branches: [master, main, '*.*', 'staging*']
+    branches:
+    - master
+    - main
+    - '*.*'
+    - 'staging*'
 
 jobs:
   deploy:
@@ -17,11 +20,11 @@ jobs:
 
     steps:
     - name: Checkout website repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         submodules: true
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: '3.x'
     - name: Install dependencies
