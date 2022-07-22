@@ -2,14 +2,14 @@
 
 ![Spyder Website — The Official Site of the Scientific Python Development Environment](./assets/static/images/spyder_readme_banner.png)
 
-*Copyright © 2016-2021 Spyder Website Contributors and others (see [AUTHORS.txt](https://github.com/spyder-ide/website-spyder/blob/master/AUTHORS.txt))*
+*Copyright © 2016- Spyder Website Contributors and others (see [AUTHORS.txt](https://github.com/spyder-ide/website-spyder/blob/master/AUTHORS.txt))*
 
 
 <!-- Project status -->
 [![License](https://img.shields.io/github/license/spyder-ide/website-spyder?label=License)](https://github.com/spyder-ide/website-spyder/blob/master/LICENSE.txt)
 [![Framework](https://img.shields.io/badge/Framework-Lektor-purple.svg)](https://www.getlektor.com/)
 [![Theme](https://img.shields.io/badge/Theme-Lektor--Icon-red.svg)](https://spyder-ide.github.io/lektor-icon/)
-[![OpenCollective Backers](https://opencollective.com/spyder/backers/badge.svg?color=blue)](#backers)
+[![OpenCollective Backers](https://opencollective.com/spyder/backers/badge.svg?color=blue)](https://opencollective.com/spyder)
 [![Gitter chat](https://badges.gitter.im/spyder-ide/spyder.svg)](https://gitter.im/spyder-ide/public)
 
 

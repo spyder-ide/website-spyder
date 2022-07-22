@@ -3,7 +3,9 @@ name: Deploy
 
 on:  # yamllint disable-line rule:truthy
   push:
-    branches: [master, main]
+    branches:
+    - master
+    - main
 
 jobs:
   deploy:
@@ -13,11 +15,11 @@ jobs:
 
     steps:
     - name: Checkout website repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         submodules: true
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: '3.x'
     - name: Install dependencies
@@ -27,8 +29,7 @@ jobs:
       shell: bash
       run: ./ci/build.sh
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@4.1.5
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-        BRANCH: gh-pages    # The branch the action should deploy to
         FOLDER: ./website-lektor-icon-build    # The folder the action should deploy
         CLEAN: true    # Automatically remove deleted files from the deploy branch

@@ -25,7 +25,7 @@ target = "ghpages+https://spyder-ide//website-production?cname=www.spyder-ide.or
 title = "Spyder IDE"
 content_lang = "en-US"
 author = "Spyder Team"
-copyright = "&copy; 2021 Spyder Website Contributors"
+copyright = "&copy; 2022 Spyder Website Contributors"
 description = "Website for Spyder, the Scientific Python Development Environment"
 keywords = "spyder, ide, scipy, pydata, science, data, analysis, anaconda"
 favicon_path = "/static/images/favicon.png"
