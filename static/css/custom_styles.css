@@ -37,10 +37,7 @@
 }
 
 #section-components .card-item {
-  padding-bottom: 0.5em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  padding-top: 1.5em;
+  padding: 1.5em 1.5em 0.5em;
 }
 
 /* Adjust component icons to be smaller at narrower widths */

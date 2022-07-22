@@ -43,7 +43,7 @@
 
   <title>Blog | Introducing the unittest plugin — Spyder IDE</title>
   <meta name="author" content="Spyder Team"en-US>
-  <meta name="copyright" content="&amp;copy; 2021 Spyder Website Contributors"en-US>
+  <meta name="copyright" content="&amp;copy; 2022 Spyder Website Contributors"en-US>
   <meta name="description" content="Website for Spyder, the Scientific Python Development Environment"en-US>
   <meta name="keywords" content="spyder, ide, scipy, pydata, science, data, analysis, anaconda"en-US>
   <meta name="theme-color" content="#d50000">
@@ -68,7 +68,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="/static/css/style.css?h=038b8d38" type="text/css">
   <!-- User Custom CSS -->
-  <link rel="stylesheet" href="/static/css/custom_styles.css?h=d3a0c0f4" type="text/css">
+  <link rel="stylesheet" href="/static/css/custom_styles.css?h=dda53f09" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
 </head>
 
@@ -132,7 +132,7 @@
 <p>We'll be running Python 3.6.4, Spyder 3.2.6, <code>spyder-unittest</code> 0.3.0 and <code>pytest</code> 3.3.2 for this example.</p>
 <h2>Creating a project</h2>
 <p>I'll be using separate files for the tests and the code to be tested, so let's start by creating a project which will contain these files. In the <code>Projects</code> menu, click on <code>New Project ...</code>. Enter a name for the project (in my example, <code>prime_example</code>), and under <code>Location</code>, select the directory in which to store it. Click <code>Create</code>.</p>
-<p><img src="/blog/introducing-unittest-plugin/new-project.png" alt="&#34;Create new project&#34; window"></p>
+<p><img src="/blog/introducing-unittest-plugin/new-project.png" alt="&quot;Create new project&quot; window"></p>
 <h2>Writing code to be tested</h2>
 <p>Create a Python file <code>primes.py</code> with the following function, which checks whether a number is prime:</p>
 <pre><code class="lang-python">def is_prime(number):
@@ -159,7 +159,7 @@ def test_four_is_not_prime():
 <h2>Running the tests</h2>
 <p>Now comes the fun part, where we actually get to use the plugin. In the <code>Run</code> menu, select <code>Run unit tests</code>. If you do not see this menu item, then the plugin is not installed; refer to the installation instructions above.</p>
 <p>A window appears in which to configure the test run. One of the advantages of using a project is that it is automatically selected as the directory in which to find tests (another advantage is that Spyder will remember the testing configuration). So the only thing we need to do is select the test framework, which is <code>pytest</code>.</p>
-<p><img src="/blog/introducing-unittest-plugin/test-config.png" alt="&#34;Configure tests&#34; window"></p>
+<p><img src="/blog/introducing-unittest-plugin/test-config.png" alt="&quot;Configure tests&quot; window"></p>
 <p>Press the <code>OK</code> button to run the tests, and lo and behold, the results appear in a new pane called "Unit testing":</p>
 <p><img src="/blog/introducing-unittest-plugin/test-results.png" alt="Test results in Spyder windows"></p>
 <p>As you can see, both tests pass. This means that our function correctly identifies <code>5</code> as prime and <code>4</code> as not prime.</p>
@@ -221,7 +221,7 @@ def test_four_is_not_prime():
         <div class="row footer-copyright">
           <div class="text-center">
             <p>
-              &copy; 2021 Spyder Website Contributors
+              &copy; 2022 Spyder Website Contributors
               <span class="pipe-colored"> | </span>
               Licensed <a href="https://github.com/spyder-ide/website-spyder/blob/master/NOTICE.txt" target="_blank" rel="noopener noreferrer">MIT and others</a>
               <br>
