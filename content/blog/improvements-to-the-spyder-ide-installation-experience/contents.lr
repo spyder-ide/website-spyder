@@ -1,6 +1,6 @@
 title:
 
-Improvements to the Spyder IDE installation experience 
+Improvements to the Spyder IDE installation experience
 ---
 allow_comments: yes
 ---
@@ -16,11 +16,11 @@ Before these improvements, Spyder already had a mechanism to detect more recent 
 
 If you have the “Check for updates” option enabled, you have probably seen our previous dialog at some point!
 
-![Update avaliable dialog from Spyder version 5.3.3 to 5.4.0 - Old update available dialog](image1.png)
+![Update available dialog from Spyder version 5.3.3 to 5.4.0 - Old update available dialog](image1.png)
 
 Starting with our next version (5.4.1), to be released next December, users will be prompted by this message instead:
 
-![Update avaliable dialog from Spyder version 5.4.0 to 5.4.1 - New update available dialog](image2.png)
+![Update available dialog from Spyder version 5.4.0 to 5.4.1 - New update available dialog](image2.png)
 
 As can be seen, Spyder will now be able to automatically download and install a new version on behalf of users, in a similar way that applications such as Firefox and Chrome handle their updates.
 
