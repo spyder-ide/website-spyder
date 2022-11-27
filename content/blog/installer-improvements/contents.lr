@@ -8,21 +8,21 @@ category: Announcement
 ---
 tags: milestone, new-feature, installers
 ---
-summary: Spyder 5.4.0 was released recently and it came with some interesting features for its Windows and macOS standalone installers. Starting with this release, Spyder will give more feedback to users when new versions are available and it will allow them  to download and update those versions in a graphical way! In this post, we will be talking about these improvements and how the standalone applications update process is looking now.
+summary: Spyder 5.4.0 was released recently and it came with some interesting features for its Windows and macOS standalone installers. Starting with this release, Spyder will give more feedback to users when new versions are available and it will allow them to download and update those versions in a graphical way! In this post, we will be talking about these improvements and how the standalone applications update process is looking now.
 ---
 body:
 
 [Spyder](https://www.spyder-ide.org/) 5.4.0 was released recently and it came with some interesting features for its Windows and macOS standalone installers.
-Starting with this release, Spyder will give more feedback to users when new versions are available and it will allow them  to download and update those versions in a graphical way!
+Starting with this release, Spyder will give more feedback to users when new versions are available and it will allow them to download and update those versions in a graphical way!
 In this post, we will be talking about these improvements and how the standalone applications update process is looking now.
 
-But before proceeding, it is important to remark that this work was possible due to a [NumFOCUS Small Development Grant ](https://github.com/spyder-ide/spyder/wiki/NumFOCUS-Small-Development-Grant-2022)awarded to Spyder, which has enabled us to hire a new developer  (Juan Sebastian Bautista Rojas) to be in charge of all the implementation details.
+But before proceeding, it is important to remark that this work was possible due to a [NumFOCUS Small Development Grant ](https://github.com/spyder-ide/spyder/wiki/NumFOCUS-Small-Development-Grant-2022)awarded to Spyder, which has enabled us to hire a new developer (Juan Sebastian Bautista Rojas) to be in charge of all the implementation details.
 
 Before these improvements, Spyder already had a mechanism to detect more recent versions, but that functionality was very simple.
 After informing users of the availability of a newer version, they had to follow a link to download the installer for it and then manually run it.
 There was no other information regarding this process.
 
-If you have the “Check for updates” option enabled, you have probably seen our previous dialog at some point!
+If you have the "Check for updates" option enabled, you have probably seen our previous dialog at some point!
 
 ![Update available dialog from Spyder version 5.3.3 to 5.4.0 - Old update available dialog](update-available-old.png)
 
@@ -32,7 +32,7 @@ Starting with our next version (5.4.1), to be released next December, users will
 
 As can be seen, Spyder will now be able to automatically download and install a new version on behalf of users, in a similar way that applications such as Firefox and Chrome handle their updates.
 
-After clicking “Yes” on that dialog, Spyder will show the following one to inform users that the process has started and how much is left to finish it.
+After clicking "Yes" on that dialog, Spyder will show the following one to inform users that the process has started and how much is left to finish it.
 
 ![Dialog downloading Spyder 5.4.1 installer](download-status.png)
 
@@ -53,7 +53,7 @@ If users agree to continue, our Windows installer will be started automatically,
 ![Wait message while Spyder is being uninstalled](uninstall-progress.png)
 ![Spyder installation wizard page](installation-wizard.png)
 
-For macOS users, Spyder will automatically mount the new version’s DMG, so they can simply drag and drop its app to the Applications folder
+For macOS users, Spyder will automatically mount the new version's DMG, so they can simply drag and drop its app to the Applications folder
 
 ![macOS new version's DMG mounted with a drag and drop dialog to move new Spyder version into the Application folder](macos-dmg.png)
 
