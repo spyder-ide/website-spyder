@@ -16,37 +16,37 @@ Before these improvements, Spyder already had a mechanism to detect more recent 
 
 If you have the “Check for updates” option enabled, you have probably seen our previous dialog at some point!
 
-![Update available dialog from Spyder version 5.3.3 to 5.4.0 - Old update available dialog](image1.png)
+![Update available dialog from Spyder version 5.3.3 to 5.4.0 - Old update available dialog](update-available-old.png)
 
 Starting with our next version (5.4.1), to be released next December, users will be prompted by this message instead:
 
-![Update available dialog from Spyder version 5.4.0 to 5.4.1 - New update available dialog](image2.png)
+![Update available dialog from Spyder version 5.4.0 to 5.4.1 - New update available dialog](update-available-new.png)
 
 As can be seen, Spyder will now be able to automatically download and install a new version on behalf of users, in a similar way that applications such as Firefox and Chrome handle their updates.
 
 After clicking “Yes” on that dialog, Spyder will show the following one to inform users that the process has started and how much is left to finish it.
 
-![Dialog downloading Spyder 5.4.1 installer](image3.png)
+![Dialog downloading Spyder 5.4.1 installer](download-status.png)
 
 If the dialog is closed, the update will continue in the background. Its progress will be displayed in a new status bar widget, so users can easily monitor it.
 
-![Unistall previous Spyder version dialog](image4.gif)
+![User clicking the update status in the taskbar to monitor the download status](downloading-update.gif)
 
 After the new version is fully downloaded, Spyder will ask users if they want to proceed with the update immediately or after it is closed, to avoid interrupting their current workflow.
 
-![Options available to run installer, run installer after Spyder closes or not run it at all](image5.gif)
+![Options available to run installer, run installer after Spyder closes or not run it at all](starting-update.gif)
 
 If users agree to continue, our Windows installer will be started automatically, prompting users to close the current instance, uninstall the previous version and finally install the new one.
 
-![Close Spyder dialog to proceed with the installation](image6.png)
-![Confirmation dialog to close Spyder - any process will be finished](image7.png)
-![Uninstall the current Spyder installation](image8.png)
-![Wait message while Spyder is being uninstalled](image9.png)
-![Spyder installation wizard page](image10.png)
+![Uninstall the current Spyder installation](uninstall-dialog.png)
+![Close Spyder dialog to proceed with the installation](close-spyder-dialog.png)
+![Confirmation dialog to close Spyder - any process will be finished](confirm-close-dialog.png)
+![Wait message while Spyder is being uninstalled](uninstall-progress.png)
+![Spyder installation wizard page](installation-wizard.png)
 
 For macOS users, Spyder will automatically mount the new version’s DMG, so they can simply drag and drop its app to the Applications folder
 
-![macOS new version's DMG mounted with a drag and drop dialog to move new Spyder version into the Application folder](image11.png)
+![macOS new version's DMG mounted with a drag and drop dialog to move new Spyder version into the Application folder](macos-dmg.png)
 
 Hopefully these improvements will make the experience of updating to Spyder 5.4.1, or any future version smoother, straightforward and pain free, in case you are using our standalone installers.
 
