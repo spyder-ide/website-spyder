@@ -1,10 +1,14 @@
-title:
-
-Improvements to the Spyder IDE installation experience
----
-allow_comments: yes
+title: Improvements to the Spyder IDE installation experience
 ---
 author: dalthviz
+---
+pub_date: 2022-11-30 00:00
+---
+category: Announcement
+---
+tags: milestone, new-feature, installers
+---
+summary: Spyder 5.4.0 was released recently and it came with some interesting features for its Windows and macOS standalone installers. Starting with this release, Spyder will give more feedback to users when new versions are available and it will allow them  to download and update those versions in a graphical way! In this post, we will be talking about these improvements and how the standalone applications update process is looking now.
 ---
 body:
 
@@ -49,10 +53,3 @@ For macOS users, Spyder will automatically mount the new version’s DMG, so the
 ![macOS new version's DMG mounted with a drag and drop dialog to move new Spyder version into the Application folder](macos-dmg.png)
 
 Hopefully these improvements will make the experience of updating to Spyder 5.4.1, or any future version smoother, straightforward and pain free, in case you are using our standalone installers.
-
----
-summary: Spyder 5.4.0 was released recently and it came with some interesting features for its Windows and macOS standalone installers. Starting with this release, Spyder will give more feedback to users when new versions are available and it will allow them  to download and update those versions in a graphical way! In this post, we will be talking about these improvements and how the standalone applications update process is looking now.
----
-pub_date: 2022-11-30 00:00
----
-category: Announcement
