@@ -16,7 +16,7 @@ body:
 You'll now get more detailed feedback when new versions are available, and you can download and start the update to them from right within Spyder, instead of having to install them manually.
 In this post, we'll go over how these new update features work and how you can start using them!
 
-Before proceeding, we want to acknowledge that this work was made possible by [a Small Development Grant](https://github.com/spyder-ide/spyder/wiki/NumFOCUS-Small-Development-Grant-2022) awarded to Spyder by [NumFOCUS](https://numfocus.org/), which has enabled us to hire a new developer (Juan Sebastian Bautista Rojas) to be in charge of all the implementation details.
+Before proceeding, we want to acknowledge that this work was made possible by [a Small Development Grant](https://github.com/spyder-ide/spyder/wiki/NumFOCUS-Small-Development-Grant-2022) awarded to Spyder by [NumFOCUS](https://numfocus.org/), which has enabled us to hire a new developer ([Juan Sebastian Bautista Rojas](https://github.com/jsbautista)) to be in charge of all the implementation details.
 
 Before these improvements, Spyder already had a mechanism to detect more recent versions, but that functionality was very simple.
 There was a pop-up dialog warning that a new version was available, but users had to follow a link to manually download the installer and then run it themselves:
