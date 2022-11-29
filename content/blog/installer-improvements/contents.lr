@@ -12,6 +12,8 @@ summary: Spyder 5.4.0 was released recently, featuring some major enhancements t
 ---
 body:
 
+_[Juan Sebastian Bautista](https://github.com/jsbautista), [C.A.M. Gerlach](https://github.com/CAM-Gerlach) and [Carlos Cordoba](https://github.com/ccordoba12) also contributed to this post._
+
 [Spyder 5.4.0](https://github.com/spyder-ide/spyder/releases/tag/v5.4.0) was released recently, featuring some major enhancements to its Windows and macOS standalone installers.
 You'll now get more detailed feedback when new versions are available, and you can download and start the update to them from right within Spyder, instead of having to install them manually.
 In this post, we'll go over how these new update features work and how you can start using them!
