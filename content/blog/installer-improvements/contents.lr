@@ -41,11 +41,12 @@ After the download completes, Spyder will ask if you want to update immediately,
 
 ![Options available to run installer, run installer after Spyder closes or not run it at all](starting-update.gif)
 
-If users agree to continue, our Windows installer will be started automatically, prompting users to close the current instance, uninstall the previous version and finally install the new one.
+If you chose to update immediately, or once you close Spyder if you deferred the update, our installer will be started automatically.
+On Windows, the installer has a series of automated prompts to close the current instance, uninstall the previous version and finally install the new one:
 
-![Uninstall the current Spyder installation](uninstall-dialog.png)
 ![Close Spyder dialog to proceed with the installation](close-spyder-dialog.png)
 ![Confirmation dialog to close Spyder - any process will be finished](confirm-close-dialog.png)
+![Uninstall the current Spyder installation](uninstall-dialog.png)
 ![Wait message while Spyder is being uninstalled](uninstall-progress.png)
 ![Spyder installation wizard page](installation-wizard.png)
 
@@ -53,4 +54,4 @@ On macOS, Spyder will automatically mount the new version's DMG, so you can simp
 
 ![macOS new version's DMG mounted with a drag and drop dialog to move new Spyder version into the Application folder](macos-dmg.png)
 
-Hopefully these improvements will make the experience of updating to Spyder 5.4.1, or any future version smoother, straightforward and pain free, in case you are using our standalone installers.
+We hope these improvements will make updating to future Spyder versions smoother and more straightforward, so we can bring you new features and enhancements more easily in the future!
