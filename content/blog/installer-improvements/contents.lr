@@ -46,11 +46,7 @@ After the download completes, Spyder will ask if you want to update immediately,
 If you chose to update immediately, or once you close Spyder if you deferred the update, our installer will be started automatically.
 On Windows, the installer has a series of automated prompts to close the current instance, uninstall the previous version and finally install the new one:
 
-![Close Spyder dialog to proceed with the installation](close-spyder-dialog.png)
-![Confirmation dialog to close Spyder - any process will be finished](confirm-close-dialog.png)
-![Uninstall the current Spyder installation](uninstall-dialog.png)
-![Wait message while Spyder is being uninstalled](uninstall-progress.png)
-![Spyder installation wizard page](installation-wizard.png)
+![Series of screenshots of intallation steps, with arrows between: Yes/no dialog to close spyder, confirm close dialog, uninstall old version dialog, uninstalling status and finally installation wizard](installation-flow.png)
 
 On macOS, Spyder will automatically mount the new version's DMG, so you can simply drag and drop it in the Applications folder
 
