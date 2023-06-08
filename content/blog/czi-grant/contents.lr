@@ -34,3 +34,9 @@ After that is implemented, we will add support to create and manage remote Pytho
 This will make most of the core Spyder functionality work when developing code remotely.
 In addition, users will be able to easily start system shells connected to the server once we implement that capability in Spyder-Terminal.
 This will allow the remote execution of any operating system-level command or program, such as Git commit and push instructions.
+
+We hope you will be as thrilled as we are by this fantastic news!
+Another interesting announcement for the Scientific Python community is that we are hiring for this project.
+We are looking for a developer with solid networking knowledge in Python to help us implement the backend infrastructure that will power the features described above.
+This is a part time job to work with NumFOCUS as a contractor, it does not require experience with PyQt (although some would be beneficial) and it lasts until the end of the year, with the possibility to renew the contract the next one.
+Interested people can [contact me](ccordoba12@gmail), to talk about it.
