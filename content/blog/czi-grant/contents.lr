@@ -17,7 +17,7 @@ However, limited remote development support compared to some other IDEs has hind
 Adding such features would open up many new research possibilities by enabling the scientific community to tackle data and compute-intensive programming tasks from the ease and efficiency of their local development environments.
 Thanks to a two-year grant from the [Chan Zuckerberg Initiative](https://chanzuckerberg.com/), we will be now able to address this shortcoming.
 
-Right now, users have two options to work remotely when they cannot connect to a server through a web browser or want to use an IDE for its reproducibility and reusuability features.
+Right now, users have two main options to work remotely using a local IDE (aside from a purely web browser-based approach, which is sometimes not available or desirable):
 They can either edit and execute their files in a terminal, which is not user-friendly; or start their IDE on the server and display it locally, which is typically slow, resource-intensive and difficult to set up.
 Furthermore, scientists typically find it difficult to sync remote files to the local machine and version control their code on the remote one, so remote changes are often lost, out of sync or difficult to integrate with code developed locally.
 
@@ -27,16 +27,15 @@ It requires users to install the Spyder-Kernels package on the remote machine, m
 
 ![Dialog to create a connection to a remote kernel](remote-kernel-connection.png)
 
-Since Spyder does not currently have a way to identify and store state changes, users will have to repeat this costly setup process if there are any configuration modifications on the remote machine.
+Since Spyder does not currently have a way to identify and store state changes, users currently have to repeat this costly setup process if there are any configuration modifications on the remote machine.
 Our plan is to fully automate this procedure so that Spyder can start and connect to a remote kernel automatically, with the user only needing to provide their SSH credentials and specify the Python environment they want to use.
 
-After that is implemented, we will add support to create and manage remote Python environments, explore the remote filesystem in the Files pane, and edit remote files in the Editor.
+After that is implemented, we will add support to create and manage remote Python environments, explore the remote filesystem in the [Files pane](https://docs.spyder-ide.org/current/panes/fileexplorer.html), and edit remote files in the [Editor](https://docs.spyder-ide.org/current/panes/editor.html).
 This will make most of the core Spyder functionality work when developing code remotely.
-In addition, users will be able to easily start system shells connected to the server once we implement that capability in Spyder-Terminal.
+In addition, users will be able to easily start system shells connected to the server once we implement that capability in [Spyder-Terminal](https://github.com/spyder-ide/spyder-terminal).
 This will allow the remote execution of any operating system-level command or program, such as Git commit and push instructions.
 
-We hope you will be as thrilled as we are by this fantastic news!
-Another interesting announcement for the Scientific Python community is that we are hiring for this project.
-We are looking for a developer with solid networking knowledge in Python to help us implement the backend infrastructure that will power the features described above.
-This is a part time job to work with NumFOCUS as a contractor, it does not require experience with PyQt (although some would be beneficial) and it lasts until the end of the year, with the possibility to renew the contract the next one.
+Finally, we want to announce that we're hiring for this project!
+We are looking for a Python developer with solid networking knowledge to help us implement the backend infrastructure that will power the features described above.
+This is a part time position to work as a contractor through [NumFOCUS](https://numfocus.org/); it does not require experience with PyQt (although some would be beneficial) and it lasts until the end of the year, with the possibility to renew the contract for the next.
 Interested people can [contact me](ccordoba12@gmail), to talk about it.
