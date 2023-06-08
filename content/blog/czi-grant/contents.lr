@@ -1,4 +1,4 @@
-title: Improvements to the Spyder IDE installation experience
+title: Spyder receives CZI grant to add remote development features
 ---
 author: ccordoba12
 ---
@@ -13,25 +13,24 @@ summary: We are pleased to announce that Spyder has received a two-year grant fr
 body:
 
 During the last few years, Spyder has positioned itself as a popular data science IDE by combining interactive computing and ease of use with robust programming tools.
-However, limited remote development support compared to other IDEs has hindered adoption, as many users would like to work with data and code on high performance computing (HPC) clusters or cloud providers like AWS, GCP or DigitalOcean from their personal computers.
-Adding such a feature would open up many new research possibilities by enabling the scientific community to tackle data and compute-intensive programming tasks from the ease and efficiency of their local development environments.
-And now, thanks to a two-year grant from the Chan Zuckerberg Initiative, we will be able to address this shortcoming.
+However, limited remote development support compared to some other IDEs has hindered adoption, as many users would like to work with data and code on high performance computing (HPC) clusters or cloud providers like AWS, GCP or DigitalOcean while developing on their personal computers.
+Adding such features would open up many new research possibilities by enabling the scientific community to tackle data and compute-intensive programming tasks from the ease and efficiency of their local development environments.
+Thanks to a two-year grant from the [Chan Zuckerberg Initiative](https://chanzuckerberg.com/), we will be now able to address this shortcoming.
 
 Right now, users have two options to work remotely when they cannot connect to a server through a web browser or want to use an IDE for its reproducibility and reusuability features.
-They can either edit and execute their files in a terminal, which is not user-friendly; or start their IDE on the server and display it locally, which is resource-intensive on the remote machine and slow on the local one.
-Furthermore, scientists typically find it difficult to sync remote files to the local machine and/or version control their code on the remote one, so remote changes are often lost, out of sync or difficult to integrate with the code developed locally.
+They can either edit and execute their files in a terminal, which is not user-friendly; or start their IDE on the server and display it locally, which is typically slow, resource-intensive and difficult to set up.
+Furthermore, scientists typically find it difficult to sync remote files to the local machine and version control their code on the remote one, so remote changes are often lost, out of sync or difficult to integrate with code developed locally.
 
-To address this situation, we will add and enhance support for local Spyder installations to run code and sync files on remote compute servers.
-The first step in that direction is to enhance the existing remote code execution in Spyder.
-The current workflow for that is error-prone and quite cumbersome.
+To address this situation, we will add and enhance support for local Spyder installations to run code and sync files on remote servers and clusters.
+The first step in that direction is to enhance the existing remote code execution features in Spyder, as the current workflow is error-prone and quite cumbersome.
 It requires users to install the Spyder-Kernels package on the remote machine, manually start a kernel on it and provide the kernel connection file to the local machine.
 
 ![Dialog to create a connection to a remote kernel](remote-kernel-connection.png)
 
-Since Spyder does not currently have a way to store or identify state changes, users will have to repeat this costly setup process if there are any configuration modifications on the remote machine.
-Our plan is to fully automate this procedure so that Spyder can start and connect to a remote kernel automatically, with the user only needing to provide their SSH credentials and some remote environment details.
+Since Spyder does not currently have a way to identify and store state changes, users will have to repeat this costly setup process if there are any configuration modifications on the remote machine.
+Our plan is to fully automate this procedure so that Spyder can start and connect to a remote kernel automatically, with the user only needing to provide their SSH credentials and specify the Python environment they want to use.
 
 After that is implemented, we will add support to create and manage remote Python environments, explore the remote filesystem in the Files pane, and edit remote files in the Editor.
-This will make most of the core Spyder functionality work to develop code remotely.
-In addition, users will be able to easily start shells connected to the server after we implement that capability in Spyder-Terminal.
-This will allow the remote execution of any operating system command, such as Git commit and push instructions.
+This will make most of the core Spyder functionality work when developing code remotely.
+In addition, users will be able to easily start system shells connected to the server once we implement that capability in Spyder-Terminal.
+This will allow the remote execution of any operating system-level command or program, such as Git commit and push instructions.
