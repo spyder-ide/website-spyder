@@ -1,4 +1,4 @@
-title: Spyder receives CZI grant to add remote development features
+title: Spyder gets CZI grant to add remote development features, and a new job opening!
 ---
 author: ccordoba12
 ---
@@ -8,7 +8,7 @@ category: Announcement
 ---
 tags: grant
 ---
-summary: We are pleased to announce that Spyder has received a two-year grant from the Chan Zuckerberg Initiative to add remote development capabilities to our beloved IDE. This means that users will be able to easily take advantage of the vast resources offered by HPC clusters or the cloud to execute their code, while working from the comfort of their personal computers.
+summary: Spyder has received a two-year grant from the Chan Zuckerberg Initiative to add remote development capabilities to our beloved IDE. This means you'll be able to easily take advantage of the vast resources offered by HPC clusters or the cloud to execute your code, while working from the comfort of your personal computer. And if you're interested in helping us implement that, we may have just the job opportunity for you!
 ---
 body:
 
@@ -38,4 +38,7 @@ This will allow the remote execution of any operating system-level command or pr
 Finally, we want to announce that we're hiring for this project!
 We are looking for a Python developer with solid networking knowledge to help us implement the backend infrastructure that will power the features described above.
 This is a part time position to work as a contractor through [NumFOCUS](https://numfocus.org/); it does not require experience with PyQt (although some would be beneficial) and it lasts until the end of the year, with the possibility to renew the contract for the next.
-Interested people can [contact me](ccordoba12@gmail), to talk about it.
+Interested?
+[Contact me](mailto:ccordoba12@gmail.com) to talk more about it!
+
+We hope you will be as thrilled as we are by this fantastic news, and are looking forward to sharing more with you on this project in the near future!
