@@ -1,0 +1,34 @@
+title: Spyder 6 will get a new installer for all platforms and a standalone application for Linux!
+---
+author: mrclary
+---
+pub_date: 2023-09-xx 00:00
+---
+category: Announcement
+---
+tags:
+---
+summary: Spyder 6 will introduce new conda-based installers for Windows, macOS, and Linux. While Windows and macOS have had installers for some time, this new development will provide a more consistent user experience across all platforms, including Linux. Additionally, this new installer will provide a more reliable runtime environment for Spyder, setting the foundation for several new features.
+---
+body:
+
+Spyder is an excellent development environment for scientists and engineers.
+For the last several years Spyder has provided standalone applications for Windows and macOS which isolated Spyder's runtime environment from users' development environments, providing a more stable user experience than a traditional conda or pip installation methods.
+However, these standalone applications precluded implementing desirable features such as automatic incremental updates and 3rd party plugin management.
+Additionally, these standalone applications were limited to Windows and macOS.
+
+Our new installers provide a more consistent installation experience for all users across all platforms, including Linux, while maintaining the benefits of an isolated runtime environment for Spyder.
+Additionally, they provide a runtime environment that is compatible with incremental updates and 3rd party plugin management. Look for future announcements about these and other features!
+So what will you see with these new installers?
+If you are a Windows user, you will continue to have a GUI installer guiding you through the installation process; you will likely not notice any difference from the previous standalone application installer experience.
+![Windows installer](windows.png)
+If you are a macOS user, you will now have a pkg installer instead of a dmg compressed disk image. Rather than drag-and-drop the application to the Applications folder, the pkg installer provides a graphical user interface that will guide you through the installation process, just like any other pkg installer.
+![macOS installer](macos.png)
+If you are a Linux user, you will have an interactive shell script guiding you through the installation process.
+![Linux installer](linux.png)
+
+In all cases, you will not need to have Anaconda installed, nor do you need an existing Python environment; in fact, you don't even need a preexisting Python installation. These installers are completely self-contained.
+Spyder will continue to include popular packages such as numpy, matplotlib, scipy, etc., so you can start coding out-of-the-box.
+However, you will still be able to use Spyder with your existing conda and pip (or any other) Python environments, as before.
+
+The Spyder team is really excited about these new installers and the new features it will make possible and we hope you find them an improvement over the previous installers.
