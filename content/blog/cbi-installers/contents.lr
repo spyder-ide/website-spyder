@@ -18,16 +18,25 @@ However, these standalone applications precluded implementing desirable features
 Additionally, these standalone applications were limited to Windows and macOS.
 
 Our new installers provide a more consistent installation experience for all users across all platforms, including Linux, while maintaining the benefits of an isolated runtime environment for Spyder.
-Additionally, they provide a runtime environment that is compatible with incremental updates and 3rd party plugin management. Look for future announcements about these and other features!
+Additionally, they provide a runtime environment that is compatible with incremental updates and 3rd party plugin management.
+Look for future announcements about these and other features!
+
 So what will you see with these new installers?
 If you are a Windows user, you will continue to have a GUI installer guiding you through the installation process; you will likely not notice any difference from the previous standalone application installer experience.
+
 ![Windows installer](windows.png)
-If you are a macOS user, you will now have a pkg installer instead of a dmg compressed disk image. Rather than drag-and-drop the application to the Applications folder, the pkg installer provides a graphical user interface that will guide you through the installation process, just like any other pkg installer.
+
+If you are a macOS user, you will now have a pkg installer instead of a dmg compressed disk image.
+Rather than drag-and-drop the application to the Applications folder, the pkg installer provides a graphical user interface that will guide you through the installation process, just like any other pkg installer.
+
 ![macOS installer](macos.png)
+
 If you are a Linux user, you will have an interactive shell script guiding you through the installation process.
+
 ![Linux installer](linux.png)
 
-In all cases, you will not need to have Anaconda installed, nor do you need an existing Python environment; in fact, you don't even need a preexisting Python installation. These installers are completely self-contained.
+In all cases, you will not need to have Anaconda installed, nor do you need an existing Python environment; in fact, you don't even need a preexisting Python installation.
+These installers are completely self-contained.
 Spyder will continue to include popular packages such as numpy, matplotlib, scipy, etc., so you can start coding out-of-the-box.
 However, you will still be able to use Spyder with your existing conda and pip (or any other) Python environments, as before.
 
