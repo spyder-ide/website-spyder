@@ -56,6 +56,6 @@ footer_license_name = "MIT and others"
 footer_license_link = "https://github.com/spyder-ide/website-spyder/blob/master/NOTICE.txt"
 footer_custom_line = "Feature icons by <a href='https://www.freepik.com/' target='_blank' rel='noopener noreferrer' title='Freepik'>Freepik</a> from <a href='https://www.flaticon.com/' target='_blank' rel='noopener noreferrer' title='Flaticon'>Flaticon.com</a>"
 footer_custom_info_databag =
-gitter_room = "spyder-ide/public"
+gitter_room =
 disqus_name = "spyder-ide"
 atom_enable = true
