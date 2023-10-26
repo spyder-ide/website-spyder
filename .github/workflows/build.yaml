@@ -1,0 +1,47 @@
+# Build the site and deploy it to GitHub pages
+name: Build
+
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches:
+    - master
+    - main
+    - '*.*'
+    - 'staging*'
+  pull_request:
+    branches:
+    - master
+    - main
+    - '*.*'
+    - 'staging*'
+
+jobs:
+  build:
+    name: Build and Deploy
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        submodules: true
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      shell: bash
+      run: ./ci/install.sh
+    - name: List dependencies
+      shell: bash
+      run: pip list
+    - name: Build site
+      shell: bash
+      run: ./ci/build.sh
+    - name: Deploy to GitHub Pages
+      if: (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') && github.event_name != 'pull_request'
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        FOLDER: ./website-lektor-icon-build
+        CLEAN: true  # Remove deleted files from the deploy branch
