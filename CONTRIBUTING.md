@@ -99,13 +99,13 @@ To get the consistent pinned versions of the development dependencies, install t
 If using conda, run:
 
 ```bash
-conda install -c conda-forge --file requirements-dev.txt
+conda install -c conda-forge --file requirements.txt
 ```
 
 Or, using pip,
 
 ```bash
-python -m pip -r requirements-dev.txt
+python -m pip install -r requirements.txt
 ```
 
 
