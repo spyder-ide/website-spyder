@@ -18,7 +18,6 @@
   font-size: 1.15em;
 }
 
-
 /*** Card layout and title adjustments ***/
 
 /* Remove margin between cards when single-column */
@@ -65,7 +64,6 @@
   background: #fff;
   background: var(--theme-bg-color, #fff);
 }
-
 
 /*** Sponsors section ***/
 
@@ -121,7 +119,6 @@
   margin-top: 0;
   min-width: 50%;
 }
-
 
 /*** Modify download section to allow for multiple buttons ***/
 
