@@ -30,41 +30,44 @@
   /* Helper functions */
 
   // Get the key corresponding to the current desktop operating system
-  function getOSName () {
+  function getOSName() {
     var platform = navigator.platform
     if (!platform) {
       return 'other'
-    };
+    }
     if (platform.indexOf('Win') === 0) {
       return 'win'
-    };
+    }
     if (platform.indexOf('Mac') === 0) {
       return 'mac'
-    };
-    if ((platform.indexOf('Linux') === 0 || platform.indexOf('X11') === 0) &&
-          !platform.match(/android/i) && !navigator.userAgent.match(/android/i)) {
+    }
+    if (
+      (platform.indexOf('Linux') === 0 || platform.indexOf('X11') === 0) &&
+      !platform.match(/android/i) &&
+      !navigator.userAgent.match(/android/i)
+    ) {
       return 'linux'
-    };
+    }
     return 'other'
-  };
+  }
 
   // Get the button data corresponding to the current OS
-  function getButtonData () {
+  function getButtonData() {
     var osName = getOSName()
     return buttonData[osName]
-  };
+  }
 
   /* Main functions */
 
   // Setup download button based on current OS
-  function setupDownloadButton (downloadButton) {
+  function setupDownloadButton(downloadButton) {
     var buttonData = getButtonData()
     downloadButton.href = buttonData.url
     downloadButton.getElementsByClassName('download-text')[0].textContent = buttonData.text
     for (var i = 0; i < buttonData.icon.length; i++) {
       downloadButton.getElementsByClassName('download-os-icon')[0].classList.add(buttonData.icon[i])
-    };
-  };
+    }
+  }
 
   /* Fire events */
 
@@ -73,6 +76,6 @@
     var downloadButton = document.getElementById('download-button-button')
     if (downloadButton) {
       setupDownloadButton(downloadButton)
-    };
+    }
   })
-}())
+})()
