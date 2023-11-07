@@ -41,7 +41,7 @@ There was a pop-up dialog warning that a new version was available, but users ha
 &lt;p&gt;&lt;img src="/blog/installer-improvements/starting-update.gif" alt="Options available to run installer, run installer after Spyder closes or not run it at all"&gt;&lt;/p&gt;
 &lt;p&gt;If you chose to update immediately, or once you close Spyder if you deferred the update, our installer will be started automatically.
 On Windows, the installer has a series of automated prompts to close the current instance, uninstall the previous version and finally install the new one:&lt;/p&gt;
-&lt;p&gt;&lt;img src="/blog/installer-improvements/installation-flow.png" alt="Series of screenshots of intallation steps, with arrows between: Yes/no dialog to close spyder, confirm close dialog, uninstall old version dialog, uninstalling status and finally installation wizard"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/blog/installer-improvements/installation-flow.png" alt="Series of screenshots of installation steps, with arrows between: Yes/no dialog to close spyder, confirm close dialog, uninstall old version dialog, uninstalling status and finally installation wizard"&gt;&lt;/p&gt;
 &lt;p&gt;On macOS, Spyder will automatically mount the new version's DMG, so you can simply drag and drop it in the Applications folder&lt;/p&gt;
 &lt;p&gt;&lt;img src="/blog/installer-improvements/macos-dmg.png" alt="macOS new version&amp;#39;s DMG mounted with a drag and drop dialog to move new Spyder version into the Application folder"&gt;&lt;/p&gt;
 &lt;p&gt;We hope these improvements will make updating to future Spyder versions smoother and more straightforward, so we can bring you new features and enhancements more easily in the future!&lt;/p&gt;

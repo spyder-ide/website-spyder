@@ -18,13 +18,11 @@
   font-size: 1.15em;
 }
 
-
 /*** Card layout and title adjustments ***/
 
 /* Remove margin between cards when single-column */
 
 @media screen and (max-width: 768px) {
-
   .col-md-4 .card-item {
     margin: 0;
   }
@@ -47,7 +45,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
   #section-components .icon .img-responsive {
     width: 30%;
   }
@@ -67,7 +64,6 @@
   background: #fff;
   background: var(--theme-bg-color, #fff);
 }
-
 
 /*** Sponsors section ***/
 
@@ -91,21 +87,18 @@
 /* Increase size of graphics in sponsors section */
 
 @media screen and (max-width: 1200px) {
-
   #section-sponsors .col-md-4 {
     max-width: 320px;
   }
 }
 
 @media screen and (max-width: 768px) {
-
   #section-sponsors .col-md-4 {
     max-width: 400px;
   }
 }
 
 @media screen and (max-width: 480px) {
-
   #section-sponsors .col-md-4 {
     max-width: 320px;
   }
@@ -127,7 +120,6 @@
   min-width: 50%;
 }
 
-
 /*** Modify download section to allow for multiple buttons ***/
 
 #section-download-buttons {
@@ -141,7 +133,6 @@
 }
 
 @media screen and (max-width: 480px) {
-
   #section-download-buttons .content-button {
     min-width: inherit;
   }

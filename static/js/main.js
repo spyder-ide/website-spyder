@@ -15,91 +15,103 @@ For information on the included third-party assets, see NOTICE.txt
 https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt
 */
 
-;(function () {
-  'use strict'
+(function () {
+  "use strict";
 
   // Fullsize Error Page Background
   var fullHeight = function () {
-    var heightToSet = $(window).height() - $('.js-sticky').height() - $('#fh5co-footer').outerHeight()
-    $('#error-page').css('height', heightToSet)
-  }
+    var heightToSet =
+      $(window).height() -
+      $(".js-sticky").height() -
+      $("#fh5co-footer").outerHeight();
+    $("#error-page").css("height", heightToSet);
+  };
 
   var setFullHeight = function () {
-    fullHeight()
-    $(window).on('resize', fullHeight)
-  }
+    fullHeight();
+    $(window).on("resize", fullHeight);
+  };
 
   // Offcanvas layout for "hamburger" mobile menu
   var offcanvasMenu = function () {
-    $('body').prepend('<div id="fh5co-offcanvas"></div>')
-    $('body').prepend('<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" aria-label="Toggle for hamburger menu"><i></i></a>')
+    $("body").prepend('<div id="fh5co-offcanvas"></div>');
+    $("body").prepend(
+      '<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" aria-label="Toggle for hamburger menu"><i></i></a>'
+    );
 
-    $('.fh5co-main-nav .fh5co-menu-1 a, .fh5co-main-nav .fh5co-menu-2 a').each(function () {
-      var $this = $(this)
-      $('#fh5co-offcanvas').append($this.clone())
-    })
+    $(".fh5co-main-nav .fh5co-menu-1 a, .fh5co-main-nav .fh5co-menu-2 a").each(
+      function () {
+        var $this = $(this);
+        $("#fh5co-offcanvas").append($this.clone());
+      }
+    );
     // $('#fh5co-offcanvas').append
-  }
+  };
 
   // Top navbar stickiness
   var mainMenuSticky = function () {
-    var sticky = $('.js-sticky')
-    var $section = $('.fh5co-main-nav')
+    var sticky = $(".js-sticky");
+    var $section = $(".fh5co-main-nav");
 
-    sticky.css('height', $section.height())
-    $(window).on('resize', function () {
-      sticky.css('height', $section.height())
-    })
+    sticky.css("height", $section.height());
+    $(window).on("resize", function () {
+      sticky.css("height", $section.height());
+    });
 
-    $section.waypoint(function (direction) {
-      if (direction === 'down') {
-        $section.css({
-          position: 'fixed',
-          top: 0,
-          width: '100%',
-          'z-index': 99999
-        }).addClass('fh5co-shadow')
+    $section.waypoint(
+      function (direction) {
+        if (direction === "down") {
+          $section
+            .css({
+              position: "fixed",
+              top: 0,
+              width: "100%",
+              "z-index": 99999,
+            })
+            .addClass("fh5co-shadow");
+        }
+      },
+      {
+        offset: "0px",
       }
-    }, {
-      offset: '0px'
-    })
-  }
+    );
+  };
 
   // Mobile "burger" menu
   var burgerMenu = function () {
-    $('body').on('click', '.js-fh5co-nav-toggle', function (event) {
-      var $this = $(this)
+    $("body").on("click", ".js-fh5co-nav-toggle", function (event) {
+      var $this = $(this);
 
-      if ($('body').hasClass('offcanvas-visible')) {
-        $('body').removeClass('offcanvas-visible fh5co-overflow')
-        $this.removeClass('active')
+      if ($("body").hasClass("offcanvas-visible")) {
+        $("body").removeClass("offcanvas-visible fh5co-overflow");
+        $this.removeClass("active");
       } else {
-        $('body').addClass('offcanvas-visible fh5co-overflow')
-        $this.addClass('active')
+        $("body").addClass("offcanvas-visible fh5co-overflow");
+        $this.addClass("active");
       }
-      event.preventDefault()
-    })
-  }
+      event.preventDefault();
+    });
+  };
 
   // Click outside of offcanvas sidebar to close it
   var mobileMenuOutsideClick = function () {
-    $(document).on('click', function (e) {
-      var container = $('#fh5co-offcanvas, .js-fh5co-nav-toggle')
+    $(document).on("click", function (e) {
+      var container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
-        if ($('body').hasClass('offcanvas-visible')) {
-          $('body').removeClass('offcanvas-visible')
-          $('.js-fh5co-nav-toggle').removeClass('active')
+        if ($("body").hasClass("offcanvas-visible")) {
+          $("body").removeClass("offcanvas-visible");
+          $(".js-fh5co-nav-toggle").removeClass("active");
         }
       }
-    })
-  }
+    });
+  };
 
   // Document on DOM ready
   $(function () {
-    offcanvasMenu()
-    burgerMenu()
-    mobileMenuOutsideClick()
-    mainMenuSticky()
-    setFullHeight()
-  })
-}())
+    offcanvasMenu();
+    burgerMenu();
+    mobileMenuOutsideClick();
+    mainMenuSticky();
+    setFullHeight();
+  });
+})();
