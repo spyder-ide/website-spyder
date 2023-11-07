@@ -12,11 +12,11 @@ These files are listed here with their corresponding authors, permission notices
 See the NOTICE.txt in themes/lektor-icon/NOTICE.txt or the Lektor-Icon repository for a full list of those in the theme.
 https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt
 
-Any file not listed here or there is covered by Spyder's MIT (Expat) license, described in the LICENSE.txt file in this repository and Spyder's __init__.py.
+Any file not listed in either NOTICE.txt is covered by Spyder's MIT (Expat) license, described in the LICENSE.txt file in this repository.
 
 Images, icons and font glyphs that include trademarked elements are used for informational purposes only, and do not necessarily constitute any endorsement, association or ownership by or of the marks or their respective owners.
 
-All trademarks are the property of their respective owners.
+All trademarks are and remain the property of their respective owners.
 
 Reference the Spyder NOTICE.txt for how to add items to this file.
 https://github.com/spyder-ide/spyder/blob/master/NOTICE.txt
