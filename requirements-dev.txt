@@ -1,4 +1,0 @@
-Lektor>=3.2.3,<4.0  # Primary dependency
-lektor-atom==0.4.0  # RSS feeds
-lektor-disqus-comments==0.4.1  # Blog comments
-pre-commit>=2.10.0,<3.0  # For pre-commit hooks

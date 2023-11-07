@@ -1,6 +1,6 @@
 # Contributing Guide
 
-This is the website for the Spyder scientific Python development environment, and is developed with standard Github flow.
+This is the website for the Spyder scientific Python development environment, and is developed with standard GitHub flow.
 If you're not comfortable with at least the basics of ``git`` and GitHub, we recommend seeking out a beginner tutorial; if you are already are experienced with it, most of this guide will already be familiar to you.
 However, the guide should fill you in on pretty much all the parts you need to know, so read on.
 Thanks!
@@ -99,13 +99,13 @@ To get the consistent pinned versions of the development dependencies, install t
 If using conda, run:
 
 ```bash
-conda install -c conda-forge --file requirements-dev.txt
+conda install -c conda-forge --file requirements.txt
 ```
 
 Or, using pip,
 
 ```bash
-python -m pip -r requirements-dev.txt
+python -m pip install -r requirements.txt
 ```
 
 

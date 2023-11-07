@@ -10,12 +10,10 @@
 [![Framework](https://img.shields.io/badge/Framework-Lektor-purple.svg)](https://www.getlektor.com/)
 [![Theme](https://img.shields.io/badge/Theme-Lektor--Icon-red.svg)](https://spyder-ide.github.io/lektor-icon/)
 [![OpenCollective Backers](https://opencollective.com/spyder/backers/badge.svg?color=blue)](https://opencollective.com/spyder)
-[![Gitter chat](https://badges.gitter.im/spyder-ide/spyder.svg)](https://gitter.im/spyder-ide/public)
 
 
 <!-- Build and deploy status -->
-[![Deploy status](https://github.com/spyder-ide/website-spyder/actions/workflows/deploy.yaml/badge.svg?branch=master)](https://github.com/spyder-ide/website-spyder/actions/workflows/deploy.yaml)
-[![Test status](https://github.com/spyder-ide/website-spyder/actions/workflows/test.yaml/badge.svg)](https://github.com/spyder-ide/website-spyder/actions/workflows/test.yaml)
+[![Build status](https://github.com/spyder-ide/website-spyder/actions/workflows/build.yaml/badge.svg?branch=master)](https://github.com/spyder-ide/website-spyder/actions/workflows/build.yaml)
 [![Lint status](https://github.com/spyder-ide/website-spyder/actions/workflows/lint.yaml/badge.svg?branch=master)](https://github.com/spyder-ide/website-spyder/actions/workflows/lint.yaml)
 [![Pre-Commit](https://img.shields.io/badge/Linting-Pre--Commit-brightgreen?logo=pre-commit&logoColor=white)](https://pre-commit.com/)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/12791f68-4cbb-4236-b918-24da97168631/deploy-status)](https://app.netlify.com/sites/spyder-website-preview/deploys)
@@ -76,17 +74,13 @@ The build also requires several [Lektor plugins](https://www.getlektor.com/docs/
 
 [Main Website](https://www.spyder-ide.org/)
 
-[Download Spyder (with Anaconda)](https://www.anaconda.com/download/)
-
 [Online Documentation](https://docs.spyder-ide.org/)
 
-[Spyder Github](https://github.com/spyder-ide/spyder)
+[Spyder GitHub](https://github.com/spyder-ide/spyder)
 
 [Troubleshooting Guide and FAQ](https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ)
 
 [Development Wiki](https://github.com/spyder-ide/spyder/wiki/Dev:-Index)
-
-[Gitter Chatroom](https://gitter.im/spyder-ide/public)
 
 [Google Group](https://groups.google.com/group/spyderlib)
 
