@@ -132,7 +132,7 @@ button::-moz-focus-inner {
   color: white;
   font-style: normal;
   font-size: 28px;
-  font-family: Raleway, "DejaVu Sans", "Open Sans", "Liberation Sans", Arial, sans-serif; }
+  font-family: var(--main-font);
   .mfp-close:hover, .mfp-close:focus {
     opacity: 1;
     filter: alpha(opacity=100); }

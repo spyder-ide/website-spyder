@@ -17,6 +17,10 @@
  * https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt
  */
 
+:root {
+  --main-font: "Raleway", "DejaVu Sans", "Open Sans", "Liberation Sans", helvetica, arial, sans-serif;
+}
+
 html {
   background-color: #fff;
   background-color: var(--theme-bg-color, #fff);
@@ -109,7 +113,7 @@ html {
 body {
   color: #333;
   color: var(--theme-fg-alt-color, #333);
-  font-family: Raleway, "DejaVu Sans", "Open Sans", "Liberation Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--main-font);
   font-weight: 300;
   line-height: 1.9;
   margin: 0;
@@ -182,7 +186,7 @@ h6,
 .h6 {
   color: #000;
   color: var(--theme-fg-color, #000);
-  font-family: Raleway, "DejaVu Sans", "Open Sans", "Liberation Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--main-font);
   font-weight: 500;
   line-height: 1.1;
   margin: 0;
@@ -533,7 +537,7 @@ img {
 }
 
 .fh5co-main-nav .fh5co-logo {
-  font-family: Raleway, "DejaVu Sans", "Open Sans", "Liberation Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--main-font);
   font-size: 40px;
   font-style: italic;
   font-weight: bold;
@@ -1199,7 +1203,7 @@ img {
   align-content: center;
   color: #ee1c24;
   color: var(--theme-accent-color, #ee1c24);
-  font-family: Raleway, "DejaVu Sans", "Open Sans", "Liberation Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--main-font);
   font-size: 1.4em;
   margin: 0;
   position: relative;
@@ -2120,7 +2124,7 @@ html [type="button"] {
 
 #menu-logo .logo-text {
   display: block;
-  font-family: Candara, Raleway, "DejaVu Sans", "Open Sans", "Liberation Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--main-font);
   font-size: 2.2em;
   margin-top: 2px;
 }
@@ -2149,9 +2153,8 @@ html [type="button"] {
 .blog-post {
   color: #333;
   color: var(--theme-fg-alt-color, #333);
-  font-family: Raleway, "DejaVu Sans", "Open Sans", "Liberation Sans", Helvetica, Arial, sans-serif;
-  margin-bottom: 4rem;
-  margin-top: 2rem;
+  font-family: var(--main-font);
+  margin: 4rem 0;
 }
 
 .blog-post img,
@@ -2201,7 +2204,6 @@ html [type="button"] {
 .blog-post h3 {
   color: #000;
   color: var(--theme-fg-color, #000);
-  font-family: Amiri, "Open Serif", "Liberation Serif", "DejaVu Serif", Times, "Times New Roman", serif;
   text-align: left;
 }
 
@@ -2229,7 +2231,6 @@ html [type="button"] {
 .blog-post .blog-index-header .row h3 {
   color: #000;
   color: var(--theme-fg-color, #000);
-  font-family: Amiri, "Open Serif", "Liberation Serif", "DejaVu Serif", Times, "Times New Roman", serif;
   text-align: left;
 }
 
@@ -2262,8 +2263,7 @@ html [type="button"] {
 }
 
 .blog-index-header {
-  margin: 0;
-  width: 90%;
+  margin-top: 4em;
 }
 
 .meta-blog-index .author {
@@ -2310,13 +2310,16 @@ html [type="button"] {
   margin-bottom: 0.5em;
 }
 
+.blog-post-header {
+  margin-bottom: 2rem;
+}
+
 #blog-main-title {
   margin-bottom: 0;
   margin-top: 3em;
 }
 
 #blog-main-title h1 {
-  font-family: Amiri, "Open Serif", "Liberation Serif", "DejaVu Serif", Times, "Times New Roman", serif;
   font-size: 2em;
   margin-bottom: 0;
 }
