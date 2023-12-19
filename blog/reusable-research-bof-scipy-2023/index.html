@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Access-Control-Allow-Origin" content="Origin">
+
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-XSS-Protection" content="1">
+  <meta name="referrer" content="never">  <!-- Fallback for IE/Edge/Safari -->
+  <meta name="referrer" content="no-referrer">  <!-- Fallback for Chrome lt 61 -->
+  <meta name="referrer" content="same-origin">
+
+  <!-- FREE HTML5 TEMPLATE  -->
+  <!-- DESIGNED & DEVELOPED by FREEHTML5.CO -->
+
+  <!-- Website:        https://freehtml5.co/ -->
+  <!-- Email:          info@freehtml5.co -->
+  <!-- Twitter:        https://twitter.com/fh5co -->
+  <!-- Facebook:       https://www.facebook.com/fh5co -->
+
+  <!-- HUGO TEMPLATE PORTED BY SteveLane -->
+  <!-- Website:        https://interadata.io/ -->
+
+  <!-- LEKTOR THEME PORTED BY Daniel Althviz -->
+  <!-- Website:        https://dalthviz.github.io/ -->
+
+  <!-- LEKTOR THEME MAINTAINED AND EXPANDED BY Spyder Dev Team -->
+  <!-- Website:        https://github.com/spyder-ide/lektor-icon -->
+
+  <!-- Copyright (c) 2016- Lektor-Icon Contributors -->
+
+  <!-- Original standalone HTML5 theme distributed under the terms of the -->
+  <!-- Creative Commons Attribution 3.0 license -->
+  <!-- https://creativecommons.org/licenses/by/3.0/ -->
+
+  <!-- Additions, modifications and porting released under the terms of the -->
+  <!-- MIT (Expat) License: https://opensource.org/licenses/MIT -->
+  <!-- See the LICENSE.txt file for more details -->
+  <!-- https://github.com/spyder-ide/lektor-icon/blob/master/LICENSE.txt -->
+
+  <!-- For information on the included third-party assets, see NOTICE.txt -->
+  <!-- https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt -->
+
+  <title>Blog | Reusable research Birds of a Feather session at Scipy 2023: Goals and challenges — Spyder IDE</title>
+  <meta name="author" content="Spyder Team">
+  <meta name="copyright" content="&amp;copy; 2023 Spyder Website Contributors">
+  <meta name="description" content="Website for Spyder, the Scientific Python Development Environment">
+  <meta name="keywords" content="spyder, ide, scipy, pydata, science, data, analysis, anaconda">
+  <meta name="theme-color" content="#d50000">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/static/images/favicon.png?h=54f9d268" type="image/png">
+  <style>
+    :root {
+      --theme-fg-color: #000000;
+      --theme-fg-alt-color: #333333;
+      --theme-bg-color: #ffffff;
+      --theme-bg-alt-color: #e8ecf1;
+      --theme-bg-accent-color: #f5f5f5;
+      --theme-accent-color: #d50000;
+      --theme-accent-alt-color: #8c0000;
+      --theme-pipe-color: #ee1c24
+    }
+  </style>
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" type="text/css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/static/css/style.css?h=fb390f4f" type="text/css">
+  <!-- User Custom CSS -->
+  <link rel="stylesheet" href="/static/css/custom_styles.css?h=45b39a63" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="" type="text/css">
+</head>
+
+<body>
+<div class="fh5co-page">
+  <div id="fh5co-container">
+    <div class="js-sticky">
+      <div class="fh5co-main-nav navbar fixed-top">
+        <div class="container">
+          <div class="fh5co-menu-1">
+            <div class='pull-left'>
+              <ul class='dropdown menu' data-dropdown-menu>
+                <li id='menu-logo'>
+                  <p></p>
+                    <a href='/'>
+                    <img alt="Site Logo" src="/static/images/spyder_logo.png?h=7f1693dc">
+                  </a>
+                  <p></p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="main-nav-container">
+<a id="rss-nav-link" data-nav-section="RSS" href="/blog/feed.xml">RSS</a>
+              <div class="side-nav-container">
+                <a class="pull-right nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
+                <a class="pull-right nav-link-internal nav-link-active-section /blog/reusable-research-bof-scipy-2023 sep /blog" href="/blog/">Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="blog-content-container" data-section="Blog">
+  <div id="blog-center" class="center">
+
+<div class="blog-post">
+  <div class="blog-header blog-post-header">
+      <h1>Reusable research Birds of a Feather session at Scipy 2023: Goals and challenges</h1>
+
+    <div class="row">
+      <div class="column meta-blog-author">
+        <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
+      </div>
+      <div class="meta-blog-index">
+        <p>
+          C.A.M. Gerlach<br>
+          <span class="small">2023-12-19</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <p>The Spyder team and <a href="https://cfp.scipy.org/2023/speaker/SE7SNC/">collaborators</a> hosted <a href="https://cfp.scipy.org/2023/talk/LGZUNG/">a Birds of a Feather (BoF) session</a> at <a href="https://www.scipy2023.scipy.org/">SciPy 2023</a>, focused on moving beyond just scripts and notebooks toward truly reproducible, reusable research.
+Here, we’ll recap the motivation and goals of the BoF and share the common challenges that participants brought up with notebooks and moving toward reproducible, reusable research.
+In our next post, we’ll follow up with some of the tips, tools, platforms and strategies attendees brought up as ways to address them, including using Spyder!
+We'd like to thank <a href="https://cfp.scipy.org/2023/speaker/SE7SNC/">Juanita Gomez</a> for helping organize the BoF, Hari for his hard work compiling a summary of the outcomes, and everyone for attending and sharing such great ideas and insights!</p>
+<h2>The trouble with notebooks</h2>
+<p>The overwhelming majority of current scientific code is siloed away into one-off scripts and notebooks, where the only real mechanism for reusing and building upon them is good old copy and paste.
+In order to keep "building upon the shoulders of giants", we need to achieve not only reproducibility of individual results but also true reusability of research methods, that can be shared, built upon, and deployed by researchers across the world.</p>
+<p>In particular, scripts and notebooks are not typically very reproducible or reusable, as users generally cannot easily import them, specify dependencies, extend them or use them for another project (without copy/paste and managing multiple code versions by hand). Additionally, for notebooks specifically, authors and readers alike cannot easily track them in Git (with clean diffs), lint, type check, test or format them with standard Python tools, or interoperate with most other non-notebook-specific ecosystems.</p>
+<p>To address these pressing issues, the Spyder team and interested community members convened a Birds of a Feather (BoF) session, <a href="https://cfp.scipy.org/2023/talk/LGZUNG/">"Beyond Notebooks: From reproducible to reusable research"</a>, at the <a href="https://www.scipy2023.scipy.org/">SciPy 2023 conference in Austin, TX</a>, where we invited attendees to share their tools and workflows for reusable science, and explored how we can encourage users to expand beyond the current notebook-centric monoculture and toward more holistic, modular and interoperable approaches to conducting research and developing scientific code.
+The goal was to not only share and discuss ideas and insights on the topic among BoF participants, which numbered over ≈50 interested community members, but also to help inform future guides and resources on this topic, to be hosted on central platforms like the Scientific Python organization, as is currently in progress.</p>
+<h2>Goals and themes</h2>
+<p>The BoF was motivated by the following key questions:</p>
+<ul>
+<li>What is reusable research and why is it important?</li>
+<li>What tools and techniques do people have to share for effective reusable research?</li>
+<li>How can we integrate reusable research into existing workflows?</li>
+<li>How do we teach students and researchers about reusable research, and encourage them to practice it?</li>
+</ul>
+<p>While the resulting community ideas and insights centered around three related themes:</p>
+<ul>
+<li>How can we make existing notebooks more readable, reproducible and reusable?</li>
+<li>How can notebooks be progressively migrated to Python modules for basic reusability?</li>
+<li>How can the community simplify and advocate the process of creating fully reusable Python packages?</li>
+</ul>
+<h2>Common challenges</h2>
+<p>Participants commented that students mostly get introduced to notebooks through classes in contexts that are very different from how they would use them for their research, and they don't have a good resource for that to hand to them if they have a question or are confused about that.
+Others responded that they think that should be part of the curriculum, questioning why are people learning machine learning using Jupyter notebooks without actually learning how to use Jupyter notebooks themselves, and that many folks don't come from a traditional computer science background and may not know about all these tools.</p>
+<p>It was also remarked that some feel the fact that students are only exposed to notebooks really makes them not necessarily want to reach for other tools even when they would be more appropriate down the line, which participants suggested addressing by encouraging students to use IDEs like <a href="https://www.spyder-ide.org/">Spyder</a> and <a href="https://jupyterlab.readthedocs.io/">JupyterLab</a> that offer many features for reusability and reproducibility, but while also allowing them to take advantage of notebooks.</p>
+<p>In particular, one former Spyder developer commented that they feel that we should show students how to use tools like debugging and make it easier for them to do that, but give them the choice whether they want to use those tools, and that the right approach is not necessarily telling them what tool to use, but having documentation and exposure to those tools so students can pick the best option for them.
+Others remarked in response that we do want to give students options, though many might not need a full debugger.</p>
+<p>One library worker mentioned that they often only have an hour to introduce users to Python, and use <a href="https://colab.google/">Google Collab notebooks</a> because it makes it a lot easier for students to get started with Python over having to download and install an IDE, but then students tend to be familiar with that tool and continue to use it.
+Another participant mentioned they are a big fan of using videos to help reach students over reading the documentation, as they feel students are much more likely to watch them.</p>
+<p>The discussion shifted to tools in larger organizations, with a participant commenting "It's one thing when it's students, but how do you do that when it's your whole organizational culture that needs to change?" One participant responded saying she's a student herself, and no one ever really talked to her about IDEs and explained what they were and why you'd want to use one, remarking that it's important for teachers to actually train them to use the proper tools, but they have no idea when it comes to coworkers using these things.</p>
+<p>Another participant suggested "nerd sniping" as an effective way to handle that in larger organizations, which involves figuring out what is the biggest pain point for the team, usually something that should be automated, and then getting them to follow better practices by showing them how these tools can fix that problem.
+Others agreed that it's really about awareness, and if you show someone a cool tool most people will make the decision to adopt them on their own, but there will always be some who might not want that.</p>
+<p>Finally, it was brought up that students might have familiarity with Python or R, but Git is a completely different animal and is quite challenging to factor that into education; people like writers would really benefit from Git but it’s really hard to get them to use it, and people might not be aware of how inefficient the workflows they use are, because that's all they know.</p>
+<h2>Next up</h2>
+<p>Now that we’ve surfaced the reproducibility and reusability challenges that participants brought up at the BoF, stay tuned for our next blog post coming up soon, where we’ll share all the helpful tips, cool tools, awesome platforms and useful strategies attendees suggested to help address them.
+Until then, happy Spydering!</p>
+
+</div>
+<div class="comment-box">
+  <h2>Comments</h2>
+  
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function() { this.page.identifier = "/blog/reusable-research-bof-scipy-2023"; this.page.url = "https://www.spyder-ide.org/blog/reusable-research-bof-scipy-2023/"; };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//spyder-ide.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+    rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+
+</div>
+  </div>
+</div>
+
+    <div id="fh5co-footer">
+      <div class="container">
+        <div class="row footer-connect-line">
+          <div class="text-center">
+            <p>
+              Connect with us on:
+              <a href="https://github.com/spyder-ide/spyder"> Github </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://twitter.com/spyder_ide"> Twitter </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://www.facebook.com/SpyderIDE/"> Facebook </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://groups.google.com/group/spyderlib"> Google Groups </a>
+              <span class="pipe-colored">|</span>
+              <a href="https://instagram.com/spyderide"> Instagram </a>
+            </p>
+          </div>
+        </div>
+        <div class="row footer-copyright">
+          <div class="text-center">
+            <p>
+              &copy; 2023 Spyder Website Contributors
+              <span class="pipe-colored"> | </span>
+              Licensed <a href="https://github.com/spyder-ide/website-spyder/blob/master/NOTICE.txt" target="_blank" rel="noopener noreferrer">MIT and others</a>
+              <br>
+              Feature icons by <a href='https://www.freepik.com/' target='_blank' rel='noopener noreferrer' title='Freepik'>Freepik</a> from <a href='https://www.flaticon.com/' target='_blank' rel='noopener noreferrer' title='Flaticon'>Flaticon.com</a><br>
+              <a href="https://freehtml5.co/icon-free-website-template-using-bootstrap/" target="_blank" rel="noopener noreferrer">Template</a> design by <a href="https://freehtml5.co/" target="_blank" rel="noopener noreferrer">FreeHTML5.co</a>&nbsp;(<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC&#8209;BY&nbsp;3.0</a>)
+              <br><a href="https://github.com/SteveLane/hugo-icon" target="_blank" rel="noopener noreferrer">Hugo port</a> by <a href="https://github.com/SteveLane/" target="_blank" rel="noopener noreferrer">SteveLane</a> <span class="pipe-colored">|</span> <a href="https://github.com/spyder-ide/lektor-icon" target="_blank" rel="noopener noreferrer">Lektor&nbsp;port</a>&nbsp;by&nbsp;<a href="https://github.com/dalthviz/" target="_blank" rel="noopener noreferrer">Dalthviz</a>
+              <br>Rewrite by <a href="http://gerlach.cam" target="_blank" rel="noopener noreferrer">C.A.M.&nbsp;Gerlach</a> <span class="pipe-colored">|</span> Maintained by <a href="https://www.spyder-ide.org/" target="_blank" rel="noopener noreferrer">Spyder&nbsp;IDE</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- jQuery -->
+<script src="/static/js/jquery-3.7.1.min.js?h=ee48592d" type="application/javascript" charset="UTF-8"></script>
+<!-- Waypoints -->
+<script src="/static/js/jquery.waypoints.min.js?h=a2b72d43" type="application/javascript" charset="UTF-8"></script>
+<!-- Main JS -->
+<script src="/static/js/main.js?h=8d911085" type="application/javascript" charset="UTF-8"></script>
+<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.js" type="application/javascript" charset="UTF-8"></script> -->
+</body>
+</html>
