@@ -76,7 +76,7 @@
 
   // On initial DOM ready, set up the tour and the version dropdown
   document.addEventListener("DOMContentLoaded", function () {
-    var downloadButton = document.getElementById("download-button-button");
+    var downloadButton = document.getElementById("download-buttons-button");
     if (downloadButton) {
       setupDownloadButton(downloadButton);
     }

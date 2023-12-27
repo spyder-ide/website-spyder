@@ -225,28 +225,18 @@ Happy Spydering!
 -----
 
 
-##### multisection #####
+##### content #####
 section_id: download-buttons
 -----
-title:
------
-description:
------
-inner_content:
-
-###### content ######
-section_id: download-button
-------
 button_type: text
-------
+-----
 button_content: <span class="download-os-icon"></span><span class="download-text">Download Spyder</span>
-------
+-----
 button_link: https://github.com/spyder-ide/spyder/releases/latest
-------
+-----
 button_position: bottom
-------
+-----
 button_newtab: true
-------
 -----
 ----
 

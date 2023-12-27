@@ -126,11 +126,7 @@
   min-width: 50%;
 }
 
-/*** Modify download section to allow for multiple buttons ***/
-
-#section-download-buttons {
-  padding-top: 0;
-}
+/*** Download button formatting ***/
 
 #section-download-buttons .content-button {
   margin-bottom: 0;
