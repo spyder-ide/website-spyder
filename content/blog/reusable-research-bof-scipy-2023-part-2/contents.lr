@@ -15,7 +15,7 @@ body:
 
 The Spyder team and [collaborators](https://cfp.scipy.org/2023/speaker/SE7SNC/) hosted [a Birds of a Feather (BoF) session](https://cfp.scipy.org/2023/talk/LGZUNG/) at [SciPy 2023](https://www.scipy2023.scipy.org/), focused on moving beyond just scripts and notebooks toward truly reproducible, reusable research.
 In [Part 1 of this two-part series](https://www.spyder-ide.org/blog/reusable-research-bof-scipy-2023/), we went over our motivation and goals for the session and the challenges that attendees brought up.
-Now, we’ll review the tips, tools, platforms and strategies that participants shared as ways to address them, including Spyder!
+Now, we’ll review the tips, strategies, tools and platforms (including Spyder!) that participants shared as ways to address these obstacles.
 We'd again like to thank [Juanita Gomez](https://cfp.scipy.org/2023/speaker/SE7SNC/) for helping organize the BoF, Hari for his hard work compiling a summary of the outcomes, and everyone for attending and sharing such great ideas and insights!
 
 ## Making notebooks more reusable
@@ -30,7 +30,8 @@ They recommended the [8-levels of Reproducibility](https://www.anaconda.com/blog
 Additionally, attendees recommended [Papermill](https://papermill.readthedocs.io/en/latest/), describing it as a very useful tool for parameterizing and executing notebooks programmatically.
 Others suggested [Devcontainers](https://containers.dev/), to allow collaborating with a lab group or team in a shared environment and seeing everything on their screen, as well as [Live Share in VSCode](https://code.visualstudio.com/learn/collaboration/live-share).
 
-Participants also expressed frustration that notebooks are intended to make programming more literate, but while beginners use them interactively because they don't know how to use more advanced programming tools, they don't always remember the literate part.
+Participants also expressed frustration that despite notebooks being intended to make programming more literate, this often does not happen in practice.
+Beginners like the interactivity in notebooks because they don't know how to use more advanced programming tools, but they don't always take advantage of their readability features.
 To address this, attendees stressed the importance of getting users accustomed to best practices that can also be helpful for reproducibility.
 A participant mentioned a ``nbflake8`` tool to lint notebooks, though it could not be easily found online, and others wished for a [Ruff implementation](https://github.com/astral-sh/ruff/issues/1218) (which at the time of this writing is [now mostly complete](https://github.com/astral-sh/ruff/issues/5188)).
 
