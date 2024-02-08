@@ -4,27 +4,45 @@
   "use strict";
 
   /* Top-level variables */
-  const buttonData = {
-    win: {
-      text: "Download for Windows",
-      icon: ["fab", "fa-windows"],
-      url: "https://github.com/spyder-ide/spyder/releases/latest/download/Spyder_64bit_full.exe",
-    },
-    mac: {
-      text: "Download for macOS",
-      icon: ["fab", "fa-apple"],
-      url: "https://github.com/spyder-ide/spyder/releases/latest/download/Spyder.dmg",
-    },
-    linux: {
-      text: "Download for Linux (Anaconda)",
-      icon: ["fab", "fa-linux"],
-      url: "https://www.anaconda.com/download/",
-    },
-    other: {
-      text: "Download Spyder",
-      icon: ["fas", "fa-download"],
-      url: "https://github.com/spyder-ide/spyder/releases/latest",
-    },
+  const buttonsData = {
+    win: [
+      {
+        id: "download-windows",
+        text: "Download for Windows",
+        icon: ["fab", "fa-windows"],
+        url: "https://github.com/spyder-ide/spyder/releases/latest/download/Spyder_64bit_full.exe",
+      },
+    ],
+    mac: [
+      {
+        id: "download-mac-m1",
+        text: "Download for macOS (M1)",
+        icon: ["fab", "fa-apple"],
+        url: "https://github.com/spyder-ide/spyder/releases/latest/download/Spyder_arm64.dmg",
+      },
+      {
+        id: "download-mac-intel",
+        text: "Download for macOS (Intel)",
+        icon: ["fab", "fa-apple"],
+        url: "https://github.com/spyder-ide/spyder/releases/latest/download/Spyder_x86_64.dmg",
+      },
+    ],
+    linux: [
+      {
+        id: "download-linux",
+        text: "Download for Linux (Anaconda)",
+        icon: ["fab", "fa-linux"],
+        url: "https://www.anaconda.com/download/",
+      },
+    ],
+    other: [
+      {
+        id: "download-other",
+        text: "Download Spyder",
+        icon: ["fas", "fa-download"],
+        url: "https://github.com/spyder-ide/spyder/releases/latest",
+      },
+    ],
   };
 
   /* Helper functions */
@@ -52,24 +70,37 @@
   }
 
   // Get the button data corresponding to the current OS
-  function getButtonData() {
+  function getButtonsData() {
     const osName = getOSName();
-    return buttonData[osName];
+    return buttonsData[osName];
+  }
+
+  // Create the download button nodes from a prototype
+  function createDownloadButton(templateButton, buttonData) {
+    const newButton = templateButton.cloneNode(true);
+    newButton.id = buttonData.id;
+    newButton.href = buttonData.url;
+    newButton.getElementsByClassName("download-text")[0].textContent =
+      buttonData.text;
+    for (const icon of buttonData.icon) {
+      newButton
+        .getElementsByClassName("download-os-icon")[0]
+        .classList.add(icon);
+    }
+    return newButton;
   }
 
   /* Main functions */
 
-  // Setup download button based on current OS
+  // Set up download button based on current OS
   function setupDownloadButton(downloadButton) {
-    const buttonData = getButtonData();
-    downloadButton.href = buttonData.url;
-    downloadButton.getElementsByClassName("download-text")[0].textContent =
-      buttonData.text;
-    for (const icon of buttonData.icon) {
-      downloadButton
-        .getElementsByClassName("download-os-icon")[0]
-        .classList.add(icon);
+    const downloadButtonContainer = document.createElement("div");
+    downloadButtonContainer.id = "download-buttons-container";
+    for (const buttonData of getButtonsData()) {
+      const newButton = createDownloadButton(downloadButton, buttonData);
+      downloadButtonContainer.appendChild(newButton);
     }
+    downloadButton.replaceWith(downloadButtonContainer);
   }
 
   /* Fire events */
