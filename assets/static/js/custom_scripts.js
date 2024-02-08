@@ -4,7 +4,7 @@
   "use strict";
 
   /* Top-level variables */
-  var buttonData = {
+  const buttonData = {
     win: {
       text: "Download for Windows",
       icon: ["fab", "fa-windows"],
@@ -31,7 +31,7 @@
 
   // Get the key corresponding to the current desktop operating system
   function getOSName() {
-    var platform = navigator.platform;
+    const platform = navigator.platform;
     if (!platform) {
       return "other";
     }
@@ -53,7 +53,7 @@
 
   // Get the button data corresponding to the current OS
   function getButtonData() {
-    var osName = getOSName();
+    const osName = getOSName();
     return buttonData[osName];
   }
 
@@ -61,14 +61,14 @@
 
   // Setup download button based on current OS
   function setupDownloadButton(downloadButton) {
-    var buttonData = getButtonData();
+    const buttonData = getButtonData();
     downloadButton.href = buttonData.url;
     downloadButton.getElementsByClassName("download-text")[0].textContent =
       buttonData.text;
-    for (var i = 0; i < buttonData.icon.length; i++) {
+    for (const icon of buttonData.icon) {
       downloadButton
         .getElementsByClassName("download-os-icon")[0]
-        .classList.add(buttonData.icon[i]);
+        .classList.add(icon);
     }
   }
 
@@ -76,7 +76,7 @@
 
   // On initial DOM ready, set up the tour and the version dropdown
   document.addEventListener("DOMContentLoaded", function () {
-    var downloadButton = document.getElementById("download-buttons-button");
+    const downloadButton = document.getElementById("download-buttons-button");
     if (downloadButton) {
       setupDownloadButton(downloadButton);
     }
