@@ -129,9 +129,9 @@
 /*** Download button formatting ***/
 
 #section-download-buttons .content-button {
-  margin-bottom: 0;
+  margin-bottom: 1em;
   margin-top: 0;
-  min-width: 380px;
+  min-width: 460px;
 }
 
 @media screen and (max-width: 480px) {
