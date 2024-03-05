@@ -67,9 +67,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" type="text/css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/static/css/style.css?h=fb390f4f" type="text/css">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css?h=1f139981" type="text/css">
+  <link rel="stylesheet" href="/static/css/style.css?h=23bbf5e5" type="text/css">
   <!-- User Custom CSS -->
-  <link rel="stylesheet" href="/static/css/custom_styles.css?h=ebf99a35" type="text/css">
+  <link rel="stylesheet" href="/static/css/custom_styles.css?h=2fdbeb0f" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
   <link rel="stylesheet" href="" type="text/css">
   <link rel='me' href='https://fosstodon.org/@Spyder'>
@@ -78,27 +79,27 @@
 <body>
 <div class="fh5co-page">
   <div id="fh5co-container">
-    <div class="js-sticky">
-      <div class="fh5co-main-nav navbar fixed-top">
-        <div class="container">
+    <div class="js-sticky fh5co-main-nav">
+      <div class="navbar px-4">
+        <div class="container-xxl">
           <div class="fh5co-menu-1">
-            <div class='pull-left'>
-              <ul class='dropdown menu' data-dropdown-menu>
-                <li id='menu-logo'>
-                  <p></p>
-                    <a href='/'>
+            <div class="float-start">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li id="menu-logo">
+                  <a href="/" class="d-flex-md align-items-center my-2">
                     <img alt="Site Logo" src="/static/images/spyder_logo.png?h=7f1693dc">
                   </a>
-                  <p></p>
                 </li>
               </ul>
             </div>
 
-            <div class="main-nav-container">
+            <div class="nav-container">
+              <div class="main-nav-container">
 <a id="rss-nav-link" data-nav-section="RSS" href="/blog/feed.xml">RSS</a>
+              </div>
               <div class="side-nav-container">
-                <a class="pull-right nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
-                <a class="pull-right nav-link-internal nav-link-active-section /blog/introducing-unittest-plugin sep /blog" href="/blog/">Blog</a>
+                <a class="nav-link-internal nav-link-active-section /blog/introducing-unittest-plugin sep /blog" href="/blog/">Blog</a>
+                <a class="nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
               </div>
             </div>
           </div>
@@ -112,19 +113,22 @@
   <div class="blog-header blog-post-header">
       <h1>Introducing the unittest plugin</h1>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="Jitse Niesen photo" class="author-img" src="/authors/jitseniesen/jitse_niesen.jpeg">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          Jitse Niesen<br>
-          <span class="small">2018-02-23</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="Jitse Niesen photo" class="author-img" src="/authors/jitseniesen/jitse_niesen.jpeg">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>Jitse Niesen</div>
+            <div class="small">2018-02-23</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>Automatic testing can increase the quality of your code. This is especially true of dynamic languages like Python, where a typo may only be noticed when that particular code path is executed. The new <a href="https://github.com/spyder-ide/spyder-unittest">Spyder unittest plugin</a> lets you run tests and view the results, all within the IDE. Here, I'll demonstrate what it can do by way of a real-world example.</p>
+  <div class="blog-content">
+    <p>Automatic testing can increase the quality of your code. This is especially true of dynamic languages like Python, where a typo may only be noticed when that particular code path is executed. The new <a href="https://github.com/spyder-ide/spyder-unittest">Spyder unittest plugin</a> lets you run tests and view the results, all within the IDE. Here, I'll demonstrate what it can do by way of a real-world example.</p>
 <p>There are numerous unit testing frameworks available for Python, of which the plugin supports several of the most prominent. However, I'm using my favorite here, <a href="https://pytest.org/">pytest</a>. I prefer to write the tests in a separate file from the code, so that's what I'll do here.</p>
 <h2>Installing the plugin</h2>
 <p>If you use the Anaconda distribution (as we recommend), then you can install the Spyder unittest plugin with the command</p>
@@ -181,6 +185,7 @@ def test_four_is_not_prime():
 <p><code>Spyder-unittest</code> supports not only the <code>pytest</code> framework, but also the <code>nose</code> framework and the <code>unittest</code> module in the Python standard library. It is still fairly new (as its version number suggests), so I look forward to your comments. Please send your ideas, bug reports and pull requests to the <a href="https://github.com/spyder-ide/spyder-unittest">spyder-unittest</a> repo on Github.</p>
 <p>Happy Spydering with automatic tests!</p>
 
+  </div>
 </div>
 <div class="comment-box">
   <h2>Comments</h2>
@@ -247,7 +252,7 @@ def test_four_is_not_prime():
 <!-- Waypoints -->
 <script src="/static/js/jquery.waypoints.min.js?h=a2b72d43" type="application/javascript" charset="UTF-8"></script>
 <!-- Main JS -->
-<script src="/static/js/main.js?h=8d911085" type="application/javascript" charset="UTF-8"></script>
+<script src="/static/js/main.js?h=996d9217" type="application/javascript" charset="UTF-8"></script>
 <!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.js" type="application/javascript" charset="UTF-8"></script> -->
 </body>
 </html>

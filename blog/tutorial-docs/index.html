@@ -67,9 +67,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" type="text/css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/static/css/style.css?h=fb390f4f" type="text/css">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css?h=1f139981" type="text/css">
+  <link rel="stylesheet" href="/static/css/style.css?h=23bbf5e5" type="text/css">
   <!-- User Custom CSS -->
-  <link rel="stylesheet" href="/static/css/custom_styles.css?h=ebf99a35" type="text/css">
+  <link rel="stylesheet" href="/static/css/custom_styles.css?h=2fdbeb0f" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
   <link rel="stylesheet" href="" type="text/css">
   <link rel='me' href='https://fosstodon.org/@Spyder'>
@@ -78,27 +79,27 @@
 <body>
 <div class="fh5co-page">
   <div id="fh5co-container">
-    <div class="js-sticky">
-      <div class="fh5co-main-nav navbar fixed-top">
-        <div class="container">
+    <div class="js-sticky fh5co-main-nav">
+      <div class="navbar px-4">
+        <div class="container-xxl">
           <div class="fh5co-menu-1">
-            <div class='pull-left'>
-              <ul class='dropdown menu' data-dropdown-menu>
-                <li id='menu-logo'>
-                  <p></p>
-                    <a href='/'>
+            <div class="float-start">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li id="menu-logo">
+                  <a href="/" class="d-flex-md align-items-center my-2">
                     <img alt="Site Logo" src="/static/images/spyder_logo.png?h=7f1693dc">
                   </a>
-                  <p></p>
                 </li>
               </ul>
             </div>
 
-            <div class="main-nav-container">
+            <div class="nav-container">
+              <div class="main-nav-container">
 <a id="rss-nav-link" data-nav-section="RSS" href="/blog/feed.xml">RSS</a>
+              </div>
               <div class="side-nav-container">
-                <a class="pull-right nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
-                <a class="pull-right nav-link-internal nav-link-active-section /blog/tutorial-docs sep /blog" href="/blog/">Blog</a>
+                <a class="nav-link-internal nav-link-active-section /blog/tutorial-docs sep /blog" href="/blog/">Blog</a>
+                <a class="nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
               </div>
             </div>
           </div>
@@ -112,19 +113,22 @@
   <div class="blog-header blog-post-header">
       <h1>Writing docs is not just writing docs</h1>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="Juanita Gómez Romero photo" class="author-img" src="/authors/juanis2112/juanis2112.jpg">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          Juanita Gómez Romero<br>
-          <span class="small">2020-07-08</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="Juanita Gómez Romero photo" class="author-img" src="/authors/juanis2112/juanis2112.jpg">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>Juanita Gómez Romero</div>
+            <div class="small">2020-07-08</div>
+        </div>
       </div>
     </div>
   </div>
-  <p><em>This blogpost was originally published on the <a href="https://labs.quansight.org/blog/2020/07/writing-docs-is-not-just-writing-docs/">Quansight Labs website</a></em>.</p>
+  <div class="blog-content">
+    <p><em>This blogpost was originally published on the <a href="https://labs.quansight.org/blog/2020/07/writing-docs-is-not-just-writing-docs/">Quansight Labs website</a></em>.</p>
 <p>I joined the Spyder team almost two years ago, and I never thought I was going to end up working on docs.
 Six months ago I started a project with <a href="https://github.com/CAM-Gerlach">CAM Gerlach</a> and <a href="https://github.com/ccordoba12">Carlos Cordoba</a> to improve Spyder’s documentation.
 At first, I didn’t actually understand how important docs are for software, especially for open source projects.
@@ -160,6 +164,7 @@ In the end, as Melissa said in her <a href="https://labs.quansight.org/blog/2020
 <p>I hope these videos are really useful, and I look forward to continue finding ways of making the open source community better.</p>
 <p>Happy Spydering!</p>
 
+  </div>
 </div>
 <div class="comment-box">
   <h2>Comments</h2>
@@ -226,7 +231,7 @@ In the end, as Melissa said in her <a href="https://labs.quansight.org/blog/2020
 <!-- Waypoints -->
 <script src="/static/js/jquery.waypoints.min.js?h=a2b72d43" type="application/javascript" charset="UTF-8"></script>
 <!-- Main JS -->
-<script src="/static/js/main.js?h=8d911085" type="application/javascript" charset="UTF-8"></script>
+<script src="/static/js/main.js?h=996d9217" type="application/javascript" charset="UTF-8"></script>
 <!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.js" type="application/javascript" charset="UTF-8"></script> -->
 </body>
 </html>

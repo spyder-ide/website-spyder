@@ -67,9 +67,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" type="text/css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/static/css/style.css?h=fb390f4f" type="text/css">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css?h=1f139981" type="text/css">
+  <link rel="stylesheet" href="/static/css/style.css?h=23bbf5e5" type="text/css">
   <!-- User Custom CSS -->
-  <link rel="stylesheet" href="/static/css/custom_styles.css?h=ebf99a35" type="text/css">
+  <link rel="stylesheet" href="/static/css/custom_styles.css?h=2fdbeb0f" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
   <link rel="stylesheet" href="" type="text/css">
   <link rel='me' href='https://fosstodon.org/@Spyder'>
@@ -78,27 +79,27 @@
 <body>
 <div class="fh5co-page">
   <div id="fh5co-container">
-    <div class="js-sticky">
-      <div class="fh5co-main-nav navbar fixed-top">
-        <div class="container">
+    <div class="js-sticky fh5co-main-nav">
+      <div class="navbar px-4">
+        <div class="container-xxl">
           <div class="fh5co-menu-1">
-            <div class='pull-left'>
-              <ul class='dropdown menu' data-dropdown-menu>
-                <li id='menu-logo'>
-                  <p></p>
-                    <a href='/'>
+            <div class="float-start">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li id="menu-logo">
+                  <a href="/" class="d-flex-md align-items-center my-2">
                     <img alt="Site Logo" src="/static/images/spyder_logo.png?h=7f1693dc">
                   </a>
-                  <p></p>
                 </li>
               </ul>
             </div>
 
-            <div class="main-nav-container">
+            <div class="nav-container">
+              <div class="main-nav-container">
 <a id="rss-nav-link" data-nav-section="RSS" href="/blog/feed.xml">RSS</a>
+              </div>
               <div class="side-nav-container">
-                <a class="pull-right nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
-                <a class="pull-right nav-link-internal nav-link-active-section /blog/spyder-status-2018-present sep /blog" href="/blog/">Blog</a>
+                <a class="nav-link-internal nav-link-active-section /blog/spyder-status-2018-present sep /blog" href="/blog/">Blog</a>
+                <a class="nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
               </div>
             </div>
           </div>
@@ -112,19 +113,22 @@
   <div class="blog-header blog-post-header">
       <h1>State of the Spyder, Part 2: Looking up</h1>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          C.A.M. Gerlach<br>
-          <span class="small">2018-07-23</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>C.A.M. Gerlach</div>
+            <div class="small">2018-07-23</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>After sharing some major milestones, development progress, and other tidbits from the past six months in <a href="https://www.spyder-ide.org/blog/spyder-status-2018-past/">Part 1</a> of this series (check that one out first if you haven't already), we now have some amazing news to share with you all here in Part 2, along with other status updates.
+  <div class="blog-content">
+    <p>After sharing some major milestones, development progress, and other tidbits from the past six months in <a href="https://www.spyder-ide.org/blog/spyder-status-2018-past/">Part 1</a> of this series (check that one out first if you haven't already), we now have some amazing news to share with you all here in Part 2, along with other status updates.
 That's not all, though—Part 3 will look ahead toward Spyder 4 and beyond, unveiling and explaining our full roadmap and going over the future possibilities even further afield.</p>
 <h2>Spyder Wins NumFOCUS Development Grant</h2>
 <p>First up, we're thrilled to announce a major part of what's making that plan possible (along with your support, of course!).
@@ -175,6 +179,7 @@ You can also reach us on our <a href="https://groups.google.com/forum/#!forum/sp
 <p>Thanks again for all you do to make Spyder possible, and keep a look out for the next post in this series on the future of Spyder, along with our three major releases (3.3.0, 4.0b1, and the new docs) over the next few weeks.
 Happy Spydering!</p>
 
+  </div>
 </div>
 <div class="comment-box">
   <h2>Comments</h2>
@@ -241,7 +246,7 @@ Happy Spydering!</p>
 <!-- Waypoints -->
 <script src="/static/js/jquery.waypoints.min.js?h=a2b72d43" type="application/javascript" charset="UTF-8"></script>
 <!-- Main JS -->
-<script src="/static/js/main.js?h=8d911085" type="application/javascript" charset="UTF-8"></script>
+<script src="/static/js/main.js?h=996d9217" type="application/javascript" charset="UTF-8"></script>
 <!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.js" type="application/javascript" charset="UTF-8"></script> -->
 </body>
 </html>

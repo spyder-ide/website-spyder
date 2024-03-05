@@ -67,9 +67,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" type="text/css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/static/css/style.css?h=fb390f4f" type="text/css">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css?h=1f139981" type="text/css">
+  <link rel="stylesheet" href="/static/css/style.css?h=23bbf5e5" type="text/css">
   <!-- User Custom CSS -->
-  <link rel="stylesheet" href="/static/css/custom_styles.css?h=ebf99a35" type="text/css">
+  <link rel="stylesheet" href="/static/css/custom_styles.css?h=2fdbeb0f" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
   <link rel="stylesheet" href="" type="text/css">
   <link rel='me' href='https://fosstodon.org/@Spyder'>
@@ -78,27 +79,27 @@
 <body>
 <div class="fh5co-page">
   <div id="fh5co-container">
-    <div class="js-sticky">
-      <div class="fh5co-main-nav navbar fixed-top">
-        <div class="container">
+    <div class="js-sticky fh5co-main-nav">
+      <div class="navbar px-4">
+        <div class="container-xxl">
           <div class="fh5co-menu-1">
-            <div class='pull-left'>
-              <ul class='dropdown menu' data-dropdown-menu>
-                <li id='menu-logo'>
-                  <p></p>
-                    <a href='/'>
+            <div class="float-start">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li id="menu-logo">
+                  <a href="/" class="d-flex-md align-items-center my-2">
                     <img alt="Site Logo" src="/static/images/spyder_logo.png?h=7f1693dc">
                   </a>
-                  <p></p>
                 </li>
               </ul>
             </div>
 
-            <div class="main-nav-container">
+            <div class="nav-container">
+              <div class="main-nav-container">
 <a id="rss-nav-link" data-nav-section="RSS" href="/blog/feed.xml">RSS</a>
+              </div>
               <div class="side-nav-container">
-                <a class="pull-right nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
-                <a class="pull-right nav-link-internal nav-link-active-section /blog sep /blog nav-link-active-page" href="/blog/">Blog</a>
+                <a class="nav-link-internal nav-link-active-section /blog sep /blog nav-link-active-page" href="/blog/">Blog</a>
+                <a class="nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
               </div>
             </div>
           </div>
@@ -115,233 +116,273 @@
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/reusable-research-bof-scipy-2023/">Reusable research Birds of a Feather session at Scipy 2023: Goals and challenges</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          C.A.M. Gerlach<br>
-          <span class="small">2023-12-19</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>C.A.M. Gerlach</div>
+            <div class="small">2023-12-19</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>The Spyder team and collaborators hosted a Birds of a Feather session at SciPy 2023, focused on moving beyond just scripts and notebooks toward truly reproducible, reusable research. Here’s a recap of the goals of the session and the shared challenges that participants brought up in achieving them.</p>
+  <div class="blog-content">
+      <p>The Spyder team and collaborators hosted a Birds of a Feather session at SciPy 2023, focused on moving beyond just scripts and notebooks toward truly reproducible, reusable research. Here’s a recap of the goals of the session and the shared challenges that participants brought up in achieving them.</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/reusable-research-bof-scipy-2023/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/czi-grant/">Spyder gets CZI grant to add remote development features, and a new job opening!</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="Carlos Córdoba photo" class="author-img" src="/authors/ccordoba12/carlos_cordoba.jpeg">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          Carlos Córdoba<br>
-          <span class="small">2023-06-08</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="Carlos Córdoba photo" class="author-img" src="/authors/ccordoba12/carlos_cordoba.jpeg">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>Carlos Córdoba</div>
+            <div class="small">2023-06-08</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>Spyder has received a two-year grant from the Chan Zuckerberg Initiative to add remote development capabilities to our beloved IDE. This means you'll be able to easily take advantage of the vast resources offered by HPC clusters or the cloud to execute your code, while working from the comfort of your personal computer. And if you're interested in helping us implement that, we may have just the job opportunity for you!</p>
+  <div class="blog-content">
+      <p>Spyder has received a two-year grant from the Chan Zuckerberg Initiative to add remote development capabilities to our beloved IDE. This means you'll be able to easily take advantage of the vast resources offered by HPC clusters or the cloud to execute your code, while working from the comfort of your personal computer. And if you're interested in helping us implement that, we may have just the job opportunity for you!</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/czi-grant/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/installer-improvements/">Improvements to the Spyder IDE installation experience</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="Daniel Althviz photo" class="author-img" src="/authors/dalthviz/dalthviz.jpg">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          Daniel Althviz<br>
-          <span class="small">2022-11-30</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="Daniel Althviz photo" class="author-img" src="/authors/dalthviz/dalthviz.jpg">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>Daniel Althviz</div>
+            <div class="small">2022-11-30</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>Spyder 5.4.0 was released recently, featuring some major enhancements to the Windows and macOS standalone installers. You'll now get more detailed feedback when new versions are available, and you can download and start the update to them from right within Spyder, instead of having to install them manually. Read on to learn how these new update features work and how to use them.</p>
+  <div class="blog-content">
+      <p>Spyder 5.4.0 was released recently, featuring some major enhancements to the Windows and macOS standalone installers. You'll now get more detailed feedback when new versions are available, and you can download and start the update to them from right within Spyder, instead of having to install them manually. Read on to learn how these new update features work and how to use them.</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/installer-improvements/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/introducing-watchlist-plugin/">Introducing the Spyder-Watchlist plugin</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="A. Reit photo" class="author-img" src="/authors/rear1019/rear1019.png">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          A. Reit<br>
-          <span class="small">2022-11-18</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="A. Reit photo" class="author-img" src="/authors/rear1019/rear1019.png">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>A. Reit</div>
+            <div class="small">2022-11-18</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>The third-party Spyder-Watchlist plugin is introduced, which can display and continually update the values of arbitrary, user-defined expressions while the debugger is active, and it's shown how to use this powerful tool for quickly exploring and debugging your code.</p>
+  <div class="blog-content">
+      <p>The third-party Spyder-Watchlist plugin is introduced, which can display and continually update the values of arbitrary, user-defined expressions while the debugger is active, and it's shown how to use this powerful tool for quickly exploring and debugging your code.</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/introducing-watchlist-plugin/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/spyder-roadmap-proposals-2022/">New 2022 roadmap and grant funding</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="Daniel Althviz photo" class="author-img" src="/authors/dalthviz/dalthviz.jpg">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          Daniel Althviz<br>
-          <span class="small">2022-07-25</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="Daniel Althviz photo" class="author-img" src="/authors/dalthviz/dalthviz.jpg">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>Daniel Althviz</div>
+            <div class="small">2022-07-25</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>We'd like to share our brand new roadmap for the rest of 2022, powered by the feedback of users like you. We're also excited to announce two new grants we've been awarded, which fund significant improvements to Spyder's Windows installers and user/developer documentation.</p>
+  <div class="blog-content">
+      <p>We'd like to share our brand new roadmap for the rest of 2022, powered by the feedback of users like you. We're also excited to announce two new grants we've been awarded, which fund significant improvements to Spyder's Windows installers and user/developer documentation.</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/spyder-roadmap-proposals-2022/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/spyder-debugger/">New features in Spyder 4&#39;s new debugger!</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="Quentin Peter photo" class="author-img" src="/authors/impact27/impact27.jpg">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          Quentin Peter<br>
-          <span class="small">2020-11-05</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="Quentin Peter photo" class="author-img" src="/authors/impact27/impact27.jpg">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>Quentin Peter</div>
+            <div class="small">2020-11-05</div>
+        </div>
       </div>
     </div>
   </div>
-  <p><a href="https://ipython.org/">IPython</a> is a great improvement over the standard Python interpreter, bringing many enhancements such as autocompletion and "magic" commands.
+  <div class="blog-content">
+      <p><a href="https://ipython.org/">IPython</a> is a great improvement over the standard Python interpreter, bringing many enhancements such as autocompletion and "magic" commands.
 When debugging, however, many of these features become inaccessible.
 With Spyder, we aim to bring back these capabilities and more for a truly premium debugging experience!
 (And believe me, I use this debugger a lot, and not only because I write code that might contain bugs :p).</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/spyder-debugger/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/STX-interview/">STX Next, Python development company, uses Spyder to improve their workflow</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="Juanita Gómez Romero photo" class="author-img" src="/authors/juanis2112/juanis2112.jpg">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          Juanita Gómez Romero<br>
-          <span class="small">2020-07-25</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="Juanita Gómez Romero photo" class="author-img" src="/authors/juanis2112/juanis2112.jpg">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>Juanita Gómez Romero</div>
+            <div class="small">2020-07-25</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>STX Next, one of Europe's largest Python development companies, has shared with us how Spyder has been a powerful tool for them when performing data analysis. It is a pleasure for us on the Spyder team to work every day to improve the workflow of developers, scientists, engineers and data analysts. We are very glad to receive and share a STX Next testimonial about Spyder, along with an interview with one of their developers, Michael Wiśniewski, who has found Spyder very useful in his job.</p>
+  <div class="blog-content">
+      <p>STX Next, one of Europe's largest Python development companies, has shared with us how Spyder has been a powerful tool for them when performing data analysis. It is a pleasure for us on the Spyder team to work every day to improve the workflow of developers, scientists, engineers and data analysts. We are very glad to receive and share a STX Next testimonial about Spyder, along with an interview with one of their developers, Michael Wiśniewski, who has found Spyder very useful in his job.</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/STX-interview/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/tutorial-docs/">Writing docs is not just writing docs</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="Juanita Gómez Romero photo" class="author-img" src="/authors/juanis2112/juanis2112.jpg">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          Juanita Gómez Romero<br>
-          <span class="small">2020-07-08</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="Juanita Gómez Romero photo" class="author-img" src="/authors/juanis2112/juanis2112.jpg">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>Juanita Gómez Romero</div>
+            <div class="small">2020-07-08</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>I joined the Spyder team almost two years ago, and I never thought I was going to end up working on docs. Six months ago I started a project with CAM Gerlach and Carlos Cordoba to improve Spyder’s documentation. At first, I didn’t actually understand how important docs are for software, especially for open source projects. However, during all this time I’ve learned how documentation has a huge impact on the open-source community and I’ve been thankful to have been able to do this. But, from the beginning, I asked myself “why am I the ‘right person’ for this?”</p>
+  <div class="blog-content">
+      <p>I joined the Spyder team almost two years ago, and I never thought I was going to end up working on docs. Six months ago I started a project with CAM Gerlach and Carlos Cordoba to improve Spyder’s documentation. At first, I didn’t actually understand how important docs are for software, especially for open source projects. However, during all this time I’ve learned how documentation has a huge impact on the open-source community and I’ve been thankful to have been able to do this. But, from the beginning, I asked myself “why am I the ‘right person’ for this?”</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/tutorial-docs/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/release-spyder-4/">Thanking the people behind Spyder 4</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="Carlos Córdoba photo" class="author-img" src="/authors/ccordoba12/carlos_cordoba.jpeg">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          Carlos Córdoba<br>
-          <span class="small">2020-06-12</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="Carlos Córdoba photo" class="author-img" src="/authors/ccordoba12/carlos_cordoba.jpeg">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>Carlos Córdoba</div>
+            <div class="small">2020-06-12</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>After more than three years in development and more than 5000 commits from 60 authors around the world, Spyder 4 finally saw the light on December 5, 2019! I decided to wait until now to write a blogpost about it because shortly after the initial release, we found several critical performance issues and some regressions with respect to Spyder 3, most of which are fixed now in version 4.1.3, released on May 8th 2020.</p>
+  <div class="blog-content">
+      <p>After more than three years in development and more than 5000 commits from 60 authors around the world, Spyder 4 finally saw the light on December 5, 2019! I decided to wait until now to write a blogpost about it because shortly after the initial release, we found several critical performance issues and some regressions with respect to Spyder 3, most of which are fixed now in version 4.1.3, released on May 8th 2020.</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/release-spyder-4/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/spyder-terminal-030/">Creating the ultimate terminal experience in Spyder 4 with Spyder-Terminal</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="Stephannie Jimenez Gacha photo" class="author-img" src="/authors/steff456/steff456.jpeg">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          Stephannie Jimenez Gacha<br>
-          <span class="small">2020-04-22</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="Stephannie Jimenez Gacha photo" class="author-img" src="/authors/steff456/steff456.jpeg">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>Stephannie Jimenez Gacha</div>
+            <div class="small">2020-04-22</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>The Spyder-Terminal project is revitalized! The new 0.3.0 version adds numerous features that improve the user experience, and enhances compatibility with the latest Spyder 4 release, in part thanks to the improvements made in the xterm.js project.</p>
+  <div class="blog-content">
+      <p>The Spyder-Terminal project is revitalized! The new 0.3.0 version adds numerous features that improve the user experience, and enhances compatibility with the latest Spyder 4 release, in part thanks to the improvements made in the xterm.js project.</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/spyder-terminal-030/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 
@@ -399,7 +440,7 @@ With Spyder, we aim to bring back these capabilities and more for a truly premiu
 <!-- Waypoints -->
 <script src="/static/js/jquery.waypoints.min.js?h=a2b72d43" type="application/javascript" charset="UTF-8"></script>
 <!-- Main JS -->
-<script src="/static/js/main.js?h=8d911085" type="application/javascript" charset="UTF-8"></script>
+<script src="/static/js/main.js?h=996d9217" type="application/javascript" charset="UTF-8"></script>
 <!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.js" type="application/javascript" charset="UTF-8"></script> -->
 </body>
 </html>

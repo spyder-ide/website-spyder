@@ -67,9 +67,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" type="text/css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/static/css/style.css?h=fb390f4f" type="text/css">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css?h=1f139981" type="text/css">
+  <link rel="stylesheet" href="/static/css/style.css?h=23bbf5e5" type="text/css">
   <!-- User Custom CSS -->
-  <link rel="stylesheet" href="/static/css/custom_styles.css?h=ebf99a35" type="text/css">
+  <link rel="stylesheet" href="/static/css/custom_styles.css?h=2fdbeb0f" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
   <link rel="stylesheet" href="" type="text/css">
   <link rel='me' href='https://fosstodon.org/@Spyder'>
@@ -78,27 +79,27 @@
 <body>
 <div class="fh5co-page">
   <div id="fh5co-container">
-    <div class="js-sticky">
-      <div class="fh5co-main-nav navbar fixed-top">
-        <div class="container">
+    <div class="js-sticky fh5co-main-nav">
+      <div class="navbar px-4">
+        <div class="container-xxl">
           <div class="fh5co-menu-1">
-            <div class='pull-left'>
-              <ul class='dropdown menu' data-dropdown-menu>
-                <li id='menu-logo'>
-                  <p></p>
-                    <a href='/'>
+            <div class="float-start">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li id="menu-logo">
+                  <a href="/" class="d-flex-md align-items-center my-2">
                     <img alt="Site Logo" src="/static/images/spyder_logo.png?h=7f1693dc">
                   </a>
-                  <p></p>
                 </li>
               </ul>
             </div>
 
-            <div class="main-nav-container">
+            <div class="nav-container">
+              <div class="main-nav-container">
 <a id="rss-nav-link" data-nav-section="RSS" href="/blog/feed.xml">RSS</a>
+              </div>
               <div class="side-nav-container">
-                <a class="pull-right nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
-                <a class="pull-right nav-link-internal nav-link-active-section /blog/release-qtconsole-440 sep /blog" href="/blog/">Blog</a>
+                <a class="nav-link-internal nav-link-active-section /blog/release-qtconsole-440 sep /blog" href="/blog/">Blog</a>
+                <a class="nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
               </div>
             </div>
           </div>
@@ -112,19 +113,22 @@
   <div class="blog-header blog-post-header">
       <h1>QtConsole 4.4 Released!</h1>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          C.A.M. Gerlach<br>
-          <span class="small">2018-09-21</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>C.A.M. Gerlach</div>
+            <div class="small">2018-09-21</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>We're excited to announce a significant update to <a href="https://qtconsole.readthedocs.io/en/stable/">QtConsole</a>—the package that powers Spyder's <a href="https://docs.spyder-ide.org/ipythonconsole.html">IPython Console</a> interface—which the Spyder team maintains in collaboration with <a href="https://jupyter.org/">Project Jupyter</a>.
+  <div class="blog-content">
+    <p>We're excited to announce a significant update to <a href="https://qtconsole.readthedocs.io/en/stable/">QtConsole</a>—the package that powers Spyder's <a href="https://docs.spyder-ide.org/ipythonconsole.html">IPython Console</a> interface—which the Spyder team maintains in collaboration with <a href="https://jupyter.org/">Project Jupyter</a>.
 Two of the biggest changes—user-selectable syntax highlighting themes, and enhanced external editor/IDE integration—are already built right into Spyder, so they'll likely be of more interest if you use QtConsole standalone or with another editor/IDE.
 However, most of the other changes should prove quite useful within Spyder as well, and many were in fact suggested and even implemented by users of our IDE.
 Particular highlights include a block indent/unindent feature, Select-All (<code>Ctrl-Shift-A</code>) being made cell-specific, <code>Ctrl-Backspace</code> and <code>Ctrl-Delete</code> behaving more intelligently across whitespace and line boundaries, <code>Ctrl-D</code> allowing you to easily exit <code>ipdb</code>, <code>input()</code> and the like, and numerous smaller enhancements and bug fixes.
@@ -138,6 +142,7 @@ For the latest Spyder news, releases, previews and tips, you can follow our <a h
 We'll also have an upcoming article on our official Spyder 4 feature roadmap and more, and Spyder 3.3.2 is due out soon, so keep in right here for your Spyder fix!
 Until then, happy Spydering and enjoy QtConsole 4.4!</p>
 
+  </div>
 </div>
 <div class="comment-box">
   <h2>Comments</h2>
@@ -204,7 +209,7 @@ Until then, happy Spydering and enjoy QtConsole 4.4!</p>
 <!-- Waypoints -->
 <script src="/static/js/jquery.waypoints.min.js?h=a2b72d43" type="application/javascript" charset="UTF-8"></script>
 <!-- Main JS -->
-<script src="/static/js/main.js?h=8d911085" type="application/javascript" charset="UTF-8"></script>
+<script src="/static/js/main.js?h=996d9217" type="application/javascript" charset="UTF-8"></script>
 <!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.js" type="application/javascript" charset="UTF-8"></script> -->
 </body>
 </html>

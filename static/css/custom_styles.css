@@ -28,13 +28,18 @@
 
 /* Remove margin between cards when single-column */
 
-@media screen and (max-width: 768px) {
-  .col-md-4 .card-item {
-    margin: 0;
+@media screen and (max-width: 767px) {
+  .row.g-4 {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0rem;
   }
 }
 
 /* Adjust size and padding of component cards */
+
+#section-plugins {
+  padding-bottom: 0;
+}
 
 #section-components {
   padding-bottom: 2em;
@@ -92,25 +97,25 @@
 
 /* Increase size of graphics in sponsors section */
 
-@media screen and (max-width: 1200px) {
-  #section-sponsors .col-md-4 {
+@media screen and (max-width: 1199px) {
+  #section-contributors .col {
     max-width: 320px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  #section-sponsors .col-md-4 {
+@media screen and (max-width: 767px) {
+  #section-contributors .col {
     max-width: 400px;
   }
 }
 
-@media screen and (max-width: 480px) {
-  #section-sponsors .col-md-4 {
+@media screen and (max-width: 575px) {
+  #section-contributors .col {
     max-width: 320px;
   }
 }
 
-#section-sponsors .card {
+#section-contributors .card {
   padding: 0;
 }
 

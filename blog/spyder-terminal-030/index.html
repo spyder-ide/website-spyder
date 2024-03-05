@@ -67,9 +67,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" type="text/css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/static/css/style.css?h=fb390f4f" type="text/css">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css?h=1f139981" type="text/css">
+  <link rel="stylesheet" href="/static/css/style.css?h=23bbf5e5" type="text/css">
   <!-- User Custom CSS -->
-  <link rel="stylesheet" href="/static/css/custom_styles.css?h=ebf99a35" type="text/css">
+  <link rel="stylesheet" href="/static/css/custom_styles.css?h=2fdbeb0f" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
   <link rel="stylesheet" href="" type="text/css">
   <link rel='me' href='https://fosstodon.org/@Spyder'>
@@ -78,27 +79,27 @@
 <body>
 <div class="fh5co-page">
   <div id="fh5co-container">
-    <div class="js-sticky">
-      <div class="fh5co-main-nav navbar fixed-top">
-        <div class="container">
+    <div class="js-sticky fh5co-main-nav">
+      <div class="navbar px-4">
+        <div class="container-xxl">
           <div class="fh5co-menu-1">
-            <div class='pull-left'>
-              <ul class='dropdown menu' data-dropdown-menu>
-                <li id='menu-logo'>
-                  <p></p>
-                    <a href='/'>
+            <div class="float-start">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li id="menu-logo">
+                  <a href="/" class="d-flex-md align-items-center my-2">
                     <img alt="Site Logo" src="/static/images/spyder_logo.png?h=7f1693dc">
                   </a>
-                  <p></p>
                 </li>
               </ul>
             </div>
 
-            <div class="main-nav-container">
+            <div class="nav-container">
+              <div class="main-nav-container">
 <a id="rss-nav-link" data-nav-section="RSS" href="/blog/feed.xml">RSS</a>
+              </div>
               <div class="side-nav-container">
-                <a class="pull-right nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
-                <a class="pull-right nav-link-internal nav-link-active-section /blog/spyder-terminal-030 sep /blog" href="/blog/">Blog</a>
+                <a class="nav-link-internal nav-link-active-section /blog/spyder-terminal-030 sep /blog" href="/blog/">Blog</a>
+                <a class="nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
               </div>
             </div>
           </div>
@@ -112,19 +113,22 @@
   <div class="blog-header blog-post-header">
       <h1>Creating the ultimate terminal experience in Spyder 4 with Spyder-Terminal</h1>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="Stephannie Jimenez Gacha photo" class="author-img" src="/authors/steff456/steff456.jpeg">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          Stephannie Jimenez Gacha<br>
-          <span class="small">2020-04-22</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="Stephannie Jimenez Gacha photo" class="author-img" src="/authors/steff456/steff456.jpeg">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>Stephannie Jimenez Gacha</div>
+            <div class="small">2020-04-22</div>
+        </div>
       </div>
     </div>
   </div>
-  <p><em>This blogpost was originally published on the <a href="https://labs.quansight.org/blog/2020/02/creating-the-ultimate-terminal-experience-in-Spyder-4-with-Spyder-Terminal/">Quansight Labs website</a></em>.</p>
+  <div class="blog-content">
+    <p><em>This blogpost was originally published on the <a href="https://labs.quansight.org/blog/2020/02/creating-the-ultimate-terminal-experience-in-Spyder-4-with-Spyder-Terminal/">Quansight Labs website</a></em>.</p>
 <p>The <a href="https://github.com/spyder-ide/spyder-terminal">Spyder-Terminal</a> project is revitalized! The new 0.3.0 version adds numerous features that improve the user experience, and enhances compatibility with the latest Spyder 4 release, in part thanks to the improvements made in the <a href="https://github.com/xtermjs/xterm.js">xterm.js</a> project.</p>
 <p><img src="/blog/spyder-terminal-030/terminal.png" alt="Screenshot of the new spyder-terminal"></p>
 <h2>Upgrade to ES6/JSX syntax</h2>
@@ -143,6 +147,7 @@
 <p><img src="/blog/spyder-terminal-030/shortcuts.png" alt="Configurable shortcuts for the Terminal inside Spyder 4"></p>
 <p>We're excited for you to try out Spyder-Terminal 0.3.0 and experiment with the new features available; we'd like to thank <a href="https://numfocus.org/">NumFOCUS</a> and Quansight for providing the funding and support that made all this work possible. Check back soon for more Spyder updates, and until then, happy coding!</p>
 
+  </div>
 </div>
 <div class="comment-box">
   <h2>Comments</h2>
@@ -209,7 +214,7 @@
 <!-- Waypoints -->
 <script src="/static/js/jquery.waypoints.min.js?h=a2b72d43" type="application/javascript" charset="UTF-8"></script>
 <!-- Main JS -->
-<script src="/static/js/main.js?h=8d911085" type="application/javascript" charset="UTF-8"></script>
+<script src="/static/js/main.js?h=996d9217" type="application/javascript" charset="UTF-8"></script>
 <!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.js" type="application/javascript" charset="UTF-8"></script> -->
 </body>
 </html>

@@ -18,22 +18,36 @@ https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt
 (function () {
   "use strict";
 
+  // Fix for header height in inner pages
+  const fixInnerPage = function () {
+    const headerHeight = $(".js-sticky").outerHeight();
+    $(".page-content-container, .blog-content-container").css(
+      "padding-top",
+      headerHeight
+    );
+  };
+
+  const runInnerPageFix = function () {
+    fixInnerPage();
+    $(window).on("resize", fixInnerPage);
+  };
+
   // Fullsize Error Page Background
-  var fullHeight = function () {
-    var heightToSet =
+  const fullHeight = function () {
+    const heightToSet =
       $(window).height() -
-      $(".js-sticky").height() -
+      $(".js-sticky").outerHeight() -
       $("#fh5co-footer").outerHeight();
     $("#error-page").css("height", heightToSet);
   };
 
-  var setFullHeight = function () {
+  const setFullHeight = function () {
     fullHeight();
     $(window).on("resize", fullHeight);
   };
 
   // Offcanvas layout for "hamburger" mobile menu
-  var offcanvasMenu = function () {
+  const offcanvasMenu = function () {
     $("body").prepend('<div id="fh5co-offcanvas"></div>');
     $("body").prepend(
       '<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" aria-label="Toggle for hamburger menu"><i></i></a>'
@@ -49,13 +63,16 @@ https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt
   };
 
   // Top navbar stickiness
-  var mainMenuSticky = function () {
-    var sticky = $(".js-sticky");
-    var $section = $(".fh5co-main-nav");
+  const mainMenuSticky = function () {
+    const $section = $(".js-sticky");
+    const inner = $(".navbar");
+    let innerHeight = inner.outerHeight();
 
-    sticky.css("height", $section.height());
+    $section.css("height", innerHeight);
+
     $(window).on("resize", function () {
-      sticky.css("height", $section.height());
+      innerHeight = inner.outerHeight();
+      $section.css("height", innerHeight);
     });
 
     $section.waypoint(
@@ -78,9 +95,9 @@ https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt
   };
 
   // Mobile "burger" menu
-  var burgerMenu = function () {
+  const burgerMenu = function () {
     $("body").on("click", ".js-fh5co-nav-toggle", function (event) {
-      var $this = $(this);
+      const $this = $(this);
 
       if ($("body").hasClass("offcanvas-visible")) {
         $("body").removeClass("offcanvas-visible fh5co-overflow");
@@ -94,9 +111,9 @@ https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt
   };
 
   // Click outside of offcanvas sidebar to close it
-  var mobileMenuOutsideClick = function () {
+  const mobileMenuOutsideClick = function () {
     $(document).on("click", function (e) {
-      var container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
+      const container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($("body").hasClass("offcanvas-visible")) {
           $("body").removeClass("offcanvas-visible");
@@ -113,5 +130,6 @@ https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt
     mobileMenuOutsideClick();
     mainMenuSticky();
     setFullHeight();
+    runInnerPageFix();
   });
 })();

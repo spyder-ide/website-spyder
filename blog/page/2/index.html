@@ -67,9 +67,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" type="text/css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/static/css/style.css?h=fb390f4f" type="text/css">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css?h=1f139981" type="text/css">
+  <link rel="stylesheet" href="/static/css/style.css?h=23bbf5e5" type="text/css">
   <!-- User Custom CSS -->
-  <link rel="stylesheet" href="/static/css/custom_styles.css?h=ebf99a35" type="text/css">
+  <link rel="stylesheet" href="/static/css/custom_styles.css?h=2fdbeb0f" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
   <link rel="stylesheet" href="" type="text/css">
   <link rel='me' href='https://fosstodon.org/@Spyder'>
@@ -78,27 +79,27 @@
 <body>
 <div class="fh5co-page">
   <div id="fh5co-container">
-    <div class="js-sticky">
-      <div class="fh5co-main-nav navbar fixed-top">
-        <div class="container">
+    <div class="js-sticky fh5co-main-nav">
+      <div class="navbar px-4">
+        <div class="container-xxl">
           <div class="fh5co-menu-1">
-            <div class='pull-left'>
-              <ul class='dropdown menu' data-dropdown-menu>
-                <li id='menu-logo'>
-                  <p></p>
-                    <a href='/'>
+            <div class="float-start">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li id="menu-logo">
+                  <a href="/" class="d-flex-md align-items-center my-2">
                     <img alt="Site Logo" src="/static/images/spyder_logo.png?h=7f1693dc">
                   </a>
-                  <p></p>
                 </li>
               </ul>
             </div>
 
-            <div class="main-nav-container">
+            <div class="nav-container">
+              <div class="main-nav-container">
 <a id="rss-nav-link" data-nav-section="RSS" href="/blog/feed.xml">RSS</a>
+              </div>
               <div class="side-nav-container">
-                <a class="pull-right nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
-                <a class="pull-right nav-link-internal nav-link-active-section /blog sep /blog nav-link-active-page" href="/blog/">Blog</a>
+                <a class="nav-link-internal nav-link-active-section /blog sep /blog nav-link-active-page" href="/blog/">Blog</a>
+                <a class="nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
               </div>
             </div>
           </div>
@@ -115,230 +116,270 @@
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/spyder-variable-explorer/">Variable Explorer improvements in Spyder 4</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="Daniel Althviz photo" class="author-img" src="/authors/dalthviz/dalthviz.jpg">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          Daniel Althviz<br>
-          <span class="small">2019-11-28</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="Daniel Althviz photo" class="author-img" src="/authors/dalthviz/dalthviz.jpg">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>Daniel Althviz</div>
+            <div class="small">2019-11-28</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>Spyder 4 will be released very soon with lots of interesting new features that you'll want to check out, reflecting years of effort by the team to improve the user experience. In this post, we will be talking about the improvements made to the Variable Explorer.</p>
+  <div class="blog-content">
+      <p>Spyder 4 will be released very soon with lots of interesting new features that you'll want to check out, reflecting years of effort by the team to improve the user experience. In this post, we will be talking about the improvements made to the Variable Explorer.</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/spyder-variable-explorer/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/spyder-files-improvements/">File management improvements in Spyder 4</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="Juanita Gómez Romero photo" class="author-img" src="/authors/juanis2112/juanis2112.jpg">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          Juanita Gómez Romero<br>
-          <span class="small">2019-11-12</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="Juanita Gómez Romero photo" class="author-img" src="/authors/juanis2112/juanis2112.jpg">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>Juanita Gómez Romero</div>
+            <div class="small">2019-11-12</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>Version 4.0 of Spyder is almost ready! It has been in the making for well over three years, and it contains lots of interesting new features. We will focus on the Files pane in this post, where we've made several improvements to the interface and file management tools. Some of this include the simplification of the interface by hiding size and kind columns by default, the possibility to custom file associations and open files externally with specific programs associated from Spyder, the functions to copy the absolute and relative paths of the files from the editor and the incorporation of icons depending on the file type which are displayed along with the file's name.</p>
+  <div class="blog-content">
+      <p>Version 4.0 of Spyder is almost ready! It has been in the making for well over three years, and it contains lots of interesting new features. We will focus on the Files pane in this post, where we've made several improvements to the interface and file management tools. Some of this include the simplification of the interface by hiding size and kind columns by default, the possibility to custom file associations and open files externally with specific programs associated from Spyder, the functions to copy the absolute and relative paths of the files from the editor and the incorporation of icons depending on the file type which are displayed along with the file's name.</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/spyder-files-improvements/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/spyder-kite-funding/">Spyder 4.0: Kite integration is here</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="Edgar Andrés Margffoy photo" class="author-img" src="/authors/andfoy/andfoy.jpg">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          Edgar Andrés Margffoy<br>
-          <span class="small">2019-08-16</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="Edgar Andrés Margffoy photo" class="author-img" src="/authors/andfoy/andfoy.jpg">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>Edgar Andrés Margffoy</div>
+            <div class="small">2019-08-16</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>As part of our next release, we are proud to announce an additional completion client for Spyder, Kite. Kite is a novel completion client that uses Machine Learning techniques to find and predict the best autocompletion for a given text. Additionally, it collects improved documentation for compiled packages, e.g. Matplotlib, NumPy and SciPy, that cannot be obtained easily by using traditional code analysis packages such as Jedi.</p>
+  <div class="blog-content">
+      <p>As part of our next release, we are proud to announce an additional completion client for Spyder, Kite. Kite is a novel completion client that uses Machine Learning techniques to find and predict the best autocompletion for a given text. Additionally, it collects improved documentation for compiled packages, e.g. Matplotlib, NumPy and SciPy, that cannot be obtained easily by using traditional code analysis packages such as Jedi.</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/spyder-kite-funding/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/tdk-micronas-partners-with-quansight-labs/">TDK-Micronas partners with Quansight to sponsor Spyder</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="Gonzalo Peña-Castellanos photo" class="author-img" src="/authors/goanpeca/goanpeca.jpg">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          Gonzalo Peña-Castellanos<br>
-          <span class="small">2019-06-02</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="Gonzalo Peña-Castellanos photo" class="author-img" src="/authors/goanpeca/goanpeca.jpg">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>Gonzalo Peña-Castellanos</div>
+            <div class="small">2019-06-02</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>TDK-Micronas is sponsoring Spyder development efforts through Quansight Labs. This will enable the development of some features that have been requested by our users, as well as new features that will help TDK develop custom Spyder plugins in order to complement their Automatic Test Equipment (ATE’s) in the development of their Application Specific Integrated Circuits (ASIC’s).</p>
+  <div class="blog-content">
+      <p>TDK-Micronas is sponsoring Spyder development efforts through Quansight Labs. This will enable the development of some features that have been requested by our users, as well as new features that will help TDK develop custom Spyder plugins in order to complement their Automatic Test Equipment (ATE’s) in the development of their Application Specific Integrated Circuits (ASIC’s).</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/tdk-micronas-partners-with-quansight-labs/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/release-spyder-4beta2/">Spyder 4.0 takes a big step closer with the release of Beta 2!</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="Gonzalo Peña-Castellanos photo" class="author-img" src="/authors/goanpeca/goanpeca.jpg">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          Gonzalo Peña-Castellanos<br>
-          <span class="small">2019-05-20</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="Gonzalo Peña-Castellanos photo" class="author-img" src="/authors/goanpeca/goanpeca.jpg">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>Gonzalo Peña-Castellanos</div>
+            <div class="small">2019-05-20</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>We're excited to announce the release of the milestone Beta 2, which represents nearly a year of intense work on Spyder's completion/introspection/help/analysis architecture, dark theme, plot pane, autosave, and much more. This is the first of a new series of blog posts chronicling our final push toward the Spyder 4.0 release, and the new features we've implemented along the way,</p>
+  <div class="blog-content">
+      <p>We're excited to announce the release of the milestone Beta 2, which represents nearly a year of intense work on Spyder's completion/introspection/help/analysis architecture, dark theme, plot pane, autosave, and much more. This is the first of a new series of blog posts chronicling our final push toward the Spyder 4.0 release, and the new features we've implemented along the way,</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/release-spyder-4beta2/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/release-qtconsole-440/">QtConsole 4.4 Released!</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          C.A.M. Gerlach<br>
-          <span class="small">2018-09-21</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>C.A.M. Gerlach</div>
+            <div class="small">2018-09-21</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>We're pleased to highlight the release of QtConsole 4.4, which powers Spyder's IPython Console GUI. The latest version, developed in collaboration with the Jupyter team, adds several key features, enhancements and usability improvements, along with dozens of bug fixes and other changes—many requested and implemented by Spyder users like you.</p>
+  <div class="blog-content">
+      <p>We're pleased to highlight the release of QtConsole 4.4, which powers Spyder's IPython Console GUI. The latest version, developed in collaboration with the Jupyter team, adds several key features, enhancements and usability improvements, along with dozens of bug fixes and other changes—many requested and implemented by Spyder users like you.</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/release-qtconsole-440/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/release-spyder-330/">Spyder 3.3.0 and 3.3.1 released!</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          C.A.M. Gerlach<br>
-          <span class="small">2018-08-14</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>C.A.M. Gerlach</div>
+            <div class="small">2018-08-14</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>We're excited to announce the release of Spyder 3.3.0 and 3.3.1, with several new features and enhancements, usability improvements, significant under the hood modifications and over 40 bug fixes. We'll go over the key changes and explain what they mean for you as a user, and discuss a few additional important notes about this release and what's coming next.</p>
+  <div class="blog-content">
+      <p>We're excited to announce the release of Spyder 3.3.0 and 3.3.1, with several new features and enhancements, usability improvements, significant under the hood modifications and over 40 bug fixes. We'll go over the key changes and explain what they mean for you as a user, and discuss a few additional important notes about this release and what's coming next.</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/release-spyder-330/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/webcast-quansight-ep1/">Spyder featured on Episode 1 of Open Source Directions web show</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          C.A.M. Gerlach<br>
-          <span class="small">2018-08-13</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>C.A.M. Gerlach</div>
+            <div class="small">2018-08-13</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>Watch maintainer Carlos Córdoba explain Spyder's history, demo some of the IDE's current functionality, and reveal some of the key features planned for the project's immediate future on Episode 1 of Quansight's Open Source Directions broadcast. Carlos also answers a number of user-submitted questions covering a range of Spyder-related topics.</p>
+  <div class="blog-content">
+      <p>Watch maintainer Carlos Córdoba explain Spyder's history, demo some of the IDE's current functionality, and reveal some of the key features planned for the project's immediate future on Episode 1 of Quansight's Open Source Directions broadcast. Carlos also answers a number of user-submitted questions covering a range of Spyder-related topics.</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/webcast-quansight-ep1/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/spyder-status-2018-present/">State of the Spyder, Part 2: Looking up</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          C.A.M. Gerlach<br>
-          <span class="small">2018-07-23</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>C.A.M. Gerlach</div>
+            <div class="small">2018-07-23</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>In the second of a three part series, we've got some exciting announcements to make about Spyder and its continued development, and we'll review the project's current status and some major upcoming releases.</p>
+  <div class="blog-content">
+      <p>In the second of a three part series, we've got some exciting announcements to make about Spyder and its continued development, and we'll review the project's current status and some major upcoming releases.</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/spyder-status-2018-present/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 <div class="blog-post">
   <div class="blog-header blog-index-header">
       <h2><a href="/blog/spyder-status-2018-past/">State of the Spyder, Part 1: Looking back</a></h2>
 
-    <div class="row">
-      <div class="column meta-blog-author">
-        <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
-      </div>
-      <div class="meta-blog-index">
-        <p>
-          C.A.M. Gerlach<br>
-          <span class="small">2018-05-06</span>
-        </p>
+    <div class="row align-items-center mb-2 g-2">
+        <div class="col-auto">
+          <div class="meta-blog-author">
+            <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
+          </div>
+        </div>
+      <div class="col">
+        <div class="meta-blog-index">
+            <div>C.A.M. Gerlach</div>
+            <div class="small">2018-05-06</div>
+        </div>
       </div>
     </div>
   </div>
-  <p>In the first of a three part series, we look back at the major events, project changes, milestones, and progress over the past six months since our previous funding ended. We'll also go over funding and development stats and status up to the present.</p>
+  <div class="blog-content">
+      <p>In the first of a three part series, we look back at the major events, project changes, milestones, and progress over the past six months since our previous funding ended. We'll also go over funding and development stats and status up to the present.</p>
 
-  <p class="pull-right">
+  </div>
+  <div class="blog-footer text-md-end">
     <a href="/blog/spyder-status-2018-past/">Read more...</a>
-  </p>
+  </div>
 </div>
 
 
@@ -396,7 +437,7 @@
 <!-- Waypoints -->
 <script src="/static/js/jquery.waypoints.min.js?h=a2b72d43" type="application/javascript" charset="UTF-8"></script>
 <!-- Main JS -->
-<script src="/static/js/main.js?h=8d911085" type="application/javascript" charset="UTF-8"></script>
+<script src="/static/js/main.js?h=996d9217" type="application/javascript" charset="UTF-8"></script>
 <!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.js" type="application/javascript" charset="UTF-8"></script> -->
 </body>
 </html>
