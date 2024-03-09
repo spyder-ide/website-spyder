@@ -33,28 +33,29 @@ Others suggested [Devcontainers](https://containers.dev/), to allow collaboratin
 Participants also expressed frustration that despite notebooks being intended to make programming more literate, this often does not happen in practice.
 Beginners like the interactivity in notebooks because they don't know how to use more advanced programming tools, but they don't always take advantage of their readability features.
 To address this, attendees stressed the importance of getting users accustomed to best practices that can also be helpful for reproducibility.
-A participant mentioned a ``nbflake8`` tool to lint notebooks, though it could not be easily found online, and others wished for a [Ruff implementation](https://github.com/astral-sh/ruff/issues/1218) (which at the time of this writing is [now mostly complete](https://github.com/astral-sh/ruff/issues/5188)).
+A participant mentioned a ``nbflake8`` tool to lint notebooks, though it could not be easily found online, and others wished for a [Ruff implementation](https://github.com/astral-sh/ruff/issues/1218) (which at the time of this writing is [now complete](https://github.com/astral-sh/ruff/issues/5188)).
 
 
 ## Migrating notebooks to modules
 
 As one participant put it, "I love notebooks, and also love modules, and love the flow of code from notebooks into modules once it approaches that point."
 They went on to describe modules as a key unit of documented, tested code, but which doesn't mean a lot on its own, whereas combined with a notebook, it gives them context and meaning.
-For communities that may be afraid of modules, they recommended trying to make creating and transitioning to them easier, rather than avoiding them, so that you have fully importable, reusable Python code.
+For communities that may be afraid of modules, the participant recommended trying to make creating and transitioning to them easier, so users have fully importable, reusable Python code.
 For students, notebooks often turn into a fancy scratch pad or script file, and once they get stuff that works, they can move that stuff out into modules, and then the notebooks start to morph into examples and the history of what the work was about that can be interpreted by other researchers.
 
 Other attendees chimed in with similar stories, with a NIST researcher mentioning this is an area they'd been working on for 10 years, with their approach being putting the stuff they want to be modular in a regular Python module, and then have a Jupyter notebook that shows an example using the code, such as in their [IPRPy project](https://github.com/usnistgov/iprPy).
-To aid this process, participants suggested tools like the [Autodocstring extension in VSCode](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) and the docstring generator built into [Spyder's editor](https://docs.spyder-ide.org/current/panes/editor.html) as great ways to reduce the friction for students when writing documentation, as they just add the triple quotes and the IDE expands the rest.
+To aid this process, participants suggested tools like the [Autodocstring extension in VSCode](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) and the docstring generator built into [Spyder's editor](https://docs.spyder-ide.org/current/panes/editor.html) as great ways to reduce the friction for students when writing documentation, as they just add the triple quotes and the IDE generates a pre-filled docstring for them.
 
-An important reproducibility and reusability tool many cited for this was [nbdev](https://github.com/fastai/nbdev), which can allow users to develop their code and let it grow, and then eventually export the parts it as modules at the end.
+An important reproducibility and reusability tool many cited for this was [nbdev](https://github.com/fastai/nbdev), which can allow users to develop their code and let it grow, and then eventually export the parts as modules at the end.
 According to attendees, its documentation mostly talks about everything as packages, but it can also be used for individual notebooks and modules.
 Some participants were initially hesitant to show it to their students since they're early Python programmers, but it was actually quite easy for them, only requiring as little as one line of code at the end.
+(Unfortunately as of this writing, it seems ndbdev development [has stalled](https://hamel.dev/blog/posts/nbdev/) due to its expected commercial opportunities not materializing.)
 Others asked for more documentation resources for this, since they were still learning Python themselves and would like to learn more about this and teach it to their students.
 In addition to this very blog post and guide, one attendee brought up that they did [a tutorial on that topic at SciPy](https://www.youtube.com/watch?v=l7zS8Ld4_iA), adding that the documentation is pretty intimidating but it would be great to have something more focused on smaller-scale usage.
 
-As additional approaches, attendees mentioned they have their students use [Jupytext](https://jupytext.readthedocs.io/), which helps the student to make from Notebooks to Python files that can be committed to a Git repository.
-This allows the code to be committed as Python, while in Jupyter allowing them to right-click and open a Python file as a Notebook and continue working on it.
-Others brought up [nb-convert](https://nbconvert.readthedocs.io/en/latest/index.html), as a command linetool that can convert notebooks to many different formats including a Python script, which is integrated into IDEs like Spyder, and that there is also a [similar VSCode feature](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_export-your-jupyter-notebook).
+As additional approaches, attendees mentioned they have their students use [Jupytext](https://jupytext.readthedocs.io/), which helps the student to convert notebooks to Python files that can be committed to a Git repository.
+This allows the code to be committed as a Python file, while allowing Jupyter to open it as a notebook and continue working on it.
+Others brought up [nb-convert](https://nbconvert.readthedocs.io/en/latest/index.html), a command line tool that can convert notebooks to many different formats including a Python script, which is integrated into IDEs like Spyder, and that there is also a [similar VSCode feature](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_export-your-jupyter-notebook).
 
 
 ## Enabling reusable Python packages
@@ -75,7 +76,7 @@ Additionally, users expressed particular appreciation for the [Cookiecutter temp
 They mentioned that a lot of their workflows are just messing around with their data, and having something like a package structure from the get go helps make it easier to not miss things.
 As a followup, a nuclear engineer mentioned they often have two week projects leveraging Jupyter at their center, with a cookiecutter template that has Sphinx, and a directory structure, and metadata that looks familiar and has everything set up by default.
 They described how this particularly helps ensure that different colleagues and team members are on the same page with doing things.
-Finally, others suggested the [data-driven Cookiecutter template](https://drivendata.github.io/cookiecutter-data-science/) to have a structured way for where to put things, to help ensure consistency in terms of what things are named, and the order to run things.
+Finally, others suggested the [data-driven Cookiecutter template](https://drivendata.github.io/cookiecutter-data-science/), which provides an ordered structure for where things go, what they are named and how they are run.
 
 ## Next steps
 
