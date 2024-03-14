@@ -15,7 +15,7 @@ body:
 
 The Spyder team and [collaborators](https://cfp.scipy.org/2023/speaker/SE7SNC/) hosted [a Birds of a Feather (BoF) session](https://cfp.scipy.org/2023/talk/LGZUNG/) at [SciPy 2023](https://www.scipy2023.scipy.org/), focused on moving beyond just scripts and notebooks toward truly reproducible, reusable research.
 Here, we’ll recap the motivation and goals of the BoF and share the common challenges that participants brought up with notebooks and moving toward reproducible, reusable research.
-In our next post, we’ll follow up with some of the tips, tools, platforms and strategies attendees brought up as ways to address them, including using Spyder!
+In [our next post](https://www.spyder-ide.org/blog/reusable-research-bof-scipy-2023-part-2/), we’ll follow up with some of the tips, tools, platforms and strategies attendees brought up as ways to address them, including using Spyder!
 We'd like to thank [Juanita Gomez](https://cfp.scipy.org/2023/speaker/SE7SNC/) for helping organize the BoF, Hari for his hard work compiling a summary of the outcomes, and everyone for attending and sharing such great ideas and insights!
 
 
@@ -69,5 +69,5 @@ Finally, it was brought up that students might have familiarity with Python or R
 
 ## Next up
 
-Now that we’ve surfaced the reproducibility and reusability challenges that participants brought up at the BoF, stay tuned for our next blog post coming up soon, where we’ll share all the helpful tips, cool tools, awesome platforms and useful strategies attendees suggested to help address them.
+Now that we’ve surfaced the reproducibility and reusability challenges that participants brought up at the BoF, check out our [next blog post](https://www.spyder-ide.org/blog/reusable-research-bof-scipy-2023/), where we share all the helpful tips, cool tools, awesome platforms and useful strategies attendees suggested to help address them.
 Until then, happy Spydering!
