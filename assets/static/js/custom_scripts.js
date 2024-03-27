@@ -24,7 +24,7 @@
         id: "download-mac-intel",
         text: "Download for macOS (Intel)",
         icon: ["fab", "fa-apple"],
-        url: "https://github.com/spyder-ide/spyder/releases/latest/download/Spyder_x86_64.dmg",
+        url: "https://github.com/spyder-ide/spyder/releases/latest/download/Spyder.dmg",
       },
     ],
     linux: [
