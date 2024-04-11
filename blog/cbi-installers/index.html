@@ -42,7 +42,7 @@
   <!-- For information on the included third-party assets, see NOTICE.txt -->
   <!-- https://github.com/spyder-ide/lektor-icon/blob/master/NOTICE.txt -->
 
-  <title>Blog — Spyder IDE</title>
+  <title>Blog | Spyder 6 will get a new installer for all platforms and a standalone application for Linux! — Spyder IDE</title>
   <meta name="author" content="Spyder Team">
   <meta name="copyright" content="&amp;copy; 2023 Spyder Website Contributors">
   <meta name="description" content="Website for Spyder, the Scientific Python Development Environment">
@@ -98,7 +98,7 @@
 <a id="rss-nav-link" data-nav-section="RSS" href="/blog/feed.xml">RSS</a>
               </div>
               <div class="side-nav-container">
-                <a class="nav-link-internal nav-link-active-section /blog sep /blog nav-link-active-page" href="/blog/">Blog</a>
+                <a class="nav-link-internal nav-link-active-section /blog/cbi-installers sep /blog" href="/blog/">Blog</a>
                 <a class="nav-link-external" href="https://docs.spyder-ide.org/"> Docs</a>
               </div>
             </div>
@@ -107,100 +107,70 @@
       </div>
     </div>
 <div class="blog-content-container" data-section="Blog">
-<div id="blog-main-title" class="text-center fh5co-heading">
-  <h1>Welcome to Spyder&#39;s Blog</h1>
-</div>
   <div id="blog-center" class="center">
 
 <div class="blog-post">
-  <div class="blog-header blog-index-header">
-      <h2><a href="/blog/spyder-status-2018-present/">State of the Spyder, Part 2: Looking up</a></h2>
+  <div class="blog-header blog-post-header">
+      <h1>Spyder 6 will get a new installer for all platforms and a standalone application for Linux!</h1>
 
     <div class="row align-items-center mb-2 g-2">
         <div class="col-auto">
           <div class="meta-blog-author">
-            <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
+            <img alt="Ryan Clary photo" class="author-img" src="/authors/mrclary/mrclary.jpg">
           </div>
         </div>
       <div class="col">
         <div class="meta-blog-index">
-            <div>C.A.M. Gerlach</div>
-            <div class="small">2018-07-23</div>
+            <div>Ryan Clary</div>
+            <div class="small">2024-04-11</div>
         </div>
       </div>
     </div>
   </div>
   <div class="blog-content">
-      <p>In the second of a three part series, we've got some exciting announcements to make about Spyder and its continued development, and we'll review the project's current status and some major upcoming releases.</p>
+    <p>For the last several years, Spyder has offered standalone installers for Windows and macOS which isolate Spyder's runtime environment from users' development environments.
+This provides a more stable user experience than traditional conda or pip installation methods.
+However, these standalone installers did not allow implementing desirable features, such as automatic incremental updates or installing external Spyder plugins like Spyder-Notebook and Spyder-Unittest.
+Additionally, these standalone applications were limited to Windows and macOS.</p>
+<p>Our new installers will provide a more consistent experience for users across all platforms, including Linux, while maintaining the benefits of an isolated runtime environment for Spyder.
+Additionally, they are fully compatible with incremental updates and external plugin management.
+Look for future announcements about these and other features!</p>
+<p>So, what will you see with these new installers?
+If you are a Windows user, you will continue to have a graphical interface guiding you through the installation process, and will likely not notice any difference from the previous experience.</p>
+<p><img src="/blog/cbi-installers/windows.png" alt="Windows installer"></p>
+<p>If you are a macOS user, you will now have a <code>.pkg</code> package installer instead of a <code>.dmg</code> disk image.
+Rather than drag-and-drop the application to the <code>Applications</code> folder, the <code>.pkg</code> installer provides a graphical interface that will guide you through the installation process with more flexibility.</p>
+<p><img src="/blog/cbi-installers/macos.png" alt="macOS installer"></p>
+<p>If you are a Linux user, you will have an interactive shell script guiding you through the installation process.
+This ensures it is compatible with as many distributions and desktop environments as possible.</p>
+<p><img src="/blog/cbi-installers/linux.png" alt="Linux installer"></p>
+<p>In all cases, you will not need to have Anaconda installed, nor do you need an existing Python environment; in fact, you don't even need a preexisting Python installation!
+These installers are completely self-contained.
+Spyder will continue to include popular packages such as NumPy, SciPy, Pandas and Matplotlib so you can start coding out-of-the-box.
+However, you will still be able to use Spyder with your existing conda, venv, Python.org, and other Python installers and environments as before.
+Furthermore, only Spyder and its critical dependencies will be updated on each new release, which will make getting the latest version a lean and frictionless process.</p>
+<p>The Spyder team is really excited about these new installers and the new features they will make possible, and we hope you enjoy them too!</p>
 
-  </div>
-  <div class="blog-footer text-md-end">
-    <a href="/blog/spyder-status-2018-present/">Read more...</a>
   </div>
 </div>
+<div class="comment-box">
+  <h2>Comments</h2>
+  
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function() { this.page.identifier = "/blog/cbi-installers"; this.page.url = "https://www.spyder-ide.org/blog/cbi-installers/"; };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//spyder-ide.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+    rel="nofollow">comments powered by Disqus.</a>
+</noscript>
 
-<div class="blog-post">
-  <div class="blog-header blog-index-header">
-      <h2><a href="/blog/spyder-status-2018-past/">State of the Spyder, Part 1: Looking back</a></h2>
-
-    <div class="row align-items-center mb-2 g-2">
-        <div class="col-auto">
-          <div class="meta-blog-author">
-            <img alt="C.A.M. Gerlach photo" class="author-img" src="/authors/camgerlach/C-Symbol-Logo-Full-V2.png">
-          </div>
-        </div>
-      <div class="col">
-        <div class="meta-blog-index">
-            <div>C.A.M. Gerlach</div>
-            <div class="small">2018-05-06</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="blog-content">
-      <p>In the first of a three part series, we look back at the major events, project changes, milestones, and progress over the past six months since our previous funding ended. We'll also go over funding and development stats and status up to the present.</p>
-
-  </div>
-  <div class="blog-footer text-md-end">
-    <a href="/blog/spyder-status-2018-past/">Read more...</a>
-  </div>
-</div>
-
-<div class="blog-post">
-  <div class="blog-header blog-index-header">
-      <h2><a href="/blog/introducing-unittest-plugin/">Introducing the unittest plugin</a></h2>
-
-    <div class="row align-items-center mb-2 g-2">
-        <div class="col-auto">
-          <div class="meta-blog-author">
-            <img alt="Jitse Niesen photo" class="author-img" src="/authors/jitseniesen/jitse_niesen.jpeg">
-          </div>
-        </div>
-      <div class="col">
-        <div class="meta-blog-index">
-            <div>Jitse Niesen</div>
-            <div class="small">2018-02-23</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="blog-content">
-      <p>We introduce the Spyder unittest plugin, which can run tests and display the results right inside the IDE, with a real world example.</p>
-
-  </div>
-  <div class="blog-footer text-md-end">
-    <a href="/blog/introducing-unittest-plugin/">Read more...</a>
-  </div>
-</div>
-
-
-<div class="row blog-pagination">
-  <div class="small-6 columns previous">
-    <a href="/blog/page/2/" class="button"><i class="fa fa-mail-forward fa-rotate-180 fa-lg"></i> Previous</a>
-  </div>
-  <div class="small-6 columns next">
-    <span class="button disabled" aria-disabled="true">Next <i class="fa fa-mail-reply fa-rotate-180 fa-lg"></i></span>
-  </div>
 </div>
   </div>
 </div>
