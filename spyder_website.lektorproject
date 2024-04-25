@@ -37,7 +37,7 @@ theme_bg_accent_color = "#f5f5f5"
 theme_accent_color = "#d50000"
 theme_accent_alt_color = "#8c0000"
 theme_pipe_color = "#ee1c24"
-custom_css = "/static/css/custom_styles.css, https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css, 'https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap'"
+custom_css = "/static/css/custom_styles.css, static/css/silka.css, https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
 custom_js_main =
 custom_js_singlepage = "/static/js/custom_scripts.js"
 custom_head_content = "<link rel='me' href='https://fosstodon.org/@Spyder'>"

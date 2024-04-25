@@ -5,7 +5,9 @@
 /* Variables */
 
 :root {
-  --main-font: "Manrope", "DejaVu Sans", "Open Sans", "Liberation Sans", helvetica, arial, sans-serif;
+  --main-font: "Silka", "DejaVu Sans", "Open Sans", "Liberation Sans", helvetica, arial, sans-serif;
+
+  font-size: 1rem;
 }
 
 /* Tweak display of logo text for small caps */
