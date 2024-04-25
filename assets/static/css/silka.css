@@ -1,0 +1,89 @@
+/* Black-900 */
+@font-face {
+  font-family: silka;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/silka/silka-black-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: silka;
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/silka/silka-blackitalic-webfont.woff2") format("woff2");
+}
+
+/* Bold-600 */
+@font-face {
+  font-family: silka;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/silka/silka-bold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: silka;
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/silka/silka-bolditalic-webfont.woff2") format("woff2");
+}
+
+/* Regular-400 */
+@font-face {
+  font-family: silka;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/silka/silka-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: silka;
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/silka/silka-regularitalic-webfont.woff2") format("woff2");
+}
+
+/* Light-300 */
+@font-face {
+  font-family: silka;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/silka/silka-light-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: silka;
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/silka/silka-lightitalic-webfont.woff2") format("woff2");
+}
+
+/* Extralight-200 */
+@font-face {
+  font-family: silka;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/silka/silka-extralight-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: silka;
+  font-style: italic;
+  font-weight: 200;
+  src: url("../fonts/silka/silka-extralightitalic-webfont.woff2") format("woff2");
+}
+
+/* Thin-100 */
+@font-face {
+  font-family: silka;
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/silka/silka-thin-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: silka;
+  font-style: italic;
+  font-weight: 100;
+  src: url("../fonts/silka/silka-thinitalic-webfont.woff2") format("woff2");
+}
