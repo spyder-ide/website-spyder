@@ -36,4 +36,4 @@ Last but not least, as part of this novel client, we are introducing a new compl
 
 The function calls and constants of the new completion API will be added to the Spyder documentation and should be available in the next release of Spyder. Additionally, we will provide code snippets support for both LSP and Kite for the next release - please stay tuned!
 
-We, the Spyder development team, hope that these new improvements accelerate your productivity, and we invite you to beta-test them to improve them even more. As always, we are open to your questions, issue reports and contributions on all of our communication channels and our Github repository.
+We, the Spyder development team, hope that these new improvements accelerate your productivity, and we invite you to beta-test them to improve them even more. As always, we are open to your questions, issue reports and contributions on all of our communication channels and our GitHub repository.

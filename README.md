@@ -52,7 +52,7 @@ Thanks!
 
 ## Workflow
 
-The default branch is ``master``, which is continuously deployed with a Github Action to Github Pages at the domain [Spyder-IDE.org](https://spyder-ide.org/).
+The default branch is ``master``, which is continuously deployed with a GitHub Action to GitHub Pages at the domain [Spyder-IDE.org](https://spyder-ide.org/).
 
 
 

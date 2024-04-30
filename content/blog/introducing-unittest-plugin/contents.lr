@@ -108,6 +108,6 @@ Our new test fails. The details clarify that `is_prime(1)` returns `True`, while
 
 With this demonstration under your belt, you should be able to write tests for your code and run them with the plugin. For example, try fixing the bug so that `1` is correctly identified as non-prime, and run the tests again to check verify it.
 
-`Spyder-unittest` supports not only the `pytest` framework, but also the `nose` framework and the `unittest` module in the Python standard library. It is still fairly new (as its version number suggests), so I look forward to your comments. Please send your ideas, bug reports and pull requests to the [spyder-unittest](https://github.com/spyder-ide/spyder-unittest) repo on Github.
+`Spyder-unittest` supports not only the `pytest` framework, but also the `nose` framework and the `unittest` module in the Python standard library. It is still fairly new (as its version number suggests), so I look forward to your comments. Please send your ideas, bug reports and pull requests to the [spyder-unittest](https://github.com/spyder-ide/spyder-unittest) repo on GitHub.
 
 Happy Spydering with automatic tests!

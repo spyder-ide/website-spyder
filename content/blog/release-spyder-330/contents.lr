@@ -44,7 +44,7 @@ Best of all, no matter how or where a kernel is started, every console now suppo
 You can even mix and match internal, external and remote kernels in different environments, all in the same Spyder session, by either changing the Python interpreter preferences setting between starting a console, or starting and connecting to multiple consoles externally—or both!
 Finally, for those of us (and those of you!) who help develop Spyder, the changes also make it easier to maintain and improve the code, and opens the door to one of the biggest features coming in Spyder 4: a new, full-featured debugging kernel that many of you have been asking for.
 
-The one key thing to remember: make sure you install the appropriate version of ``spyder-kernels`` for your version of Spyder. For most users, that will be spyder-kernels 0.x (currently 0.2.6) to match Spyder 3 on our stable ``3.x`` branch; if testing a Spyder 4 beta or Github clone of the ``master`` branch, you'll want the latest 1.x version of ``spyder-kernels`` (currently 1.1.0).
+The one key thing to remember: make sure you install the appropriate version of ``spyder-kernels`` for your version of Spyder. For most users, that will be spyder-kernels 0.x (currently 0.2.6) to match Spyder 3 on our stable ``3.x`` branch; if testing a Spyder 4 beta or GitHub clone of the ``master`` branch, you'll want the latest 1.x version of ``spyder-kernels`` (currently 1.1.0).
 To install the correct build, you can use the following ``conda`` command,
 
 ```bash
@@ -91,14 +91,14 @@ They now feature a ``Close`` button which exits the dialog without saving any ed
 
 ## Streamlined error reporting experience
 
-While we hope you never need to use it, Spyder 3.3.0 includes a brand-new error handling backend that can submit bug reports directly through the Github API.
+While we hope you never need to use it, Spyder 3.3.0 includes a brand-new error handling backend that can submit bug reports directly through the GitHub API.
 Based off [Colin Duquesnoy](https://github.com/ColinDuquesnoy)'s excellent [QCrash](https://github.com/ColinDuquesnoy/QCrash) framework, this is a major improvement in speed, functionality, reliability and user convenience over the old approach (essentially just opening a link in a web browser).
-Just as before, we won't send anything without your explicit consent, you need a Github account (or create one for free), and you can view and edit the report on Github at any time.
+Just as before, we won't send anything without your explicit consent, you need a GitHub account (or create one for free), and you can view and edit the report on GitHub at any time.
 
-![The new authentication dialogs for submitting a Github report, with a username/password and a token option](new-authent-dialog-both.png)
+![The new authentication dialogs for submitting a GitHub report, with a username/password and a token option](new-authent-dialog-both.png)
 
-You will need to enter your Github credentials the first time you submit a report.
-For this, you can [create an app token](https://github.com/settings/tokens/new?scopes=public_repo) which only grants the very limited permissions needed to create a public issue report, can be easily revoked and re-created, and works with two-factor authentication (which you should be using); however, if you have not yet enabled 2FA, it also offers the option to enter your Github username and password.
+You will need to enter your GitHub credentials the first time you submit a report.
+For this, you can [create an app token](https://github.com/settings/tokens/new?scopes=public_repo) which only grants the very limited permissions needed to create a public issue report, can be easily revoked and re-created, and works with two-factor authentication (which you should be using); however, if you have not yet enabled 2FA, it also offers the option to enter your GitHub username and password.
 Either way, Spyder can securely remember your login using the [``keyring``](https://github.com/jaraco/keyring) package, so you only have to do this once on any given machine (if you select the "remember" option).
 
 ![The new error reporting interface, with a title field, more descriptive text, and a polished UI](new-error-dialog-full.png)
@@ -131,7 +131,7 @@ Finally, our update checker now consults the Anaconda ``defaults`` channel rathe
 ## What to know and what's next
 
 If you have any questions, problems or feedback, we'd love to hear from you (just make sure you read our [documentation](https://docs.spyder-ide.org/), [Troubleshooting Guide](https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ) and the other previously-mentioned resources first)!
-For general questions or install issues that aren't addressed by the above, our [Google Group](https://groups.google.com/group/spyderlib) and [Gitter live chat](https://gitter.im/spyder-ide/public) are a good place to ask, while [our Github](https://github.com/spyder-ide/spyder) is the place to report bugs, request features, or help develop Spyder itself (though make sure to search our [issues list](https://github.com/spyder-ide/spyder/issues?utf8=%E2%9C%93&q=is%3Aissue) to ensure it hasn't already been submitted).
+For general questions or install issues that aren't addressed by the above, our [Google Group](https://groups.google.com/group/spyderlib) and [Gitter live chat](https://gitter.im/spyder-ide/public) are a good place to ask, while [our GitHub](https://github.com/spyder-ide/spyder) is the place to report bugs, request features, or help develop Spyder itself (though make sure to search our [issues list](https://github.com/spyder-ide/spyder/issues?utf8=%E2%9C%93&q=is%3Aissue) to ensure it hasn't already been submitted).
 Finally, you can follow our [Facebook](https://www.facebook.com/SpyderIDE/) and [Twitter](https://twitter.com/spyder_ide) for the latest Spyder news, releases, previews and tips, and help support Spyder development on [OpenCollective](https://opencollective.com/spyder).
 
 There's plenty to look forward to in the coming days, with the official release of our all-new documentation (that's already live now), Spyder 4 beta 1 having just been released on PyPI, conda-forge and our own ``spyder-ide`` channel (with a blog post coming soon), an upcoming article on our official Spyder 4 feature roadmap and more, so stay tuned!
