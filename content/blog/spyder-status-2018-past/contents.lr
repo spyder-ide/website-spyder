@@ -41,11 +41,11 @@ On the development side of the project, while our overall pace is modestly lower
 By the numbers, since mid-November, we've pushed approximately 1200 commits to ``master`` (Spyder 4), comprising over 37 000 lines added and 16 000 removed, and 900 commits to ``3.x`` (Spyder 3), with over 16 500 additions and 10 000 deletions.
 Users have opened over 1375 issues (bugs, feature requests and other feedback), of which we've managed to resolve more than 1330, or nearly 97%.
 
-![Github commit timeseries for Spyder, with high activity over the past few years](github_commit_history.png)
+![GitHub commit timeseries for Spyder, with high activity over the past few years](github_commit_history.png)
 
 Further, over 250 pull requests from almost two dozen unique contributors, some old, some new, have been submitted since that time—fixing bugs, adding new or enhanced functionality, or making other improvements—of which 226 have been merged to the main Spyder codebase.
 This work has coalesced into four separate official releases during that period, with another only days away.
-Finally, we've recently blown past the 3000 Github stars milestone a few weeks ago (we're now at more than 3200), with almost 700 unique forks to date.
+Finally, we've recently blown past the 3000 GitHub stars milestone a few weeks ago (we're now at more than 3200), with almost 700 unique forks to date.
 
 
 ## Key Spyder Improvements
@@ -104,7 +104,7 @@ The team has made progress on a number of fronts outside core program developmen
 We've been joined by several new team members from around the world, who have each contributed new skillsets to the project.
 Further, we've created, developed and deployed a brand new, modern and responsive website and blog, to provide an accessible, central source for Spyder news and information for both newcomers and old hands alike, as you might have noticed :)
 
-Our new, comprehensive [Troubleshooting Guide and FAQ](https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ) will help users easily resolve common issues without having to wait for a response from us, and we've revised and improved our Github issue tracking workflow to do an even better job at quickly responding to users' needs.
+Our new, comprehensive [Troubleshooting Guide and FAQ](https://github.com/spyder-ide/spyder/wiki/Troubleshooting-Guide-and-FAQ) will help users easily resolve common issues without having to wait for a response from us, and we've revised and improved our GitHub issue tracking workflow to do an even better job at quickly responding to users' needs.
 On top of that, our Readme, contributing guide, install docs, and developer wiki have all been thoroughly overhauled to make them more up to date, informative and accessible.
 Finally, we've deepened our relationship with [NumFOCUS](https://www.numfocus.org/), integrating us more closely with the broader PyData community, as well as leading to some exciting news...but that will have to wait for our next post!
 

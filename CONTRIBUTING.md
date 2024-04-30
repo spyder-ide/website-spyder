@@ -43,7 +43,7 @@ Thanks!
 
 ### Fork and clone the repo
 
-First, navigate to the [project repository](https://github.com/spyder-ide/website-spyder) in your web browser and press the ``Fork`` button to make a personal copy of the repository on your own Github account.
+First, navigate to the [project repository](https://github.com/spyder-ide/website-spyder) in your web browser and press the ``Fork`` button to make a personal copy of the repository on your own GitHub account.
 Then, click the ``Clone or Download`` button on your repository, copy the link and run the following on the command line to clone the repo with submodules:
 
 ```bash
@@ -173,6 +173,6 @@ Now that your changes are ready to go, you'll need to push them to your fork.
 git push -u origin <FEATURE-BRANCH>
 ```
 
-Finally, create a pull request to the [spyder-ide/website-spyder repository](https://github.com/spyder-ide/website-spyder/) on Github.
+Finally, create a pull request to the [spyder-ide/website-spyder repository](https://github.com/spyder-ide/website-spyder/) on GitHub.
 
 Thanks, and we look forward to your generous contributions!

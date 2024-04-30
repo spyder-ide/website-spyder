@@ -10,7 +10,7 @@ lektor-atom = 0.4.0
 lektor-disqus-comments = 0.4.1
 
 [servers.ghpages]
-name = "Github Pages"
+name = "GitHub Pages"
 target = "ghpages+https://spyder-ide//website-spyder?cname=develop.spyder-ide.org"
 
 [servers.develop]
@@ -51,7 +51,7 @@ nav_logo_path = "/static/images/spyder_logo.png"
 nav_logo_text = ""
 nav_extralinks = "Docs: https://docs.spyder-ide.org/"
 nav_subsection_subtitle = false
-footer_links = "Github: https://github.com/spyder-ide/spyder, Twitter: https://twitter.com/spyder_ide, Mastodon: https://fosstodon.org/@Spyder, Instagram: https://instagram.com/spyderide, Facebook: https://www.facebook.com/SpyderIDE/, Google Groups: https://groups.google.com/group/spyderlib"
+footer_links = "GitHub: https://github.com/spyder-ide/spyder, Twitter: https://twitter.com/spyder_ide, Mastodon: https://fosstodon.org/@Spyder, Instagram: https://instagram.com/spyderide, Facebook: https://www.facebook.com/SpyderIDE/, Google Groups: https://groups.google.com/group/spyderlib"
 footer_license_name = "MIT and others"
 footer_license_link = "https://github.com/spyder-ide/website-spyder/blob/master/NOTICE.txt"
 footer_custom_line = "Feature icons by <a href='https://www.freepik.com/' target='_blank' rel='noopener noreferrer' title='Freepik'>Freepik</a> from <a href='https://www.flaticon.com/' target='_blank' rel='noopener noreferrer' title='Flaticon'>Flaticon.com</a>"
